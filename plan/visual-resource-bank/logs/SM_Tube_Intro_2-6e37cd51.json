@@ -1,0 +1,51 @@
+{
+  "input": {
+    "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_2.uasset",
+    "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_2",
+    "object_name": "SM_Tube_Intro_2",
+    "class_reference": "/Script/Engine.StaticMesh",
+    "export_index": 3,
+    "serial_offset": 10771,
+    "serial_size": 2684,
+    "payload_sha1": "6e37cd51507c5c0118d46b9788abf45ac4a25b07",
+    "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+    "source_reports": [
+      "mesh-assets.json"
+    ],
+    "payload_pak_offset": 105588789,
+    "payload_size": 13459,
+    "source_sha1_verified": true,
+    "resource_id": "SM_Tube_Intro_2-6e37cd51"
+  },
+  "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tube_Intro_2-6e37cd51",
+  "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+  "args": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-export",
+    "-gltf",
+    "-notex",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tube_Intro_2-6e37cd51",
+    "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_2",
+    "SM_Tube_Intro_2",
+    "StaticMesh"
+  ],
+  "returncode": 0,
+  "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Tube_Intro_2-6e37cd51.log",
+  "method": "qualified package+object+class UModel export",
+  "elapsed_seconds": 0.0470000000204891,
+  "files": [
+    {
+      "path": "resources\\SM_Tube_Intro_2-6e37cd51\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tube_Intro_2.bin",
+      "size": 1476,
+      "sha256": "48da3268b49e105ad6c38aacfa4328e9b4d1469c05a9b8e9c0eee18f2e2ef940"
+    },
+    {
+      "path": "resources\\SM_Tube_Intro_2-6e37cd51\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tube_Intro_2.gltf",
+      "size": 2102,
+      "sha256": "2e7b18ce289303bf6a6998e34dfa16364d700be28f60647f38e2a291fb3236bb"
+    }
+  ],
+  "export_status": "exported_pending_geometry_validation"
+}

@@ -1,0 +1,15 @@
+0x14082bf60	48896c2418	mov	qword ptr [rsp + 0x18], rbp
+0x14082bf65	4889742420	mov	qword ptr [rsp + 0x20], rsi
+0x14082bf6a	57	push	rdi
+0x14082bf6b	4881eca0010000	sub	rsp, 0x1a0
+0x14082bf72	488b05473edf01	mov	rax, qword ptr [rip + 0x1df3e47]
+0x14082bf79	4833c4	xor	rax, rsp
+0x14082bf7c	4889842498010000	mov	qword ptr [rsp + 0x198], rax
+0x14082bf84	33ed	xor	ebp, ebp
+0x14082bf86	8bf5	mov	esi, ebp
+0x14082bf88	896c2440	mov	dword ptr [rsp + 0x40], ebp
+0x14082bf8c	e84ff1e7ff	call	0x1406ab0e0
+0x14082bf91	488bf8	mov	rdi, rax
+0x14082bf94	488b0525eaf501	mov	rax, qword ptr [rip + 0x1f5ea25]
+0x14082bf9b	4885c0	test	rax, rax
+0x14082bf9e	0f852f040000	jne	0x14082c3d3

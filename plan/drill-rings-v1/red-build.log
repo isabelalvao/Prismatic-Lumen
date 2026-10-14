@@ -1,0 +1,19 @@
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_control.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control.lib
+  fantasynt_visual_config.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_visual_config.lib
+  fantasynt_geometry.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry.lib
+  choreography_tests.cpp
+C:\ORCA\Fantasynt\tests\choreography_tests.cpp(9,23): error C3861: 'drill_cone_motion': identificador não encontrado [C:\ORCA\Fantasynt\build\fantasynt_choreography_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\choreography_tests.cpp(10,23): error C3861: 'drill_cone_motion': identificador não encontrado [C:\ORCA\Fantasynt\build\fantasynt_choreography_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\choreography_tests.cpp(11,24): error C3861: 'drill_cone_motion': identificador não encontrado [C:\ORCA\Fantasynt\build\fantasynt_choreography_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\choreography_tests.cpp(12,26): error C3861: 'drill_cone_motion': identificador não encontrado [C:\ORCA\Fantasynt\build\fantasynt_choreography_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\choreography_tests.cpp(18,5): error C3861: 'drill_cone_motion': identificador não encontrado [C:\ORCA\Fantasynt\build\fantasynt_choreography_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\choreography_tests.cpp(19,5): error C3861: 'cone_module_local_offset': identificador não encontrado [C:\ORCA\Fantasynt\build\fantasynt_choreography_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\choreography_tests.cpp(20,5): error C3861: 'cone_module_local_offset': identificador não encontrado [C:\ORCA\Fantasynt\build\fantasynt_choreography_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\choreography_tests.cpp(21,5): error C3861: 'cone_module_local_offset': identificador não encontrado [C:\ORCA\Fantasynt\build\fantasynt_choreography_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\choreography_tests.cpp(22,5): error C3861: 'tunnel_departure_progress': identificador não encontrado [C:\ORCA\Fantasynt\build\fantasynt_choreography_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\choreography_tests.cpp(23,5): error C3861: 'tunnel_departure_progress': identificador não encontrado [C:\ORCA\Fantasynt\build\fantasynt_choreography_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\choreography_tests.cpp(24,5): error C3861: 'tunnel_departure_progress': identificador não encontrado [C:\ORCA\Fantasynt\build\fantasynt_choreography_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\choreography_tests.cpp(25,5): error C3861: 'tunnel_departure_progress': identificador não encontrado [C:\ORCA\Fantasynt\build\fantasynt_choreography_tests.vcxproj]

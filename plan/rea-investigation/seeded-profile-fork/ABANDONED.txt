@@ -1,0 +1,6 @@
+ABANDONED EXPERIMENT - LOCAL FORK NOT APPLIED
+The parent stopped implementation after the official-main original native profile completed.
+TDD red: 17 tests, 11 expected failures, 6 passed. Production implementation was incomplete and never built.
+All edited upstream source files restored byte-for-byte to pre-edit backups. New owned test preserved here then removed from upstream source.
+No Ghidra analysis or C++ artifact modification was performed. No dist/runtime build was run by this agent.
+Diff patches and abandoned-source copies preserve the incomplete experiment; they do not represent a validated or deployed feature.

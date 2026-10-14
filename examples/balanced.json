@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "demo-balanced-001",
+  "command": "apply_parameters",
+  "transition_seconds": 3,
+  "parameters": {
+    "palette": ["#DDEAFF", "#9BB8F0"],
+    "light_intensity": 0.6,
+    "motion_speed": 0.3,
+    "pulse_strength": 0.4,
+    "fog_density": 0.2,
+    "geometry_density": 0.5,
+    "bloom": 0.35
+  }
+}

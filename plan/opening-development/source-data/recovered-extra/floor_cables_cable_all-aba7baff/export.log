@@ -1,0 +1,11 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/_HelloEnjoy_/ChezNous/Assets/Shapes/FloorCables/floor_cables_cable_all.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 38 Exports: 3 Imports: 6 Game: 10000D0
+Export "floor_cables_cable_all" was found in package "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/FloorCables/floor_cables_cable_all.uasset"
+Found 1 object(s)
+Loading StaticMesh4 floor_cables_cable_all from package /Game/_HelloEnjoy_/ChezNous/Assets/Shapes/FloorCables/floor_cables_cable_all.uasset
+Loading package: /Game/_HelloEnjoy_/ChezNous/Assets/Shapes/FloorCables/floor_cable_mat.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 53 Exports: 1 Imports: 2 Game: 10000D0
+Loaded in 0.0 sec, 74 allocs, 0.19 MBytes serialized in 19 calls.
+Exporting objects ...
+Exporting StaticMesh4 floor_cables_cable_all to C:/ORCA/Fantasynt/plan/opening-development/source-data/recovered-extra/floor_cables_cable_all-aba7baff/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/FloorCables/floor_cables_cable_all.gltf

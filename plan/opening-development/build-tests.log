@@ -1,0 +1,202 @@
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.19045.
+-- Using the multi-header code from C:/ORCA/Fantasynt/build/_deps/nlohmann_json-src/include/
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Could NOT find LibUSB (missing: LibUSB_LIBRARY LibUSB_INCLUDE_PATH) (found version "LibUSB_VERSION-NOTFOUND")
+-- 
+-- SDL3 was configured with the following options:
+-- 
+-- Platform: Windows-10.0.19045
+-- 64-bit:   TRUE
+-- Compiler: C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx86/x64/cl.exe
+-- Revision: SDL-3.2.30-release-3.2.30
+-- Vendor:   
+-- 
+-- Subsystems:
+--   Audio:    ON
+--   Video:    ON
+--   GPU:      ON
+--   Render:   ON
+--   Camera:   ON
+--   Joystick: ON
+--   Haptic:   ON
+--   Hidapi:   ON
+--   Power:    ON
+--   Sensor:   ON
+--   Dialog:   ON
+-- 
+-- Options:
+--   SDL_ALSA                    (Wanted: OFF): OFF
+--   SDL_ALSA_SHARED             (Wanted: OFF): OFF
+--   SDL_ALTIVEC                 (Wanted: OFF): OFF
+--   SDL_ARMNEON                 (Wanted: OFF): OFF
+--   SDL_ASAN                    (Wanted: OFF): OFF
+--   SDL_ASSEMBLY                (Wanted: ON): ON
+--   SDL_ASSERTIONS              (Wanted: auto): auto
+--   SDL_AVX                     (Wanted: ON): ON
+--   SDL_AVX2                    (Wanted: ON): ON
+--   SDL_AVX512F                 (Wanted: ON): ON
+--   SDL_BACKGROUNDING_SIGNAL    (Wanted: OFF): OFF
+--   SDL_CCACHE                  (Wanted: OFF): OFF
+--   SDL_CLANG_TIDY              (Wanted: OFF): OFF
+--   SDL_CLOCK_GETTIME           (Wanted: OFF): OFF
+--   SDL_COCOA                   (Wanted: OFF): OFF
+--   SDL_DBUS                    (Wanted: OFF): OFF
+--   SDL_DEPS_SHARED             (Wanted: ON): OFF
+--   SDL_DIRECTX                 (Wanted: ON): ON
+--   SDL_DISKAUDIO               (Wanted: ON): ON
+--   SDL_DUMMYAUDIO              (Wanted: ON): ON
+--   SDL_DUMMYCAMERA             (Wanted: ON): ON
+--   SDL_DUMMYVIDEO              (Wanted: ON): ON
+--   SDL_EXAMPLES                (Wanted: OFF): OFF
+--   SDL_EXAMPLES_LINK_SHARED    (Wanted: OFF): OFF
+--   SDL_FOREGROUNDING_SIGNAL    (Wanted: OFF): OFF
+--   SDL_GCC_ATOMICS             (Wanted: OFF): OFF
+--   SDL_GPU_DXVK                (Wanted: OFF): OFF
+--   SDL_HIDAPI                  (Wanted: ON): ON
+--   SDL_HIDAPI_JOYSTICK         (Wanted: ON): ON
+--   SDL_HIDAPI_LIBUSB           (Wanted: ON): OFF
+--   SDL_HIDAPI_LIBUSB_SHARED    (Wanted: ON): OFF
+--   SDL_IBUS                    (Wanted: OFF): OFF
+--   SDL_INSTALL                 (Wanted: OFF): OFF
+--   SDL_INSTALL_TESTS           (Wanted: OFF): OFF
+--   SDL_JACK                    (Wanted: OFF): OFF
+--   SDL_JACK_SHARED             (Wanted: OFF): OFF
+--   SDL_KMSDRM                  (Wanted: OFF): OFF
+--   SDL_KMSDRM_SHARED           (Wanted: OFF): OFF
+--   SDL_LASX                    (Wanted: OFF): OFF
+--   SDL_LIBC                    (Wanted: ON): ON
+--   SDL_LIBICONV                (Wanted: OFF): OFF
+--   SDL_LIBUDEV                 (Wanted: ON): OFF
+--   SDL_LIBURING                (Wanted: OFF): OFF
+--   SDL_LSX                     (Wanted: OFF): OFF
+--   SDL_METAL                   (Wanted: OFF): OFF
+--   SDL_MMX                     (Wanted: ON): OFF
+--   SDL_OFFSCREEN               (Wanted: ON): ON
+--   SDL_OPENGL                  (Wanted: ON): ON
+--   SDL_OPENGLES                (Wanted: ON): ON
+--   SDL_OPENVR                  (Wanted: OFF): OFF
+--   SDL_OSS                     (Wanted: OFF): OFF
+--   SDL_PIPEWIRE                (Wanted: OFF): OFF
+--   SDL_PIPEWIRE_SHARED         (Wanted: OFF): OFF
+--   SDL_PTHREADS                (Wanted: OFF): OFF
+--   SDL_PTHREADS_SEM            (Wanted: OFF): OFF
+--   SDL_PULSEAUDIO              (Wanted: OFF): OFF
+--   SDL_PULSEAUDIO_SHARED       (Wanted: OFF): OFF
+--   SDL_RENDER_D3D              (Wanted: ON): ON
+--   SDL_RENDER_D3D11            (Wanted: ON): ON
+--   SDL_RENDER_D3D12            (Wanted: ON): ON
+--   SDL_RENDER_GPU              (Wanted: ON): ON
+--   SDL_RENDER_METAL            (Wanted: OFF): OFF
+--   SDL_RENDER_VULKAN           (Wanted: ON): ON
+--   SDL_ROCKCHIP                (Wanted: OFF): OFF
+--   SDL_RPATH                   (Wanted: OFF): OFF
+--   SDL_RPI                     (Wanted: OFF): OFF
+--   SDL_SNDIO                   (Wanted: OFF): OFF
+--   SDL_SNDIO_SHARED            (Wanted: OFF): OFF
+--   SDL_SSE                     (Wanted: ON): ON
+--   SDL_SSE2                    (Wanted: ON): ON
+--   SDL_SSE3                    (Wanted: ON): ON
+--   SDL_SSE4_1                  (Wanted: ON): ON
+--   SDL_SSE4_2                  (Wanted: ON): ON
+--   SDL_SYSTEM_ICONV            (Wanted: OFF): OFF
+--   SDL_TESTS                   (Wanted: OFF): OFF
+--   SDL_TESTS_LINK_SHARED       (Wanted: OFF): OFF
+--   SDL_UNINSTALL               (Wanted: OFF): OFF
+--   SDL_VIRTUAL_JOYSTICK        (Wanted: ON): ON
+--   SDL_VIVANTE                 (Wanted: OFF): OFF
+--   SDL_VULKAN                  (Wanted: ON): ON
+--   SDL_WASAPI                  (Wanted: ON): ON
+--   SDL_WAYLAND                 (Wanted: OFF): OFF
+--   SDL_WAYLAND_LIBDECOR        (Wanted: OFF): OFF
+--   SDL_WAYLAND_LIBDECOR_SHARED (Wanted: OFF): OFF
+--   SDL_WAYLAND_SHARED          (Wanted: OFF): OFF
+--   SDL_X11                     (Wanted: OFF): OFF
+--   SDL_X11_SHARED              (Wanted: OFF): OFF
+--   SDL_X11_XCURSOR             (Wanted: OFF): OFF
+--   SDL_X11_XDBE                (Wanted: OFF): OFF
+--   SDL_X11_XFIXES              (Wanted: OFF): OFF
+--   SDL_X11_XINPUT              (Wanted: OFF): OFF
+--   SDL_X11_XRANDR              (Wanted: OFF): OFF
+--   SDL_X11_XSCRNSAVER          (Wanted: OFF): OFF
+--   SDL_X11_XSHAPE              (Wanted: OFF): OFF
+--   SDL_X11_XSYNC               (Wanted: OFF): OFF
+--   SDL_XINPUT                  (Wanted: ON): ON
+-- 
+--  Build Shared Library: OFF
+--  Build Static Library: ON
+--  Build Static Library with Position Independent Code: 
+-- 
+-- EGL disabled
+-- Enabling OpenGL support
+-- Could NOT find Vulkan (missing: Vulkan_LIBRARY Vulkan_INCLUDE_DIR) (found version "")
+-- Could NOT find JsonCpp (missing: JsonCpp_INCLUDE_DIR JsonCpp_LIBRARY) 
+-- Could NOT find glslc, using precompiled .spv files
+-- OpenXR 1.1.63
+-- Found and will use pre-generated xr_generated_dispatch_table.h in source tree
+-- Found and will use pre-generated xr_generated_dispatch_table.c in source tree
+-- Found and will use pre-generated xr_generated_dispatch_table_core.h in source tree
+-- Found and will use pre-generated xr_generated_dispatch_table_core.c in source tree
+-- Found and will use pre-generated xr_generated_loader.hpp in source tree
+-- Found and will use pre-generated xr_generated_loader.cpp in source tree
+-- Configuring done (7.3s)
+-- Generating done (1.3s)
+-- Build files have been written to: C:/ORCA/Fantasynt/build
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_control.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control.lib
+  fantasynt_control_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_control.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control.lib
+  fantasynt_net.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_net.lib
+  fantasynt_network_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_network_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  geometry.cpp
+  tunnel_geometry.cpp
+  surface_geometry.cpp
+  landscape_geometry.cpp
+  landscape_surfaces.cpp
+  sequence.cpp
+  opening_scene.cpp
+  Gerando Código...
+  fantasynt_geometry.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry.lib
+  geometry_tests.cpp
+  fantasynt_geometry_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_vr_math.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_vr_math.lib
+  fantasynt_vr_math_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_vr_math_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_geometry.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry.lib
+  sequence_tests.cpp
+C:\ORCA\Fantasynt\tests\sequence_tests.cpp(10,5): warning C4002: muitos argumentos para a invocação de macro de função 'CHECK' [C:\ORCA\Fantasynt\build\fantasynt_sequence_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\sequence_tests.cpp(10,5): error C2059: erro de sintaxe: ')' [C:\ORCA\Fantasynt\build\fantasynt_sequence_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\sequence_tests.cpp(10,79): error C2059: erro de sintaxe: ';' [C:\ORCA\Fantasynt\build\fantasynt_sequence_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\sequence_tests.cpp(11,5): error C2947: esperando '>' para encerrar lista de argumentos de template, encontrado '<' [C:\ORCA\Fantasynt\build\fantasynt_sequence_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\sequence_tests.cpp(11,5): error C2628: '' seguido por 'bool' é inválido (você esqueceu um ';'?) [C:\ORCA\Fantasynt\build\fantasynt_sequence_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\sequence_tests.cpp(10,5): error C2062: tipo '<erro>' inesperado [C:\ORCA\Fantasynt\build\fantasynt_sequence_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\sequence_tests.cpp(10,5): error C2144: erro de sintaxe: '<erro>' deve ser precedido por '(' [C:\ORCA\Fantasynt\build\fantasynt_sequence_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\sequence_tests.cpp(10,5): error C2660: 'test_check': função não recebe 1 argumentos [C:\ORCA\Fantasynt\build\fantasynt_sequence_tests.vcxproj]
+      C:\ORCA\Fantasynt\tests\test_support.hpp(7,13):
+      consulte a declaração de 'test_check'
+      C:\ORCA\Fantasynt\tests\sequence_tests.cpp(10,5):
+      ao tentar corresponder a lista de argumentos '()'
+  
+C:\ORCA\Fantasynt\tests\sequence_tests.cpp(11,5): error C2143: erro de sintaxe: ';' ausente antes de ')' [C:\ORCA\Fantasynt\build\fantasynt_sequence_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\sequence_tests.cpp(11,5): error C2059: erro de sintaxe: ')' [C:\ORCA\Fantasynt\build\fantasynt_sequence_tests.vcxproj]
+Comando falhou com cÃ³digo 1 : C:\Program Files (x86)\Microsoft Visual 
+Studio\18\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe
+At C:\ORCA\Fantasynt\tools\build.ps1:28 char:32
++ ... DE -ne 0) { throw "Comando falhou com cÃ³digo $LASTEXITCODE : $Execut ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Comando falhou ...e\bin\cmake.exe:String) [], RuntimeException
+    + FullyQualifiedErrorId : Comando falhou com cÃ³digo 1 : C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTo 
+   ols\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe
+ 

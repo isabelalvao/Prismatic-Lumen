@@ -1,0 +1,14 @@
+warning: in the working copy of 'C:\ORCA\Fantasynt\plan\rea-investigation\seeded-profile-fork\backups\src\config\types.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'C:\ORCA\Fantasynt\tools\vendor\rea-main-source\rea-df2c08b546d4f40103e11b8b31dbfc3d41ee687b\src\config\types.ts', LF will be replaced by CRLF the next time Git touches it
+diff --git "a/C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\seeded-profile-fork\\backups\\src\\config\\types.ts" "b/C:\\ORCA\\Fantasynt\\tools\\vendor\\rea-main-source\\rea-df2c08b546d4f40103e11b8b31dbfc3d41ee687b\\src\\config\\types.ts"
+index c398d6f..683cef0 100644
+--- "a/C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\seeded-profile-fork\\backups\\src\\config\\types.ts"
++++ "b/C:\\ORCA\\Fantasynt\\tools\\vendor\\rea-main-source\\rea-df2c08b546d4f40103e11b8b31dbfc3d41ee687b\\src\\config\\types.ts"
+@@ -16,6 +16,7 @@ export interface AppConfig {
+   readonly ghidraLanguageOverride?: GhidraLanguageOverride;
+   readonly ghidraDisabledAnalyzers?: readonly string[];
+   readonly ghidraSeedFile?: string;
++  readonly ghidraSeededOnly?: true;
+   readonly ghidraNativeAotJar?: string;
+   readonly ilspyCmdPath: string | undefined;
+   readonly hopperLauncherPath: string;

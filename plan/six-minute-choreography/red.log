@@ -1,0 +1,6 @@
+FAIL line 6: c[Setting::OpeningDuration]==360
+FAIL line 12: start.opening_weight==0 && start.weights[0]==0 && start.weights[1]==0
+FAIL line 13: halfway.weights[2]>0 && halfway.weights[2]<1
+FAIL line 16: directed_visual_parameters(state,180,c).fog_density<state.fog_density
+FAIL line 17: directed_composition(180,true,c).atmosphere.r<sample_sequence(180).atmosphere.r
+FAIL line 18: std::abs((directed_camera_position(360,c))-(-6400.00048828125+54000)) <= (0.001)

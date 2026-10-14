@@ -1,0 +1,44 @@
+[
+  {
+    "path": "native/windows/src/addon.cc",
+    "expected_sha256": "b63ba7aab783f308e1bb9aa97900498da086dddada118fa7c0a7e2ad3059d1a5",
+    "current_sha256": "b63ba7aab783f308e1bb9aa97900498da086dddada118fa7c0a7e2ad3059d1a5",
+    "unchanged": true
+  },
+  {
+    "path": "native/windows/src/authority.hpp",
+    "expected_sha256": "5e9fbd644756c8de373e5c25dd125df11e8ed19c06fd5b15c00b1d98d314008c",
+    "current_sha256": "5e9fbd644756c8de373e5c25dd125df11e8ed19c06fd5b15c00b1d98d314008c",
+    "unchanged": true
+  },
+  {
+    "path": "native/windows/src/filesystem.cc",
+    "expected_sha256": "5135a18dfa49bc4b67578c07d615e94e96585fde0d1264f9b4d4e5d2cafc0274",
+    "current_sha256": "5135a18dfa49bc4b67578c07d615e94e96585fde0d1264f9b4d4e5d2cafc0274",
+    "unchanged": true
+  },
+  {
+    "path": "native/windows/src/process.cc",
+    "expected_sha256": "adcb66fa3ebe7c2284b51d6b3ada5d9a640a4d22e73496205e33f1f734e57e21",
+    "current_sha256": "adcb66fa3ebe7c2284b51d6b3ada5d9a640a4d22e73496205e33f1f734e57e21",
+    "unchanged": true
+  },
+  {
+    "path": "scripts/build-windows-native.mjs",
+    "expected_sha256": "3d7fa3e69013772904ef30b27d09f1ad3c3faa8625973ae31f5da41e2e587d6a",
+    "current_sha256": "3d7fa3e69013772904ef30b27d09f1ad3c3faa8625973ae31f5da41e2e587d6a",
+    "unchanged": true
+  },
+  {
+    "path": "scripts/verify-windows-native-artifact.mjs",
+    "expected_sha256": "2777e5f36329f16d8234548aece6329311e17be6d0550330bffaf53958e0f6c8",
+    "current_sha256": "2777e5f36329f16d8234548aece6329311e17be6d0550330bffaf53958e0f6c8",
+    "unchanged": true
+  },
+  {
+    "path": "src/windows/WindowsNativeLoader.ts",
+    "expected_sha256": "0f2c0550d53121a4d5c269d12ab46f43499cda988072024c5eb97ec3a2f0fc47",
+    "current_sha256": "0f2c0550d53121a4d5c269d12ab46f43499cda988072024c5eb97ec3a2f0fc47",
+    "unchanged": true
+  }
+]

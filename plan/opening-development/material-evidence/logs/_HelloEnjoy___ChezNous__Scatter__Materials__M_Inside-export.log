@@ -1,0 +1,17 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Inside.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 31 Exports: 1 Imports: 4 Game: 10000D0
+Export "M_Inside" was found in package "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Inside.uasset"
+Found 1 object(s)
+Loading MaterialInstanceConstant M_Inside from package /Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Inside.uasset
+Loading package: /Game/_HelloEnjoy_/Materials/BaseMaterials/M_Color_EmissiveGI.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 67 Exports: 4 Imports: 4 Game: 10000D0
+Loading Material3 M_Color_EmissiveGI from package /Game/_HelloEnjoy_/Materials/BaseMaterials/M_Color_EmissiveGI.uasset
+StructProperty: unknown UMaterial3 BaseColor
+BoolProperty: unknown UMaterial3 bUseEmissiveForDynamicAreaLighting
+BoolProperty: unknown UMaterial3 bUseLightmapDirectionality
+FloatProperty: unknown UMaterialExpressionScalarParameter SliderMax
+FloatProperty: unknown UMaterialExpressionScalarParameter SliderMax
+Loaded in 0.0 sec, 68 allocs, 0.03 MBytes serialized in 7 calls.
+Exporting objects ...
+Ignoring MaterialInstanceConstant'M_Inside' due to empty parameters

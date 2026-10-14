@@ -1,0 +1,52 @@
+{
+  "input": {
+    "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tree_Off.uasset",
+    "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tree_Off",
+    "object_name": "SM_Tree_Off",
+    "class_reference": "/Script/Engine.StaticMesh",
+    "export_index": 3,
+    "serial_offset": 10660,
+    "serial_size": 2924,
+    "payload_sha1": "f1e53b71304f8ba593aad92ab3e12006b9d0edaf",
+    "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+    "source_reports": [
+      "mesh-assets.json",
+      "geometry-controller-assets.json"
+    ],
+    "payload_pak_offset": 99186741,
+    "payload_size": 13588,
+    "source_sha1_verified": true,
+    "resource_id": "SM_Tree_Off-f1e53b71"
+  },
+  "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tree_Off-f1e53b71",
+  "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+  "args": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-export",
+    "-gltf",
+    "-notex",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tree_Off-f1e53b71",
+    "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tree_Off",
+    "SM_Tree_Off",
+    "StaticMesh"
+  ],
+  "returncode": 0,
+  "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Tree_Off-f1e53b71.log",
+  "method": "qualified package+object+class UModel export",
+  "elapsed_seconds": 0.0470000000204891,
+  "files": [
+    {
+      "path": "resources\\SM_Tree_Off-f1e53b71\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tree_Off.bin",
+      "size": 2496,
+      "sha256": "7f8f22edc84a3b57dbf4feffdd1d99332b7e1c070b554565988c7b280244feb3"
+    },
+    {
+      "path": "resources\\SM_Tree_Off-f1e53b71\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tree_Off.gltf",
+      "size": 2068,
+      "sha256": "6ace21727966cdb7b7b44827a0b80b7ab5db057c6c31f89a836b85444d2069a7"
+    }
+  ],
+  "export_status": "exported_pending_geometry_validation"
+}

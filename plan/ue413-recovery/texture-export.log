@@ -1,0 +1,10 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/_HelloEnjoy_/Materials/Textures/DiagonalLine32.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 14 Exports: 1 Imports: 2 Game: 10000D0
+Loaded in 0.0 sec, 19 allocs, 0.00 MBytes serialized in 1 calls.
+Loading Texture2D DiagonalLine32 from package /Game/_HelloEnjoy_/Materials/Textures/DiagonalLine32.uasset
+Exporting objects ...
+Exporting Texture2D DiagonalLine32 to C:/ORCA/Fantasynt/plan/ue413-recovery/sample-texture/Game/_HelloEnjoy_/Materials/Textures/DiagonalLine32.png
+Memory: allocated 538194 bytes in 273 blocks
+Exported 1/1 objects in 0.0 sec

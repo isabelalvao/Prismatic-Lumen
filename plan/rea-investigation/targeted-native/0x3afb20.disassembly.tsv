@@ -1,0 +1,12 @@
+0x1403afb20	48895c2430	mov	qword ptr [rsp + 0x30], rbx
+0x1403afb25	e8b6a5fdff	call	0x14038a0e0
+0x1403afb2a	8bd8	mov	ebx, eax
+0x1403afb2c	e8ffca5300	call	0x1408ec630
+0x1403afb31	488bd0	mov	rdx, rax
+0x1403afb34	895c2420	mov	dword ptr [rsp + 0x20], ebx
+0x1403afb38	41b91c000000	mov	r9d, 0x1c
+0x1403afb3e	4c8d05e3159c01	lea	r8, [rip + 0x19c15e3]
+0x1403afb45	488d0da4bb0e00	lea	rcx, [rip + 0xebba4]
+0x1403afb4c	e80f6beaff	call	0x140256660
+0x1403afb51	488b5c2430	mov	rbx, qword ptr [rsp + 0x30]
+0x1403afb56	4889058b043d02	mov	qword ptr [rip + 0x23d048b], rax

@@ -1,0 +1,4 @@
+FAIL line 47: beat.pulse_group(1.05,0)==0
+FAIL line 48: beat.pulse_group(1.6,0)==0
+FAIL line 49: beat.pulse_group(2.05,0)==1
+FAIL line 50: beat.pulse_group(2.05,1.5)==0

@@ -1,0 +1,43 @@
+{
+  "mesh": {
+    "vertices": 121,
+    "indices": 648,
+    "triangles": 216,
+    "gltf_bounds_min_m": [
+      -0.43301260471343994,
+      -1.4901161193847656e-08,
+      -0.433012455701828
+    ],
+    "gltf_bounds_max_m": [
+      0.4330127239227295,
+      0.25,
+      0.43301260471343994
+    ],
+    "gltf_origin_cm": [
+      5.9604644775390625e-06,
+      12.49999925494194,
+      7.450580596923828e-06
+    ],
+    "gltf_extent_cm": [
+      43.30126643180847,
+      12.50000074505806,
+      43.3012530207634
+    ],
+    "ue_to_gltf_basis": "Bounds confirm Y/Z axis swap and centimetres to metres; orientation signs not independently checked here.",
+    "normals_length_range": [
+      0.9999998866456615,
+      1.0000000903280157
+    ],
+    "uv_present": true,
+    "tangents_present": true,
+    "indices_valid": true,
+    "material": "dummy_material_0: original material NOT reconstructed"
+  },
+  "texture": {
+    "width": 256,
+    "height": 256,
+    "mode": "RGB",
+    "distinct_colors": 6,
+    "pixel_sha256": "fc0043ee35a932c964d1a3af1277c378536354ad49bd9ce2fbc299375df40702"
+  }
+}

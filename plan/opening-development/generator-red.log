@@ -1,0 +1,41 @@
+FFFF
+======================================================================
+FAIL: test_binary_preserves_geometry_and_offsets_second_primitive (__main__.OpeningAssetTests.test_binary_preserves_geometry_and_offsets_second_primitive)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\plan\opening-development\source-data\test_generate_opening_assets.py", line 24, in setUp
+    self.fail("O gerador e o contrato .fmesh ainda não foram implementados")
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: O gerador e o contrato .fmesh ainda não foram implementados
+
+======================================================================
+FAIL: test_matrix_conjugates_axis_swap_without_rescaling_authored_row (__main__.OpeningAssetTests.test_matrix_conjugates_axis_swap_without_rescaling_authored_row)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\plan\opening-development\source-data\test_generate_opening_assets.py", line 24, in setUp
+    self.fail("O gerador e o contrato .fmesh ainda não foram implementados")
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: O gerador e o contrato .fmesh ainda não foram implementados
+
+======================================================================
+FAIL: test_rejects_index_outside_source_primitive (__main__.OpeningAssetTests.test_rejects_index_outside_source_primitive)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\plan\opening-development\source-data\test_generate_opening_assets.py", line 24, in setUp
+    self.fail("O gerador e o contrato .fmesh ainda não foram implementados")
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: O gerador e o contrato .fmesh ainda não foram implementados
+
+======================================================================
+FAIL: test_rejects_truncated_external_buffer (__main__.OpeningAssetTests.test_rejects_truncated_external_buffer)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\plan\opening-development\source-data\test_generate_opening_assets.py", line 24, in setUp
+    self.fail("O gerador e o contrato .fmesh ainda não foram implementados")
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: O gerador e o contrato .fmesh ainda não foram implementados
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.008s
+
+FAILED (failures=4)

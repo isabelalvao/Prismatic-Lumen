@@ -1,0 +1,1463 @@
+{
+  "meshes": [
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/alpha32.uasset",
+      "sha1": "8420185cd8718d32a52ac3b99a31d741aa2b63bd",
+      "serial_offset": 17184,
+      "remaining_native_bytes": 11926,
+      "bounds_offset": 17283,
+      "bounds": {
+        "Origin": [
+          -25.0,
+          -7.457743167877197,
+          0.0
+        ],
+        "BoxExtent": [
+          15.915508270263672,
+          7.957743167877197,
+          50.0
+        ],
+        "SphereRadius": 51.04914093017578
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/alpha_mat.alpha_mat"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/alpha33.uasset",
+      "sha1": "037ba6cbd3f08b41c47f00bb664dcae938aaf73f",
+      "serial_offset": 16054,
+      "remaining_native_bytes": 11050,
+      "bounds_offset": 16153,
+      "bounds": {
+        "Origin": [
+          25.0,
+          8.457743644714355,
+          -3.125
+        ],
+        "BoxExtent": [
+          15.915508270263672,
+          7.9577436447143555,
+          46.875
+        ],
+        "SphereRadius": 49.1625862121582
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/alpha_mat.alpha_mat"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/blue32.uasset",
+      "sha1": "a2348040bb144c4f93eb38f53d05b2f6eb099b4c",
+      "serial_offset": 31762,
+      "remaining_native_bytes": 24890,
+      "bounds_offset": 31861,
+      "bounds": {
+        "Origin": [
+          -25.0,
+          -7.457743167877197,
+          0.0
+        ],
+        "BoxExtent": [
+          15.915508270263672,
+          7.957743167877197,
+          50.0
+        ],
+        "SphereRadius": 53.07192611694336
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/blue_mat.blue_mat"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/blue33.uasset",
+      "sha1": "58f3311b81a364f6dc49e41228887eced67db2e6",
+      "serial_offset": 31946,
+      "remaining_native_bytes": 24602,
+      "bounds_offset": 32045,
+      "bounds": {
+        "Origin": [
+          25.0,
+          8.457743644714355,
+          0.0
+        ],
+        "BoxExtent": [
+          15.915508270263672,
+          7.9577436447143555,
+          50.0
+        ],
+        "SphereRadius": 53.07192611694336
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/blue_mat.blue_mat"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/green32.uasset",
+      "sha1": "94cfb01fe92f59391987e373fd5c57064608b2e8",
+      "serial_offset": 25684,
+      "remaining_native_bytes": 19838,
+      "bounds_offset": 25783,
+      "bounds": {
+        "Origin": [
+          -25.0,
+          -7.457743167877197,
+          0.0
+        ],
+        "BoxExtent": [
+          15.915508270263672,
+          7.957743167877197,
+          50.0
+        ],
+        "SphereRadius": 53.07192611694336
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/green_mat.green_mat"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/green33.uasset",
+      "sha1": "550b30025ca6d2fb794fde4afbdfae81ee6b801e",
+      "serial_offset": 30664,
+      "remaining_native_bytes": 23062,
+      "bounds_offset": 30763,
+      "bounds": {
+        "Origin": [
+          25.0,
+          8.457743644714355,
+          0.0
+        ],
+        "BoxExtent": [
+          15.915508270263672,
+          7.9577436447143555,
+          50.0
+        ],
+        "SphereRadius": 53.07192611694336
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/green_mat.green_mat"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/red32.uasset",
+      "sha1": "3f811393d139d00f2a98f6d94e71eb21c7348924",
+      "serial_offset": 26588,
+      "remaining_native_bytes": 20226,
+      "bounds_offset": 26687,
+      "bounds": {
+        "Origin": [
+          -25.0,
+          -7.457743167877197,
+          -1.5625
+        ],
+        "BoxExtent": [
+          15.915508270263672,
+          7.957743167877197,
+          48.4375
+        ],
+        "SphereRadius": 51.1214599609375
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/red_mat.red_mat"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/red33.uasset",
+      "sha1": "7d90d621082a958576b1001354499a4f3033be77",
+      "serial_offset": 22680,
+      "remaining_native_bytes": 17158,
+      "bounds_offset": 22779,
+      "bounds": {
+        "Origin": [
+          25.0,
+          8.457743644714355,
+          0.0
+        ],
+        "BoxExtent": [
+          15.915508270263672,
+          7.9577436447143555,
+          50.0
+        ],
+        "SphereRadius": 52.15068817138672
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/red_mat.red_mat"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Ground.uasset",
+      "sha1": "7d5f6db6a6adbb0b96d81400188bd178fb603039",
+      "serial_offset": 8325,
+      "remaining_native_bytes": 33554,
+      "bounds_offset": 8370,
+      "bounds": {
+        "Origin": [
+          0.0,
+          -0.00054931640625,
+          700.0
+        ],
+        "BoxExtent": [
+          602.17919921875,
+          602.1798095703125,
+          700.0
+        ],
+        "SphereRadius": 1039.176513671875
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pyramid_Map.M_Pyramid_Map",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/CamoLine/red_mat.red_mat"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Ground_0.uasset",
+      "sha1": "1852674678086eaff32a3a5d7caa9263204ec68e",
+      "serial_offset": 8436,
+      "remaining_native_bytes": 41602,
+      "bounds_offset": 8510,
+      "bounds": {
+        "Origin": [
+          0.0,
+          -3.0517578125e-05,
+          787.4998779296875
+        ],
+        "BoxExtent": [
+          439.15203857421875,
+          439.1520690917969,
+          612.5
+        ],
+        "SphereRadius": 830.4356689453125
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Inside.M_Inside",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pyramid_Map.M_Pyramid_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Ground_1.uasset",
+      "sha1": "d4fd52b566ff5b74d12661fdbd79dc47c983ecc8",
+      "serial_offset": 2258,
+      "remaining_native_bytes": 47774,
+      "bounds_offset": 2365,
+      "bounds": {
+        "Origin": [
+          0.0,
+          -0.00054931640625,
+          612.4999389648438
+        ],
+        "BoxExtent": [
+          602.17919921875,
+          602.1798095703125,
+          612.5000610351562
+        ],
+        "SphereRadius": 982.4556274414062
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/CamoLine/red_mat.red_mat",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pyramid_Map.M_Pyramid_Map",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Inside.M_Inside"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RoundDiamond.uasset",
+      "sha1": "7e6d45e5c3a9c9d5df5761896c0738029381ff6b",
+      "serial_offset": 5813,
+      "remaining_native_bytes": 24534,
+      "bounds_offset": 5912,
+      "bounds": {
+        "BoxExtent": [
+          50.18163299560547,
+          50.181640625,
+          140.00003051757812
+        ],
+        "SphereRadius": 140.00003051757812
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pyramid_Map.M_Pyramid_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RoundDiamond_0.uasset",
+      "sha1": "bcdee3403396a97a419b97ce730866cf8567b9c2",
+      "serial_offset": 4219,
+      "remaining_native_bytes": 85506,
+      "bounds_offset": 4322,
+      "bounds": {
+        "Origin": [
+          0.0,
+          -3.814697265625e-06,
+          8.75
+        ],
+        "BoxExtent": [
+          50.18163299560547,
+          50.18163299560547,
+          131.25
+        ],
+        "SphereRadius": 131.49761962890625
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_InsideOut.M_InsideOut",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pyramid_Map.M_Pyramid_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RoundDiamond_1.uasset",
+      "sha1": "58dd4af87ef99e9f062cc7f2c3df0a4246546bbc",
+      "serial_offset": 2015,
+      "remaining_native_bytes": 85506,
+      "bounds_offset": 2118,
+      "bounds": {
+        "Origin": [
+          0.0,
+          -3.814697265625e-06,
+          -8.749984741210938
+        ],
+        "BoxExtent": [
+          50.18163299560547,
+          50.18163299560547,
+          131.25
+        ],
+        "SphereRadius": 131.4976043701172
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pyramid_Map.M_Pyramid_Map",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_InsideOut.M_InsideOut"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Sky.uasset",
+      "sha1": "21b0b603936e6921138b262657d41501cb623e18",
+      "serial_offset": 10683,
+      "remaining_native_bytes": 14122,
+      "bounds_offset": 10782,
+      "bounds": {
+        "BoxExtent": [
+          1.7499983310699463,
+          1.7320513725280762,
+          51.8372802734375
+        ],
+        "SphereRadius": 51.8372802734375
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeSky_Map.M_TubeSky_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/tube_shapes_tube_square.uasset",
+      "sha1": "96c85acc6426e86e278bc519798ecee8872cfb5d",
+      "serial_offset": 5747,
+      "remaining_native_bytes": 111590,
+      "bounds_offset": 5846,
+      "bounds": {
+        "BoxExtent": [
+          111.75,
+          1.7320513725280762,
+          111.75
+        ],
+        "SphereRadius": 153.121826171875
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Door_Square.M_Door_Square"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Terrain.uasset",
+      "sha1": "5a72686de583b08fa1fd4a43c7baa26aae699918",
+      "serial_offset": 4692,
+      "remaining_native_bytes": 2398,
+      "bounds_offset": 4762,
+      "bounds": {
+        "Origin": [
+          0.0,
+          0.0,
+          26.0
+        ],
+        "BoxExtent": [
+          1.9999980926513672,
+          1.7320513725280762,
+          26.0
+        ],
+        "SphereRadius": 26.07680892944336
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeTerrain_Map.M_TubeTerrain_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/tube_shapes_tube_triangle.uasset",
+      "sha1": "82b5e0e79d50ac731984d0eed1d012abbf29f16e",
+      "serial_offset": 5770,
+      "remaining_native_bytes": 84078,
+      "bounds_offset": 5869,
+      "bounds": {
+        "Origin": [
+          0.0,
+          0.0,
+          0.3382415771484375
+        ],
+        "BoxExtent": [
+          109.16154479980469,
+          1.7320513725280762,
+          95.30316162109375
+        ],
+        "SphereRadius": 141.6334686279297
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Door_Triangle.M_Door_Triangle"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Terrain.uasset",
+      "sha1": "0d563fde7bc33fcef766ab0b157c45e0fae6d1bc",
+      "serial_offset": 8107,
+      "remaining_native_bytes": 27766,
+      "bounds_offset": 8148,
+      "bounds": {
+        "Origin": [
+          0.0,
+          -3.0517578125e-05,
+          700.0
+        ],
+        "BoxExtent": [
+          501.81634521484375,
+          501.8163757324219,
+          700.0001220703125
+        ],
+        "SphereRadius": 949.0076293945312
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pyramid_Map.M_Pyramid_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pole_Map.uasset",
+      "sha1": "ff556b65df465736eaaa30fb58487f5104729f51",
+      "serial_offset": 5804,
+      "remaining_native_bytes": 8382,
+      "bounds_offset": 5853,
+      "bounds": {
+        "Origin": [
+          -4.76837158203125e-06,
+          -1.6689300537109375e-05,
+          70.0
+        ],
+        "BoxExtent": [
+          10.01816463470459,
+          5.018176555633545,
+          70.0
+        ],
+        "SphereRadius": 70.80082702636719
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/Materials/M_BasicMetal_Grey.M_BasicMetal_Grey",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleMap_Map.M_PoleMap_Map",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Hollow/hollow_pyramid_mat.hollow_pyramid_mat"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Laser.uasset",
+      "sha1": "b74779c80dc171345308e299238eea3b70c8a0ce",
+      "serial_offset": 2367,
+      "remaining_native_bytes": 6646,
+      "bounds_offset": 2437,
+      "bounds": {
+        "Origin": [
+          9.5367431640625e-07,
+          0.0,
+          12999.9990234375
+        ],
+        "BoxExtent": [
+          10.0,
+          9.999999046325684,
+          12810.0
+        ],
+        "SphereRadius": 12810.0009765625
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/Fantasynth/Assets/Laser/M_LaserGradient.M_LaserGradient"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Black.uasset",
+      "sha1": "036f7f44b39f503fe5b5812acc749d268e96bbfa",
+      "serial_offset": 6523,
+      "remaining_native_bytes": 8374,
+      "bounds_offset": 6564,
+      "bounds": {
+        "Origin": [
+          -3.814697265625e-06,
+          -3.814697265625e-06,
+          70.0
+        ],
+        "BoxExtent": [
+          49.78932189941406,
+          49.78932189941406,
+          70.00001525878906
+        ],
+        "SphereRadius": 94.90076446533203
+      },
+      "materials": [
+        "/Game/Substance/Metal/Metal_006_MAT.Metal_006_MAT"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Gold.uasset",
+      "sha1": "04c755a00830705d20af02772f8c7222bb11d5c9",
+      "serial_offset": 6676,
+      "remaining_native_bytes": 14518,
+      "bounds_offset": 6717,
+      "bounds": {
+        "Origin": [
+          0.0,
+          -3.814697265625e-06,
+          70.0
+        ],
+        "BoxExtent": [
+          50.18163299560547,
+          50.181636810302734,
+          70.00001525878906
+        ],
+        "SphereRadius": 94.9007568359375
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_MAT.Gold_MAT"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tree.uasset",
+      "sha1": "b5cf91c33861a96937d2603388e5d0a794c94741",
+      "serial_offset": 10652,
+      "remaining_native_bytes": 2638,
+      "bounds_offset": 10722,
+      "bounds": {
+        "Origin": [
+          3.814697265625e-06,
+          5.7220458984375e-06,
+          800.0
+        ],
+        "BoxExtent": [
+          24.999996185302734,
+          24.99999237060547,
+          800.0
+        ],
+        "SphereRadius": 800.3905029296875
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Tree_Map.M_Tree_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tree_Off.uasset",
+      "sha1": "f1e53b71304f8ba593aad92ab3e12006b9d0edaf",
+      "serial_offset": 10660,
+      "remaining_native_bytes": 2638,
+      "bounds_offset": 10730,
+      "bounds": {
+        "Origin": [
+          3.814697265625e-06,
+          5.7220458984375e-06,
+          800.0
+        ],
+        "BoxExtent": [
+          24.999996185302734,
+          24.99999237060547,
+          800.0
+        ],
+        "SphereRadius": 800.3905029296875
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Tree_Off.M_Tree_Off"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_Cut_1.uasset",
+      "sha1": "2bbcdb0a6df53a042481ce6d3d49552338bef44f",
+      "serial_offset": 10648,
+      "remaining_native_bytes": 13582,
+      "bounds_offset": 10689,
+      "bounds": {
+        "Origin": [
+          7.62939453125e-06,
+          7.62939453125e-06,
+          12.499999046325684
+        ],
+        "BoxExtent": [
+          43.30126953125,
+          43.30125427246094,
+          12.500000953674316
+        ],
+        "SphereRadius": 45.06938934326172
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot1_Map.M_Dot1_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_Cut_2.uasset",
+      "sha1": "c796344fea0d4760590cb4fd620afe83c73c32bb",
+      "serial_offset": 10695,
+      "remaining_native_bytes": 13582,
+      "bounds_offset": 10765,
+      "bounds": {
+        "Origin": [
+          7.62939453125e-06,
+          7.62939453125e-06,
+          12.499999046325684
+        ],
+        "BoxExtent": [
+          43.30126953125,
+          43.30125427246094,
+          12.500000953674316
+        ],
+        "SphereRadius": 45.06938934326172
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot2_Map.M_Dot2_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_Cut_3.uasset",
+      "sha1": "5dc3fb2fe4e8101996ab3fce7d0ec76c4cc2f00f",
+      "serial_offset": 10648,
+      "remaining_native_bytes": 13582,
+      "bounds_offset": 10689,
+      "bounds": {
+        "Origin": [
+          7.62939453125e-06,
+          7.62939453125e-06,
+          12.499999046325684
+        ],
+        "BoxExtent": [
+          43.30126953125,
+          43.30125427246094,
+          12.500000953674316
+        ],
+        "SphereRadius": 45.06938934326172
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot3_Map.M_Dot3_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_Cut_4.uasset",
+      "sha1": "42f992af7835f6b21693272ea307b90369a5da86",
+      "serial_offset": 10648,
+      "remaining_native_bytes": 13582,
+      "bounds_offset": 10689,
+      "bounds": {
+        "Origin": [
+          7.62939453125e-06,
+          7.62939453125e-06,
+          12.499999046325684
+        ],
+        "BoxExtent": [
+          43.30126953125,
+          43.30125427246094,
+          12.500000953674316
+        ],
+        "SphereRadius": 45.06938934326172
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot4_Map.M_Dot4_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_1.uasset",
+      "sha1": "90943fe377307fc25748d966b6267354c806b09f",
+      "serial_offset": 10640,
+      "remaining_native_bytes": 16102,
+      "bounds_offset": 10681,
+      "bounds": {
+        "Origin": [
+          0.02735137939453125,
+          0.10469818115234375,
+          9.407100677490234
+        ],
+        "BoxExtent": [
+          45.882850646972656,
+          46.08909606933594,
+          16.492900848388672
+        ],
+        "SphereRadius": 49.80025100708008
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot1_Map.M_Dot1_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_2.uasset",
+      "sha1": "0b1135c5da396f93c2fc4deaf4bba07f9e6bca48",
+      "serial_offset": 10640,
+      "remaining_native_bytes": 16102,
+      "bounds_offset": 10681,
+      "bounds": {
+        "Origin": [
+          0.02735137939453125,
+          0.10469818115234375,
+          9.407100677490234
+        ],
+        "BoxExtent": [
+          45.882850646972656,
+          46.08909606933594,
+          16.492900848388672
+        ],
+        "SphereRadius": 49.80025100708008
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot2_Map.M_Dot2_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_3.uasset",
+      "sha1": "c772df6262415c7cffdcaac4a1825ed38a129a82",
+      "serial_offset": 10716,
+      "remaining_native_bytes": 16102,
+      "bounds_offset": 10757,
+      "bounds": {
+        "Origin": [
+          0.02735137939453125,
+          0.10469818115234375,
+          9.407100677490234
+        ],
+        "BoxExtent": [
+          45.882850646972656,
+          46.08909606933594,
+          16.492900848388672
+        ],
+        "SphereRadius": 49.80025100708008
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot3_Map.M_Dot3_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_4.uasset",
+      "sha1": "12ae0966e82509424ad10fcc69d0072c2e3bc778",
+      "serial_offset": 10640,
+      "remaining_native_bytes": 16102,
+      "bounds_offset": 10681,
+      "bounds": {
+        "Origin": [
+          0.02735137939453125,
+          0.10469818115234375,
+          9.407100677490234
+        ],
+        "BoxExtent": [
+          45.882850646972656,
+          46.08909606933594,
+          16.492900848388672
+        ],
+        "SphereRadius": 49.80025100708008
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot4_Map.M_Dot4_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pole.uasset",
+      "sha1": "75f3a9b6b1976655df2d4396151efe44433104ce",
+      "serial_offset": 5817,
+      "remaining_native_bytes": 11674,
+      "bounds_offset": 5870,
+      "bounds": {
+        "Origin": [
+          0.0,
+          0.0,
+          70.0
+        ],
+        "BoxExtent": [
+          15.054479598999023,
+          15.054479598999023,
+          70.0
+        ],
+        "SphereRadius": 72.5916976928711
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleCap_Map.M_PoleCap_Map",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pole_Map.M_Pole_Map",
+        "/Game/_HelloEnjoy_/Materials/M_BasicMetal_Grey.M_BasicMetal_Grey",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleBase_Map.M_PoleBase_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_PoleDot.uasset",
+      "sha1": "065325d7eb30f5d24a685bc6aca6e2b4539e9153",
+      "serial_offset": 5755,
+      "remaining_native_bytes": 502,
+      "bounds_offset": 5825,
+      "bounds": {
+        "BoxExtent": [
+          50.0,
+          50.0,
+          6.12323420998628e-15
+        ],
+        "SphereRadius": 70.71067810058594
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleDot_Map.M_PoleDot_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Diamond_Map.uasset",
+      "sha1": "559f23e13bb23e133a579069773a34eccc584cfc",
+      "serial_offset": 5811,
+      "remaining_native_bytes": 24534,
+      "bounds_offset": 5910,
+      "bounds": {
+        "BoxExtent": [
+          50.18163299560547,
+          50.181640625,
+          140.00003051757812
+        ],
+        "SphereRadius": 140.00003051757812
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Diamond_Map.M_Diamond_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Diamond_Single.uasset",
+      "sha1": "3a513678d31b8bfe8a5bcb38ab6479ac8e8efd0f",
+      "serial_offset": 1940,
+      "remaining_native_bytes": 24534,
+      "bounds_offset": 2039,
+      "bounds": {
+        "BoxExtent": [
+          50.18163299560547,
+          50.181640625,
+          140.00003051757812
+        ],
+        "SphereRadius": 140.00003051757812
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Diamond_Map.M_Diamond_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_FogSheet_Forest.uasset",
+      "sha1": "54c6830de1e0beb962e4d3226fb2444db7b29c3e",
+      "serial_offset": 3220,
+      "remaining_native_bytes": 502,
+      "bounds_offset": 3290,
+      "bounds": {
+        "BoxExtent": [
+          50.0,
+          50.0,
+          6.12323420998628e-15
+        ],
+        "SphereRadius": 70.71067810058594
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_FogSheet_Forest.M_FogSheet_Forest"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_FogSheet_Tunnel.uasset",
+      "sha1": "0ea81c7fdc32ea8ed9f2d5efa939926ef360d913",
+      "serial_offset": 3220,
+      "remaining_native_bytes": 502,
+      "bounds_offset": 3290,
+      "bounds": {
+        "BoxExtent": [
+          50.0,
+          50.0,
+          6.12323420998628e-15
+        ],
+        "SphereRadius": 70.71067810058594
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_FogSheet_Tunnel.M_FogSheet_Tunnel"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_FogSheet_Void.uasset",
+      "sha1": "75d414e8395460ec556585fc3636fb7ca7ad5558",
+      "serial_offset": 3212,
+      "remaining_native_bytes": 502,
+      "bounds_offset": 3282,
+      "bounds": {
+        "BoxExtent": [
+          50.0,
+          50.0,
+          6.12323420998628e-15
+        ],
+        "SphereRadius": 70.71067810058594
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_FogSheet_Void.M_FogSheet_Void"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Hex_Hole_1.uasset",
+      "sha1": "c68b766f05028afa28529fd8c4db1ad7ade1c8f6",
+      "serial_offset": 9499,
+      "remaining_native_bytes": 10802,
+      "bounds_offset": 9573,
+      "bounds": {
+        "Origin": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "BoxExtent": [
+          48.49370193481445,
+          43.301300048828125,
+          8.0
+        ],
+        "SphereRadius": 49.17327117919922
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/Materials/Basic_Materials/M_Black_M0_R025.M_Black_M0_R025",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Hex_Hole_1_Map.M_Hex_Hole_1_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Hex_Solid_1.uasset",
+      "sha1": "76f06668d0e633660719cd0c6eba4f16d7d1f95b",
+      "serial_offset": 9503,
+      "remaining_native_bytes": 5474,
+      "bounds_offset": 9577,
+      "bounds": {
+        "Origin": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "BoxExtent": [
+          48.49370193481445,
+          43.301300048828125,
+          8.0
+        ],
+        "SphereRadius": 49.17327117919922
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/Materials/Basic_Materials/M_Black_M0_R025.M_Black_M0_R025",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Hex_Solid_1_Map.M_Hex_Solid_1_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Hex_Solid_2.uasset",
+      "sha1": "c69912590e73b6451535ecd6a36849ed37523fde",
+      "serial_offset": 9503,
+      "remaining_native_bytes": 5474,
+      "bounds_offset": 9577,
+      "bounds": {
+        "Origin": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "BoxExtent": [
+          48.49370193481445,
+          43.301300048828125,
+          8.0
+        ],
+        "SphereRadius": 49.17327117919922
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/Materials/Basic_Materials/M_Black_M0_R025.M_Black_M0_R025",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Hex_Solid_2_Map.M_Hex_Solid_2_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/hollow_pyramid.uasset",
+      "sha1": "240d5d74287ee91e71a85a398062c77e9f3017b2",
+      "serial_offset": 5194,
+      "remaining_native_bytes": 21430,
+      "bounds_offset": 5264,
+      "bounds": {
+        "Origin": [
+          -3.814697265625e-06,
+          0.0,
+          69.97171783447266
+        ],
+        "BoxExtent": [
+          48.880958557128906,
+          48.86724090576172,
+          70.0000228881836
+        ],
+        "SphereRadius": 94.90077209472656
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Hollow/hollow_pyramid_mat.hollow_pyramid_mat"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/hollow_pyramid_complex.uasset",
+      "sha1": "3bac81dffa7805f2d74e4770da81e7bd1b0ee436",
+      "serial_offset": 5210,
+      "remaining_native_bytes": 21430,
+      "bounds_offset": 5280,
+      "bounds": {
+        "Origin": [
+          -3.814697265625e-06,
+          0.0,
+          69.97171783447266
+        ],
+        "BoxExtent": [
+          48.880958557128906,
+          48.86724090576172,
+          70.0000228881836
+        ],
+        "SphereRadius": 94.90077209472656
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Hollow/hollow_pyramid_mat.hollow_pyramid_mat"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_1.uasset",
+      "sha1": "c55b2515dd651a885fe03d9a04c4680da8c7db78",
+      "serial_offset": 10543,
+      "remaining_native_bytes": 13582,
+      "bounds_offset": 10584,
+      "bounds": {
+        "Origin": [
+          7.62939453125e-06,
+          7.62939453125e-06,
+          12.499999046325684
+        ],
+        "BoxExtent": [
+          43.30126953125,
+          43.30125427246094,
+          12.500000953674316
+        ],
+        "SphereRadius": 45.06938934326172
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Lower_1.M_Lower_1"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_2.uasset",
+      "sha1": "b1016d219cd379c799043c4ca81e36a5b55a5db6",
+      "serial_offset": 10543,
+      "remaining_native_bytes": 13582,
+      "bounds_offset": 10584,
+      "bounds": {
+        "Origin": [
+          7.62939453125e-06,
+          7.62939453125e-06,
+          12.499999046325684
+        ],
+        "BoxExtent": [
+          43.30126953125,
+          43.30125427246094,
+          12.500000953674316
+        ],
+        "SphereRadius": 45.06938934326172
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Lower_2.M_Lower_2"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_3.uasset",
+      "sha1": "bf0ca48dd30342fa63a4422cd7826d7dbe3acb6a",
+      "serial_offset": 10543,
+      "remaining_native_bytes": 13582,
+      "bounds_offset": 10584,
+      "bounds": {
+        "Origin": [
+          7.62939453125e-06,
+          7.62939453125e-06,
+          12.499999046325684
+        ],
+        "BoxExtent": [
+          43.30126953125,
+          43.30125427246094,
+          12.500000953674316
+        ],
+        "SphereRadius": 45.06938934326172
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Lower_3.M_Lower_3"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_4.uasset",
+      "sha1": "2c8d65553b41d3000e851a1582d7bd6fb2b0e17f",
+      "serial_offset": 10543,
+      "remaining_native_bytes": 13582,
+      "bounds_offset": 10584,
+      "bounds": {
+        "Origin": [
+          7.62939453125e-06,
+          7.62939453125e-06,
+          12.499999046325684
+        ],
+        "BoxExtent": [
+          43.30126953125,
+          43.30125427246094,
+          12.500000953674316
+        ],
+        "SphereRadius": 45.06938934326172
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Lower_4.M_Lower_4"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_5.uasset",
+      "sha1": "290ed1a9d7331d31154a3256b690515abf4f05fa",
+      "serial_offset": 10543,
+      "remaining_native_bytes": 13582,
+      "bounds_offset": 10584,
+      "bounds": {
+        "Origin": [
+          7.62939453125e-06,
+          7.62939453125e-06,
+          12.499999046325684
+        ],
+        "BoxExtent": [
+          43.30126953125,
+          43.30125427246094,
+          12.500000953674316
+        ],
+        "SphereRadius": 45.06938934326172
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Lower_5.M_Lower_5"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_6.uasset",
+      "sha1": "c968c79c4581ead538729a5a2cd7883e23b55867",
+      "serial_offset": 10543,
+      "remaining_native_bytes": 13582,
+      "bounds_offset": 10584,
+      "bounds": {
+        "Origin": [
+          7.62939453125e-06,
+          7.62939453125e-06,
+          12.499999046325684
+        ],
+        "BoxExtent": [
+          43.30126953125,
+          43.30125427246094,
+          12.500000953674316
+        ],
+        "SphereRadius": 45.06938934326172
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Lower_6.M_Lower_6"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_1.uasset",
+      "sha1": "58dc4eca61be70c4366909aaea3b0f2e27a116a2",
+      "serial_offset": 10936,
+      "remaining_native_bytes": 14178,
+      "bounds_offset": 11035,
+      "bounds": {
+        "BoxExtent": [
+          1.7499983310699463,
+          51.8372802734375,
+          1.7320513725280762
+        ],
+        "SphereRadius": 51.8372802734375
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Synths_1.M_Synths_1"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_2.uasset",
+      "sha1": "a14e71f2ac0e29961aaedf771f9c3b5f2ffa2658",
+      "serial_offset": 10904,
+      "remaining_native_bytes": 14178,
+      "bounds_offset": 10974,
+      "bounds": {
+        "BoxExtent": [
+          1.7499983310699463,
+          51.8372802734375,
+          1.7320513725280762
+        ],
+        "SphereRadius": 51.8372802734375
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Synths_2.M_Synths_2"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_3.uasset",
+      "sha1": "548f77a393df472376d2d9dfbf03e4e88c5d951f",
+      "serial_offset": 10904,
+      "remaining_native_bytes": 14178,
+      "bounds_offset": 10974,
+      "bounds": {
+        "BoxExtent": [
+          1.7499983310699463,
+          51.8372802734375,
+          1.7320513725280762
+        ],
+        "SphereRadius": 51.8372802734375
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Synths_5.M_Synths_5"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_4.uasset",
+      "sha1": "0589a5136e083dbc4230348171ad0ca80f97ac15",
+      "serial_offset": 10904,
+      "remaining_native_bytes": 14178,
+      "bounds_offset": 10974,
+      "bounds": {
+        "BoxExtent": [
+          1.7499983310699463,
+          51.8372802734375,
+          1.7320513725280762
+        ],
+        "SphereRadius": 51.8372802734375
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Synths_4.M_Synths_4"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RockCube.uasset",
+      "sha1": "7d27fd1886a557dbef55312fb546ddabaf74d1b8",
+      "serial_offset": 5483,
+      "remaining_native_bytes": 1462,
+      "bounds_offset": 5553,
+      "bounds": {
+        "BoxExtent": [
+          50.0,
+          50.0,
+          50.0
+        ],
+        "SphereRadius": 86.6025390625
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Rubble/M_RockCube.M_RockCube"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RockLine.uasset",
+      "sha1": "783a0a1b9d84979312ac99ba055948db8c544da7",
+      "serial_offset": 1930,
+      "remaining_native_bytes": 1558,
+      "bounds_offset": 2029,
+      "bounds": {
+        "BoxExtent": [
+          50.0,
+          50.0,
+          50.0
+        ],
+        "SphereRadius": 86.6025390625
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_RockCube_Map.M_RockCube_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RockLight_Pyramid6.uasset",
+      "sha1": "a580c7d5af8c2efb3c176dd1d525f7958086ceba",
+      "serial_offset": 1959,
+      "remaining_native_bytes": 962,
+      "bounds_offset": 2058,
+      "bounds": {
+        "Origin": [
+          0.0,
+          0.0,
+          50.0
+        ],
+        "BoxExtent": [
+          50.0,
+          43.30127716064453,
+          50.0
+        ],
+        "SphereRadius": 70.71067810058594
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_RockLight.M_RockLight"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/TubeLattice/tube_lattice_flat_0.uasset",
+      "sha1": "4c6f13eb1d17e590526ba2e07e1ac0b55a88fe59",
+      "serial_offset": 8636,
+      "remaining_native_bytes": 172382,
+      "bounds_offset": 8735,
+      "bounds": {
+        "Origin": [
+          0.004241943359375,
+          8.812362670898438,
+          -0.00421142578125
+        ],
+        "BoxExtent": [
+          233.33172607421875,
+          197.29006958007812,
+          733.0325927734375
+        ],
+        "SphereRadius": 760.8565673828125
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/TubeLattice/lambert1.lambert1"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/TubeLattice/tube_lattice_flat_2.uasset",
+      "sha1": "b1016a20e83281599aa009b8f17bb1fcc87ce08e",
+      "serial_offset": 194528,
+      "remaining_native_bytes": 172478,
+      "bounds_offset": 194627,
+      "bounds": {
+        "Origin": [
+          -7.2364501953125,
+          231.79600524902344,
+          46.11297607421875
+        ],
+        "BoxExtent": [
+          429.1106872558594,
+          141.62762451171875,
+          733.0325927734375
+        ],
+        "SphereRadius": 754.7822875976562
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Lattice_DoubleSided.M_Lattice_DoubleSided"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/tunnel_video_wall_lod1.uasset",
+      "sha1": "5a2c3d400adc9e0efa20e809182242446a2cfeb7",
+      "serial_offset": 6842,
+      "remaining_native_bytes": 155186,
+      "bounds_offset": 6945,
+      "bounds": {
+        "Origin": [
+          0.0,
+          -12.351873397827148,
+          0.0
+        ],
+        "BoxExtent": [
+          16.000001907348633,
+          4.148712158203125,
+          13.909381866455078
+        ],
+        "SphereRadius": 21.3424129486084
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_VideoWall_Case.M_VideoWall_Case",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Theme_Map.M_Theme_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_0.uasset",
+      "sha1": "c83a33392738a085cd9f198e71756768f4178bd4",
+      "serial_offset": 10866,
+      "remaining_native_bytes": 2398,
+      "bounds_offset": 10936,
+      "bounds": {
+        "Origin": [
+          0.0,
+          0.0,
+          26.0
+        ],
+        "BoxExtent": [
+          1.9999980926513672,
+          1.7320513725280762,
+          26.0
+        ],
+        "SphereRadius": 26.07680892944336
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro0_Map.M_TubeIntro0_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_1.uasset",
+      "sha1": "c5c2f0796e329d4d95dac210927c3f20342e68a3",
+      "serial_offset": 10771,
+      "remaining_native_bytes": 2398,
+      "bounds_offset": 10841,
+      "bounds": {
+        "Origin": [
+          0.0,
+          0.0,
+          26.0
+        ],
+        "BoxExtent": [
+          1.9999980926513672,
+          1.7320513725280762,
+          26.0
+        ],
+        "SphereRadius": 26.07680892944336
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro1_Map.M_TubeIntro1_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_2.uasset",
+      "sha1": "6e37cd51507c5c0118d46b9788abf45ac4a25b07",
+      "serial_offset": 10771,
+      "remaining_native_bytes": 2398,
+      "bounds_offset": 10841,
+      "bounds": {
+        "Origin": [
+          0.0,
+          0.0,
+          26.0
+        ],
+        "BoxExtent": [
+          1.9999980926513672,
+          1.7320513725280762,
+          26.0
+        ],
+        "SphereRadius": 26.07680892944336
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro2_Map.M_TubeIntro2_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_3.uasset",
+      "sha1": "ce2bb3538d971c1426dd3ac9ecc4c143c5ba9ec6",
+      "serial_offset": 10771,
+      "remaining_native_bytes": 2398,
+      "bounds_offset": 10841,
+      "bounds": {
+        "Origin": [
+          0.0,
+          0.0,
+          26.0
+        ],
+        "BoxExtent": [
+          1.9999980926513672,
+          1.7320513725280762,
+          26.0
+        ],
+        "SphereRadius": 26.07680892944336
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro3_Map.M_TubeIntro3_Map"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_4.uasset",
+      "sha1": "c90222999ad43741960ba975aa7239583353d09b",
+      "serial_offset": 10771,
+      "remaining_native_bytes": 2398,
+      "bounds_offset": 10841,
+      "bounds": {
+        "Origin": [
+          0.0,
+          0.0,
+          26.0
+        ],
+        "BoxExtent": [
+          1.9999980926513672,
+          1.7320513725280762,
+          26.0
+        ],
+        "SphereRadius": 26.07680892944336
+      },
+      "materials": [
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro4_Map.M_TubeIntro4_Map"
+      ]
+    }
+  ],
+  "limitation": "No vertex/index-buffer decode; bounds do not identify topology"
+}

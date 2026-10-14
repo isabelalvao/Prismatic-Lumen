@@ -1,0 +1,11 @@
+FAIL line 93: spectral_cone_piece_count == 17
+FAIL line 113: lowest < 0.009f && highest > 1.99f
+FAIL line 113: lowest < 0.009f && highest > 1.99f
+FAIL line 113: lowest < 0.009f && highest > 1.99f
+FAIL line 113: lowest < 0.009f && highest > 1.99f
+FAIL line 113: lowest < 0.009f && highest > 1.99f
+FAIL line 113: lowest < 0.009f && highest > 1.99f
+FAIL line 113: lowest < 0.009f && highest > 1.99f
+FAIL line 113: lowest < 0.009f && highest > 1.99f
+FAIL line 115: highest - lowest < 0.017f
+FAIL line 117: std::abs((lowest)-(2.0f * (piece - 8) / 9)) <= (0.009f)

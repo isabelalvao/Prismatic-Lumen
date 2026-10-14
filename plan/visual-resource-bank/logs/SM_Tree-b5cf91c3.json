@@ -1,0 +1,52 @@
+{
+  "input": {
+    "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tree.uasset",
+    "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tree",
+    "object_name": "SM_Tree",
+    "class_reference": "/Script/Engine.StaticMesh",
+    "export_index": 3,
+    "serial_offset": 10652,
+    "serial_size": 2924,
+    "payload_sha1": "b5cf91c33861a96937d2603388e5d0a794c94741",
+    "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+    "source_reports": [
+      "mesh-assets.json",
+      "geometry-controller-assets.json"
+    ],
+    "payload_pak_offset": 98910261,
+    "payload_size": 13580,
+    "source_sha1_verified": true,
+    "resource_id": "SM_Tree-b5cf91c3"
+  },
+  "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tree-b5cf91c3",
+  "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+  "args": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-export",
+    "-gltf",
+    "-notex",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tree-b5cf91c3",
+    "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tree",
+    "SM_Tree",
+    "StaticMesh"
+  ],
+  "returncode": 0,
+  "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Tree-b5cf91c3.log",
+  "method": "qualified package+object+class UModel export",
+  "elapsed_seconds": 0.045999999972991645,
+  "files": [
+    {
+      "path": "resources\\SM_Tree-b5cf91c3\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tree.bin",
+      "size": 2496,
+      "sha256": "7f8f22edc84a3b57dbf4feffdd1d99332b7e1c070b554565988c7b280244feb3"
+    },
+    {
+      "path": "resources\\SM_Tree-b5cf91c3\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tree.gltf",
+      "size": 2056,
+      "sha256": "5bf2396132c7aeb0fcf8a97ee81b3c16ce9fccbfc65e149282014a15d64da057"
+    }
+  ],
+  "export_status": "exported_pending_geometry_validation"
+}

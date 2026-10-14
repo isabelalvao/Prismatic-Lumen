@@ -1,0 +1,15 @@
+test_absent_headset_is_error_without_desktop_fallback (test_vr.VRTests.test_absent_headset_is_error_without_desktop_fallback) ... ok
+test_each_scene_and_transition_reaches_both_eyes (test_vr.VRTests.test_each_scene_and_transition_reaches_both_eyes) ... ok
+test_nonrendering_frames_and_tracking_loss_recover (test_vr.VRTests.test_nonrendering_frames_and_tracking_loss_recover) ... ok
+test_probe_reports_runtime_and_headset (test_vr.VRTests.test_probe_reports_runtime_and_headset) ... ok
+test_runtime_loss_is_explicit_error (test_vr.VRTests.test_runtime_loss_is_explicit_error) ... ok
+test_shader_failure_also_releases_vr_session (test_vr.VRTests.test_shader_failure_also_releases_vr_session) ... ok
+test_stereo_images_reach_runtime_and_mirror (test_vr.VRTests.test_stereo_images_reach_runtime_and_mirror) ... ok
+test_timer_starts_hidden_even_with_legacy_visible_config (test_vr.VRTests.test_timer_starts_hidden_even_with_legacy_visible_config) ... ok
+test_vr_sequence_can_start_paused (test_vr.VRTests.test_vr_sequence_can_start_paused) ... ok
+test_vr_timer_key_draws_plate_in_mirror (test_vr.VRTests.test_vr_timer_key_draws_plate_in_mirror) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 16.115s
+
+OK

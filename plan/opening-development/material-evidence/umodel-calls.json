@@ -1,0 +1,2412 @@
+{
+  "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+  "calls": [
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/Assets/Materials/M_FogSheet_Color_Master",
+        "M_FogSheet_Color_Master"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Assets__Materials__M_FogSheet_Color_Master-dump.log",
+      "log_sha256": "e2053b1c52235fe2eacb475617ec8be43dedd86a1213802aac25dca75c6730ea"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/Assets/Materials/M_FogSheet_Color_Master",
+        "M_FogSheet_Color_Master"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Assets__Materials__M_FogSheet_Color_Master-export.log",
+      "log_sha256": "05a9a11bfbddc79f37d92d17b090c20383f272f15eb93be8da5487e917824546"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/Assets/Textures/T_TilingNoise03_M",
+        "T_TilingNoise03_M"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Assets__Textures__T_TilingNoise03_M-dump.log",
+      "log_sha256": "a16d7c5aaf05a3c11d7ea67a45ed2f1477348bdef43af742a6c48c4bdcdea096"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/Assets/Textures/T_TilingNoise03_M",
+        "T_TilingNoise03_M"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Assets__Textures__T_TilingNoise03_M-export.log",
+      "log_sha256": "a36e21ae596c97d78f556c49f142f6dd74625f87517f6eb6892bf50b866bfd7d"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/DemoRoom/Materials/M_Emissive",
+        "M_Emissive"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/DemoRoom__Materials__M_Emissive-dump.log",
+      "log_sha256": "93b7cb12bc8457ce7975a021d0ee8bbad354c389d19f4b2972890b0bd6987302"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/DemoRoom/Materials/M_Emissive",
+        "M_Emissive"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/DemoRoom__Materials__M_Emissive-export.log",
+      "log_sha256": "7787af9e19a171e7415539a1388144857ce51b2ce49b03f306dadbad89ffafdb"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/DemoRoom/Materials/M_Emissive_1",
+        "M_Emissive_1"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/DemoRoom__Materials__M_Emissive_1-dump.log",
+      "log_sha256": "6086d9809156e90f7f207def2383e29896a3580b5a4dc30cd79fcb40aa5aef31"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/DemoRoom/Materials/M_Emissive_1",
+        "M_Emissive_1"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/DemoRoom__Materials__M_Emissive_1-export.log",
+      "log_sha256": "47aad910babd2b3ec2b8dfe21dfc8ce5d6d9db8c56a0337b20c443b3c2c2a384"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/DemoRoom/Materials/M_Emissive_2",
+        "M_Emissive_2"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/DemoRoom__Materials__M_Emissive_2-dump.log",
+      "log_sha256": "10eb5d8a0a8b11a54dea0c71c6ce4549b07748162ecd67a8b544c91a9d5ff163"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/DemoRoom/Materials/M_Emissive_2",
+        "M_Emissive_2"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/DemoRoom__Materials__M_Emissive_2-export.log",
+      "log_sha256": "3c9e2e941d8405bcb4ed7c4c29f9ec7b33f199c296bdb535d4e16c65eb7a23b3"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/DemoRoom/Textures/T_RoomTiles_M",
+        "T_RoomTiles_M"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/DemoRoom__Textures__T_RoomTiles_M-dump.log",
+      "log_sha256": "fa72add1ebf6550477b18fb39a71ec4ad28a0eab6888b2df7783329c6e33c3d6"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/DemoRoom/Textures/T_RoomTiles_M",
+        "T_RoomTiles_M"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/DemoRoom__Textures__T_RoomTiles_M-export.log",
+      "log_sha256": "1f938445772e8124319ec0710eb17dbd0f61bc2dd64b6443baa456afb8a5a562"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/DemoRoom/Textures/T_RoomTiles_N",
+        "T_RoomTiles_N"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/DemoRoom__Textures__T_RoomTiles_N-dump.log",
+      "log_sha256": "cba0334df671c75f2c123080f3df4fa97b4d04644b18d52be21f10cc90a6b8fa"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/DemoRoom/Textures/T_RoomTiles_N",
+        "T_RoomTiles_N"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/DemoRoom__Textures__T_RoomTiles_N-export.log",
+      "log_sha256": "75a6464279da655570f064c2615bcca5bf4cec17bf7c10058e590504bb2949dd"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/Substance/Metal/Metal_006_INST_ambient_occlusion",
+        "Metal_006_INST_ambient_occlusion"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Metal_006_INST_ambient_occlusion-dump.log",
+      "log_sha256": "001d563c68eaf67d1a191b4ac410ec4945f2dcc0166fe461358e2b22c13cda47"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/Substance/Metal/Metal_006_INST_ambient_occlusion",
+        "Metal_006_INST_ambient_occlusion"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Metal_006_INST_ambient_occlusion-export.log",
+      "log_sha256": "001d563c68eaf67d1a191b4ac410ec4945f2dcc0166fe461358e2b22c13cda47"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/Substance/Metal/Metal_006_INST_basecolor",
+        "Metal_006_INST_basecolor"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Metal_006_INST_basecolor-dump.log",
+      "log_sha256": "17acce8a2fc607d3d422d28d1629faf59310684bb1a01a5c2413b722300104b3"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/Substance/Metal/Metal_006_INST_basecolor",
+        "Metal_006_INST_basecolor"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Metal_006_INST_basecolor-export.log",
+      "log_sha256": "17acce8a2fc607d3d422d28d1629faf59310684bb1a01a5c2413b722300104b3"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/Substance/Metal/Metal_006_INST_metallic",
+        "Metal_006_INST_metallic"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Metal_006_INST_metallic-dump.log",
+      "log_sha256": "3279dea8bd5c05eabc39d94cafb6395ff25bcd16759ab38128dcd0b475710f66"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/Substance/Metal/Metal_006_INST_metallic",
+        "Metal_006_INST_metallic"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Metal_006_INST_metallic-export.log",
+      "log_sha256": "3279dea8bd5c05eabc39d94cafb6395ff25bcd16759ab38128dcd0b475710f66"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/Substance/Metal/Metal_006_INST_normal",
+        "Metal_006_INST_normal"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Metal_006_INST_normal-dump.log",
+      "log_sha256": "a123ad89301a835d15b7c35ce1a565fd3f37747b6c480cd368b0a53cc17ee731"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/Substance/Metal/Metal_006_INST_normal",
+        "Metal_006_INST_normal"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Metal_006_INST_normal-export.log",
+      "log_sha256": "a123ad89301a835d15b7c35ce1a565fd3f37747b6c480cd368b0a53cc17ee731"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/Substance/Metal/Metal_006_INST_roughness",
+        "Metal_006_INST_roughness"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Metal_006_INST_roughness-dump.log",
+      "log_sha256": "2eec1eff4ec852e2c6a11e3163659f793e2273022d07738abdbdb1d27aa94086"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/Substance/Metal/Metal_006_INST_roughness",
+        "Metal_006_INST_roughness"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Metal_006_INST_roughness-export.log",
+      "log_sha256": "2eec1eff4ec852e2c6a11e3163659f793e2273022d07738abdbdb1d27aa94086"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/Substance/Metal/Metal_006_MAT",
+        "Metal_006_MAT"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Metal_006_MAT-dump.log",
+      "log_sha256": "b401f9a7af86d9c86a1ea2719d3401071552c738a789f93536c613409657c8a6"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/Substance/Metal/Metal_006_MAT",
+        "Metal_006_MAT"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Metal_006_MAT-export.log",
+      "log_sha256": "0bcad3712932fd57f2e77d741c7e7971ea22de8613f6e01e3047b188fc4ad5e8"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/Substance/Metal/Metal_used_INST_basecolor",
+        "Metal_used_INST_basecolor"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Metal_used_INST_basecolor-dump.log",
+      "log_sha256": "3ad9a44b4b511f5e20e72c6a2ff8c28b86617bb63ad2b946d983f8067f7ba91b"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/Substance/Metal/Metal_used_INST_basecolor",
+        "Metal_used_INST_basecolor"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Metal_used_INST_basecolor-export.log",
+      "log_sha256": "3ad9a44b4b511f5e20e72c6a2ff8c28b86617bb63ad2b946d983f8067f7ba91b"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/Substance/Metal/Metal_used_INST_normal",
+        "Metal_used_INST_normal"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Metal_used_INST_normal-dump.log",
+      "log_sha256": "29d7f905e0b9ea8201e4f6e1a3c070b5d40fc6e66ef3990a6dd7bf3524748db3"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/Substance/Metal/Metal_used_INST_normal",
+        "Metal_used_INST_normal"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Metal_used_INST_normal-export.log",
+      "log_sha256": "29d7f905e0b9ea8201e4f6e1a3c070b5d40fc6e66ef3990a6dd7bf3524748db3"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/Substance/Metal/Steel_INST_ambient_occlusion",
+        "Steel_INST_ambient_occlusion"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Steel_INST_ambient_occlusion-dump.log",
+      "log_sha256": "17898b076642f55f521bc4037b05265a9a09673c025f56e662d56ccdaf892306"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/Substance/Metal/Steel_INST_ambient_occlusion",
+        "Steel_INST_ambient_occlusion"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Steel_INST_ambient_occlusion-export.log",
+      "log_sha256": "17898b076642f55f521bc4037b05265a9a09673c025f56e662d56ccdaf892306"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/Substance/Metal/Steel_INST_basecolor",
+        "Steel_INST_basecolor"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Steel_INST_basecolor-dump.log",
+      "log_sha256": "372bef0bcbcb769b95a9180b0f5a3218b6321c7b90b45b899468c2d7951ca454"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/Substance/Metal/Steel_INST_basecolor",
+        "Steel_INST_basecolor"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Steel_INST_basecolor-export.log",
+      "log_sha256": "372bef0bcbcb769b95a9180b0f5a3218b6321c7b90b45b899468c2d7951ca454"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/Substance/Metal/Steel_INST_metallic",
+        "Steel_INST_metallic"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Steel_INST_metallic-dump.log",
+      "log_sha256": "9d2f63e898b01ce6150706e095fc7b28e1838fbcfa9ba6cfb2a8262ae055a1b9"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/Substance/Metal/Steel_INST_metallic",
+        "Steel_INST_metallic"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Steel_INST_metallic-export.log",
+      "log_sha256": "9d2f63e898b01ce6150706e095fc7b28e1838fbcfa9ba6cfb2a8262ae055a1b9"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/Substance/Metal/Steel_INST_normal",
+        "Steel_INST_normal"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Steel_INST_normal-dump.log",
+      "log_sha256": "44f8cc4e13b641d6c6a3479bcad19809054827d7e1224748ccc74ae075dcb8a3"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/Substance/Metal/Steel_INST_normal",
+        "Steel_INST_normal"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Steel_INST_normal-export.log",
+      "log_sha256": "44f8cc4e13b641d6c6a3479bcad19809054827d7e1224748ccc74ae075dcb8a3"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/Substance/Metal/Steel_INST_roughness",
+        "Steel_INST_roughness"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Steel_INST_roughness-dump.log",
+      "log_sha256": "8755da97785693d8af9cb4663469d09de944464b1021d71d5ba9e8ed60429d4c"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/Substance/Metal/Steel_INST_roughness",
+        "Steel_INST_roughness"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Steel_INST_roughness-export.log",
+      "log_sha256": "8755da97785693d8af9cb4663469d09de944464b1021d71d5ba9e8ed60429d4c"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/Substance/Metal/Steel_MAT",
+        "Steel_MAT"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Steel_MAT-dump.log",
+      "log_sha256": "0e59a19639faccc17083d84eb7f68abcad3932f22cfc1a7b779774f61067cea6"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/Substance/Metal/Steel_MAT",
+        "Steel_MAT"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/Substance__Metal__Steel_MAT-export.log",
+      "log_sha256": "e679e4a35e5b2fbe8924e6d826c9f658c74c0a76608cec453207690aa28efa95"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_ambient_occlusion",
+        "pyramid_metal_INST_ambient_occlusion"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Assets__Content__pyramid_metal_INST_ambient_occlusion-dump.log",
+      "log_sha256": "f756a648e0aafc7116583ec37db6f3e0cd93281866cba7ca6f90c380afb500c0"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_ambient_occlusion",
+        "pyramid_metal_INST_ambient_occlusion"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Assets__Content__pyramid_metal_INST_ambient_occlusion-export.log",
+      "log_sha256": "f756a648e0aafc7116583ec37db6f3e0cd93281866cba7ca6f90c380afb500c0"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_basecolor",
+        "pyramid_metal_INST_basecolor"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Assets__Content__pyramid_metal_INST_basecolor-dump.log",
+      "log_sha256": "22f25069d5b0c65722f5f5af81fdd14d6ee812c431c3ab5048e5aa3c513e92e6"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_basecolor",
+        "pyramid_metal_INST_basecolor"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Assets__Content__pyramid_metal_INST_basecolor-export.log",
+      "log_sha256": "22f25069d5b0c65722f5f5af81fdd14d6ee812c431c3ab5048e5aa3c513e92e6"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_metallic",
+        "pyramid_metal_INST_metallic"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Assets__Content__pyramid_metal_INST_metallic-dump.log",
+      "log_sha256": "f7b7d721e7f0e504ed0aaf8340030c3625d7203dd6c445db3d0be7de7b7d200d"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_metallic",
+        "pyramid_metal_INST_metallic"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Assets__Content__pyramid_metal_INST_metallic-export.log",
+      "log_sha256": "f7b7d721e7f0e504ed0aaf8340030c3625d7203dd6c445db3d0be7de7b7d200d"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_normal",
+        "pyramid_metal_INST_normal"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Assets__Content__pyramid_metal_INST_normal-dump.log",
+      "log_sha256": "8600c14773bd5c1be5c0cc00cfb163c0713cca462e3614b2dccea9299ba136af"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_normal",
+        "pyramid_metal_INST_normal"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Assets__Content__pyramid_metal_INST_normal-export.log",
+      "log_sha256": "8600c14773bd5c1be5c0cc00cfb163c0713cca462e3614b2dccea9299ba136af"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_roughness",
+        "pyramid_metal_INST_roughness"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Assets__Content__pyramid_metal_INST_roughness-dump.log",
+      "log_sha256": "e3d7ecc93d4173cf4e4c800d9a27b401462919cc566caede249b068682f20ab6"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_roughness",
+        "pyramid_metal_INST_roughness"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Assets__Content__pyramid_metal_INST_roughness-export.log",
+      "log_sha256": "e3d7ecc93d4173cf4e4c800d9a27b401462919cc566caede249b068682f20ab6"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/CamoLine/red_mat",
+        "red_mat"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Assets__Landscape__CamoLine__red_mat-dump.log",
+      "log_sha256": "a37605ee1e9723d96f9120629b7b0c57148f0a78452d75a2162e4457c8ec4c50"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/CamoLine/red_mat",
+        "red_mat"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Assets__Landscape__CamoLine__red_mat-export.log",
+      "log_sha256": "3d5485b7f41a2b7f29e42ae5dcdf7ddcad9fb8f6d40d5bdf071ab726b816df6b"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_INST_basecolor",
+        "Gold_INST_basecolor"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Assets__Landscape__Materials__Gold_INST_basecolor-dump.log",
+      "log_sha256": "4c56932c30c5e620f66fece4badab95d6c3d48d4c603ab1489645f97a0f36452"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_INST_basecolor",
+        "Gold_INST_basecolor"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Assets__Landscape__Materials__Gold_INST_basecolor-export.log",
+      "log_sha256": "4c56932c30c5e620f66fece4badab95d6c3d48d4c603ab1489645f97a0f36452"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_INST_metallic",
+        "Gold_INST_metallic"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Assets__Landscape__Materials__Gold_INST_metallic-dump.log",
+      "log_sha256": "7f828348cd15fae59faa96f74446ec94df405f5e933aedefda7d0bc1d0655e78"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_INST_metallic",
+        "Gold_INST_metallic"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Assets__Landscape__Materials__Gold_INST_metallic-export.log",
+      "log_sha256": "7f828348cd15fae59faa96f74446ec94df405f5e933aedefda7d0bc1d0655e78"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_INST_normal",
+        "Gold_INST_normal"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Assets__Landscape__Materials__Gold_INST_normal-dump.log",
+      "log_sha256": "0eb5617d74430e794572f12b12a461e6893ac157e0f096a4d770c4c0d92ea547"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_INST_normal",
+        "Gold_INST_normal"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Assets__Landscape__Materials__Gold_INST_normal-export.log",
+      "log_sha256": "0eb5617d74430e794572f12b12a461e6893ac157e0f096a4d770c4c0d92ea547"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_MAT",
+        "Gold_MAT"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Assets__Landscape__Materials__Gold_MAT-dump.log",
+      "log_sha256": "4f4a34a3b414450606768c2e192e7036e03f2b270dbecb63afb3247d6fe282f7"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_MAT",
+        "Gold_MAT"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Assets__Landscape__Materials__Gold_MAT-export.log",
+      "log_sha256": "a9cc5d4f67b9b6a0dce658af2e1372cdea6750455d28f0a3970082d8baf19c3a"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Rubble/M_RockCube",
+        "M_RockCube"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Assets__Shapes__Rubble__M_RockCube-dump.log",
+      "log_sha256": "54d7b59666f2bdb1fb8faa100ae8a98ea6b0aed87199fec0be35914ba336bf33"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Rubble/M_RockCube",
+        "M_RockCube"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Assets__Shapes__Rubble__M_RockCube-export.log",
+      "log_sha256": "0cfdfd513c677700301f070b7a346cf0084adeb5cd3808fa3a4f8f77389e457c"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Materials/Ground_Materials/Substance/Metal_used_Ground_INST_roughness",
+        "Metal_used_Ground_INST_roughness"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Materials__Ground_Materials__Substance__Metal_used_Ground_INST_roughness-dump.log",
+      "log_sha256": "b895f74ccc65b33983c77642d1ae88835b42b05ec7432e1319fddd1273e8f851"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Materials/Ground_Materials/Substance/Metal_used_Ground_INST_roughness",
+        "Metal_used_Ground_INST_roughness"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Materials__Ground_Materials__Substance__Metal_used_Ground_INST_roughness-export.log",
+      "log_sha256": "b895f74ccc65b33983c77642d1ae88835b42b05ec7432e1319fddd1273e8f851"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Materials/Mapping/M_Pyramid_Theme",
+        "M_Pyramid_Theme"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Materials__Mapping__M_Pyramid_Theme-dump.log",
+      "log_sha256": "988e4102c6e79b2735394995a340d02abfc6b2be74a5dc7638d137d92f62cdaa"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Materials/Mapping/M_Pyramid_Theme",
+        "M_Pyramid_Theme"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Materials__Mapping__M_Pyramid_Theme-export.log",
+      "log_sha256": "c2f062bf7a1fab7df449e1afe8d9bef73844d8590a36912aaa62c2cdfc364854"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleBaseGrid",
+        "PoleBaseGrid"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Materials__Visual__Patterns__PoleBaseGrid-dump.log",
+      "log_sha256": "bb5933964b7fa15bd8d7258d3398d3933ba90f27a4c2a4c70ec3d05457741ec0"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleBaseGrid",
+        "PoleBaseGrid"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Materials__Visual__Patterns__PoleBaseGrid-export.log",
+      "log_sha256": "d5234200522eac6ec0f5b21268885334f3c5380b16b9138806babfb17c668c8d"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleCapGrid",
+        "PoleCapGrid"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Materials__Visual__Patterns__PoleCapGrid-dump.log",
+      "log_sha256": "b9dafb8fcabfe3855aac00b1215e2c8db39094aabc02141f61a8fc9d2ebfa378"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleCapGrid",
+        "PoleCapGrid"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Materials__Visual__Patterns__PoleCapGrid-export.log",
+      "log_sha256": "e9c3c4dba1c5862c4411698fabae36ff1d59ce0ae77870bfa572f9295dd43966"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_hollow_pattern_256_2",
+        "hex_hollow_pattern_256_2"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Materials__Visual__Patterns__hex_hollow_pattern_256_2-dump.log",
+      "log_sha256": "553621fb1c16c42415f79cc762cc3b2408a0d42abb117a9e29ccbb521839c8b0"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_hollow_pattern_256_2",
+        "hex_hollow_pattern_256_2"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Materials__Visual__Patterns__hex_hollow_pattern_256_2-export.log",
+      "log_sha256": "83c5c319f1beb051455e25456de53c86135d129cc688c15f3590a0ac9c91bdb2"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_pattern_128",
+        "hex_pattern_128"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Materials__Visual__Patterns__hex_pattern_128-dump.log",
+      "log_sha256": "06603b165776fb0de35beb38f5ffbe4574aa7a4e864ccddeaad2c9381e6b2b04"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_pattern_128",
+        "hex_pattern_128"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Materials__Visual__Patterns__hex_pattern_128-export.log",
+      "log_sha256": "c1088f694243b0c83c4d180cdca520300b4ebff8900079840d57dfa3ed7fcc9b"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot1_Map",
+        "M_Dot1_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Dot1_Map-dump.log",
+      "log_sha256": "98d9f09cb30af3dd0bd23b022d1bddd83828f943d527fcd68bae649fa0e5c295"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot1_Map",
+        "M_Dot1_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Dot1_Map-export.log",
+      "log_sha256": "7413e7f808b324c9b723f782d048d4a25a00db51fe846ccab84c7a7c39505af3"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot2_Map",
+        "M_Dot2_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Dot2_Map-dump.log",
+      "log_sha256": "228c40258d3dbe48a056edb3af1596e861ea79c0b69e3be31ca1aa66f6740f10"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot2_Map",
+        "M_Dot2_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Dot2_Map-export.log",
+      "log_sha256": "62c7351472f0f195603e203f82319ce72fc32e32ab6ec4d3d71fe161bce0b9a5"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot3_Map",
+        "M_Dot3_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Dot3_Map-dump.log",
+      "log_sha256": "44c8eb99b259dac2f38687ff4b88192ccc77038348da8a6d9231b23e88c518bd"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot3_Map",
+        "M_Dot3_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Dot3_Map-export.log",
+      "log_sha256": "69d0d59039cf11411f19f77fffe4415b2118192429e242cc4eaaa57d51602f7a"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot4_Map",
+        "M_Dot4_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Dot4_Map-dump.log",
+      "log_sha256": "d144a3cd7dcd145c048479867b609a0c379e028afe396767d52225a34aa7ca76"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot4_Map",
+        "M_Dot4_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Dot4_Map-export.log",
+      "log_sha256": "92d765bc0a61ad0b9d804c233e6c8391287160e2b05a2d8f95c03727f0ce1d79"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_FogSheet_Forest",
+        "M_FogSheet_Forest"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_FogSheet_Forest-dump.log",
+      "log_sha256": "bfb4afc65f9b0e40f5ca78f82c50bdcedead27642610491fdae58ef22830cd5c"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_FogSheet_Forest",
+        "M_FogSheet_Forest"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_FogSheet_Forest-export.log",
+      "log_sha256": "2853875c97e5dd9a58f1990611483786cabb779c11858c22d0367278c1280f70"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Hex_Hole_1_Map",
+        "M_Hex_Hole_1_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Hex_Hole_1_Map-dump.log",
+      "log_sha256": "704024fad5b93143f9ba5f43f3ba5ce33ddf90fcd20a2aaab055ffa151a8bcde"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Hex_Hole_1_Map",
+        "M_Hex_Hole_1_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Hex_Hole_1_Map-export.log",
+      "log_sha256": "e39b0f0eb96b3075c1a3f516ec6ef9c65073850978ffe8eaecd886ab8bde4171"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Hex_Solid_1_Map",
+        "M_Hex_Solid_1_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Hex_Solid_1_Map-dump.log",
+      "log_sha256": "ccd6f89b2e3056116fb8e02a35b4da8d9a000e14558b3e15f403b0209493cc24"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Hex_Solid_1_Map",
+        "M_Hex_Solid_1_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Hex_Solid_1_Map-export.log",
+      "log_sha256": "1e8c05805d86d2ef16c0272f609457f6463904d618d01880e96eb660779e6dfe"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Hex_Solid_2_Map",
+        "M_Hex_Solid_2_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Hex_Solid_2_Map-dump.log",
+      "log_sha256": "fce3ac31d55544a93807593a5e003764415755bdf7ade807e33054de3404bf03"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Hex_Solid_2_Map",
+        "M_Hex_Solid_2_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Hex_Solid_2_Map-export.log",
+      "log_sha256": "b946d5152c26daa4970919f409b06cfeb708d2713e268bd4db35a06c12fbe126"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Inside",
+        "M_Inside"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Inside-dump.log",
+      "log_sha256": "eaa54410c2d021a5420034b1102b98c31dc884ade971083d4008d5a0fa75e8c9"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Inside",
+        "M_Inside"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Inside-export.log",
+      "log_sha256": "8264ea9aa27a7121f1a4a0ca55bcb84b14b06695b037a9e0e2f829182fa87361"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleBase_Map",
+        "M_PoleBase_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_PoleBase_Map-dump.log",
+      "log_sha256": "f092a21961e68ad4bff742bc5ce1dd2ffdc97042e6d7e5d0b8f38da334893da9"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleBase_Map",
+        "M_PoleBase_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_PoleBase_Map-export.log",
+      "log_sha256": "b968fd63b20e1049fbcd506114605fbb2c5ffdcd4627fb11650dd46abb4d23ef"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleCap_Map",
+        "M_PoleCap_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_PoleCap_Map-dump.log",
+      "log_sha256": "cb1b5a47f754ceba53346584622a40c357031a56f9caecaf3c90484bcf0c6838"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleCap_Map",
+        "M_PoleCap_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_PoleCap_Map-export.log",
+      "log_sha256": "e01763fc02429c89a560ad88d1d4f50e80a3fee82dd2fff77a05394f621ecd67"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleDot_Map",
+        "M_PoleDot_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_PoleDot_Map-dump.log",
+      "log_sha256": "9fe3eaaeb2fa5bdd38efb9da6493550d3a3a01486fe6d4d921ac5c8ad893c429"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleDot_Map",
+        "M_PoleDot_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_PoleDot_Map-export.log",
+      "log_sha256": "6393a38472d6ce90476ecd280c453f33abca49935fbda0b48f99752a4af780cf"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pole_Map",
+        "M_Pole_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Pole_Map-dump.log",
+      "log_sha256": "d032cde5fc591daec6fef4f162537a6381937cb3326e1a22f5c7f69500890112"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pole_Map",
+        "M_Pole_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Pole_Map-export.log",
+      "log_sha256": "08173660a0d80fd9da0293898869e25a4d2e10b96255387d7b716e29683fb93a"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pyramid_Map",
+        "M_Pyramid_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Pyramid_Map-dump.log",
+      "log_sha256": "88af6ba35d3c7608c3cd9554080505756f763e1bf0a3309b7d895bcd73c7a6d9"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pyramid_Map",
+        "M_Pyramid_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Pyramid_Map-export.log",
+      "log_sha256": "1184df338b08ebc916e152d205c484d00e449972be6a569e323a35be18b9c69a"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_RockLight",
+        "M_RockLight"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_RockLight-dump.log",
+      "log_sha256": "33cd199125369cafc3c30d1190b585ad274a8a5522deb174798fe909b6ad826d"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_RockLight",
+        "M_RockLight"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_RockLight-export.log",
+      "log_sha256": "4f1e90bcbea6f7760cc43341ce7ded98a33ec4633027a71e5291bf77dcd6988c"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Synths_1",
+        "M_Synths_1"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Synths_1-dump.log",
+      "log_sha256": "c535edd18a5f72641555f7008ac249441c31c0ff389abbffa8bdabe1b8483037"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Synths_1",
+        "M_Synths_1"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Synths_1-export.log",
+      "log_sha256": "858d93bb2c24fb5c9f2307e8b6cd2f9c569fd8b4c2ee21a88748683904f8cdc8"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Synths_2",
+        "M_Synths_2"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Synths_2-dump.log",
+      "log_sha256": "7f1c6e851dfcfedaf4539cebdbb6da62a2ea788ba5a6ff647d3d915218f7c3b6"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Synths_2",
+        "M_Synths_2"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Synths_2-export.log",
+      "log_sha256": "32d2ad76de703e2f86f4f322cd15f0574ab4c6baec1991c86792d453132f5c66"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Synths_4",
+        "M_Synths_4"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Synths_4-dump.log",
+      "log_sha256": "bcd4c4fba048e5c0b0b938e9c96a61752e44e5f616d2827b37623ae3a7ea04e9"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Synths_4",
+        "M_Synths_4"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Synths_4-export.log",
+      "log_sha256": "b90c288c18bb2249eff89b00f0b9cf6eef256f9285e0f684c2aecacd6876d620"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Synths_5",
+        "M_Synths_5"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Synths_5-dump.log",
+      "log_sha256": "d5c6153b4cd2c1b628b5c4e4941a4a2c4468af6320bb3205ff0203680cfca727"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Synths_5",
+        "M_Synths_5"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Synths_5-export.log",
+      "log_sha256": "3d06050f0bcf8ae9ff6ec8a3e59711df84116bc6bca34a63716739d8598cdbc1"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Tree_Map",
+        "M_Tree_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Tree_Map-dump.log",
+      "log_sha256": "052c6b3fc32697441ab8b0ece9d65b9e2f9ece8cfb049878c93f4e527dee3725"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Tree_Map",
+        "M_Tree_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_Tree_Map-export.log",
+      "log_sha256": "19ba5eaedede0c1e4fce06cea302d15ac464c7a5ec56e40e54572899614f57ac"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro0_Map",
+        "M_TubeIntro0_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_TubeIntro0_Map-dump.log",
+      "log_sha256": "0dc9b436b4cb4bd6adbf334af8036357b7ae7dd50aae674d5b26b9bd75ec5507"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro0_Map",
+        "M_TubeIntro0_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_TubeIntro0_Map-export.log",
+      "log_sha256": "225450293d67833aa35bb39b91ef8f0d6da0b48966fc822f01a900f0aab2e889"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro1_Map",
+        "M_TubeIntro1_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_TubeIntro1_Map-dump.log",
+      "log_sha256": "e45cdfada0a5fa286b1b969b5db8bf43b37067a85120415f91080cbc61739b23"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro1_Map",
+        "M_TubeIntro1_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_TubeIntro1_Map-export.log",
+      "log_sha256": "f665cb441b9196363ac5e3b30462c6ddf23b09f9251da6d8988f5ca1f49b77be"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro2_Map",
+        "M_TubeIntro2_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_TubeIntro2_Map-dump.log",
+      "log_sha256": "c0a3a546b8191b9476ca7e14cdc31ee3d32d3287e48d2ad0ecd5dbecd41380e9"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro2_Map",
+        "M_TubeIntro2_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_TubeIntro2_Map-export.log",
+      "log_sha256": "5dffdc8028b9d8c5616edf750c5c5f02afa4a4b0f4a54e4eb5c5c6220544b0d9"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro3_Map",
+        "M_TubeIntro3_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_TubeIntro3_Map-dump.log",
+      "log_sha256": "43746c9529a4936e959c5e4c8f56c90ab41692c30d8e6d8afea19664e71fddba"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro3_Map",
+        "M_TubeIntro3_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_TubeIntro3_Map-export.log",
+      "log_sha256": "047c00fc35efac345b0f879f96adf4cd419b069e4da8f67101a979968190bdd3"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro4_Map",
+        "M_TubeIntro4_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_TubeIntro4_Map-dump.log",
+      "log_sha256": "dbc1e2cef60bf2b166ee535368ccfa1b642c087e5e513c718276a5ad21b3c013"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro4_Map",
+        "M_TubeIntro4_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_TubeIntro4_Map-export.log",
+      "log_sha256": "78987da091b68ea7a60c64ff68bd8384902c5194e8cc7bc8daa46c90bd620a4d"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeTerrain_Map",
+        "M_TubeTerrain_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_TubeTerrain_Map-dump.log",
+      "log_sha256": "1bdbeaa3521054995f8f0a4e613a857a777d8f20d9f9e3ee88d87c0f0a1ef921"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeTerrain_Map",
+        "M_TubeTerrain_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___ChezNous__Scatter__Materials__M_TubeTerrain_Map-export.log",
+      "log_sha256": "9954040bb42cbd4337e87f28a70f1f054e3ee55893a5cb7d77576dd463b6212a"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Assets/Materials/M_White_BaseColor",
+        "M_White_BaseColor"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Fantasynth__HelloComposer__Assets__Materials__M_White_BaseColor-dump.log",
+      "log_sha256": "7dbc436918ab41cd36e970a5c14fcef4c54546a9617e7faee912e6cfff116c05"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Assets/Materials/M_White_BaseColor",
+        "M_White_BaseColor"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Fantasynth__HelloComposer__Assets__Materials__M_White_BaseColor-export.log",
+      "log_sha256": "8bce4af4a919c745f8e362bfda8d79a9784c0ed0363f3e47a5127a3d56f7b70c"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Old_Planes/Materials/EmissiveBlue",
+        "EmissiveBlue"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Fantasynth__HelloComposer__Old_Planes__Materials__EmissiveBlue-dump.log",
+      "log_sha256": "3b99ba71cb5ef33d7d7c5ba21744f637efb013c19dfeb44f2a3b3528af5b333a"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Old_Planes/Materials/EmissiveBlue",
+        "EmissiveBlue"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Fantasynth__HelloComposer__Old_Planes__Materials__EmissiveBlue-export.log",
+      "log_sha256": "d75d0e2ddf11718d0c4210f339c7da5f91fadf03ea9071380500eac1bfc3e73e"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Old_Planes/Materials/EmissiveColor",
+        "EmissiveColor"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Fantasynth__HelloComposer__Old_Planes__Materials__EmissiveColor-dump.log",
+      "log_sha256": "77bcff94c95c713822c94fa5f6d4e8511fe3f3ecbb65ed485628ef7cdc4f39cd"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Old_Planes/Materials/EmissiveColor",
+        "EmissiveColor"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Fantasynth__HelloComposer__Old_Planes__Materials__EmissiveColor-export.log",
+      "log_sha256": "dfb425f9c5ecb5d9e9776eb35b0148e391c6e289f01b8d95865dced9c5cd1e0a"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Old_Planes/Materials/UnlitColor-Black",
+        "UnlitColor-Black"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Fantasynth__HelloComposer__Old_Planes__Materials__UnlitColor-Black-dump.log",
+      "log_sha256": "1aedbd7199c42712991f1e478d48c8f4f0a827ac150bb7c19c2e973cffb42235"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Old_Planes/Materials/UnlitColor-Black",
+        "UnlitColor-Black"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Fantasynth__HelloComposer__Old_Planes__Materials__UnlitColor-Black-export.log",
+      "log_sha256": "0572446294fbf8dd3b2342fec6eb658e33e071887451338e2c9f71779ed436fa"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/Materials/BaseMaterials/M_BaseColor",
+        "M_BaseColor"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__BaseMaterials__M_BaseColor-dump.log",
+      "log_sha256": "baaa1ec2aa834987067fb67c2a9b37374eadcfddce7cebbf04af578f63152c9c"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/Materials/BaseMaterials/M_BaseColor",
+        "M_BaseColor"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__BaseMaterials__M_BaseColor-export.log",
+      "log_sha256": "40bb77aa3789eb727cd18af1f0931fa286b4d127c7d1dcc0e60b66c2f041b056"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/Materials/BaseMaterials/M_Color_EmissiveGI",
+        "M_Color_EmissiveGI"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__BaseMaterials__M_Color_EmissiveGI-dump.log",
+      "log_sha256": "64bd272a15c9ee8937d67f77f91756190044a3d9711dfe9efd60463c9c9bd0eb"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/Materials/BaseMaterials/M_Color_EmissiveGI",
+        "M_Color_EmissiveGI"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__BaseMaterials__M_Color_EmissiveGI-export.log",
+      "log_sha256": "3746076cc381c6a14f32d242cfdf264addceea3a47607b910151befbdf984f86"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/Materials/BaseMaterials/M_Color_PBR",
+        "M_Color_PBR"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__BaseMaterials__M_Color_PBR-dump.log",
+      "log_sha256": "2e31892ced395be994be7cc0608c66973688f4059339c8c8361d09092d50ed6a"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/Materials/BaseMaterials/M_Color_PBR",
+        "M_Color_PBR"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__BaseMaterials__M_Color_PBR-export.log",
+      "log_sha256": "a2ed279e16f1dd0278a5af79ff420809674726a9b0dd02f4825814d0599696ce"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/Materials/BaseMaterials/M_Texture_Emissive",
+        "M_Texture_Emissive"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__BaseMaterials__M_Texture_Emissive-dump.log",
+      "log_sha256": "60aefcf708c0f3f48808346f026671c445dc7b6d5a412291ff89c348f89b9395"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/Materials/BaseMaterials/M_Texture_Emissive",
+        "M_Texture_Emissive"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__BaseMaterials__M_Texture_Emissive-export.log",
+      "log_sha256": "39731b77ea088c116ce2aa1099922dac5018d2a7fcfebc3b3e9561d4d77aa7ce"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/Materials/Basic_Materials/M_Black_M0_R025",
+        "M_Black_M0_R025"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__Basic_Materials__M_Black_M0_R025-dump.log",
+      "log_sha256": "0e6ff4ccb82c77162b3dcc2f96c26754dc9928695fc52011c71c0886c9b946d8"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/Materials/Basic_Materials/M_Black_M0_R025",
+        "M_Black_M0_R025"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__Basic_Materials__M_Black_M0_R025-export.log",
+      "log_sha256": "8d6b27b441b4dbfa9333c92d6488f06c18e3e5426f29b0aab55efb1d12e6c67f"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/Materials/M_BasicMetal_Grey",
+        "M_BasicMetal_Grey"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__M_BasicMetal_Grey-dump.log",
+      "log_sha256": "3c8582922fe16bb21f1fd3af2a555f4ebf0353fbdb444d8b5075b291014e5a75"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/Materials/M_BasicMetal_Grey",
+        "M_BasicMetal_Grey"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__M_BasicMetal_Grey-export.log",
+      "log_sha256": "4037029ed961e551b861d015b244777cac430191c5fa69f09c51826250ec49df"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/Materials/M_BasicMetal_White",
+        "M_BasicMetal_White"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__M_BasicMetal_White-dump.log",
+      "log_sha256": "d4df56d7431c6404086bb6e73c645ab52ca7fcc02df4158286ca9456a4c7c40c"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/Materials/M_BasicMetal_White",
+        "M_BasicMetal_White"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__M_BasicMetal_White-export.log",
+      "log_sha256": "f1595c01bddbbeee704873dc6377eb6e681342ea7b0c16671d2f6b52046f9d68"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/Materials/M_TerrainTiles",
+        "M_TerrainTiles"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__M_TerrainTiles-dump.log",
+      "log_sha256": "741c1898e801eee070f7ff6f893818cec67d6ff17ee58a507f76818f8d3e9b7e"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/Materials/M_TerrainTiles",
+        "M_TerrainTiles"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__M_TerrainTiles-export.log",
+      "log_sha256": "6ded6178a85e8e9ff319232830db1821d8ceffa28c2e2703dd31dd71ab3affaa"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/Materials/Mapping/M_Basic_Map",
+        "M_Basic_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__Mapping__M_Basic_Map-dump.log",
+      "log_sha256": "002ec534cdeb85f54c248b7a4d98881bdd82fd71e7eba4a9cfa583f420be6443"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/Materials/Mapping/M_Basic_Map",
+        "M_Basic_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__Mapping__M_Basic_Map-export.log",
+      "log_sha256": "7e15b574fc7bd37994fe7a1f8c581aab721453817a0c4729194a27cbaca32648"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map",
+        "M_Detail_Basic_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__Mapping__M_Detail_Basic_Map-dump.log",
+      "log_sha256": "8315c6365e8621c52960a2099f0ac92c6ce67fdfa73692b4b21a18f31b8a9862"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map",
+        "M_Detail_Basic_Map"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__Mapping__M_Detail_Basic_Map-export.log",
+      "log_sha256": "d83f5d9ac23c3a7817d59e27edfee09531f7696353823167ba39466544c01df1"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_CRN_MapTiled",
+        "M_Detail_CRN_MapTiled"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__Mapping__M_Detail_CRN_MapTiled-dump.log",
+      "log_sha256": "7cb0db66bc71354dd74b261c0e49722f9ebaa5d23488ee75dadf3aa551b6ab74"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_CRN_MapTiled",
+        "M_Detail_CRN_MapTiled"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__Mapping__M_Detail_CRN_MapTiled-export.log",
+      "log_sha256": "72af4d2ff4688e5debedc2a4b543956eb0b6ddeb11503ea900b8ce57a14fee70"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/Materials/Patterns/pattern_pixel_1",
+        "pattern_pixel_1"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__Patterns__pattern_pixel_1-dump.log",
+      "log_sha256": "ef2092c6a27938fa523d2a332c2c86a710fa34eef9bfc3c6c4b725ffc21245a8"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/Materials/Patterns/pattern_pixel_1",
+        "pattern_pixel_1"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__Patterns__pattern_pixel_1-export.log",
+      "log_sha256": "fbe5addcc0ac08273d3e44a11aa7349ba62bcf891ef37d75cdbd6d15f9bbee6d"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/Materials/Textures/Circle_256_8",
+        "Circle_256_8"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__Textures__Circle_256_8-dump.log",
+      "log_sha256": "efc224a33975e4d61f4616816dc66b54f0145919666168874c06cdf9d0efe537"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/Materials/Textures/Circle_256_8",
+        "Circle_256_8"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__Textures__Circle_256_8-export.log",
+      "log_sha256": "8f43401e903cc2781ad598d1a86ba4962623b01a99892193527ba0f9cde05f8c"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/Materials/Textures/DiagonalBand32-Light",
+        "DiagonalBand32-Light"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__Textures__DiagonalBand32-Light-dump.log",
+      "log_sha256": "69250f3baab1f633103daf24719cf6b3b80d5de4a4bc385a1951e8e90b2f5ddd"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/Materials/Textures/DiagonalBand32-Light",
+        "DiagonalBand32-Light"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__Textures__DiagonalBand32-Light-export.log",
+      "log_sha256": "1ad3e3f2f5a60fe2db4747fa763a6fcc632fa302c1ee7861a55d4f1fdc265f37"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-dump",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "/Game/_HelloEnjoy_/Materials/Textures/color_white",
+        "color_white"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__Textures__color_white-dump.log",
+      "log_sha256": "53ca9e6f8905ede778e0ddcf829bb042f8c56edd665186785ce210533c5fe9a0"
+    },
+    {
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\opening-development\\material-evidence\\exports",
+        "-png",
+        "/Game/_HelloEnjoy_/Materials/Textures/color_white",
+        "color_white"
+      ],
+      "returncode": 0,
+      "log": "plan/opening-development/material-evidence/logs/_HelloEnjoy___Materials__Textures__color_white-export.log",
+      "log_sha256": "92750b362a6c70534ae0523d2d7b95b42ff2d36b7976592dd118e9f5d429e6bc"
+    }
+  ]
+}

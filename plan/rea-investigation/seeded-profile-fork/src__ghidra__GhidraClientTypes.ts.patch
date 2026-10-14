@@ -1,0 +1,14 @@
+warning: in the working copy of 'C:\ORCA\Fantasynt\plan\rea-investigation\seeded-profile-fork\backups\src\ghidra\GhidraClientTypes.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'C:\ORCA\Fantasynt\tools\vendor\rea-main-source\rea-df2c08b546d4f40103e11b8b31dbfc3d41ee687b\src\ghidra\GhidraClientTypes.ts', LF will be replaced by CRLF the next time Git touches it
+diff --git "a/C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\seeded-profile-fork\\backups\\src\\ghidra\\GhidraClientTypes.ts" "b/C:\\ORCA\\Fantasynt\\tools\\vendor\\rea-main-source\\rea-df2c08b546d4f40103e11b8b31dbfc3d41ee687b\\src\\ghidra\\GhidraClientTypes.ts"
+index 14c8733..c8236b8 100644
+--- "a/C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\seeded-profile-fork\\backups\\src\\ghidra\\GhidraClientTypes.ts"
++++ "b/C:\\ORCA\\Fantasynt\\tools\\vendor\\rea-main-source\\rea-df2c08b546d4f40103e11b8b31dbfc3d41ee687b\\src\\ghidra\\GhidraClientTypes.ts"
+@@ -41,6 +41,7 @@ export interface GhidraClientOptions {
+   readonly transport?: GhidraTransportKind;
+   readonly providerVersion: string;
+   readonly profileDigest: string;
++  readonly expectedSeededOnly?: true;
+   readonly expectedLanguageId?: string;
+   readonly expectedCompilerSpecId?: string;
+   readonly startupTimeoutMs?: number;

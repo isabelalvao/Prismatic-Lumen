@@ -1,0 +1,51 @@
+{
+  "input": {
+    "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Hex_Solid_1.uasset",
+    "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Hex_Solid_1",
+    "object_name": "SM_Hex_Solid_1",
+    "class_reference": "/Script/Engine.StaticMesh",
+    "export_index": 3,
+    "serial_offset": 9503,
+    "serial_size": 5764,
+    "payload_sha1": "76f06668d0e633660719cd0c6eba4f16d7d1f95b",
+    "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+    "source_reports": [
+      "mesh-assets.json"
+    ],
+    "payload_pak_offset": 103061557,
+    "payload_size": 15271,
+    "source_sha1_verified": true,
+    "resource_id": "SM_Hex_Solid_1-76f06668"
+  },
+  "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Hex_Solid_1-76f06668",
+  "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+  "args": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-export",
+    "-gltf",
+    "-notex",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Hex_Solid_1-76f06668",
+    "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Hex_Solid_1",
+    "SM_Hex_Solid_1",
+    "StaticMesh"
+  ],
+  "returncode": 0,
+  "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Hex_Solid_1-76f06668.log",
+  "method": "qualified package+object+class UModel export",
+  "elapsed_seconds": 0.03200000000651926,
+  "files": [
+    {
+      "path": "resources\\SM_Hex_Solid_1-76f06668\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Hex_Solid_1.bin",
+      "size": 3972,
+      "sha256": "0e6e18eaecb7c41db640e39dabb59f8384e2e4d385ff621be64d9affe39b8941"
+    },
+    {
+      "path": "resources\\SM_Hex_Solid_1-76f06668\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Hex_Solid_1.gltf",
+      "size": 3659,
+      "sha256": "9bc17866cf3dbc9db7f87cd7f8e686b478e1f1ca2937217f26ecb7b59a82bdcd"
+    }
+  ],
+  "export_status": "exported_pending_geometry_validation"
+}

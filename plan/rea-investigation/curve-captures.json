@@ -1,0 +1,134 @@
+[
+  {
+    "accepted_commands": 0,
+    "atmosphere": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "average_fps": 35.814550466954586,
+    "camera_position": -6400.00048828125,
+    "composition_weights": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "frames": 8,
+    "max_delivery_ms": 0.0,
+    "mean_delivery_ms": 0.0,
+    "seconds": 0.2233729,
+    "sequence": true,
+    "sequence_seconds": 40.0,
+    "type": "performance"
+  },
+  {
+    "accepted_commands": 0,
+    "atmosphere": [
+      0.024000000208616257,
+      0.03799999877810478,
+      0.05999999865889549
+    ],
+    "average_fps": 36.09880242222964,
+    "camera_position": -4800.00048828125,
+    "composition_weights": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "frames": 8,
+    "max_delivery_ms": 0.0,
+    "mean_delivery_ms": 0.0,
+    "seconds": 0.221614,
+    "sequence": true,
+    "sequence_seconds": 120.0,
+    "type": "performance"
+  },
+  {
+    "accepted_commands": 0,
+    "atmosphere": [
+      0.3862000107765198,
+      0.004200000315904617,
+      0.004200000315904617
+    ],
+    "average_fps": 36.822884686374884,
+    "camera_position": 7199.99951171875,
+    "composition_weights": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "frames": 8,
+    "max_delivery_ms": 0.0,
+    "mean_delivery_ms": 0.0,
+    "seconds": 0.2172562,
+    "sequence": true,
+    "sequence_seconds": 180.0,
+    "type": "performance"
+  },
+  {
+    "accepted_commands": 0,
+    "atmosphere": [
+      0.49421370029449463,
+      0.016495969146490097,
+      0.007487902417778969
+    ],
+    "average_fps": 35.773615616971895,
+    "camera_position": 12700.0,
+    "composition_weights": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "frames": 8,
+    "max_delivery_ms": 0.0,
+    "mean_delivery_ms": 0.0,
+    "seconds": 0.2236285,
+    "sequence": true,
+    "sequence_seconds": 207.5,
+    "type": "performance"
+  },
+  {
+    "accepted_commands": 0,
+    "atmosphere": [
+      0.0,
+      0.001000000978820026,
+      0.002500002272427082
+    ],
+    "average_fps": 35.559380164444356,
+    "camera_position": 16800.0,
+    "composition_weights": [
+      0.0,
+      0.5,
+      0.5
+    ],
+    "frames": 8,
+    "max_delivery_ms": 0.0,
+    "mean_delivery_ms": 0.0,
+    "seconds": 0.2249758,
+    "sequence": true,
+    "sequence_seconds": 228.0,
+    "type": "performance"
+  },
+  {
+    "accepted_commands": 0,
+    "atmosphere": [
+      0.030712999403476715,
+      0.015995999798178673,
+      0.04970699921250343
+    ],
+    "average_fps": 36.70021065920918,
+    "camera_position": 32400.001953125,
+    "composition_weights": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "frames": 8,
+    "max_delivery_ms": 0.0,
+    "mean_delivery_ms": 0.0,
+    "seconds": 0.2179824,
+    "sequence": true,
+    "sequence_seconds": 300.0,
+    "type": "performance"
+  }
+]

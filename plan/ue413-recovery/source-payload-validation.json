@@ -1,0 +1,24 @@
+{
+  "kind": "Independent direct PAK payload verification, not REA Evidence",
+  "assets": [
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_1.uasset",
+      "sha1": "c55b2515dd651a885fe03d9a04c4680da8c7db78",
+      "pak_offset": 103209013,
+      "bytes": 24386
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/Materials/Textures/DiagonalLine32.uasset",
+      "sha1": "895ae6e484276f2867d73e379bf6752a3fa85a46",
+      "pak_offset": 43587637,
+      "bytes": 44818
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Audio/ChezNous_MASTER.uasset",
+      "sha1": "02883d8dc385613716f728c43623fc7652a8c7d6",
+      "pak_offset": 189677621,
+      "bytes": 14940214
+    }
+  ],
+  "pak_mtime_unchanged": true
+}

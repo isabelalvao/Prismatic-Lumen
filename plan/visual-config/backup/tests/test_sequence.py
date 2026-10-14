@@ -1,0 +1,157 @@
+"""Reprodução real e manutenção dos comandos durante transições de composição."""
+import json
+import os
+import socket
+import subprocess
+import tempfile
+import time
+import unittest
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+EXE = Path(os.environ.get("FANTASYNT_EXE", ROOT / "build/Release/fantasynt.exe"))
+
+
+class SequenceApplicationTests(unittest.TestCase):
+    def test_fixed_time_selects_each_phase_and_overlap(self):
+        for seconds, weights in ((40, [0, 0, 0]), (96, [0, 0, 0]),
+                                 (180, [0, 1, 0]), (228, [0, 0.5, 0.5]), (300, [0, 0, 1])):
+            with self.subTest(seconds=seconds), tempfile.TemporaryDirectory(dir=ROOT / "temp") as folder:
+                with socket.socket() as reservation:
+                    reservation.bind(("127.0.0.1", 0))
+                    port = reservation.getsockname()[1]
+                image = Path(folder) / "capture.png"
+                result = subprocess.run([str(EXE), "--hidden", "--frames", "8", "--scene", "sequence",
+                    "--fixed-time", str(seconds), "--port", str(port), "--capture", str(image)],
+                    cwd=folder, capture_output=True, text=True, timeout=20,
+                    creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
+                self.assertEqual(result.returncode, 0, result.stderr)
+                report = json.loads(result.stdout.splitlines()[-1])
+                self.assertEqual(report["sequence_seconds"], seconds)
+                self.assertEqual(report["composition_weights"], weights)
+                expected_camera = -6400.00048828125 if seconds <= 112 else (
+                    -6400.00048828125 + (seconds-112)*22400.00048828125/112 if seconds < 224
+                    else 16000+(seconds-224)*200 if seconds <= 288
+                    else 28800+(seconds-288)*19200/(351.9999694824219-288))
+                if seconds <= 120:
+                    expected_camera = -6400.00048828125+150*(seconds-11)
+                else:
+                    expected_camera += 14750
+                self.assertAlmostEqual(report["camera_position"], expected_camera, delta=0.01)
+                self.assertGreater(image.stat().st_size, 2000)
+
+    def test_commands_survive_crossing_into_tunnel(self):
+        with tempfile.TemporaryDirectory(dir=ROOT / "temp") as folder:
+            with socket.socket() as reservation:
+                reservation.bind(("127.0.0.1", 0))
+                port = reservation.getsockname()[1]
+            process = subprocess.Popen([str(EXE), "--hidden", "--frames", "150", "--scene", "sequence",
+                "--start-time", "223.5", "--port", str(port)], cwd=folder,
+                stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
+                creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
+            try:
+                for _ in range(200):
+                    try:
+                        connection = socket.create_connection(("127.0.0.1", port), timeout=1)
+                        break
+                    except OSError:
+                        if process.poll() is not None:
+                            self.fail(process.communicate()[1])
+                        time.sleep(0.025)
+                else:
+                    self.fail("Servidor indisponível")
+                with connection, connection.makefile("rb") as reader:
+                    def send(identifier, parameters):
+                        connection.sendall(json.dumps({"schema_version": 1, "id": identifier,
+                            "command": "apply_parameters", "transition_seconds": 0.1,
+                            "parameters": parameters}).encode() + b"\n")
+                        return json.loads(reader.readline())
+                    first = send("sequence-control", {"light_intensity": 0.17, "motion_speed": 0})
+                    self.assertEqual(first["status"], "accepted")
+                    time.sleep(1.0)
+                    second = send("sequence-read", {"bloom": 0.23})
+                    self.assertEqual(second["revision"], first["revision"] + 1)
+                    self.assertAlmostEqual(second["current"]["light_intensity"], 0.17, places=5)
+                    self.assertEqual(second["target"]["motion_speed"], 0)
+                stdout, stderr = process.communicate(timeout=15)
+                self.assertEqual(process.returncode, 0, stderr)
+                final = json.loads(stdout.splitlines()[-1])
+                self.assertGreater(final["composition_weights"][2], 0)
+                self.assertEqual(final["accepted_commands"], 2)
+            finally:
+                if process.poll() is None:
+                    process.kill()
+                    process.communicate()
+
+    def test_camera_uses_sequence_time_and_pause(self):
+        for paused in (False, True):
+            with self.subTest(paused=paused), tempfile.TemporaryDirectory(dir=ROOT / "temp") as folder:
+                with socket.socket() as reservation:
+                    reservation.bind(("127.0.0.1", 0))
+                    port = reservation.getsockname()[1]
+                result = subprocess.run([str(EXE), "--hidden", "--frames", "30",
+                    "--scene", "sequence", "--start-time", "224", "--port", str(port),
+                    *(["--paused"] if paused else [])], cwd=folder,
+                    capture_output=True, text=True, timeout=10,
+                    creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
+                self.assertEqual(result.returncode, 0, result.stderr)
+                report = json.loads(result.stdout.splitlines()[-1])
+                self.assertAlmostEqual(report["camera_position"],
+                    30750+(report["sequence_seconds"]-224)*200, delta=0.02)
+                if paused:
+                    self.assertEqual(report["sequence_seconds"], 224)
+                else:
+                    self.assertGreater(report["sequence_seconds"], 224.2)
+
+    def test_motion_speed_zero_then_resume_preserves_camera_offset(self):
+        with tempfile.TemporaryDirectory(dir=ROOT / "temp") as folder:
+            with socket.socket() as reservation:
+                reservation.bind(("127.0.0.1", 0))
+                port = reservation.getsockname()[1]
+            process = subprocess.Popen([str(EXE), "--hidden", "--frames", "150",
+                "--scene", "sequence", "--start-time", "224", "--port", str(port)], cwd=folder,
+                stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
+                creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
+            try:
+                deadline = time.monotonic()+5
+                while True:
+                    try:
+                        connection = socket.create_connection(("127.0.0.1", port), timeout=1)
+                        break
+                    except OSError:
+                        if process.poll() is not None:
+                            self.fail(process.communicate()[1])
+                        if time.monotonic() >= deadline:
+                            self.fail("Servidor indisponível")
+                        time.sleep(0.025)
+                with connection, connection.makefile("rb") as reader:
+                    def send(identifier, parameters):
+                        connection.sendall(json.dumps({"schema_version": 1, "id": identifier,
+                            "command": "apply_parameters", "transition_seconds": 0.1,
+                            "parameters": parameters}).encode() + b"\n")
+                        return json.loads(reader.readline())
+                    self.assertEqual(send("freeze", {"motion_speed": 0})["status"], "accepted")
+                    time.sleep(0.3)
+                    self.assertEqual(send("frozen-read", {"bloom": 0.2})["current"]["motion_speed"], 0)
+                    time.sleep(0.35)
+                    self.assertEqual(send("resume", {"motion_speed": 0.3})["status"], "accepted")
+                stdout, stderr = process.communicate(timeout=15)
+                self.assertEqual(process.returncode, 0, stderr)
+                final = json.loads(stdout.splitlines()[-1])
+                reference = 30750+(final["sequence_seconds"]-224)*200
+                # A retoma conserva a distância perdida; atribuir a posição absoluta apagá-la-ia.
+                self.assertGreater(reference-final["camera_position"], 70)
+                self.assertLess(reference-final["camera_position"], 220)
+                self.assertGreater(final["camera_position"], 30850)
+                self.assertEqual(final["accepted_commands"], 3)
+            finally:
+                if process.poll() is None:
+                    process.kill()
+                    process.communicate()
+
+    def test_invalid_time_is_rejected_before_startup(self):
+        for value in ("nan", "inf", "-1", "425", "abc"):
+            result = subprocess.run([str(EXE), "--fixed-time", value], capture_output=True,
+                text=True, timeout=5, creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
+            self.assertEqual(result.returncode, 1)
+            self.assertIn("Time must be", result.stderr)

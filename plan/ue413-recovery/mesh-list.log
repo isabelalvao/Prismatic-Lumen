@@ -1,0 +1,7 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_1.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 73 Exports: 3 Imports: 6 Game: 10000D0
+   0      8B7      A9B BodySetup BodySetup_0
+   1     1352     15DD NavCollision NavCollision_0
+   2     292F     360F StaticMesh SM_Lower_1

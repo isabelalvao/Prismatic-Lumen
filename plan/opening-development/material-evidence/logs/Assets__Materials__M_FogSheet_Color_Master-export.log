@@ -1,0 +1,20 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/Assets/Materials/M_FogSheet_Color_Master.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 123 Exports: 16 Imports: 14 Game: 10000D0
+Export "M_FogSheet_Color_Master" was found in package "/Game/Assets/Materials/M_FogSheet_Color_Master.uasset"
+Found 1 object(s)
+Loading Material3 M_FogSheet_Color_Master from package /Game/Assets/Materials/M_FogSheet_Color_Master.uasset
+StructProperty: unknown UMaterial3 Roughness
+StructProperty: unknown UMaterial3 WorldPositionOffset
+StructProperty: unknown UMaterial3 SubsurfaceColor
+BoolProperty: unknown UMaterial3 bEnableSeparateTranslucency
+ArrayProperty: unknown UMaterial3 MaterialFunctionInfos
+StructProperty: unknown UMaterialExpressionTextureSampleParameter2D MipValue
+ByteProperty: unknown UMaterialExpressionTextureSampleParameter2D MipValueMode
+Loading package: /Game/Assets/Textures/T_TilingNoise03_M.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 14 Exports: 1 Imports: 2 Game: 10000D0
+Loading Texture2D T_TilingNoise03_M from package /Game/Assets/Textures/T_TilingNoise03_M.uasset
+Loaded in 0.0 sec, 94 allocs, 0.21 MBytes serialized in 16 calls.
+Exporting objects ...
+Exporting Material3 M_FogSheet_Color_Master to C:/ORCA/Fantasynt/plan/opening-development/material-evidence/exports/Game/Assets/Materials/M_FogSheet_Color_Master.mat
+Exporting Texture2D T_TilingNoise03_M to C:/ORCA/Fantasynt/plan/opening-development/material-evidence/exports/Game/Assets/Textures/T_TilingNoise03_M.png

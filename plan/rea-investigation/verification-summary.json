@@ -1,0 +1,11 @@
+{
+  "release": "0.4.1",
+  "ctest_passed": 6,
+  "python_passed": 25,
+  "reviewed_sequence_tests_passed": 5,
+  "package_sha256": "73890bf439695750932a2304b3b0f7054b2e9fb4096c455385f40c9e304295e4",
+  "native_target_sha256": "5380708aaf59992814912122afc3f71d6b18bd41062cde1a5e04fcec4e9f191b",
+  "physical_headset_validated": false,
+  "full_fidelity_complete": false,
+  "inline_native_evidence_records": 22
+}

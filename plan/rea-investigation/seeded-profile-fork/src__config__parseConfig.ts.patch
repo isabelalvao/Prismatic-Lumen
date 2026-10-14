@@ -1,0 +1,25 @@
+warning: in the working copy of 'C:\ORCA\Fantasynt\plan\rea-investigation\seeded-profile-fork\backups\src\config\parseConfig.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'C:\ORCA\Fantasynt\tools\vendor\rea-main-source\rea-df2c08b546d4f40103e11b8b31dbfc3d41ee687b\src\config\parseConfig.ts', LF will be replaced by CRLF the next time Git touches it
+diff --git "a/C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\seeded-profile-fork\\backups\\src\\config\\parseConfig.ts" "b/C:\\ORCA\\Fantasynt\\tools\\vendor\\rea-main-source\\rea-df2c08b546d4f40103e11b8b31dbfc3d41ee687b\\src\\config\\parseConfig.ts"
+index 757e02a..54357df 100644
+--- "a/C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\seeded-profile-fork\\backups\\src\\config\\parseConfig.ts"
++++ "b/C:\\ORCA\\Fantasynt\\tools\\vendor\\rea-main-source\\rea-df2c08b546d4f40103e11b8b31dbfc3d41ee687b\\src\\config\\parseConfig.ts"
+@@ -39,6 +39,10 @@ export const parseConfig = (
+   const parsed = parseEnvironment(environment);
+   if (!parsed.ok) return parsed;
+   const env = parsed.value;
++  if (env.REA_GHIDRA_SEEDED_ONLY === "1" && env.REA_GHIDRA_SEED_FILE === undefined)
++    return err(new ConfigurationError("Invalid REA environment configuration", {
++      settings: [{ setting: "REA_GHIDRA_SEEDED_ONLY", constraint: "requires REA_GHIDRA_SEED_FILE" }],
++    }));
+   const loaderArgs = parseLoaderArgs(env.HOPPER_LOADER_ARGS_JSON);
+   if (!loaderArgs.ok) return loaderArgs;
+   const secretPatterns = parseStringArray(
+@@ -75,6 +79,7 @@ export const parseConfig = (
+     ghidraInstallDir: env.GHIDRA_INSTALL_DIR,
+     ghidraJavaHome: env.JAVA_HOME,
+     ghidraStartupTimeoutMs: env.REA_GHIDRA_STARTUP_TIMEOUT_MS,
++    ...(env.REA_GHIDRA_SEEDED_ONLY === "1" ? { ghidraSeededOnly: true as const } : {}),
+     ...(env.REA_GHIDRA_LANGUAGE_ID === undefined
+       ? {}
+       : {

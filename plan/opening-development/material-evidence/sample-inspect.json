@@ -1,0 +1,320 @@
+{
+  "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content\\Paks\\Fantasynth-WindowsNoEditor.pak",
+  "scope": "Static package metadata and tagged properties only; no runtime observation or shader/native payload decoding",
+  "assets": [
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro0_Map.uasset",
+      "payload_sha1": "8a9051f1198895cd7e74de9f5112c7dbedce4dcf",
+      "payload_hash_verified": true,
+      "raw_size": 2522,
+      "pak_payload_offset": 105523253,
+      "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+      "legacy": -6,
+      "ue4_version": 0,
+      "licensee_version": 0,
+      "custom_count": 0,
+      "header_size": 1443,
+      "name_offset": 185,
+      "import_offset": 1187,
+      "export_offset": 1355,
+      "names": [
+        "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro0_RenderTarget",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro0_Map",
+        "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map",
+        "/Script/CoreUObject",
+        "/Script/Engine",
+        "ArrayProperty",
+        "Class",
+        "Color",
+        "ExpressionGUID",
+        "FloatProperty",
+        "Guid",
+        "LinearColor",
+        "M_Detail_Basic_Map",
+        "M_TubeIntro0_Map",
+        "Mapping",
+        "Material",
+        "MaterialInstanceConstant",
+        "NameProperty",
+        "None",
+        "ObjectProperty",
+        "Package",
+        "ParameterName",
+        "ParameterValue",
+        "Parent",
+        "ParentLightingGuid",
+        "RefractionDepthBias",
+        "ScalarParameterValue",
+        "ScalarParameterValues",
+        "StructProperty",
+        "TextureParameterValue",
+        "TextureParameterValues",
+        "TextureRenderTarget2D",
+        "Tiling U",
+        "Tiling V",
+        "TubeIntro0_RenderTarget",
+        "VectorParameterValue",
+        "VectorParameterValues"
+      ],
+      "imports": [
+        {
+          "class_package": "/Script/CoreUObject",
+          "class": "Class",
+          "outer_index": -5,
+          "name": "MaterialInstanceConstant"
+        },
+        {
+          "class_package": "/Script/Engine",
+          "class": "Material",
+          "outer_index": -4,
+          "name": "M_Detail_Basic_Map"
+        },
+        {
+          "class_package": "/Script/CoreUObject",
+          "class": "Package",
+          "outer_index": 0,
+          "name": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro0_RenderTarget"
+        },
+        {
+          "class_package": "/Script/CoreUObject",
+          "class": "Package",
+          "outer_index": 0,
+          "name": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map"
+        },
+        {
+          "class_package": "/Script/CoreUObject",
+          "class": "Package",
+          "outer_index": 0,
+          "name": "/Script/Engine"
+        },
+        {
+          "class_package": "/Script/Engine",
+          "class": "TextureRenderTarget2D",
+          "outer_index": -3,
+          "name": "TubeIntro0_RenderTarget"
+        }
+      ],
+      "exports": [
+        {
+          "class_index": -1,
+          "super_index": 0,
+          "outer_index": 0,
+          "name": "M_TubeIntro0_Map",
+          "flags": 3,
+          "serial_size": 1075,
+          "serial_offset": 1443,
+          "properties": [
+            {
+              "offset": 1443,
+              "name": "Parent",
+              "type": "ObjectProperty",
+              "size": 4,
+              "array_index": 0,
+              "object_index": -2
+            },
+            {
+              "offset": 1472,
+              "name": "ParentLightingGuid",
+              "type": "StructProperty",
+              "size": 16,
+              "array_index": 0,
+              "struct": "Guid"
+            },
+            {
+              "offset": 1537,
+              "name": "ScalarParameterValues",
+              "type": "ArrayProperty",
+              "size": 458,
+              "array_index": 0,
+              "inner": "StructProperty",
+              "count": 3,
+              "element": {
+                "name": "ScalarParameterValues",
+                "type": "StructProperty",
+                "struct": "ScalarParameterValue",
+                "size": 405,
+                "index": 0
+              },
+              "values": [
+                [
+                  {
+                    "offset": 1623,
+                    "name": "ParameterName",
+                    "type": "NameProperty",
+                    "size": 8,
+                    "array_index": 0,
+                    "value": "Tiling U"
+                  },
+                  {
+                    "offset": 1656,
+                    "name": "ParameterValue",
+                    "type": "FloatProperty",
+                    "size": 4,
+                    "array_index": 0,
+                    "value": 64.0
+                  },
+                  {
+                    "offset": 1685,
+                    "name": "ExpressionGUID",
+                    "type": "StructProperty",
+                    "size": 16,
+                    "array_index": 0,
+                    "struct": "Guid"
+                  }
+                ],
+                [
+                  {
+                    "offset": 1758,
+                    "name": "ParameterName",
+                    "type": "NameProperty",
+                    "size": 8,
+                    "array_index": 0,
+                    "value": "Tiling V"
+                  },
+                  {
+                    "offset": 1791,
+                    "name": "ParameterValue",
+                    "type": "FloatProperty",
+                    "size": 4,
+                    "array_index": 0,
+                    "value": 64.0
+                  },
+                  {
+                    "offset": 1820,
+                    "name": "ExpressionGUID",
+                    "type": "StructProperty",
+                    "size": 16,
+                    "array_index": 0,
+                    "struct": "Guid"
+                  }
+                ],
+                [
+                  {
+                    "offset": 1893,
+                    "name": "ParameterName",
+                    "type": "NameProperty",
+                    "size": 8,
+                    "array_index": 0,
+                    "value": "RefractionDepthBias"
+                  },
+                  {
+                    "offset": 1926,
+                    "name": "ParameterValue",
+                    "type": "FloatProperty",
+                    "size": 4,
+                    "array_index": 0,
+                    "value": 0.0
+                  },
+                  {
+                    "offset": 1955,
+                    "name": "ExpressionGUID",
+                    "type": "StructProperty",
+                    "size": 16,
+                    "array_index": 0,
+                    "struct": "Guid"
+                  }
+                ]
+              ]
+            },
+            {
+              "offset": 2028,
+              "name": "TextureParameterValues",
+              "type": "ArrayProperty",
+              "size": 188,
+              "array_index": 0,
+              "inner": "StructProperty",
+              "count": 1,
+              "element": {
+                "name": "TextureParameterValues",
+                "type": "StructProperty",
+                "struct": "TextureParameterValue",
+                "size": 135,
+                "index": 0
+              },
+              "values": [
+                [
+                  {
+                    "offset": 2114,
+                    "name": "ParameterName",
+                    "type": "NameProperty",
+                    "size": 8,
+                    "array_index": 0,
+                    "value": "Mapping"
+                  },
+                  {
+                    "offset": 2147,
+                    "name": "ParameterValue",
+                    "type": "ObjectProperty",
+                    "size": 4,
+                    "array_index": 0,
+                    "object_index": -6
+                  },
+                  {
+                    "offset": 2176,
+                    "name": "ExpressionGUID",
+                    "type": "StructProperty",
+                    "size": 16,
+                    "array_index": 0,
+                    "struct": "Guid"
+                  }
+                ]
+              ]
+            },
+            {
+              "offset": 2249,
+              "name": "VectorParameterValues",
+              "type": "ArrayProperty",
+              "size": 224,
+              "array_index": 0,
+              "inner": "StructProperty",
+              "count": 1,
+              "element": {
+                "name": "VectorParameterValues",
+                "type": "StructProperty",
+                "struct": "VectorParameterValue",
+                "size": 171,
+                "index": 0
+              },
+              "values": [
+                [
+                  {
+                    "offset": 2335,
+                    "name": "ParameterName",
+                    "type": "NameProperty",
+                    "size": 8,
+                    "array_index": 0,
+                    "value": "Color"
+                  },
+                  {
+                    "offset": 2368,
+                    "name": "ParameterValue",
+                    "type": "StructProperty",
+                    "size": 16,
+                    "array_index": 0,
+                    "struct": "LinearColor",
+                    "value_rgba": [
+                      0.10000000149011612,
+                      0.10000000149011612,
+                      0.10000000149011612,
+                      1.0
+                    ]
+                  },
+                  {
+                    "offset": 2433,
+                    "name": "ExpressionGUID",
+                    "type": "StructProperty",
+                    "size": 16,
+                    "array_index": 0,
+                    "struct": "Guid"
+                  }
+                ]
+              ]
+            }
+          ],
+          "tagged_properties_end": 2514,
+          "remaining_serial_bytes": 4
+        }
+      ]
+    }
+  ]
+}

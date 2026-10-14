@@ -1,0 +1,39 @@
+Test project C:/ORCA/Fantasynt/build
+      Start  1: audio
+ 1/17 Test  #1: audio ............................   Passed    0.39 sec
+      Start  2: renderer_resize
+ 2/17 Test  #2: renderer_resize ..................   Passed    8.11 sec
+      Start  3: spectral_geometry
+ 3/17 Test  #3: spectral_geometry ................   Passed    0.02 sec
+      Start  4: rotation_history
+ 4/17 Test  #4: rotation_history .................   Passed    0.01 sec
+      Start  5: choreography
+ 5/17 Test  #5: choreography .....................   Passed    0.01 sec
+      Start  6: six_minute
+ 6/17 Test  #6: six_minute .......................   Passed    0.01 sec
+      Start  7: comfort
+ 7/17 Test  #7: comfort ..........................   Passed    0.57 sec
+      Start  8: time_display
+ 8/17 Test  #8: time_display .....................   Passed    0.01 sec
+      Start  9: phase
+ 9/17 Test  #9: phase ............................   Passed    0.02 sec
+      Start 10: visual_config
+10/17 Test #10: visual_config ....................   Passed    0.01 sec
+      Start 11: direction
+11/17 Test #11: direction ........................   Passed    0.32 sec
+      Start 12: opening
+12/17 Test #12: opening ..........................   Passed    0.30 sec
+      Start 13: sequence
+13/17 Test #13: sequence .........................   Passed    0.10 sec
+      Start 14: vr_math
+14/17 Test #14: vr_math ..........................   Passed    0.01 sec
+      Start 15: control
+15/17 Test #15: control ..........................   Passed    0.01 sec
+      Start 16: network
+16/17 Test #16: network ..........................   Passed    0.35 sec
+      Start 17: geometry
+17/17 Test #17: geometry .........................   Passed    0.02 sec
+
+100% tests passed, 0 tests failed out of 17
+
+Total Test time (real) =  10.32 sec

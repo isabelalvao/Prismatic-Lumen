@@ -1,0 +1,117 @@
+[
+  {
+    "scene": "night",
+    "time": 40,
+    "width": 1920,
+    "height": 1080,
+    "capture": false,
+    "performance": {
+      "accepted_commands": 0,
+      "average_fps": 59.98580615854676,
+      "composition_weights": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "frames": 300,
+      "max_delivery_ms": 0.0,
+      "mean_delivery_ms": 0.0,
+      "seconds": 5.0011831,
+      "sequence": false,
+      "sequence_seconds": 40.0,
+      "type": "performance"
+    }
+  },
+  {
+    "scene": "landscape",
+    "time": 180,
+    "width": 1920,
+    "height": 1080,
+    "capture": false,
+    "performance": {
+      "accepted_commands": 0,
+      "average_fps": 59.9987832246762,
+      "composition_weights": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "frames": 300,
+      "max_delivery_ms": 0.0,
+      "mean_delivery_ms": 0.0,
+      "seconds": 5.0001014,
+      "sequence": false,
+      "sequence_seconds": 180.0,
+      "type": "performance"
+    }
+  },
+  {
+    "scene": "tunnel",
+    "time": 300,
+    "width": 1920,
+    "height": 1080,
+    "capture": false,
+    "performance": {
+      "accepted_commands": 0,
+      "average_fps": 59.998786824530406,
+      "composition_weights": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "frames": 300,
+      "max_delivery_ms": 0.0,
+      "mean_delivery_ms": 0.0,
+      "seconds": 5.0001011,
+      "sequence": false,
+      "sequence_seconds": 300.0,
+      "type": "performance"
+    }
+  },
+  {
+    "scene": "sequence",
+    "time": 96,
+    "width": 1920,
+    "height": 1080,
+    "capture": false,
+    "performance": {
+      "accepted_commands": 0,
+      "average_fps": 59.998786824530406,
+      "composition_weights": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "frames": 300,
+      "max_delivery_ms": 0.0,
+      "mean_delivery_ms": 0.0,
+      "seconds": 5.0001011,
+      "sequence": true,
+      "sequence_seconds": 96.0,
+      "type": "performance"
+    }
+  },
+  {
+    "scene": "sequence",
+    "time": 228,
+    "width": 1920,
+    "height": 1080,
+    "capture": false,
+    "performance": {
+      "accepted_commands": 0,
+      "average_fps": 59.998786824530406,
+      "composition_weights": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "frames": 300,
+      "max_delivery_ms": 0.0,
+      "mean_delivery_ms": 0.0,
+      "seconds": 5.0001011,
+      "sequence": true,
+      "sequence_seconds": 228.0,
+      "type": "performance"
+    }
+  }
+]

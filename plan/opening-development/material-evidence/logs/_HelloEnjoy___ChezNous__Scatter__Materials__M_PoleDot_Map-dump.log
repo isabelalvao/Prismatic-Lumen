@@ -1,0 +1,79 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleDot_Map.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 97 Exports: 5 Imports: 8 Game: 10000D0
+Export "M_PoleDot_Map" was found in package "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleDot_Map.uasset"
+Found 1 object(s)
+Loading Material3 M_PoleDot_Map from package /Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleDot_Map.uasset
+StructProperty: unknown UMaterial3 BaseColor
+StructProperty: unknown UMaterial3 Metallic
+StructProperty: unknown UMaterial3 Roughness
+StructProperty: unknown UMaterial3 AmbientOcclusion
+BoolProperty: unknown UMaterial3 bUseEmissiveForDynamicAreaLighting
+Loading package: /Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/PoleDot_RenderTarget.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 21 Exports: 1 Imports: 2 Game: 10000D0
+WARNING: Unknown class "TextureRenderTarget2D" for object "PoleDot_RenderTarget"
+FloatProperty: unknown UMaterialExpressionScalarParameter SliderMax
+FloatProperty: unknown UMaterialExpressionScalarParameter SliderMax
+Loading package: /Game/_HelloEnjoy_/Materials/Textures/Circle_256_8.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 14 Exports: 1 Imports: 2 Game: 10000D0
+Loading Texture2D Circle_256_8 from package /Game/_HelloEnjoy_/Materials/Textures/Circle_256_8.uasset
+WARNING: Unknown class "TextureRenderTarget2D" for object "PoleDot_RenderTarget"
+Loaded in 0.0 sec, 96 allocs, 0.08 MBytes serialized in 13 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: M_PoleDot_Map
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[1] = { Texture2D'/Game/_HelloEnjoy_/Materials/Textures/Circle_256_8.Circle_256_8' }
+    Expressions[10] =
+    {
+        Expressions[1] = MaterialExpressionTextureSampleParameter2D'/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleDot_Map.MaterialExpressionTextureSampleParameter2D_53'
+        Expressions[2] = MaterialExpressionScalarParameter'/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleDot_Map.MaterialExpressionScalarParameter_11'
+        Expressions[3] = MaterialExpressionScalarParameter'/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleDot_Map.MaterialExpressionScalarParameter_14'
+        Expressions[9] = MaterialExpressionTextureSampleParameter2D'/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleDot_Map.MaterialExpressionTextureSampleParameter2D_12'
+    }
+    CachedExpressionData =
+    {
+        Parameters =
+        {
+            Entries[5] =
+            {
+                Entries[0] = { ParameterInfos[0]={} }
+                Entries[1] = { ParameterInfos[0]={} }
+                Entries[2] = { ParameterInfos[0]={} }
+                Entries[3] = { ParameterInfos[0]={} }
+                Entries[4] = { ParameterInfos[0]={} }
+            }
+            ScalarValues[0] = {}
+            VectorValues[0] = {}
+            TextureValues[0] = {}
+        }
+        ReferencedTextures[0] = {}
+    }
+    BlendMode = BLEND_Translucent (2)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[2] =
+    {
+        CollectedTextureParameters[0] = { Texture=None, Name=Emission, Group=None }
+        CollectedTextureParameters[1] =
+        {
+            Texture = Texture2D'/Game/_HelloEnjoy_/Materials/Textures/Circle_256_8.Circle_256_8'
+            Name = Detail
+            Group = None
+        }
+    }
+    CollectedScalarParameters[2] =
+    {
+        CollectedScalarParameters[0] = { Value=20, Name=Emission, Group=None }
+        CollectedScalarParameters[1] = { Value=40, Name=GI Emission, Group=None }
+    }
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}

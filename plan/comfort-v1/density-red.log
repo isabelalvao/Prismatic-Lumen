@@ -1,0 +1,1 @@
+FAIL line 263: same_pixels(empty,capture("colour-geometry-off",no_geometry,directed_camera_position(150),150))

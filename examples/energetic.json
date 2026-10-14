@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "demo-energetic-001",
+  "command": "apply_parameters",
+  "transition_seconds": 2,
+  "parameters": {
+    "palette": ["#1597FF", "#FF420B"],
+    "light_intensity": 0.9,
+    "motion_speed": 0.65,
+    "pulse_strength": 0.85,
+    "fog_density": 0.12,
+    "geometry_density": 0.8,
+    "bloom": 0.65
+  }
+}

@@ -1,0 +1,24 @@
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_control.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control.lib
+  fantasynt_visual_config.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_visual_config.lib
+  fantasynt_geometry.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry.lib
+  phase_tests.cpp
+  fantasynt_phase_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_phase_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_control.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control.lib
+  fantasynt_visual_config.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_visual_config.lib
+  fantasynt_geometry.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry.lib
+  six_minute_tests.cpp
+  fantasynt_six_minute_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_six_minute_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_control.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control.lib
+  fantasynt_visual_config.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_visual_config.lib
+  fantasynt_geometry.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry.lib
+  spectral_geometry_tests.cpp
+  fantasynt_spectral_geometry_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_spectral_geometry_tests.exe

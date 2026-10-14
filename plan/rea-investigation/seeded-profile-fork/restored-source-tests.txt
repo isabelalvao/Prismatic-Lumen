@@ -1,0 +1,16 @@
+
+> rea-agents@6.4.0 test:local
+> node scripts/run-development-tests.mjs local src/ghidra/GhidraDisabledAnalyzers.test.ts src/ghidra/GhidraSessionValues.test.ts
+
+Source-test feedback; compiled boundaries and real providers need explicit verification.
+
+ RUN  v5.0.3 C:/ORCA/Fantasynt/tools/vendor/rea-main-source/rea-df2c08b546d4f40103e11b8b31dbfc3d41ee687b
+
+ ✓ |adapters| src/ghidra/GhidraDisabledAnalyzers.test.ts (10 tests) 15ms
+ ✓ |adapters| src/ghidra/GhidraSessionValues.test.ts (13 tests) 12ms
+
+ Test Files  2 passed (2)
+      Tests  23 passed (23)
+   Start at  16:16:56
+   Duration  523ms (transform 46%, import 37%, worker 12%, tests 4%)
+

@@ -1,0 +1,116 @@
+Fantasynt PCVR 0.8.1 — Windows 11 x64 / Quest 3 / Virtual Desktop
+
+1. Extrai o ZIP inteiro para uma pasta onde possas escrever, por exemplo Documentos.
+2. No PC, abre Virtual Desktop Streamer. Nas definições, seleciona
+   VirtualDesktopXR (VDXR) como runtime OpenXR.
+3. No Quest 3, abre Virtual Desktop e liga-te a esse PC.
+4. No ambiente de trabalho remoto, abre Launch-VR.cmd.
+   O resultado deve ser uma cena imersiva em estéreo com seguimento da cabeça,
+   além de uma janela de espelho no PC. O overlay do Virtual Desktop deve indicar
+   Runtime: VDXR. Não precisas de instalar compiladores nem Python para executar.
+
+O executável corre no PC; este pacote não é um APK para instalar no Quest.
+VDXR vem no Streamer. SteamVR não é necessário neste percurso.
+Fonte das definições: https://github.com/mbucchia/VirtualDesktop-OpenXR/wiki
+
+CONTROLOS (teclado do PC, com a janela Fantasynt em foco)
+1 / 2 / 3: predefinições calma / equilibrada / energética
+Espaço: pausa ou retoma (inicia automaticamente, sem espera inicial)
+C: mostra/oculta o contador MM:SS.d (tempo da música)
+F5: relê visual-config.json
+R: predefinição equilibrada
+Q: reinicia a sequência selecionada e o áudio
+O: seleciona Opening, os primeiros 240 segundos (modo inicial)
+N: campo noturno de estruturas curvas
+L: paisagem de volumes segmentados
+T: túnel radial
+F: campo da versão anterior, para comparação
+Esc ou fechar a janela: sair
+O seguimento da cabeça e o controlo JSON continuam na pausa. Na sequência, a
+animação e a câmara usam o mesmo relógio, que fica congelado.
+Esta versão não lê os comandos dos controladores Quest.
+Também podes escolher a cena no arranque: Launch-VR.cmd --scene field
+Outros exemplos:
+  Launch-VR.cmd --scene landscape
+  Launch-VR.cmd --scene sequence --start-time 220
+  Launch-VR.cmd --scene sequence --fixed-time 228
+Opening para aos 240 s. --scene sequence continua até aos 424 s, usando as
+cenas anteriores após a transição legada 120–128 s. Q reinicia. A seleção N/L/T/F sai
+da sequência. --play inicia o avanço automaticamente; --paused mantém a pausa.
+--fixed-time fixa também a animação e a câmara para comparação de capturas.
+
+DESEMPENHO
+A escala inicial é 1,0 da resolução recomendada pelo runtime, em cada dimensão.
+Para reduzir a carga: Launch-VR.cmd --vr-scale 0.5
+Para usar a resolução recomendada completa: Launch-VR.cmd --vr-scale 1.0
+A frequência de atualização e a qualidade de transmissão são configuradas no
+Virtual Desktop. O desempenho real deve ser medido no PC e headset de destino.
+
+AFINAÇÃO SEM RECOMPILAR
+Edita visual-config.json, junto do executável, e guarda em UTF-8.
+As alterações visuais são relidas automaticamente; F5 força a recarga.
+Consulta visual-config-guide.md para o catálogo, unidades, limites e exemplos.
+Um JSON inválido conserva a última configuração válida; vê o erro em logs/vr.log
+ou logs/desktop.log. visual-config.default.json conserva os valores iniciais.
+O contador aparece inicialmente; Espaço congela-o e Q repõe-o a zero.
+Os mini-pilares não têm sapata: alongam/encurtam desde o piso, com fases distintas.
+O contador está mais alto e 50% maior; timer.y/scale permitem afiná-lo.
+A geometria colorida conserva cerca de 35%; extension.geometry_density_multiplier
+permite ajustar a densidade sem modificar a primeira metade nem o túnel final.
+As formas sem material emissivo
+acendem linhas perto do fim da primeira metade. A extensão propõe formas e
+cor a 136/172 s, uma quebra luminosa a 208 s e anéis/túnel a 224 s.
+Velocidades, cores, intensidades, entradas, rotação, deteção de graves, névoa,
+reflexos, câmara e disposição podem ser afinados neste ficheiro.
+Resolução VR, dimensões da janela, cena inicial e escolha do áudio aplicam-se
+no próximo arranque. --config CAMINHO.json permite selecionar outro ficheiro.
+
+CONTROLO JSON DE REDE (mantido)
+Com a aplicação aberta, executa no terminal dentro desta pasta:
+  .\Send-Parameters.cmd examples\calm.json
+  .\Send-Parameters.cmd examples\energetic.json
+Os exemplos podem ser editados. A aplicação escuta em 127.0.0.1:47631.
+Um LLM pode usar o mesmo contrato, através de uma ponte que envie JSON por linha.
+Essa ponte e o LLM ainda não fazem parte deste pacote. O comando accepted confirma
+o início da transição, não o seu fim. O cliente não repete comandos automaticamente.
+
+DIAGNÓSTICO
+Abre Diagnose-VR.cmd com o Quest ligado. Consulta logs\xr-probe.log.
+O relatório inclui o runtime detetado e headset_available.
+Se falhar: confirma VDXR no Streamer, a ligação ao PC e os controladores da GPU.
+logs\vr.log guarda o arranque e eventuais erros; fantasynt-events.jsonl guarda
+comandos e confirmações. O runtime VDXR também tem registos em
+%ProgramData%\Virtual Desktop\OpenXR.log.
+Launch-Desktop.cmd permite verificar a cena no monitor.
+
+ESTADO E LIMITES
+OpenXR com duas imagens D3D11, projeções por olho e seguimento da cabeça.
+Validado localmente através de um runtime simulado com imagens reais na GPU.
+O utilizador confirmou VR e comandos no Quest 3 / Virtual Desktop na versão 0.2.0.
+As notas do projeto registam a confirmação da versão 0.3.0 em VR pelo utilizador.
+Opening 0.8.1 segue as capturas anotadas e a direção artística do utilizador:
+  - Início minimal, com entrada gradual dos elementos.
+  - Pontos pequenos em queda lenta; reaparecimento fora da zona visível.
+  - Formas arredondadas apagadas entre pulsos, acesas por batidas graves.
+  - Tracejados com subida/descida contínua a 10 cm/s.
+  - Pirâmides a partir dos 80 s: acendimento gradual das linhas até 88 s,
+    sem elevação; rotação própria de 0,25 graus/s, mantendo a base.
+  - Avanço imediato a 150 cm/s; espera e aceleração editáveis no JSON.
+O corredor central tem 4 m de largura; os objetos são deslocados para os lados,
+considerando os limites da rotação completa. A distribuição introdutória é
+prolongada em cinco setores para acompanhar o avanço antes das pirâmides.
+A base tem 55 malhas e 42458 instâncias recuperadas; o runtime prepara 51414.
+Na sequência, motion_speed=0,3 segue este percurso e 0 imobiliza a câmara sem
+parar a música. As cenas manuais têm limite 187,5 cm/s. JSON mantém a versão 1.
+Os shaders, chão e reflexos são próprios. O seguimento da cabeça continua livre.
+Esta versão ainda precisa de avaliação artística e no headset pelo utilizador.
+Inclui reprodução do MASTER recuperado do original. O áudio e a sequência
+partilham o relógio de consumo de amostras SDL; Espaço pausa ambos e Q reinicia.
+A saída usa o dispositivo de áudio predefinido do Windows. --silent desativa
+a reprodução; --fixed-time produz capturas sem áudio. As formas arredondadas
+usam batidas graves detetadas automaticamente no WAV selecionado (banda 35–120 Hz).
+As pulsações continuam sincronizadas durante saltos no tempo e capturas fixas.
+A latência física do áudio/Virtual Desktop não foi medida nem compensada.
+Os comandos JSON conservam os parâmetros escolhidos durante toda a sequência.
+O pacote inclui DLLs de execução Visual C++ e o loader OpenXR, não um runtime VR.
+O runtime simulado dos testes não é distribuído neste ZIP.

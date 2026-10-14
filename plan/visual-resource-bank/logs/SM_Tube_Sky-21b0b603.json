@@ -1,0 +1,51 @@
+{
+  "input": {
+    "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Sky.uasset",
+    "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Sky",
+    "object_name": "SM_Tube_Sky",
+    "class_reference": "/Script/Engine.StaticMesh",
+    "export_index": 3,
+    "serial_offset": 10683,
+    "serial_size": 14376,
+    "payload_sha1": "21b0b603936e6921138b262657d41501cb623e18",
+    "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+    "source_reports": [
+      "mesh-assets.json"
+    ],
+    "payload_pak_offset": 74604597,
+    "payload_size": 25063,
+    "source_sha1_verified": true,
+    "resource_id": "SM_Tube_Sky-21b0b603"
+  },
+  "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tube_Sky-21b0b603",
+  "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+  "args": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-export",
+    "-gltf",
+    "-notex",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tube_Sky-21b0b603",
+    "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Sky",
+    "SM_Tube_Sky",
+    "StaticMesh"
+  ],
+  "returncode": 0,
+  "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Tube_Sky-21b0b603.log",
+  "method": "qualified package+object+class UModel export",
+  "elapsed_seconds": 0.0470000000204891,
+  "files": [
+    {
+      "path": "resources\\SM_Tube_Sky-21b0b603\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tube_Sky.bin",
+      "size": 8184,
+      "sha256": "d32134314e1350d37a6931067fb463008801f8b7571a6b753b9386cf38117326"
+    },
+    {
+      "path": "resources\\SM_Tube_Sky-21b0b603\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tube_Sky.gltf",
+      "size": 2344,
+      "sha256": "125d147596bc4cb654615acaafb3aff37be82331f86bc128cef7fd0fa13e3f09"
+    }
+  ],
+  "export_status": "exported_pending_geometry_validation"
+}

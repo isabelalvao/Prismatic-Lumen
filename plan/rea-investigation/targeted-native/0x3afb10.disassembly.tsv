@@ -1,0 +1,4 @@
+0x1403afb10	4883ec38	sub	rsp, 0x38
+0x1403afb14	488b05cd043d02	mov	rax, qword ptr [rip + 0x23d04cd]
+0x1403afb1b	4885c0	test	rax, rax
+0x1403afb1e	753d	jne	0x1403afb5d

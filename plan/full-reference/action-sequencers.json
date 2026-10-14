@@ -1,0 +1,308 @@
+{
+  "sequencers": [
+    {
+      "reference": "ChezNous.PersistentLevel.ForestGroundScatterSequencer",
+      "class": "/Game/_HelloEnjoy_/Fantasynth/Director/Sequencers/ActorHiddenSequencer.ActorHiddenSequencer_C",
+      "director": "ChezNous.PersistentLevel.DirectorSection",
+      "actor_references": [
+        "ChezNous.PersistentLevel.ForestGroundScatterContainer"
+      ],
+      "actions": [
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 0,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator1"
+        },
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 4,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator0"
+        }
+      ]
+    },
+    {
+      "reference": "ChezNous.PersistentLevel.ForestGroundSequencer",
+      "class": "/Game/_HelloEnjoy_/Fantasynth/Director/Sequencers/ActorHiddenSequencer.ActorHiddenSequencer_C",
+      "director": "ChezNous.PersistentLevel.DirectorSection",
+      "actor_references": [
+        "ChezNous.PersistentLevel.ForestGroundContainer"
+      ],
+      "actions": [
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 0,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator0"
+        },
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 8,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator1"
+        }
+      ]
+    },
+    {
+      "reference": "ChezNous.PersistentLevel.ForestSceneSequencer",
+      "class": "/Game/_HelloEnjoy_/Fantasynth/Director/Sequencers/ActorHiddenSequencer.ActorHiddenSequencer_C",
+      "director": "ChezNous.PersistentLevel.DirectorSection",
+      "actor_references": [
+        "ChezNous.PersistentLevel.ForestScatterContainer",
+        "ChezNous.PersistentLevel.ForestTerrainContainer"
+      ],
+      "actions": [
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 0,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator1"
+        },
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 3,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator0"
+        },
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 8,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator1"
+        }
+      ]
+    },
+    {
+      "reference": "ChezNous.PersistentLevel.IntroDomeSequencer",
+      "class": "/Game/_HelloEnjoy_/Fantasynth/Director/Sequencers/ActorHiddenSequencer.ActorHiddenSequencer_C",
+      "director": "ChezNous.PersistentLevel.DirectorSection",
+      "actor_references": [
+        "ChezNous.PersistentLevel.IntroDomeContainer",
+        "ChezNous.PersistentLevel.IntroDomeScatterContainer"
+      ],
+      "actions": [
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 0,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator0"
+        },
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 3,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator1"
+        }
+      ]
+    },
+    {
+      "reference": "ChezNous.PersistentLevel.IntroSceneSequencer",
+      "class": "/Game/_HelloEnjoy_/Fantasynth/Director/Sequencers/ActorHiddenSequencer.ActorHiddenSequencer_C",
+      "director": "ChezNous.PersistentLevel.DirectorSection",
+      "actor_references": [
+        "ChezNous.PersistentLevel.IntroScatterContainer"
+      ],
+      "actions": [
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 0,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator0"
+        },
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 4,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator1"
+        }
+      ]
+    },
+    {
+      "reference": "ChezNous.PersistentLevel.TunnelSceneSequencer",
+      "class": "/Game/_HelloEnjoy_/Fantasynth/Director/Sequencers/ActorHiddenSequencer.ActorHiddenSequencer_C",
+      "director": "ChezNous.PersistentLevel.DirectorSection",
+      "actor_references": [
+        "ChezNous.PersistentLevel.ScatterTunnelContainer",
+        "ChezNous.PersistentLevel.SceneTunnelContainer"
+      ],
+      "actions": [
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 0,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator1"
+        },
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 8,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator0"
+        }
+      ]
+    },
+    {
+      "reference": "ChezNous.PersistentLevel.CreatedByHelloEnjoySequencer",
+      "class": "/Game/_HelloEnjoy_/Fantasynth/Director/Sequencers/BeatActionSequencer.BeatActionSequencer_C",
+      "director": "ChezNous.PersistentLevel.DirectorSection",
+      "actor_references": [
+        "ChezNous.PersistentLevel.CreatedByHelloEnjoy"
+      ],
+      "actions": [
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 0,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator1"
+        },
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 14,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator0"
+        }
+      ]
+    },
+    {
+      "reference": "ChezNous.PersistentLevel.FantasynthLogoSequencer",
+      "class": "/Game/_HelloEnjoy_/Fantasynth/Director/Sequencers/BeatActionSequencer.BeatActionSequencer_C",
+      "director": "ChezNous.PersistentLevel.DirectorSection",
+      "actor_references": [
+        "ChezNous.PersistentLevel.FantasynthLogo"
+      ],
+      "actions": [
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 12,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator0"
+        }
+      ]
+    },
+    {
+      "reference": "ChezNous.PersistentLevel.MusicByNtoSequencer",
+      "class": "/Game/_HelloEnjoy_/Fantasynth/Director/Sequencers/BeatActionSequencer.BeatActionSequencer_C",
+      "director": "ChezNous.PersistentLevel.DirectorPhrase",
+      "actor_references": [
+        "ChezNous.PersistentLevel.MusicByNto"
+      ],
+      "actions": [
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 0,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator1"
+        },
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 50,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator0"
+        }
+      ]
+    },
+    {
+      "reference": "ChezNous.PersistentLevel.IntroSequencerManager",
+      "class": "/Game/_HelloEnjoy_/Fantasynth/Director/Sequencers/BeatActorSequencer.BeatActorSequencer_C",
+      "director": "ChezNous.PersistentLevel.DirectorSection",
+      "actor_references": [
+        "ChezNous.PersistentLevel.SequencerLineAlpha",
+        "ChezNous.PersistentLevel.SequencerLineGreen",
+        "ChezNous.PersistentLevel.SequencerTubeTerrain"
+      ],
+      "actions": [
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 0,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator1"
+        },
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 4,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator0"
+        }
+      ]
+    },
+    {
+      "reference": "ChezNous.PersistentLevel.LowerColorSequencerManager",
+      "class": "/Game/_HelloEnjoy_/Fantasynth/Director/Sequencers/BeatActorSequencer.BeatActorSequencer_C",
+      "director": "ChezNous.PersistentLevel.DirectorSection",
+      "actor_references": [
+        "ChezNous.PersistentLevel.SequencerLowerColor1",
+        "ChezNous.PersistentLevel.SequencerLowerColor2",
+        "ChezNous.PersistentLevel.SequencerLowerColor3",
+        "ChezNous.PersistentLevel.SequencerLowerColor4",
+        "ChezNous.PersistentLevel.SequencerLowerColor5",
+        "ChezNous.PersistentLevel.SequencerLowerColor6"
+      ],
+      "actions": [
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 0,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator1"
+        },
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 6,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator0"
+        },
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 7,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator1"
+        },
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 11,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator0"
+        },
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 12,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator1"
+        }
+      ]
+    },
+    {
+      "reference": "ChezNous.PersistentLevel.LowerMonoSequencerManager",
+      "class": "/Game/_HelloEnjoy_/Fantasynth/Director/Sequencers/BeatActorSequencer.BeatActorSequencer_C",
+      "director": "ChezNous.PersistentLevel.DirectorSection",
+      "actor_references": [
+        "ChezNous.PersistentLevel.SequencerLowerMono1",
+        "ChezNous.PersistentLevel.SequencerLowerMono2",
+        "ChezNous.PersistentLevel.SequencerLowerMono3",
+        "ChezNous.PersistentLevel.SequencerLowerMono4",
+        "ChezNous.PersistentLevel.SequencerLowerMono5",
+        "ChezNous.PersistentLevel.SequencerLowerMono6"
+      ],
+      "actions": [
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 0,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator0"
+        },
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 6,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator1"
+        },
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 7,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator0"
+        },
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 11,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator1"
+        },
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 12,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator0"
+        },
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 14,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator1"
+        }
+      ]
+    },
+    {
+      "reference": "ChezNous.PersistentLevel.PyroSequencer",
+      "class": "/Game/_HelloEnjoy_/Fantasynth/Director/Sequencers/Custom/BeatPyroSequencer.BeatPyroSequencer_C",
+      "director": "ChezNous.PersistentLevel.DirectorSection",
+      "actor_references": null,
+      "actions": [
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 4,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator0"
+        },
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 5,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator0"
+        },
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 6,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator0"
+        }
+      ]
+    },
+    {
+      "reference": "ChezNous.PersistentLevel.PyroTunnelSequencer_150",
+      "class": "/Game/_HelloEnjoy_/Fantasynth/Director/Sequencers/Custom/BeatPyroTunnelSequencer.BeatPyroTunnelSequencer_C",
+      "director": "ChezNous.PersistentLevel.DirectorSection",
+      "actor_references": null,
+      "actions": [
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 10,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator0"
+        },
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 11,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator0"
+        },
+        {
+          "Index_7_04D6F924464967A2A7CFA2A2B2044998": 12,
+          "Action_2_1FB428D94B464B5066CB6784E7406861": "BeatActionType::NewEnumerator0"
+        }
+      ]
+    }
+  ],
+  "enum_mapping": {
+    "BeatActionType::NewEnumerator0": "Start",
+    "BeatActionType::NewEnumerator1": "Stop"
+  },
+  "limitation": "Static associations and indices; invocation and exact index crossing not traced"
+}

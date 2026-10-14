@@ -1,0 +1,14 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pole.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 82 Exports: 3 Imports: 12 Game: 10000D0
+Export "SM_Pole" was found in package "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pole.uasset"
+Found 1 object(s)
+Loading StaticMesh4 SM_Pole from package /Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pole.uasset
+Loading package: /Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleCap_Map.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 37 Exports: 1 Imports: 8 Game: 10000D0
+Loading package: /Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pole_Map.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 37 Exports: 1 Imports: 6 Game: 10000D0
+Loading package: /Game/_HelloEnjoy_/Materials/M_BasicMetal_Grey.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 29 Exports: 1 Imports: 4 Game: 10000D0
+Loading package: /Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleBase_Map.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 41 Exports: 1 Imports: 8 Game: 10000D0
+Loaded in 0.0 sec, 125 allocs, 0.05 MBytes serialized in 12 calls.
+Exporting objects ...
+Exporting StaticMesh4 SM_Pole to C:/ORCA/Fantasynt/plan/visual-resource-bank/resources/SM_Pole-75f3a9b6/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pole.gltf

@@ -1,0 +1,445 @@
+0x141539ad5	488d4da0	lea	rcx, [rbp - 0x60]
+0x141539ad9	e83245d1fe	call	0x14024e010
+0x141539ade	41b801000000	mov	r8d, 1
+0x141539ae4	488d153d12c800	lea	rdx, [rip + 0xc8123d]
+0x141539aeb	488d4c2450	lea	rcx, [rsp + 0x50]
+0x141539af0	e84b7cc1fe	call	0x140151740
+0x141539af5	41b801000000	mov	r8d, 1
+0x141539afb	488d155612c800	lea	rdx, [rip + 0xc81256]
+0x141539b02	488b08	mov	rcx, qword ptr [rax]
+0x141539b05	48894e48	mov	qword ptr [rsi + 0x48], rcx
+0x141539b09	488d4c2468	lea	rcx, [rsp + 0x68]
+0x141539b0e	e8ad7bc1fe	call	0x1401516c0
+0x141539b13	488b08	mov	rcx, qword ptr [rax]
+0x141539b16	48894c2450	mov	qword ptr [rsp + 0x50], rcx
+0x141539b1b	e8c0900000	call	0x141542be0
+0x141539b20	488b0dc9953201	mov	rcx, qword ptr [rip + 0x13295c9]
+0x141539b27	4c8d442458	lea	r8, [rsp + 0x58]
+0x141539b2c	4889442440	mov	qword ptr [rsp + 0x40], rax
+0x141539b31	488d542448	lea	rdx, [rsp + 0x48]
+0x141539b36	488d442450	lea	rax, [rsp + 0x50]
+0x141539b3b	4881c100010000	add	rcx, 0x100
+0x141539b42	4889442458	mov	qword ptr [rsp + 0x58], rax
+0x141539b47	4533c9	xor	r9d, r9d
+0x141539b4a	488d442440	lea	rax, [rsp + 0x40]
+0x141539b4f	4889442460	mov	qword ptr [rsp + 0x60], rax
+0x141539b54	e89759c0fe	call	0x14013f4f0
+0x141539b59	41b801000000	mov	r8d, 1
+0x141539b5f	488d150212c800	lea	rdx, [rip + 0xc81202]
+0x141539b66	488d4c2468	lea	rcx, [rsp + 0x68]
+0x141539b6b	e8507bc1fe	call	0x1401516c0
+0x141539b70	488b08	mov	rcx, qword ptr [rax]
+0x141539b73	48894c2440	mov	qword ptr [rsp + 0x40], rcx
+0x141539b78	e863920000	call	0x141542de0
+0x141539b7d	488b0d6c953201	mov	rcx, qword ptr [rip + 0x132956c]
+0x141539b84	4c8d442458	lea	r8, [rsp + 0x58]
+0x141539b89	4889442450	mov	qword ptr [rsp + 0x50], rax
+0x141539b8e	488d542448	lea	rdx, [rsp + 0x48]
+0x141539b93	488d442440	lea	rax, [rsp + 0x40]
+0x141539b98	4881c100010000	add	rcx, 0x100
+0x141539b9f	4889442458	mov	qword ptr [rsp + 0x58], rax
+0x141539ba4	4533c9	xor	r9d, r9d
+0x141539ba7	488d442450	lea	rax, [rsp + 0x50]
+0x141539bac	4889442460	mov	qword ptr [rsp + 0x60], rax
+0x141539bb1	e83a59c0fe	call	0x14013f4f0
+0x141539bb6	41b801000000	mov	r8d, 1
+0x141539bbc	488d15bd11c800	lea	rdx, [rip + 0xc811bd]
+0x141539bc3	488d4c2468	lea	rcx, [rsp + 0x68]
+0x141539bc8	e8f37ac1fe	call	0x1401516c0
+0x141539bcd	488b08	mov	rcx, qword ptr [rax]
+0x141539bd0	48894c2440	mov	qword ptr [rsp + 0x40], rcx
+0x141539bd5	e8f6930000	call	0x141542fd0
+0x141539bda	488b0d0f953201	mov	rcx, qword ptr [rip + 0x132950f]
+0x141539be1	4c8d442458	lea	r8, [rsp + 0x58]
+0x141539be6	4889442450	mov	qword ptr [rsp + 0x50], rax
+0x141539beb	488d542448	lea	rdx, [rsp + 0x48]
+0x141539bf0	488d442440	lea	rax, [rsp + 0x40]
+0x141539bf5	4881c100010000	add	rcx, 0x100
+0x141539bfc	4889442458	mov	qword ptr [rsp + 0x58], rax
+0x141539c01	4533c9	xor	r9d, r9d
+0x141539c04	488d442450	lea	rax, [rsp + 0x50]
+0x141539c09	4889442460	mov	qword ptr [rsp + 0x60], rax
+0x141539c0e	e8dd58c0fe	call	0x14013f4f0
+0x141539c13	41b801000000	mov	r8d, 1
+0x141539c19	488d157811c800	lea	rdx, [rip + 0xc81178]
+0x141539c20	488d4c2468	lea	rcx, [rsp + 0x68]
+0x141539c25	e8967ac1fe	call	0x1401516c0
+0x141539c2a	488b08	mov	rcx, qword ptr [rax]
+0x141539c2d	48894c2440	mov	qword ptr [rsp + 0x40], rcx
+0x141539c32	e889950000	call	0x1415431c0
+0x141539c37	488b0db2943201	mov	rcx, qword ptr [rip + 0x13294b2]
+0x141539c3e	4c8d442458	lea	r8, [rsp + 0x58]
+0x141539c43	4889442450	mov	qword ptr [rsp + 0x50], rax
+0x141539c48	488d542448	lea	rdx, [rsp + 0x48]
+0x141539c4d	488d442440	lea	rax, [rsp + 0x40]
+0x141539c52	4881c100010000	add	rcx, 0x100
+0x141539c59	4889442458	mov	qword ptr [rsp + 0x58], rax
+0x141539c5e	4533c9	xor	r9d, r9d
+0x141539c61	488d442450	lea	rax, [rsp + 0x50]
+0x141539c66	4889442460	mov	qword ptr [rsp + 0x60], rax
+0x141539c6b	e88058c0fe	call	0x14013f4f0
+0x141539c70	41b801000000	mov	r8d, 1
+0x141539c76	488d153b11c800	lea	rdx, [rip + 0xc8113b]
+0x141539c7d	488d4c2468	lea	rcx, [rsp + 0x68]
+0x141539c82	e8397ac1fe	call	0x1401516c0
+0x141539c87	488b08	mov	rcx, qword ptr [rax]
+0x141539c8a	48894c2440	mov	qword ptr [rsp + 0x40], rcx
+0x141539c8f	e80c990000	call	0x1415435a0
+0x141539c94	488b0d55943201	mov	rcx, qword ptr [rip + 0x1329455]
+0x141539c9b	4c8d442458	lea	r8, [rsp + 0x58]
+0x141539ca0	4889442450	mov	qword ptr [rsp + 0x50], rax
+0x141539ca5	488d542448	lea	rdx, [rsp + 0x48]
+0x141539caa	488d442440	lea	rax, [rsp + 0x40]
+0x141539caf	4881c100010000	add	rcx, 0x100
+0x141539cb6	4889442458	mov	qword ptr [rsp + 0x58], rax
+0x141539cbb	4533c9	xor	r9d, r9d
+0x141539cbe	488d442450	lea	rax, [rsp + 0x50]
+0x141539cc3	4889442460	mov	qword ptr [rsp + 0x60], rax
+0x141539cc8	e82358c0fe	call	0x14013f4f0
+0x141539ccd	41b801000000	mov	r8d, 1
+0x141539cd3	488d15f610c800	lea	rdx, [rip + 0xc810f6]
+0x141539cda	488d4c2468	lea	rcx, [rsp + 0x68]
+0x141539cdf	e8dc79c1fe	call	0x1401516c0
+0x141539ce4	488b08	mov	rcx, qword ptr [rax]
+0x141539ce7	48894c2440	mov	qword ptr [rsp + 0x40], rcx
+0x141539cec	e89f9a0000	call	0x141543790
+0x141539cf1	488b0df8933201	mov	rcx, qword ptr [rip + 0x13293f8]
+0x141539cf8	4c8d442458	lea	r8, [rsp + 0x58]
+0x141539cfd	4889442450	mov	qword ptr [rsp + 0x50], rax
+0x141539d02	488d542448	lea	rdx, [rsp + 0x48]
+0x141539d07	488d442440	lea	rax, [rsp + 0x40]
+0x141539d0c	4881c100010000	add	rcx, 0x100
+0x141539d13	4889442458	mov	qword ptr [rsp + 0x58], rax
+0x141539d18	4533c9	xor	r9d, r9d
+0x141539d1b	488d442450	lea	rax, [rsp + 0x50]
+0x141539d20	4889442460	mov	qword ptr [rsp + 0x60], rax
+0x141539d25	e8c657c0fe	call	0x14013f4f0
+0x141539d2a	41b801000000	mov	r8d, 1
+0x141539d30	488d15b910c800	lea	rdx, [rip + 0xc810b9]
+0x141539d37	488d4c2468	lea	rcx, [rsp + 0x68]
+0x141539d3c	e87f79c1fe	call	0x1401516c0
+0x141539d41	488b08	mov	rcx, qword ptr [rax]
+0x141539d44	48894c2440	mov	qword ptr [rsp + 0x40], rcx
+0x141539d49	e862960000	call	0x1415433b0
+0x141539d4e	488b0d9b933201	mov	rcx, qword ptr [rip + 0x132939b]
+0x141539d55	4c8d442458	lea	r8, [rsp + 0x58]
+0x141539d5a	4889442450	mov	qword ptr [rsp + 0x50], rax
+0x141539d5f	488d542448	lea	rdx, [rsp + 0x48]
+0x141539d64	488d442440	lea	rax, [rsp + 0x40]
+0x141539d69	4881c100010000	add	rcx, 0x100
+0x141539d70	4889442458	mov	qword ptr [rsp + 0x58], rax
+0x141539d75	4533c9	xor	r9d, r9d
+0x141539d78	488d442450	lea	rax, [rsp + 0x50]
+0x141539d7d	4889442460	mov	qword ptr [rsp + 0x60], rax
+0x141539d82	e86957c0fe	call	0x14013f4f0
+0x141539d87	41b801000000	mov	r8d, 1
+0x141539d8d	488d156c10c800	lea	rdx, [rip + 0xc8106c]
+0x141539d94	488d4c2468	lea	rcx, [rsp + 0x68]
+0x141539d99	e82279c1fe	call	0x1401516c0
+0x141539d9e	488b08	mov	rcx, qword ptr [rax]
+0x141539da1	48894c2440	mov	qword ptr [rsp + 0x40], rcx
+0x141539da6	e8d59b0000	call	0x141543980
+0x141539dab	488b0d3e933201	mov	rcx, qword ptr [rip + 0x132933e]
+0x141539db2	4c8d442458	lea	r8, [rsp + 0x58]
+0x141539db7	4889442450	mov	qword ptr [rsp + 0x50], rax
+0x141539dbc	488d542448	lea	rdx, [rsp + 0x48]
+0x141539dc1	488d442440	lea	rax, [rsp + 0x40]
+0x141539dc6	4881c100010000	add	rcx, 0x100
+0x141539dcd	4889442458	mov	qword ptr [rsp + 0x58], rax
+0x141539dd2	4533c9	xor	r9d, r9d
+0x141539dd5	488d442450	lea	rax, [rsp + 0x50]
+0x141539dda	4889442460	mov	qword ptr [rsp + 0x60], rax
+0x141539ddf	e80c57c0fe	call	0x14013f4f0
+0x141539de4	41b801000000	mov	r8d, 1
+0x141539dea	488d154710c800	lea	rdx, [rip + 0xc81047]
+0x141539df1	488d4c2468	lea	rcx, [rsp + 0x68]
+0x141539df6	e8c578c1fe	call	0x1401516c0
+0x141539dfb	488b08	mov	rcx, qword ptr [rax]
+0x141539dfe	48894c2440	mov	qword ptr [rsp + 0x40], rcx
+0x141539e03	e8789d0000	call	0x141543b80
+0x141539e08	4889442450	mov	qword ptr [rsp + 0x50], rax
+0x141539e0d	488d442440	lea	rax, [rsp + 0x40]
+0x141539e12	4889442458	mov	qword ptr [rsp + 0x58], rax
+0x141539e17	488d442450	lea	rax, [rsp + 0x50]
+0x141539e1c	4889442460	mov	qword ptr [rsp + 0x60], rax
+0x141539e21	488b0dc8923201	mov	rcx, qword ptr [rip + 0x13292c8]
+0x141539e28	4c8d442458	lea	r8, [rsp + 0x58]
+0x141539e2d	4881c100010000	add	rcx, 0x100
+0x141539e34	488d542448	lea	rdx, [rsp + 0x48]
+0x141539e39	4533c9	xor	r9d, r9d
+0x141539e3c	e8af56c0fe	call	0x14013f4f0
+0x141539e41	41b801000000	mov	r8d, 1
+0x141539e47	488d150a10c800	lea	rdx, [rip + 0xc8100a]
+0x141539e4e	488d4c2468	lea	rcx, [rsp + 0x68]
+0x141539e53	e86878c1fe	call	0x1401516c0
+0x141539e58	488b08	mov	rcx, qword ptr [rax]
+0x141539e5b	48894c2440	mov	qword ptr [rsp + 0x40], rcx
+0x141539e60	e8ab9f0000	call	0x141543e10
+0x141539e65	488b0d84923201	mov	rcx, qword ptr [rip + 0x1329284]
+0x141539e6c	4c8d442458	lea	r8, [rsp + 0x58]
+0x141539e71	4889442450	mov	qword ptr [rsp + 0x50], rax
+0x141539e76	488d542448	lea	rdx, [rsp + 0x48]
+0x141539e7b	488d442440	lea	rax, [rsp + 0x40]
+0x141539e80	4881c100010000	add	rcx, 0x100
+0x141539e87	4889442458	mov	qword ptr [rsp + 0x58], rax
+0x141539e8c	4533c9	xor	r9d, r9d
+0x141539e8f	488d442450	lea	rax, [rsp + 0x50]
+0x141539e94	4889442460	mov	qword ptr [rsp + 0x60], rax
+0x141539e99	e85256c0fe	call	0x14013f4f0
+0x141539e9e	41b801000000	mov	r8d, 1
+0x141539ea4	488d150d10c800	lea	rdx, [rip + 0xc8100d]
+0x141539eab	488d4c2468	lea	rcx, [rsp + 0x68]
+0x141539eb0	e80b78c1fe	call	0x1401516c0
+0x141539eb5	488b08	mov	rcx, qword ptr [rax]
+0x141539eb8	48894c2440	mov	qword ptr [rsp + 0x40], rcx
+0x141539ebd	e8dea10000	call	0x1415440a0
+0x141539ec2	488b0d27923201	mov	rcx, qword ptr [rip + 0x1329227]
+0x141539ec9	4c8d442458	lea	r8, [rsp + 0x58]
+0x141539ece	4889442450	mov	qword ptr [rsp + 0x50], rax
+0x141539ed3	488d542448	lea	rdx, [rsp + 0x48]
+0x141539ed8	488d442440	lea	rax, [rsp + 0x40]
+0x141539edd	4881c100010000	add	rcx, 0x100
+0x141539ee4	4889442458	mov	qword ptr [rsp + 0x58], rax
+0x141539ee9	4533c9	xor	r9d, r9d
+0x141539eec	488d442450	lea	rax, [rsp + 0x50]
+0x141539ef1	4889442460	mov	qword ptr [rsp + 0x60], rax
+0x141539ef6	e8f555c0fe	call	0x14013f4f0
+0x141539efb	41b801000000	mov	r8d, 1
+0x141539f01	488d15c00fc800	lea	rdx, [rip + 0xc80fc0]
+0x141539f08	488d4c2468	lea	rcx, [rsp + 0x68]
+0x141539f0d	e8ae77c1fe	call	0x1401516c0
+0x141539f12	488b08	mov	rcx, qword ptr [rax]
+0x141539f15	48894c2440	mov	qword ptr [rsp + 0x40], rcx
+0x141539f1a	e811a40000	call	0x141544330
+0x141539f1f	488b0dca913201	mov	rcx, qword ptr [rip + 0x13291ca]
+0x141539f26	4c8d442458	lea	r8, [rsp + 0x58]
+0x141539f2b	4889442450	mov	qword ptr [rsp + 0x50], rax
+0x141539f30	488d542448	lea	rdx, [rsp + 0x48]
+0x141539f35	488d442440	lea	rax, [rsp + 0x40]
+0x141539f3a	4881c100010000	add	rcx, 0x100
+0x141539f41	4889442458	mov	qword ptr [rsp + 0x58], rax
+0x141539f46	4533c9	xor	r9d, r9d
+0x141539f49	488d442450	lea	rax, [rsp + 0x50]
+0x141539f4e	4889442460	mov	qword ptr [rsp + 0x60], rax
+0x141539f53	e89855c0fe	call	0x14013f4f0
+0x141539f58	41b801000000	mov	r8d, 1
+0x141539f5e	488d156fd8c700	lea	rdx, [rip + 0xc7d86f]
+0x141539f65	488d4c2468	lea	rcx, [rsp + 0x68]
+0x141539f6a	e85177c1fe	call	0x1401516c0
+0x141539f6f	488b08	mov	rcx, qword ptr [rax]
+0x141539f72	48894c2440	mov	qword ptr [rsp + 0x40], rcx
+0x141539f77	e8b4a50000	call	0x141544530
+0x141539f7c	488b0d6d913201	mov	rcx, qword ptr [rip + 0x132916d]
+0x141539f83	4c8d442458	lea	r8, [rsp + 0x58]
+0x141539f88	4889442450	mov	qword ptr [rsp + 0x50], rax
+0x141539f8d	488d542448	lea	rdx, [rsp + 0x48]
+0x141539f92	488d442440	lea	rax, [rsp + 0x40]
+0x141539f97	4881c100010000	add	rcx, 0x100
+0x141539f9e	4889442458	mov	qword ptr [rsp + 0x58], rax
+0x141539fa3	4533c9	xor	r9d, r9d
+0x141539fa6	488d442450	lea	rax, [rsp + 0x50]
+0x141539fab	4889442460	mov	qword ptr [rsp + 0x60], rax
+0x141539fb0	e83b55c0fe	call	0x14013f4f0
+0x141539fb5	41b801000000	mov	r8d, 1
+0x141539fbb	488d151e0fc800	lea	rdx, [rip + 0xc80f1e]
+0x141539fc2	488d4c2468	lea	rcx, [rsp + 0x68]
+0x141539fc7	e8f476c1fe	call	0x1401516c0
+0x141539fcc	488b08	mov	rcx, qword ptr [rax]
+0x141539fcf	48894c2440	mov	qword ptr [rsp + 0x40], rcx
+0x141539fd4	e897a60000	call	0x141544670
+0x141539fd9	488b0d10913201	mov	rcx, qword ptr [rip + 0x1329110]
+0x141539fe0	4c8d442458	lea	r8, [rsp + 0x58]
+0x141539fe5	4889442450	mov	qword ptr [rsp + 0x50], rax
+0x141539fea	488d542448	lea	rdx, [rsp + 0x48]
+0x141539fef	488d442440	lea	rax, [rsp + 0x40]
+0x141539ff4	4881c100010000	add	rcx, 0x100
+0x141539ffb	4889442458	mov	qword ptr [rsp + 0x58], rax
+0x14153a000	4533c9	xor	r9d, r9d
+0x14153a003	488d442450	lea	rax, [rsp + 0x50]
+0x14153a008	4889442460	mov	qword ptr [rsp + 0x60], rax
+0x14153a00d	e8de54c0fe	call	0x14013f4f0
+0x14153a012	41b801000000	mov	r8d, 1
+0x14153a018	488d15d10ec800	lea	rdx, [rip + 0xc80ed1]
+0x14153a01f	488d4c2468	lea	rcx, [rsp + 0x68]
+0x14153a024	e89776c1fe	call	0x1401516c0
+0x14153a029	488b08	mov	rcx, qword ptr [rax]
+0x14153a02c	48894c2440	mov	qword ptr [rsp + 0x40], rcx
+0x14153a031	e87aa70000	call	0x1415447b0
+0x14153a036	488b0db3903201	mov	rcx, qword ptr [rip + 0x13290b3]
+0x14153a03d	4c8d442458	lea	r8, [rsp + 0x58]
+0x14153a042	4889442450	mov	qword ptr [rsp + 0x50], rax
+0x14153a047	488d542448	lea	rdx, [rsp + 0x48]
+0x14153a04c	488d442440	lea	rax, [rsp + 0x40]
+0x14153a051	4881c100010000	add	rcx, 0x100
+0x14153a058	4889442458	mov	qword ptr [rsp + 0x58], rax
+0x14153a05d	4533c9	xor	r9d, r9d
+0x14153a060	488d442450	lea	rax, [rsp + 0x50]
+0x14153a065	4889442460	mov	qword ptr [rsp + 0x60], rax
+0x14153a06a	e88154c0fe	call	0x14013f4f0
+0x14153a06f	41b801000000	mov	r8d, 1
+0x14153a075	488d157c0ec800	lea	rdx, [rip + 0xc80e7c]
+0x14153a07c	488d4c2468	lea	rcx, [rsp + 0x68]
+0x14153a081	e83a76c1fe	call	0x1401516c0
+0x14153a086	488b08	mov	rcx, qword ptr [rax]
+0x14153a089	48894c2440	mov	qword ptr [rsp + 0x40], rcx
+0x14153a08e	e85da80000	call	0x1415448f0
+0x14153a093	488b0d56903201	mov	rcx, qword ptr [rip + 0x1329056]
+0x14153a09a	4c8d442458	lea	r8, [rsp + 0x58]
+0x14153a09f	4889442450	mov	qword ptr [rsp + 0x50], rax
+0x14153a0a4	488d542448	lea	rdx, [rsp + 0x48]
+0x14153a0a9	488d442440	lea	rax, [rsp + 0x40]
+0x14153a0ae	4881c100010000	add	rcx, 0x100
+0x14153a0b5	4889442458	mov	qword ptr [rsp + 0x58], rax
+0x14153a0ba	4533c9	xor	r9d, r9d
+0x14153a0bd	488d442450	lea	rax, [rsp + 0x50]
+0x14153a0c2	4889442460	mov	qword ptr [rsp + 0x60], rax
+0x14153a0c7	e82454c0fe	call	0x14013f4f0
+0x14153a0cc	41b801000000	mov	r8d, 1
+0x14153a0d2	488d155f0ec800	lea	rdx, [rip + 0xc80e5f]
+0x14153a0d9	488d4c2468	lea	rcx, [rsp + 0x68]
+0x14153a0de	e8dd75c1fe	call	0x1401516c0
+0x14153a0e3	488b08	mov	rcx, qword ptr [rax]
+0x14153a0e6	48894c2440	mov	qword ptr [rsp + 0x40], rcx
+0x14153a0eb	e840a90000	call	0x141544a30
+0x14153a0f0	488b0df98f3201	mov	rcx, qword ptr [rip + 0x1328ff9]
+0x14153a0f7	4c8d442458	lea	r8, [rsp + 0x58]
+0x14153a0fc	4889442450	mov	qword ptr [rsp + 0x50], rax
+0x14153a101	488d542448	lea	rdx, [rsp + 0x48]
+0x14153a106	488d442440	lea	rax, [rsp + 0x40]
+0x14153a10b	4881c100010000	add	rcx, 0x100
+0x14153a112	4889442458	mov	qword ptr [rsp + 0x58], rax
+0x14153a117	4533c9	xor	r9d, r9d
+0x14153a11a	488d442450	lea	rax, [rsp + 0x50]
+0x14153a11f	4889442460	mov	qword ptr [rsp + 0x60], rax
+0x14153a124	e8c753c0fe	call	0x14013f4f0
+0x14153a129	41b801000000	mov	r8d, 1
+0x14153a12f	488d154a0ec800	lea	rdx, [rip + 0xc80e4a]
+0x14153a136	488d4c2468	lea	rcx, [rsp + 0x68]
+0x14153a13b	e88075c1fe	call	0x1401516c0
+0x14153a140	488b08	mov	rcx, qword ptr [rax]
+0x14153a143	48894c2440	mov	qword ptr [rsp + 0x40], rcx
+0x14153a148	e833ac0000	call	0x141544d80
+0x14153a14d	4889442450	mov	qword ptr [rsp + 0x50], rax
+0x14153a152	488d442440	lea	rax, [rsp + 0x40]
+0x14153a157	4889442458	mov	qword ptr [rsp + 0x58], rax
+0x14153a15c	488d442450	lea	rax, [rsp + 0x50]
+0x14153a161	4889442460	mov	qword ptr [rsp + 0x60], rax
+0x14153a166	488b0d838f3201	mov	rcx, qword ptr [rip + 0x1328f83]
+0x14153a16d	4c8d442458	lea	r8, [rsp + 0x58]
+0x14153a172	4881c100010000	add	rcx, 0x100
+0x14153a179	488d542448	lea	rdx, [rsp + 0x48]
+0x14153a17e	4533c9	xor	r9d, r9d
+0x14153a181	e86a53c0fe	call	0x14013f4f0
+0x14153a186	41b801000000	mov	r8d, 1
+0x14153a18c	488d15150ec800	lea	rdx, [rip + 0xc80e15]
+0x14153a193	488d4c2468	lea	rcx, [rsp + 0x68]
+0x14153a198	e82375c1fe	call	0x1401516c0
+0x14153a19d	488b08	mov	rcx, qword ptr [rax]
+0x14153a1a0	48894c2440	mov	qword ptr [rsp + 0x40], rcx
+0x14153a1a5	e866ae0000	call	0x141545010
+0x14153a1aa	488b0d3f8f3201	mov	rcx, qword ptr [rip + 0x1328f3f]
+0x14153a1b1	4c8d442458	lea	r8, [rsp + 0x58]
+0x14153a1b6	4889442450	mov	qword ptr [rsp + 0x50], rax
+0x14153a1bb	488d542448	lea	rdx, [rsp + 0x48]
+0x14153a1c0	488d442440	lea	rax, [rsp + 0x40]
+0x14153a1c5	4881c100010000	add	rcx, 0x100
+0x14153a1cc	4889442458	mov	qword ptr [rsp + 0x58], rax
+0x14153a1d1	4533c9	xor	r9d, r9d
+0x14153a1d4	488d442450	lea	rax, [rsp + 0x50]
+0x14153a1d9	4889442460	mov	qword ptr [rsp + 0x60], rax
+0x14153a1de	e80d53c0fe	call	0x14013f4f0
+0x14153a1e3	41b801000000	mov	r8d, 1
+0x14153a1e9	488d15e00dc800	lea	rdx, [rip + 0xc80de0]
+0x14153a1f0	488d4c2468	lea	rcx, [rsp + 0x68]
+0x14153a1f5	e8c674c1fe	call	0x1401516c0
+0x14153a1fa	488b08	mov	rcx, qword ptr [rax]
+0x14153a1fd	48894c2440	mov	qword ptr [rsp + 0x40], rcx
+0x14153a202	e8e9b10000	call	0x1415453f0
+0x14153a207	488b0de28e3201	mov	rcx, qword ptr [rip + 0x1328ee2]
+0x14153a20e	4c8d442458	lea	r8, [rsp + 0x58]
+0x14153a213	4889442450	mov	qword ptr [rsp + 0x50], rax
+0x14153a218	488d542448	lea	rdx, [rsp + 0x48]
+0x14153a21d	488d442440	lea	rax, [rsp + 0x40]
+0x14153a222	4881c100010000	add	rcx, 0x100
+0x14153a229	4889442458	mov	qword ptr [rsp + 0x58], rax
+0x14153a22e	4533c9	xor	r9d, r9d
+0x14153a231	488d442450	lea	rax, [rsp + 0x50]
+0x14153a236	4889442460	mov	qword ptr [rsp + 0x60], rax
+0x14153a23b	e8b052c0fe	call	0x14013f4f0
+0x14153a240	41b801000000	mov	r8d, 1
+0x14153a246	488d15ab0dc800	lea	rdx, [rip + 0xc80dab]
+0x14153a24d	488d4c2468	lea	rcx, [rsp + 0x68]
+0x14153a252	e86974c1fe	call	0x1401516c0
+0x14153a257	488b08	mov	rcx, qword ptr [rax]
+0x14153a25a	48894c2440	mov	qword ptr [rsp + 0x40], rcx
+0x14153a25f	e8ccb40000	call	0x141545730
+0x14153a264	488b0d858e3201	mov	rcx, qword ptr [rip + 0x1328e85]
+0x14153a26b	4c8d442458	lea	r8, [rsp + 0x58]
+0x14153a270	4889442450	mov	qword ptr [rsp + 0x50], rax
+0x14153a275	488d542448	lea	rdx, [rsp + 0x48]
+0x14153a27a	488d442440	lea	rax, [rsp + 0x40]
+0x14153a27f	4881c100010000	add	rcx, 0x100
+0x14153a286	4889442458	mov	qword ptr [rsp + 0x58], rax
+0x14153a28b	4533c9	xor	r9d, r9d
+0x14153a28e	488d442450	lea	rax, [rsp + 0x50]
+0x14153a293	4889442460	mov	qword ptr [rsp + 0x60], rax
+0x14153a298	e85352c0fe	call	0x14013f4f0
+0x14153a29d	41b801000000	mov	r8d, 1
+0x14153a2a3	488d157e0dc800	lea	rdx, [rip + 0xc80d7e]
+0x14153a2aa	488d4c2468	lea	rcx, [rsp + 0x68]
+0x14153a2af	e80c74c1fe	call	0x1401516c0
+0x14153a2b4	488b08	mov	rcx, qword ptr [rax]
+0x14153a2b7	48894c2440	mov	qword ptr [rsp + 0x40], rcx
+0x14153a2bc	e83faf0000	call	0x141545200
+0x14153a2c1	488b0d288e3201	mov	rcx, qword ptr [rip + 0x1328e28]
+0x14153a2c8	4c8d442458	lea	r8, [rsp + 0x58]
+0x14153a2cd	4889442450	mov	qword ptr [rsp + 0x50], rax
+0x14153a2d2	488d542448	lea	rdx, [rsp + 0x48]
+0x14153a2d7	488d442440	lea	rax, [rsp + 0x40]
+0x14153a2dc	4881c100010000	add	rcx, 0x100
+0x14153a2e3	4889442458	mov	qword ptr [rsp + 0x58], rax
+0x14153a2e8	4533c9	xor	r9d, r9d
+0x14153a2eb	488d442450	lea	rax, [rsp + 0x50]
+0x14153a2f0	4889442460	mov	qword ptr [rsp + 0x60], rax
+0x14153a2f5	e8f651c0fe	call	0x14013f4f0
+0x14153a2fa	41b801000000	mov	r8d, 1
+0x14153a300	488d15310dc800	lea	rdx, [rip + 0xc80d31]
+0x14153a307	488d4c2468	lea	rcx, [rsp + 0x68]
+0x14153a30c	e8af73c1fe	call	0x1401516c0
+0x14153a311	488b08	mov	rcx, qword ptr [rax]
+0x14153a314	48894c2440	mov	qword ptr [rsp + 0x40], rcx
+0x14153a319	e852b70000	call	0x141545a70
+0x14153a31e	488b0dcb8d3201	mov	rcx, qword ptr [rip + 0x1328dcb]
+0x14153a325	4c8d442458	lea	r8, [rsp + 0x58]
+0x14153a32a	4889442450	mov	qword ptr [rsp + 0x50], rax
+0x14153a32f	488d542448	lea	rdx, [rsp + 0x48]
+0x14153a334	488d442440	lea	rax, [rsp + 0x40]
+0x14153a339	4881c100010000	add	rcx, 0x100
+0x14153a340	4889442458	mov	qword ptr [rsp + 0x58], rax
+0x14153a345	4533c9	xor	r9d, r9d
+0x14153a348	488d442450	lea	rax, [rsp + 0x50]
+0x14153a34d	4889442460	mov	qword ptr [rsp + 0x60], rax
+0x14153a352	e89951c0fe	call	0x14013f4f0
+0x14153a357	41b801000000	mov	r8d, 1
+0x14153a35d	488d1510dfc700	lea	rdx, [rip + 0xc7df10]
+0x14153a364	488d4c2468	lea	rcx, [rsp + 0x68]
+0x14153a369	e85273c1fe	call	0x1401516c0
+0x14153a36e	488b08	mov	rcx, qword ptr [rax]
+0x14153a371	48894c2440	mov	qword ptr [rsp + 0x40], rcx
+0x14153a376	e8e5b80000	call	0x141545c60
+0x14153a37b	488b0d6e8d3201	mov	rcx, qword ptr [rip + 0x1328d6e]
+0x14153a382	4c8d442458	lea	r8, [rsp + 0x58]
+0x14153a387	4889442450	mov	qword ptr [rsp + 0x50], rax
+0x14153a38c	488d542448	lea	rdx, [rsp + 0x48]
+0x14153a391	488d442440	lea	rax, [rsp + 0x40]
+0x14153a396	4881c100010000	add	rcx, 0x100
+0x14153a39d	4889442458	mov	qword ptr [rsp + 0x58], rax
+0x14153a3a2	4533c9	xor	r9d, r9d
+0x14153a3a5	488d442450	lea	rax, [rsp + 0x50]
+0x14153a3aa	4889442460	mov	qword ptr [rsp + 0x60], rax
+0x14153a3af	e83c51c0fe	call	0x14013f4f0
+0x14153a3b4	488b0d358d3201	mov	rcx, qword ptr [rip + 0x1328d35]
+0x14153a3bb	33d2	xor	edx, edx
+0x14153a3bd	e8ce86d9fe	call	0x1402d2a90
+0x14153a3c2	488b05278d3201	mov	rax, qword ptr [rip + 0x1328d27]
+0x14153a3c9	488bb42438020000	mov	rsi, qword ptr [rsp + 0x238]

@@ -1,0 +1,51 @@
+{
+  "input": {
+    "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_2.uasset",
+    "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_2",
+    "object_name": "SM_Neon_2",
+    "class_reference": "/Script/Engine.StaticMesh",
+    "export_index": 3,
+    "serial_offset": 10904,
+    "serial_size": 14403,
+    "payload_sha1": "a14e71f2ac0e29961aaedf771f9c3b5f2ffa2658",
+    "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+    "source_reports": [
+      "mesh-assets.json"
+    ],
+    "payload_pak_offset": 103493685,
+    "payload_size": 25311,
+    "source_sha1_verified": true,
+    "resource_id": "SM_Neon_2-a14e71f2"
+  },
+  "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Neon_2-a14e71f2",
+  "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+  "args": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-export",
+    "-gltf",
+    "-notex",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Neon_2-a14e71f2",
+    "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_2",
+    "SM_Neon_2",
+    "StaticMesh"
+  ],
+  "returncode": 0,
+  "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Neon_2-a14e71f2.log",
+  "method": "qualified package+object+class UModel export",
+  "elapsed_seconds": 0.030999999959021807,
+  "files": [
+    {
+      "path": "resources\\SM_Neon_2-a14e71f2\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Neon_2.bin",
+      "size": 8296,
+      "sha256": "989d0a0a3408838fda1fbe11ebdef0e70ee2262c3fc9e6dc2b75337137251977"
+    },
+    {
+      "path": "resources\\SM_Neon_2-a14e71f2\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Neon_2.gltf",
+      "size": 2340,
+      "sha256": "6248e4194c70a80da0d3a99084966291f1662ae8910d9a931eb0bc63166dda18"
+    }
+  ],
+  "export_status": "exported_pending_geometry_validation"
+}

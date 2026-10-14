@@ -1,0 +1,107 @@
+[
+  {
+    "scene": "night",
+    "time": 40,
+    "image": "C:\\ORCA\\Fantasynt\\plan\\sequence-night-40.png",
+    "performance": {
+      "accepted_commands": 0,
+      "average_fps": 33.19401987602586,
+      "composition_weights": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "frames": 12,
+      "max_delivery_ms": 0.0,
+      "mean_delivery_ms": 0.0,
+      "seconds": 0.3615109,
+      "sequence": false,
+      "sequence_seconds": 40.0,
+      "type": "performance"
+    }
+  },
+  {
+    "scene": "landscape",
+    "time": 180,
+    "image": "C:\\ORCA\\Fantasynt\\plan\\sequence-landscape-180.png",
+    "performance": {
+      "accepted_commands": 0,
+      "average_fps": 32.64133698916307,
+      "composition_weights": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "frames": 12,
+      "max_delivery_ms": 0.0,
+      "mean_delivery_ms": 0.0,
+      "seconds": 0.367632,
+      "sequence": false,
+      "sequence_seconds": 180.0,
+      "type": "performance"
+    }
+  },
+  {
+    "scene": "tunnel",
+    "time": 300,
+    "image": "C:\\ORCA\\Fantasynt\\plan\\sequence-tunnel-300.png",
+    "performance": {
+      "accepted_commands": 0,
+      "average_fps": 33.25718362094793,
+      "composition_weights": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "frames": 12,
+      "max_delivery_ms": 0.0,
+      "mean_delivery_ms": 0.0,
+      "seconds": 0.3608243,
+      "sequence": false,
+      "sequence_seconds": 300.0,
+      "type": "performance"
+    }
+  },
+  {
+    "scene": "sequence",
+    "time": 96,
+    "image": "C:\\ORCA\\Fantasynt\\plan\\sequence-sequence-96.png",
+    "performance": {
+      "accepted_commands": 0,
+      "average_fps": 32.54621223113777,
+      "composition_weights": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "frames": 12,
+      "max_delivery_ms": 0.0,
+      "mean_delivery_ms": 0.0,
+      "seconds": 0.3687065,
+      "sequence": true,
+      "sequence_seconds": 96.0,
+      "type": "performance"
+    }
+  },
+  {
+    "scene": "sequence",
+    "time": 228,
+    "image": "C:\\ORCA\\Fantasynt\\plan\\sequence-sequence-228.png",
+    "performance": {
+      "accepted_commands": 0,
+      "average_fps": 33.14340321988162,
+      "composition_weights": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "frames": 12,
+      "max_delivery_ms": 0.0,
+      "mean_delivery_ms": 0.0,
+      "seconds": 0.362063,
+      "sequence": true,
+      "sequence_seconds": 228.0,
+      "type": "performance"
+    }
+  }
+]

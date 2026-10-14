@@ -1,0 +1,33 @@
+warning: in the working copy of 'C:\ORCA\Fantasynt\plan\rea-investigation\seeded-profile-fork\backups\src\ghidra\GhidraSessionValues.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'C:\ORCA\Fantasynt\tools\vendor\rea-main-source\rea-df2c08b546d4f40103e11b8b31dbfc3d41ee687b\src\ghidra\GhidraSessionValues.ts', LF will be replaced by CRLF the next time Git touches it
+diff --git "a/C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\seeded-profile-fork\\backups\\src\\ghidra\\GhidraSessionValues.ts" "b/C:\\ORCA\\Fantasynt\\tools\\vendor\\rea-main-source\\rea-df2c08b546d4f40103e11b8b31dbfc3d41ee687b\\src\\ghidra\\GhidraSessionValues.ts"
+index 0ee2a6b..1cf2c6e 100644
+--- "a/C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\seeded-profile-fork\\backups\\src\\ghidra\\GhidraSessionValues.ts"
++++ "b/C:\\ORCA\\Fantasynt\\tools\\vendor\\rea-main-source\\rea-df2c08b546d4f40103e11b8b31dbfc3d41ee687b\\src\\ghidra\\GhidraSessionValues.ts"
+@@ -41,6 +41,7 @@ const sessionInfoSchema = z
+     read_only: z.boolean(),
+     analysis_complete: z.boolean(),
+     analysis_timed_out: z.boolean(),
++    analysis_skipped: z.literal(true).optional(),
+     analysis_extensions: z.array(ghidraExtensionResultSchema).optional(),
+     analysis_seeds: ghidraSeedReportSchema.optional(),
+     mips_soft_float_storage: z
+@@ -79,6 +80,7 @@ export const parseGhidraSessionInfo = (
+     readonly expectedReadOnly?: boolean;
+     readonly expectedLanguageId?: string;
+     readonly expectedCompilerSpecId?: string;
++    readonly expectedSeededOnly?: boolean;
+   },
+ ): Result<GhidraSessionInfo, Error> => {
+   const parsed = sessionInfoSchema.safeParse(value);
+@@ -103,7 +105,9 @@ export const parseGhidraSessionInfo = (
+     expectedCapabilities.some(
+       (capability) => !parsed.data.capabilities.includes(capability),
+     ) ||
+-    parsed.data.analysis_complete === parsed.data.analysis_timed_out
++    (expected.expectedSeededOnly === true
++      ? parsed.data.analysis_skipped !== true || parsed.data.analysis_complete || parsed.data.analysis_timed_out
++      : parsed.data.analysis_skipped !== undefined || parsed.data.analysis_complete === parsed.data.analysis_timed_out)
+   )
+     return err(new Error("Ghidra bridge handshake identity is invalid"));
+   return ok(parsed.data);

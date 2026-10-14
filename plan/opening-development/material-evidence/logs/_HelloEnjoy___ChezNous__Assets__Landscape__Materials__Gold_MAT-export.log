@@ -1,0 +1,20 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_MAT.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 73 Exports: 4 Imports: 9 Game: 10000D0
+Export "Gold_MAT" was found in package "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_MAT.uasset"
+Found 1 object(s)
+Loading Material3 Gold_MAT from package /Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_MAT.uasset
+StructProperty: unknown UMaterial3 BaseColor
+StructProperty: unknown UMaterial3 Metallic
+StructProperty: unknown UMaterial3 Roughness
+StructProperty: unknown UMaterial3 AmbientOcclusion
+Loading package: /Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_INST_basecolor.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 13 Exports: 1 Imports: 4 Game: 10000D0
+WARNING: Unknown class "SubstanceTexture2D" for object "Gold_INST_basecolor"
+Loading package: /Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_INST_metallic.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 15 Exports: 1 Imports: 4 Game: 10000D0
+WARNING: Unknown class "SubstanceTexture2D" for object "Gold_INST_metallic"
+Loading package: /Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_INST_normal.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 19 Exports: 1 Imports: 4 Game: 10000D0
+WARNING: Unknown class "SubstanceTexture2D" for object "Gold_INST_normal"
+Loaded in 0.0 sec, 89 allocs, 0.04 MBytes serialized in 9 calls.
+Exporting objects ...
+Ignoring Material3'Gold_MAT' due to empty parameters

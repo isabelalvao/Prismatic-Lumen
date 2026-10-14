@@ -1,0 +1,46 @@
+[
+  {
+    "file": "C:\\ORCA\\Fantasynt\\plan\\scene-refinement-v2\\landscape.mp4",
+    "start_seconds": 174,
+    "frames": 144,
+    "fps": 12,
+    "duration_seconds": 12.0,
+    "audio": "matching excerpt of original MASTER",
+    "camera": "fixed",
+    "source": "actual D3D11 renderer captures",
+    "decode_validation": "passed"
+  },
+  {
+    "file": "C:\\ORCA\\Fantasynt\\plan\\scene-refinement-v2\\artifacts.mp4",
+    "start_seconds": 250,
+    "frames": 144,
+    "fps": 12,
+    "duration_seconds": 12.0,
+    "audio": "matching excerpt of original MASTER",
+    "camera": "fixed",
+    "source": "actual D3D11 renderer captures",
+    "decode_validation": "passed"
+  },
+  {
+    "file": "C:\\ORCA\\Fantasynt\\plan\\scene-refinement-v2\\rings.mp4",
+    "start_seconds": 330,
+    "frames": 288,
+    "fps": 24,
+    "duration_seconds": 12.0,
+    "audio": "matching excerpt of original MASTER",
+    "camera": "moving",
+    "source": "actual D3D11 renderer captures",
+    "decode_validation": "passed"
+  },
+  {
+    "file": "C:\\ORCA\\Fantasynt\\plan\\scene-refinement-v2\\ending.mp4",
+    "start_seconds": 408,
+    "frames": 196,
+    "fps": 12,
+    "duration_seconds": 16.333333333333332,
+    "audio": "matching excerpt of original MASTER",
+    "camera": "moving",
+    "source": "actual D3D11 renderer captures",
+    "decode_validation": "passed"
+  }
+]

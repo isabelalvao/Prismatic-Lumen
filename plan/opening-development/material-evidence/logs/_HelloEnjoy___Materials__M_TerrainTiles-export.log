@@ -1,0 +1,23 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/_HelloEnjoy_/Materials/M_TerrainTiles.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 95 Exports: 8 Imports: 10 Game: 10000D0
+Export "M_TerrainTiles" was found in package "/Game/_HelloEnjoy_/Materials/M_TerrainTiles.uasset"
+Found 1 object(s)
+Loading Material3 M_TerrainTiles from package /Game/_HelloEnjoy_/Materials/M_TerrainTiles.uasset
+StructProperty: unknown UMaterial3 BaseColor
+StructProperty: unknown UMaterial3 Metallic
+StructProperty: unknown UMaterial3 Roughness
+StructProperty: unknown UMaterial3 AmbientOcclusion
+Loading package: /Game/DemoRoom/Textures/T_RoomTiles_N.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 23 Exports: 1 Imports: 2 Game: 10000D0
+Loading package: /Game/DemoRoom/Textures/T_RoomTiles_M.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 14 Exports: 1 Imports: 2 Game: 10000D0
+Loading package: /Game/_HelloEnjoy_/Materials/Textures/DiagonalBand32-Light.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 14 Exports: 1 Imports: 2 Game: 10000D0
+Loading Texture2D T_RoomTiles_N from package /Game/DemoRoom/Textures/T_RoomTiles_N.uasset
+Loading Texture2D T_RoomTiles_M from package /Game/DemoRoom/Textures/T_RoomTiles_M.uasset
+Loading Texture2D DiagonalBand32-Light from package /Game/_HelloEnjoy_/Materials/Textures/DiagonalBand32-Light.uasset
+Loaded in 0.0 sec, 157 allocs, 8.13 MBytes serialized in 38 calls.
+Exporting objects ...
+Exporting Material3 M_TerrainTiles to C:/ORCA/Fantasynt/plan/opening-development/material-evidence/exports/Game/_HelloEnjoy_/Materials/M_TerrainTiles.mat
+Exporting Texture2D T_RoomTiles_N to C:/ORCA/Fantasynt/plan/opening-development/material-evidence/exports/Game/DemoRoom/Textures/T_RoomTiles_N.png
+Exporting Texture2D T_RoomTiles_M to C:/ORCA/Fantasynt/plan/opening-development/material-evidence/exports/Game/DemoRoom/Textures/T_RoomTiles_M.png
+Exporting Texture2D DiagonalBand32-Light to C:/ORCA/Fantasynt/plan/opening-development/material-evidence/exports/Game/_HelloEnjoy_/Materials/Textures/DiagonalBand32-Light.png

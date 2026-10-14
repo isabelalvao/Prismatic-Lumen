@@ -1,0 +1,77 @@
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.19045.
+-- Using the multi-header code from C:/ORCA/Fantasynt/build/_deps/nlohmann_json-src/include/
+-- Configuring done (1.9s)
+-- Generating done (0.2s)
+-- Build files have been written to: C:/ORCA/Fantasynt/build
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  1>Checking Build System
+  Building Custom Rule C:/ORCA/Fantasynt/CMakeLists.txt
+  fantasynt_control.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control.lib
+  Building Custom Rule C:/ORCA/Fantasynt/CMakeLists.txt
+  fantasynt_control_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  fantasynt_control.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control.lib
+  Building Custom Rule C:/ORCA/Fantasynt/CMakeLists.txt
+  fantasynt_net.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_net.lib
+  Building Custom Rule C:/ORCA/Fantasynt/CMakeLists.txt
+  fantasynt_network_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_network_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Building Custom Rule C:/ORCA/Fantasynt/CMakeLists.txt
+  fantasynt_geometry.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry.lib
+  Building Custom Rule C:/ORCA/Fantasynt/CMakeLists.txt
+  geometry_tests.cpp
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(51,30): error C3861: 'make_landscape_instances': identificador não encontrado [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(52,26): error C3861: 'make_landscape_instances': identificador não encontrado [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(54,9): error C3861: 'make_landscape_instances': identificador não encontrado [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(55,9): error C3861: 'make_landscape_instances': identificador não encontrado [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(58,29): error C2530: 'item': referências devem ser inicializadas [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(59,13): error C3536: 'item': não pode ser usado antes de ser inicializado [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(60,28): error C2143: erro de sintaxe: ';' ausente antes de ':' [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(60,43): error C2143: erro de sintaxe: ';' ausente antes de ')' [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(72,27): error C3861: 'make_fan_geometry': identificador não encontrado [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(72,21): error C2530: 'mesh': referências devem ser inicializadas [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(72,21): error C3531: 'mesh': um símbolo cujo tipo contém 'auto' deve ter um inicializador [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(72,25): error C2143: erro de sintaxe: ';' ausente antes de ':' [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(72,26): error C2143: erro de sintaxe: ';' ausente antes de '{' [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(72,26): error C2143: erro de sintaxe: ')' ausente antes de '{' [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(72,47): error C3861: 'make_segmented_cone_geometry': identificador não encontrado [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(72,78): error C3861: 'make_diamond_geometry': identificador não encontrado [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(72,102): error C3861: 'make_plate_geometry': identificador não encontrado [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(72,123): error C2143: erro de sintaxe: ';' ausente antes de '}' [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(72,124): error C2059: erro de sintaxe: ')' [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(73,9): error C2065: 'mesh': identificador não declarado [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(74,9): error C2065: 'mesh': identificador não declarado [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(75,24): error C2065: 'mesh': identificador não declarado [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(75,18): error C3531: 'index': um símbolo cujo tipo contém 'auto' deve ter um inicializador [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(75,23): error C2143: erro de sintaxe: ';' ausente antes de ':' [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(75,36): error C2143: erro de sintaxe: ';' ausente antes de ')' [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(75,38): error C2065: 'mesh': identificador não declarado [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(76,27): error C2065: 'mesh': identificador não declarado [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(76,25): error C2530: 'v': referências devem ser inicializadas [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(76,25): error C3531: 'v': um símbolo cujo tipo contém 'auto' deve ter um inicializador [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(76,26): error C2143: erro de sintaxe: ';' ausente antes de ':' [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(76,40): error C2143: erro de sintaxe: ';' ausente antes de ')' [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+C:\ORCA\Fantasynt\tests\geometry_tests.cpp(78,13): error C2661: 'hypot': nenhuma função sobrecarregada recebe 1 argumentos [C:\ORCA\Fantasynt\build\fantasynt_geometry_tests.vcxproj]
+      C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.51.36231\include\cmath(1562,17):
+      poderia ser 'auto std::hypot(const _Ty1,const _Ty2,const _Ty3) noexcept'
+          C:\ORCA\Fantasynt\tests\geometry_tests.cpp(78,13):
+          'auto std::hypot(const _Ty1,const _Ty2,const _Ty3) noexcept': espera argumentos 3 - 1 fornecido
+      C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.51.36231\include\cmath(873,1):
+      ou       'conditional<std::is_same_v<_Ty1,long double>||std::is_same_v<_Ty2,long double>,long double,conditional<std::is_same_v<_Ty1,float>&&std::is_same_v<_Ty2,float>,float,double>::type>::type hypot(_Ty1,_Ty2) noexcept'
+          C:\ORCA\Fantasynt\tests\geometry_tests.cpp(78,13):
+          'conditional<std::is_same_v<_Ty1,long double>||std::is_same_v<_Ty2,long double>,long double,conditional<std::is_same_v<_Ty1,float>&&std::is_same_v<_Ty2,float>,float,double>::type>::type hypot(_Ty1,_Ty2) noexcept': espera argumentos 2 - 1 fornecido
+      C:\ORCA\Fantasynt\tests\geometry_tests.cpp(78,13):
+      ao tentar corresponder a lista de argumentos '()'
+  
+Comando falhou com cÃ³digo 1 : C:\Program Files (x86)\Microsoft Visual 
+Studio\18\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe
+At C:\ORCA\Fantasynt\tools\build.ps1:28 char:32
++ ... DE -ne 0) { throw "Comando falhou com cÃ³digo $LASTEXITCODE : $Execut ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Comando falhou ...e\bin\cmake.exe:String) [], RuntimeException
+    + FullyQualifiedErrorId : Comando falhou com cÃ³digo 1 : C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTo 
+   ols\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe
+ 

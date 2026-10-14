@@ -1,0 +1,2 @@
+{"audio_driver":"wasapi","audio_enabled":true,"device":"Direct3D 11 vendor=0x10de device=0x1f12","mode":"desktop","port":10984,"runtime":"","sequence":true,"type":"ready"}
+{"accepted_commands":0,"atmosphere":[0.0,0.0005149999051354825,0.001287499675527215],"audio_enabled":true,"audio_seconds":226.06,"average_fps":46.794533509389964,"camera_position":16412.0,"composition_weights":[0.0,0.8352289795875549,0.16477103531360626],"frames":120,"max_delivery_ms":0.0,"mean_delivery_ms":0.0,"seconds":2.5644021,"sequence":true,"sequence_seconds":226.06,"type":"performance"}

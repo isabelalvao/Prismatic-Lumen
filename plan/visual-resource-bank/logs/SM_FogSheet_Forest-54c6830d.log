@@ -1,0 +1,11 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_FogSheet_Forest.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 59 Exports: 3 Imports: 6 Game: 10000D0
+Export "SM_FogSheet_Forest" was found in package "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_FogSheet_Forest.uasset"
+Found 1 object(s)
+Loading StaticMesh4 SM_FogSheet_Forest from package /Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_FogSheet_Forest.uasset
+Loading package: /Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_FogSheet_Forest.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 34 Exports: 1 Imports: 4 Game: 10000D0
+Loaded in 0.0 sec, 78 allocs, 0.01 MBytes serialized in 3 calls.
+Exporting objects ...
+Exporting StaticMesh4 SM_FogSheet_Forest to C:/ORCA/Fantasynt/plan/visual-resource-bank/resources/SM_FogSheet_Forest-54c6830d/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_FogSheet_Forest.gltf

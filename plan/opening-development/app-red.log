@@ -1,0 +1,100 @@
+test_opening_duration_is_two_minutes (test_opening.OpeningTests.test_opening_duration_is_two_minutes) ... FAIL
+test_stages_use_recovered_meshes (test_opening.OpeningTests.test_stages_use_recovered_meshes) ... 
+  test_stages_use_recovered_meshes (test_opening.OpeningTests.test_stages_use_recovered_meshes) (seconds=0) ... FAIL
+  test_stages_use_recovered_meshes (test_opening.OpeningTests.test_stages_use_recovered_meshes) (seconds=40) ... FAIL
+  test_stages_use_recovered_meshes (test_opening.OpeningTests.test_stages_use_recovered_meshes) (seconds=80) ... FAIL
+  test_stages_use_recovered_meshes (test_opening.OpeningTests.test_stages_use_recovered_meshes) (seconds=96) ... FAIL
+  test_stages_use_recovered_meshes (test_opening.OpeningTests.test_stages_use_recovered_meshes) (seconds=112) ... FAIL
+  test_stages_use_recovered_meshes (test_opening.OpeningTests.test_stages_use_recovered_meshes) (seconds=120) ... FAIL
+
+======================================================================
+FAIL: test_opening_duration_is_two_minutes (test_opening.OpeningTests.test_opening_duration_is_two_minutes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_opening.py", line 41, in test_opening_duration_is_two_minutes
+    self.assertIn("Opening time", result.stderr)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'Opening time' not found in 'Error: Unknown scene\n'
+
+======================================================================
+FAIL: test_stages_use_recovered_meshes (test_opening.OpeningTests.test_stages_use_recovered_meshes) (seconds=0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_opening.py", line 30, in test_stages_use_recovered_meshes
+    ready, final = self.launch(seconds)
+                   ~~~~~~~~~~~^^^^^^^^^
+  File "C:\ORCA\Fantasynt\tests\test_opening.py", line 24, in launch
+    self.assertEqual(result.returncode, 0, result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : Error: Unknown scene
+
+
+======================================================================
+FAIL: test_stages_use_recovered_meshes (test_opening.OpeningTests.test_stages_use_recovered_meshes) (seconds=40)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_opening.py", line 30, in test_stages_use_recovered_meshes
+    ready, final = self.launch(seconds)
+                   ~~~~~~~~~~~^^^^^^^^^
+  File "C:\ORCA\Fantasynt\tests\test_opening.py", line 24, in launch
+    self.assertEqual(result.returncode, 0, result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : Error: Unknown scene
+
+
+======================================================================
+FAIL: test_stages_use_recovered_meshes (test_opening.OpeningTests.test_stages_use_recovered_meshes) (seconds=80)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_opening.py", line 30, in test_stages_use_recovered_meshes
+    ready, final = self.launch(seconds)
+                   ~~~~~~~~~~~^^^^^^^^^
+  File "C:\ORCA\Fantasynt\tests\test_opening.py", line 24, in launch
+    self.assertEqual(result.returncode, 0, result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : Error: Unknown scene
+
+
+======================================================================
+FAIL: test_stages_use_recovered_meshes (test_opening.OpeningTests.test_stages_use_recovered_meshes) (seconds=96)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_opening.py", line 30, in test_stages_use_recovered_meshes
+    ready, final = self.launch(seconds)
+                   ~~~~~~~~~~~^^^^^^^^^
+  File "C:\ORCA\Fantasynt\tests\test_opening.py", line 24, in launch
+    self.assertEqual(result.returncode, 0, result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : Error: Unknown scene
+
+
+======================================================================
+FAIL: test_stages_use_recovered_meshes (test_opening.OpeningTests.test_stages_use_recovered_meshes) (seconds=112)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_opening.py", line 30, in test_stages_use_recovered_meshes
+    ready, final = self.launch(seconds)
+                   ~~~~~~~~~~~^^^^^^^^^
+  File "C:\ORCA\Fantasynt\tests\test_opening.py", line 24, in launch
+    self.assertEqual(result.returncode, 0, result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : Error: Unknown scene
+
+
+======================================================================
+FAIL: test_stages_use_recovered_meshes (test_opening.OpeningTests.test_stages_use_recovered_meshes) (seconds=120)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_opening.py", line 30, in test_stages_use_recovered_meshes
+    ready, final = self.launch(seconds)
+                   ~~~~~~~~~~~^^^^^^^^^
+  File "C:\ORCA\Fantasynt\tests\test_opening.py", line 24, in launch
+    self.assertEqual(result.returncode, 0, result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : Error: Unknown scene
+
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.301s
+
+FAILED (failures=7)

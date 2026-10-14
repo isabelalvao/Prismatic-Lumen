@@ -1,0 +1,67 @@
+warning: in the working copy of 'C:\ORCA\Fantasynt\plan\rea-investigation\seeded-profile-fork\backups\src\ghidra\GhidraProvider.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'C:\ORCA\Fantasynt\tools\vendor\rea-main-source\rea-df2c08b546d4f40103e11b8b31dbfc3d41ee687b\src\ghidra\GhidraProvider.ts', LF will be replaced by CRLF the next time Git touches it
+diff --git "a/C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\seeded-profile-fork\\backups\\src\\ghidra\\GhidraProvider.ts" "b/C:\\ORCA\\Fantasynt\\tools\\vendor\\rea-main-source\\rea-df2c08b546d4f40103e11b8b31dbfc3d41ee687b\\src\\ghidra\\GhidraProvider.ts"
+index aa50440..4631194 100644
+--- "a/C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\seeded-profile-fork\\backups\\src\\ghidra\\GhidraProvider.ts"
++++ "b/C:\\ORCA\\Fantasynt\\tools\\vendor\\rea-main-source\\rea-df2c08b546d4f40103e11b8b31dbfc3d41ee687b\\src\\ghidra\\GhidraProvider.ts"
+@@ -34,7 +34,7 @@ import {
+   type GhidraInstallationInspection,
+ } from "./GhidraInstallation.js";
+ import { resolveGhidraAnalysisProfile } from "./GhidraAnalysisProfile.js";
+-import { AnalysisCancelledError } from "../domain/analysisErrorCore.js";
++import { AnalysisCancelledError, AnalysisUnsupportedTargetError } from "../domain/analysisErrorCore.js";
+ import { resolveGhidraAnalysisSeeds } from "./GhidraAnalysisSeeds.js";
+ import {
+   admitGhidraLanguageOverride,
+@@ -145,6 +145,13 @@ export class GhidraProvider implements AnalysisProviderCandidate {
+       executable_role: target.executableRole ?? null,
+       managed: target.managed ?? null,
+     };
++    if (this.config.ghidraSeededOnly === true &&
++        (hostPlatform !== "win32" || target.kind !== "executable" ||
++          inspectWindowsP0TargetSupport(target, diagnostics).status !== "supported"))
++      return {
++        status: "unsupported", code: "target_format_unsupported",
++        reason: "The local seeded-only profile accepts native Windows x86/x86-64 PE applications and DLLs only.", diagnostics,
++      };
+     if (target.kind !== "executable")
+       return {
+         status: "unsupported",
+@@ -199,6 +206,11 @@ export class GhidraProvider implements AnalysisProviderCandidate {
+     options?: AnalysisProfileResolutionOptions,
+   ) {
+     const installation = this.#inspectInstallation();
++    if (this.config.ghidraSeededOnly === true) {
++      const support = this.inspectTargetSupport(target);
++      if (support.status !== "supported")
++        return err(new AnalysisUnsupportedTargetError("resolve_analysis_profile", target.path, support.reason ?? "Unsupported seeded-only target."));
++    }
+     const resolved = await resolveGhidraAnalysisProfile(
+       target,
+       GHIDRA_PROVIDER_IDENTITY,
+@@ -242,12 +254,25 @@ export class GhidraProvider implements AnalysisProviderCandidate {
+       return err(new AnalysisCancelledError("open_binary"));
+     const seeds = await resolveGhidraAnalysisSeeds(this.config.ghidraSeedFile);
+     if (!seeds.ok) return seeds;
++    if (this.config.ghidraSeededOnly === true &&
++        (seeds.value === undefined || seeds.value.entries.function + seeds.value.entries.code === 0))
++      return err(new ProviderAdapterError("ghidra", "resolve_analysis_profile", {
++        diagnostics: { reason: "The local seeded-only profile requires at least one caller-provided function or code seed." },
++      }));
+     if (extensions.value.length === 0 && seeds.value === undefined)
+       return resolved;
+     return ok({
+       ...resolved.value,
+       profile: createAnalysisProfile(resolved.value.profile.provider, {
+         ...resolved.value.profile.parameters,
++        ...(this.config.ghidraSeededOnly === true ? {
++          analyzer_preset: "ghidra-seeded-only-no-auto-analysis-local-fork-v1",
++          analysis_options: {
++            auto_analysis: false,
++            ...(this.config.ghidraDisabledAnalyzers === undefined ? {} : { disabled_analyzers: [...this.config.ghidraDisabledAnalyzers] }),
++          },
++          analysis_coverage: "partial-caller-seeds",
++        } : {}),
+         ...(extensions.value.length === 0
+           ? {}
+           : { analysis_extensions: jsonValueSchema.parse(extensions.value) }),

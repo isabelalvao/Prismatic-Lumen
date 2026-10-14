@@ -1,0 +1,51 @@
+{
+  "input": {
+    "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/TubeLattice/tube_lattice_flat_0.uasset",
+    "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/TubeLattice/tube_lattice_flat_0",
+    "object_name": "tube_lattice_flat_0",
+    "class_reference": "/Script/Engine.StaticMesh",
+    "export_index": 3,
+    "serial_offset": 8636,
+    "serial_size": 172697,
+    "payload_sha1": "4c6f13eb1d17e590526ba2e07e1ac0b55a88fe59",
+    "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+    "source_reports": [
+      "mesh-assets.json"
+    ],
+    "payload_pak_offset": 104423477,
+    "payload_size": 181337,
+    "source_sha1_verified": true,
+    "resource_id": "tube_lattice_flat_0-4c6f13eb"
+  },
+  "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\tube_lattice_flat_0-4c6f13eb",
+  "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+  "args": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-export",
+    "-gltf",
+    "-notex",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\tube_lattice_flat_0-4c6f13eb",
+    "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/TubeLattice/tube_lattice_flat_0",
+    "tube_lattice_flat_0",
+    "StaticMesh"
+  ],
+  "returncode": 0,
+  "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\tube_lattice_flat_0-4c6f13eb.log",
+  "method": "qualified package+object+class UModel export",
+  "elapsed_seconds": 0.030999999959021807,
+  "files": [
+    {
+      "path": "resources\\tube_lattice_flat_0-4c6f13eb\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\TubeLattice\\tube_lattice_flat_0.bin",
+      "size": 136064,
+      "sha256": "bc7b214244b613c3e75efc6761f4290ffb4d67afcd4f2877dfc3e68bf1141374"
+    },
+    {
+      "path": "resources\\tube_lattice_flat_0-4c6f13eb\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\TubeLattice\\tube_lattice_flat_0.gltf",
+      "size": 2387,
+      "sha256": "35e9cb434002ac32aabbdd28a70a1080db56b49c20a9265e434ca7ab042e0a03"
+    }
+  ],
+  "export_status": "exported_pending_geometry_validation"
+}

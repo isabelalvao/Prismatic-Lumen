@@ -1,0 +1,38 @@
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  spirv-cross.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\spirv-cross.lib
+  glslang.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\glslang.lib
+  bx.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bx\Release\bx.lib
+  spirv-opt.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\spirv-opt.lib
+  bimg.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bimg\Release\bimg.lib
+  tint.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\tint.lib
+  shaderc.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\shaderc.exe
+  openxr_loader.vcxproj -> C:\ORCA\Fantasynt\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  C:\ORCA\Fantasynt\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  1 File(s) copied
+  C:\ORCA\Fantasynt\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  1 File(s) copied
+  C:\ORCA\Fantasynt\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  1 File(s) copied
+  bimg_decode.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bimg\Release\bimg_decode.lib
+  bgfx.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\bgfx.lib
+  fantasynt_control.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control.lib
+  SDL_uclibc.vcxproj -> C:\ORCA\Fantasynt\build\_deps\sdl3-build\Release\SDL_uclibc.lib
+  fantasynt_visual_config.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_visual_config.lib
+  fantasynt_time_display.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_time_display.lib
+  fantasynt_beat.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_beat.lib
+  fantasynt_geometry.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry.lib
+  SDL3-static.vcxproj -> C:\ORCA\Fantasynt\build\_deps\sdl3-build\Release\SDL3-static.lib
+  fantasynt_render.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_render.lib
+  renderer_tests.cpp
+     Criando biblioteca C:/ORCA/Fantasynt/build/Release/fantasynt_renderer_tests.lib e objeto C:/ORCA/Fantasynt/build/Release/fantasynt_renderer_tests.exp
+  fantasynt_renderer_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_renderer_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_control.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control.lib
+  fantasynt_visual_config.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_visual_config.lib
+  fantasynt_geometry.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry.lib
+  geometry_tests.cpp
+  fantasynt_geometry_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry_tests.exe

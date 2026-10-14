@@ -1,0 +1,51 @@
+{
+  "input": {
+    "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/red33.uasset",
+    "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/red33",
+    "object_name": "red33",
+    "class_reference": "/Script/Engine.StaticMesh",
+    "export_index": 3,
+    "serial_offset": 22680,
+    "serial_size": 17473,
+    "payload_sha1": "7d90d621082a958576b1001354499a4f3033be77",
+    "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+    "source_reports": [
+      "mesh-assets.json"
+    ],
+    "payload_pak_offset": 41988149,
+    "payload_size": 40157,
+    "source_sha1_verified": true,
+    "resource_id": "red33-7d90d621"
+  },
+  "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\red33-7d90d621",
+  "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+  "args": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-export",
+    "-gltf",
+    "-notex",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\red33-7d90d621",
+    "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/red33",
+    "red33",
+    "StaticMesh"
+  ],
+  "returncode": 0,
+  "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\red33-7d90d621.log",
+  "method": "qualified package+object+class UModel export",
+  "elapsed_seconds": 0.030999999959021807,
+  "files": [
+    {
+      "path": "resources\\red33-7d90d621\\Game\\_HelloEnjoy_\\ChezNous\\Assets\\Forest\\camo32_tube\\red33.bin",
+      "size": 12816,
+      "sha256": "0b43915615cb08aabdc9c6d528c9aeedd32dbf03fd7a5cdc5e99022ad9fbb3c4"
+    },
+    {
+      "path": "resources\\red33-7d90d621\\Game\\_HelloEnjoy_\\ChezNous\\Assets\\Forest\\camo32_tube\\red33.gltf",
+      "size": 2318,
+      "sha256": "4ff7e4ddfc0d78ec5814bd7542801b00ca200efadd24ef04b98511f1362a556a"
+    }
+  ],
+  "export_status": "exported_pending_geometry_validation"
+}

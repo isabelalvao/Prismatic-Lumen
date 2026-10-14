@@ -1,0 +1,104 @@
+0x1417c8ac0	4883ec28	sub	rsp, 0x28
+0x1417c8ac4	488d0d8d4cb100	lea	rcx, [rip + 0xb14c8d]
+0x1417c8acb	e850fbffff	call	0x1417c8620
+0x1417c8ad0	488bc8	mov	rcx, rax
+0x1417c8ad3	4c8d0546650000	lea	r8, [rip + 0x6546]
+0x1417c8ada	488d159736b100	lea	rdx, [rip + 0xb13697]
+0x1417c8ae1	e82a47b0fe	call	0x1402cd210
+0x1417c8ae6	488d0d6b4cb100	lea	rcx, [rip + 0xb14c6b]
+0x1417c8aed	e82efbffff	call	0x1417c8620
+0x1417c8af2	488bc8	mov	rcx, rax
+0x1417c8af5	4c8d0544650000	lea	r8, [rip + 0x6544]
+0x1417c8afc	488d158d36b100	lea	rdx, [rip + 0xb1368d]
+0x1417c8b03	e80847b0fe	call	0x1402cd210
+0x1417c8b08	488d0d494cb100	lea	rcx, [rip + 0xb14c49]
+0x1417c8b0f	e80cfbffff	call	0x1417c8620
+0x1417c8b14	488bc8	mov	rcx, rax
+0x1417c8b17	4c8d0522660000	lea	r8, [rip + 0x6622]
+0x1417c8b1e	488d158b36b100	lea	rdx, [rip + 0xb1368b]
+0x1417c8b25	e8e646b0fe	call	0x1402cd210
+0x1417c8b2a	488d0d274cb100	lea	rcx, [rip + 0xb14c27]
+0x1417c8b31	e8eafaffff	call	0x1417c8620
+0x1417c8b36	488bc8	mov	rcx, rax
+0x1417c8b39	4c8d0560660000	lea	r8, [rip + 0x6660]
+0x1417c8b40	488d157936b100	lea	rdx, [rip + 0xb13679]
+0x1417c8b47	e8c446b0fe	call	0x1402cd210
+0x1417c8b4c	488d0d054cb100	lea	rcx, [rip + 0xb14c05]
+0x1417c8b53	e8c8faffff	call	0x1417c8620
+0x1417c8b58	488bc8	mov	rcx, rax
+0x1417c8b5b	4c8d055e660000	lea	r8, [rip + 0x665e]
+0x1417c8b62	488d156736b100	lea	rdx, [rip + 0xb13667]
+0x1417c8b69	e8a246b0fe	call	0x1402cd210
+0x1417c8b6e	488d0de34bb100	lea	rcx, [rip + 0xb14be3]
+0x1417c8b75	e8a6faffff	call	0x1417c8620
+0x1417c8b7a	488bc8	mov	rcx, rax
+0x1417c8b7d	4c8d056c660000	lea	r8, [rip + 0x666c]
+0x1417c8b84	488d157536b100	lea	rdx, [rip + 0xb13675]
+0x1417c8b8b	e88046b0fe	call	0x1402cd210
+0x1417c8b90	488d0dc14bb100	lea	rcx, [rip + 0xb14bc1]
+0x1417c8b97	e884faffff	call	0x1417c8620
+0x1417c8b9c	488bc8	mov	rcx, rax
+0x1417c8b9f	4c8d05ca650000	lea	r8, [rip + 0x65ca]
+0x1417c8ba6	488d156b36b100	lea	rdx, [rip + 0xb1366b]
+0x1417c8bad	e85e46b0fe	call	0x1402cd210
+0x1417c8bb2	488d0d9f4bb100	lea	rcx, [rip + 0xb14b9f]
+0x1417c8bb9	e862faffff	call	0x1417c8620
+0x1417c8bbe	488bc8	mov	rcx, rax
+0x1417c8bc1	4c8d0508670000	lea	r8, [rip + 0x6708]
+0x1417c8bc8	488d155936b100	lea	rdx, [rip + 0xb13659]
+0x1417c8bcf	e83c46b0fe	call	0x1402cd210
+0x1417c8bd4	488d0d7d4bb100	lea	rcx, [rip + 0xb14b7d]
+0x1417c8bdb	e840faffff	call	0x1417c8620
+0x1417c8be0	488bc8	mov	rcx, rax
+0x1417c8be3	4c8d0516670000	lea	r8, [rip + 0x6716]
+0x1417c8bea	488d154336b100	lea	rdx, [rip + 0xb13643]
+0x1417c8bf1	e81a46b0fe	call	0x1402cd210
+0x1417c8bf6	488d0d5b4bb100	lea	rcx, [rip + 0xb14b5b]
+0x1417c8bfd	e81efaffff	call	0x1417c8620
+0x1417c8c02	488bc8	mov	rcx, rax
+0x1417c8c05	4c8d0514670000	lea	r8, [rip + 0x6714]
+0x1417c8c0c	488d152936b100	lea	rdx, [rip + 0xb13629]
+0x1417c8c13	e8f845b0fe	call	0x1402cd210
+0x1417c8c18	488d0d394bb100	lea	rcx, [rip + 0xb14b39]
+0x1417c8c1f	e8fcf9ffff	call	0x1417c8620
+0x1417c8c24	488bc8	mov	rcx, rax
+0x1417c8c27	4c8d0512670000	lea	r8, [rip + 0x6712]
+0x1417c8c2e	488d157336b100	lea	rdx, [rip + 0xb13673]
+0x1417c8c35	e8d645b0fe	call	0x1402cd210
+0x1417c8c3a	488d0d174bb100	lea	rcx, [rip + 0xb14b17]
+0x1417c8c41	e8daf9ffff	call	0x1417c8620
+0x1417c8c46	488bc8	mov	rcx, rax
+0x1417c8c49	4c8d0570670000	lea	r8, [rip + 0x6770]
+0x1417c8c50	488d156136b100	lea	rdx, [rip + 0xb13661]
+0x1417c8c57	e8b445b0fe	call	0x1402cd210
+0x1417c8c5c	488d0df54ab100	lea	rcx, [rip + 0xb14af5]
+0x1417c8c63	e8b8f9ffff	call	0x1417c8620
+0x1417c8c68	488bc8	mov	rcx, rax
+0x1417c8c6b	4c8d05ee670000	lea	r8, [rip + 0x67ee]
+0x1417c8c72	488d154f36b100	lea	rdx, [rip + 0xb1364f]
+0x1417c8c79	e89245b0fe	call	0x1402cd210
+0x1417c8c7e	488d0dd34ab100	lea	rcx, [rip + 0xb14ad3]
+0x1417c8c85	e896f9ffff	call	0x1417c8620
+0x1417c8c8a	488bc8	mov	rcx, rax
+0x1417c8c8d	4c8d054c680000	lea	r8, [rip + 0x684c]
+0x1417c8c94	488d154536b100	lea	rdx, [rip + 0xb13645]
+0x1417c8c9b	e87045b0fe	call	0x1402cd210
+0x1417c8ca0	488d0db14ab100	lea	rcx, [rip + 0xb14ab1]
+0x1417c8ca7	e874f9ffff	call	0x1417c8620
+0x1417c8cac	488bc8	mov	rcx, rax
+0x1417c8caf	4c8d052a670000	lea	r8, [rip + 0x672a]
+0x1417c8cb6	488d153b36b100	lea	rdx, [rip + 0xb1363b]
+0x1417c8cbd	e84e45b0fe	call	0x1402cd210
+0x1417c8cc2	488d0d8f4ab100	lea	rcx, [rip + 0xb14a8f]
+0x1417c8cc9	e852f9ffff	call	0x1417c8620
+0x1417c8cce	488bc8	mov	rcx, rax
+0x1417c8cd1	4c8d0548690000	lea	r8, [rip + 0x6948]
+0x1417c8cd8	488d152936b100	lea	rdx, [rip + 0xb13629]
+0x1417c8cdf	e82c45b0fe	call	0x1402cd210
+0x1417c8ce4	488d0d6d4ab100	lea	rcx, [rip + 0xb14a6d]
+0x1417c8ceb	e830f9ffff	call	0x1417c8620
+0x1417c8cf0	488bc8	mov	rcx, rax
+0x1417c8cf3	4c8d0546690000	lea	r8, [rip + 0x6946]
+0x1417c8cfa	488d151f36b100	lea	rdx, [rip + 0xb1361f]
+0x1417c8d01	4883c428	add	rsp, 0x28
+0x1417c8d05	e90645b0fe	jmp	0x1402cd210

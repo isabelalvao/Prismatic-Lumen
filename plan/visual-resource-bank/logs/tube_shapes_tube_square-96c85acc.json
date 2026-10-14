@@ -1,0 +1,51 @@
+{
+  "input": {
+    "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/tube_shapes_tube_square.uasset",
+    "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/tube_shapes_tube_square",
+    "object_name": "tube_shapes_tube_square",
+    "class_reference": "/Script/Engine.StaticMesh",
+    "export_index": 3,
+    "serial_offset": 5747,
+    "serial_size": 111844,
+    "payload_sha1": "96c85acc6426e86e278bc519798ecee8872cfb5d",
+    "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+    "source_reports": [
+      "mesh-assets.json"
+    ],
+    "payload_pak_offset": 74907701,
+    "payload_size": 117595,
+    "source_sha1_verified": true,
+    "resource_id": "tube_shapes_tube_square-96c85acc"
+  },
+  "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\tube_shapes_tube_square-96c85acc",
+  "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+  "args": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-export",
+    "-gltf",
+    "-notex",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\tube_shapes_tube_square-96c85acc",
+    "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/tube_shapes_tube_square",
+    "tube_shapes_tube_square",
+    "StaticMesh"
+  ],
+  "returncode": 0,
+  "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\tube_shapes_tube_square-96c85acc.log",
+  "method": "qualified package+object+class UModel export",
+  "elapsed_seconds": 0.046999999904073775,
+  "files": [
+    {
+      "path": "resources\\tube_shapes_tube_square-96c85acc\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\tube_shapes_tube_square.bin",
+      "size": 67040,
+      "sha256": "cee3ea4400caecb7a678ef2e9263aa02671882bd31364eb11f2a37d19975817d"
+    },
+    {
+      "path": "resources\\tube_shapes_tube_square-96c85acc\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\tube_shapes_tube_square.gltf",
+      "size": 2394,
+      "sha256": "abb87a57c5dac8878c4e56044fe30eb83c9c8315f9bd224cbf0fd06677e68fb9"
+    }
+  ],
+  "export_status": "exported_pending_geometry_validation"
+}

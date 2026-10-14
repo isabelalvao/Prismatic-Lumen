@@ -1,0 +1,131 @@
+import { mkdtemp, writeFile, rm } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
+import { afterEach, describe, expect, it } from "vitest";
+import { parseConfig } from "../config/parseConfig.js";
+import type { BinaryTarget } from "../domain/binaryTargetTypes.js";
+import { silentLogger } from "../logger.js";
+import { GhidraProvider } from "./GhidraProvider.js";
+import { ghidraHeadlessArguments } from "./GhidraLauncher.js";
+import type { GhidraInstallationHost } from "./GhidraInstallation.js";
+import { GHIDRA_SESSION_CAPABILITIES, GHIDRA_MUTATING_OPERATIONS, parseGhidraSessionInfo } from "./GhidraSessionValues.js";
+import { ghidraSeedLimitations } from "./GhidraAnalysisSeeds.js";
+
+const directories: string[] = [];
+afterEach(async () => {
+  for (const directory of directories.splice(0)) await rm(directory, { recursive: true, force: true });
+});
+const host: GhidraInstallationHost = {
+  platform: "win32", architecture: "x64",
+  readText: () => "application.version=12.1.4\n",
+  executable: () => true,
+  probeJava: () => ({ version: "21.0.11", major: 21, home: "C:/jdk-21", bits: 64, runtime: "jdk" }),
+};
+const target: BinaryTarget = {
+  path: "C:/fixture.exe", sha256: "b".repeat(64), kind: "executable", format: "pe",
+  architecture: "x86_64", availableArchitectures: ["x86_64"], executableRole: "application", managed: false,
+};
+const argumentOptions = {
+  platform: "win32" as const, projectRoot: "C:/private/project", targetPath: "C:/fixture.exe",
+  bridgeScriptPath: "C:/rea/bridge/ReaGhidraBridge.java", descriptorPath: "C:/private/session.json",
+  ghidraLogPath: "C:/private/ghidra.log", scriptLogPath: "C:/private/script.log",
+};
+const config = (environment: Record<string, string | undefined> = {}) => {
+  const parsed = parseConfig({ GHIDRA_INSTALL_DIR: "C:/ghidra", ...environment });
+  if (!parsed.ok) throw parsed.error;
+  return parsed.value;
+};
+const seeds = async (text = "0x140001000\tfunction\tentry\n") => {
+  const directory = await mkdtemp(join(tmpdir(), "rea-seeded-only-"));
+  directories.push(directory);
+  const path = join(directory, "seeds.tsv");
+  await writeFile(path, text);
+  return path;
+};
+
+describe("local fork optional seeded-only Ghidra profile", () => {
+  it("retains default auto-analysis and profile semantics", async () => {
+    expect(config().ghidraSeededOnly).toBeUndefined();
+    expect(ghidraHeadlessArguments(argumentOptions)).not.toContain("-noanalysis");
+    const resolved = await new GhidraProvider(config(), silentLogger, {}, host).resolveAnalysisProfile(target);
+    if (!resolved.ok) throw resolved.error;
+    expect(resolved.value.profile?.parameters.analyzer_preset).toBe("ghidra-default");
+    expect(resolved.value.profile?.parameters.analysis_options).toBeUndefined();
+  });
+  it.each(["true", "yes", "", "2"])("rejects ambiguous opt-in %j", (value) => {
+    expect(parseConfig({ REA_GHIDRA_SEEDED_ONLY: value, REA_GHIDRA_SEED_FILE: "C:/seeds.tsv" }).ok).toBe(false);
+  });
+  it("rejects opt-in without a caller-provided seed file", () => {
+    expect(parseConfig({ REA_GHIDRA_SEEDED_ONLY: "1" }).ok).toBe(false);
+  });
+  it("emits -noanalysis with the preserved seed script and immutable import controls", () => {
+    const args = ghidraHeadlessArguments({ ...argumentOptions, seededOnly: true, seedPath: "C:/private/seeds.tsv" });
+    expect(args).toContain("-noanalysis");
+    expect(args).toContain("-readOnly");
+    expect(args).toContain("-deleteProject");
+    expect(args).toContain("C:/private/seeds.tsv");
+    expect(args).toContain("C:\\rea\\bridge\\ReaGhidraApplySeeds.java");
+  });
+  it("refuses noanalysis when no seed snapshot exists", () => {
+    expect(() => ghidraHeadlessArguments({ ...argumentOptions, seededOnly: true })).toThrow(/seed/iu);
+  });
+  it("commits skipped analysis into the profile digest and seeds", async () => {
+    const seedPath = await seeds();
+    const base = config({ REA_GHIDRA_SEED_FILE: seedPath });
+    const selected = config({ REA_GHIDRA_SEEDED_ONLY: "1", REA_GHIDRA_SEED_FILE: seedPath });
+    expect(selected.ghidraSeededOnly).toBe(true);
+    const normal = await new GhidraProvider(base, silentLogger, {}, host).resolveAnalysisProfile(target);
+    const partial = await new GhidraProvider(selected, silentLogger, {}, host).resolveAnalysisProfile(target);
+    if (!normal.ok) throw normal.error;
+    if (!partial.ok) throw partial.error;
+    expect(partial.value.profile?.digest).not.toBe(normal.value.profile?.digest);
+    expect(partial.value.profile?.parameters).toMatchObject({
+      analyzer_preset: "ghidra-seeded-only-no-auto-analysis-local-fork-v1",
+      analysis_options: { auto_analysis: false },
+      analysis_coverage: "partial-caller-seeds",
+      analysis_seeds: { entries: { function: 1, code: 0, label: 0 } },
+    });
+  });
+  it("rejects empty seed files and targets outside native Windows PE", async () => {
+    const selected = config({ REA_GHIDRA_SEEDED_ONLY: "1", REA_GHIDRA_SEED_FILE: await seeds("# empty\n") });
+    const ghidra = new GhidraProvider(selected, silentLogger, {}, host);
+    expect((await ghidra.resolveAnalysisProfile(target)).ok).toBe(false);
+    expect((await ghidra.resolveAnalysisProfile({ ...target, managed: true })).ok).toBe(false);
+    expect((await new GhidraProvider(selected, silentLogger, {}, { ...host, platform: "linux" }).resolveAnalysisProfile(target)).ok).toBe(false);
+  });
+  it("describes partial coverage without claiming default auto-analysis occurred", () => {
+    const limits = ghidraSeedLimitations({
+      format: "rea-ghidra-seeds-v1", path: "C:/seeds.tsv", configured_path: "C:/seeds.tsv",
+      sha256: "a".repeat(64), entries: { function: 1, code: 0, label: 0 },
+    }, undefined, true);
+    expect(limits.join(" ")).toMatch(/auto-analysis was skipped/iu);
+    expect(limits.join(" ")).toMatch(/partial/iu);
+    expect(limits.join(" ")).toMatch(/caller assertions/iu);
+    expect(limits.join(" ")).not.toContain("before auto-analysis");
+  });
+});
+
+describe("seeded-only imported target/profile handshake", () => {
+  const expected = {
+    runId: "d6fcbb66-e829-4ff6-a535-0035aec63139", providerVersion: "12.1.4",
+    profileDigest: "a".repeat(64), targetSha256: "b".repeat(64), expectedReadOnly: true,
+    expectedSeededOnly: true,
+  };
+  const report = {
+    name: "REA Ghidra bridge", run_id: expected.runId, profile_digest: expected.profileDigest,
+    provider: { id: "ghidra", version: expected.providerVersion }, read_only: true,
+    analysis_complete: false, analysis_timed_out: false, analysis_skipped: true,
+    capabilities: GHIDRA_SESSION_CAPABILITIES.filter((c) => !GHIDRA_MUTATING_OPERATIONS.has(c)),
+    target: { name: "fixture.exe", language_id: "x86:LE:64:default", compiler_spec_id: "windows", image_base: "0x140000000", default_address_space: "ram", sha256: expected.targetSha256 },
+  };
+  it("accepts explicit skipped auto-analysis only for the committed opt-in", () => {
+    expect(parseGhidraSessionInfo(report, expected).ok).toBe(true);
+    expect(parseGhidraSessionInfo(report, { ...expected, expectedSeededOnly: false }).ok).toBe(false);
+  });
+  it.each([
+    { analysis_complete: true }, { analysis_timed_out: true }, { analysis_skipped: undefined },
+    { profile_digest: "c".repeat(64) }, { target: { ...report.target, sha256: "c".repeat(64) } },
+  ])("rejects contradictory or unbound startup outcome %j", (change) => {
+    expect(parseGhidraSessionInfo({ ...report, ...change }, expected).ok).toBe(false);
+  });
+});

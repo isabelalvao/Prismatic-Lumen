@@ -1,0 +1,13 @@
+{
+  "code": "COMMAND_NOT_FOUND",
+  "message": "'binary-session' is not a command for 'rea'.",
+  "cta": {
+    "description": "Suggested command:",
+    "commands": [
+      {
+        "command": "rea --help",
+        "description": "see all available commands"
+      }
+    ]
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "source": "local format-aware Blueprint decoding; not REA Evidence or runtime",
+  "status": "passed",
+  "pak_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Content\\Paks\\Fantasynth-WindowsNoEditor.pak",
+  "inventory_sha256": "86c761fe830c1813da66d582342bc4cc7c8bf54b08c8762306dd4e62fb3e8ce3",
+  "regions_sha256": "d2f11b9de38ce037a101712d5a65163ad529609d38ef91b490d0d53bc4202793",
+  "decoder_sha256": "913562031b2125123cc9285734a3bc1deffb25fb3edcca52a466648a46cc8ce3",
+  "negative_checks_passed": [
+    "unknown_token",
+    "truncated_operand",
+    "interior_jump_target",
+    "empty_script",
+    "missing_end_script",
+    "early_end_script",
+    "trailing_bytes_after_end",
+    "fake_end_in_int_operand",
+    "fake_end_in_return_operand",
+    "fake_end_in_byte_operand",
+    "loose_argument_terminator",
+    "loose_struct_terminator",
+    "nested_end_script",
+    "null_variable",
+    "function_used_as_variable",
+    "null_function",
+    "class_used_as_function",
+    "negative_fname_number",
+    "numbered_fname_outside_profile",
+    "switch_end_not_default_end",
+    "switch_next_not_case_end"
+  ],
+  "limits": [
+    "Perfil limitado aos scripts seleccionados, não um parser UE universal.",
+    "Offsets de memória usam ponteiros de 8 e FNames de 12 bytes.",
+    "FNames numerados são rejeitados; os scripts seleccionados usam number=0.",
+    "Validação estrutural, não prova de execução ou subscritores activos.",
+    "Sem invocação REA, análise nativa ou REA Evidence."
+  ],
+  "references": [
+    "https://github.com/atenfyr/UAssetAPI/tree/master/UAssetAPI/Kismet/Bytecode/Expressions",
+    "https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Runtime/CoreUObject/EExprToken"
+  ],
+  "assets": [
+    {
+      "asset_path": "Fantasynth/Content/_HelloEnjoy_/Fantasynth/Director/BeatDirector.uasset",
+      "asset_sha1": "651f6e33a9d5467359527611e76f2aa1eaab37ef",
+      "artifact": "BeatDirector.instructions.json",
+      "entrypoint_checks": [
+        {
+          "caller": "ReceiveTick",
+          "call_storage_offset": 10,
+          "target_memory_offset": 1502,
+          "instruction_boundary": true
+        }
+      ],
+      "functions": [
+        {
+          "function": "ExecuteUbergraph_BeatDirector",
+          "script_sha256": "d43d0a9dec6b0fef7db46670687d8f8f15f1ae769775a74d5fc435384a5a91f4",
+          "storage_size": 952,
+          "memory_size": 1524,
+          "sizes_match": true,
+          "native_header_bounds_match": true,
+          "asset_script_offset": 11860,
+          "pak_script_offset": 123723401,
+          "target_checks": [
+            {
+              "kind": "jump",
+              "source_storage_offset": 371,
+              "target_memory_offset": 1521,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "jump",
+              "source_storage_offset": 376,
+              "target_memory_offset": 533,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "jump",
+              "source_storage_offset": 386,
+              "target_memory_offset": 10,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "jump",
+              "source_storage_offset": 487,
+              "target_memory_offset": 839,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "jump",
+              "source_storage_offset": 516,
+              "target_memory_offset": 1011,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "jump",
+              "source_storage_offset": 526,
+              "target_memory_offset": 1521,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "jump",
+              "source_storage_offset": 553,
+              "target_memory_offset": 939,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "jump",
+              "source_storage_offset": 585,
+              "target_memory_offset": 533,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "jump",
+              "source_storage_offset": 617,
+              "target_memory_offset": 533,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "jump",
+              "source_storage_offset": 638,
+              "target_memory_offset": 592,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "jump",
+              "source_storage_offset": 665,
+              "target_memory_offset": 533,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "jump",
+              "source_storage_offset": 675,
+              "target_memory_offset": 987,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "jump",
+              "source_storage_offset": 680,
+              "target_memory_offset": 1521,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "jump",
+              "source_storage_offset": 929,
+              "target_memory_offset": 611,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "jump",
+              "source_storage_offset": 934,
+              "target_memory_offset": 1521,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "jump",
+              "source_storage_offset": 944,
+              "target_memory_offset": 1068,
+              "instruction_boundary": true
+            }
+          ]
+        },
+        {
+          "function": "ReceiveTick",
+          "script_sha256": "5e23a55b4ff836873f6c56473af4300412599430270b1fa6cad8a8c2046fca24",
+          "storage_size": 28,
+          "memory_size": 40,
+          "sizes_match": true,
+          "native_header_bounds_match": true,
+          "asset_script_offset": 12892,
+          "pak_script_offset": 123724433,
+          "target_checks": []
+        },
+        {
+          "function": "Start",
+          "script_sha256": "3032c2f056e55cf80233eef9032bac9ff84aa5e6e8f88651084189b79644f3ca",
+          "storage_size": 244,
+          "memory_size": 420,
+          "sizes_match": true,
+          "native_header_bounds_match": true,
+          "asset_script_offset": 13191,
+          "pak_script_offset": 123724732,
+          "target_checks": []
+        },
+        {
+          "function": "Stop",
+          "script_sha256": "aee6507af146defbbe19d6ec3db8f0841bb2b864c4bf38c1ebe98f0e5f9ea649",
+          "storage_size": 21,
+          "memory_size": 33,
+          "sizes_match": true,
+          "native_header_bounds_match": true,
+          "asset_script_offset": 13479,
+          "pak_script_offset": 123725020,
+          "target_checks": []
+        },
+        {
+          "function": "Reset",
+          "script_sha256": "8d539eab6f556d5422f721c6f9d6b7c8b855c21d08124f22f68f50cb570e37d1",
+          "storage_size": 47,
+          "memory_size": 71,
+          "sizes_match": true,
+          "native_header_bounds_match": true,
+          "asset_script_offset": 13544,
+          "pak_script_offset": 123725085,
+          "target_checks": []
+        }
+      ]
+    },
+    {
+      "asset_path": "Fantasynth/Content/_HelloEnjoy_/Fantasynth/Director/Sequencers/ActorHiddenSequencer.uasset",
+      "asset_sha1": "090e7ab4eed3ed25d8bd23468da744f5af227150",
+      "artifact": "ActorHiddenSequencer.instructions.json",
+      "entrypoint_checks": [
+        {
+          "caller": "OnActorAction",
+          "call_storage_offset": 20,
+          "target_memory_offset": 1190,
+          "instruction_boundary": true
+        }
+      ],
+      "functions": [
+        {
+          "function": "ExecuteUbergraph_ActorHiddenSequencer",
+          "script_sha256": "736fe9c9840911c315d9cf9d647fc2e5a8a608f32760262c8038edb06a0e646b",
+          "storage_size": 750,
+          "memory_size": 1198,
+          "sizes_match": true,
+          "native_header_bounds_match": true,
+          "asset_script_offset": 8806,
+          "pak_script_offset": 123814555,
+          "target_checks": [
+            {
+              "kind": "jump",
+              "source_storage_offset": 0,
+              "target_memory_offset": 1195,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "jump",
+              "source_storage_offset": 68,
+              "target_memory_offset": 367,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "jump",
+              "source_storage_offset": 93,
+              "target_memory_offset": 856,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "switch_end",
+              "source_storage_offset": 190,
+              "target_memory_offset": 365,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "switch_next",
+              "source_storage_offset": 190,
+              "target_memory_offset": 341,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "switch_next",
+              "source_storage_offset": 190,
+              "target_memory_offset": 356,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "jump",
+              "source_storage_offset": 565,
+              "target_memory_offset": 15,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "jump",
+              "source_storage_offset": 635,
+              "target_memory_offset": 15,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "switch_end",
+              "source_storage_offset": 697,
+              "target_memory_offset": 1184,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "switch_next",
+              "source_storage_offset": 697,
+              "target_memory_offset": 1160,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "switch_next",
+              "source_storage_offset": 697,
+              "target_memory_offset": 1175,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "jump",
+              "source_storage_offset": 737,
+              "target_memory_offset": 930,
+              "instruction_boundary": true
+            },
+            {
+              "kind": "jump",
+              "source_storage_offset": 742,
+              "target_memory_offset": 1036,
+              "instruction_boundary": true
+            }
+          ]
+        },
+        {
+          "function": "OnActorAction",
+          "script_sha256": "f1f055328d4a4b41a36535727c4099ee0745b98891f896d388e55f86f3abe83d",
+          "storage_size": 38,
+          "memory_size": 58,
+          "sizes_match": true,
+          "native_header_bounds_match": true,
+          "asset_script_offset": 9680,
+          "pak_script_offset": 123815429,
+          "target_checks": []
+        },
+        {
+          "function": "UserConstructionScript",
+          "script_sha256": "19b0b6df758718c8e334f766cf964ecb527aa1132a3f6671a1df6a0b397e4d4e",
+          "storage_size": 9,
+          "memory_size": 13,
+          "sizes_match": true,
+          "native_header_bounds_match": true,
+          "asset_script_offset": 9762,
+          "pak_script_offset": 123815511,
+          "target_checks": []
+        }
+      ]
+    }
+  ]
+}

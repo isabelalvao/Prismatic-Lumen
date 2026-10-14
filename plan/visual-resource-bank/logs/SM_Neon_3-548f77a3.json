@@ -1,0 +1,51 @@
+{
+  "input": {
+    "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_3.uasset",
+    "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_3",
+    "object_name": "SM_Neon_3",
+    "class_reference": "/Script/Engine.StaticMesh",
+    "export_index": 3,
+    "serial_offset": 10904,
+    "serial_size": 14403,
+    "payload_sha1": "548f77a393df472376d2d9dfbf03e4e88c5d951f",
+    "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+    "source_reports": [
+      "mesh-assets.json"
+    ],
+    "payload_pak_offset": 103534645,
+    "payload_size": 25311,
+    "source_sha1_verified": true,
+    "resource_id": "SM_Neon_3-548f77a3"
+  },
+  "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Neon_3-548f77a3",
+  "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+  "args": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-export",
+    "-gltf",
+    "-notex",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Neon_3-548f77a3",
+    "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_3",
+    "SM_Neon_3",
+    "StaticMesh"
+  ],
+  "returncode": 0,
+  "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Neon_3-548f77a3.log",
+  "method": "qualified package+object+class UModel export",
+  "elapsed_seconds": 0.0470000000204891,
+  "files": [
+    {
+      "path": "resources\\SM_Neon_3-548f77a3\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Neon_3.bin",
+      "size": 8296,
+      "sha256": "989d0a0a3408838fda1fbe11ebdef0e70ee2262c3fc9e6dc2b75337137251977"
+    },
+    {
+      "path": "resources\\SM_Neon_3-548f77a3\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Neon_3.gltf",
+      "size": 2340,
+      "sha256": "1642cdd06f035c215eaf44c19bebddc9a0a66e4c4e1be5d9026c9ee36bf3f0dd"
+    }
+  ],
+  "export_status": "exported_pending_geometry_validation"
+}

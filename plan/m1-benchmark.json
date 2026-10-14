@@ -1,0 +1,1305 @@
+{
+  "resolution": [
+    1920,
+    1080
+  ],
+  "window": "hidden",
+  "capture": false,
+  "ready": {
+    "device": "Direct3D 11 vendor=0x10de device=0x1f12",
+    "port": 2917,
+    "type": "ready"
+  },
+  "performance": {
+    "accepted_commands": 43,
+    "average_fps": 59.998792224312524,
+    "frames": 600,
+    "max_delivery_ms": 16.4788,
+    "mean_delivery_ms": 7.971641860465115,
+    "seconds": 10.0002013,
+    "type": "performance"
+  },
+  "receipts": [
+    {
+      "current": {
+        "bloom": 0.35129255056381226,
+        "fog_density": 0.19986620545387268,
+        "geometry_density": 0.5010666251182556,
+        "light_intensity": 0.6008858680725098,
+        "motion_speed": 0.3013648986816406,
+        "palette": [
+          "#DDE9FF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.40171292424201965
+      },
+      "id": "measurement-0",
+      "latency_ms": 15.7318,
+      "revision": 4,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.699999988079071,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 24.042899953201413
+    },
+    {
+      "current": {
+        "bloom": 0.35075923800468445,
+        "fog_density": 0.1999214142560959,
+        "geometry_density": 0.5006265640258789,
+        "light_intensity": 0.6417797207832336,
+        "motion_speed": 0.30080175399780273,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.40100619196891785
+      },
+      "id": "measurement-1",
+      "latency_ms": 6.1721,
+      "revision": 5,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.4000000059604645,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 10.91499999165535
+    },
+    {
+      "current": {
+        "bloom": 0.3503797650337219,
+        "fog_density": 0.19996069371700287,
+        "geometry_density": 0.500313401222229,
+        "light_intensity": 0.5209406614303589,
+        "motion_speed": 0.30040106177330017,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4005033075809479
+      },
+      "id": "measurement-2",
+      "latency_ms": 4.3722,
+      "revision": 6,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.699999988079071,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 31.15950000938028
+    },
+    {
+      "current": {
+        "bloom": 0.35015836358070374,
+        "fog_density": 0.199983611702919,
+        "geometry_density": 0.5001307129859924,
+        "light_intensity": 0.6253333687782288,
+        "motion_speed": 0.3001672327518463,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.40020987391471863
+      },
+      "id": "measurement-3",
+      "latency_ms": 16.4788,
+      "revision": 7,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.4000000059604645,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 44.751300010830164
+    },
+    {
+      "current": {
+        "bloom": 0.3500923216342926,
+        "fog_density": 0.19999045133590698,
+        "geometry_density": 0.500076174736023,
+        "light_intensity": 0.5313639640808105,
+        "motion_speed": 0.3000974953174591,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.40012234449386597
+      },
+      "id": "measurement-4",
+      "latency_ms": 8.205,
+      "revision": 8,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.699999988079071,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 10.163100087083876
+    },
+    {
+      "current": {
+        "bloom": 0.35004615783691406,
+        "fog_density": 0.1999952346086502,
+        "geometry_density": 0.5000380873680115,
+        "light_intensity": 0.6156843304634094,
+        "motion_speed": 0.30004873871803284,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.40006116032600403
+      },
+      "id": "measurement-5",
+      "latency_ms": 3.4009,
+      "revision": 9,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.4000000059604645,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 34.12460000254214
+    },
+    {
+      "current": {
+        "bloom": 0.350019246339798,
+        "fog_density": 0.19999802112579346,
+        "geometry_density": 0.5000158548355103,
+        "light_intensity": 0.48993855714797974,
+        "motion_speed": 0.30002033710479736,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.40002551674842834
+      },
+      "id": "measurement-6",
+      "latency_ms": 15.492,
+      "revision": 10,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.699999988079071,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 45.29549996368587
+    },
+    {
+      "current": {
+        "bloom": 0.35000962018966675,
+        "fog_density": 0.19999901950359344,
+        "geometry_density": 0.5000079274177551,
+        "light_intensity": 0.5949723124504089,
+        "motion_speed": 0.30001017451286316,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000127613544464
+      },
+      "id": "measurement-7",
+      "latency_ms": 9.3074,
+      "revision": 11,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.4000000059604645,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 24.99029994942248
+    },
+    {
+      "current": {
+        "bloom": 0.35000479221343994,
+        "fog_density": 0.19999951124191284,
+        "geometry_density": 0.5000039339065552,
+        "light_intensity": 0.49748334288597107,
+        "motion_speed": 0.30000507831573486,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.40000638365745544
+      },
+      "id": "measurement-8",
+      "latency_ms": 4.9958,
+      "revision": 12,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.699999988079071,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 33.83249999023974
+    },
+    {
+      "current": {
+        "bloom": 0.3500019907951355,
+        "fog_density": 0.19999979436397552,
+        "geometry_density": 0.5000016689300537,
+        "light_intensity": 0.6155522465705872,
+        "motion_speed": 0.3000021278858185,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.400002658367157
+      },
+      "id": "measurement-9",
+      "latency_ms": 16.4325,
+      "revision": 13,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.4000000059604645,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 45.52669997792691
+    },
+    {
+      "current": {
+        "bloom": 0.3500009775161743,
+        "fog_density": 0.19999989867210388,
+        "geometry_density": 0.5000008344650269,
+        "light_intensity": 0.5077733993530273,
+        "motion_speed": 0.3000010550022125,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.40000131726264954
+      },
+      "id": "measurement-10",
+      "latency_ms": 11.6064,
+      "revision": 14,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.699999988079071,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 34.93439999874681
+    },
+    {
+      "current": {
+        "bloom": 0.3500004708766937,
+        "fog_density": 0.19999995827674866,
+        "geometry_density": 0.5000004172325134,
+        "light_intensity": 0.6048072576522827,
+        "motion_speed": 0.30000051856040955,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.400000661611557
+      },
+      "id": "measurement-11",
+      "latency_ms": 5.7514,
+      "revision": 15,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.4000000059604645,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 24.764599977061152
+    },
+    {
+      "current": {
+        "bloom": 0.350000262260437,
+        "fog_density": 0.19999997317790985,
+        "geometry_density": 0.5000002384185791,
+        "light_intensity": 0.5194554328918457,
+        "motion_speed": 0.30000030994415283,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000003933906555
+      },
+      "id": "measurement-12",
+      "latency_ms": 7.4838,
+      "revision": 16,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.699999988079071,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 11.079699965193868
+    },
+    {
+      "current": {
+        "bloom": 0.35000014305114746,
+        "fog_density": 0.19999998807907104,
+        "geometry_density": 0.5000001192092896,
+        "light_intensity": 0.6089199781417847,
+        "motion_speed": 0.3000001609325409,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000002145767212
+      },
+      "id": "measurement-13",
+      "latency_ms": 8.8681,
+      "revision": 17,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.4000000059604645,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 27.73239999078214
+    },
+    {
+      "current": {
+        "bloom": 0.3500000536441803,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5000000596046448,
+        "light_intensity": 0.5035385489463806,
+        "motion_speed": 0.30000007152557373,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.40000009536743164
+      },
+      "id": "measurement-14",
+      "latency_ms": 4.7703,
+      "revision": 18,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.699999988079071,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 34.79140007402748
+    },
+    {
+      "current": {
+        "bloom": 0.3500000238418579,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.6172233819961548,
+        "motion_speed": 0.30000004172325134,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.40000003576278687
+      },
+      "id": "measurement-15",
+      "latency_ms": 14.8446,
+      "revision": 19,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.4000000059604645,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 45.3799000242725
+    },
+    {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.508608341217041,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "measurement-16",
+      "latency_ms": 8.3983,
+      "revision": 20,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.699999988079071,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 25.614400045014918
+    },
+    {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.6043070554733276,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "measurement-17",
+      "latency_ms": 2.3576,
+      "revision": 21,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.4000000059604645,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 35.824099904857576
+    },
+    {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.48519474267959595,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "measurement-18",
+      "latency_ms": 13.1132,
+      "revision": 22,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.699999988079071,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 45.265299966558814
+    },
+    {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.5926007032394409,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "measurement-19",
+      "latency_ms": 8.5035,
+      "revision": 23,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.4000000059604645,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 23.814800078980625
+    },
+    {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.49629756808280945,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "measurement-20",
+      "latency_ms": 3.9141,
+      "revision": 24,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.699999988079071,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 33.74360001180321
+    },
+    {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.5812559723854065,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "measurement-21",
+      "latency_ms": 4.8896,
+      "revision": 25,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 1.0,
+        "light_intensity": 0.4000000059604645,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 10.58729994110763
+    },
+    {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.7499854564666748,
+        "light_intensity": 0.4906332492828369,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "measurement-22",
+      "latency_ms": 8.4238,
+      "revision": 26,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 1.0,
+        "light_intensity": 0.699999988079071,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 26.4774999814108
+    },
+    {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.8749955892562866,
+        "light_intensity": 0.5953190326690674,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "measurement-23",
+      "latency_ms": 4.425,
+      "revision": 27,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 1.0,
+        "light_intensity": 0.4000000059604645,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 33.489400055259466
+    },
+    {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.9374995231628418,
+        "light_intensity": 0.49765679240226746,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "measurement-24",
+      "latency_ms": 0.5418,
+      "revision": 28,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 1.0,
+        "light_intensity": 0.699999988079071,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 33.35329995024949
+    },
+    {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.9739559888839722,
+        "light_intensity": 0.6156833171844482,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "measurement-25",
+      "latency_ms": 12.0453,
+      "revision": 29,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 1.0,
+        "light_intensity": 0.4000000059604645,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 45.16430001240224
+    },
+    {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.984809398651123,
+        "light_intensity": 0.525800883769989,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "measurement-26",
+      "latency_ms": 3.2127,
+      "revision": 30,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 1.0,
+        "light_intensity": 0.699999988079071,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 11.039600009098649
+    },
+    {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.9911441802978516,
+        "light_intensity": 0.5984452962875366,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "measurement-27",
+      "latency_ms": 5.1082,
+      "revision": 31,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 1.0,
+        "light_intensity": 0.4000000059604645,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 10.323400027118623
+    },
+    {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.9948372840881348,
+        "light_intensity": 0.515688419342041,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "measurement-28",
+      "latency_ms": 7.4928,
+      "revision": 32,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 1.0,
+        "light_intensity": 0.699999988079071,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 10.278500034473836
+    },
+    {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.9969902634620667,
+        "light_intensity": 0.5925503969192505,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "measurement-29",
+      "latency_ms": 9.7663,
+      "revision": 33,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 1.0,
+        "light_intensity": 0.4000000059604645,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 10.620499961078167
+    },
+    {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.9984951615333557,
+        "light_intensity": 0.49627241492271423,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "measurement-30",
+      "latency_ms": 11.5884,
+      "revision": 34,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 1.0,
+        "light_intensity": 0.699999988079071,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 39.33929989580065
+    },
+    {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.9992476105690002,
+        "light_intensity": 0.5981395840644836,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "measurement-31",
+      "latency_ms": 6.3393,
+      "revision": 35,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 1.0,
+        "light_intensity": 0.4000000059604645,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 23.17090006545186
+    },
+    {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.9996238350868225,
+        "light_intensity": 0.4990668296813965,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "measurement-32",
+      "latency_ms": 1.6226,
+      "revision": 36,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 1.0,
+        "light_intensity": 0.699999988079071,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 34.623000072315335
+    },
+    {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.9998431205749512,
+        "light_intensity": 0.6162116527557373,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "measurement-33",
+      "latency_ms": 11.444,
+      "revision": 37,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 1.0,
+        "light_intensity": 0.4000000059604645,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 46.98330000974238
+    },
+    {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.9999215602874756,
+        "light_intensity": 0.5081024765968323,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "measurement-34",
+      "latency_ms": 6.9206,
+      "revision": 38,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 1.0,
+        "light_intensity": 0.699999988079071,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 22.96810003463179
+    },
+    {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.9999607801437378,
+        "light_intensity": 0.6040546894073486,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "measurement-35",
+      "latency_ms": 1.4715,
+      "revision": 39,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 1.0,
+        "light_intensity": 0.4000000059604645,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 34.247100003995
+    },
+    {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.9999836683273315,
+        "light_intensity": 0.4850902259349823,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "measurement-36",
+      "latency_ms": 13.5069,
+      "revision": 40,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 1.0,
+        "light_intensity": 0.699999988079071,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 45.89309997390956
+    },
+    {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.9999919533729553,
+        "light_intensity": 0.5937584638595581,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "measurement-37",
+      "latency_ms": 8.1068,
+      "revision": 41,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 1.0,
+        "light_intensity": 0.4000000059604645,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 24.097200017422438
+    },
+    {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.9999959468841553,
+        "light_intensity": 0.4979668855667114,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "measurement-38",
+      "latency_ms": 1.4698,
+      "revision": 42,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 1.0,
+        "light_intensity": 0.699999988079071,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 35.70970008149743
+    },
+    {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.9999983310699463,
+        "light_intensity": 0.6157533526420593,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "measurement-39",
+      "latency_ms": 13.5346,
+      "revision": 43,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 1.0,
+        "light_intensity": 0.4000000059604645,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "round_trip_ms": 44.34300004504621
+    }
+  ],
+  "max_round_trip_ms": 46.98330000974238
+}

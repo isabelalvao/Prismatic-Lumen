@@ -1,0 +1,270 @@
+{
+  "archive": "C:\\ORCA\\Fantasynt\\dist\\Fantasynt-PCVR-Win11-x64-0.8.0.zip",
+  "manifest_hashes_valid": true,
+  "desktop": {
+    "ready": {
+      "audio_driver": "dummy",
+      "audio_enabled": true,
+      "detected_bass_beats": 733,
+      "device": "Direct3D 11 vendor=0x10de device=0x1f12",
+      "mode": "desktop",
+      "opening_meshes": 55,
+      "paused": false,
+      "port": 14010,
+      "route_adjustments": 2549,
+      "runtime": "",
+      "sequence": true,
+      "type": "ready",
+      "visual_config": "C:\\ORCA\\Fantasynt\\temp\\portable Jo\u00e3o check t85_lwl4\\Fantasynt-PCVR-Win11-x64-0.8.0\\visual-config.json",
+      "vr_scale": 1.0
+    },
+    "performance": {
+      "accepted_commands": 1,
+      "atmosphere": [
+        0.0019237747183069587,
+        0.0030459766276180744,
+        0.004809436853975058
+      ],
+      "audio_enabled": true,
+      "audio_seconds": 82.56503401360544,
+      "average_fps": 57.93681964068485,
+      "bass_pulse": 0.0,
+      "camera_position": 5848.861196816374,
+      "camera_speed_m_s": 1.5,
+      "composition_weights": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "config_revision": 0,
+      "frames": 180,
+      "max_delivery_ms": 13.9487,
+      "mean_delivery_ms": 13.9487,
+      "opening_active": true,
+      "scene": "opening",
+      "seconds": 3.1068326,
+      "sequence": true,
+      "sequence_seconds": 82.56503401360544,
+      "time_display": "01:22.5",
+      "time_display_visible": true,
+      "trace_speed_m_s": 0.1,
+      "type": "performance",
+      "visual_energy": 1.0
+    },
+    "client_receipt": {
+      "current": {
+        "bloom": 0.3509778678417206,
+        "fog_density": 0.1997392326593399,
+        "geometry_density": 0.5009778738021851,
+        "light_intensity": 0.600977897644043,
+        "motion_speed": 0.3011408746242523,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.40146681666374207
+      },
+      "id": "demo-calm-001",
+      "latency_ms": 13.9487,
+      "revision": 2,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.25,
+        "fog_density": 0.3199999928474426,
+        "geometry_density": 0.30000001192092896,
+        "light_intensity": 0.3199999928474426,
+        "motion_speed": 0.11999999731779099,
+        "palette": [
+          "#B8CEF0",
+          "#6F83AC"
+        ],
+        "pulse_strength": 0.15000000596046448
+      }
+    }
+  },
+  "openxr_simulated": {
+    "ready": {
+      "audio_driver": "dummy",
+      "audio_enabled": true,
+      "detected_bass_beats": 733,
+      "device": "Direct3D 11 vendor=0x10de device=0x1f12",
+      "mode": "openxr",
+      "opening_meshes": 55,
+      "paused": false,
+      "port": 14012,
+      "route_adjustments": 2549,
+      "runtime": "FantasyntMock 640x360 per eye",
+      "sequence": true,
+      "type": "ready",
+      "visual_config": "C:\\ORCA\\Fantasynt\\temp\\portable Jo\u00e3o check t85_lwl4\\Fantasynt-PCVR-Win11-x64-0.8.0\\visual-config.json",
+      "vr_scale": 1.0
+    },
+    "performance": {
+      "accepted_commands": 1,
+      "atmosphere": [
+        0.0015580615727230906,
+        0.0024669307749718428,
+        0.0038951539900153875
+      ],
+      "audio_enabled": true,
+      "audio_seconds": 82.07741496598639,
+      "average_fps": 68.31077547075422,
+      "bass_pulse": 0.0,
+      "camera_position": 5810.5217654688795,
+      "camera_speed_m_s": 1.5,
+      "composition_weights": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "config_revision": 0,
+      "frames": 180,
+      "max_delivery_ms": 536.2395,
+      "mean_delivery_ms": 536.2395,
+      "opening_active": true,
+      "scene": "opening",
+      "seconds": 2.6350162,
+      "sequence": true,
+      "sequence_seconds": 82.07741496598639,
+      "time_display": "01:22.0",
+      "time_display_visible": true,
+      "trace_speed_m_s": 0.1,
+      "type": "performance",
+      "visual_energy": 1.0
+    },
+    "client_receipt": {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.6000000238418579,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "demo-calm-001",
+      "latency_ms": 536.2395,
+      "revision": 2,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.25,
+        "fog_density": 0.3199999928474426,
+        "geometry_density": 0.30000001192092896,
+        "light_intensity": 0.3199999928474426,
+        "motion_speed": 0.11999999731779099,
+        "palette": [
+          "#B8CEF0",
+          "#6F83AC"
+        ],
+        "pulse_strength": 0.15000000596046448
+      }
+    }
+  },
+  "extension_openxr_simulated": {
+    "150": {
+      "accepted_commands": 0,
+      "atmosphere": [
+        0.0,
+        0.12200000137090683,
+        0.24699999392032623
+      ],
+      "audio_enabled": false,
+      "audio_seconds": 0.0,
+      "average_fps": 29.970729835973945,
+      "bass_pulse": 0.0,
+      "camera_position": 16099.99951171875,
+      "camera_speed_m_s": 1.5,
+      "composition_weights": [
+        0.0,
+        0.75,
+        0.0
+      ],
+      "config_revision": 0,
+      "frames": 8,
+      "max_delivery_ms": 0.0,
+      "mean_delivery_ms": 0.0,
+      "opening_active": true,
+      "scene": "opening",
+      "seconds": 0.2669271,
+      "sequence": true,
+      "sequence_seconds": 150.0,
+      "time_display": "02:30.0",
+      "time_display_visible": true,
+      "trace_speed_m_s": 0.1,
+      "type": "performance",
+      "visual_energy": 1.0
+    },
+    "232": {
+      "accepted_commands": 0,
+      "atmosphere": [
+        0.0,
+        0.002000001957640052,
+        0.005000004544854164
+      ],
+      "audio_enabled": false,
+      "audio_seconds": 0.0,
+      "average_fps": 33.77539698757234,
+      "bass_pulse": 0.0,
+      "camera_position": 28399.99951171875,
+      "camera_speed_m_s": 1.5,
+      "composition_weights": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "config_revision": 0,
+      "frames": 8,
+      "max_delivery_ms": 0.0,
+      "mean_delivery_ms": 0.0,
+      "opening_active": false,
+      "scene": "opening",
+      "seconds": 0.2368588,
+      "sequence": true,
+      "sequence_seconds": 232.0,
+      "time_display": "03:52.0",
+      "time_display_visible": true,
+      "trace_speed_m_s": 0.1,
+      "type": "performance",
+      "visual_energy": 1.0
+    },
+    "240": {
+      "accepted_commands": 0,
+      "atmosphere": [
+        0.0,
+        0.004000003915280104,
+        0.010000009089708328
+      ],
+      "audio_enabled": false,
+      "audio_seconds": 0.0,
+      "average_fps": 34.41436008003059,
+      "bass_pulse": 0.09697196632623672,
+      "camera_position": 29599.99951171875,
+      "camera_speed_m_s": 1.5,
+      "composition_weights": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "config_revision": 0,
+      "frames": 8,
+      "max_delivery_ms": 0.0,
+      "mean_delivery_ms": 0.0,
+      "opening_active": false,
+      "scene": "opening",
+      "seconds": 0.2324611,
+      "sequence": true,
+      "sequence_seconds": 240.0,
+      "time_display": "04:00.0",
+      "time_display_visible": true,
+      "trace_speed_m_s": 0.1,
+      "type": "performance",
+      "visual_energy": 1.0
+    }
+  },
+  "physical_headset_validated": false
+}

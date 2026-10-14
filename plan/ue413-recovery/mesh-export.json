@@ -1,0 +1,25 @@
+{
+  "arguments": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-export",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "-out=C:\\ORCA\\Fantasynt\\plan\\ue413-recovery\\sample-mesh",
+    "-gltf",
+    "-notex",
+    "SM_Lower_1"
+  ],
+  "returncode": 0,
+  "files": [
+    {
+      "path": "sample-mesh\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Lower_1.bin",
+      "size": 7104,
+      "sha256": "7d43c6dc6c9f092695a1e8d64bb060c03cad5e974d8f4bd6de52c8045d03eee1"
+    },
+    {
+      "path": "sample-mesh\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Lower_1.gltf",
+      "size": 2105,
+      "sha256": "24e2f57aed999840cf20affc7c608bef97888bc3952e5ef9530a1fe60ec51c6d"
+    }
+  ]
+}

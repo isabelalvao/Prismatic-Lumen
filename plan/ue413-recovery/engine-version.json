@@ -1,0 +1,29 @@
+{
+  "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Binaries\\Win64\\Fantasynth-Win64-Shipping.exe",
+  "sha256": "5380708aaf59992814912122afc3f71d6b18bd41062cde1a5e04fcec4e9f191b",
+  "kind": "Local read-only string search, not REA Evidence",
+  "hits": [
+    {
+      "encoding": "utf-16-le",
+      "file_offset": 30109008,
+      "needle": "++UE4+Release-4.13",
+      "context": "++UE4+Release-4.13-CL-3172292"
+    },
+    {
+      "encoding": "utf-16-le",
+      "file_offset": 41840164,
+      "needle": "++UE4+Release-4.13",
+      "context": "++UE4+Release-4.13-CL-3172292"
+    }
+  ],
+  "installed_build": {
+    "MajorVersion": 4,
+    "MinorVersion": 13,
+    "PatchVersion": 2,
+    "Changelist": 3172292,
+    "IsLicenseeVersion": 0,
+    "BranchName": "++UE4+Release-4.13"
+  },
+  "total_branch_string_occurrences": 10645,
+  "interpretation": "Installed engine and original branch/changelist match; does not exclude game-specific source changes."
+}

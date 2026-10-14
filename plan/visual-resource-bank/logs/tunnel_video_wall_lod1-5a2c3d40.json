@@ -1,0 +1,51 @@
+{
+  "input": {
+    "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/tunnel_video_wall_lod1.uasset",
+    "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/tunnel_video_wall_lod1",
+    "object_name": "tunnel_video_wall_lod1",
+    "class_reference": "/Script/Engine.StaticMesh",
+    "export_index": 3,
+    "serial_offset": 6842,
+    "serial_size": 155505,
+    "payload_sha1": "5a2c3d400adc9e0efa20e809182242446a2cfeb7",
+    "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+    "source_reports": [
+      "mesh-assets.json"
+    ],
+    "payload_pak_offset": 105343029,
+    "payload_size": 162351,
+    "source_sha1_verified": true,
+    "resource_id": "tunnel_video_wall_lod1-5a2c3d40"
+  },
+  "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\tunnel_video_wall_lod1-5a2c3d40",
+  "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+  "args": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-export",
+    "-gltf",
+    "-notex",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\tunnel_video_wall_lod1-5a2c3d40",
+    "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/tunnel_video_wall_lod1",
+    "tunnel_video_wall_lod1",
+    "StaticMesh"
+  ],
+  "returncode": 0,
+  "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\tunnel_video_wall_lod1-5a2c3d40.log",
+  "method": "qualified package+object+class UModel export",
+  "elapsed_seconds": 0.0470000000204891,
+  "files": [
+    {
+      "path": "resources\\tunnel_video_wall_lod1-5a2c3d40\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\tunnel_video_wall_lod1.bin",
+      "size": 131496,
+      "sha256": "7a8fd13dd771c2d76314a9fc2f8b8306c00f931709fc222cfa76c0a2054714e1"
+    },
+    {
+      "path": "resources\\tunnel_video_wall_lod1-5a2c3d40\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\tunnel_video_wall_lod1.gltf",
+      "size": 4219,
+      "sha256": "e296956e19ad875f2f1550beb59e076a838f763daa9e864de4e367767f0a93b0"
+    }
+  ],
+  "export_status": "exported_pending_geometry_validation"
+}

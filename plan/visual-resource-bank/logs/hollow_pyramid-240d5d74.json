@@ -1,0 +1,51 @@
+{
+  "input": {
+    "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/hollow_pyramid.uasset",
+    "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/hollow_pyramid",
+    "object_name": "hollow_pyramid",
+    "class_reference": "/Script/Engine.StaticMesh",
+    "export_index": 3,
+    "serial_offset": 5194,
+    "serial_size": 21716,
+    "payload_sha1": "240d5d74287ee91e71a85a398062c77e9f3017b2",
+    "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+    "source_reports": [
+      "mesh-assets.json"
+    ],
+    "payload_pak_offset": 103120949,
+    "payload_size": 26914,
+    "source_sha1_verified": true,
+    "resource_id": "hollow_pyramid-240d5d74"
+  },
+  "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\hollow_pyramid-240d5d74",
+  "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+  "args": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-export",
+    "-gltf",
+    "-notex",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\hollow_pyramid-240d5d74",
+    "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/hollow_pyramid",
+    "hollow_pyramid",
+    "StaticMesh"
+  ],
+  "returncode": 0,
+  "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\hollow_pyramid-240d5d74.log",
+  "method": "qualified package+object+class UModel export",
+  "elapsed_seconds": 0.0470000000204891,
+  "files": [
+    {
+      "path": "resources\\hollow_pyramid-240d5d74\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\hollow_pyramid.bin",
+      "size": 15420,
+      "sha256": "5059ae03f52727c2b009d9462708bf06ed12328e88918f7d31ebe13bca8f3a43"
+    },
+    {
+      "path": "resources\\hollow_pyramid-240d5d74\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\hollow_pyramid.gltf",
+      "size": 2120,
+      "sha256": "e2055d4850f1b5c3a96aae5a736ffd93ce5fe93b7a237df8cdc6b5536f398eb4"
+    }
+  ],
+  "export_status": "exported_pending_geometry_validation"
+}

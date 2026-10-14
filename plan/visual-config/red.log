@@ -1,0 +1,25 @@
+test_configuration_changes_without_restarting_and_rejects_invalid_file (test_visual_config.VisualConfigTests.test_configuration_changes_without_restarting_and_rejects_invalid_file) ... FAIL
+test_default_movement_has_no_initial_wait (test_visual_config.VisualConfigTests.test_default_movement_has_no_initial_wait) ... FAIL
+
+======================================================================
+FAIL: test_configuration_changes_without_restarting_and_rejects_invalid_file (test_visual_config.VisualConfigTests.test_configuration_changes_without_restarting_and_rejects_invalid_file)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_visual_config.py", line 33, in test_configuration_changes_without_restarting_and_rejects_invalid_file
+    self.assertTrue(ready_line, process.stderr.read() if process.poll() is not None else "No ready")
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '' is not true : No ready
+
+======================================================================
+FAIL: test_default_movement_has_no_initial_wait (test_visual_config.VisualConfigTests.test_default_movement_has_no_initial_wait)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_visual_config.py", line 72, in test_default_movement_has_no_initial_wait
+    self.assertAlmostEqual(final["camera_position"], -6250.00048828125, delta=0.001)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: -6400.00048828125 != -6250.00048828125 within 0.001 delta (150.0 difference)
+
+----------------------------------------------------------------------
+Ran 2 tests in 1.034s
+
+FAILED (failures=2)

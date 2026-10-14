@@ -1,0 +1,18 @@
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  bx.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bx\Release\bx.lib
+  bimg.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bimg\Release\bimg.lib
+  glslang.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\glslang.lib
+  spirv-cross.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\spirv-cross.lib
+  spirv-opt.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\spirv-opt.lib
+  tint.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\tint.lib
+  shaderc.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\shaderc.exe
+  Generating shaders/fs_ground.bin
+  openxr_loader.vcxproj -> C:\ORCA\Fantasynt\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  C:\ORCA\Fantasynt\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  1 File(s) copied
+  C:\ORCA\Fantasynt\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  1 File(s) copied
+  C:\ORCA\Fantasynt\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  1 File(s) copied

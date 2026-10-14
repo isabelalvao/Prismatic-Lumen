@@ -1,0 +1,10 @@
+{
+  "selected_payloads_sha1_before_and_after_matched": 67,
+  "owned_output_file_hashes_rechecked": 134,
+  "original_pak_size_and_mtime_unchanged": true,
+  "tool_sha256_unchanged": true,
+  "original_game_executed": false,
+  "rea_or_ghidra_started": false,
+  "product_changed": false,
+  "persistent_script_written": false
+}

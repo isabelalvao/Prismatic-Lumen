@@ -1,0 +1,51 @@
+{
+  "input": {
+    "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pole.uasset",
+    "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pole",
+    "object_name": "SM_Pole",
+    "class_reference": "/Script/Engine.StaticMesh",
+    "export_index": 3,
+    "serial_offset": 5817,
+    "serial_size": 11943,
+    "payload_sha1": "75f3a9b6b1976655df2d4396151efe44433104ce",
+    "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+    "source_reports": [
+      "mesh-assets.json"
+    ],
+    "payload_pak_offset": 100943925,
+    "payload_size": 17764,
+    "source_sha1_verified": true,
+    "resource_id": "SM_Pole-75f3a9b6"
+  },
+  "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Pole-75f3a9b6",
+  "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+  "args": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-export",
+    "-gltf",
+    "-notex",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Pole-75f3a9b6",
+    "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pole",
+    "SM_Pole",
+    "StaticMesh"
+  ],
+  "returncode": 0,
+  "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Pole-75f3a9b6.log",
+  "method": "qualified package+object+class UModel export",
+  "elapsed_seconds": 0.0470000000204891,
+  "files": [
+    {
+      "path": "resources\\SM_Pole-75f3a9b6\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Pole.bin",
+      "size": 9240,
+      "sha256": "590d0e789282fb834e4b650c8fb906d27fb10a0250dc2938e46ad4d8746885f8"
+    },
+    {
+      "path": "resources\\SM_Pole-75f3a9b6\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Pole.gltf",
+      "size": 6789,
+      "sha256": "5e3d4555cf6da6c969e7c30f591a6e5c6c41cfe6763a984205ee83f29a49298f"
+    }
+  ],
+  "export_status": "exported_pending_geometry_validation"
+}

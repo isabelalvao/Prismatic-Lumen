@@ -1,0 +1,18 @@
+[
+  {
+    "file": "C:\\ORCA\\Fantasynt\\plan\\art-direction-v1\\captures\\intro-motion.gif",
+    "frames": 144,
+    "fps": 12,
+    "audio": false,
+    "camera": "fixed to isolate animation",
+    "source": "actual D3D11 renderer captures"
+  },
+  {
+    "file": "C:\\ORCA\\Fantasynt\\plan\\art-direction-v1\\captures\\pyramid-lighting.gif",
+    "frames": 120,
+    "fps": 10,
+    "audio": false,
+    "camera": "fixed to isolate animation",
+    "source": "actual D3D11 renderer captures"
+  }
+]

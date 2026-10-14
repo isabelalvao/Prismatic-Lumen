@@ -1,0 +1,4 @@
+0x14049b7a4	48899c24d0010000	mov	qword ptr [rsp + 0x1d0], rbx
+0x14049b7ac	448d4001	lea	r8d, [rax + 1]
+0x14049b7b0	4c89a424d8010000	mov	qword ptr [rsp + 0x1d8], r12
+0x14049b7b8	488d15b1a48d01	lea	rdx, [rip + 0x18da4b1]

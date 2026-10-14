@@ -1,0 +1,51 @@
+{
+  "input": {
+    "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Ground.uasset",
+    "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Ground",
+    "object_name": "SM_Pyramid_Ground",
+    "class_reference": "/Script/Engine.StaticMesh",
+    "export_index": 3,
+    "serial_offset": 8325,
+    "serial_size": 33815,
+    "payload_sha1": "7d5f6db6a6adbb0b96d81400188bd178fb603039",
+    "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+    "source_reports": [
+      "mesh-assets.json"
+    ],
+    "payload_pak_offset": 72253493,
+    "payload_size": 42144,
+    "source_sha1_verified": true,
+    "resource_id": "SM_Pyramid_Ground-7d5f6db6"
+  },
+  "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Pyramid_Ground-7d5f6db6",
+  "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+  "args": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-export",
+    "-gltf",
+    "-notex",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Pyramid_Ground-7d5f6db6",
+    "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Ground",
+    "SM_Pyramid_Ground",
+    "StaticMesh"
+  ],
+  "returncode": 0,
+  "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Pyramid_Ground-7d5f6db6.log",
+  "method": "qualified package+object+class UModel export",
+  "elapsed_seconds": 0.03200000000651926,
+  "files": [
+    {
+      "path": "resources\\SM_Pyramid_Ground-7d5f6db6\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Pyramid_Ground.bin",
+      "size": 21072,
+      "sha256": "d1d41030342164a34abb25777234d4d2f3d8697e352d9b67c88dcb1012746055"
+    },
+    {
+      "path": "resources\\SM_Pyramid_Ground-7d5f6db6\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Pyramid_Ground.gltf",
+      "size": 3680,
+      "sha256": "ecd59a1a97c3a06e88667e4d571cb4b483cd6a3ff28a7b3028cf83f67556bae4"
+    }
+  ],
+  "export_status": "exported_pending_geometry_validation"
+}

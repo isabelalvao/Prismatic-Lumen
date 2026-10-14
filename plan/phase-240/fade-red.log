@@ -1,0 +1,4 @@
+FAIL line 244: continuous_pixels(before,capture(("phase-"+phase_name+"-after").c_str(),directed_visual_parameters(steady,boundary+0.01,frozen),position,boundary+0.01))
+FAIL line 244: continuous_pixels(before,capture(("phase-"+phase_name+"-after").c_str(),directed_visual_parameters(steady,boundary+0.01,frozen),position,boundary+0.01))
+FAIL line 244: continuous_pixels(before,capture(("phase-"+phase_name+"-after").c_str(),directed_visual_parameters(steady,boundary+0.01,frozen),position,boundary+0.01))
+FAIL line 256: same_pixels(pole_reference,capture("pole-after-reload",steady,opening_camera,40.125))

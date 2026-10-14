@@ -1,0 +1,50 @@
+
+> rea-agents@6.4.0 prebuild
+> npm run deps:check
+
+
+> rea-agents@6.4.0 deps:check
+> node scripts/check-dependency-install.mjs
+
+
+> rea-agents@6.4.0 build
+> node scripts/run-exclusive.mjs artifacts turbo run artifacts:skills --force
+
+(node:24048) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Attention:
+Turborepo now collects completely anonymous telemetry regarding usage.
+This information is used to shape the Turborepo roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://turborepo.dev/docs/telemetry
+
+
+   • turbo 2.11.7
+   • Running artifacts:skills
+   • Remote caching disabled
+
+metadata:check: cache bypass, force executing 773a7593be97caac
+metadata:check: 
+metadata:check: > rea-agents@6.4.0 metadata:check
+metadata:check: > node scripts/generate-package-metadata.mjs --check
+metadata:check: 
+compile: cache bypass, force executing 81d3de305e53afc1
+compile: 
+compile: > rea-agents@6.4.0 compile
+compile: > node scripts/clean-build-output.mjs && tsc -p tsconfig.build.json && node scripts/bundle-runtime.mjs
+compile: 
+compile: [33m[INEFFECTIVE_DYNAMIC_IMPORT] [0mdist/composition/binary.js is dynamically imported by dist/composition/directAnalysis.js but also statically imported by dist/main.js, dynamic import will not move module into another chunk.
+compile: 
+compile: [33m[INEFFECTIVE_DYNAMIC_IMPORT] [0mdist/dotnet/ManagedStaticProvider.js is dynamically imported by dist/composition/auxiliaryAnalysisProviders.js but also statically imported by dist/composition/binary.js, dynamic import will not move module into another chunk.
+compile: 
+artifacts:skills: cache bypass, force executing 88baba0e2db6cdaf
+artifacts:skills: 
+artifacts:skills: > rea-agents@6.4.0 artifacts:skills
+artifacts:skills: > node scripts/generate-skill-metadata.mjs
+artifacts:skills: 
+
+ Tasks:    3 successful, 3 total
+Cached:    0 cached, 3 total
+  Time:    24.715s 
+

@@ -1,0 +1,11 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Black.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 69 Exports: 3 Imports: 6 Game: 10000D0
+Export "SM_Pyramid_Black" was found in package "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Black.uasset"
+Found 1 object(s)
+Loading StaticMesh4 SM_Pyramid_Black from package /Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Black.uasset
+Loading package: /Game/Substance/Metal/Metal_006_MAT.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 79 Exports: 6 Imports: 13 Game: 10000D0
+Loaded in 0.0 sec, 74 allocs, 0.02 MBytes serialized in 6 calls.
+Exporting objects ...
+Exporting StaticMesh4 SM_Pyramid_Black to C:/ORCA/Fantasynt/plan/visual-resource-bank/resources/SM_Pyramid_Black-036f7f44/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Black.gltf

@@ -1,0 +1,10 @@
+{
+  "arguments": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-list",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "SM_Lower_1"
+  ],
+  "returncode": 0
+}

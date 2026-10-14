@@ -1,0 +1,4102 @@
+[
+  {
+    "reference": "ChezNous.PersistentLevel.0ScatterIntroRockLight",
+    "serial_offset": 871085,
+    "id": "Scatter_Intro_RockLight",
+    "extent": [
+      1600.0,
+      1600.0,
+      1600.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.IntroDomeScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        -6400.0,
+        100.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.10000000149011612,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 0.20000000298023224,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          180.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerIntroRockLight",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_RockLight.BP_RockLight_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.0ScatterIntroRockLight.Layout_Cluster",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Cluster.Layout_Cluster_C",
+        "properties": {
+          "ClusterCount": 64,
+          "ClusterSize": 16,
+          "MinSeedRadius": 256.0,
+          "MaxSeedRadius": 512.0,
+          "MaxSeedAngle": 360.0,
+          "UseGrid": true,
+          "GridCellSize": [
+            256.0,
+            256.0,
+            0.0
+          ],
+          "GridJitter": 1.0,
+          "Random Stream": {
+            "Seed": -356777380
+          },
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.0ScatterIntroRockLight.Layout_Grid",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Grid.Layout_Grid_C",
+        "properties": {
+          "CellSize": [
+            100.0,
+            100.0,
+            100.0
+          ],
+          "Random Stream": {
+            "Seed": 931216389
+          },
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.0ScatterIntroRockLight.Layout_Serialized_Intro",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Intro.Layout_Serialized_Intro_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.0ScatterIntroRockLight.Layout_Sphere",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Sphere.Layout_Sphere_C",
+        "properties": {
+          "SpherePoints": 4096,
+          "RadiusMin": 2000.0,
+          "RadiusMax": 2000.0,
+          "StepsAngleXY": 128.0,
+          "AngleZ": 100.0,
+          "Random Stream": {
+            "Seed": 94943490
+          },
+          "Element Orientation": [
+            0.0,
+            20.121395111083984,
+            -63.30644607543945
+          ],
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.0ScatterPyramidGroundFront",
+    "serial_offset": 871946,
+    "id": "Scatter_Pyramid_Ground_Front",
+    "extent": [
+      8000.0,
+      6000.0,
+      6400.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        4800.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.5,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 2.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.5,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 2.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerPyramidGroundFront",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/0_Pyramid_Ground_0.0_Pyramid_Ground_0_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/0_Pyramid_Ground_1.0_Pyramid_Ground_1_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 0,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 0
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 0.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 0,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 0
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.0ScatterPyramidGroundFront.Layout_Grid",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Grid.Layout_Grid_C",
+        "properties": {
+          "CellSize": [
+            3000.0,
+            3000.0,
+            3000.0
+          ],
+          "CellJitter": [
+            2.0,
+            2.0,
+            2.0
+          ],
+          "Random Stream": {
+            "Seed": -1403387958
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.0ScatterPyramidGroundFront.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.10ScatterPyroBase",
+    "serial_offset": 873093,
+    "id": "Scatter_Pyro_Base",
+    "extent": [
+      2400.0,
+      19200.0,
+      800.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        -6400.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerPyroBase",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/3_PyroBase.3_PyroBase_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 12000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 12000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.10ScatterPyroBase.Layout_Circle",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Circle.Layout_Circle_C",
+        "properties": {
+          "CircleCount": 3,
+          "CircleOffset": [
+            0.0,
+            6400.0,
+            0.0
+          ],
+          "Count": 16,
+          "Radius": 2400.0,
+          "Offset": 0.5,
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.10ScatterPyroBase.Layout_Cluster",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Cluster.Layout_Cluster_C",
+        "properties": {
+          "ClusterCount": 16,
+          "ClusterSize": 4,
+          "MinSeedRadius": 640.0,
+          "MaxSeedRadius": 640.0,
+          "SingleSeedAngle": true,
+          "MaxSeedAngle": 360.0,
+          "Random": 99,
+          "Random Stream": {
+            "InitialSeed": 99,
+            "Seed": -1395679556
+          },
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.10ScatterPyroBase.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.11ScatterPoleMap",
+    "serial_offset": 873962,
+    "id": "Scatter_PoleMap",
+    "extent": [
+      24000.0,
+      16000.0,
+      6400.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        -4000.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 8.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 24.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::CircularIn"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          -15.0,
+          -15.0,
+          -15.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          30.0,
+          30.0,
+          30.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerPoleMap",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/2_Pole_Map.2_Pole_Map_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 0,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 0
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.11ScatterPoleMap.Layout_Cluster",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Cluster.Layout_Cluster_C",
+        "properties": {
+          "ClusterCount": 64,
+          "ClusterSize": 6,
+          "MinSeedRadius": 16.0,
+          "MaxSeedRadius": 32.0,
+          "MaxSeedAngle": 360.0,
+          "Random": 1,
+          "GridCellSize": [
+            5000.0,
+            5000.0,
+            0.0
+          ],
+          "GridJitter": 2.0,
+          "Random Stream": {
+            "InitialSeed": 1,
+            "Seed": 226881349
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.11ScatterPoleMap.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.13ScatterPole",
+    "serial_offset": 874827,
+    "id": "Scatter_Pole",
+    "extent": [
+      8000.0,
+      11100.0,
+      6400.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestGroundScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        1600.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          30.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerPole_450",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/7_Pole.7_Pole_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.13ScatterPole.Layout_Grid",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Grid.Layout_Grid_C",
+        "properties": {
+          "CellSize": [
+            200.0,
+            200.0,
+            200.0
+          ],
+          "GridRotation": [
+            0.0,
+            30.0,
+            0.0
+          ],
+          "Random Stream": {
+            "Seed": -569545200
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.13ScatterPole.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.14ScatterDotGround",
+    "serial_offset": 875672,
+    "id": "Scatter_Dot_Ground",
+    "extent": [
+      6400.0,
+      11100.0,
+      6400.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestGroundScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        1600.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.25,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 0.5,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.5,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 2.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 3.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 4.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerDotGround",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/5_Dot_Cut_1.5_Dot_Cut_1_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/5_Dot_Cut_2.5_Dot_Cut_2_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/5_Dot_Cut_3.5_Dot_Cut_3_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/5_Dot_Cut_4.5_Dot_Cut_4_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 8.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 4.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 2.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.14ScatterDotGround.Layout_Cluster",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Cluster.Layout_Cluster_C",
+        "properties": {
+          "ClusterCount": 128,
+          "ClusterSize": 32,
+          "MinSeedRadius": 46.0,
+          "MaxSeedRadius": 54.0,
+          "MaxSeedAngle": 360.0,
+          "Random Stream": {
+            "Seed": -1079806008
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.14ScatterDotGround.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.15ScatterDotTerrain",
+    "serial_offset": 878180,
+    "id": "Scatter_Dot_Terrain",
+    "extent": [
+      9600.0,
+      11100.0,
+      6400.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestGroundScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        1600.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.25,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 0.5,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.5,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 2.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 3.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 4.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator2",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator2",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator2",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator2",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerDotTerrain",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/6_Dot_1.6_Dot_1_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/6_Dot_2.6_Dot_2_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/6_Dot_3.6_Dot_3_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/6_Dot_4.6_Dot_4_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 8.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 4.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 2.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.15ScatterDotTerrain.Layout_Cluster",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Cluster.Layout_Cluster_C",
+        "properties": {
+          "ClusterCount": 128,
+          "ClusterSize": 32,
+          "MinSeedRadius": 46.0,
+          "MaxSeedRadius": 54.0,
+          "MaxSeedAngle": 360.0,
+          "Random Stream": {
+            "Seed": -1079806008
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.15ScatterDotTerrain.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.16ScatterHex",
+    "serial_offset": 879851,
+    "id": "Scatter_Hex",
+    "extent": [
+      3200.0,
+      11000.0,
+      6400.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestGroundScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        1600.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.600000023841858,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 2.4000000953674316,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 2.4000000953674316,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 3.200000047683716,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 2.4000000953674316,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 3.200000047683716,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerHex",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Hex_Solid_1.BP_Hex_Solid_1_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Hex_Solid_2.BP_Hex_Solid_2_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Hex_Hole_1.BP_Hex_Hole_1_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 2.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 2.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.16ScatterHex.Layout_Cluster",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Cluster.Layout_Cluster_C",
+        "properties": {
+          "ClusterCount": 128,
+          "ClusterSize": 256,
+          "MinSeedRadius": 32.0,
+          "MaxSeedRadius": 64.0,
+          "MaxSeedAngle": 360.0,
+          "Random Stream": {
+            "Seed": -545093191
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.16ScatterHex.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.17ScatterTubeTerrain",
+    "serial_offset": 880910,
+    "id": "Scatter_Tube_Terrain",
+    "extent": [
+      8000.0,
+      11000.0,
+      3200.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        1600.0,
+        2400.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 4.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 4.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator2",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerTubeTerrain_459",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/13_Tube_Terrain.13_Tube_Terrain_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.17ScatterTubeTerrain.Layout_Grid",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Grid.Layout_Grid_C",
+        "properties": {
+          "CellSize": [
+            128.0,
+            128.0,
+            128.0
+          ],
+          "Random Stream": {
+            "Seed": 1207073816
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.17ScatterTubeTerrain.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.18ScatterPyramidSmall",
+    "serial_offset": 881755,
+    "id": "Scatter_Pyramid_Small",
+    "extent": [
+      6400.0,
+      11000.0,
+      6400.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        1600.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 3.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 6.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::CircularIn"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.20000000298023224,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 0.800000011920929,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::ExpoIn"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.5,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator2",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerPyramidSmall",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/4_Pyramid_Gold.4_Pyramid_Gold_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/4_Pyramid_Black.4_Pyramid_Black_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/4_Tree.4_Tree_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 16.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 512.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 2.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 12000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 12000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.18ScatterPyramidSmall.Layout_Cluster",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Cluster.Layout_Cluster_C",
+        "properties": {
+          "ClusterCount": 128,
+          "ClusterSize": 256,
+          "MinSeedRadius": 80.0,
+          "MaxSeedRadius": 160.0,
+          "MaxSeedAngle": 360.0,
+          "Random Stream": {
+            "Seed": -545093191
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.18ScatterPyramidSmall.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.19ScatterRock",
+    "serial_offset": 883164,
+    "id": "Scatter_Rock",
+    "extent": [
+      3200.0,
+      11100.0,
+      6400.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        1600.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.05000000074505806,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 0.20000000298023224,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::EaseIn"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          360.0,
+          360.0,
+          360.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerRock",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_RockCube.BP_RockCube_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.19ScatterRock.Layout_Cluster",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Cluster.Layout_Cluster_C",
+        "properties": {
+          "ClusterCount": 128,
+          "ClusterSize": 256,
+          "MinSeedRadius": 64.0,
+          "MaxSeedRadius": 128.0,
+          "MaxSeedAngle": 360.0,
+          "Random Stream": {
+            "Seed": -545093191
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.19ScatterRock.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.1ScatterIntroDot",
+    "serial_offset": 884025,
+    "id": "Scatter_Intro_Dot",
+    "extent": [
+      1200.0,
+      1200.0,
+      1200.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.IntroScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        -6400.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.25,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 0.5,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.5,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 2.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 3.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 4.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerIntroDot",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/5_Dot_Cut_1.5_Dot_Cut_1_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/5_Dot_Cut_2.5_Dot_Cut_2_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/5_Dot_Cut_3.5_Dot_Cut_3_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/5_Dot_Cut_4.5_Dot_Cut_4_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 8.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 4.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 2.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.1ScatterIntroDot.Layout_Cluster",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Cluster.Layout_Cluster_C",
+        "properties": {
+          "ClusterSize": 16,
+          "MinSeedRadius": 46.0,
+          "MaxSeedRadius": 54.0,
+          "MaxSeedAngle": 360.0,
+          "UseGrid": true,
+          "GridCellSize": [
+            512.0,
+            512.0,
+            0.0
+          ],
+          "GridJitter": 1.0,
+          "Random Stream": {
+            "Seed": 392526635
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.1ScatterIntroDot.Layout_Serialized_Intro",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Intro.Layout_Serialized_Intro_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.1ScatterPyramidGroundFar",
+    "serial_offset": 885732,
+    "id": "Scatter_Pyramid_Ground_Far",
+    "extent": [
+      40000.0,
+      24000.0,
+      6400.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        -12800.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 2.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 3.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerPyramidGroundFar",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/0_Pyramid_Ground.0_Pyramid_Ground_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 0,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 0
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.1ScatterPyramidGroundFar.Layout_Grid",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Grid.Layout_Grid_C",
+        "properties": {
+          "CellSize": [
+            8000.0,
+            8000.0,
+            0.0
+          ],
+          "CellOffset": [
+            0.0,
+            -0.5,
+            0.0
+          ],
+          "CellJitter": [
+            2.0,
+            2.0,
+            0.0
+          ],
+          "Random Stream": {
+            "Seed": -686369015
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.1ScatterPyramidGroundFar.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.20ScatterPoleDot",
+    "serial_offset": 896937,
+    "id": "Scatter_Pole_Dot",
+    "extent": [
+      8000.0,
+      11100.0,
+      6400.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        1600.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.07199999690055847,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 0.07199999690055847,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          30.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerPoleDot_466",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/8_PoleDot.8_PoleDot_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.20ScatterPoleDot.Layout_Grid",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Grid.Layout_Grid_C",
+        "properties": {
+          "CellSize": [
+            100.0,
+            100.0,
+            100.0
+          ],
+          "GridRotation": [
+            0.0,
+            30.0,
+            0.0
+          ],
+          "Random Stream": {
+            "Seed": 1607877191
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.20ScatterPoleDot.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.21ScatterProps",
+    "serial_offset": 897782,
+    "id": "Scatter_Props",
+    "extent": [
+      6400.0,
+      11000.0,
+      1600.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestScatterContainer.DefaultSceneRoot"
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.5,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.5,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.5,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.5,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.5,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.5,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.5,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerProps",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/10_Floor_Cable_0.10_Floor_Cable_0_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/10_Floor_Cable_1.10_Floor_Cable_1_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/10_Floor_Cable_2.10_Floor_Cable_2_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/10_Floor_Cable_3.10_Floor_Cable_3_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/10_Floor_Cable_4.10_Floor_Cable_4_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/10_Floor_Cable_5.10_Floor_Cable_5_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/10_Floor_Cable_6.10_Floor_Cable_6_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.21ScatterProps.Layout_Grid",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Grid.Layout_Grid_C",
+        "properties": {
+          "CellSize": [
+            2000.0,
+            2000.0,
+            2000.0
+          ],
+          "CellJitter": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Random Stream": {
+            "Seed": 1126449708
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.21ScatterProps.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.22ScatterVFX",
+    "serial_offset": 900325,
+    "id": "Scatter_VFX",
+    "extent": [
+      3200.0,
+      11200.0,
+      6400.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        1600.0,
+        0.0
+      ]
+    },
+    "source_scales": null,
+    "source_rotations": null,
+    "spawner": "ChezNous.PersistentLevel.SpawnerVFX",
+    "sources": null,
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 0,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 0
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.22ScatterVFX.Layout_Grid",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Grid.Layout_Grid_C",
+        "properties": {
+          "CellSize": [
+            2000.0,
+            2000.0,
+            2000.0
+          ],
+          "CellJitter": [
+            2.0,
+            2.0,
+            2.0
+          ],
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.22ScatterVFX.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.23ScatterGrass",
+    "serial_offset": 901000,
+    "id": "Scatter_Grass",
+    "extent": [
+      2400.0,
+      11125.0,
+      800.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        -1120.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.5,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.5,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.5,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.5,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.5,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.5,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.5,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerGrass",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Grass/Grass/13_grass002.13_grass002_C",
+      "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Grass/Grass/13_grass004.13_grass004_C",
+      "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Grass/Grass/13_grass007.13_grass007_C",
+      "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Grass/Grass/13_grass013.13_grass013_C",
+      "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Grass/Grass/13_grass015.13_grass015_C",
+      "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Grass/Grass/13_grass019.13_grass019_C",
+      "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Grass/Grass/13_grass022.13_grass022_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.23ScatterGrass.Layout_Cluster",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Cluster.Layout_Cluster_C",
+        "properties": {
+          "ClusterCount": 1200,
+          "ClusterSize": 128,
+          "CheckSeed": true,
+          "MinSeedRadius": 24.0,
+          "MaxSeedRadius": 32.0,
+          "MaxSeedAngle": 360.0,
+          "Random Stream": {
+            "Seed": 69332016
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.23ScatterGrass.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.24ScatterTubeSky",
+    "serial_offset": 903554,
+    "id": "Scatter_Tube_Sky",
+    "extent": [
+      12000.0,
+      12000.0,
+      3200.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        12000.0,
+        4800.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 16.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 16.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerTubeSky_475",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/13_Tube_Sky.13_Tube_Sky_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 16000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 16000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.24ScatterTubeSky.Layout_Cluster",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Cluster.Layout_Cluster_C",
+        "properties": {
+          "ClusterCount": 16,
+          "ClusterSize": 12,
+          "MinSeedRadius": 24.0,
+          "MaxSeedRadius": 32.0,
+          "MaxSeedAngle": 360.0,
+          "Random Stream": {
+            "Seed": 1417380691
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.24ScatterTubeSky.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.25ScatterForestRockLight",
+    "serial_offset": 904391,
+    "id": "Scatter_Forest_RockLight",
+    "extent": [
+      3200.0,
+      11000.0,
+      6400.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestGroundScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        1600.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.02500000037252903,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 0.10000000149011612,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator2",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerForestRockLight",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_RockLight.BP_RockLight_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.25ScatterForestRockLight.Layout_Cluster",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Cluster.Layout_Cluster_C",
+        "properties": {
+          "ClusterCount": 64,
+          "ClusterSize": 4,
+          "MinSeedRadius": 256.0,
+          "MaxSeedRadius": 512.0,
+          "MaxSeedAngle": 360.0,
+          "UseGrid": true,
+          "GridCellSize": [
+            512.0,
+            512.0,
+            0.0
+          ],
+          "GridJitter": 1.0,
+          "Random Stream": {
+            "Seed": -18249880
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.25ScatterForestRockLight.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.26ScatterForestFogSheet",
+    "serial_offset": 905302,
+    "id": "Scatter_Forest_FogSheet",
+    "extent": [
+      2400.0,
+      11125.0,
+      3200.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestGroundScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        -1120.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 8.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 16.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          90.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerForestFogSheet",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_FogSheet_Forest.BP_FogSheet_Forest_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.26ScatterForestFogSheet.Layout_Grid",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Grid.Layout_Grid_C",
+        "properties": {
+          "CellSize": [
+            2048.0,
+            2048.0,
+            0.0
+          ],
+          "CellOffset": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "CellJitter": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Random Stream": {
+            "Seed": -878223099
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.26ScatterForestFogSheet.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.27ScatterVoidFogSheet",
+    "serial_offset": 906201,
+    "id": "Scatter_Void_FogSheet",
+    "extent": [
+      12000.0,
+      12000.0,
+      3200.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestGroundScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        27000.0,
+        -3400.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 48.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 96.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerVoidFogSheet",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_FogSheet_Void.BP_FogSheet_Void_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 24000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 24000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.27ScatterVoidFogSheet.Layout_Grid",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Grid.Layout_Grid_C",
+        "properties": {
+          "CellSize": [
+            4000.0,
+            4000.0,
+            4000.0
+          ],
+          "CellOffset": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "CellJitter": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Random Stream": {
+            "Seed": -1557566938
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.27ScatterVoidFogSheet.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.27ScatterVoidLower",
+    "serial_offset": 907034,
+    "id": "Scatter_Void_Lower",
+    "extent": [
+      6000.0,
+      6000.0,
+      6400.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        18800.0,
+        -0.166015625
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.25,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 0.5,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.5,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 2.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 3.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 4.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerVoidLower",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Lower_1.BP_Lower_1_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Lower_2.BP_Lower_2_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Lower_3.BP_Lower_3_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Lower_4.BP_Lower_4_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Lower_5.BP_Lower_5_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Lower_6.BP_Lower_6_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.27ScatterVoidLower.Layout_Cluster",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Cluster.Layout_Cluster_C",
+        "properties": {
+          "ClusterSize": 16,
+          "MinSeedRadius": 46.0,
+          "MaxSeedRadius": 54.0,
+          "MaxSeedAngle": 360.0,
+          "UseGrid": true,
+          "GridCellSize": [
+            2048.0,
+            2048.0,
+            0.0
+          ],
+          "GridJitter": 1.0,
+          "Random Stream": {
+            "Seed": -2138911398
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.27ScatterVoidLower.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.2ScatterIntroPole",
+    "serial_offset": 908664,
+    "id": "Scatter_Intro_Pole",
+    "extent": [
+      800.0,
+      800.0,
+      800.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.IntroScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        -6400.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          30.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerIntroPole",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/7_Pole.7_Pole_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.2ScatterIntroPole.Layout_Grid",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Grid.Layout_Grid_C",
+        "properties": {
+          "CellSize": [
+            200.0,
+            200.0,
+            200.0
+          ],
+          "GridRotation": [
+            0.0,
+            30.0,
+            0.0
+          ],
+          "Random Stream": {
+            "Seed": -665395179
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.2ScatterIntroPole.Layout_Serialized_Intro",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Intro.Layout_Serialized_Intro_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.2ScatterPyramidTerrainNear",
+    "serial_offset": 909468,
+    "id": "Scatter_Pyramid_Terrain_Near",
+    "extent": [
+      12000.0,
+      6000.0,
+      6400.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        4800.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 2.5,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 3.5,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerPyramidTerrainNear",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/1_Pyramid_Terrain.1_Pyramid_Terrain_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 0,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 0
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.2ScatterPyramidTerrainNear.Layout_Grid",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Grid.Layout_Grid_C",
+        "properties": {
+          "CellSize": [
+            7000.0,
+            7000.0,
+            0.0
+          ],
+          "CellJitter": [
+            1.0,
+            1.0,
+            0.0
+          ],
+          "Random": 1,
+          "Random Stream": {
+            "InitialSeed": 1,
+            "Seed": -1681718311
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.2ScatterPyramidTerrainNear.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.3ScatterIntroNeon",
+    "serial_offset": 913636,
+    "id": "Scatter_Intro_Neon",
+    "extent": [
+      1600.0,
+      1600.0,
+      800.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.IntroDomeScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        -6400.0,
+        800.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 2.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 2.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          90.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerIntroNeon",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Neon_1.BP_Neon_1_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Neon_2.BP_Neon_2_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Neon_3.BP_Neon_3_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Neon_4.BP_Neon_4_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.3ScatterIntroNeon.Layout_Cluster",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Cluster.Layout_Cluster_C",
+        "properties": {
+          "ClusterCount": 20,
+          "ClusterSize": 12,
+          "MinSeedRadius": 24.0,
+          "MaxSeedRadius": 32.0,
+          "MaxSeedAngle": 360.0,
+          "GridCellSize": [
+            640.0,
+            640.0,
+            640.0
+          ],
+          "Random Stream": {
+            "Seed": 218830618
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.3ScatterIntroNeon.Layout_Serialized_Intro",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Intro.Layout_Serialized_Intro_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.3ScatterIntroNeon.Layout_Sphere",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Sphere.Layout_Sphere_C",
+        "properties": {
+          "SpherePoints": 128,
+          "RadiusMin": 512.0,
+          "RadiusMax": 1024.0,
+          "AngleZ": 100.0,
+          "Random Stream": {
+            "Seed": -1256147427
+          },
+          "Element Orientation": [
+            0.0,
+            -111.7916488647461,
+            -25.99395751953125
+          ],
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.3ScatterPyramidTerrainFar",
+    "serial_offset": 914481,
+    "id": "Scatter_Pyramid_Terrain_Far",
+    "extent": [
+      40000.0,
+      11000.0,
+      6400.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        -1000.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 2.5,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 3.5,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerPyramidTerrainFar",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/1_Pyramid_Terrain.1_Pyramid_Terrain_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 0,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 0
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.3ScatterPyramidTerrainFar.Layout_Grid",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Grid.Layout_Grid_C",
+        "properties": {
+          "CellSize": [
+            8000.0,
+            8000.0,
+            0.0
+          ],
+          "CellJitter": [
+            1.0,
+            1.0,
+            0.0
+          ],
+          "Random Stream": {
+            "Seed": -878223099
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.3ScatterPyramidTerrainFar.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.4ScatterDiamondVoidNear",
+    "serial_offset": 915326,
+    "id": "Scatter_Diamond_Void_Near",
+    "extent": [
+      12000.0,
+      12000.0,
+      2000.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        27000.0,
+        -2000.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 20.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 40.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 20.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 40.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerDiamondVoidNear",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/10_RoundDiamond_0.10_RoundDiamond_0_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/10_RoundDiamond_1.10_RoundDiamond_1_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 0,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 0
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 0.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 0,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 0
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.4ScatterDiamondVoidNear.Layout_Grid",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Grid.Layout_Grid_C",
+        "properties": {
+          "CellSize": [
+            6000.0,
+            7000.0,
+            7000.0
+          ],
+          "CellJitter": [
+            1.0,
+            1.0,
+            0.20000000298023224
+          ],
+          "Random Stream": {
+            "Seed": 330617964
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.4ScatterDiamondVoidNear.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.4ScatterIntroHex",
+    "serial_offset": 916437,
+    "id": "Scatter_Intro_Hex",
+    "extent": [
+      1600.0,
+      1600.0,
+      1600.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.IntroDomeScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        -6400.0,
+        10.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.600000023841858,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 2.4000000953674316,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 2.4000000953674316,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 3.200000047683716,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 2.4000000953674316,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 3.200000047683716,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          180.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerIntroHex",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Hex_Solid_1.BP_Hex_Solid_1_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Hex_Solid_2.BP_Hex_Solid_2_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Hex_Hole_1.BP_Hex_Hole_1_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 2.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 2.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.4ScatterIntroHex.Layout_Cluster",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Cluster.Layout_Cluster_C",
+        "properties": {
+          "ClusterCount": 16,
+          "ClusterSize": 32,
+          "MinSeedRadius": 32.0,
+          "MaxSeedRadius": 64.0,
+          "MaxSeedAngle": 360.0,
+          "Random Stream": {
+            "Seed": 250962703
+          },
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.4ScatterIntroHex.Layout_Serialized_Intro",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Intro.Layout_Serialized_Intro_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.4ScatterIntroHex.Layout_Sphere",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Sphere.Layout_Sphere_C",
+        "properties": {
+          "SpherePoints": 1024,
+          "RadiusMin": 1150.0,
+          "RadiusMax": 1150.0,
+          "UseGrid": true,
+          "StepsAngleXY": 32.0,
+          "AngleZ": 80.0,
+          "Random Stream": {
+            "Seed": 1668334717
+          },
+          "Element Orientation": [
+            0.0,
+            78.74998474121094,
+            -77.5781021118164
+          ],
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.5ScatterDiamondVoidFar",
+    "serial_offset": 917459,
+    "id": "Scatter_Diamond_Void_Far",
+    "extent": [
+      48000.0,
+      48000.0,
+      8000.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        64000.0,
+        -8000.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 20.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 40.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 2.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerDiamondVoidFar",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/10_RoundDiamond.10_RoundDiamond_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/3_LaserBase.3_LaserBase_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 0,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 0
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 16.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 0,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 0
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.5ScatterDiamondVoidFar.Layout_Grid",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Grid.Layout_Grid_C",
+        "properties": {
+          "CellSize": [
+            4000.0,
+            4000.0,
+            4000.0
+          ],
+          "CellJitter": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Random Stream": {
+            "Seed": 820653697
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.5ScatterDiamondVoidFar.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.5ScatterIntroPoleDot",
+    "serial_offset": 918570,
+    "id": "Scatter_Intro_PoleDot",
+    "extent": [
+      800.0,
+      800.0,
+      800.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.IntroDomeScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        -6400.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.07199999690055847,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 0.07199999690055847,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          30.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerIntroPoleDot",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/8_PoleDot.8_PoleDot_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.5ScatterIntroPoleDot.Layout_Grid",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Grid.Layout_Grid_C",
+        "properties": {
+          "CellSize": [
+            100.0,
+            100.0,
+            100.0
+          ],
+          "GridRotation": [
+            0.0,
+            30.0,
+            0.0
+          ],
+          "Random Stream": {
+            "Seed": 931216389
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.5ScatterIntroPoleDot.Layout_Serialized_Intro",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Intro.Layout_Serialized_Intro_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.6ScatterHollowPyramid",
+    "serial_offset": 919374,
+    "id": "Scatter_Hollow_Pyramid",
+    "extent": [
+      40000.0,
+      24000.0,
+      6400.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        -12800.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 32.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 40.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::EaseIn"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerHollowPyramid",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_HollowPyramid.BP_HollowPyramid_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 0,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 0
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.6ScatterHollowPyramid.Layout_Grid",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Grid.Layout_Grid_C",
+        "properties": {
+          "CellSize": [
+            8000.0,
+            8000.0,
+            0.0
+          ],
+          "CellOffset": [
+            0.5,
+            0.5,
+            0.0
+          ],
+          "CellJitter": [
+            1.0,
+            1.0,
+            0.0
+          ],
+          "Random": 1,
+          "Random Stream": {
+            "InitialSeed": 1,
+            "Seed": -1334520442
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.6ScatterHollowPyramid.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.6ScatterIntroRockLine",
+    "serial_offset": 920247,
+    "id": "Scatter_Rock",
+    "extent": [
+      1200.0,
+      1200.0,
+      1200.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.IntroDomeScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        -6400.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.05000000074505806,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 0.20000000298023224,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::EaseIn"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          360.0,
+          360.0,
+          360.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerIntroRockLine",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_RockCube_Map.BP_RockCube_Map_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.6ScatterIntroRockLine.Layout_Cluster",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Cluster.Layout_Cluster_C",
+        "properties": {
+          "ClusterSize": 128,
+          "MinSeedRadius": 64.0,
+          "MaxSeedRadius": 128.0,
+          "MaxSeedAngle": 360.0,
+          "UseGrid": true,
+          "GridCellSize": [
+            512.0,
+            512.0,
+            0.0
+          ],
+          "GridJitter": 1.0,
+          "Random Stream": {
+            "Seed": 1312880015
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.6ScatterIntroRockLine.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.7ScatterHollowCube",
+    "serial_offset": 921108,
+    "id": "Scatter_Hollow_Cube",
+    "extent": [
+      25600.0,
+      10400.0,
+      6400.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        1600.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 2.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 8.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::EaseIn"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator2",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerHollowCube",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Hollow/BP_HollowCube.BP_HollowCube_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 16000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 16000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.7ScatterHollowCube.Layout_Cluster",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Cluster.Layout_Cluster_C",
+        "properties": {
+          "ClusterCount": 32,
+          "ClusterSize": 64,
+          "MinSeedRadius": 50.0,
+          "MaxSeedRadius": 100.0,
+          "MaxSeedAngle": 360.0,
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.7ScatterHollowCube.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.7ScatterIntroGrass",
+    "serial_offset": 922209,
+    "id": "Scatter_Intro_Grass",
+    "extent": [
+      1200.0,
+      1200.0,
+      1200.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.IntroScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        -6400.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.5,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.5,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.5,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.5,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.5,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.5,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 0.5,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          360.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerIntroGrass",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Grass/Grass/13_grass002.13_grass002_C",
+      "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Grass/Grass/13_grass004.13_grass004_C",
+      "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Grass/Grass/13_grass007.13_grass007_C",
+      "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Grass/Grass/13_grass013.13_grass013_C",
+      "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Grass/Grass/13_grass015.13_grass015_C",
+      "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Grass/Grass/13_grass019.13_grass019_C",
+      "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Grass/Grass/13_grass022.13_grass022_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 4000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 4000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.7ScatterIntroGrass.Layout_Cluster",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Cluster.Layout_Cluster_C",
+        "properties": {
+          "ClusterCount": 1200,
+          "ClusterSize": 32,
+          "CheckSeed": true,
+          "MinSeedRadius": 24.0,
+          "MaxSeedRadius": 32.0,
+          "MaxSeedAngle": 360.0,
+          "UseGrid": true,
+          "GridCellSize": [
+            100.0,
+            100.0,
+            100.0
+          ],
+          "GridJitter": 1.0,
+          "Random Stream": {
+            "Seed": -1320813112
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.7ScatterIntroGrass.Layout_Serialized_Intro",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Intro.Layout_Serialized_Intro_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.8ScatterLaser",
+    "serial_offset": 924789,
+    "id": "Scatter_Laser",
+    "extent": [
+      3200.0,
+      8000.0,
+      6400.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        4500.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          45.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerLaser",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/3_LaserBase.3_LaserBase_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/3_Laser.3_Laser_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 0,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 0
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.8ScatterLaser.Layout_Cluster",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Cluster.Layout_Cluster_C",
+        "properties": {
+          "ClusterCount": 16,
+          "ClusterSize": 8,
+          "MinSeedRadius": 500.0,
+          "MaxSeedRadius": 500.0,
+          "SingleSeedAngle": true,
+          "UseGrid": true,
+          "GridCellSize": [
+            5600.0,
+            4800.0,
+            0.0
+          ],
+          "Random Stream": {
+            "Seed": 1262281318
+          },
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.8ScatterLaser.Layout_Grid",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Grid.Layout_Grid_C",
+        "properties": {
+          "CellSize": [
+            5600.0,
+            640.0,
+            0.0
+          ],
+          "Random Stream": {
+            "Seed": -1706732724
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.8ScatterLaser.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.9ScatterPyro",
+    "serial_offset": 925962,
+    "id": "Scatter_Pyro",
+    "extent": [
+      2400.0,
+      19200.0,
+      800.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.ForestScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        -6400.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 1.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator3",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          50.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerPyro",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/3_Pyro.3_Pyro_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 0,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 0
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.9ScatterPyro.Layout_Circle",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Circle.Layout_Circle_C",
+        "properties": {
+          "CircleCount": 3,
+          "CircleOffset": [
+            0.0,
+            6400.0,
+            0.0
+          ],
+          "Count": 16,
+          "Radius": 2400.0,
+          "Offset": 0.5,
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.9ScatterPyro.Layout_Cluster",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Cluster.Layout_Cluster_C",
+        "properties": {
+          "ClusterCount": 16,
+          "ClusterSize": 4,
+          "MinSeedRadius": 640.0,
+          "MaxSeedRadius": 640.0,
+          "SingleSeedAngle": true,
+          "MaxSeedAngle": 360.0,
+          "Random": 99,
+          "Random Stream": {
+            "InitialSeed": 99,
+            "Seed": -1395679556
+          },
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.9ScatterPyro.Layout_Serialized_Forest",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Forest.Layout_Serialized_Forest_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  },
+  {
+    "reference": "ChezNous.PersistentLevel.ZScatterIntroLower",
+    "serial_offset": 929339,
+    "id": "Scatter_Intro_Lower",
+    "extent": [
+      800.0,
+      800.0,
+      800.0
+    ],
+    "transform_component": {
+      "AttachParent": "ChezNous.PersistentLevel.IntroScatterContainer.DefaultSceneRoot",
+      "RelativeLocation": [
+        0.0,
+        -6400.0,
+        0.0
+      ]
+    },
+    "source_scales": [
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 2.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 2.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 2.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 2.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      },
+      {
+        "Min_30_91F33F49459098031DCB2CBF818D5E4A": 1.0,
+        "Max_29_77F3D339423E731F7C9F6CBBF24042AE": 2.0,
+        "Easing_32_7DE53DBC413C88594647039262220FC3": "EEasingFunc::Linear"
+      }
+    ],
+    "source_rotations": [
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator2",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator2",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator2",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator2",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "Align_6_2F9C22A6440FC9EA884A3FA61D0D9298": "ScatterRotationAlign::NewEnumerator2",
+        "RotationBase_7_9C11A14F4356BB351B0DA1803579EDB4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RotationRange_8_A9CD350C40CA43F654A294859A68EFF0": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "spawner": "ChezNous.PersistentLevel.SpawnerIntroLower",
+    "sources": [
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/Tube_Intro_0.Tube_Intro_0_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/Tube_Intro_1.Tube_Intro_1_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/Tube_Intro_2.Tube_Intro_2_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/Tube_Intro_3.Tube_Intro_3_C",
+      "/Game/_HelloEnjoy_/ChezNous/Scatter/Tube_Intro_4.Tube_Intro_4_C"
+    ],
+    "source_params": [
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      },
+      {
+        "Weight_2_F21860E74338DA87532D0D9DA0A28D6E": 1.0,
+        "StartCullDistance_6_5ACBD53F48F2FEF17D3E53BB566C354A": 8000,
+        "EndCullDistance_8_195F223A43CB979725B5D29E4BDFE524": 8000
+      }
+    ],
+    "layouts": [
+      {
+        "reference": "ChezNous.PersistentLevel.ZScatterIntroLower.Layout_Grid",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/Scatter/Layout_Grid.Layout_Grid_C",
+        "properties": {
+          "CellSize": [
+            128.0,
+            128.0,
+            128.0
+          ],
+          "Random Stream": {
+            "Seed": -1319447843
+          },
+          "Enabled": true,
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      },
+      {
+        "reference": "ChezNous.PersistentLevel.ZScatterIntroLower.Layout_Serialized_Intro",
+        "class": "/Game/_HelloEnjoy_/Fantasynth/HelloScatter/SerializedLayouts/Layout_Serialized_Intro.Layout_Serialized_Intro_C",
+        "properties": {
+          "CreationMethod": "EComponentCreationMethod::Instance"
+        }
+      }
+    ]
+  }
+]

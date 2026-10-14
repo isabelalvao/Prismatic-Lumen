@@ -1,0 +1,274 @@
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.19045.
+-- Using the multi-header code from C:/ORCA/Fantasynt/build/_deps/nlohmann_json-src/include/
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Could NOT find LibUSB (missing: LibUSB_LIBRARY LibUSB_INCLUDE_PATH) (found version "LibUSB_VERSION-NOTFOUND")
+-- 
+-- SDL3 was configured with the following options:
+-- 
+-- Platform: Windows-10.0.19045
+-- 64-bit:   TRUE
+-- Compiler: C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx86/x64/cl.exe
+-- Revision: SDL-3.2.30-release-3.2.30
+-- Vendor:   
+-- 
+-- Subsystems:
+--   Audio:    ON
+--   Video:    ON
+--   GPU:      ON
+--   Render:   ON
+--   Camera:   ON
+--   Joystick: ON
+--   Haptic:   ON
+--   Hidapi:   ON
+--   Power:    ON
+--   Sensor:   ON
+--   Dialog:   ON
+-- 
+-- Options:
+--   SDL_ALSA                    (Wanted: OFF): OFF
+--   SDL_ALSA_SHARED             (Wanted: OFF): OFF
+--   SDL_ALTIVEC                 (Wanted: OFF): OFF
+--   SDL_ARMNEON                 (Wanted: OFF): OFF
+--   SDL_ASAN                    (Wanted: OFF): OFF
+--   SDL_ASSEMBLY                (Wanted: ON): ON
+--   SDL_ASSERTIONS              (Wanted: auto): auto
+--   SDL_AVX                     (Wanted: ON): ON
+--   SDL_AVX2                    (Wanted: ON): ON
+--   SDL_AVX512F                 (Wanted: ON): ON
+--   SDL_BACKGROUNDING_SIGNAL    (Wanted: OFF): OFF
+--   SDL_CCACHE                  (Wanted: OFF): OFF
+--   SDL_CLANG_TIDY              (Wanted: OFF): OFF
+--   SDL_CLOCK_GETTIME           (Wanted: OFF): OFF
+--   SDL_COCOA                   (Wanted: OFF): OFF
+--   SDL_DBUS                    (Wanted: OFF): OFF
+--   SDL_DEPS_SHARED             (Wanted: ON): OFF
+--   SDL_DIRECTX                 (Wanted: ON): ON
+--   SDL_DISKAUDIO               (Wanted: ON): ON
+--   SDL_DUMMYAUDIO              (Wanted: ON): ON
+--   SDL_DUMMYCAMERA             (Wanted: ON): ON
+--   SDL_DUMMYVIDEO              (Wanted: ON): ON
+--   SDL_EXAMPLES                (Wanted: OFF): OFF
+--   SDL_EXAMPLES_LINK_SHARED    (Wanted: OFF): OFF
+--   SDL_FOREGROUNDING_SIGNAL    (Wanted: OFF): OFF
+--   SDL_GCC_ATOMICS             (Wanted: OFF): OFF
+--   SDL_GPU_DXVK                (Wanted: OFF): OFF
+--   SDL_HIDAPI                  (Wanted: ON): ON
+--   SDL_HIDAPI_JOYSTICK         (Wanted: ON): ON
+--   SDL_HIDAPI_LIBUSB           (Wanted: ON): OFF
+--   SDL_HIDAPI_LIBUSB_SHARED    (Wanted: ON): OFF
+--   SDL_IBUS                    (Wanted: OFF): OFF
+--   SDL_INSTALL                 (Wanted: OFF): OFF
+--   SDL_INSTALL_TESTS           (Wanted: OFF): OFF
+--   SDL_JACK                    (Wanted: OFF): OFF
+--   SDL_JACK_SHARED             (Wanted: OFF): OFF
+--   SDL_KMSDRM                  (Wanted: OFF): OFF
+--   SDL_KMSDRM_SHARED           (Wanted: OFF): OFF
+--   SDL_LASX                    (Wanted: OFF): OFF
+--   SDL_LIBC                    (Wanted: ON): ON
+--   SDL_LIBICONV                (Wanted: OFF): OFF
+--   SDL_LIBUDEV                 (Wanted: ON): OFF
+--   SDL_LIBURING                (Wanted: OFF): OFF
+--   SDL_LSX                     (Wanted: OFF): OFF
+--   SDL_METAL                   (Wanted: OFF): OFF
+--   SDL_MMX                     (Wanted: ON): OFF
+--   SDL_OFFSCREEN               (Wanted: ON): ON
+--   SDL_OPENGL                  (Wanted: ON): ON
+--   SDL_OPENGLES                (Wanted: ON): ON
+--   SDL_OPENVR                  (Wanted: OFF): OFF
+--   SDL_OSS                     (Wanted: OFF): OFF
+--   SDL_PIPEWIRE                (Wanted: OFF): OFF
+--   SDL_PIPEWIRE_SHARED         (Wanted: OFF): OFF
+--   SDL_PTHREADS                (Wanted: OFF): OFF
+--   SDL_PTHREADS_SEM            (Wanted: OFF): OFF
+--   SDL_PULSEAUDIO              (Wanted: OFF): OFF
+--   SDL_PULSEAUDIO_SHARED       (Wanted: OFF): OFF
+--   SDL_RENDER_D3D              (Wanted: ON): ON
+--   SDL_RENDER_D3D11            (Wanted: ON): ON
+--   SDL_RENDER_D3D12            (Wanted: ON): ON
+--   SDL_RENDER_GPU              (Wanted: ON): ON
+--   SDL_RENDER_METAL            (Wanted: OFF): OFF
+--   SDL_RENDER_VULKAN           (Wanted: ON): ON
+--   SDL_ROCKCHIP                (Wanted: OFF): OFF
+--   SDL_RPATH                   (Wanted: OFF): OFF
+--   SDL_RPI                     (Wanted: OFF): OFF
+--   SDL_SNDIO                   (Wanted: OFF): OFF
+--   SDL_SNDIO_SHARED            (Wanted: OFF): OFF
+--   SDL_SSE                     (Wanted: ON): ON
+--   SDL_SSE2                    (Wanted: ON): ON
+--   SDL_SSE3                    (Wanted: ON): ON
+--   SDL_SSE4_1                  (Wanted: ON): ON
+--   SDL_SSE4_2                  (Wanted: ON): ON
+--   SDL_SYSTEM_ICONV            (Wanted: OFF): OFF
+--   SDL_TESTS                   (Wanted: OFF): OFF
+--   SDL_TESTS_LINK_SHARED       (Wanted: OFF): OFF
+--   SDL_UNINSTALL               (Wanted: OFF): OFF
+--   SDL_VIRTUAL_JOYSTICK        (Wanted: ON): ON
+--   SDL_VIVANTE                 (Wanted: OFF): OFF
+--   SDL_VULKAN                  (Wanted: ON): ON
+--   SDL_WASAPI                  (Wanted: ON): ON
+--   SDL_WAYLAND                 (Wanted: OFF): OFF
+--   SDL_WAYLAND_LIBDECOR        (Wanted: OFF): OFF
+--   SDL_WAYLAND_LIBDECOR_SHARED (Wanted: OFF): OFF
+--   SDL_WAYLAND_SHARED          (Wanted: OFF): OFF
+--   SDL_X11                     (Wanted: OFF): OFF
+--   SDL_X11_SHARED              (Wanted: OFF): OFF
+--   SDL_X11_XCURSOR             (Wanted: OFF): OFF
+--   SDL_X11_XDBE                (Wanted: OFF): OFF
+--   SDL_X11_XFIXES              (Wanted: OFF): OFF
+--   SDL_X11_XINPUT              (Wanted: OFF): OFF
+--   SDL_X11_XRANDR              (Wanted: OFF): OFF
+--   SDL_X11_XSCRNSAVER          (Wanted: OFF): OFF
+--   SDL_X11_XSHAPE              (Wanted: OFF): OFF
+--   SDL_X11_XSYNC               (Wanted: OFF): OFF
+--   SDL_XINPUT                  (Wanted: ON): ON
+-- 
+--  Build Shared Library: OFF
+--  Build Static Library: ON
+--  Build Static Library with Position Independent Code: 
+-- 
+-- EGL disabled
+-- Enabling OpenGL support
+-- Could NOT find Vulkan (missing: Vulkan_LIBRARY Vulkan_INCLUDE_DIR) (found version "")
+-- Could NOT find JsonCpp (missing: JsonCpp_INCLUDE_DIR JsonCpp_LIBRARY) 
+-- Could NOT find glslc, using precompiled .spv files
+-- OpenXR 1.1.63
+-- Found and will use pre-generated xr_generated_dispatch_table.h in source tree
+-- Found and will use pre-generated xr_generated_dispatch_table.c in source tree
+-- Found and will use pre-generated xr_generated_dispatch_table_core.h in source tree
+-- Found and will use pre-generated xr_generated_dispatch_table_core.c in source tree
+-- Found and will use pre-generated xr_generated_loader.hpp in source tree
+-- Found and will use pre-generated xr_generated_loader.cpp in source tree
+-- Configuring done (6.7s)
+-- Generating done (1.2s)
+-- Build files have been written to: C:/ORCA/Fantasynt/build
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_control.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control.lib
+  fantasynt_control_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_control.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control.lib
+  fantasynt_net.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_net.lib
+  fantasynt_network_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_network_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_control.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control.lib
+  visual_config.cpp
+  fantasynt_visual_config.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_visual_config.lib
+  art_direction.cpp
+  opening_scene.cpp
+  Gerando Código...
+  fantasynt_geometry.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry.lib
+  fantasynt_geometry_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_vr_math.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_vr_math.lib
+  fantasynt_vr_math_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_vr_math_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_control.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control.lib
+  fantasynt_visual_config.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_visual_config.lib
+  fantasynt_geometry.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry.lib
+  fantasynt_sequence_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_sequence_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_control.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control.lib
+  fantasynt_visual_config.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_visual_config.lib
+  fantasynt_geometry.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry.lib
+  fantasynt_opening_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_opening_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_control.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control.lib
+  fantasynt_visual_config.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_visual_config.lib
+  fantasynt_geometry.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry.lib
+  beat_envelope.cpp
+  fantasynt_beat.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_beat.lib
+  direction_tests.cpp
+  fantasynt_direction_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_direction_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_control.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control.lib
+  fantasynt_visual_config.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_visual_config.lib
+  fantasynt_geometry.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry.lib
+  visual_config_tests.cpp
+  fantasynt_visual_config_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_visual_config_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  Building Custom Rule C:/ORCA/Fantasynt/CMakeLists.txt
+  time_display.cpp
+  fantasynt_time_display.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_time_display.lib
+  Building Custom Rule C:/ORCA/Fantasynt/CMakeLists.txt
+  time_display_tests.cpp
+  fantasynt_time_display_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_time_display_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_control.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control.lib
+  fantasynt_visual_config.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_visual_config.lib
+  fantasynt_geometry.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry.lib
+  Building Custom Rule C:/ORCA/Fantasynt/CMakeLists.txt
+  phase_tests.cpp
+  fantasynt_phase_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_phase_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  bx.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bx\Release\bx.lib
+  spirv-cross.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\spirv-cross.lib
+  glslang.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\glslang.lib
+  spirv-opt.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\spirv-opt.lib
+  tint.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\tint.lib
+  bimg.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bimg\Release\bimg.lib
+  shaderc.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\shaderc.exe
+  Generating shaders/fs_composite.bin
+  Code:
+  ---
+      671: if(digit!=5.0 && digit!=6.0)
+      672: ink=max(ink,timer_box(position,float2(0.44,0.29),float2(0.035,0.15),softness));
+      673: if(digit!=2.0)
+      674: ink=max(ink,timer_box(position,float2(0.44,0.71),float2(0.035,0.15),softness));
+      675: return ink;
+      676: }
+      677: float3 timer_overlay(float3 color)
+      678: {
+      679: if(u_timer[0].y<0.5 || u_timer[1].w<=0.0) return color;
+      680: 
+  
+  >>> 681: float2 point=(v_uv-u_timer[1].xy)*float2(u_timer[0].z,1.0)/(0.052*u_timer[1].z)+float2(1.82,0.5);
+  >>>   8:        ^
+  
+      682: float softness=max(fwidth(point.y)*0.65,0.006);
+      683: float minutes=floor(u_timer[0].x/600.0);
+      684: float seconds=mod(floor(u_timer[0].x/10.0),60.0);
+      685: float ink=timer_digit(point,floor(minutes/10.0),softness);
+      686: ink=max(ink,timer_digit(point-float2(0.68,0.0),mod(minutes,10.0),softness));
+      687: ink=max(ink,timer_box(point,float2(1.30,0.32),float2(0.035,0.04),softness));
+      688: ink=max(ink,timer_box(point,float2(1.30,0.68),float2(0.035,0.04),softness));
+      689: ink=max(ink,timer_digit(point-float2(1.58,0.0),floor(seconds/10.0),softness));
+      690: ink=max(ink,timer_digit(point-float2(2.26,0.0),mod(seconds,10.0),softness));
+  ---
+CUSTOMBUILD : error : D3DCompile failed 0x80004005 `(681,8-12): error X3000: syntax error: unexpected token 'point' [C:\ORCA\Fantasynt\build\fantasynt_shaders.vcxproj]
+CUSTOMBUILD(682,27-31): error X3000: syntax error: unexpected token 'point' [C:\ORCA\Fantasynt\build\fantasynt_shaders.vcxproj]
+CUSTOMBUILD(682,20-34): error X3013: 'fwidth': no matching 0 parameter intrinsic function [C:\ORCA\Fantasynt\build\fantasynt_shaders.vcxproj]
+CUSTOMBUILD(682,20-34): error X3013: Possible intrinsic functions are: [C:\ORCA\Fantasynt\build\fantasynt_shaders.vcxproj]
+CUSTOMBUILD(682,20-34): error X3013: fwidth(float|half|min10float|min16float) [C:\ORCA\Fantasynt\build\fantasynt_shaders.vcxproj]
+  `
+  Failed to build shader.
+C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\MSBuild\Microsoft\VC\v180\Microsoft.CppCommon.targets(254,5): error MSB8066: Custom build for 'C:\ORCA\Fantasynt\build\CMakeFiles\81d7f309b303f97d6fb3baec832cb32b\fs_composite.bin.rule;C:\ORCA\Fantasynt\build\CMakeFiles\81d7f309b303f97d6fb3baec832cb32b\fs_opening.bin.rule;C:\ORCA\Fantasynt\build\CMakeFiles\81d7f309b303f97d6fb3baec832cb32b\fs_scene.bin.rule;C:\ORCA\Fantasynt\build\CMakeFiles\45d2ef0879e05851ef364df92ec3b9e0\fantasynt_shaders.rule' exited with code 1. [C:\ORCA\Fantasynt\build\fantasynt_shaders.vcxproj]
+Comando falhou com cÃ³digo 1 : C:\Program Files (x86)\Microsoft Visual 
+Studio\18\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe
+At C:\ORCA\Fantasynt\tools\build.ps1:28 char:32
++ ... DE -ne 0) { throw "Comando falhou com cÃ³digo $LASTEXITCODE : $Execut ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Comando falhou ...e\bin\cmake.exe:String) [], RuntimeException
+    + FullyQualifiedErrorId : Comando falhou com cÃ³digo 1 : C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTo 
+   ols\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe
+ 

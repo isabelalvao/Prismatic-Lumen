@@ -1,0 +1,125 @@
+{
+  "sha": "df2c08b546d4f40103e11b8b31dbfc3d41ee687b",
+  "node_id": "C_kwDOSB6hVdoAKGRmMmMwOGI1NDZkNGY0MDEwM2UxMWI4YjMxZGJmYzNkNDFlZTY4N2I",
+  "commit": {
+    "author": {
+      "name": "Kaoru0822",
+      "email": "208281322+kaoru0822-kitauji@users.noreply.github.com",
+      "date": "2026-10-12T13:49:15Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-10-12T13:49:15Z"
+    },
+    "message": "fix(jeb): confine an invalid REA_JEB_MCP_URL to the JEB tools (#2145)\n\nJebProvider throws when REA_JEB_MCP_URL fails endpoint validation, and the\ncomposition built it eagerly for the CLI and every MCP connection. A\nmalformed value, or http://localhost:8425/mcp, therefore crashed every CLI\ncommand with a stack trace and failed every MCP connection with an\ninternal server error. The composition now parses the endpoint first and,\nwhen it is unusable, returns a JEB port that reports not_configured\navailability and a ConfigurationError naming REA_JEB_MCP_URL.\n\nFixes #2143\n\nCo-authored-by: Claude Opus 5.5 <noreply@anthropic.com>",
+    "tree": {
+      "sha": "5c24e3af3904b581996dc14f0cd8159b826c50a6",
+      "url": "https://api.github.com/repos/morluto/rea/git/trees/5c24e3af3904b581996dc14f0cd8159b826c50a6"
+    },
+    "url": "https://api.github.com/repos/morluto/rea/git/commits/df2c08b546d4f40103e11b8b31dbfc3d41ee687b",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqzOVbCRC1aQ7uu5UhlAAAB3IQADNYczrx8yhRrDmdy9mnkmrL\nK/esIm9RpuA/0xlzbXtvIynHAwd0/eLesNyr1TcoLVX/uWzK9THBzyhumzDOe/Zz\n9yLsNBEncPtUfn/vngDZzPjRCZwacy4pndNcBvdGYJxIjxaNl3sRnGbr9SccB/6D\nI5/qZUa2eZSOreEL/cm0+Qma5BUx3BJ+WQW1kcRyojkHhwg4YNeCeuJD2nLBCDpU\nUrSjqMu+xW5zyckhD71MQiRZVjewOAUFmuihKXH4rBiIJir2mq3kuaUwBC2Wg55e\nBFxqPfDu/jvt41UuxHudFE3ZzjXRX1qu/Kpbeia+UyNA8bTnAqhmJ4mZipNDUBpl\nz44j9fcGzHoJHrRtSmCFXDKnZrb/Fyjpl6/6PZUpulRUy9frioVR6TpFa5T4VrJu\nIPDa5Qc76EyUsILGPi6fgOpwdFZ2yCfPwUJaitwIjTkjHQJ0psM8N/caUiC9KXWF\ntw2iZjYhVPkL3mDDOdHEJFzSWdXk4hWCCDM84oSIlScfx6ab030LmaoL2+G96lgL\nGPn9RwuziAa8Z1QInRsi/eQYtkDfjyqwgFProEp2M9pEZy1TTyno6U+1ka9l3Mai\nrhU4L4amqv5D8PY30bxA3Mdvr4n8gq4YAoaer/cyToI9s4PPHHO6la5Oyfeon1HH\ntxc3q/05YhzzkwQKqRea\n=i06O\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 5c24e3af3904b581996dc14f0cd8159b826c50a6\nparent 58fb372071e56da9c5df0e37593ee3f0da6b64bc\nauthor Kaoru0822 <208281322+kaoru0822-kitauji@users.noreply.github.com> 1791812955 -0700\ncommitter GitHub <noreply@github.com> 1791812955 -0700\n\nfix(jeb): confine an invalid REA_JEB_MCP_URL to the JEB tools (#2145)\n\nJebProvider throws when REA_JEB_MCP_URL fails endpoint validation, and the\ncomposition built it eagerly for the CLI and every MCP connection. A\nmalformed value, or http://localhost:8425/mcp, therefore crashed every CLI\ncommand with a stack trace and failed every MCP connection with an\ninternal server error. The composition now parses the endpoint first and,\nwhen it is unusable, returns a JEB port that reports not_configured\navailability and a ConfigurationError naming REA_JEB_MCP_URL.\n\nFixes #2143\n\nCo-authored-by: Claude Opus 5.5 <noreply@anthropic.com>",
+      "verified_at": "2026-10-12T13:49:15Z"
+    }
+  },
+  "url": "https://api.github.com/repos/morluto/rea/commits/df2c08b546d4f40103e11b8b31dbfc3d41ee687b",
+  "html_url": "https://github.com/morluto/rea/commit/df2c08b546d4f40103e11b8b31dbfc3d41ee687b",
+  "comments_url": "https://api.github.com/repos/morluto/rea/commits/df2c08b546d4f40103e11b8b31dbfc3d41ee687b/comments",
+  "author": {
+    "login": "kaoru0822-kitauji",
+    "id": 208281322,
+    "node_id": "U_kgDODGoe6g",
+    "avatar_url": "https://avatars.githubusercontent.com/u/208281322?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kaoru0822-kitauji",
+    "html_url": "https://github.com/kaoru0822-kitauji",
+    "followers_url": "https://api.github.com/users/kaoru0822-kitauji/followers",
+    "following_url": "https://api.github.com/users/kaoru0822-kitauji/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kaoru0822-kitauji/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kaoru0822-kitauji/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kaoru0822-kitauji/subscriptions",
+    "organizations_url": "https://api.github.com/users/kaoru0822-kitauji/orgs",
+    "repos_url": "https://api.github.com/users/kaoru0822-kitauji/repos",
+    "events_url": "https://api.github.com/users/kaoru0822-kitauji/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kaoru0822-kitauji/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "58fb372071e56da9c5df0e37593ee3f0da6b64bc",
+      "url": "https://api.github.com/repos/morluto/rea/commits/58fb372071e56da9c5df0e37593ee3f0da6b64bc",
+      "html_url": "https://github.com/morluto/rea/commit/58fb372071e56da9c5df0e37593ee3f0da6b64bc"
+    }
+  ],
+  "stats": {
+    "total": 94,
+    "additions": 91,
+    "deletions": 3
+  },
+  "files": [
+    {
+      "sha": "38f5dae5d158049ca8ef1e4f33db7f5a3b39a88a",
+      "filename": "src/composition/jeb.ts",
+      "status": "modified",
+      "additions": 38,
+      "deletions": 3,
+      "changes": 41,
+      "blob_url": "https://github.com/morluto/rea/blob/df2c08b546d4f40103e11b8b31dbfc3d41ee687b/src%2Fcomposition%2Fjeb.ts",
+      "raw_url": "https://github.com/morluto/rea/raw/df2c08b546d4f40103e11b8b31dbfc3d41ee687b/src%2Fcomposition%2Fjeb.ts",
+      "contents_url": "https://api.github.com/repos/morluto/rea/contents/src%2Fcomposition%2Fjeb.ts?ref=df2c08b546d4f40103e11b8b31dbfc3d41ee687b",
+      "patch": "@@ -1,13 +1,48 @@\n import type { JebAnalysisPort } from \"../application/jeb/JebAnalysisPort.js\";\n+import { ConfigurationError } from \"../domain/configurationErrors.js\";\n+import { err } from \"../domain/result.js\";\n import type { JebMcpConnectionFactory } from \"../jeb/JebMcpConnection.js\";\n+import { parseJebMcpEndpoint } from \"../jeb/JebMcpEndpoint.js\";\n import { JebProvider } from \"../jeb/JebProvider.js\";\n \n-/** Construct one JEB provider bound to the caller-selected MCP endpoint. */\n+/**\n+ * Construct one JEB provider bound to the caller-selected MCP endpoint. An\n+ * unusable endpoint makes only JEB unavailable; every other CLI command and\n+ * MCP tool is composed alongside it.\n+ */\n export const createJebAnalysisProvider = (\n   environment: Readonly<Record<string, string | undefined>> = process.env,\n   connectionFactory?: JebMcpConnectionFactory,\n-): JebAnalysisPort =>\n-  new JebProvider({\n+): JebAnalysisPort => {\n+  const endpoint = parseJebMcpEndpoint(environment.REA_JEB_MCP_URL);\n+  if (!endpoint.ok) {\n+    const constraint =\n+      typeof endpoint.error.cause === \"string\"\n+        ? endpoint.error.cause\n+        : endpoint.error.message;\n+    return unconfiguredJebProvider(\n+      new ConfigurationError(\"Invalid REA environment configuration\", {\n+        cause: endpoint.error,\n+        settings: [{ setting: \"REA_JEB_MCP_URL\", constraint }],\n+      }),\n+    );\n+  }\n+  return new JebProvider({\n     environment,\n     ...(connectionFactory === undefined ? {} : { connectionFactory }),\n   });\n+};\n+\n+const unconfiguredJebProvider = (\n+  error: ConfigurationError,\n+): JebAnalysisPort => ({\n+  inspectAvailability: () =>\n+    Promise.resolve({\n+      status: \"unavailable\",\n+      code: \"not_configured\",\n+      reason: `REA_JEB_MCP_URL is invalid: ${error.settings[0]?.constraint ?? error.message}`,\n+      diagnostics: { setting: \"REA_JEB_MCP_URL\" },\n+    }),\n+  close: () => Promise.resolve(),\n+  execute: () => Promise.resolve(err(error)),\n+});"
+    },
+    {
+      "sha": "6e2325c7f4bd0a52798bebede3c06d8e4536ab08",
+      "filename": "tests/boundary/cli/jebCli.test.ts",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/morluto/rea/blob/df2c08b546d4f40103e11b8b31dbfc3d41ee687b/tests%2Fboundary%2Fcli%2FjebCli.test.ts",
+      "raw_url": "https://github.com/morluto/rea/raw/df2c08b546d4f40103e11b8b31dbfc3d41ee687b/tests%2Fboundary%2Fcli%2FjebCli.test.ts",
+      "contents_url": "https://api.github.com/repos/morluto/rea/contents/tests%2Fboundary%2Fcli%2FjebCli.test.ts?ref=df2c08b546d4f40103e11b8b31dbfc3d41ee687b",
+      "patch": "@@ -30,3 +30,14 @@ it(\"validates decompile item input before contacting the engine\", async () => {\n     ],\n   });\n });\n+\n+it(\"reports an invalid endpoint without breaking other commands\", async () => {\n+  const environment = { REA_JEB_MCP_URL: \"http://localhost:8425/mcp\" };\n+  const jeb = await serveCli([\"inspect-jeb-client\", \"--json\"], environment);\n+  expect(JSON.parse(jeb.stdout)).toMatchObject({\n+    code: \"configuration_invalid\",\n+    details: { settings: [{ setting: \"REA_JEB_MCP_URL\" }] },\n+  });\n+  const capabilities = await serveCli([\"capabilities\", \"--json\"], environment);\n+  expect(capabilities.exitCode).toBe(0);\n+});"
+    },
+    {
+      "sha": "44b4827142fb4e4496be57fd35e642911b544f0f",
+      "filename": "tests/boundary/mcp/jebMcp.test.ts",
+      "status": "modified",
+      "additions": 42,
+      "deletions": 0,
+      "changes": 42,
+      "blob_url": "https://github.com/morluto/rea/blob/df2c08b546d4f40103e11b8b31dbfc3d41ee687b/tests%2Fboundary%2Fmcp%2FjebMcp.test.ts",
+      "raw_url": "https://github.com/morluto/rea/raw/df2c08b546d4f40103e11b8b31dbfc3d41ee687b/tests%2Fboundary%2Fmcp%2FjebMcp.test.ts",
+      "contents_url": "https://api.github.com/repos/morluto/rea/contents/tests%2Fboundary%2Fmcp%2FjebMcp.test.ts?ref=df2c08b546d4f40103e11b8b31dbfc3d41ee687b",
+      "patch": "@@ -141,3 +141,45 @@ it(\"preserves JEB provider failure reasons through the MCP boundary\", async () =\n   expect(text).toContain(\"ECONNREFUSED\");\n   expect(text).toContain(\"REA_JEB_MCP_URL\");\n });\n+\n+it(\"keeps the MCP server usable when REA_JEB_MCP_URL is invalid\", async () => {\n+  const session = createTestBinarySession(() => {\n+    throw new Error(\"deep provider must not start\");\n+  });\n+  const server = createServer(\n+    { kind: \"session\", session },\n+    { environment: { REA_JEB_MCP_URL: \"http://localhost:8425/mcp\" } },\n+  );\n+  const client = new Client({ name: \"jeb-invalid-endpoint\", version: \"1\" });\n+  onTestFinished(async () => {\n+    await client.close();\n+    await server.close();\n+    await session.close();\n+  });\n+  const [clientTransport, serverTransport] =\n+    InMemoryTransport.createLinkedPair();\n+  await server.connect(serverTransport);\n+  await client.connect(clientTransport);\n+  expect((await client.listTools()).tools.length).toBeGreaterThan(0);\n+  const failed = await client.callTool({\n+    name: \"inspect_jeb_client\",\n+    arguments: {},\n+  });\n+  expect(failed.isError).toBe(true);\n+  const text = (failed.content ?? [])\n+    .map((block) => (block.type === \"text\" ? block.text : \"\"))\n+    .join(\"\");\n+  expect(JSON.parse(text)).toMatchObject({\n+    error: {\n+      code: \"configuration_invalid\",\n+      details: {\n+        settings: [\n+          {\n+            setting: \"REA_JEB_MCP_URL\",\n+            constraint: expect.stringContaining(\"loopback\"),\n+          },\n+        ],\n+      },\n+    },\n+  });\n+});"
+    }
+  ]
+}

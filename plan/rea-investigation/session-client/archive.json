@@ -1,0 +1,101 @@
+{
+  "requests": [
+    {
+      "file": "001-open.json",
+      "sha256": "26ee285dc1eb70a1bd85e3f90a41baa6808805a6e939757d4c47f0a02b8d7021"
+    },
+    {
+      "file": "002-enum.json",
+      "sha256": "c8415694a541644905aa8190ac4a82114d4b1b214844e3fc81efa940c95828a6"
+    },
+    {
+      "file": "003-curve-key.json",
+      "sha256": "9bf9b9caa19ab24cb90a52cc4d41fc1fa39f038cf4c241502e92876bf73ad038"
+    },
+    {
+      "file": "004-actor.json",
+      "sha256": "57fc655d38f0fed7ebd1ff74da3411228624cfd394180a7280eb8bcfdc61620c"
+    },
+    {
+      "file": "005-playback.json",
+      "sha256": "bc2f710c748746c58952028b6aa3a0ff4510caa2d850bea106bc4eba46a86550"
+    },
+    {
+      "file": "006-key-vtable.json",
+      "sha256": "e8bd3a7c78461f77ddcb7cbcd4dfd7785b55d6913cef28aa0f7fd388d0add811"
+    },
+    {
+      "file": "007-hidden-wrapper.json",
+      "sha256": "04fa693b674a65ad26d15f8ad018d9ae7b38e78fd699d176cdd771f26ca2f7e9"
+    },
+    {
+      "file": "008-levelsequence-reg.json",
+      "sha256": "a8891f244f11902be4fc4f6b373255f6c8775a5fc2a6d7c61b81acc5871821d5"
+    },
+    {
+      "file": "009-key-ops.json",
+      "sha256": "20965af92757c0df54780c69bc85395603a35862d4c650ca8d02b74b65df98aa"
+    },
+    {
+      "file": "010-curve-search.json",
+      "sha256": "9f08617162ea9a715ccd981685edab8fded5977205656ef7e1e9aaa9a7fb99b0"
+    },
+    {
+      "file": "011-request.json",
+      "sha256": "ff46e7d8ed728f207aae68f768c4d8a60c12583c5242869dac08ae75a4d2c8a6"
+    },
+    {
+      "file": "012-request.json",
+      "sha256": "cb5176ffe428264801b76671b229cd73bdec1e18507fda01d25f27f58d70b867"
+    },
+    {
+      "file": "013-request.json",
+      "sha256": "0a549fdc55e4cb929825a4d76491a41f01567191b904e6ffb81c187ffaa8ed32"
+    },
+    {
+      "file": "014-request.json",
+      "sha256": "236cd0205a349f8f17d50e8747e8b30cca4689ca1f6190d203deb55ab3829415"
+    },
+    {
+      "file": "015-request.json",
+      "sha256": "6be395bb16aa1a9badcf87de2c749256ad3bda4b2796e9218b74fe3c664bcf3d"
+    },
+    {
+      "file": "016-request.json",
+      "sha256": "d2d927cf2862f64cfddec365f396d4408942f6e40cdfe76ebacc28b96d65260d"
+    },
+    {
+      "file": "017-request.json",
+      "sha256": "fdc27b5a36e1d076a8edd4e335bc6abdffd83ba3ca975d803e5af6c69beed872"
+    },
+    {
+      "file": "018-request.json",
+      "sha256": "6b848c71969254a44d4fb89c3d2a8cc8923be6b441cd61bb15de8b1d2e55efe3"
+    },
+    {
+      "file": "019-request.json",
+      "sha256": "39b9c45218dca550ec86ac3ffc06dcf4ed02bafe53bbd30b3b78e5158718214b"
+    },
+    {
+      "file": "020-request.json",
+      "sha256": "069a8649ac54ad46d2e9a9eaf9b1bf4c7c88e20c5bdc611e17529d0ccb155ff9"
+    },
+    {
+      "file": "021-request.json",
+      "sha256": "a6899ead097d603750d7325aac2aa043461c84de92cedd9889e2d227ded4fe0b"
+    },
+    {
+      "file": "022-request.json",
+      "sha256": "db3aa53e6b4721437437b35678deab3dbe757ebdcbb72db9cdfb5131e91f419c"
+    },
+    {
+      "file": "023-request.json",
+      "sha256": "2e7545b3fa5b8febb2adf6aaeeabdbfd3dcc77f1323b4fa9a4dd35c5160fb567"
+    },
+    {
+      "file": "024-request.json",
+      "sha256": "2d5f7bc5f627c7ee0b877fb8564743092e45e3db22c061c2e590fa081e707b0d"
+    }
+  ],
+  "note": "Archive of completed session; do not replay against existing result files. All native JVMs exited after close_binary in finally."
+}

@@ -1,0 +1,12 @@
+{
+  "version": "0.4.2",
+  "ctest_passed": 7,
+  "python_passed": 30,
+  "native_windows_backend": "wasapi",
+  "physical_headset_validated": false,
+  "audio_integrated": true,
+  "beat_analysis_implemented": false,
+  "recovered_meshes_integrated": false,
+  "full_fidelity_complete": false,
+  "package_sha256": "0d266e020be3f290eddc1ff4bacf6aa1bd9eb05042a6c326244201b15b9f5593"
+}

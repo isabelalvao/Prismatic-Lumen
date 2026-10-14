@@ -1,0 +1,33 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/DemoRoom/Textures/T_RoomTiles_N.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 23 Exports: 1 Imports: 2 Game: 10000D0
+Export "T_RoomTiles_N" was found in package "/Game/DemoRoom/Textures/T_RoomTiles_N.uasset"
+Found 1 object(s)
+Loading Texture2D T_RoomTiles_N from package /Game/DemoRoom/Textures/T_RoomTiles_N.uasset
+Loaded in 0.0 sec, 45 allocs, 5.36 MBytes serialized in 12 calls.
+
+Object info:
+============
+ClassName: Texture2D ObjectName: T_RoomTiles_N
+    SizeX = 2048
+    SizeY = 2048
+    Format = PF_BC5 (24)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    ImportedSize = { X=2048, Y=2048 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Normalmap (1)
+    Source =
+    {
+        SizeX = 0
+        SizeY = 0
+        NumSlices = 0
+        NumMips = 0
+        bPNGCompressed = false
+        Format = TSF_Invalid (0)
+    }

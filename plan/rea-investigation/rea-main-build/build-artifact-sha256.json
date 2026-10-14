@@ -1,0 +1,26 @@
+[
+  {
+    "path": "package.json",
+    "sha256": "8254afb987dffdddfc651d6286244ffcd37eecdecdf51c3af3f190c4d089c5e2"
+  },
+  {
+    "path": "package-lock.json",
+    "sha256": "0a55042141899a442a39dce3d49755c65a861f86d1930bd4f9c6d89cd53f5eba"
+  },
+  {
+    "path": "scripts/rea.mjs",
+    "sha256": "25ef01e0ed78abf3786cc44684f751ac0d9c45897be210c6af2e26c7aa656eee"
+  },
+  {
+    "path": "dist/mcp/main.js",
+    "sha256": "60668246015d17c6093ea1d13f965762092172318b1efd76b550f08e7e1a4b51"
+  },
+  {
+    "path": "dist/cli-runtime/cli.js",
+    "sha256": "67736e323ca7457655a368019d0981fb6eedf9e16e6fd01f1da02e5dbd1e1700"
+  },
+  {
+    "path": "bridge/ghidra/ReaGhidraAnalysisOptions.java",
+    "sha256": "14200fb685d88c91b38f955ad360fe2e11b9a83a53cc69f87fd229c2e784e936"
+  }
+]

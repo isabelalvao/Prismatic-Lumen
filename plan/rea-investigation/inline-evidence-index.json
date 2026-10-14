@@ -1,0 +1,1611 @@
+{
+  "origin": "Local index of complete inline MCP Evidence; not REA export_evidence_bundle output",
+  "records": [
+    {
+      "file": "native-actor-minimal.json",
+      "sha256": "8705daaf7be83ecd3e38b426ba9e293c58511dc2be549a8bac0aa515ca3a09c2",
+      "evidence_id": "ev_23c380fae87c2730622c8716833582676993560a2c9aa02ccc0779cc2071d7c0",
+      "operation": "analyze_function",
+      "analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "pe",
+          "executable_role": "application",
+          "managed": false,
+          "native_aot_metadata": {
+            "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+            "source_bytes": 134217728,
+            "work_units": 67108864,
+            "working_memory_bytes": 67108864,
+            "report_bytes": 4194304
+          },
+          "architecture": "x86_64",
+          "available_architectures": [
+            "x86_64"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "call_relationship_coverage": "resolved-call-reference-diagnostics-v1",
+          "string_inventory_evidence": "defined-data-coverage-v1",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "instruction_references": "exact-address-incoming-v1",
+          "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+          "no_return_repair": "disabled-windows-p0",
+          "process_launch": "official-headless-script-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "auto-from-header",
+          "language_id": "auto-from-header",
+          "compiler_spec_id": "auto-default",
+          "analyzer_preset": "ghidra-default+disabled:Disassemble Entry Points,Reference,Scalar Operand References,WindowsResourceReference,Stack,Function ID,Decompiler Switch Analysis,Non-Returning Functions - Discovered",
+          "analysis_options": {
+            "disabled_analyzers": [
+              "Disassemble Entry Points",
+              "Reference",
+              "Scalar Operand References",
+              "WindowsResourceReference",
+              "Stack",
+              "Function ID",
+              "Decompiler Switch Analysis",
+              "Non-Returning Functions - Discovered"
+            ]
+          },
+          "analysis_seeds": {
+            "format": "rea-ghidra-seeds-v1",
+            "path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "configured_path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "sha256": "f2b15a74c6fdacffab40a0bece9999dc1469edba0e4fed76d1488558d3e05753",
+            "entries": {
+              "function": 4,
+              "code": 0,
+              "label": 0
+            }
+          }
+        },
+        "digest": "7168c70d6fdd7c9a8a4f1f27eff4d611637d12bbcb5fec2a765beabd1458a7c2"
+      }
+    },
+    {
+      "file": "native-curve-key-minimal.json",
+      "sha256": "c912eccb326556d0ae58b176bad187fa43ef4e275e221be8691656fddcfee567",
+      "evidence_id": "ev_9bfa06c2e511b6d3db98eda40539808d004e9f9fc204a35be3f399cb6555e966",
+      "operation": "analyze_function",
+      "analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "pe",
+          "executable_role": "application",
+          "managed": false,
+          "native_aot_metadata": {
+            "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+            "source_bytes": 134217728,
+            "work_units": 67108864,
+            "working_memory_bytes": 67108864,
+            "report_bytes": 4194304
+          },
+          "architecture": "x86_64",
+          "available_architectures": [
+            "x86_64"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "call_relationship_coverage": "resolved-call-reference-diagnostics-v1",
+          "string_inventory_evidence": "defined-data-coverage-v1",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "instruction_references": "exact-address-incoming-v1",
+          "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+          "no_return_repair": "disabled-windows-p0",
+          "process_launch": "official-headless-script-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "auto-from-header",
+          "language_id": "auto-from-header",
+          "compiler_spec_id": "auto-default",
+          "analyzer_preset": "ghidra-default+disabled:Disassemble Entry Points,Reference,Scalar Operand References,WindowsResourceReference,Stack,Function ID,Decompiler Switch Analysis,Non-Returning Functions - Discovered",
+          "analysis_options": {
+            "disabled_analyzers": [
+              "Disassemble Entry Points",
+              "Reference",
+              "Scalar Operand References",
+              "WindowsResourceReference",
+              "Stack",
+              "Function ID",
+              "Decompiler Switch Analysis",
+              "Non-Returning Functions - Discovered"
+            ]
+          },
+          "analysis_seeds": {
+            "format": "rea-ghidra-seeds-v1",
+            "path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "configured_path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "sha256": "f2b15a74c6fdacffab40a0bece9999dc1469edba0e4fed76d1488558d3e05753",
+            "entries": {
+              "function": 4,
+              "code": 0,
+              "label": 0
+            }
+          }
+        },
+        "digest": "7168c70d6fdd7c9a8a4f1f27eff4d611637d12bbcb5fec2a765beabd1458a7c2"
+      }
+    },
+    {
+      "file": "native-curve-playback-search.json",
+      "sha256": "0401a250e08057f888cbd4cff2d98462c6ba5953364e73f1fa1aa081bb3ef535",
+      "evidence_id": "ev_5f2f9d9b39dbb9f043e8be68bc3de6467c37b469b6703cb9c7787b1137c60916",
+      "operation": "search_strings",
+      "analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "pe",
+          "executable_role": "application",
+          "managed": false,
+          "native_aot_metadata": {
+            "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+            "source_bytes": 134217728,
+            "work_units": 67108864,
+            "working_memory_bytes": 67108864,
+            "report_bytes": 4194304
+          },
+          "architecture": "x86_64",
+          "available_architectures": [
+            "x86_64"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "call_relationship_coverage": "resolved-call-reference-diagnostics-v1",
+          "string_inventory_evidence": "defined-data-coverage-v1",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "instruction_references": "exact-address-incoming-v1",
+          "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+          "no_return_repair": "disabled-windows-p0",
+          "process_launch": "official-headless-script-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "auto-from-header",
+          "language_id": "auto-from-header",
+          "compiler_spec_id": "auto-default",
+          "analyzer_preset": "ghidra-default+disabled:Disassemble Entry Points,Reference,Scalar Operand References,WindowsResourceReference,Stack,Function ID,Decompiler Switch Analysis,Non-Returning Functions - Discovered",
+          "analysis_options": {
+            "disabled_analyzers": [
+              "Disassemble Entry Points",
+              "Reference",
+              "Scalar Operand References",
+              "WindowsResourceReference",
+              "Stack",
+              "Function ID",
+              "Decompiler Switch Analysis",
+              "Non-Returning Functions - Discovered"
+            ]
+          },
+          "analysis_seeds": {
+            "format": "rea-ghidra-seeds-v1",
+            "path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "configured_path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "sha256": "f2b15a74c6fdacffab40a0bece9999dc1469edba0e4fed76d1488558d3e05753",
+            "entries": {
+              "function": 4,
+              "code": 0,
+              "label": 0
+            }
+          }
+        },
+        "digest": "7168c70d6fdd7c9a8a4f1f27eff4d611637d12bbcb5fec2a765beabd1458a7c2"
+      }
+    },
+    {
+      "file": "native-curvefloat-eval.json",
+      "sha256": "04efb9d39c95681a4786a33af76971faae04ed0328156a81393834568183393f",
+      "evidence_id": "ev_43bd3e8d4e8ad416e0bfa7167b18c374d86c72f5d945b78fa96b4d19e0a431ab",
+      "operation": "analyze_function",
+      "analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "pe",
+          "executable_role": "application",
+          "managed": false,
+          "native_aot_metadata": {
+            "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+            "source_bytes": 134217728,
+            "work_units": 67108864,
+            "working_memory_bytes": 67108864,
+            "report_bytes": 4194304
+          },
+          "architecture": "x86_64",
+          "available_architectures": [
+            "x86_64"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "call_relationship_coverage": "resolved-call-reference-diagnostics-v1",
+          "string_inventory_evidence": "defined-data-coverage-v1",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "instruction_references": "exact-address-incoming-v1",
+          "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+          "no_return_repair": "disabled-windows-p0",
+          "process_launch": "official-headless-script-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "auto-from-header",
+          "language_id": "auto-from-header",
+          "compiler_spec_id": "auto-default",
+          "analyzer_preset": "ghidra-default+disabled:Disassemble Entry Points,Reference,Scalar Operand References,WindowsResourceReference,Stack,Function ID,Decompiler Switch Analysis,Non-Returning Functions - Discovered",
+          "analysis_options": {
+            "disabled_analyzers": [
+              "Disassemble Entry Points",
+              "Reference",
+              "Scalar Operand References",
+              "WindowsResourceReference",
+              "Stack",
+              "Function ID",
+              "Decompiler Switch Analysis",
+              "Non-Returning Functions - Discovered"
+            ]
+          },
+          "analysis_seeds": {
+            "format": "rea-ghidra-seeds-v1",
+            "path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "configured_path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "sha256": "f2b15a74c6fdacffab40a0bece9999dc1469edba0e4fed76d1488558d3e05753",
+            "entries": {
+              "function": 4,
+              "code": 0,
+              "label": 0
+            }
+          }
+        },
+        "digest": "7168c70d6fdd7c9a8a4f1f27eff4d611637d12bbcb5fec2a765beabd1458a7c2"
+      }
+    },
+    {
+      "file": "native-enum-minimal.json",
+      "sha256": "e510fc6f66e559dc9574181ae06d96d13203a69db9e490c1ac3518347a5f5bb3",
+      "evidence_id": "ev_5ceb47aed83db8153b4fc920b6f3172d724b328396c6c152b6ba1c2e0ace1fe7",
+      "operation": "analyze_function",
+      "analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "pe",
+          "executable_role": "application",
+          "managed": false,
+          "native_aot_metadata": {
+            "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+            "source_bytes": 134217728,
+            "work_units": 67108864,
+            "working_memory_bytes": 67108864,
+            "report_bytes": 4194304
+          },
+          "architecture": "x86_64",
+          "available_architectures": [
+            "x86_64"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "call_relationship_coverage": "resolved-call-reference-diagnostics-v1",
+          "string_inventory_evidence": "defined-data-coverage-v1",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "instruction_references": "exact-address-incoming-v1",
+          "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+          "no_return_repair": "disabled-windows-p0",
+          "process_launch": "official-headless-script-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "auto-from-header",
+          "language_id": "auto-from-header",
+          "compiler_spec_id": "auto-default",
+          "analyzer_preset": "ghidra-default+disabled:Disassemble Entry Points,Reference,Scalar Operand References,WindowsResourceReference,Stack,Function ID,Decompiler Switch Analysis,Non-Returning Functions - Discovered",
+          "analysis_options": {
+            "disabled_analyzers": [
+              "Disassemble Entry Points",
+              "Reference",
+              "Scalar Operand References",
+              "WindowsResourceReference",
+              "Stack",
+              "Function ID",
+              "Decompiler Switch Analysis",
+              "Non-Returning Functions - Discovered"
+            ]
+          },
+          "analysis_seeds": {
+            "format": "rea-ghidra-seeds-v1",
+            "path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "configured_path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "sha256": "f2b15a74c6fdacffab40a0bece9999dc1469edba0e4fed76d1488558d3e05753",
+            "entries": {
+              "function": 4,
+              "code": 0,
+              "label": 0
+            }
+          }
+        },
+        "digest": "7168c70d6fdd7c9a8a4f1f27eff4d611637d12bbcb5fec2a765beabd1458a7c2"
+      }
+    },
+    {
+      "file": "native-float-registration.json",
+      "sha256": "fd14a3b9c9aad0f956183a33baeb65f3261eadef70f9de55ff163a14ddac52bb",
+      "evidence_id": "ev_3b1cd16ab188a244c99296dd12f1ecec808865f464952e305d5fd67b1108a9d8",
+      "operation": "analyze_function",
+      "analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "pe",
+          "executable_role": "application",
+          "managed": false,
+          "native_aot_metadata": {
+            "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+            "source_bytes": 134217728,
+            "work_units": 67108864,
+            "working_memory_bytes": 67108864,
+            "report_bytes": 4194304
+          },
+          "architecture": "x86_64",
+          "available_architectures": [
+            "x86_64"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "call_relationship_coverage": "resolved-call-reference-diagnostics-v1",
+          "string_inventory_evidence": "defined-data-coverage-v1",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "instruction_references": "exact-address-incoming-v1",
+          "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+          "no_return_repair": "disabled-windows-p0",
+          "process_launch": "official-headless-script-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "auto-from-header",
+          "language_id": "auto-from-header",
+          "compiler_spec_id": "auto-default",
+          "analyzer_preset": "ghidra-default+disabled:Disassemble Entry Points,Reference,Scalar Operand References,WindowsResourceReference,Stack,Function ID,Decompiler Switch Analysis,Non-Returning Functions - Discovered",
+          "analysis_options": {
+            "disabled_analyzers": [
+              "Disassemble Entry Points",
+              "Reference",
+              "Scalar Operand References",
+              "WindowsResourceReference",
+              "Stack",
+              "Function ID",
+              "Decompiler Switch Analysis",
+              "Non-Returning Functions - Discovered"
+            ]
+          },
+          "analysis_seeds": {
+            "format": "rea-ghidra-seeds-v1",
+            "path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "configured_path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "sha256": "f2b15a74c6fdacffab40a0bece9999dc1469edba0e4fed76d1488558d3e05753",
+            "entries": {
+              "function": 4,
+              "code": 0,
+              "label": 0
+            }
+          }
+        },
+        "digest": "7168c70d6fdd7c9a8a4f1f27eff4d611637d12bbcb5fec2a765beabd1458a7c2"
+      }
+    },
+    {
+      "file": "native-floatvalue-wrapper.json",
+      "sha256": "c8b9983e6dde455b80b422b2eb5b4a24847620aeea20e7358729e2a4d1921115",
+      "evidence_id": "ev_0180ea8dc43beaea1cf92dc4530ca11c1bbc886be4c66da3f5472bf009a92010",
+      "operation": "analyze_function",
+      "analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "pe",
+          "executable_role": "application",
+          "managed": false,
+          "native_aot_metadata": {
+            "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+            "source_bytes": 134217728,
+            "work_units": 67108864,
+            "working_memory_bytes": 67108864,
+            "report_bytes": 4194304
+          },
+          "architecture": "x86_64",
+          "available_architectures": [
+            "x86_64"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "call_relationship_coverage": "resolved-call-reference-diagnostics-v1",
+          "string_inventory_evidence": "defined-data-coverage-v1",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "instruction_references": "exact-address-incoming-v1",
+          "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+          "no_return_repair": "disabled-windows-p0",
+          "process_launch": "official-headless-script-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "auto-from-header",
+          "language_id": "auto-from-header",
+          "compiler_spec_id": "auto-default",
+          "analyzer_preset": "ghidra-default+disabled:Disassemble Entry Points,Reference,Scalar Operand References,WindowsResourceReference,Stack,Function ID,Decompiler Switch Analysis,Non-Returning Functions - Discovered",
+          "analysis_options": {
+            "disabled_analyzers": [
+              "Disassemble Entry Points",
+              "Reference",
+              "Scalar Operand References",
+              "WindowsResourceReference",
+              "Stack",
+              "Function ID",
+              "Decompiler Switch Analysis",
+              "Non-Returning Functions - Discovered"
+            ]
+          },
+          "analysis_seeds": {
+            "format": "rea-ghidra-seeds-v1",
+            "path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "configured_path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "sha256": "f2b15a74c6fdacffab40a0bece9999dc1469edba0e4fed76d1488558d3e05753",
+            "entries": {
+              "function": 4,
+              "code": 0,
+              "label": 0
+            }
+          }
+        },
+        "digest": "7168c70d6fdd7c9a8a4f1f27eff4d611637d12bbcb5fec2a765beabd1458a7c2"
+      }
+    },
+    {
+      "file": "native-floatvalue-xrefs.json",
+      "sha256": "fddfbdbf01d50e0eb3a957b9c9df99ff3933348d552c1c3517041c38c297c84f",
+      "evidence_id": "ev_c6289c2f0386989dbb8f45e1f1e44eb2d226ceea710887a526ada9c1774b7fb9",
+      "operation": "xrefs",
+      "analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "pe",
+          "executable_role": "application",
+          "managed": false,
+          "native_aot_metadata": {
+            "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+            "source_bytes": 134217728,
+            "work_units": 67108864,
+            "working_memory_bytes": 67108864,
+            "report_bytes": 4194304
+          },
+          "architecture": "x86_64",
+          "available_architectures": [
+            "x86_64"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "call_relationship_coverage": "resolved-call-reference-diagnostics-v1",
+          "string_inventory_evidence": "defined-data-coverage-v1",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "instruction_references": "exact-address-incoming-v1",
+          "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+          "no_return_repair": "disabled-windows-p0",
+          "process_launch": "official-headless-script-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "auto-from-header",
+          "language_id": "auto-from-header",
+          "compiler_spec_id": "auto-default",
+          "analyzer_preset": "ghidra-default+disabled:Disassemble Entry Points,Reference,Scalar Operand References,WindowsResourceReference,Stack,Function ID,Decompiler Switch Analysis,Non-Returning Functions - Discovered",
+          "analysis_options": {
+            "disabled_analyzers": [
+              "Disassemble Entry Points",
+              "Reference",
+              "Scalar Operand References",
+              "WindowsResourceReference",
+              "Stack",
+              "Function ID",
+              "Decompiler Switch Analysis",
+              "Non-Returning Functions - Discovered"
+            ]
+          },
+          "analysis_seeds": {
+            "format": "rea-ghidra-seeds-v1",
+            "path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "configured_path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "sha256": "f2b15a74c6fdacffab40a0bece9999dc1469edba0e4fed76d1488558d3e05753",
+            "entries": {
+              "function": 4,
+              "code": 0,
+              "label": 0
+            }
+          }
+        },
+        "digest": "7168c70d6fdd7c9a8a4f1f27eff4d611637d12bbcb5fec2a765beabd1458a7c2"
+      }
+    },
+    {
+      "file": "native-hidden-wrapper.json",
+      "sha256": "26c8160cbdab3bd60a533505d115d8e4cee3ef69c88b0a52baf5bed9e438599e",
+      "evidence_id": "ev_2b4e9268f829df0d8935fd26acd571e1eda274a1c096699de17be18c14305dd0",
+      "operation": "analyze_function",
+      "analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "pe",
+          "executable_role": "application",
+          "managed": false,
+          "native_aot_metadata": {
+            "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+            "source_bytes": 134217728,
+            "work_units": 67108864,
+            "working_memory_bytes": 67108864,
+            "report_bytes": 4194304
+          },
+          "architecture": "x86_64",
+          "available_architectures": [
+            "x86_64"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "call_relationship_coverage": "resolved-call-reference-diagnostics-v1",
+          "string_inventory_evidence": "defined-data-coverage-v1",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "instruction_references": "exact-address-incoming-v1",
+          "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+          "no_return_repair": "disabled-windows-p0",
+          "process_launch": "official-headless-script-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "auto-from-header",
+          "language_id": "auto-from-header",
+          "compiler_spec_id": "auto-default",
+          "analyzer_preset": "ghidra-default+disabled:Disassemble Entry Points,Reference,Scalar Operand References,WindowsResourceReference,Stack,Function ID,Decompiler Switch Analysis,Non-Returning Functions - Discovered",
+          "analysis_options": {
+            "disabled_analyzers": [
+              "Disassemble Entry Points",
+              "Reference",
+              "Scalar Operand References",
+              "WindowsResourceReference",
+              "Stack",
+              "Function ID",
+              "Decompiler Switch Analysis",
+              "Non-Returning Functions - Discovered"
+            ]
+          },
+          "analysis_seeds": {
+            "format": "rea-ghidra-seeds-v1",
+            "path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "configured_path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "sha256": "f2b15a74c6fdacffab40a0bece9999dc1469edba0e4fed76d1488558d3e05753",
+            "entries": {
+              "function": 4,
+              "code": 0,
+              "label": 0
+            }
+          }
+        },
+        "digest": "7168c70d6fdd7c9a8a4f1f27eff4d611637d12bbcb5fec2a765beabd1458a7c2"
+      }
+    },
+    {
+      "file": "native-key-ops.json",
+      "sha256": "4b8cbd796ed204c2e6c3c841d974699e1f39cb8d7883da77ea7e7a16dabe5e0a",
+      "evidence_id": "ev_0385916c0c6db95bb2ab271416700feab8245c040232b7a17a3d9f8ec6959f5b",
+      "operation": "analyze_function",
+      "analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "pe",
+          "executable_role": "application",
+          "managed": false,
+          "native_aot_metadata": {
+            "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+            "source_bytes": 134217728,
+            "work_units": 67108864,
+            "working_memory_bytes": 67108864,
+            "report_bytes": 4194304
+          },
+          "architecture": "x86_64",
+          "available_architectures": [
+            "x86_64"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "call_relationship_coverage": "resolved-call-reference-diagnostics-v1",
+          "string_inventory_evidence": "defined-data-coverage-v1",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "instruction_references": "exact-address-incoming-v1",
+          "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+          "no_return_repair": "disabled-windows-p0",
+          "process_launch": "official-headless-script-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "auto-from-header",
+          "language_id": "auto-from-header",
+          "compiler_spec_id": "auto-default",
+          "analyzer_preset": "ghidra-default+disabled:Disassemble Entry Points,Reference,Scalar Operand References,WindowsResourceReference,Stack,Function ID,Decompiler Switch Analysis,Non-Returning Functions - Discovered",
+          "analysis_options": {
+            "disabled_analyzers": [
+              "Disassemble Entry Points",
+              "Reference",
+              "Scalar Operand References",
+              "WindowsResourceReference",
+              "Stack",
+              "Function ID",
+              "Decompiler Switch Analysis",
+              "Non-Returning Functions - Discovered"
+            ]
+          },
+          "analysis_seeds": {
+            "format": "rea-ghidra-seeds-v1",
+            "path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "configured_path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "sha256": "f2b15a74c6fdacffab40a0bece9999dc1469edba0e4fed76d1488558d3e05753",
+            "entries": {
+              "function": 4,
+              "code": 0,
+              "label": 0
+            }
+          }
+        },
+        "digest": "7168c70d6fdd7c9a8a4f1f27eff4d611637d12bbcb5fec2a765beabd1458a7c2"
+      }
+    },
+    {
+      "file": "native-key-serialize.json",
+      "sha256": "dacba55c902ff22d17dfa3c9656df566d1b436ec96b7d9054ffd1d21dbaa38c3",
+      "evidence_id": "ev_813ddb47fc69ac0628697738fd5dd08d0c0c8679ce925dbef70ef68fc8522961",
+      "operation": "analyze_function",
+      "analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "pe",
+          "executable_role": "application",
+          "managed": false,
+          "native_aot_metadata": {
+            "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+            "source_bytes": 134217728,
+            "work_units": 67108864,
+            "working_memory_bytes": 67108864,
+            "report_bytes": 4194304
+          },
+          "architecture": "x86_64",
+          "available_architectures": [
+            "x86_64"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "call_relationship_coverage": "resolved-call-reference-diagnostics-v1",
+          "string_inventory_evidence": "defined-data-coverage-v1",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "instruction_references": "exact-address-incoming-v1",
+          "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+          "no_return_repair": "disabled-windows-p0",
+          "process_launch": "official-headless-script-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "auto-from-header",
+          "language_id": "auto-from-header",
+          "compiler_spec_id": "auto-default",
+          "analyzer_preset": "ghidra-default+disabled:Disassemble Entry Points,Reference,Scalar Operand References,WindowsResourceReference,Stack,Function ID,Decompiler Switch Analysis,Non-Returning Functions - Discovered",
+          "analysis_options": {
+            "disabled_analyzers": [
+              "Disassemble Entry Points",
+              "Reference",
+              "Scalar Operand References",
+              "WindowsResourceReference",
+              "Stack",
+              "Function ID",
+              "Decompiler Switch Analysis",
+              "Non-Returning Functions - Discovered"
+            ]
+          },
+          "analysis_seeds": {
+            "format": "rea-ghidra-seeds-v1",
+            "path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "configured_path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "sha256": "f2b15a74c6fdacffab40a0bece9999dc1469edba0e4fed76d1488558d3e05753",
+            "entries": {
+              "function": 4,
+              "code": 0,
+              "label": 0
+            }
+          }
+        },
+        "digest": "7168c70d6fdd7c9a8a4f1f27eff4d611637d12bbcb5fec2a765beabd1458a7c2"
+      }
+    },
+    {
+      "file": "native-key-vtable.json",
+      "sha256": "decc9bf33bb91fdf35e55e694e575e5c3328bbfd283ea8d822e67f773a7e5f1a",
+      "evidence_id": "ev_c59eb4f8fea3c5dfd33f220b3297e847a91a1b4b1c2bafd06788ca9858cabefe",
+      "operation": "read_bytes",
+      "analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "pe",
+          "executable_role": "application",
+          "managed": false,
+          "native_aot_metadata": {
+            "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+            "source_bytes": 134217728,
+            "work_units": 67108864,
+            "working_memory_bytes": 67108864,
+            "report_bytes": 4194304
+          },
+          "architecture": "x86_64",
+          "available_architectures": [
+            "x86_64"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "call_relationship_coverage": "resolved-call-reference-diagnostics-v1",
+          "string_inventory_evidence": "defined-data-coverage-v1",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "instruction_references": "exact-address-incoming-v1",
+          "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+          "no_return_repair": "disabled-windows-p0",
+          "process_launch": "official-headless-script-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "auto-from-header",
+          "language_id": "auto-from-header",
+          "compiler_spec_id": "auto-default",
+          "analyzer_preset": "ghidra-default+disabled:Disassemble Entry Points,Reference,Scalar Operand References,WindowsResourceReference,Stack,Function ID,Decompiler Switch Analysis,Non-Returning Functions - Discovered",
+          "analysis_options": {
+            "disabled_analyzers": [
+              "Disassemble Entry Points",
+              "Reference",
+              "Scalar Operand References",
+              "WindowsResourceReference",
+              "Stack",
+              "Function ID",
+              "Decompiler Switch Analysis",
+              "Non-Returning Functions - Discovered"
+            ]
+          },
+          "analysis_seeds": {
+            "format": "rea-ghidra-seeds-v1",
+            "path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "configured_path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "sha256": "f2b15a74c6fdacffab40a0bece9999dc1469edba0e4fed76d1488558d3e05753",
+            "entries": {
+              "function": 4,
+              "code": 0,
+              "label": 0
+            }
+          }
+        },
+        "digest": "7168c70d6fdd7c9a8a4f1f27eff4d611637d12bbcb5fec2a765beabd1458a7c2"
+      }
+    },
+    {
+      "file": "native-levelsequence-native-registration.json",
+      "sha256": "eea67a251729ea658c4baaf90e420a8c37d8e66112dbb38c697628762c431b5b",
+      "evidence_id": "ev_be69448288e1da7351fef7fd28a14e501f0c3d36715d2eddfd87c359e28ff215",
+      "operation": "analyze_function",
+      "analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "pe",
+          "executable_role": "application",
+          "managed": false,
+          "native_aot_metadata": {
+            "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+            "source_bytes": 134217728,
+            "work_units": 67108864,
+            "working_memory_bytes": 67108864,
+            "report_bytes": 4194304
+          },
+          "architecture": "x86_64",
+          "available_architectures": [
+            "x86_64"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "call_relationship_coverage": "resolved-call-reference-diagnostics-v1",
+          "string_inventory_evidence": "defined-data-coverage-v1",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "instruction_references": "exact-address-incoming-v1",
+          "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+          "no_return_repair": "disabled-windows-p0",
+          "process_launch": "official-headless-script-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "auto-from-header",
+          "language_id": "auto-from-header",
+          "compiler_spec_id": "auto-default",
+          "analyzer_preset": "ghidra-default+disabled:Disassemble Entry Points,Reference,Scalar Operand References,WindowsResourceReference,Stack,Function ID,Decompiler Switch Analysis,Non-Returning Functions - Discovered",
+          "analysis_options": {
+            "disabled_analyzers": [
+              "Disassemble Entry Points",
+              "Reference",
+              "Scalar Operand References",
+              "WindowsResourceReference",
+              "Stack",
+              "Function ID",
+              "Decompiler Switch Analysis",
+              "Non-Returning Functions - Discovered"
+            ]
+          },
+          "analysis_seeds": {
+            "format": "rea-ghidra-seeds-v1",
+            "path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "configured_path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "sha256": "f2b15a74c6fdacffab40a0bece9999dc1469edba0e4fed76d1488558d3e05753",
+            "entries": {
+              "function": 4,
+              "code": 0,
+              "label": 0
+            }
+          }
+        },
+        "digest": "7168c70d6fdd7c9a8a4f1f27eff4d611637d12bbcb5fec2a765beabd1458a7c2"
+      }
+    },
+    {
+      "file": "native-levelsequence-playback-wrapper.json",
+      "sha256": "4de781ae03ac4af3edd6cb6bbcbc3e0acbbf01174bfcbf648299dffae041a08a",
+      "evidence_id": "ev_aaac33b186a2d0e9022144d37942af9eba8b8b07fef8a570a591640f0caf1b18",
+      "operation": "analyze_function",
+      "analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "pe",
+          "executable_role": "application",
+          "managed": false,
+          "native_aot_metadata": {
+            "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+            "source_bytes": 134217728,
+            "work_units": 67108864,
+            "working_memory_bytes": 67108864,
+            "report_bytes": 4194304
+          },
+          "architecture": "x86_64",
+          "available_architectures": [
+            "x86_64"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "call_relationship_coverage": "resolved-call-reference-diagnostics-v1",
+          "string_inventory_evidence": "defined-data-coverage-v1",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "instruction_references": "exact-address-incoming-v1",
+          "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+          "no_return_repair": "disabled-windows-p0",
+          "process_launch": "official-headless-script-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "auto-from-header",
+          "language_id": "auto-from-header",
+          "compiler_spec_id": "auto-default",
+          "analyzer_preset": "ghidra-default+disabled:Disassemble Entry Points,Reference,Scalar Operand References,WindowsResourceReference,Stack,Function ID,Decompiler Switch Analysis,Non-Returning Functions - Discovered",
+          "analysis_options": {
+            "disabled_analyzers": [
+              "Disassemble Entry Points",
+              "Reference",
+              "Scalar Operand References",
+              "WindowsResourceReference",
+              "Stack",
+              "Function ID",
+              "Decompiler Switch Analysis",
+              "Non-Returning Functions - Discovered"
+            ]
+          },
+          "analysis_seeds": {
+            "format": "rea-ghidra-seeds-v1",
+            "path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "configured_path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "sha256": "f2b15a74c6fdacffab40a0bece9999dc1469edba0e4fed76d1488558d3e05753",
+            "entries": {
+              "function": 4,
+              "code": 0,
+              "label": 0
+            }
+          }
+        },
+        "digest": "7168c70d6fdd7c9a8a4f1f27eff4d611637d12bbcb5fec2a765beabd1458a7c2"
+      }
+    },
+    {
+      "file": "native-levelsequence-playback.json",
+      "sha256": "8477d868b1f07503f1f6fa3bbc201db95de1dd9a6a760d42a32f0b94275a8f37",
+      "evidence_id": "ev_ff3410721b80b2d5f19774bfc44deed586e9238ce6d964411a7bc4def8325e30",
+      "operation": "analyze_function",
+      "analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "pe",
+          "executable_role": "application",
+          "managed": false,
+          "native_aot_metadata": {
+            "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+            "source_bytes": 134217728,
+            "work_units": 67108864,
+            "working_memory_bytes": 67108864,
+            "report_bytes": 4194304
+          },
+          "architecture": "x86_64",
+          "available_architectures": [
+            "x86_64"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "call_relationship_coverage": "resolved-call-reference-diagnostics-v1",
+          "string_inventory_evidence": "defined-data-coverage-v1",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "instruction_references": "exact-address-incoming-v1",
+          "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+          "no_return_repair": "disabled-windows-p0",
+          "process_launch": "official-headless-script-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "auto-from-header",
+          "language_id": "auto-from-header",
+          "compiler_spec_id": "auto-default",
+          "analyzer_preset": "ghidra-default+disabled:Disassemble Entry Points,Reference,Scalar Operand References,WindowsResourceReference,Stack,Function ID,Decompiler Switch Analysis,Non-Returning Functions - Discovered",
+          "analysis_options": {
+            "disabled_analyzers": [
+              "Disassemble Entry Points",
+              "Reference",
+              "Scalar Operand References",
+              "WindowsResourceReference",
+              "Stack",
+              "Function ID",
+              "Decompiler Switch Analysis",
+              "Non-Returning Functions - Discovered"
+            ]
+          },
+          "analysis_seeds": {
+            "format": "rea-ghidra-seeds-v1",
+            "path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "configured_path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "sha256": "f2b15a74c6fdacffab40a0bece9999dc1469edba0e4fed76d1488558d3e05753",
+            "entries": {
+              "function": 4,
+              "code": 0,
+              "label": 0
+            }
+          }
+        },
+        "digest": "7168c70d6fdd7c9a8a4f1f27eff4d611637d12bbcb5fec2a765beabd1458a7c2"
+      }
+    },
+    {
+      "file": "native-levelsequence-registration.json",
+      "sha256": "081b8cff2ef7e5ce4d19f91fcf72b023459c55f8686520c2bf857aa5beebcd81",
+      "evidence_id": "ev_dcf426a1ea0a5c67ee10157757292eb7e98a07dcadb7b3b1c8881b68d59a5e52",
+      "operation": "analyze_function",
+      "analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "pe",
+          "executable_role": "application",
+          "managed": false,
+          "native_aot_metadata": {
+            "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+            "source_bytes": 134217728,
+            "work_units": 67108864,
+            "working_memory_bytes": 67108864,
+            "report_bytes": 4194304
+          },
+          "architecture": "x86_64",
+          "available_architectures": [
+            "x86_64"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "call_relationship_coverage": "resolved-call-reference-diagnostics-v1",
+          "string_inventory_evidence": "defined-data-coverage-v1",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "instruction_references": "exact-address-incoming-v1",
+          "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+          "no_return_repair": "disabled-windows-p0",
+          "process_launch": "official-headless-script-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "auto-from-header",
+          "language_id": "auto-from-header",
+          "compiler_spec_id": "auto-default",
+          "analyzer_preset": "ghidra-default+disabled:Disassemble Entry Points,Reference,Scalar Operand References,WindowsResourceReference,Stack,Function ID,Decompiler Switch Analysis,Non-Returning Functions - Discovered",
+          "analysis_options": {
+            "disabled_analyzers": [
+              "Disassemble Entry Points",
+              "Reference",
+              "Scalar Operand References",
+              "WindowsResourceReference",
+              "Stack",
+              "Function ID",
+              "Decompiler Switch Analysis",
+              "Non-Returning Functions - Discovered"
+            ]
+          },
+          "analysis_seeds": {
+            "format": "rea-ghidra-seeds-v1",
+            "path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "configured_path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "sha256": "f2b15a74c6fdacffab40a0bece9999dc1469edba0e4fed76d1488558d3e05753",
+            "entries": {
+              "function": 4,
+              "code": 0,
+              "label": 0
+            }
+          }
+        },
+        "digest": "7168c70d6fdd7c9a8a4f1f27eff4d611637d12bbcb5fec2a765beabd1458a7c2"
+      }
+    },
+    {
+      "file": "native-playback-minimal.json",
+      "sha256": "66a63f1900288860a4a90ec45abd2e59da89e09b7f933709585f1f2d4a36c0b5",
+      "evidence_id": "ev_ba372464739055602d529a91d67bacd44388a442fde45fa3740b8edda43e0254",
+      "operation": "analyze_function",
+      "analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "pe",
+          "executable_role": "application",
+          "managed": false,
+          "native_aot_metadata": {
+            "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+            "source_bytes": 134217728,
+            "work_units": 67108864,
+            "working_memory_bytes": 67108864,
+            "report_bytes": 4194304
+          },
+          "architecture": "x86_64",
+          "available_architectures": [
+            "x86_64"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "call_relationship_coverage": "resolved-call-reference-diagnostics-v1",
+          "string_inventory_evidence": "defined-data-coverage-v1",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "instruction_references": "exact-address-incoming-v1",
+          "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+          "no_return_repair": "disabled-windows-p0",
+          "process_launch": "official-headless-script-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "auto-from-header",
+          "language_id": "auto-from-header",
+          "compiler_spec_id": "auto-default",
+          "analyzer_preset": "ghidra-default+disabled:Disassemble Entry Points,Reference,Scalar Operand References,WindowsResourceReference,Stack,Function ID,Decompiler Switch Analysis,Non-Returning Functions - Discovered",
+          "analysis_options": {
+            "disabled_analyzers": [
+              "Disassemble Entry Points",
+              "Reference",
+              "Scalar Operand References",
+              "WindowsResourceReference",
+              "Stack",
+              "Function ID",
+              "Decompiler Switch Analysis",
+              "Non-Returning Functions - Discovered"
+            ]
+          },
+          "analysis_seeds": {
+            "format": "rea-ghidra-seeds-v1",
+            "path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "configured_path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "sha256": "f2b15a74c6fdacffab40a0bece9999dc1469edba0e4fed76d1488558d3e05753",
+            "entries": {
+              "function": 4,
+              "code": 0,
+              "label": 0
+            }
+          }
+        },
+        "digest": "7168c70d6fdd7c9a8a4f1f27eff4d611637d12bbcb5fec2a765beabd1458a7c2"
+      }
+    },
+    {
+      "file": "native-richcurve-eval.json",
+      "sha256": "d1b4ab0e61110c6b42a81251f25fa9c6239598cb0ccc945c418dbed6e3bee160",
+      "evidence_id": "ev_3ddd51e30b3f5bb36a717972b370c396437667660693d90dd5e9a991db40e15c",
+      "operation": "analyze_function",
+      "analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "pe",
+          "executable_role": "application",
+          "managed": false,
+          "native_aot_metadata": {
+            "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+            "source_bytes": 134217728,
+            "work_units": 67108864,
+            "working_memory_bytes": 67108864,
+            "report_bytes": 4194304
+          },
+          "architecture": "x86_64",
+          "available_architectures": [
+            "x86_64"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "call_relationship_coverage": "resolved-call-reference-diagnostics-v1",
+          "string_inventory_evidence": "defined-data-coverage-v1",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "instruction_references": "exact-address-incoming-v1",
+          "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+          "no_return_repair": "disabled-windows-p0",
+          "process_launch": "official-headless-script-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "auto-from-header",
+          "language_id": "auto-from-header",
+          "compiler_spec_id": "auto-default",
+          "analyzer_preset": "ghidra-default+disabled:Disassemble Entry Points,Reference,Scalar Operand References,WindowsResourceReference,Stack,Function ID,Decompiler Switch Analysis,Non-Returning Functions - Discovered",
+          "analysis_options": {
+            "disabled_analyzers": [
+              "Disassemble Entry Points",
+              "Reference",
+              "Scalar Operand References",
+              "WindowsResourceReference",
+              "Stack",
+              "Function ID",
+              "Decompiler Switch Analysis",
+              "Non-Returning Functions - Discovered"
+            ]
+          },
+          "analysis_seeds": {
+            "format": "rea-ghidra-seeds-v1",
+            "path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "configured_path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "sha256": "f2b15a74c6fdacffab40a0bece9999dc1469edba0e4fed76d1488558d3e05753",
+            "entries": {
+              "function": 4,
+              "code": 0,
+              "label": 0
+            }
+          }
+        },
+        "digest": "7168c70d6fdd7c9a8a4f1f27eff4d611637d12bbcb5fec2a765beabd1458a7c2"
+      }
+    },
+    {
+      "file": "native-richcurve-remap.json",
+      "sha256": "19d8e2e345c6dc3e2b363da756697dd1af1c8a9b9aabd536094a19a654e652d7",
+      "evidence_id": "ev_fd2f7b195f795aa5224d0ac7a6421c864b120397a9f858d08c7089ef9f8873cf",
+      "operation": "analyze_function",
+      "analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "pe",
+          "executable_role": "application",
+          "managed": false,
+          "native_aot_metadata": {
+            "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+            "source_bytes": 134217728,
+            "work_units": 67108864,
+            "working_memory_bytes": 67108864,
+            "report_bytes": 4194304
+          },
+          "architecture": "x86_64",
+          "available_architectures": [
+            "x86_64"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "call_relationship_coverage": "resolved-call-reference-diagnostics-v1",
+          "string_inventory_evidence": "defined-data-coverage-v1",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "instruction_references": "exact-address-incoming-v1",
+          "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+          "no_return_repair": "disabled-windows-p0",
+          "process_launch": "official-headless-script-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "auto-from-header",
+          "language_id": "auto-from-header",
+          "compiler_spec_id": "auto-default",
+          "analyzer_preset": "ghidra-default+disabled:Disassemble Entry Points,Reference,Scalar Operand References,WindowsResourceReference,Stack,Function ID,Decompiler Switch Analysis,Non-Returning Functions - Discovered",
+          "analysis_options": {
+            "disabled_analyzers": [
+              "Disassemble Entry Points",
+              "Reference",
+              "Scalar Operand References",
+              "WindowsResourceReference",
+              "Stack",
+              "Function ID",
+              "Decompiler Switch Analysis",
+              "Non-Returning Functions - Discovered"
+            ]
+          },
+          "analysis_seeds": {
+            "format": "rea-ghidra-seeds-v1",
+            "path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "configured_path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "sha256": "f2b15a74c6fdacffab40a0bece9999dc1469edba0e4fed76d1488558d3e05753",
+            "entries": {
+              "function": 4,
+              "code": 0,
+              "label": 0
+            }
+          }
+        },
+        "digest": "7168c70d6fdd7c9a8a4f1f27eff4d611637d12bbcb5fec2a765beabd1458a7c2"
+      }
+    },
+    {
+      "file": "native-richcurve-struct-registration.json",
+      "sha256": "2358e6b5ae6d74ff5ad7e582d200a4c61203a97d124688e75f888cc06014031f",
+      "evidence_id": "ev_84869b372c481be87ebb5976c32faf4a29375c21bd7d36574e2ef06b1ed295b6",
+      "operation": "analyze_function",
+      "analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "pe",
+          "executable_role": "application",
+          "managed": false,
+          "native_aot_metadata": {
+            "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+            "source_bytes": 134217728,
+            "work_units": 67108864,
+            "working_memory_bytes": 67108864,
+            "report_bytes": 4194304
+          },
+          "architecture": "x86_64",
+          "available_architectures": [
+            "x86_64"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "call_relationship_coverage": "resolved-call-reference-diagnostics-v1",
+          "string_inventory_evidence": "defined-data-coverage-v1",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "instruction_references": "exact-address-incoming-v1",
+          "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+          "no_return_repair": "disabled-windows-p0",
+          "process_launch": "official-headless-script-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "auto-from-header",
+          "language_id": "auto-from-header",
+          "compiler_spec_id": "auto-default",
+          "analyzer_preset": "ghidra-default+disabled:Disassemble Entry Points,Reference,Scalar Operand References,WindowsResourceReference,Stack,Function ID,Decompiler Switch Analysis,Non-Returning Functions - Discovered",
+          "analysis_options": {
+            "disabled_analyzers": [
+              "Disassemble Entry Points",
+              "Reference",
+              "Scalar Operand References",
+              "WindowsResourceReference",
+              "Stack",
+              "Function ID",
+              "Decompiler Switch Analysis",
+              "Non-Returning Functions - Discovered"
+            ]
+          },
+          "analysis_seeds": {
+            "format": "rea-ghidra-seeds-v1",
+            "path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "configured_path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "sha256": "f2b15a74c6fdacffab40a0bece9999dc1469edba0e4fed76d1488558d3e05753",
+            "entries": {
+              "function": 4,
+              "code": 0,
+              "label": 0
+            }
+          }
+        },
+        "digest": "7168c70d6fdd7c9a8a4f1f27eff4d611637d12bbcb5fec2a765beabd1458a7c2"
+      }
+    },
+    {
+      "file": "native-richcurve-type-xrefs.json",
+      "sha256": "d0b4a7453ef304bd30bd7351471aaca0f2e047a142230c7887d6f0de14501d25",
+      "evidence_id": "ev_f20182935711d597c9e7410933fb93f2a8b8216f2e616c862137829d429cdf28",
+      "operation": "xrefs",
+      "analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "pe",
+          "executable_role": "application",
+          "managed": false,
+          "native_aot_metadata": {
+            "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+            "source_bytes": 134217728,
+            "work_units": 67108864,
+            "working_memory_bytes": 67108864,
+            "report_bytes": 4194304
+          },
+          "architecture": "x86_64",
+          "available_architectures": [
+            "x86_64"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "call_relationship_coverage": "resolved-call-reference-diagnostics-v1",
+          "string_inventory_evidence": "defined-data-coverage-v1",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "instruction_references": "exact-address-incoming-v1",
+          "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+          "no_return_repair": "disabled-windows-p0",
+          "process_launch": "official-headless-script-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "auto-from-header",
+          "language_id": "auto-from-header",
+          "compiler_spec_id": "auto-default",
+          "analyzer_preset": "ghidra-default+disabled:Disassemble Entry Points,Reference,Scalar Operand References,WindowsResourceReference,Stack,Function ID,Decompiler Switch Analysis,Non-Returning Functions - Discovered",
+          "analysis_options": {
+            "disabled_analyzers": [
+              "Disassemble Entry Points",
+              "Reference",
+              "Scalar Operand References",
+              "WindowsResourceReference",
+              "Stack",
+              "Function ID",
+              "Decompiler Switch Analysis",
+              "Non-Returning Functions - Discovered"
+            ]
+          },
+          "analysis_seeds": {
+            "format": "rea-ghidra-seeds-v1",
+            "path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "configured_path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "sha256": "f2b15a74c6fdacffab40a0bece9999dc1469edba0e4fed76d1488558d3e05753",
+            "entries": {
+              "function": 4,
+              "code": 0,
+              "label": 0
+            }
+          }
+        },
+        "digest": "7168c70d6fdd7c9a8a4f1f27eff4d611637d12bbcb5fec2a765beabd1458a7c2"
+      }
+    },
+    {
+      "file": "native-richcurve-vtable.json",
+      "sha256": "ff1150aa6ae0b1023ae7ffc769954c3c8ded88e75f36174cf3b285ba63206d1f",
+      "evidence_id": "ev_5ae83f776d115b8288fdffff6777516a4f758e1bd05ffea480a813c58f9b12aa",
+      "operation": "read_bytes",
+      "analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "pe",
+          "executable_role": "application",
+          "managed": false,
+          "native_aot_metadata": {
+            "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+            "source_bytes": 134217728,
+            "work_units": 67108864,
+            "working_memory_bytes": 67108864,
+            "report_bytes": 4194304
+          },
+          "architecture": "x86_64",
+          "available_architectures": [
+            "x86_64"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "call_relationship_coverage": "resolved-call-reference-diagnostics-v1",
+          "string_inventory_evidence": "defined-data-coverage-v1",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "instruction_references": "exact-address-incoming-v1",
+          "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+          "no_return_repair": "disabled-windows-p0",
+          "process_launch": "official-headless-script-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "auto-from-header",
+          "language_id": "auto-from-header",
+          "compiler_spec_id": "auto-default",
+          "analyzer_preset": "ghidra-default+disabled:Disassemble Entry Points,Reference,Scalar Operand References,WindowsResourceReference,Stack,Function ID,Decompiler Switch Analysis,Non-Returning Functions - Discovered",
+          "analysis_options": {
+            "disabled_analyzers": [
+              "Disassemble Entry Points",
+              "Reference",
+              "Scalar Operand References",
+              "WindowsResourceReference",
+              "Stack",
+              "Function ID",
+              "Decompiler Switch Analysis",
+              "Non-Returning Functions - Discovered"
+            ]
+          },
+          "analysis_seeds": {
+            "format": "rea-ghidra-seeds-v1",
+            "path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "configured_path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\targeted-native\\priority-seeds.tsv",
+            "sha256": "f2b15a74c6fdacffab40a0bece9999dc1469edba0e4fed76d1488558d3e05753",
+            "entries": {
+              "function": 4,
+              "code": 0,
+              "label": 0
+            }
+          }
+        },
+        "digest": "7168c70d6fdd7c9a8a4f1f27eff4d611637d12bbcb5fec2a765beabd1458a7c2"
+      }
+    }
+  ]
+}

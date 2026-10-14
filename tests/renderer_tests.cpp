@@ -1,0 +1,373 @@
+#include <SDL3/SDL.h>
+#include <SDL3/SDL_main.h>
+#include "render/renderer.hpp"
+#include "render/art_direction.hpp"
+#include "test_support.hpp"
+#include <chrono>
+#include <filesystem>
+#include <fstream>
+#include <memory>
+#include <thread>
+#include <iomanip>
+#include <sstream>
+#include <bimg/decode.h>
+#include <bx/allocator.h>
+
+using namespace fantasynt;
+bool same_pixels(const std::vector<char>& a,const std::vector<char>& b) {
+    bx::DefaultAllocator allocator;
+    auto* first=bimg::imageParse(&allocator,a.data(),static_cast<std::uint32_t>(a.size()),bimg::TextureFormat::RGBA8);
+    auto* second=bimg::imageParse(&allocator,b.data(),static_cast<std::uint32_t>(b.size()),bimg::TextureFormat::RGBA8);
+    bool same=first&&second&&first->m_width==second->m_width&&first->m_height==second->m_height;
+    if(same) {
+        const auto* x=static_cast<const unsigned char*>(first->m_data);
+        const auto* y=static_cast<const unsigned char*>(second->m_data);
+        std::uint64_t difference{};
+        const auto size=first->m_width*first->m_height*4;
+        for(std::uint32_t i=0;i<size;++i) {
+            const auto delta=std::abs(static_cast<int>(x[i])-static_cast<int>(y[i]));
+            difference+=delta; same&=delta<=1;
+        }
+        // A GPU pode variar um nível em poucos canais sem alterar a cena.
+        same&=static_cast<double>(difference)/size<0.001;
+    }
+    if(first) bimg::imageFree(first);
+    if(second) bimg::imageFree(second);
+    return same;
+}
+bool black_pixels(const std::vector<char>& encoded) {
+    bx::DefaultAllocator allocator;
+    auto* frame=bimg::imageParse(&allocator,encoded.data(),static_cast<std::uint32_t>(encoded.size()),bimg::TextureFormat::RGBA8);
+    if(!frame) return false;
+    const auto* pixels=static_cast<const unsigned char*>(frame->m_data);
+    bool black=true;
+    for(std::uint32_t i=0;i<frame->m_width*frame->m_height;++i)
+        for(int channel=0;channel<3;++channel) black&=pixels[i*4+channel]==0;
+    bimg::imageFree(frame);
+    return black;
+}
+bool continuous_pixels(const std::vector<char>& a,const std::vector<char>& b) {
+    bx::DefaultAllocator allocator;
+    auto* first=bimg::imageParse(&allocator,a.data(),static_cast<std::uint32_t>(a.size()),bimg::TextureFormat::RGBA8);
+    auto* second=bimg::imageParse(&allocator,b.data(),static_cast<std::uint32_t>(b.size()),bimg::TextureFormat::RGBA8);
+    bool close=first&&second&&first->m_width==second->m_width&&first->m_height==second->m_height;
+    if(close) {
+        const auto* x=static_cast<const unsigned char*>(first->m_data);
+        const auto* y=static_cast<const unsigned char*>(second->m_data);
+        const auto pixels=first->m_width*first->m_height;
+        std::uint64_t difference{},outliers{};
+        for(std::uint32_t i=0;i<pixels;++i) {
+            int maximum{};
+            for(int channel=0;channel<3;++channel) {
+                const auto delta=std::abs(static_cast<int>(x[i*4+channel])-static_cast<int>(y[i*4+channel]));
+                difference+=delta; maximum=std::max(maximum,delta);
+            }
+            outliers+=maximum>2;
+        }
+        // Uma variação subpixel pode afetar poucos contornos, mas não uma região inteira.
+        close=static_cast<double>(difference)/(pixels*3)<0.02 && static_cast<double>(outliers)/pixels<0.005;
+    }
+    if(first) bimg::imageFree(first);
+    if(second) bimg::imageFree(second);
+    return close;
+}
+bool overlay_at(const std::vector<char>& baseline,const std::vector<char>& overlay,float center_x,float center_y) {
+    bx::DefaultAllocator allocator;
+    auto* first=bimg::imageParse(&allocator,baseline.data(),static_cast<std::uint32_t>(baseline.size()),bimg::TextureFormat::RGBA8);
+    auto* second=bimg::imageParse(&allocator,overlay.data(),static_cast<std::uint32_t>(overlay.size()),bimg::TextureFormat::RGBA8);
+    bool localized=first&&second&&first->m_width==second->m_width&&first->m_height==second->m_height;
+    std::uint32_t changed{};
+    if(localized) {
+        const auto* x=static_cast<const unsigned char*>(first->m_data);
+        const auto* y=static_cast<const unsigned char*>(second->m_data);
+        for(std::uint32_t row=0;row<first->m_height;++row) {
+            for(std::uint32_t column=0;column<first->m_width;++column) {
+                const auto offset=(row*first->m_width+column)*4;
+                int difference{};
+                for(int channel=0;channel<3;++channel)
+                    difference=std::max(difference,std::abs(static_cast<int>(x[offset+channel])-static_cast<int>(y[offset+channel])));
+                if(difference<=3) continue;
+                ++changed;
+                localized&=std::abs(static_cast<float>(column)/first->m_width-center_x)<0.11f;
+                localized&=std::abs(static_cast<float>(row)/first->m_height-center_y)<0.075f;
+            }
+        }
+    }
+    if(first) bimg::imageFree(first);
+    if(second) bimg::imageFree(second);
+    return localized&&changed>20;
+}
+int main(int argc,char** argv) {
+    if(argc!=3&&argc!=4) return 2;
+    if(!SDL_Init(SDL_INIT_VIDEO)) return 2;
+    struct SDLGuard { ~SDLGuard() { SDL_Quit(); } } sdl_guard;
+    int result=1;
+    try {
+        std::unique_ptr<SDL_Window,decltype(&SDL_DestroyWindow)> window(
+            SDL_CreateWindow("Fantasynt resize test",640,360,SDL_WINDOW_HIDDEN),SDL_DestroyWindow);
+        if(!window) throw std::runtime_error(SDL_GetError());
+        auto handle=SDL_GetPointerProperty(SDL_GetWindowProperties(window.get()),SDL_PROP_WINDOW_WIN32_HWND_POINTER,nullptr);
+        Renderer renderer(handle,640,360,argv[1]);
+        Parameters state;
+        if(argc==4&&std::string(argv[3])=="refinement-preview") {
+            const auto root=std::filesystem::path(argv[2]);
+            const char* names[]={"landscape","artifacts","rings","ending"};
+            const double starts[]={174,250,330,408};
+            const int counts[]={144,144,288,196};
+            const auto& config=default_visual_config();
+            for(int clip=0;clip<4;++clip) {
+                const auto folder=root/(std::string(names[clip])+"-frames");
+                std::filesystem::create_directories(folder);
+                for(int frame=0;frame<counts[clip];++frame) {
+                    const double fps=clip==2?24.0:12.0;
+                    const double time=std::min(starts[clip]+frame/fps,renderer.soundtrack_duration());
+                    renderer.set_composition(directed_composition(time,true,config,renderer.soundtrack_duration()));
+                    const auto current=directed_visual_parameters(state,time,config);
+                    const double camera=directed_camera_position(clip<2?starts[clip]:time);
+                    for(int stable=0;stable<3;++stable) renderer.draw(current,time,camera);
+                    std::ostringstream name; name<<std::setw(4)<<std::setfill('0')<<frame<<".png";
+                    renderer.request_capture(folder/name.str());
+                    for(int attempt=0;attempt<100&&!renderer.capture_complete();++attempt) {
+                        renderer.draw(current,time,camera); SDL_Delay(2);
+                    }
+                    CHECK(renderer.capture_complete());
+                }
+            }
+            return test_finish();
+        }
+        if(argc==4&&(std::string(argv[3])=="preview"||std::string(argv[3])=="drill-preview"||std::string(argv[3])=="spectral-preview")) {
+            const bool spectral=std::string(argv[3])=="spectral-preview";
+            const bool drill=std::string(argv[3])=="drill-preview"||spectral;
+            const auto root=std::filesystem::path(argv[2]);
+            for(int clip=0;clip<(drill&&!spectral?1:2);++clip) {
+                const auto folder=root/(spectral?(clip==0?"cone-frames":"crystal-frames"):drill?"drill-frames":clip==0?"intro-frames":"pyramid-frames");
+                std::filesystem::create_directories(folder);
+                const int count=spectral?(clip==0?160:48):drill?80:clip==0?144:120;
+                const double start_time=spectral?(clip==0?136:172):drill?136:clip==0?34:78;
+                const double fps=drill?4:clip==0?12:10;
+                const double camera=directed_camera_position(spectral?(clip==0?150:180):drill?150:clip==0?38:85);
+                for(int frame=0;frame<count;++frame) {
+                    const double time=start_time+frame/fps;
+                    renderer.set_composition(drill?directed_composition(time,true,default_visual_config()):sample_opening(time));
+                    auto current=drill?directed_visual_parameters(state,time,default_visual_config()):state;
+                    if(drill) current.pulse_strength=0;
+                    for(int stable=0;stable<3;++stable) renderer.draw(current,time,camera);
+                    std::ostringstream name; name<<std::setw(4)<<std::setfill('0')<<frame<<".png";
+                    renderer.request_capture(folder/name.str());
+                    for(int attempt=0;attempt<100&&!renderer.capture_complete();++attempt) {
+                        renderer.draw(current,time,camera); SDL_Delay(2);
+                    }
+                    CHECK(renderer.capture_complete());
+                }
+            }
+            std::cout<<"Preview frames saved to "<<root<<'\n';
+            return test_finish();
+        }
+        renderer.draw(state,0,0);
+        renderer.resize(0,0);
+        renderer.draw(state,0.1,0);
+        renderer.resize(800,450);
+        renderer.draw(state,0.2,0);
+        renderer.resize(640,360);
+        renderer.request_capture(argv[2]);
+        for(int i=0;i<100&&!renderer.capture_complete();++i) {
+            renderer.draw(state,0.3,0);
+            std::this_thread::sleep_for(std::chrono::milliseconds(10));
+        }
+        CHECK(renderer.capture_complete());
+        std::ifstream image(argv[2],std::ios::binary);
+        std::array<unsigned char,24> header{};
+        image.read(reinterpret_cast<char*>(header.data()),header.size());
+        CHECK(image.good());
+        CHECK(header[0]==137 && header[1]=='P' && header[2]=='N' && header[3]=='G');
+        auto dimension=[&](std::size_t offset) {
+            return (static_cast<std::uint32_t>(header[offset])<<24)|(static_cast<std::uint32_t>(header[offset+1])<<16)|
+                (static_cast<std::uint32_t>(header[offset+2])<<8)|header[offset+3];
+        };
+        CHECK(dimension(16)==640 && dimension(20)==360);
+        const auto directory=std::filesystem::path(argv[2]).parent_path()/"controls";
+        auto capture=[&](const char* name,const Parameters& parameters,double camera=0.0,double time=0.125) {
+            const auto path=directory/(std::string(name)+".png");
+            // A captura refere-se ao frame anterior; estabilizar primeiro o estado.
+            for(int i=0;i<3;++i) renderer.draw(parameters,time,camera);
+            renderer.request_capture(path);
+            for(int i=0;i<100&&!renderer.capture_complete();++i) {
+                renderer.draw(parameters,time,camera);
+                std::this_thread::sleep_for(std::chrono::milliseconds(10));
+            }
+            CHECK(renderer.capture_complete());
+            std::ifstream file(path,std::ios::binary);
+            return std::vector<char>((std::istreambuf_iterator<char>(file)),{});
+        };
+        const auto reference=capture("baseline",state);
+        CHECK(reference.size()>1000);
+        renderer.set_time_display({true,127.375});
+        const auto timer=capture("timer-visible",state);
+        CHECK(!same_pixels(timer,reference));
+        CHECK(overlay_at(reference,timer,0.5f,0.65f));
+        CHECK(same_pixels(capture("timer-frozen",state),timer));
+        renderer.set_time_display({true,128.0});
+        CHECK(!same_pixels(capture("timer-next-second",state),timer));
+        renderer.set_time_display({true,127.375,1.0f,0.2f,0.25f,0.85f});
+        CHECK(overlay_at(reference,capture("timer-position",state),0.2f,0.25f));
+        renderer.set_time_display({true,127.375,1.0f,0.5f,0.88f,0.0f});
+        CHECK(same_pixels(capture("timer-transparent",state),reference));
+        renderer.set_time_display({false,128.0});
+        CHECK(same_pixels(capture("timer-hidden",state),reference));
+        auto changed=state; changed.light_intensity=0;
+        CHECK(capture("light-zero",changed)!=reference);
+        changed=state; changed.palette={Color{1,0.01f,0.01f},Color{1,0.01f,0.01f}};
+        CHECK(capture("palette-red",changed)!=reference);
+        changed=state; changed.pulse_strength=1;
+        CHECK(capture("pulse-max",changed)!=reference);
+        changed=state; changed.fog_density=1;
+        CHECK(capture("fog-max",changed)!=reference);
+        changed=state; changed.geometry_density=0;
+        CHECK(capture("density-zero",changed)!=reference);
+        changed=state; changed.bloom=1;
+        CHECK(capture("bloom-max",changed)!=reference);
+        CHECK(capture("camera-advanced",state,500)!=reference);
+        renderer.set_scene_layout(SceneLayout::Field);
+        CHECK(capture("legacy-field",state)!=reference);
+        renderer.set_scene_layout(SceneLayout::Night);
+        const auto night=capture("night",state);
+        CHECK(night!=reference);
+        renderer.set_scene_layout(SceneLayout::Landscape);
+        const auto landscape=capture("landscape",state);
+        CHECK(landscape!=night && landscape!=reference);
+        renderer.set_composition(sample_sequence(96));
+        CHECK(capture("night-landscape-transition",state)!=landscape);
+        renderer.set_composition(sample_sequence(228));
+        CHECK(capture("landscape-tunnel-transition",state)!=landscape);
+        CHECK(sample_sequence(231.99).weights[2]<1);
+        renderer.set_composition(sample_sequence(231.99));
+        const auto before_tunnel=capture("tunnel-boundary-before",state);
+        renderer.set_composition(sample_sequence(232));
+        CHECK(continuous_pixels(before_tunnel,capture("tunnel-boundary-after",state)));
+        renderer.set_scene_layout(SceneLayout::Tunnel);
+        CHECK(same_pixels(capture("tunnel-restored",state),reference));
+        renderer.set_composition(sample_opening(40.125));
+        const double opening_camera=directed_camera_position(40.125);
+        const auto opening=capture("opening-baseline",state,opening_camera,40.125);
+        changed=state; changed.pulse_strength=0;
+        CHECK(!same_pixels(capture("opening-pulse-zero",changed,opening_camera,40.125),opening));
+        changed=state; changed.palette[1]=Color{1,0.01f,0.01f};
+        CHECK(!same_pixels(capture("opening-second-colour",changed,opening_camera,40.125),opening));
+        changed=state; changed.geometry_density=0;
+        CHECK(!same_pixels(capture("opening-density-zero",changed,opening_camera,40.125),opening));
+        double quiet_time=40.125;
+        while(quiet_time<60&&renderer.beat_strength(quiet_time)>0) quiet_time+=0.01;
+        CHECK(quiet_time<60);
+        renderer.set_composition(sample_opening(quiet_time));
+        const auto quiet=capture("opening-between-beats",state,opening_camera,quiet_time);
+        changed=state; changed.pulse_strength=0;
+        CHECK(same_pixels(capture("opening-between-beats-zero",changed,opening_camera,quiet_time),quiet));
+        const auto faster_points=parse_visual_config(R"({"schema_version":1,"points":{"fall_speed_m_s":1.0}})");
+        renderer.set_visual_config(faster_points);
+        CHECK(same_pixels(capture("opening-live-speed-continuity",state,opening_camera,quiet_time),quiet));
+        const auto red_traces=parse_visual_config(R"({"schema_version":1,"points":{"fall_speed_m_s":1.0},"families":{"trace":{"colour":"#FF0000"}}})");
+        renderer.set_visual_config(red_traces);
+        CHECK(!same_pixels(capture("opening-live-trace-colour",state,opening_camera,quiet_time),quiet));
+        renderer.set_visual_config(default_visual_config());
+        renderer.set_composition(sample_sequence(127.9999));
+        const auto before_handoff=capture("opening-handoff-before",state,opening_camera,127.9999);
+        renderer.set_composition(sample_sequence(128));
+        CHECK(continuous_pixels(before_handoff,capture("opening-handoff-after",state,opening_camera,128)));
+        auto steady=state; steady.pulse_strength=0;
+        const auto frozen=parse_visual_config(R"({"schema_version":1,"animations":{"speed_multiplier":0}})");
+        renderer.set_visual_config(frozen);
+        for(double boundary:{136.0,172.0,224.0}) {
+            const auto position=directed_camera_position(boundary,frozen);
+            const auto phase_name=std::to_string(static_cast<int>(boundary));
+            renderer.set_composition(directed_composition(boundary,true,frozen));
+            const auto before=capture(("phase-"+phase_name+"-before").c_str(),directed_visual_parameters(steady,boundary,frozen),position,boundary);
+            renderer.set_composition(directed_composition(boundary+0.01,true,frozen));
+            CHECK(continuous_pixels(before,capture(("phase-"+phase_name+"-after").c_str(),directed_visual_parameters(steady,boundary+0.01,frozen),position,boundary+0.01)));
+        }
+        renderer.set_visual_config(default_visual_config());
+        renderer.set_composition(directed_composition(119,true,default_visual_config()));
+        const auto near_end=capture("unlit-enabled",steady,directed_camera_position(119),119);
+        const auto unlit_off=parse_visual_config(R"({"schema_version":1,"materials":{"unlit_pattern_emission":0}})");
+        renderer.set_visual_config(unlit_off);
+        CHECK(!same_pixels(near_end,capture("unlit-disabled",steady,directed_camera_position(119),119)));
+        renderer.set_visual_config(default_visual_config());
+        const auto pole_reference=capture("pole-before-reload",steady,opening_camera,40.125);
+        const auto pole_variation=parse_visual_config(R"({"schema_version":1,"poles":{"period_variation":0.6}})");
+        renderer.set_visual_config(pole_variation);
+        CHECK(same_pixels(pole_reference,capture("pole-after-reload",steady,opening_camera,40.125)));
+        const auto zero_density=parse_visual_config(R"({"schema_version":1,"extension":{"geometry_density_multiplier":0}})");
+        renderer.set_visual_config(zero_density);
+        renderer.set_composition(directed_composition(150,true,zero_density));
+        const auto colour_state=directed_visual_parameters(steady,150,zero_density);
+        const auto empty=capture("colour-density-zero",colour_state,directed_camera_position(150),150);
+        auto no_geometry=colour_state; no_geometry.geometry_density=0;
+        CHECK(same_pixels(empty,capture("colour-geometry-off",no_geometry,directed_camera_position(150),150)));
+        renderer.set_visual_config(default_visual_config());
+        renderer.set_composition(directed_composition(174,true,default_visual_config()));
+        const auto rotating_state=directed_visual_parameters(steady,174,default_visual_config());
+        const auto cone_before=capture("cone-rate-before",rotating_state,directed_camera_position(174),174);
+        const auto changed_rate=parse_visual_config(R"({"schema_version":1,"cones":{"rotation_degrees_s":7}})");
+        renderer.set_visual_config(changed_rate);
+        CHECK(same_pixels(cone_before,capture("cone-rate-after",rotating_state,directed_camera_position(174),174)));
+        // Um piso opaco não pode apagar um cone em fade, mesmo sem reflexos nem bloom.
+        const auto floor_probe=parse_visual_config(R"({"schema_version":1,"floor":{"reflections_enabled":false},"post":{"bloom_multiplier":0}})");
+        renderer.set_visual_config(floor_probe);
+        auto probe_composition=directed_composition(174,true,floor_probe);
+        probe_composition.opening_weight=0;
+        renderer.set_composition(probe_composition);
+        const auto above_floor=capture("cone-fade-above-floor",rotating_state,directed_camera_position(174),174);
+        const auto dark_cone=parse_visual_config(R"({"schema_version":1,"floor":{"reflections_enabled":false},"post":{"bloom_multiplier":0},"cones":{"emission":0}})");
+        renderer.set_visual_config(dark_cone);
+        CHECK(!same_pixels(above_floor,capture("cone-fade-emission-zero",rotating_state,directed_camera_position(174),174)));
+        renderer.set_visual_config(default_visual_config());
+        for(double time:{224.0,240.0,272.0,290.0,300.0,306.0}) {
+            auto no_glow=directed_composition(time,true,default_visual_config());
+            renderer.set_composition(no_glow);
+            const auto current=directed_visual_parameters(steady,time,default_visual_config());
+            const auto filename="glow-"+std::to_string(static_cast<int>(time));
+            const auto usual=capture(filename.c_str(),current,directed_camera_position(time),time);
+            no_glow.tunnel_light_weight=0; renderer.set_composition(no_glow);
+            const auto muted=capture((filename+"-off").c_str(),current,directed_camera_position(time),time);
+            if(time<=294) CHECK(same_pixels(usual,muted));
+            else CHECK(!same_pixels(usual,muted));
+        }
+        // Recarregar a velocidade depois da formação não pode teletransportar o túnel.
+        renderer.set_composition(directed_composition(310,true,default_visual_config()));
+        const auto formed_state=directed_visual_parameters(steady,310,default_visual_config());
+        const auto formed_camera=directed_camera_position(310);
+        const auto formed=capture("formed-ring-before-speed-reload",formed_state,formed_camera,310);
+        const auto camera_speed_change=parse_visual_config(R"({"schema_version":1,"camera":{"speed_m_s":2}})");
+        renderer.set_visual_config(camera_speed_change);
+        CHECK(same_pixels(formed,capture("formed-ring-after-speed-reload",formed_state,formed_camera,310)));
+        renderer.set_visual_config(default_visual_config());
+        // Ataques reais sucessivos devem iluminar grupos diferentes na GPU.
+        for(int group=0;group<2;++group) {
+            double time=330;
+            while(time<350&&(renderer.ring_pulse_group(time)!=group||renderer.beat_strength(time)<0.5f)) time+=0.001;
+            CHECK(time<350);
+            renderer.set_composition(directed_composition(time,true,default_visual_config()));
+            const auto current=directed_visual_parameters(state,time,default_visual_config());
+            const auto name="ring-pulse-"+std::to_string(group);
+            const auto lit=capture(name.c_str(),current,directed_camera_position(time),time);
+            const auto muted=parse_visual_config(R"({"schema_version":1,"extension":{"ring_pulse_gain":0}})");
+            renderer.set_visual_config(muted);
+            CHECK(!same_pixels(lit,capture((name+"-off").c_str(),current,directed_camera_position(time),time)));
+            renderer.set_visual_config(default_visual_config());
+        }
+        const double end=renderer.soundtrack_duration();
+        renderer.set_composition(directed_composition(end,true,default_visual_config(),end));
+        renderer.set_time_display({true,end});
+        CHECK(black_pixels(capture("soundtrack-end-black-with-timer",state,directed_camera_position(end),end)));
+        renderer.set_time_display({false,end});
+        // Amostras da imagem real para rever a rotação com câmara fixa, sem áudio.
+        for(int frame=0;frame<32;++frame) {
+            const double time=174+frame*0.25;
+            renderer.set_composition(directed_composition(time,true,default_visual_config()));
+            renderer.set_time_display({true,time});
+            std::ostringstream name; name<<"cone-motion-"<<std::setw(3)<<std::setfill('0')<<frame;
+            capture(name.str().c_str(),directed_visual_parameters(steady,time,default_visual_config()),directed_camera_position(174),time);
+        }
+        result=test_finish();
+    } catch(const std::exception& error) { std::cerr<<error.what()<<'\n'; }
+    return result;
+}

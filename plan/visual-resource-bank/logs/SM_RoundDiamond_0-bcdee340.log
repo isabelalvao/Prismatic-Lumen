@@ -1,0 +1,12 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RoundDiamond_0.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 54 Exports: 3 Imports: 8 Game: 10000D0
+Export "SM_RoundDiamond_0" was found in package "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RoundDiamond_0.uasset"
+Found 1 object(s)
+Loading StaticMesh4 SM_RoundDiamond_0 from package /Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RoundDiamond_0.uasset
+Loading package: /Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_InsideOut.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 68 Exports: 1 Imports: 6 Game: 10000D0
+Loading package: /Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pyramid_Map.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 54 Exports: 1 Imports: 14 Game: 10000D0
+Loaded in 0.0 sec, 98 allocs, 0.11 MBytes serialized in 22 calls.
+Exporting objects ...
+Exporting StaticMesh4 SM_RoundDiamond_0 to C:/ORCA/Fantasynt/plan/visual-resource-bank/resources/SM_RoundDiamond_0-bcdee340/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RoundDiamond_0.gltf

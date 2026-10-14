@@ -1,0 +1,3452 @@
+{
+  "tool": "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+  "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+  "resource_count": 67,
+  "exports_present": 67,
+  "reused_count": 1,
+  "new_export_count": 66,
+  "original_pak_size_before": 259630388,
+  "original_pak_size_after": 259630388,
+  "original_pak_mtime_ns_before": 1791747386612865900,
+  "original_pak_mtime_ns_after": 1791747386612865900,
+  "original_target_executed": false,
+  "rea_ghidra_used": false,
+  "resources": [
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/alpha32.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/alpha32",
+        "object_name": "alpha32",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 17184,
+        "serial_size": 12241,
+        "payload_sha1": "8420185cd8718d32a52ac3b99a31d741aa2b63bd",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 41244725,
+        "payload_size": 29429,
+        "source_sha1_verified": true,
+        "resource_id": "alpha32-8420185c"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\alpha32-8420185c",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\alpha32-8420185c",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/alpha32",
+        "alpha32",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\alpha32-8420185c.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\alpha32-8420185c\\Game\\_HelloEnjoy_\\ChezNous\\Assets\\Forest\\camo32_tube\\alpha32.bin",
+          "size": 10272,
+          "sha256": "404ad5010e35dfb98c2f90136f69991b3c871dce2ce06946cd8a2d6a49ebd987"
+        },
+        {
+          "path": "resources\\alpha32-8420185c\\Game\\_HelloEnjoy_\\ChezNous\\Assets\\Forest\\camo32_tube\\alpha32.gltf",
+          "size": 2324,
+          "sha256": "334f2405bd5f39e950e5e414a61553d44dcedab292e6692cc8431aa4bf788229"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/alpha33.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/alpha33",
+        "object_name": "alpha33",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 16054,
+        "serial_size": 11365,
+        "payload_sha1": "037ba6cbd3f08b41c47f00bb664dcae938aaf73f",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 41275445,
+        "payload_size": 27423,
+        "source_sha1_verified": true,
+        "resource_id": "alpha33-037ba6cb"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\alpha33-037ba6cb",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\alpha33-037ba6cb",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/alpha33",
+        "alpha33",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\alpha33-037ba6cb.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\alpha33-037ba6cb\\Game\\_HelloEnjoy_\\ChezNous\\Assets\\Forest\\camo32_tube\\alpha33.bin",
+          "size": 9060,
+          "sha256": "3b2a9a712f199031e1748290c5c69df0f5f788ea561d4d0b5b8c67b7a8314a63"
+        },
+        {
+          "path": "resources\\alpha33-037ba6cb\\Game\\_HelloEnjoy_\\ChezNous\\Assets\\Forest\\camo32_tube\\alpha33.gltf",
+          "size": 2323,
+          "sha256": "7ddb56fcab17c24b51a46fd545a89bee44b9b9e58b1a73188f3c61f06335ac25"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/blue32.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/blue32",
+        "object_name": "blue32",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 31762,
+        "serial_size": 25205,
+        "payload_sha1": "a2348040bb144c4f93eb38f53d05b2f6eb099b4c",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 41443381,
+        "payload_size": 56971,
+        "source_sha1_verified": true,
+        "resource_id": "blue32-a2348040"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\blue32-a2348040",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\blue32-a2348040",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/blue32",
+        "blue32",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\blue32-a2348040.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\blue32-a2348040\\Game\\_HelloEnjoy_\\ChezNous\\Assets\\Forest\\camo32_tube\\blue32.bin",
+          "size": 19820,
+          "sha256": "734bd19d48c94a2f7776769ba8940ca27f7f28783f1e8c756f2f7aaea11bef16"
+        },
+        {
+          "path": "resources\\blue32-a2348040\\Game\\_HelloEnjoy_\\ChezNous\\Assets\\Forest\\camo32_tube\\blue32.gltf",
+          "size": 2325,
+          "sha256": "f560a5a108c15c6e1bf814b9dd68ee391de0de474be9a8244e03372b9d036c33"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/blue33.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/blue33",
+        "object_name": "blue33",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 31946,
+        "serial_size": 24917,
+        "payload_sha1": "58f3311b81a364f6dc49e41228887eced67db2e6",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 41500725,
+        "payload_size": 56867,
+        "source_sha1_verified": true,
+        "resource_id": "blue33-58f3311b"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\blue33-58f3311b",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\blue33-58f3311b",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/blue33",
+        "blue33",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\blue33-58f3311b.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\blue33-58f3311b\\Game\\_HelloEnjoy_\\ChezNous\\Assets\\Forest\\camo32_tube\\blue33.bin",
+          "size": 18524,
+          "sha256": "bf0d5d8ca1127d1a923af170bc5d63502e69dc3f9307f99eea7ce8061e1b8c0f"
+        },
+        {
+          "path": "resources\\blue33-58f3311b\\Game\\_HelloEnjoy_\\ChezNous\\Assets\\Forest\\camo32_tube\\blue33.gltf",
+          "size": 2323,
+          "sha256": "65c5b55beb85b0169ee5144231ab8c0286d71815edfebff391a41325c71896de"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/green32.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/green32",
+        "object_name": "green32",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 25684,
+        "serial_size": 20153,
+        "payload_sha1": "94cfb01fe92f59391987e373fd5c57064608b2e8",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 41697333,
+        "payload_size": 45841,
+        "source_sha1_verified": true,
+        "resource_id": "green32-94cfb01f"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\green32-94cfb01f",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\green32-94cfb01f",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/green32",
+        "green32",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\green32-94cfb01f.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.046999999904073775,
+      "files": [
+        {
+          "path": "resources\\green32-94cfb01f\\Game\\_HelloEnjoy_\\ChezNous\\Assets\\Forest\\camo32_tube\\green32.bin",
+          "size": 14936,
+          "sha256": "403f01902f80de97b0c2ab997442941a370f31a401d36e8acc0d27a06cd29e51"
+        },
+        {
+          "path": "resources\\green32-94cfb01f\\Game\\_HelloEnjoy_\\ChezNous\\Assets\\Forest\\camo32_tube\\green32.gltf",
+          "size": 2328,
+          "sha256": "c0fbe4373c10acf6af4c5196a3becb3b0fc1e44a79197aba5609b9bd72e6f7eb"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/green33.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/green33",
+        "object_name": "green33",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 30664,
+        "serial_size": 23377,
+        "payload_sha1": "550b30025ca6d2fb794fde4afbdfae81ee6b801e",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 41744437,
+        "payload_size": 54045,
+        "source_sha1_verified": true,
+        "resource_id": "green33-550b3002"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\green33-550b3002",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\green33-550b3002",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/green33",
+        "green33",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\green33-550b3002.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\green33-550b3002\\Game\\_HelloEnjoy_\\ChezNous\\Assets\\Forest\\camo32_tube\\green33.bin",
+          "size": 16704,
+          "sha256": "914e6c485ca876f330211197f3fe5af527efb6828af9afbb44fa28cb40d1ca79"
+        },
+        {
+          "path": "resources\\green33-550b3002\\Game\\_HelloEnjoy_\\ChezNous\\Assets\\Forest\\camo32_tube\\green33.gltf",
+          "size": 2325,
+          "sha256": "39cd0fa347de0e02921cbba12ac24e6e042f60225510316e63580d5fc503c3df"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/red32.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/red32",
+        "object_name": "red32",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 26588,
+        "serial_size": 20541,
+        "payload_sha1": "3f811393d139d00f2a98f6d94e71eb21c7348924",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 41938997,
+        "payload_size": 47133,
+        "source_sha1_verified": true,
+        "resource_id": "red32-3f811393"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\red32-3f811393",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\red32-3f811393",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/red32",
+        "red32",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\red32-3f811393.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.03100000007543713,
+      "files": [
+        {
+          "path": "resources\\red32-3f811393\\Game\\_HelloEnjoy_\\ChezNous\\Assets\\Forest\\camo32_tube\\red32.bin",
+          "size": 14092,
+          "sha256": "b9465549ed820fc9ab1db3c3fca35ec3e1c01e0c3c137e624240689782f50867"
+        },
+        {
+          "path": "resources\\red32-3f811393\\Game\\_HelloEnjoy_\\ChezNous\\Assets\\Forest\\camo32_tube\\red32.gltf",
+          "size": 2326,
+          "sha256": "ac5bd9d3156ded9b32fe3e6b9d1cc9131af521eb6a45d383e282fbf1b1e03401"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/red33.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/red33",
+        "object_name": "red33",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 22680,
+        "serial_size": 17473,
+        "payload_sha1": "7d90d621082a958576b1001354499a4f3033be77",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 41988149,
+        "payload_size": 40157,
+        "source_sha1_verified": true,
+        "resource_id": "red33-7d90d621"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\red33-7d90d621",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\red33-7d90d621",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/red33",
+        "red33",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\red33-7d90d621.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.030999999959021807,
+      "files": [
+        {
+          "path": "resources\\red33-7d90d621\\Game\\_HelloEnjoy_\\ChezNous\\Assets\\Forest\\camo32_tube\\red33.bin",
+          "size": 12816,
+          "sha256": "0b43915615cb08aabdc9c6d528c9aeedd32dbf03fd7a5cdc5e99022ad9fbb3c4"
+        },
+        {
+          "path": "resources\\red33-7d90d621\\Game\\_HelloEnjoy_\\ChezNous\\Assets\\Forest\\camo32_tube\\red33.gltf",
+          "size": 2318,
+          "sha256": "4ff7e4ddfc0d78ec5814bd7542801b00ca200efadd24ef04b98511f1362a556a"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Ground.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Ground",
+        "object_name": "SM_Pyramid_Ground",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 8325,
+        "serial_size": 33815,
+        "payload_sha1": "7d5f6db6a6adbb0b96d81400188bd178fb603039",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 72253493,
+        "payload_size": 42144,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Pyramid_Ground-7d5f6db6"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Pyramid_Ground-7d5f6db6",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Pyramid_Ground-7d5f6db6",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Ground",
+        "SM_Pyramid_Ground",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Pyramid_Ground-7d5f6db6.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.03200000000651926,
+      "files": [
+        {
+          "path": "resources\\SM_Pyramid_Ground-7d5f6db6\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Pyramid_Ground.bin",
+          "size": 21072,
+          "sha256": "d1d41030342164a34abb25777234d4d2f3d8697e352d9b67c88dcb1012746055"
+        },
+        {
+          "path": "resources\\SM_Pyramid_Ground-7d5f6db6\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Pyramid_Ground.gltf",
+          "size": 3680,
+          "sha256": "ecd59a1a97c3a06e88667e4d571cb4b483cd6a3ff28a7b3028cf83f67556bae4"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Ground_0.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Ground_0",
+        "object_name": "SM_Pyramid_Ground_0",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 8436,
+        "serial_size": 41892,
+        "payload_sha1": "1852674678086eaff32a3a5d7caa9263204ec68e",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 72560693,
+        "payload_size": 50332,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Pyramid_Ground_0-18526746"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Pyramid_Ground_0-18526746",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Pyramid_Ground_0-18526746",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Ground_0",
+        "SM_Pyramid_Ground_0",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Pyramid_Ground_0-18526746.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.03200000000651926,
+      "files": [
+        {
+          "path": "resources\\SM_Pyramid_Ground_0-18526746\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Pyramid_Ground_0.bin",
+          "size": 35188,
+          "sha256": "90714f5a462580adbd17bdf37a9bd98963ba6f96cebcacc55979602ce55927c2"
+        },
+        {
+          "path": "resources\\SM_Pyramid_Ground_0-18526746\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Pyramid_Ground_0.gltf",
+          "size": 4178,
+          "sha256": "ba6f40a91fb84bacc51266383e28d96fe1d0460c14513cd3e429d2757ab65224"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Ground_1.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Ground_1",
+        "object_name": "SM_Pyramid_Ground_1",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 2258,
+        "serial_size": 48097,
+        "payload_sha1": "d4fd52b566ff5b74d12661fdbd79dc47c983ecc8",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 72622133,
+        "payload_size": 50359,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Pyramid_Ground_1-d4fd52b5"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Pyramid_Ground_1-d4fd52b5",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Pyramid_Ground_1-d4fd52b5",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Ground_1",
+        "SM_Pyramid_Ground_1",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Pyramid_Ground_1-d4fd52b5.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_Pyramid_Ground_1-d4fd52b5\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Pyramid_Ground_1.bin",
+          "size": 40996,
+          "sha256": "774a1813344808ec9248e78c78f0cefa3f1a553200f54788a664cc28d027c945"
+        },
+        {
+          "path": "resources\\SM_Pyramid_Ground_1-d4fd52b5\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Pyramid_Ground_1.gltf",
+          "size": 6011,
+          "sha256": "d14bbfbc12098bfe166a0ee15686b4c83f1f59abe7991ff26fb82adcfcab1ac5"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RoundDiamond.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RoundDiamond",
+        "object_name": "SM_RoundDiamond",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 5813,
+        "serial_size": 24788,
+        "payload_sha1": "7e6d45e5c3a9c9d5df5761896c0738029381ff6b",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 73500725,
+        "payload_size": 30605,
+        "source_sha1_verified": true,
+        "resource_id": "SM_RoundDiamond-7e6d45e5"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_RoundDiamond-7e6d45e5",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_RoundDiamond-7e6d45e5",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RoundDiamond",
+        "SM_RoundDiamond",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_RoundDiamond-7e6d45e5.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.030999999959021807,
+      "files": [
+        {
+          "path": "resources\\SM_RoundDiamond-7e6d45e5\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_RoundDiamond.bin",
+          "size": 16048,
+          "sha256": "2cdcdddb96ae8fd4ab7c2f9cbcc8915e5028a9db013c26af51a2560b55040ae8"
+        },
+        {
+          "path": "resources\\SM_RoundDiamond-7e6d45e5\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_RoundDiamond.gltf",
+          "size": 2354,
+          "sha256": "6c003f5be5b39811d383b0046cf34ab531e3a957237866551927c00d0be7182b"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RoundDiamond_0.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RoundDiamond_0",
+        "object_name": "SM_RoundDiamond_0",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 4219,
+        "serial_size": 85825,
+        "payload_sha1": "bcdee3403396a97a419b97ce730866cf8567b9c2",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 74119221,
+        "payload_size": 90048,
+        "source_sha1_verified": true,
+        "resource_id": "SM_RoundDiamond_0-bcdee340"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_RoundDiamond_0-bcdee340",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_RoundDiamond_0-bcdee340",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RoundDiamond_0",
+        "SM_RoundDiamond_0",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_RoundDiamond_0-bcdee340.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.030999999959021807,
+      "files": [
+        {
+          "path": "resources\\SM_RoundDiamond_0-bcdee340\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_RoundDiamond_0.bin",
+          "size": 72596,
+          "sha256": "8ff4e1cf66b8900f3d155c01a0052ca5eca3fe65d1c4fb8dc921eb30568a179e"
+        },
+        {
+          "path": "resources\\SM_RoundDiamond_0-bcdee340\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_RoundDiamond_0.gltf",
+          "size": 4189,
+          "sha256": "b80569c5f4dee3ad3919edfdf310dba8415502e67b77003c028375784c743f5b"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RoundDiamond_1.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RoundDiamond_1",
+        "object_name": "SM_RoundDiamond_1",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 2015,
+        "serial_size": 85825,
+        "payload_sha1": "58dd4af87ef99e9f062cc7f2c3df0a4246546bbc",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 74229813,
+        "payload_size": 87844,
+        "source_sha1_verified": true,
+        "resource_id": "SM_RoundDiamond_1-58dd4af8"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_RoundDiamond_1-58dd4af8",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_RoundDiamond_1-58dd4af8",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RoundDiamond_1",
+        "SM_RoundDiamond_1",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_RoundDiamond_1-58dd4af8.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_RoundDiamond_1-58dd4af8\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_RoundDiamond_1.bin",
+          "size": 72596,
+          "sha256": "c7417661ff5993977f116e2b4f271ac37c8a274b6f4f807c59848f8198aa5fb4"
+        },
+        {
+          "path": "resources\\SM_RoundDiamond_1-58dd4af8\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_RoundDiamond_1.gltf",
+          "size": 4190,
+          "sha256": "e923ae964f0c119784a2036df5137e4bf4c94817dddd771415c4dab171351b0b"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Sky.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Sky",
+        "object_name": "SM_Tube_Sky",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10683,
+        "serial_size": 14376,
+        "payload_sha1": "21b0b603936e6921138b262657d41501cb623e18",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 74604597,
+        "payload_size": 25063,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Tube_Sky-21b0b603"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tube_Sky-21b0b603",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tube_Sky-21b0b603",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Sky",
+        "SM_Tube_Sky",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Tube_Sky-21b0b603.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_Tube_Sky-21b0b603\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tube_Sky.bin",
+          "size": 8184,
+          "sha256": "d32134314e1350d37a6931067fb463008801f8b7571a6b753b9386cf38117326"
+        },
+        {
+          "path": "resources\\SM_Tube_Sky-21b0b603\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tube_Sky.gltf",
+          "size": 2344,
+          "sha256": "125d147596bc4cb654615acaafb3aff37be82331f86bc128cef7fd0fa13e3f09"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/tube_shapes_tube_square.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/tube_shapes_tube_square",
+        "object_name": "tube_shapes_tube_square",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 5747,
+        "serial_size": 111844,
+        "payload_sha1": "96c85acc6426e86e278bc519798ecee8872cfb5d",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 74907701,
+        "payload_size": 117595,
+        "source_sha1_verified": true,
+        "resource_id": "tube_shapes_tube_square-96c85acc"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\tube_shapes_tube_square-96c85acc",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\tube_shapes_tube_square-96c85acc",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/tube_shapes_tube_square",
+        "tube_shapes_tube_square",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\tube_shapes_tube_square-96c85acc.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.046999999904073775,
+      "files": [
+        {
+          "path": "resources\\tube_shapes_tube_square-96c85acc\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\tube_shapes_tube_square.bin",
+          "size": 67040,
+          "sha256": "cee3ea4400caecb7a678ef2e9263aa02671882bd31364eb11f2a37d19975817d"
+        },
+        {
+          "path": "resources\\tube_shapes_tube_square-96c85acc\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\tube_shapes_tube_square.gltf",
+          "size": 2394,
+          "sha256": "abb87a57c5dac8878c4e56044fe30eb83c9c8315f9bd224cbf0fd06677e68fb9"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Terrain.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Terrain",
+        "object_name": "SM_Tube_Terrain",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 4692,
+        "serial_size": 2684,
+        "payload_sha1": "5a72686de583b08fa1fd4a43c7baa26aae699918",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 75042869,
+        "payload_size": 7380,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Tube_Terrain-5a72686d"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tube_Terrain-5a72686d",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tube_Terrain-5a72686d",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Terrain",
+        "SM_Tube_Terrain",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Tube_Terrain-5a72686d.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_Tube_Terrain-5a72686d\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tube_Terrain.bin",
+          "size": 1476,
+          "sha256": "48da3268b49e105ad6c38aacfa4328e9b4d1469c05a9b8e9c0eee18f2e2ef940"
+        },
+        {
+          "path": "resources\\SM_Tube_Terrain-5a72686d\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tube_Terrain.gltf",
+          "size": 2102,
+          "sha256": "4c7be3c9e6845a1d74e268780431cfaef2184640a506d23fce0a021a687286f4"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/tube_shapes_tube_triangle.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/tube_shapes_tube_triangle",
+        "object_name": "tube_shapes_tube_triangle",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 5770,
+        "serial_size": 84393,
+        "payload_sha1": "82b5e0e79d50ac731984d0eed1d012abbf29f16e",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 75067445,
+        "payload_size": 90167,
+        "source_sha1_verified": true,
+        "resource_id": "tube_shapes_tube_triangle-82b5e0e7"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\tube_shapes_tube_triangle-82b5e0e7",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\tube_shapes_tube_triangle-82b5e0e7",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/tube_shapes_tube_triangle",
+        "tube_shapes_tube_triangle",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\tube_shapes_tube_triangle-82b5e0e7.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.062000000034458935,
+      "files": [
+        {
+          "path": "resources\\tube_shapes_tube_triangle-82b5e0e7\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\tube_shapes_tube_triangle.bin",
+          "size": 50896,
+          "sha256": "2ff7d4fd6960c2b631a5d41681bb35b0ec3588d20cf22856bff3d5e551da81d1"
+        },
+        {
+          "path": "resources\\tube_shapes_tube_triangle-82b5e0e7\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\tube_shapes_tube_triangle.gltf",
+          "size": 2397,
+          "sha256": "49003ec28f6161d52746d38f4d2cfb8fa44a0727b38294662e849d29761c384e"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Terrain.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Terrain",
+        "object_name": "SM_Pyramid_Terrain",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 8107,
+        "serial_size": 28023,
+        "payload_sha1": "0d563fde7bc33fcef766ab0b157c45e0fae6d1bc",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 75694133,
+        "payload_size": 36134,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Pyramid_Terrain-0d563fde"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Pyramid_Terrain-0d563fde",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Pyramid_Terrain-0d563fde",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Terrain",
+        "SM_Pyramid_Terrain",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Pyramid_Terrain-0d563fde.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_Pyramid_Terrain-0d563fde\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Pyramid_Terrain.bin",
+          "size": 16032,
+          "sha256": "f4d88b67e96dba8e5f3e1bf073b92ae5d45f6c41eba536a2eb0a739a79decb8c"
+        },
+        {
+          "path": "resources\\SM_Pyramid_Terrain-0d563fde\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Pyramid_Terrain.gltf",
+          "size": 2127,
+          "sha256": "002ec8d4da0085bbb0d6058aceae6b96b7d6537ca13470890335c9950c42a7db"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pole_Map.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pole_Map",
+        "object_name": "SM_Pole_Map",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 5804,
+        "serial_size": 8647,
+        "payload_sha1": "ff556b65df465736eaaa30fb58487f5104729f51",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 76652597,
+        "payload_size": 14455,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Pole_Map-ff556b65"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Pole_Map-ff556b65",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Pole_Map-ff556b65",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pole_Map",
+        "SM_Pole_Map",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Pole_Map-ff556b65.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_Pole_Map-ff556b65\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Pole_Map.bin",
+          "size": 6312,
+          "sha256": "b90c90491dd1dc3de383273df35256c42b0cd2516fe4f5387fc91de3fe0bf7b4"
+        },
+        {
+          "path": "resources\\SM_Pole_Map-ff556b65\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Pole_Map.gltf",
+          "size": 5235,
+          "sha256": "173f531c1a420df0bc2386d3e6a73e918f8b959eae1356ff717ad30ce4703284"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Laser.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Laser",
+        "object_name": "SM_Laser",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 2367,
+        "serial_size": 6932,
+        "payload_sha1": "b74779c80dc171345308e299238eea3b70c8a0ce",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 77574197,
+        "payload_size": 9303,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Laser-b74779c8"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Laser-b74779c8",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Laser-b74779c8",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Laser",
+        "SM_Laser",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Laser-b74779c8.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.046999999904073775,
+      "files": [
+        {
+          "path": "resources\\SM_Laser-b74779c8\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Laser.bin",
+          "size": 4032,
+          "sha256": "cd56cca84a6bf6326f4e5dd895935f5841ce0da4634aaa3a61045de786fc90f6"
+        },
+        {
+          "path": "resources\\SM_Laser-b74779c8\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Laser.gltf",
+          "size": 2067,
+          "sha256": "978c51cd8f830188ce914821c87b4bf159b4ad11df3bb855e3f2f3f9bfc5b505"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Black.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Black",
+        "object_name": "SM_Pyramid_Black",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 6523,
+        "serial_size": 8631,
+        "payload_sha1": "036f7f44b39f503fe5b5812acc749d268e96bbfa",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 97214517,
+        "payload_size": 15158,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Pyramid_Black-036f7f44"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Pyramid_Black-036f7f44",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Pyramid_Black-036f7f44",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Black",
+        "SM_Pyramid_Black",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Pyramid_Black-036f7f44.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_Pyramid_Black-036f7f44\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Pyramid_Black.bin",
+          "size": 5328,
+          "sha256": "a6d47e1c9bb6252d5ec1b2204cb4d2d930b4ea5085be34b7a6e8b1ab256427a5"
+        },
+        {
+          "path": "resources\\SM_Pyramid_Black-036f7f44\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Pyramid_Black.gltf",
+          "size": 2116,
+          "sha256": "d8b6acc37d9a502ed0f47ef100fec73cd4321c975982165cee032e3afdb55717"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Gold.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Gold",
+        "object_name": "SM_Pyramid_Gold",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 6676,
+        "serial_size": 14775,
+        "payload_sha1": "04c755a00830705d20af02772f8c7222bb11d5c9",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 98848821,
+        "payload_size": 21455,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Pyramid_Gold-04c755a0"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Pyramid_Gold-04c755a0",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Pyramid_Gold-04c755a0",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Gold",
+        "SM_Pyramid_Gold",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Pyramid_Gold-04c755a0.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_Pyramid_Gold-04c755a0\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Pyramid_Gold.bin",
+          "size": 8976,
+          "sha256": "b1d83d6cb4dd03249b21e7f6609ae351f8de5f4d83cd579f679d1b29e1a55504"
+        },
+        {
+          "path": "resources\\SM_Pyramid_Gold-04c755a0\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Pyramid_Gold.gltf",
+          "size": 2120,
+          "sha256": "0ad9c31fa193cd3a6e3cbdb38b8ad0c10790b53b874a6e2dc7859fb91925012f"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tree.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tree",
+        "object_name": "SM_Tree",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10652,
+        "serial_size": 2924,
+        "payload_sha1": "b5cf91c33861a96937d2603388e5d0a794c94741",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json",
+          "geometry-controller-assets.json"
+        ],
+        "payload_pak_offset": 98910261,
+        "payload_size": 13580,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Tree-b5cf91c3"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tree-b5cf91c3",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tree-b5cf91c3",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tree",
+        "SM_Tree",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Tree-b5cf91c3.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.045999999972991645,
+      "files": [
+        {
+          "path": "resources\\SM_Tree-b5cf91c3\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tree.bin",
+          "size": 2496,
+          "sha256": "7f8f22edc84a3b57dbf4feffdd1d99332b7e1c070b554565988c7b280244feb3"
+        },
+        {
+          "path": "resources\\SM_Tree-b5cf91c3\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tree.gltf",
+          "size": 2056,
+          "sha256": "5bf2396132c7aeb0fcf8a97ee81b3c16ce9fccbfc65e149282014a15d64da057"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tree_Off.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tree_Off",
+        "object_name": "SM_Tree_Off",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10660,
+        "serial_size": 2924,
+        "payload_sha1": "f1e53b71304f8ba593aad92ab3e12006b9d0edaf",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json",
+          "geometry-controller-assets.json"
+        ],
+        "payload_pak_offset": 99186741,
+        "payload_size": 13588,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Tree_Off-f1e53b71"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tree_Off-f1e53b71",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tree_Off-f1e53b71",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tree_Off",
+        "SM_Tree_Off",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Tree_Off-f1e53b71.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_Tree_Off-f1e53b71\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tree_Off.bin",
+          "size": 2496,
+          "sha256": "7f8f22edc84a3b57dbf4feffdd1d99332b7e1c070b554565988c7b280244feb3"
+        },
+        {
+          "path": "resources\\SM_Tree_Off-f1e53b71\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tree_Off.gltf",
+          "size": 2068,
+          "sha256": "6ace21727966cdb7b7b44827a0b80b7ab5db057c6c31f89a836b85444d2069a7"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_Cut_1.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_Cut_1",
+        "object_name": "SM_Dot_Cut_1",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10648,
+        "serial_size": 13839,
+        "payload_sha1": "2bbcdb0a6df53a042481ce6d3d49552338bef44f",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 99219509,
+        "payload_size": 24491,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Dot_Cut_1-2bbcdb0a"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Dot_Cut_1-2bbcdb0a",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Dot_Cut_1-2bbcdb0a",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_Cut_1",
+        "SM_Dot_Cut_1",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Dot_Cut_1-2bbcdb0a.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_Dot_Cut_1-2bbcdb0a\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Dot_Cut_1.bin",
+          "size": 7104,
+          "sha256": "7d43c6dc6c9f092695a1e8d64bb060c03cad5e974d8f4bd6de52c8045d03eee1"
+        },
+        {
+          "path": "resources\\SM_Dot_Cut_1-2bbcdb0a\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Dot_Cut_1.gltf",
+          "size": 2111,
+          "sha256": "37211e4b255b7af3f31b7d4912dce40a7053fde42330c718ee9b53517d797b46"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_Cut_2.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_Cut_2",
+        "object_name": "SM_Dot_Cut_2",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10695,
+        "serial_size": 13868,
+        "payload_sha1": "c796344fea0d4760590cb4fd620afe83c73c32bb",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 99258421,
+        "payload_size": 24567,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Dot_Cut_2-c796344f"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Dot_Cut_2-c796344f",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Dot_Cut_2-c796344f",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_Cut_2",
+        "SM_Dot_Cut_2",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Dot_Cut_2-c796344f.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_Dot_Cut_2-c796344f\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Dot_Cut_2.bin",
+          "size": 7104,
+          "sha256": "7d43c6dc6c9f092695a1e8d64bb060c03cad5e974d8f4bd6de52c8045d03eee1"
+        },
+        {
+          "path": "resources\\SM_Dot_Cut_2-c796344f\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Dot_Cut_2.gltf",
+          "size": 2111,
+          "sha256": "26a06009d215d006516c4ea7c3534b9d88393a25f89b6c595a1e61d961a4987b"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_Cut_3.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_Cut_3",
+        "object_name": "SM_Dot_Cut_3",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10648,
+        "serial_size": 13839,
+        "payload_sha1": "5dc3fb2fe4e8101996ab3fce7d0ec76c4cc2f00f",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 99299381,
+        "payload_size": 24491,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Dot_Cut_3-5dc3fb2f"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Dot_Cut_3-5dc3fb2f",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Dot_Cut_3-5dc3fb2f",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_Cut_3",
+        "SM_Dot_Cut_3",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Dot_Cut_3-5dc3fb2f.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_Dot_Cut_3-5dc3fb2f\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Dot_Cut_3.bin",
+          "size": 7104,
+          "sha256": "7d43c6dc6c9f092695a1e8d64bb060c03cad5e974d8f4bd6de52c8045d03eee1"
+        },
+        {
+          "path": "resources\\SM_Dot_Cut_3-5dc3fb2f\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Dot_Cut_3.gltf",
+          "size": 2111,
+          "sha256": "6d603150e2d05cddcec3320e56dfd4007b239ea808df93dea08f25e4bc4f9106"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_Cut_4.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_Cut_4",
+        "object_name": "SM_Dot_Cut_4",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10648,
+        "serial_size": 13839,
+        "payload_sha1": "42f992af7835f6b21693272ea307b90369a5da86",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 99338293,
+        "payload_size": 24491,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Dot_Cut_4-42f992af"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Dot_Cut_4-42f992af",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Dot_Cut_4-42f992af",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_Cut_4",
+        "SM_Dot_Cut_4",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Dot_Cut_4-42f992af.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.046999999904073775,
+      "files": [
+        {
+          "path": "resources\\SM_Dot_Cut_4-42f992af\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Dot_Cut_4.bin",
+          "size": 7104,
+          "sha256": "7d43c6dc6c9f092695a1e8d64bb060c03cad5e974d8f4bd6de52c8045d03eee1"
+        },
+        {
+          "path": "resources\\SM_Dot_Cut_4-42f992af\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Dot_Cut_4.gltf",
+          "size": 2111,
+          "sha256": "184d1967f3ee30ced550c04d18bf972e18d29c38e53d49df23f3bd543fa3d4e7"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_1.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_1",
+        "object_name": "SM_Dot_1",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10640,
+        "serial_size": 16359,
+        "payload_sha1": "90943fe377307fc25748d966b6267354c806b09f",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 99371061,
+        "payload_size": 27003,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Dot_1-90943fe3"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Dot_1-90943fe3",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Dot_1-90943fe3",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_1",
+        "SM_Dot_1",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Dot_1-90943fe3.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.06300000008195639,
+      "files": [
+        {
+          "path": "resources\\SM_Dot_1-90943fe3\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Dot_1.bin",
+          "size": 8544,
+          "sha256": "6efec70d01585a9a15ad81283abf430f1d45a9c68ecacbe227e8f627ec607ee4"
+        },
+        {
+          "path": "resources\\SM_Dot_1-90943fe3\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Dot_1.gltf",
+          "size": 2098,
+          "sha256": "38d238d7e0350caeac3adcd40c0e0fece67f8f60daaf94cc3b90326d6805749c"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_2.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_2",
+        "object_name": "SM_Dot_2",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10640,
+        "serial_size": 16359,
+        "payload_sha1": "0b1135c5da396f93c2fc4deaf4bba07f9e6bca48",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 99409973,
+        "payload_size": 27003,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Dot_2-0b1135c5"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Dot_2-0b1135c5",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Dot_2-0b1135c5",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_2",
+        "SM_Dot_2",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Dot_2-0b1135c5.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.06199999991804361,
+      "files": [
+        {
+          "path": "resources\\SM_Dot_2-0b1135c5\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Dot_2.bin",
+          "size": 8544,
+          "sha256": "6efec70d01585a9a15ad81283abf430f1d45a9c68ecacbe227e8f627ec607ee4"
+        },
+        {
+          "path": "resources\\SM_Dot_2-0b1135c5\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Dot_2.gltf",
+          "size": 2098,
+          "sha256": "a237742d20011408ab33b596a79354726c75644a0c263935119acd57a938127d"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_3.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_3",
+        "object_name": "SM_Dot_3",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10716,
+        "serial_size": 16359,
+        "payload_sha1": "c772df6262415c7cffdcaac4a1825ed38a129a82",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 99448885,
+        "payload_size": 27079,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Dot_3-c772df62"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Dot_3-c772df62",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Dot_3-c772df62",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_3",
+        "SM_Dot_3",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Dot_3-c772df62.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.06300000008195639,
+      "files": [
+        {
+          "path": "resources\\SM_Dot_3-c772df62\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Dot_3.bin",
+          "size": 8544,
+          "sha256": "6efec70d01585a9a15ad81283abf430f1d45a9c68ecacbe227e8f627ec607ee4"
+        },
+        {
+          "path": "resources\\SM_Dot_3-c772df62\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Dot_3.gltf",
+          "size": 2098,
+          "sha256": "9c2208e648e2e654311a56c09ecb76ef1eb74a2d9e8a4df7510c6bbb2ff9c0fd"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_4.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_4",
+        "object_name": "SM_Dot_4",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10640,
+        "serial_size": 16359,
+        "payload_sha1": "12ae0966e82509424ad10fcc69d0072c2e3bc778",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 99487797,
+        "payload_size": 27003,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Dot_4-12ae0966"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Dot_4-12ae0966",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Dot_4-12ae0966",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_4",
+        "SM_Dot_4",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Dot_4-12ae0966.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.046999999904073775,
+      "files": [
+        {
+          "path": "resources\\SM_Dot_4-12ae0966\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Dot_4.bin",
+          "size": 8544,
+          "sha256": "6efec70d01585a9a15ad81283abf430f1d45a9c68ecacbe227e8f627ec607ee4"
+        },
+        {
+          "path": "resources\\SM_Dot_4-12ae0966\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Dot_4.gltf",
+          "size": 2098,
+          "sha256": "9c63f4bba78dad5fb1ab07d4e43e045f2efe330c98649c306bbcb27f39cf4f6b"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pole.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pole",
+        "object_name": "SM_Pole",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 5817,
+        "serial_size": 11943,
+        "payload_sha1": "75f3a9b6b1976655df2d4396151efe44433104ce",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 100943925,
+        "payload_size": 17764,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Pole-75f3a9b6"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Pole-75f3a9b6",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Pole-75f3a9b6",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pole",
+        "SM_Pole",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Pole-75f3a9b6.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_Pole-75f3a9b6\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Pole.bin",
+          "size": 9240,
+          "sha256": "590d0e789282fb834e4b650c8fb906d27fb10a0250dc2938e46ad4d8746885f8"
+        },
+        {
+          "path": "resources\\SM_Pole-75f3a9b6\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Pole.gltf",
+          "size": 6789,
+          "sha256": "5e3d4555cf6da6c969e7c30f591a6e5c6c41cfe6763a984205ee83f29a49298f"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_PoleDot.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_PoleDot",
+        "object_name": "SM_PoleDot",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 5755,
+        "serial_size": 727,
+        "payload_sha1": "065325d7eb30f5d24a685bc6aca6e2b4539e9153",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 101673013,
+        "payload_size": 6486,
+        "source_sha1_verified": true,
+        "resource_id": "SM_PoleDot-065325d7"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_PoleDot-065325d7",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_PoleDot-065325d7",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_PoleDot",
+        "SM_PoleDot",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_PoleDot-065325d7.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.062000000034458935,
+      "files": [
+        {
+          "path": "resources\\SM_PoleDot-065325d7\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_PoleDot.bin",
+          "size": 204,
+          "sha256": "123dee578a15941d999945380a8a7bdbbe07f32b9321c64d50bcb95cc3fdbd66"
+        },
+        {
+          "path": "resources\\SM_PoleDot-065325d7\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_PoleDot.gltf",
+          "size": 2066,
+          "sha256": "464d751b63e26d5a4eeb14e4c8093e79ac21dbd0a537b1f3365a6f3faff61fcd"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Diamond_Map.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Diamond_Map",
+        "object_name": "SM_Diamond_Map",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 5811,
+        "serial_size": 24788,
+        "payload_sha1": "559f23e13bb23e133a579069773a34eccc584cfc",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 101890101,
+        "payload_size": 30603,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Diamond_Map-559f23e1"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Diamond_Map-559f23e1",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Diamond_Map-559f23e1",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Diamond_Map",
+        "SM_Diamond_Map",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Diamond_Map-559f23e1.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_Diamond_Map-559f23e1\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Diamond_Map.bin",
+          "size": 16048,
+          "sha256": "2cdcdddb96ae8fd4ab7c2f9cbcc8915e5028a9db013c26af51a2560b55040ae8"
+        },
+        {
+          "path": "resources\\SM_Diamond_Map-559f23e1\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Diamond_Map.gltf",
+          "size": 2351,
+          "sha256": "6868dd87eef1807f1aceccc59d3dc0d85cd5d425bf1cf7888ed28f55918f2a50"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Diamond_Single.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Diamond_Single",
+        "object_name": "SM_Diamond_Single",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 1940,
+        "serial_size": 24788,
+        "payload_sha1": "3a513678d31b8bfe8a5bcb38ab6479ac8e8efd0f",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 101920821,
+        "payload_size": 26732,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Diamond_Single-3a513678"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Diamond_Single-3a513678",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Diamond_Single-3a513678",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Diamond_Single",
+        "SM_Diamond_Single",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Diamond_Single-3a513678.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_Diamond_Single-3a513678\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Diamond_Single.bin",
+          "size": 16048,
+          "sha256": "bd11a9eaa7a4d7031e73bbc6c424f61db4a8a8f8de1f3f1bb09002502d4ee002"
+        },
+        {
+          "path": "resources\\SM_Diamond_Single-3a513678\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Diamond_Single.gltf",
+          "size": 2360,
+          "sha256": "b07fe0e1ffa61fb005e2722934e084ee6ce13dcbac512d707de9520e2bb74e87"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_FogSheet_Forest.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_FogSheet_Forest",
+        "object_name": "SM_FogSheet_Forest",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 3220,
+        "serial_size": 727,
+        "payload_sha1": "54c6830de1e0beb962e4d3226fb2444db7b29c3e",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 102379573,
+        "payload_size": 3951,
+        "source_sha1_verified": true,
+        "resource_id": "SM_FogSheet_Forest-54c6830d"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_FogSheet_Forest-54c6830d",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_FogSheet_Forest-54c6830d",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_FogSheet_Forest",
+        "SM_FogSheet_Forest",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_FogSheet_Forest-54c6830d.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.046999999904073775,
+      "files": [
+        {
+          "path": "resources\\SM_FogSheet_Forest-54c6830d\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_FogSheet_Forest.bin",
+          "size": 204,
+          "sha256": "123dee578a15941d999945380a8a7bdbbe07f32b9321c64d50bcb95cc3fdbd66"
+        },
+        {
+          "path": "resources\\SM_FogSheet_Forest-54c6830d\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_FogSheet_Forest.gltf",
+          "size": 2090,
+          "sha256": "139dff8655cb6fc8b1bd161f3c41caddcd3b6e873e6a44377f2adead54544dd3"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_FogSheet_Tunnel.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_FogSheet_Tunnel",
+        "object_name": "SM_FogSheet_Tunnel",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 3220,
+        "serial_size": 727,
+        "payload_sha1": "0ea81c7fdc32ea8ed9f2d5efa939926ef360d913",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 102533173,
+        "payload_size": 3951,
+        "source_sha1_verified": true,
+        "resource_id": "SM_FogSheet_Tunnel-0ea81c7f"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_FogSheet_Tunnel-0ea81c7f",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_FogSheet_Tunnel-0ea81c7f",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_FogSheet_Tunnel",
+        "SM_FogSheet_Tunnel",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_FogSheet_Tunnel-0ea81c7f.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_FogSheet_Tunnel-0ea81c7f\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_FogSheet_Tunnel.bin",
+          "size": 204,
+          "sha256": "123dee578a15941d999945380a8a7bdbbe07f32b9321c64d50bcb95cc3fdbd66"
+        },
+        {
+          "path": "resources\\SM_FogSheet_Tunnel-0ea81c7f\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_FogSheet_Tunnel.gltf",
+          "size": 2090,
+          "sha256": "fbe20165be8f9f356883270795faf3ad480127395c94ea082dd2fbf7974655e2"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_FogSheet_Void.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_FogSheet_Void",
+        "object_name": "SM_FogSheet_Void",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 3212,
+        "serial_size": 727,
+        "payload_sha1": "75d414e8395460ec556585fc3636fb7ca7ad5558",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 102553653,
+        "payload_size": 3943,
+        "source_sha1_verified": true,
+        "resource_id": "SM_FogSheet_Void-75d414e8"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_FogSheet_Void-75d414e8",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_FogSheet_Void-75d414e8",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_FogSheet_Void",
+        "SM_FogSheet_Void",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_FogSheet_Void-75d414e8.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_FogSheet_Void-75d414e8\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_FogSheet_Void.bin",
+          "size": 204,
+          "sha256": "123dee578a15941d999945380a8a7bdbbe07f32b9321c64d50bcb95cc3fdbd66"
+        },
+        {
+          "path": "resources\\SM_FogSheet_Void-75d414e8\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_FogSheet_Void.gltf",
+          "size": 2084,
+          "sha256": "3b074bee52496c53f3386129eb760b1d668b89c865000701e40e3f1328f73bbb"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Hex_Hole_1.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Hex_Hole_1",
+        "object_name": "SM_Hex_Hole_1",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 9499,
+        "serial_size": 11092,
+        "payload_sha1": "c68b766f05028afa28529fd8c4db1ad7ade1c8f6",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 102627381,
+        "payload_size": 20595,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Hex_Hole_1-c68b766f"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Hex_Hole_1-c68b766f",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Hex_Hole_1-c68b766f",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Hex_Hole_1",
+        "SM_Hex_Hole_1",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Hex_Hole_1-c68b766f.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.030999999959021807,
+      "files": [
+        {
+          "path": "resources\\SM_Hex_Hole_1-c68b766f\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Hex_Hole_1.bin",
+          "size": 7968,
+          "sha256": "ef4ba8686cac99ea72e5ddb34b5f4fadeaa0e8a905ecc5ea25ae3dd5920b1a24"
+        },
+        {
+          "path": "resources\\SM_Hex_Hole_1-c68b766f\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Hex_Hole_1.gltf",
+          "size": 3665,
+          "sha256": "c595f109323662ec42bac160b5ff46f240a48cf6784f49e74731f49e72630b7e"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Hex_Solid_1.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Hex_Solid_1",
+        "object_name": "SM_Hex_Solid_1",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 9503,
+        "serial_size": 5764,
+        "payload_sha1": "76f06668d0e633660719cd0c6eba4f16d7d1f95b",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 103061557,
+        "payload_size": 15271,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Hex_Solid_1-76f06668"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Hex_Solid_1-76f06668",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Hex_Solid_1-76f06668",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Hex_Solid_1",
+        "SM_Hex_Solid_1",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Hex_Solid_1-76f06668.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.03200000000651926,
+      "files": [
+        {
+          "path": "resources\\SM_Hex_Solid_1-76f06668\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Hex_Solid_1.bin",
+          "size": 3972,
+          "sha256": "0e6e18eaecb7c41db640e39dabb59f8384e2e4d385ff621be64d9affe39b8941"
+        },
+        {
+          "path": "resources\\SM_Hex_Solid_1-76f06668\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Hex_Solid_1.gltf",
+          "size": 3659,
+          "sha256": "9bc17866cf3dbc9db7f87cd7f8e686b478e1f1ca2937217f26ecb7b59a82bdcd"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Hex_Solid_2.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Hex_Solid_2",
+        "object_name": "SM_Hex_Solid_2",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 9503,
+        "serial_size": 5764,
+        "payload_sha1": "c69912590e73b6451535ecd6a36849ed37523fde",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 103094325,
+        "payload_size": 15271,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Hex_Solid_2-c6991259"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Hex_Solid_2-c6991259",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Hex_Solid_2-c6991259",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Hex_Solid_2",
+        "SM_Hex_Solid_2",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Hex_Solid_2-c6991259.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_Hex_Solid_2-c6991259\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Hex_Solid_2.bin",
+          "size": 3972,
+          "sha256": "0e6e18eaecb7c41db640e39dabb59f8384e2e4d385ff621be64d9affe39b8941"
+        },
+        {
+          "path": "resources\\SM_Hex_Solid_2-c6991259\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Hex_Solid_2.gltf",
+          "size": 3659,
+          "sha256": "21d78a63757936aa6ad9a7c754f286e5042d5c2f2ffc244e25f3dafc5594f3b4"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/hollow_pyramid.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/hollow_pyramid",
+        "object_name": "hollow_pyramid",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 5194,
+        "serial_size": 21716,
+        "payload_sha1": "240d5d74287ee91e71a85a398062c77e9f3017b2",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 103120949,
+        "payload_size": 26914,
+        "source_sha1_verified": true,
+        "resource_id": "hollow_pyramid-240d5d74"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\hollow_pyramid-240d5d74",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\hollow_pyramid-240d5d74",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/hollow_pyramid",
+        "hollow_pyramid",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\hollow_pyramid-240d5d74.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\hollow_pyramid-240d5d74\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\hollow_pyramid.bin",
+          "size": 15420,
+          "sha256": "5059ae03f52727c2b009d9462708bf06ed12328e88918f7d31ebe13bca8f3a43"
+        },
+        {
+          "path": "resources\\hollow_pyramid-240d5d74\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\hollow_pyramid.gltf",
+          "size": 2120,
+          "sha256": "e2055d4850f1b5c3a96aae5a736ffd93ce5fe93b7a237df8cdc6b5536f398eb4"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/hollow_pyramid_complex.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/hollow_pyramid_complex",
+        "object_name": "hollow_pyramid_complex",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 5210,
+        "serial_size": 21716,
+        "payload_sha1": "3bac81dffa7805f2d74e4770da81e7bd1b0ee436",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 103159861,
+        "payload_size": 26930,
+        "source_sha1_verified": true,
+        "resource_id": "hollow_pyramid_complex-3bac81df"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\hollow_pyramid_complex-3bac81df",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\hollow_pyramid_complex-3bac81df",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/hollow_pyramid_complex",
+        "hollow_pyramid_complex",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\hollow_pyramid_complex-3bac81df.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\hollow_pyramid_complex-3bac81df\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\hollow_pyramid_complex.bin",
+          "size": 15420,
+          "sha256": "5059ae03f52727c2b009d9462708bf06ed12328e88918f7d31ebe13bca8f3a43"
+        },
+        {
+          "path": "resources\\hollow_pyramid_complex-3bac81df\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\hollow_pyramid_complex.gltf",
+          "size": 2144,
+          "sha256": "34def63200ce212fad48fe50c9c6751186b1d80095cd0347e612bf3c12fc295c"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_1.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_1",
+        "object_name": "SM_Lower_1",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10543,
+        "serial_size": 13839,
+        "payload_sha1": "c55b2515dd651a885fe03d9a04c4680da8c7db78",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json",
+          "geometry-controller-assets.json"
+        ],
+        "payload_pak_offset": 103209013,
+        "payload_size": 24386,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Lower_1-c55b2515"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Lower_1-c55b2515",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "method": "verified existing sample copied; no re-export",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\ue413-recovery\\sample-mesh",
+        "-gltf",
+        "-notex",
+        "SM_Lower_1"
+      ],
+      "returncode": 0,
+      "source_export_manifest": "C:\\ORCA\\Fantasynt\\plan\\ue413-recovery\\mesh-export.json",
+      "source_export_log": "C:\\ORCA\\Fantasynt\\plan\\ue413-recovery\\mesh-export.log",
+      "copied": [
+        {
+          "source": "C:\\ORCA\\Fantasynt\\plan\\ue413-recovery\\sample-mesh\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Lower_1.bin",
+          "destination": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Lower_1-c55b2515\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Lower_1.bin",
+          "sha256": "7d43c6dc6c9f092695a1e8d64bb060c03cad5e974d8f4bd6de52c8045d03eee1"
+        },
+        {
+          "source": "C:\\ORCA\\Fantasynt\\plan\\ue413-recovery\\sample-mesh\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Lower_1.gltf",
+          "destination": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Lower_1-c55b2515\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Lower_1.gltf",
+          "sha256": "24e2f57aed999840cf20affc7c608bef97888bc3952e5ef9530a1fe60ec51c6d"
+        }
+      ],
+      "elapsed_seconds": 0,
+      "files": [
+        {
+          "path": "resources\\SM_Lower_1-c55b2515\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Lower_1.bin",
+          "size": 7104,
+          "sha256": "7d43c6dc6c9f092695a1e8d64bb060c03cad5e974d8f4bd6de52c8045d03eee1"
+        },
+        {
+          "path": "resources\\SM_Lower_1-c55b2515\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Lower_1.gltf",
+          "size": 2105,
+          "sha256": "24e2f57aed999840cf20affc7c608bef97888bc3952e5ef9530a1fe60ec51c6d"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_2.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_2",
+        "object_name": "SM_Lower_2",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10543,
+        "serial_size": 13839,
+        "payload_sha1": "b1016d219cd379c799043c4ca81e36a5b55a5db6",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json",
+          "geometry-controller-assets.json"
+        ],
+        "payload_pak_offset": 103249973,
+        "payload_size": 24386,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Lower_2-b1016d21"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Lower_2-b1016d21",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Lower_2-b1016d21",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_2",
+        "SM_Lower_2",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Lower_2-b1016d21-qualified.log",
+      "method": "qualified-path preflight reused",
+      "elapsed_seconds": 0.062000000034458935,
+      "files": [
+        {
+          "path": "resources\\SM_Lower_2-b1016d21\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Lower_2.bin",
+          "size": 7104,
+          "sha256": "7d43c6dc6c9f092695a1e8d64bb060c03cad5e974d8f4bd6de52c8045d03eee1"
+        },
+        {
+          "path": "resources\\SM_Lower_2-b1016d21\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Lower_2.gltf",
+          "size": 2105,
+          "sha256": "e160e26a5dbe34ee69c98115ece0803a3c775ea100ec906a2abedae948ff3b4a"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_3.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_3",
+        "object_name": "SM_Lower_3",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10543,
+        "serial_size": 13839,
+        "payload_sha1": "bf0ca48dd30342fa63a4422cd7826d7dbe3acb6a",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json",
+          "geometry-controller-assets.json"
+        ],
+        "payload_pak_offset": 103290933,
+        "payload_size": 24386,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Lower_3-bf0ca48d"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Lower_3-bf0ca48d",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Lower_3-bf0ca48d",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_3",
+        "SM_Lower_3",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Lower_3-bf0ca48d.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.046999999904073775,
+      "files": [
+        {
+          "path": "resources\\SM_Lower_3-bf0ca48d\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Lower_3.bin",
+          "size": 7104,
+          "sha256": "7d43c6dc6c9f092695a1e8d64bb060c03cad5e974d8f4bd6de52c8045d03eee1"
+        },
+        {
+          "path": "resources\\SM_Lower_3-bf0ca48d\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Lower_3.gltf",
+          "size": 2105,
+          "sha256": "0f026f71b6e751ac222a73fc3ed3a1384ee2ca8a81fb2e8e6cb6cdecb9568bb7"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_4.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_4",
+        "object_name": "SM_Lower_4",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10543,
+        "serial_size": 13839,
+        "payload_sha1": "2c8d65553b41d3000e851a1582d7bd6fb2b0e17f",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json",
+          "geometry-controller-assets.json"
+        ],
+        "payload_pak_offset": 103331893,
+        "payload_size": 24386,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Lower_4-2c8d6555"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Lower_4-2c8d6555",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Lower_4-2c8d6555",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_4",
+        "SM_Lower_4",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Lower_4-2c8d6555.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.03200000000651926,
+      "files": [
+        {
+          "path": "resources\\SM_Lower_4-2c8d6555\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Lower_4.bin",
+          "size": 7104,
+          "sha256": "7d43c6dc6c9f092695a1e8d64bb060c03cad5e974d8f4bd6de52c8045d03eee1"
+        },
+        {
+          "path": "resources\\SM_Lower_4-2c8d6555\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Lower_4.gltf",
+          "size": 2105,
+          "sha256": "c9dd4dee461ad031ebcea4c26427300a6d09b09486404902690c64d458b98e93"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_5.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_5",
+        "object_name": "SM_Lower_5",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10543,
+        "serial_size": 13839,
+        "payload_sha1": "290ed1a9d7331d31154a3256b690515abf4f05fa",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json",
+          "geometry-controller-assets.json"
+        ],
+        "payload_pak_offset": 103372853,
+        "payload_size": 24386,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Lower_5-290ed1a9"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Lower_5-290ed1a9",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Lower_5-290ed1a9",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_5",
+        "SM_Lower_5",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Lower_5-290ed1a9.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.03200000000651926,
+      "files": [
+        {
+          "path": "resources\\SM_Lower_5-290ed1a9\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Lower_5.bin",
+          "size": 7104,
+          "sha256": "7d43c6dc6c9f092695a1e8d64bb060c03cad5e974d8f4bd6de52c8045d03eee1"
+        },
+        {
+          "path": "resources\\SM_Lower_5-290ed1a9\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Lower_5.gltf",
+          "size": 2105,
+          "sha256": "cdde941eb40e7af2e8629ec7570d4541bb4d63b1e89bc25ee43654311bf4f7aa"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_6.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_6",
+        "object_name": "SM_Lower_6",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10543,
+        "serial_size": 13839,
+        "payload_sha1": "c968c79c4581ead538729a5a2cd7883e23b55867",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json",
+          "geometry-controller-assets.json"
+        ],
+        "payload_pak_offset": 103411765,
+        "payload_size": 24386,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Lower_6-c968c79c"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Lower_6-c968c79c",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Lower_6-c968c79c",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_6",
+        "SM_Lower_6",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Lower_6-c968c79c.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.030999999959021807,
+      "files": [
+        {
+          "path": "resources\\SM_Lower_6-c968c79c\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Lower_6.bin",
+          "size": 7104,
+          "sha256": "7d43c6dc6c9f092695a1e8d64bb060c03cad5e974d8f4bd6de52c8045d03eee1"
+        },
+        {
+          "path": "resources\\SM_Lower_6-c968c79c\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Lower_6.gltf",
+          "size": 2105,
+          "sha256": "976db4af012f5c46008f5bd2a7be14ec25d7773162fbd84a14693687344ade68"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_1.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_1",
+        "object_name": "SM_Neon_1",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10936,
+        "serial_size": 14432,
+        "payload_sha1": "58dc4eca61be70c4366909aaea3b0f2e27a116a2",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 103452725,
+        "payload_size": 25372,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Neon_1-58dc4eca"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Neon_1-58dc4eca",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Neon_1-58dc4eca",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_1",
+        "SM_Neon_1",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Neon_1-58dc4eca.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_Neon_1-58dc4eca\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Neon_1.bin",
+          "size": 8296,
+          "sha256": "989d0a0a3408838fda1fbe11ebdef0e70ee2262c3fc9e6dc2b75337137251977"
+        },
+        {
+          "path": "resources\\SM_Neon_1-58dc4eca\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Neon_1.gltf",
+          "size": 2340,
+          "sha256": "87bc14ea9c35ee0ccc3377874999c8c745435908ffc7a329b1deccbca9042a45"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_2.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_2",
+        "object_name": "SM_Neon_2",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10904,
+        "serial_size": 14403,
+        "payload_sha1": "a14e71f2ac0e29961aaedf771f9c3b5f2ffa2658",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 103493685,
+        "payload_size": 25311,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Neon_2-a14e71f2"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Neon_2-a14e71f2",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Neon_2-a14e71f2",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_2",
+        "SM_Neon_2",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Neon_2-a14e71f2.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.030999999959021807,
+      "files": [
+        {
+          "path": "resources\\SM_Neon_2-a14e71f2\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Neon_2.bin",
+          "size": 8296,
+          "sha256": "989d0a0a3408838fda1fbe11ebdef0e70ee2262c3fc9e6dc2b75337137251977"
+        },
+        {
+          "path": "resources\\SM_Neon_2-a14e71f2\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Neon_2.gltf",
+          "size": 2340,
+          "sha256": "6248e4194c70a80da0d3a99084966291f1662ae8910d9a931eb0bc63166dda18"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_3.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_3",
+        "object_name": "SM_Neon_3",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10904,
+        "serial_size": 14403,
+        "payload_sha1": "548f77a393df472376d2d9dfbf03e4e88c5d951f",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 103534645,
+        "payload_size": 25311,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Neon_3-548f77a3"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Neon_3-548f77a3",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Neon_3-548f77a3",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_3",
+        "SM_Neon_3",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Neon_3-548f77a3.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_Neon_3-548f77a3\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Neon_3.bin",
+          "size": 8296,
+          "sha256": "989d0a0a3408838fda1fbe11ebdef0e70ee2262c3fc9e6dc2b75337137251977"
+        },
+        {
+          "path": "resources\\SM_Neon_3-548f77a3\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Neon_3.gltf",
+          "size": 2340,
+          "sha256": "1642cdd06f035c215eaf44c19bebddc9a0a66e4c4e1be5d9026c9ee36bf3f0dd"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_4.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_4",
+        "object_name": "SM_Neon_4",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10904,
+        "serial_size": 14403,
+        "payload_sha1": "0589a5136e083dbc4230348171ad0ca80f97ac15",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 103575605,
+        "payload_size": 25311,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Neon_4-0589a513"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Neon_4-0589a513",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Neon_4-0589a513",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_4",
+        "SM_Neon_4",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Neon_4-0589a513.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.062000000034458935,
+      "files": [
+        {
+          "path": "resources\\SM_Neon_4-0589a513\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Neon_4.bin",
+          "size": 8296,
+          "sha256": "989d0a0a3408838fda1fbe11ebdef0e70ee2262c3fc9e6dc2b75337137251977"
+        },
+        {
+          "path": "resources\\SM_Neon_4-0589a513\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Neon_4.gltf",
+          "size": 2340,
+          "sha256": "c11b54585e22d5bf8a730d1bdf5dfc0d4f7bf97e65e124fe213efaaa0d751393"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RockCube.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RockCube",
+        "object_name": "SM_RockCube",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 5483,
+        "serial_size": 1687,
+        "payload_sha1": "7d27fd1886a557dbef55312fb546ddabaf74d1b8",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 103870517,
+        "payload_size": 7174,
+        "source_sha1_verified": true,
+        "resource_id": "SM_RockCube-7d27fd18"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_RockCube-7d27fd18",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_RockCube-7d27fd18",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RockCube",
+        "SM_RockCube",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_RockCube-7d27fd18.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.06299999996554106,
+      "files": [
+        {
+          "path": "resources\\SM_RockCube-7d27fd18\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_RockCube.bin",
+          "size": 1224,
+          "sha256": "05cc4357e43a81a551001c264a152d504e4b0e689a1f6b7b8956391664b3c335"
+        },
+        {
+          "path": "resources\\SM_RockCube-7d27fd18\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_RockCube.gltf",
+          "size": 2065,
+          "sha256": "b3dcc6edd7599e756cb08030fba4fa1606112c5b12653605eece751027c0feb4"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RockLine.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RockLine",
+        "object_name": "SM_RockLine",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 1930,
+        "serial_size": 1812,
+        "payload_sha1": "783a0a1b9d84979312ac99ba055948db8c544da7",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 103895093,
+        "payload_size": 3746,
+        "source_sha1_verified": true,
+        "resource_id": "SM_RockLine-783a0a1b"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_RockLine-783a0a1b",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_RockLine-783a0a1b",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RockLine",
+        "SM_RockLine",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_RockLine-783a0a1b.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_RockLine-783a0a1b\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_RockLine.bin",
+          "size": 1416,
+          "sha256": "7fcc4bda1f78da537b6dcb43bacf5ece905f5758e715021757b308c4d2219c42"
+        },
+        {
+          "path": "resources\\SM_RockLine-783a0a1b\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_RockLine.gltf",
+          "size": 2301,
+          "sha256": "4f9ddf5c7f8eeb71aced78d5c7cc85fdda24f6510a61a0774988794f6de51ec9"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RockLight_Pyramid6.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RockLight_Pyramid6",
+        "object_name": "SM_RockLight_Pyramid6",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 1959,
+        "serial_size": 1277,
+        "payload_sha1": "a580c7d5af8c2efb3c176dd1d525f7958086ceba",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 104167477,
+        "payload_size": 3240,
+        "source_sha1_verified": true,
+        "resource_id": "SM_RockLight_Pyramid6-a580c7d5"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_RockLight_Pyramid6-a580c7d5",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_RockLight_Pyramid6-a580c7d5",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RockLight_Pyramid6",
+        "SM_RockLight_Pyramid6",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_RockLight_Pyramid6-a580c7d5.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.030999999959021807,
+      "files": [
+        {
+          "path": "resources\\SM_RockLight_Pyramid6-a580c7d5\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_RockLight_Pyramid6.bin",
+          "size": 764,
+          "sha256": "d0a4450a929a0eba5f2c960e6df53d904d0e242717b4cc935d94fac7f8b461e5"
+        },
+        {
+          "path": "resources\\SM_RockLight_Pyramid6-a580c7d5\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_RockLight_Pyramid6.gltf",
+          "size": 2333,
+          "sha256": "330284c5ec1f119ef22d7404ac7b30f78418e6b497ddf59d59c3319ce15c6bda"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/TubeLattice/tube_lattice_flat_0.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/TubeLattice/tube_lattice_flat_0",
+        "object_name": "tube_lattice_flat_0",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 8636,
+        "serial_size": 172697,
+        "payload_sha1": "4c6f13eb1d17e590526ba2e07e1ac0b55a88fe59",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 104423477,
+        "payload_size": 181337,
+        "source_sha1_verified": true,
+        "resource_id": "tube_lattice_flat_0-4c6f13eb"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\tube_lattice_flat_0-4c6f13eb",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\tube_lattice_flat_0-4c6f13eb",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/TubeLattice/tube_lattice_flat_0",
+        "tube_lattice_flat_0",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\tube_lattice_flat_0-4c6f13eb.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.030999999959021807,
+      "files": [
+        {
+          "path": "resources\\tube_lattice_flat_0-4c6f13eb\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\TubeLattice\\tube_lattice_flat_0.bin",
+          "size": 136064,
+          "sha256": "bc7b214244b613c3e75efc6761f4290ffb4d67afcd4f2877dfc3e68bf1141374"
+        },
+        {
+          "path": "resources\\tube_lattice_flat_0-4c6f13eb\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\TubeLattice\\tube_lattice_flat_0.gltf",
+          "size": 2387,
+          "sha256": "35e9cb434002ac32aabbdd28a70a1080db56b49c20a9265e434ca7ab042e0a03"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/TubeLattice/tube_lattice_flat_2.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/TubeLattice/tube_lattice_flat_2",
+        "object_name": "tube_lattice_flat_2",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 194528,
+        "serial_size": 172793,
+        "payload_sha1": "b1016a20e83281599aa009b8f17bb1fcc87ce08e",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 104939573,
+        "payload_size": 367325,
+        "source_sha1_verified": true,
+        "resource_id": "tube_lattice_flat_2-b1016a20"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\tube_lattice_flat_2-b1016a20",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\tube_lattice_flat_2-b1016a20",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/TubeLattice/tube_lattice_flat_2",
+        "tube_lattice_flat_2",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\tube_lattice_flat_2-b1016a20.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.046999999904073775,
+      "files": [
+        {
+          "path": "resources\\tube_lattice_flat_2-b1016a20\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\TubeLattice\\tube_lattice_flat_2.bin",
+          "size": 136076,
+          "sha256": "7159d6b9fb27ed02b38a69d77ef471462d562f8016e2b0d7c9dba572fd1a7365"
+        },
+        {
+          "path": "resources\\tube_lattice_flat_2-b1016a20\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\TubeLattice\\tube_lattice_flat_2.gltf",
+          "size": 2386,
+          "sha256": "efa5e241f81ad0d659988e56458d7a47c8e1035d5a533cb3d60dc16590759d7d"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/tunnel_video_wall_lod1.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/tunnel_video_wall_lod1",
+        "object_name": "tunnel_video_wall_lod1",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 6842,
+        "serial_size": 155505,
+        "payload_sha1": "5a2c3d400adc9e0efa20e809182242446a2cfeb7",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 105343029,
+        "payload_size": 162351,
+        "source_sha1_verified": true,
+        "resource_id": "tunnel_video_wall_lod1-5a2c3d40"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\tunnel_video_wall_lod1-5a2c3d40",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\tunnel_video_wall_lod1-5a2c3d40",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/tunnel_video_wall_lod1",
+        "tunnel_video_wall_lod1",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\tunnel_video_wall_lod1-5a2c3d40.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\tunnel_video_wall_lod1-5a2c3d40\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\tunnel_video_wall_lod1.bin",
+          "size": 131496,
+          "sha256": "7a8fd13dd771c2d76314a9fc2f8b8306c00f931709fc222cfa76c0a2054714e1"
+        },
+        {
+          "path": "resources\\tunnel_video_wall_lod1-5a2c3d40\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\tunnel_video_wall_lod1.gltf",
+          "size": 4219,
+          "sha256": "e296956e19ad875f2f1550beb59e076a838f763daa9e864de4e367767f0a93b0"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_0.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_0",
+        "object_name": "SM_Tube_Intro_0",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10866,
+        "serial_size": 2684,
+        "payload_sha1": "c83a33392738a085cd9f198e71756768f4178bd4",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 105527349,
+        "payload_size": 13554,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Tube_Intro_0-c83a3339"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tube_Intro_0-c83a3339",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tube_Intro_0-c83a3339",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_0",
+        "SM_Tube_Intro_0",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Tube_Intro_0-c83a3339.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_Tube_Intro_0-c83a3339\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tube_Intro_0.bin",
+          "size": 1476,
+          "sha256": "48da3268b49e105ad6c38aacfa4328e9b4d1469c05a9b8e9c0eee18f2e2ef940"
+        },
+        {
+          "path": "resources\\SM_Tube_Intro_0-c83a3339\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tube_Intro_0.gltf",
+          "size": 2102,
+          "sha256": "d7e27afc5cecf8479fd6a0f9fbfb06ef09f5f4a252d44e148903b4ab704ce6f5"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_1.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_1",
+        "object_name": "SM_Tube_Intro_1",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10771,
+        "serial_size": 2684,
+        "payload_sha1": "c5c2f0796e329d4d95dac210927c3f20342e68a3",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 105558069,
+        "payload_size": 13459,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Tube_Intro_1-c5c2f079"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tube_Intro_1-c5c2f079",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tube_Intro_1-c5c2f079",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_1",
+        "SM_Tube_Intro_1",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Tube_Intro_1-c5c2f079.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.045999999972991645,
+      "files": [
+        {
+          "path": "resources\\SM_Tube_Intro_1-c5c2f079\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tube_Intro_1.bin",
+          "size": 1476,
+          "sha256": "48da3268b49e105ad6c38aacfa4328e9b4d1469c05a9b8e9c0eee18f2e2ef940"
+        },
+        {
+          "path": "resources\\SM_Tube_Intro_1-c5c2f079\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tube_Intro_1.gltf",
+          "size": 2102,
+          "sha256": "e4fc7ed6db73a97da8a865e050146be6300e6fb9bd396927768854ab64d2c89d"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_2.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_2",
+        "object_name": "SM_Tube_Intro_2",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10771,
+        "serial_size": 2684,
+        "payload_sha1": "6e37cd51507c5c0118d46b9788abf45ac4a25b07",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 105588789,
+        "payload_size": 13459,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Tube_Intro_2-6e37cd51"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tube_Intro_2-6e37cd51",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tube_Intro_2-6e37cd51",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_2",
+        "SM_Tube_Intro_2",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Tube_Intro_2-6e37cd51.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_Tube_Intro_2-6e37cd51\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tube_Intro_2.bin",
+          "size": 1476,
+          "sha256": "48da3268b49e105ad6c38aacfa4328e9b4d1469c05a9b8e9c0eee18f2e2ef940"
+        },
+        {
+          "path": "resources\\SM_Tube_Intro_2-6e37cd51\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tube_Intro_2.gltf",
+          "size": 2102,
+          "sha256": "2e7b18ce289303bf6a6998e34dfa16364d700be28f60647f38e2a291fb3236bb"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_3.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_3",
+        "object_name": "SM_Tube_Intro_3",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10771,
+        "serial_size": 2684,
+        "payload_sha1": "ce2bb3538d971c1426dd3ac9ecc4c143c5ba9ec6",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 105619509,
+        "payload_size": 13459,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Tube_Intro_3-ce2bb353"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tube_Intro_3-ce2bb353",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tube_Intro_3-ce2bb353",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_3",
+        "SM_Tube_Intro_3",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Tube_Intro_3-ce2bb353.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_Tube_Intro_3-ce2bb353\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tube_Intro_3.bin",
+          "size": 1476,
+          "sha256": "48da3268b49e105ad6c38aacfa4328e9b4d1469c05a9b8e9c0eee18f2e2ef940"
+        },
+        {
+          "path": "resources\\SM_Tube_Intro_3-ce2bb353\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tube_Intro_3.gltf",
+          "size": 2102,
+          "sha256": "dad6ad83f0e3b8d9504e3600327cca5d0e9a14f079e1cdc6e107ad4c7f58c049"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_4.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_4",
+        "object_name": "SM_Tube_Intro_4",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 10771,
+        "serial_size": 2684,
+        "payload_sha1": "c90222999ad43741960ba975aa7239583353d09b",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "mesh-assets.json"
+        ],
+        "payload_pak_offset": 105650229,
+        "payload_size": 13459,
+        "source_sha1_verified": true,
+        "resource_id": "SM_Tube_Intro_4-c9022299"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tube_Intro_4-c9022299",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Tube_Intro_4-c9022299",
+        "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_4",
+        "SM_Tube_Intro_4",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Tube_Intro_4-c9022299.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.0470000000204891,
+      "files": [
+        {
+          "path": "resources\\SM_Tube_Intro_4-c9022299\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tube_Intro_4.bin",
+          "size": 1476,
+          "sha256": "48da3268b49e105ad6c38aacfa4328e9b4d1469c05a9b8e9c0eee18f2e2ef940"
+        },
+        {
+          "path": "resources\\SM_Tube_Intro_4-c9022299\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Tube_Intro_4.gltf",
+          "size": 2102,
+          "sha256": "796b8488b90cf43f11cefc66498f63e43afc00fc83c633d14ac2f26821f2ff1b"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    },
+    {
+      "input": {
+        "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Assets/Forest/forest_content_green_fixed.uasset",
+        "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/forest_content_green_fixed",
+        "object_name": "forest_content_green_fixed",
+        "class_reference": "/Script/Engine.StaticMesh",
+        "export_index": 3,
+        "serial_offset": 26712,
+        "serial_size": 22229,
+        "payload_sha1": "30f5950c57ab30560d3b2337bb9dc7be3f4ce2e1",
+        "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+        "source_reports": [
+          "geometry-controller-assets.json"
+        ],
+        "payload_pak_offset": 174282805,
+        "payload_size": 48945,
+        "source_sha1_verified": true,
+        "resource_id": "forest_content_green_fixed-30f5950c"
+      },
+      "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\forest_content_green_fixed-30f5950c",
+      "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+      "args": [
+        "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+        "-export",
+        "-gltf",
+        "-notex",
+        "-game=ue4.13",
+        "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+        "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\forest_content_green_fixed-30f5950c",
+        "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/forest_content_green_fixed",
+        "forest_content_green_fixed",
+        "StaticMesh"
+      ],
+      "returncode": 0,
+      "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\forest_content_green_fixed-30f5950c.log",
+      "method": "qualified package+object+class UModel export",
+      "elapsed_seconds": 0.03100000007543713,
+      "files": [
+        {
+          "path": "resources\\forest_content_green_fixed-30f5950c\\Game\\_HelloEnjoy_\\ChezNous\\Assets\\Forest\\forest_content_green_fixed.bin",
+          "size": 20080,
+          "sha256": "84c008f3cc42ea35720b07823e6f06d813f9d444d98bd3089e9312b057262ffe"
+        },
+        {
+          "path": "resources\\forest_content_green_fixed-30f5950c\\Game\\_HelloEnjoy_\\ChezNous\\Assets\\Forest\\forest_content_green_fixed.gltf",
+          "size": 2369,
+          "sha256": "6b0b7ecb80c7d878240dc2e18e5d9a9b94687b175395419eb33dcf484ee5ee51"
+        }
+      ],
+      "export_status": "exported_pending_geometry_validation"
+    }
+  ]
+}

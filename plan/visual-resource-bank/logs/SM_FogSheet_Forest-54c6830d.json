@@ -1,0 +1,51 @@
+{
+  "input": {
+    "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_FogSheet_Forest.uasset",
+    "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_FogSheet_Forest",
+    "object_name": "SM_FogSheet_Forest",
+    "class_reference": "/Script/Engine.StaticMesh",
+    "export_index": 3,
+    "serial_offset": 3220,
+    "serial_size": 727,
+    "payload_sha1": "54c6830de1e0beb962e4d3226fb2444db7b29c3e",
+    "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+    "source_reports": [
+      "mesh-assets.json"
+    ],
+    "payload_pak_offset": 102379573,
+    "payload_size": 3951,
+    "source_sha1_verified": true,
+    "resource_id": "SM_FogSheet_Forest-54c6830d"
+  },
+  "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_FogSheet_Forest-54c6830d",
+  "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+  "args": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-export",
+    "-gltf",
+    "-notex",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_FogSheet_Forest-54c6830d",
+    "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_FogSheet_Forest",
+    "SM_FogSheet_Forest",
+    "StaticMesh"
+  ],
+  "returncode": 0,
+  "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_FogSheet_Forest-54c6830d.log",
+  "method": "qualified package+object+class UModel export",
+  "elapsed_seconds": 0.046999999904073775,
+  "files": [
+    {
+      "path": "resources\\SM_FogSheet_Forest-54c6830d\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_FogSheet_Forest.bin",
+      "size": 204,
+      "sha256": "123dee578a15941d999945380a8a7bdbbe07f32b9321c64d50bcb95cc3fdbd66"
+    },
+    {
+      "path": "resources\\SM_FogSheet_Forest-54c6830d\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_FogSheet_Forest.gltf",
+      "size": 2090,
+      "sha256": "139dff8655cb6fc8b1bd161f3c41caddcd3b6e873e6a44377f2adead54544dd3"
+    }
+  ],
+  "export_status": "exported_pending_geometry_validation"
+}

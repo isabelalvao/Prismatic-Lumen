@@ -1,0 +1,185 @@
+
+> rea-agents@6.4.0 test:local
+> node scripts/run-development-tests.mjs local src/ghidra/GhidraSeededOnly.test.ts
+
+Source-test feedback; compiled boundaries and real providers need explicit verification.
+
+ RUN  v5.0.3 C:/ORCA/Fantasynt/tools/vendor/rea-main-source/rea-df2c08b546d4f40103e11b8b31dbfc3d41ee687b
+
+ ❯ |adapters| src/ghidra/GhidraSeededOnly.test.ts (17 tests | 11 failed) 43ms
+   ❯ local fork optional seeded-only Ghidra profile (11)
+     ✓ retains default auto-analysis and profile semantics 12ms
+     × rejects ambiguous opt-in "true" 7ms
+     × rejects ambiguous opt-in "yes" 1ms
+     × rejects ambiguous opt-in "" 1ms
+     × rejects ambiguous opt-in "2" 1ms
+     × rejects opt-in without a caller-provided seed file 1ms
+     × emits -noanalysis with the preserved seed script and immutable import controls 1ms
+     × refuses noanalysis when no seed snapshot exists 1ms
+     × commits skipped analysis into the profile digest and seeds 7ms
+     × rejects empty seed files and targets outside native Windows PE 5ms
+     × describes partial coverage without claiming default auto-analysis occurred 1ms
+   ❯ seeded-only imported target/profile handshake (6)
+     × accepts explicit skipped auto-analysis only for the committed opt-in 2ms
+     ✓ rejects contradictory or unbound startup outcome {"analysis_complete":true} 0ms
+     ✓ rejects contradictory or unbound startup outcome {"analysis_timed_out":true} 0ms
+     ✓ rejects contradictory or unbound startup outcome {} 0ms
+     ✓ rejects contradictory or unbound startup outcome {"profile_digest":"cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"} 0ms
+     ✓ rejects contradictory or unbound startup outcome {"target":{"name":"fixture.exe","language_id":"x86:LE:64:default","compiler_spec_id":"windows","image_base":"0x140000000","default_address_space":"ram","sha256":"cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"}} 0ms
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 11 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |adapters| src/ghidra/GhidraSeededOnly.test.ts > local fork optional seeded-only Ghidra profile > rejects ambiguous opt-in "true"
+ FAIL  |adapters| src/ghidra/GhidraSeededOnly.test.ts > local fork optional seeded-only Ghidra profile > rejects ambiguous opt-in "yes"
+ FAIL  |adapters| src/ghidra/GhidraSeededOnly.test.ts > local fork optional seeded-only Ghidra profile > rejects ambiguous opt-in ""
+ FAIL  |adapters| src/ghidra/GhidraSeededOnly.test.ts > local fork optional seeded-only Ghidra profile > rejects ambiguous opt-in "2"
+AssertionError: expected true to be false // Object.is equality
+
+- Expected
++ Received
+
+- false
++ true
+
+ ❯ src/ghidra/GhidraSeededOnly.test.ts:56:101
+     54|   });
+     55|   it.each(["true", "yes", "", "2"])("rejects ambiguous opt-in %j", (va…
+     56|     expect(parseConfig({ REA_GHIDRA_SEEDED_ONLY: value, REA_GHIDRA_SEE…
+       |                                                                                                     ^
+     57|   });
+     58|   it("rejects opt-in without a caller-provided seed file", () => {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/11]⎯
+
+ FAIL  |adapters| src/ghidra/GhidraSeededOnly.test.ts > local fork optional seeded-only Ghidra profile > rejects opt-in without a caller-provided seed file
+AssertionError: expected true to be false // Object.is equality
+
+- Expected
++ Received
+
+- false
++ true
+
+ ❯ src/ghidra/GhidraSeededOnly.test.ts:59:61
+     57|   });
+     58|   it("rejects opt-in without a caller-provided seed file", () => {
+     59|     expect(parseConfig({ REA_GHIDRA_SEEDED_ONLY: "1" }).ok).toBe(false…
+       |                                                             ^
+     60|   });
+     61|   it("emits -noanalysis with the preserved seed script and immutable i…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/11]⎯
+
+ FAIL  |adapters| src/ghidra/GhidraSeededOnly.test.ts > local fork optional seeded-only Ghidra profile > emits -noanalysis with the preserved seed script and immutable import controls
+AssertionError: expected [ 'C:/private/project', …(17) ] to include '-noanalysis'
+ ❯ src/ghidra/GhidraSeededOnly.test.ts:63:18
+     61|   it("emits -noanalysis with the preserved seed script and immutable i…
+     62|     const args = ghidraHeadlessArguments({ ...argumentOptions, seededO…
+     63|     expect(args).toContain("-noanalysis");
+       |                  ^
+     64|     expect(args).toContain("-readOnly");
+     65|     expect(args).toContain("-deleteProject");
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/11]⎯
+
+ FAIL  |adapters| src/ghidra/GhidraSeededOnly.test.ts > local fork optional seeded-only Ghidra profile > refuses noanalysis when no seed snapshot exists
+AssertionError: expected [Function] to throw an error
+
+- Expected:
+null
+
++ Received:
+undefined
+
+ ❯ src/ghidra/GhidraSeededOnly.test.ts:70:85
+     68|   });
+     69|   it("refuses noanalysis when no seed snapshot exists", () => {
+     70|     expect(() => ghidraHeadlessArguments({ ...argumentOptions, seededO…
+       |                                                                                     ^
+     71|   });
+     72|   it("commits skipped analysis into the profile digest and seeds", asy…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/11]⎯
+
+ FAIL  |adapters| src/ghidra/GhidraSeededOnly.test.ts > local fork optional seeded-only Ghidra profile > commits skipped analysis into the profile digest and seeds
+AssertionError: expected undefined to be true // Object.is equality
+
+- Expected:
+true
+
++ Received:
+undefined
+
+ ❯ src/ghidra/GhidraSeededOnly.test.ts:76:39
+     74|     const base = config({ REA_GHIDRA_SEED_FILE: seedPath });
+     75|     const selected = config({ REA_GHIDRA_SEEDED_ONLY: "1", REA_GHIDRA_…
+     76|     expect(selected.ghidraSeededOnly).toBe(true);
+       |                                       ^
+     77|     const normal = await new GhidraProvider(base, silentLogger, {}, ho…
+     78|     const partial = await new GhidraProvider(selected, silentLogger, {…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/11]⎯
+
+ FAIL  |adapters| src/ghidra/GhidraSeededOnly.test.ts > local fork optional seeded-only Ghidra profile > rejects empty seed files and targets outside native Windows PE
+AssertionError: expected true to be false // Object.is equality
+
+- Expected
++ Received
+
+- false
++ true
+
+ ❯ src/ghidra/GhidraSeededOnly.test.ts:92:62
+     90|     const selected = config({ REA_GHIDRA_SEEDED_ONLY: "1", REA_GHIDRA_…
+     91|     const ghidra = new GhidraProvider(selected, silentLogger, {}, host…
+     92|     expect((await ghidra.resolveAnalysisProfile(target)).ok).toBe(fals…
+       |                                                              ^
+     93|     expect((await ghidra.resolveAnalysisProfile({ ...target, managed: …
+     94|     expect((await new GhidraProvider(selected, silentLogger, {}, { ...…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/11]⎯
+
+ FAIL  |adapters| src/ghidra/GhidraSeededOnly.test.ts > local fork optional seeded-only Ghidra profile > describes partial coverage without claiming default auto-analysis occurred
+AssertionError: expected 'Ghidra analysis was seeded before aut…' to match /auto-analysis was skipped/iu
+
+- Expected:
+/auto-analysis was skipped/iu
+
++ Received:
+"Ghidra analysis was seeded before auto-analysis from C:/seeds.tsv (sha256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa: 1 function, 0 code, 0 label entries). Seeded functions, code and names are caller assertions, not Ghidra discoveries."
+
+ ❯ src/ghidra/GhidraSeededOnly.test.ts:101:30
+     99|       sha256: "a".repeat(64), entries: { function: 1, code: 0, label: …
+    100|     }, undefined, true);
+    101|     expect(limits.join(" ")).toMatch(/auto-analysis was skipped/iu);
+       |                              ^
+    102|     expect(limits.join(" ")).toMatch(/partial/iu);
+    103|     expect(limits.join(" ")).toMatch(/caller assertions/iu);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/11]⎯
+
+ FAIL  |adapters| src/ghidra/GhidraSeededOnly.test.ts > seeded-only imported target/profile handshake > accepts explicit skipped auto-analysis only for the committed opt-in
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ src/ghidra/GhidraSeededOnly.test.ts:122:57
+    120|   };
+    121|   it("accepts explicit skipped auto-analysis only for the committed op…
+    122|     expect(parseGhidraSessionInfo(report, expected).ok).toBe(true);
+       |                                                         ^
+    123|     expect(parseGhidraSessionInfo(report, { ...expected, expectedSeede…
+    124|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/11]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  11 failed | 6 passed (17)
+   Start at  16:15:09
+   Duration  1.22s (transform 66%, import 26%, tests 4%, worker 4%)
+

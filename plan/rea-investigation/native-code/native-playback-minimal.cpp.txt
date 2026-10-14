@@ -1,0 +1,45 @@
+
+void candidate_SetPlaybackPosition_3a6930(void)
+
+{
+  undefined8 uVar1;
+  
+  uVar1 = FUN_1403883f0(L"/Script/Engine");
+  thunk_FUN_1402b3170(uVar1,"GetPlaybackPosition",FUN_1404d15b0);
+  uVar1 = FUN_1403883f0(L"/Script/Engine");
+  thunk_FUN_1402b3170(uVar1,"GetPlayRate",FUN_1404d1580);
+  uVar1 = FUN_1403883f0(L"/Script/Engine");
+  thunk_FUN_1402b3170(uVar1,"GetTimelineLength",FUN_1404d5500);
+  uVar1 = FUN_1403883f0(L"/Script/Engine");
+  thunk_FUN_1402b3170(uVar1,"IsLooping",FUN_1404db280);
+  uVar1 = FUN_1403883f0(L"/Script/Engine");
+  thunk_FUN_1402b3170(uVar1,"IsPlaying",FUN_1404db850);
+  uVar1 = FUN_1403883f0(L"/Script/Engine");
+  thunk_FUN_1402b3170(uVar1,"IsReversing",FUN_1404db9a0);
+  uVar1 = FUN_1403883f0(L"/Script/Engine");
+  thunk_FUN_1402b3170(uVar1,"OnRep_Timeline",&LAB_1404b2d30);
+  uVar1 = FUN_1403883f0(L"/Script/Engine");
+  thunk_FUN_1402b3170(uVar1,&DAT_141d3d684,&LAB_1404f0ba0);
+  uVar1 = FUN_1403883f0(L"/Script/Engine");
+  thunk_FUN_1402b3170(uVar1,"PlayFromStart",&LAB_1404f1a00);
+  uVar1 = FUN_1403883f0(L"/Script/Engine");
+  thunk_FUN_1402b3170(uVar1,"Reverse",&LAB_1404f7610);
+  uVar1 = FUN_1403883f0(L"/Script/Engine");
+  thunk_FUN_1402b3170(uVar1,"ReverseFromEnd",&LAB_1404f7630);
+  uVar1 = FUN_1403883f0(L"/Script/Engine");
+  thunk_FUN_1402b3170(uVar1,"SetLooping",FUN_140505550);
+  uVar1 = FUN_1403883f0(L"/Script/Engine");
+  thunk_FUN_1402b3170(uVar1,"SetNewTime",FUN_140506440);
+  uVar1 = FUN_1403883f0(L"/Script/Engine");
+  thunk_FUN_1402b3170(uVar1,"SetPlaybackPosition",FUN_140507740);
+  uVar1 = FUN_1403883f0(L"/Script/Engine");
+  thunk_FUN_1402b3170(uVar1,"SetPlayRate",FUN_1405076c0);
+  uVar1 = FUN_1403883f0(L"/Script/Engine");
+  thunk_FUN_1402b3170(uVar1,"SetTimelineLength",FUN_14050b6e0);
+  uVar1 = FUN_1403883f0(L"/Script/Engine");
+  thunk_FUN_1402b3170(uVar1,"SetTimelineLengthMode",FUN_14050b760);
+  uVar1 = FUN_1403883f0(L"/Script/Engine");
+  thunk_FUN_1402b3170(uVar1,&DAT_141d3dff4,&LAB_1405126d0);
+  return;
+}
+

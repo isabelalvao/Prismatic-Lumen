@@ -1,0 +1,4889 @@
+{
+  "schema_version": 1,
+  "scope_seconds": [
+    0,
+    120
+  ],
+  "scope": "Static dependency catalogue of opening spawners; dependency presence does not prove on-screen visibility at a given second",
+  "materials": [
+    {
+      "key": "unlitcolor_black",
+      "name": "UnlitColor-Black",
+      "source_package": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Old_Planes/Materials/UnlitColor-Black",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Old_Planes/Materials/EmissiveColor.EmissiveColor",
+      "scalars": {
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "textures": [],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Old_Planes/Materials/EmissiveColor.EmissiveColor",
+          "package": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Old_Planes/Materials/EmissiveColor"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "359fc0b9248ea68c12b76e6112270df80183be31",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_emissive_2",
+      "name": "M_Emissive_2",
+      "source_package": "/Game/DemoRoom/Materials/M_Emissive_2",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/DemoRoom/Materials/M_Emissive_1.M_Emissive_1",
+      "scalars": {
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          1.0,
+          0.4971950054168701,
+          0.05999999865889549,
+          1.0
+        ]
+      },
+      "textures": [],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/DemoRoom/Materials/M_Emissive_1.M_Emissive_1",
+          "package": "/Game/DemoRoom/Materials/M_Emissive_1"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "53c3fe58240c8d648fe727030c3e8d91c5b8f7f6",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_terraintiles",
+      "name": "M_TerrainTiles",
+      "source_package": "/Game/_HelloEnjoy_/Materials/M_TerrainTiles",
+      "class": "/Script/Engine.Material",
+      "parent": null,
+      "scalars": {},
+      "vectors": {},
+      "textures": [],
+      "expression_defaults": [
+        {
+          "parameter": "Metallic",
+          "expression": "M_TerrainTiles.MaterialExpressionScalarParameter_0",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": null,
+          "texture_reference": null,
+          "status": "default_value_not_serialized_unknown"
+        },
+        {
+          "parameter": "Roughness",
+          "expression": "M_TerrainTiles.MaterialExpressionScalarParameter_1",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": null,
+          "texture_reference": null,
+          "status": "default_value_not_serialized_unknown"
+        },
+        {
+          "parameter": "AOintesity",
+          "expression": "M_TerrainTiles.MaterialExpressionScalarParameter_2",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 0.30000001192092896,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "NormalIntesity",
+          "expression": "M_TerrainTiles.MaterialExpressionScalarParameter_3",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 0.5,
+          "texture_reference": null,
+          "status": "tagged_property"
+        }
+      ],
+      "references": [
+        {
+          "class": "Texture2D",
+          "reference": "/Game/_HelloEnjoy_/Materials/Textures/DiagonalBand32-Light.DiagonalBand32-Light",
+          "package": "/Game/_HelloEnjoy_/Materials/Textures/DiagonalBand32-Light"
+        },
+        {
+          "class": "Texture2D",
+          "reference": "/Game/DemoRoom/Textures/T_RoomTiles_M.T_RoomTiles_M",
+          "package": "/Game/DemoRoom/Textures/T_RoomTiles_M"
+        },
+        {
+          "class": "Texture2D",
+          "reference": "/Game/DemoRoom/Textures/T_RoomTiles_N.T_RoomTiles_N",
+          "package": "/Game/DemoRoom/Textures/T_RoomTiles_N"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "d279eb987af29cde2581b3b7a38c732f8fbe87eb",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_pyramid_theme",
+      "name": "M_Pyramid_Theme",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/Mapping/M_Pyramid_Theme",
+      "class": "/Script/Engine.Material",
+      "parent": null,
+      "scalars": {},
+      "vectors": {},
+      "textures": [],
+      "expression_defaults": [
+        {
+          "parameter": "OffsetV",
+          "expression": "M_Pyramid_Theme.MaterialExpressionScalarParameter_10",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": null,
+          "texture_reference": null,
+          "status": "default_value_not_serialized_unknown"
+        },
+        {
+          "parameter": "GI Emission",
+          "expression": "M_Pyramid_Theme.MaterialExpressionScalarParameter_17",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 40.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Emission",
+          "expression": "M_Pyramid_Theme.MaterialExpressionScalarParameter_5",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 20.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "TileU",
+          "expression": "M_Pyramid_Theme.MaterialExpressionScalarParameter_7",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": null,
+          "texture_reference": null,
+          "status": "default_value_not_serialized_unknown"
+        },
+        {
+          "parameter": "TileV",
+          "expression": "M_Pyramid_Theme.MaterialExpressionScalarParameter_8",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": null,
+          "texture_reference": null,
+          "status": "default_value_not_serialized_unknown"
+        },
+        {
+          "parameter": "OffsetU",
+          "expression": "M_Pyramid_Theme.MaterialExpressionScalarParameter_9",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": null,
+          "texture_reference": null,
+          "status": "default_value_not_serialized_unknown"
+        },
+        {
+          "parameter": "MaterialExpressionTextureSampleParameter2D_0",
+          "expression": "M_Pyramid_Theme.MaterialExpressionTextureSampleParameter2D_0",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Theme_RenderTarget.Theme_RenderTarget",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Detail",
+          "expression": "M_Pyramid_Theme.MaterialExpressionTextureSampleParameter2D_1",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/_HelloEnjoy_/Materials/Patterns/pattern_pixel_1.pattern_pixel_1",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "basecolor",
+          "expression": "M_Pyramid_Theme.MaterialExpressionTextureSampleParameter2D_18",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_basecolor.pyramid_metal_INST_basecolor",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "metallic",
+          "expression": "M_Pyramid_Theme.MaterialExpressionTextureSampleParameter2D_19",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_metallic.pyramid_metal_INST_metallic",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "roughness",
+          "expression": "M_Pyramid_Theme.MaterialExpressionTextureSampleParameter2D_20",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_roughness.pyramid_metal_INST_roughness",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "normal",
+          "expression": "M_Pyramid_Theme.MaterialExpressionTextureSampleParameter2D_21",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_normal.pyramid_metal_INST_normal",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "ambient_occlusion",
+          "expression": "M_Pyramid_Theme.MaterialExpressionTextureSampleParameter2D_22",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_ambient_occlusion.pyramid_metal_INST_ambient_occlusion",
+          "status": "tagged_property"
+        }
+      ],
+      "references": [
+        {
+          "class": "SubstanceTexture2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_ambient_occlusion.pyramid_metal_INST_ambient_occlusion",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_ambient_occlusion"
+        },
+        {
+          "class": "SubstanceTexture2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_basecolor.pyramid_metal_INST_basecolor",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_basecolor"
+        },
+        {
+          "class": "SubstanceTexture2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_metallic.pyramid_metal_INST_metallic",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_metallic"
+        },
+        {
+          "class": "SubstanceTexture2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_normal.pyramid_metal_INST_normal",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_normal"
+        },
+        {
+          "class": "SubstanceTexture2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_roughness.pyramid_metal_INST_roughness",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_roughness"
+        },
+        {
+          "class": "Texture2D",
+          "reference": "/Game/_HelloEnjoy_/Materials/Patterns/pattern_pixel_1.pattern_pixel_1",
+          "package": "/Game/_HelloEnjoy_/Materials/Patterns/pattern_pixel_1"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Theme_RenderTarget.Theme_RenderTarget",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Theme_RenderTarget"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "58bb60e98db8956f142f6205c6335db71364c0d7",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "metal_006_mat",
+      "name": "Metal_006_MAT",
+      "source_package": "/Game/Substance/Metal/Metal_006_MAT",
+      "class": "/Script/Engine.Material",
+      "parent": null,
+      "scalars": {},
+      "vectors": {},
+      "textures": [],
+      "expression_defaults": [
+        {
+          "parameter": "basecolor",
+          "expression": "Metal_006_MAT.MaterialExpressionTextureSampleParameter2D_0",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/Substance/Metal/Metal_006_INST_basecolor.Metal_006_INST_basecolor",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "normal",
+          "expression": "Metal_006_MAT.MaterialExpressionTextureSampleParameter2D_1",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/Substance/Metal/Metal_006_INST_normal.Metal_006_INST_normal",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "roughness",
+          "expression": "Metal_006_MAT.MaterialExpressionTextureSampleParameter2D_2",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/Substance/Metal/Metal_006_INST_roughness.Metal_006_INST_roughness",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "metallic",
+          "expression": "Metal_006_MAT.MaterialExpressionTextureSampleParameter2D_3",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/Substance/Metal/Metal_006_INST_metallic.Metal_006_INST_metallic",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "ambient_occlusion",
+          "expression": "Metal_006_MAT.MaterialExpressionTextureSampleParameter2D_4",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/Substance/Metal/Metal_006_INST_ambient_occlusion.Metal_006_INST_ambient_occlusion",
+          "status": "tagged_property"
+        }
+      ],
+      "references": [
+        {
+          "class": "SubstanceTexture2D",
+          "reference": "/Game/Substance/Metal/Metal_006_INST_ambient_occlusion.Metal_006_INST_ambient_occlusion",
+          "package": "/Game/Substance/Metal/Metal_006_INST_ambient_occlusion"
+        },
+        {
+          "class": "SubstanceTexture2D",
+          "reference": "/Game/Substance/Metal/Metal_006_INST_basecolor.Metal_006_INST_basecolor",
+          "package": "/Game/Substance/Metal/Metal_006_INST_basecolor"
+        },
+        {
+          "class": "SubstanceTexture2D",
+          "reference": "/Game/Substance/Metal/Metal_006_INST_metallic.Metal_006_INST_metallic",
+          "package": "/Game/Substance/Metal/Metal_006_INST_metallic"
+        },
+        {
+          "class": "SubstanceTexture2D",
+          "reference": "/Game/Substance/Metal/Metal_006_INST_normal.Metal_006_INST_normal",
+          "package": "/Game/Substance/Metal/Metal_006_INST_normal"
+        },
+        {
+          "class": "SubstanceTexture2D",
+          "reference": "/Game/Substance/Metal/Metal_006_INST_roughness.Metal_006_INST_roughness",
+          "package": "/Game/Substance/Metal/Metal_006_INST_roughness"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "7e1cfaeef9308240e494a1cb3a33de0c36a7a293",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "gold_mat",
+      "name": "Gold_MAT",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_MAT",
+      "class": "/Script/Engine.Material",
+      "parent": null,
+      "scalars": {},
+      "vectors": {},
+      "textures": [],
+      "expression_defaults": [
+        {
+          "parameter": "basecolor",
+          "expression": "Gold_MAT.MaterialExpressionTextureSampleParameter2D_0",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_INST_basecolor.Gold_INST_basecolor",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "normal",
+          "expression": "Gold_MAT.MaterialExpressionTextureSampleParameter2D_1",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_INST_normal.Gold_INST_normal",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "metallic",
+          "expression": "Gold_MAT.MaterialExpressionTextureSampleParameter2D_3",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_INST_metallic.Gold_INST_metallic",
+          "status": "tagged_property"
+        }
+      ],
+      "references": [
+        {
+          "class": "SubstanceTexture2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_INST_basecolor.Gold_INST_basecolor",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_INST_basecolor"
+        },
+        {
+          "class": "SubstanceTexture2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_INST_metallic.Gold_INST_metallic",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_INST_metallic"
+        },
+        {
+          "class": "SubstanceTexture2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_INST_normal.Gold_INST_normal",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_INST_normal"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "41a6e49839298f38442b3a680b2f24e497086823",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "steel_mat",
+      "name": "Steel_MAT",
+      "source_package": "/Game/Substance/Metal/Steel_MAT",
+      "class": "/Script/Engine.Material",
+      "parent": null,
+      "scalars": {},
+      "vectors": {},
+      "textures": [],
+      "expression_defaults": [
+        {
+          "parameter": "basecolor",
+          "expression": "Steel_MAT.MaterialExpressionTextureSampleParameter2D_0",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/Substance/Metal/Steel_INST_basecolor.Steel_INST_basecolor",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "normal",
+          "expression": "Steel_MAT.MaterialExpressionTextureSampleParameter2D_1",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/Substance/Metal/Steel_INST_normal.Steel_INST_normal",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "roughness",
+          "expression": "Steel_MAT.MaterialExpressionTextureSampleParameter2D_2",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/Substance/Metal/Steel_INST_roughness.Steel_INST_roughness",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "metallic",
+          "expression": "Steel_MAT.MaterialExpressionTextureSampleParameter2D_3",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/Substance/Metal/Steel_INST_metallic.Steel_INST_metallic",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "ambient_occlusion",
+          "expression": "Steel_MAT.MaterialExpressionTextureSampleParameter2D_4",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/Substance/Metal/Steel_INST_ambient_occlusion.Steel_INST_ambient_occlusion",
+          "status": "tagged_property"
+        }
+      ],
+      "references": [
+        {
+          "class": "SubstanceTexture2D",
+          "reference": "/Game/Substance/Metal/Steel_INST_ambient_occlusion.Steel_INST_ambient_occlusion",
+          "package": "/Game/Substance/Metal/Steel_INST_ambient_occlusion"
+        },
+        {
+          "class": "SubstanceTexture2D",
+          "reference": "/Game/Substance/Metal/Steel_INST_basecolor.Steel_INST_basecolor",
+          "package": "/Game/Substance/Metal/Steel_INST_basecolor"
+        },
+        {
+          "class": "SubstanceTexture2D",
+          "reference": "/Game/Substance/Metal/Steel_INST_metallic.Steel_INST_metallic",
+          "package": "/Game/Substance/Metal/Steel_INST_metallic"
+        },
+        {
+          "class": "SubstanceTexture2D",
+          "reference": "/Game/Substance/Metal/Steel_INST_normal.Steel_INST_normal",
+          "package": "/Game/Substance/Metal/Steel_INST_normal"
+        },
+        {
+          "class": "SubstanceTexture2D",
+          "reference": "/Game/Substance/Metal/Steel_INST_roughness.Steel_INST_roughness",
+          "package": "/Game/Substance/Metal/Steel_INST_roughness"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "f20a8dd45f9ed401673207101e19d11aeca68ef8",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "emissiveblue",
+      "name": "EmissiveBlue",
+      "source_package": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Old_Planes/Materials/EmissiveBlue",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Old_Planes/Materials/EmissiveColor.EmissiveColor",
+      "scalars": {
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.20000000298023224,
+          0.4000000059604645,
+          1.0,
+          1.0
+        ]
+      },
+      "textures": [],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Old_Planes/Materials/EmissiveColor.EmissiveColor",
+          "package": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Old_Planes/Materials/EmissiveColor"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "4d2ab13056ba7d8ae46ef3828666a2abb48937f0",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "emissivecolor",
+      "name": "EmissiveColor",
+      "source_package": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Old_Planes/Materials/EmissiveColor",
+      "class": "/Script/Engine.Material",
+      "parent": null,
+      "scalars": {},
+      "vectors": {},
+      "textures": [],
+      "expression_defaults": [
+        {
+          "parameter": "Emission",
+          "expression": "EmissiveColor.MaterialExpressionScalarParameter_0",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 2.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Color",
+          "expression": "EmissiveColor.MaterialExpressionVectorParameter_1",
+          "class": "/Script/Engine.MaterialExpressionVectorParameter",
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "texture_reference": null,
+          "status": "tagged_property"
+        }
+      ],
+      "references": [],
+      "provenance": {
+        "payload_sha1": "596869568d1c106b10beb5cbfc92f63502c29e00",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_emissive_1",
+      "name": "M_Emissive_1",
+      "source_package": "/Game/DemoRoom/Materials/M_Emissive_1",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/DemoRoom/Materials/M_Emissive.M_Emissive",
+      "scalars": {
+        "Brightness": 20.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.07058800011873245,
+          0.2901960015296936,
+          1.0,
+          1.0
+        ]
+      },
+      "textures": [],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/DemoRoom/Materials/M_Emissive.M_Emissive",
+          "package": "/Game/DemoRoom/Materials/M_Emissive"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "f541c68e3da9f1372e461cb7a7fe402420d648bd",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "red_mat",
+      "name": "red_mat",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/CamoLine/red_mat",
+      "class": "/Script/Engine.Material",
+      "parent": null,
+      "scalars": {},
+      "vectors": {},
+      "textures": [],
+      "expression_defaults": [],
+      "references": [],
+      "provenance": {
+        "payload_sha1": "b81b19501a5aa5864728cbb3cd710fc849df0cfd",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_pyramid_map",
+      "name": "M_Pyramid_Map",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pyramid_Map",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_CRN_MapTiled.M_Detail_CRN_MapTiled",
+      "scalars": {
+        "Offset U": 0.25,
+        "Offset V": 0.25,
+        "Tiling U": 512.0,
+        "Tiling V": 512.0,
+        "Emission": 32.0,
+        "GI Emission": 64.0,
+        "Map Tiling U": 4.0,
+        "Map Tiling V": 4.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {},
+      "textures": [
+        {
+          "parameter": "Detail",
+          "reference": "/Game/_HelloEnjoy_/Materials/Patterns/pattern_pixel_1.pattern_pixel_1",
+          "source_package": "/Game/_HelloEnjoy_/Materials/Patterns/pattern_pixel_1",
+          "class": "Texture2D",
+          "path": "assets/opening/textures/_HelloEnjoy_/Materials/Patterns/pattern_pixel_1.png",
+          "sha256": "37dd2f0599b5424a570624a95ab91b6ffa71d479deb80baf8661783d2567455c"
+        },
+        {
+          "parameter": "Mapping",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Theme_RenderTarget.Theme_RenderTarget",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Theme_RenderTarget",
+          "class": "TextureRenderTarget2D",
+          "path": null,
+          "sha256": null
+        },
+        {
+          "parameter": "Base Color",
+          "reference": "/Game/Substance/Metal/Metal_used_INST_basecolor.Metal_used_INST_basecolor",
+          "source_package": "/Game/Substance/Metal/Metal_used_INST_basecolor",
+          "class": "SubstanceTexture2D",
+          "path": null,
+          "sha256": null
+        },
+        {
+          "parameter": "Normal",
+          "reference": "/Game/Substance/Metal/Metal_used_INST_normal.Metal_used_INST_normal",
+          "source_package": "/Game/Substance/Metal/Metal_used_INST_normal",
+          "class": "SubstanceTexture2D",
+          "path": null,
+          "sha256": null
+        },
+        {
+          "parameter": "Roughness",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/Ground_Materials/Substance/Metal_used_Ground_INST_roughness.Metal_used_Ground_INST_roughness",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/Ground_Materials/Substance/Metal_used_Ground_INST_roughness",
+          "class": "SubstanceTexture2D",
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_CRN_MapTiled.M_Detail_CRN_MapTiled",
+          "package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_CRN_MapTiled"
+        },
+        {
+          "class": "SubstanceTexture2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/Ground_Materials/Substance/Metal_used_Ground_INST_roughness.Metal_used_Ground_INST_roughness",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/Ground_Materials/Substance/Metal_used_Ground_INST_roughness"
+        },
+        {
+          "class": "SubstanceTexture2D",
+          "reference": "/Game/Substance/Metal/Metal_used_INST_basecolor.Metal_used_INST_basecolor",
+          "package": "/Game/Substance/Metal/Metal_used_INST_basecolor"
+        },
+        {
+          "class": "SubstanceTexture2D",
+          "reference": "/Game/Substance/Metal/Metal_used_INST_normal.Metal_used_INST_normal",
+          "package": "/Game/Substance/Metal/Metal_used_INST_normal"
+        },
+        {
+          "class": "Texture2D",
+          "reference": "/Game/_HelloEnjoy_/Materials/Patterns/pattern_pixel_1.pattern_pixel_1",
+          "package": "/Game/_HelloEnjoy_/Materials/Patterns/pattern_pixel_1"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Theme_RenderTarget.Theme_RenderTarget",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Theme_RenderTarget"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "911700c82f968bbefa12717a4bf76ab313588e82",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_inside",
+      "name": "M_Inside",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Inside",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/BaseMaterials/M_Color_EmissiveGI.M_Color_EmissiveGI",
+      "scalars": {
+        "Emission": 4.0,
+        "GI Emission": 8.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.9750000238418579,
+          0.75,
+          1.0,
+          1.0
+        ]
+      },
+      "textures": [],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/BaseMaterials/M_Color_EmissiveGI.M_Color_EmissiveGI",
+          "package": "/Game/_HelloEnjoy_/Materials/BaseMaterials/M_Color_EmissiveGI"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "656cbf508726c5745d3fe96ac4a8960bdc52c5c4",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_tree_map",
+      "name": "M_Tree_Map",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Tree_Map",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+      "scalars": {
+        "Offset U": 0.25,
+        "Tiling U": 0.5,
+        "Tiling V": 256.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.25,
+          0.25,
+          0.25,
+          1.0
+        ]
+      },
+      "textures": [
+        {
+          "parameter": "Mapping",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Tree_RenderTarget.Tree_RenderTarget",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Tree_RenderTarget",
+          "class": "TextureRenderTarget2D",
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+          "package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Tree_RenderTarget.Tree_RenderTarget",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Tree_RenderTarget"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "e07aaf70e608408821b36782244443e957d01111",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_dot1_map",
+      "name": "M_Dot1_Map",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot1_Map",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+      "scalars": {
+        "Offset U": 0.5,
+        "Offset V": 0.44999998807907104,
+        "Tiling U": 16.0,
+        "Tiling V": 16.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          1.0
+        ]
+      },
+      "textures": [
+        {
+          "parameter": "Mapping",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Dot1_RenderTarget.Dot1_RenderTarget",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Dot1_RenderTarget",
+          "class": "TextureRenderTarget2D",
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+          "package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Dot1_RenderTarget.Dot1_RenderTarget",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Dot1_RenderTarget"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "5d081d06b99660c7bcf87e7cefde62fdceab95d5",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_dot2_map",
+      "name": "M_Dot2_Map",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot2_Map",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+      "scalars": {
+        "Offset U": 0.5,
+        "Offset V": 0.5,
+        "Tiling U": 32.0,
+        "Tiling V": 32.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          1.0
+        ]
+      },
+      "textures": [
+        {
+          "parameter": "Mapping",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Dot2_RenderTarget.Dot2_RenderTarget",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Dot2_RenderTarget",
+          "class": "TextureRenderTarget2D",
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+          "package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Dot2_RenderTarget.Dot2_RenderTarget",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Dot2_RenderTarget"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "41855d7b579092cc5e25b475205da8b81a13eb97",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_dot3_map",
+      "name": "M_Dot3_Map",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot3_Map",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+      "scalars": {
+        "Tiling U": 128.0,
+        "Tiling V": 128.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          1.0
+        ]
+      },
+      "textures": [
+        {
+          "parameter": "Mapping",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Dot3_RenderTarget.Dot3_RenderTarget",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Dot3_RenderTarget",
+          "class": "TextureRenderTarget2D",
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+          "package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Dot3_RenderTarget.Dot3_RenderTarget",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Dot3_RenderTarget"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "8f8a803736a90be4f28e607eb4ded54a5aface4a",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_dot4_map",
+      "name": "M_Dot4_Map",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot4_Map",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+      "scalars": {
+        "Tiling U": 256.0,
+        "Tiling V": 256.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          1.0
+        ]
+      },
+      "textures": [
+        {
+          "parameter": "Mapping",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Dot4_RenderTarget.Dot4_RenderTarget",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Dot4_RenderTarget",
+          "class": "TextureRenderTarget2D",
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+          "package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Dot4_RenderTarget.Dot4_RenderTarget",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Dot4_RenderTarget"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "84a9ff620401d586c9be111c35539f30e23fa0c6",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_pole_map",
+      "name": "M_Pole_Map",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pole_Map",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+      "scalars": {
+        "Tiling U": 3.0,
+        "Tiling V": 384.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          1.0
+        ]
+      },
+      "textures": [
+        {
+          "parameter": "Mapping",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Pole_RenderTarget.Pole_RenderTarget",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Pole_RenderTarget",
+          "class": "TextureRenderTarget2D",
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+          "package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Pole_RenderTarget.Pole_RenderTarget",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Pole_RenderTarget"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "527548b42e85c8894ee52447706844fe333e1d90",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_polebase_map",
+      "name": "M_PoleBase_Map",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleBase_Map",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+      "scalars": {
+        "Tiling U": 1.0,
+        "Tiling V": 1.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "textures": [
+        {
+          "parameter": "Detail",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleBaseGrid.PoleBaseGrid",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleBaseGrid",
+          "class": "Texture2D",
+          "path": "assets/opening/textures/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleBaseGrid.png",
+          "sha256": "2a1f268939344c92e5db746d106a2cac9100f706ce3a2f661afe362d40be3fb4"
+        },
+        {
+          "parameter": "Mapping",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/PoleBase_RenderTarget.PoleBase_RenderTarget",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/PoleBase_RenderTarget",
+          "class": "TextureRenderTarget2D",
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+          "package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map"
+        },
+        {
+          "class": "Texture2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleBaseGrid.PoleBaseGrid",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleBaseGrid"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/PoleBase_RenderTarget.PoleBase_RenderTarget",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/PoleBase_RenderTarget"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "1dce2d71993b142e9d94e718a984511cdd352a9a",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_polecap_map",
+      "name": "M_PoleCap_Map",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleCap_Map",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+      "scalars": {
+        "Tiling U": 1.0,
+        "Tiling V": 1.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {},
+      "textures": [
+        {
+          "parameter": "Detail",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleCapGrid.PoleCapGrid",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleCapGrid",
+          "class": "Texture2D",
+          "path": "assets/opening/textures/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleCapGrid.png",
+          "sha256": "0b5932f59535d800d4f72a52b397c4f0a56872bc96289e47c0e566b8a3296d8f"
+        },
+        {
+          "parameter": "Mapping",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/PoleCap_RenderTarget.PoleCap_RenderTarget",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/PoleCap_RenderTarget",
+          "class": "TextureRenderTarget2D",
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+          "package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map"
+        },
+        {
+          "class": "Texture2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleCapGrid.PoleCapGrid",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleCapGrid"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/PoleCap_RenderTarget.PoleCap_RenderTarget",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/PoleCap_RenderTarget"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "cacc4bb7a3d5083a9b352fc98653c1236f6806ad",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_basicmetal_grey",
+      "name": "M_BasicMetal_Grey",
+      "source_package": "/Game/_HelloEnjoy_/Materials/M_BasicMetal_Grey",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/M_BasicMetal_White.M_BasicMetal_White",
+      "scalars": {
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.33628299832344055,
+          0.33628299832344055,
+          0.33628299832344055,
+          1.0
+        ]
+      },
+      "textures": [],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/M_BasicMetal_White.M_BasicMetal_White",
+          "package": "/Game/_HelloEnjoy_/Materials/M_BasicMetal_White"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "22889aa6dc8c84808529c51a85fd741b719f4593",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_poledot_map",
+      "name": "M_PoleDot_Map",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleDot_Map",
+      "class": "/Script/Engine.Material",
+      "parent": null,
+      "scalars": {},
+      "vectors": {},
+      "textures": [],
+      "expression_defaults": [
+        {
+          "parameter": "Emission",
+          "expression": "M_PoleDot_Map.MaterialExpressionScalarParameter_11",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 20.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "GI Emission",
+          "expression": "M_PoleDot_Map.MaterialExpressionScalarParameter_14",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 40.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Detail",
+          "expression": "M_PoleDot_Map.MaterialExpressionTextureSampleParameter2D_12",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/_HelloEnjoy_/Materials/Textures/Circle_256_8.Circle_256_8",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Emission",
+          "expression": "M_PoleDot_Map.MaterialExpressionTextureSampleParameter2D_53",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/PoleDot_RenderTarget.PoleDot_RenderTarget",
+          "status": "tagged_property"
+        }
+      ],
+      "references": [
+        {
+          "class": "Texture2D",
+          "reference": "/Game/_HelloEnjoy_/Materials/Textures/Circle_256_8.Circle_256_8",
+          "package": "/Game/_HelloEnjoy_/Materials/Textures/Circle_256_8"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/PoleDot_RenderTarget.PoleDot_RenderTarget",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/PoleDot_RenderTarget"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "95c2caeccd2fe4a11c3c686deb5825f79706274e",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_fogsheet_forest",
+      "name": "M_FogSheet_Forest",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_FogSheet_Forest",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/Assets/Materials/M_FogSheet_Color_Master.M_FogSheet_Color_Master",
+      "scalars": {
+        "DepthFadeDistance": 1024.0,
+        "FadeDistance": 1024.0,
+        "MaxOpacity": 0.5,
+        "NoiseSize": 2000.0,
+        "PanningSpeed": 0.0020000000949949026,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.3799999952316284,
+          0.3799999952316284,
+          0.36000001430511475,
+          1.0
+        ]
+      },
+      "textures": [],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/Assets/Materials/M_FogSheet_Color_Master.M_FogSheet_Color_Master",
+          "package": "/Game/Assets/Materials/M_FogSheet_Color_Master"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "ec4a4ab97005b1f0f768f0ca2cf7d226666650ff",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_hex_hole_1_map",
+      "name": "M_Hex_Hole_1_Map",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Hex_Hole_1_Map",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+      "scalars": {
+        "Tiling U": 1.0,
+        "Tiling V": 1.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          1.0
+        ]
+      },
+      "textures": [
+        {
+          "parameter": "Detail",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_hollow_pattern_256_2.hex_hollow_pattern_256_2",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_hollow_pattern_256_2",
+          "class": "Texture2D",
+          "path": "assets/opening/textures/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_hollow_pattern_256_2.png",
+          "sha256": "56f37ddc99b129195aecef3f308bb053d027302bcdd5d10055fc2c965594a75c"
+        },
+        {
+          "parameter": "Mapping",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Hex_3.RT_Hex_3",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Hex_3",
+          "class": "TextureRenderTarget2D",
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+          "package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map"
+        },
+        {
+          "class": "Texture2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_hollow_pattern_256_2.hex_hollow_pattern_256_2",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_hollow_pattern_256_2"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Hex_3.RT_Hex_3",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Hex_3"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "25c6d027139074bb115de896f82224295c85595f",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_black_m0_r025",
+      "name": "M_Black_M0_R025",
+      "source_package": "/Game/_HelloEnjoy_/Materials/Basic_Materials/M_Black_M0_R025",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/BaseMaterials/M_Color_PBR.M_Color_PBR",
+      "scalars": {
+        "Metallic": 0.0,
+        "Roughness": 0.25,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "textures": [],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/BaseMaterials/M_Color_PBR.M_Color_PBR",
+          "package": "/Game/_HelloEnjoy_/Materials/BaseMaterials/M_Color_PBR"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "3fae91bd242f62393904255a685aac4b5fac92f4",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_hex_solid_1_map",
+      "name": "M_Hex_Solid_1_Map",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Hex_Solid_1_Map",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+      "scalars": {
+        "Tiling U": 1.0,
+        "Tiling V": 1.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.30300000309944153,
+          0.30300000309944153,
+          0.30300000309944153,
+          1.0
+        ]
+      },
+      "textures": [
+        {
+          "parameter": "Detail",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_pattern_128.hex_pattern_128",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_pattern_128",
+          "class": "Texture2D",
+          "path": "assets/opening/textures/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_pattern_128.png",
+          "sha256": "47e065d0e92f8ee05b283c9bd594f6b434c953a90ae915af7352513f93344b2b"
+        },
+        {
+          "parameter": "Mapping",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Hex_1.RT_Hex_1",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Hex_1",
+          "class": "TextureRenderTarget2D",
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+          "package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map"
+        },
+        {
+          "class": "Texture2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_pattern_128.hex_pattern_128",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_pattern_128"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Hex_1.RT_Hex_1",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Hex_1"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "0ec8d65ab1fe79820502e2ac6eea3f0571e8c067",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_hex_solid_2_map",
+      "name": "M_Hex_Solid_2_Map",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Hex_Solid_2_Map",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+      "scalars": {
+        "Tiling U": 1.0,
+        "Tiling V": 1.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.30300000309944153,
+          0.30300000309944153,
+          0.30300000309944153,
+          1.0
+        ]
+      },
+      "textures": [
+        {
+          "parameter": "Detail",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_pattern_128.hex_pattern_128",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_pattern_128",
+          "class": "Texture2D",
+          "path": "assets/opening/textures/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_pattern_128.png",
+          "sha256": "47e065d0e92f8ee05b283c9bd594f6b434c953a90ae915af7352513f93344b2b"
+        },
+        {
+          "parameter": "Mapping",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Hex_2.RT_Hex_2",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Hex_2",
+          "class": "TextureRenderTarget2D",
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+          "package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map"
+        },
+        {
+          "class": "Texture2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_pattern_128.hex_pattern_128",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_pattern_128"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Hex_2.RT_Hex_2",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Hex_2"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "790b71751c6a1500e21f7f9714ebac4f5c81ee8a",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_synths_1",
+      "name": "M_Synths_1",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Synths_1",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/Mapping/M_Basic_Map.M_Basic_Map",
+      "scalars": {
+        "Emission": 8.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "textures": [
+        {
+          "parameter": "Mapping",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Synths_1.RT_Synths_1",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Synths_1",
+          "class": "TextureRenderTarget2D",
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/Mapping/M_Basic_Map.M_Basic_Map",
+          "package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Basic_Map"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Synths_1.RT_Synths_1",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Synths_1"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "76fd899671836537d4ef7c27d2d388a51984c96f",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_synths_2",
+      "name": "M_Synths_2",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Synths_2",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/Mapping/M_Basic_Map.M_Basic_Map",
+      "scalars": {
+        "Emission": 8.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "textures": [
+        {
+          "parameter": "Mapping",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Synths_2.RT_Synths_2",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Synths_2",
+          "class": "TextureRenderTarget2D",
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/Mapping/M_Basic_Map.M_Basic_Map",
+          "package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Basic_Map"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Synths_2.RT_Synths_2",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Synths_2"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "45462367e5d12e287734938e60897317bcd4317a",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_synths_5",
+      "name": "M_Synths_5",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Synths_5",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+      "scalars": {
+        "Offset U": 0.25,
+        "Tiling U": 0.5,
+        "Tiling V": 256.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.25,
+          0.25,
+          0.25,
+          1.0
+        ]
+      },
+      "textures": [
+        {
+          "parameter": "Mapping",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Synths_5.RT_Synths_5",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Synths_5",
+          "class": "TextureRenderTarget2D",
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+          "package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Synths_5.RT_Synths_5",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Synths_5"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "891a3c69f83a13bc2216504aac4431682493b45a",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_synths_4",
+      "name": "M_Synths_4",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Synths_4",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/Mapping/M_Basic_Map.M_Basic_Map",
+      "scalars": {
+        "Emission": 8.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "textures": [
+        {
+          "parameter": "Mapping",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Synths_4.RT_Synths_4",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Synths_4",
+          "class": "TextureRenderTarget2D",
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/Mapping/M_Basic_Map.M_Basic_Map",
+          "package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Basic_Map"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Synths_4.RT_Synths_4",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Synths_4"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "b16a175482f80094ab29af0940c1308cebc70eef",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_rockcube",
+      "name": "M_RockCube",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Rubble/M_RockCube",
+      "class": "/Script/Engine.Material",
+      "parent": null,
+      "scalars": {},
+      "vectors": {},
+      "textures": [],
+      "expression_defaults": [],
+      "references": [],
+      "provenance": {
+        "payload_sha1": "9e34916f80ae9d11896f290993fa06f8aebaf5c5",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_rocklight",
+      "name": "M_RockLight",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_RockLight",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/BaseMaterials/M_Texture_Emissive.M_Texture_Emissive",
+      "scalars": {
+        "Emission": 8.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {},
+      "textures": [
+        {
+          "parameter": "Texture",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_RockLight.RT_RockLight",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_RockLight",
+          "class": "TextureRenderTarget2D",
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/BaseMaterials/M_Texture_Emissive.M_Texture_Emissive",
+          "package": "/Game/_HelloEnjoy_/Materials/BaseMaterials/M_Texture_Emissive"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_RockLight.RT_RockLight",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_RockLight"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "13f11efe5b34823f07d8305a9e33b840e0b9569d",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_tubeintro0_map",
+      "name": "M_TubeIntro0_Map",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro0_Map",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+      "scalars": {
+        "Tiling U": 64.0,
+        "Tiling V": 64.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          1.0
+        ]
+      },
+      "textures": [
+        {
+          "parameter": "Mapping",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro0_RenderTarget.TubeIntro0_RenderTarget",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro0_RenderTarget",
+          "class": "TextureRenderTarget2D",
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+          "package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro0_RenderTarget.TubeIntro0_RenderTarget",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro0_RenderTarget"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "8a9051f1198895cd7e74de9f5112c7dbedce4dcf",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_tubeterrain_map",
+      "name": "M_TubeTerrain_Map",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeTerrain_Map",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+      "scalars": {
+        "Tiling U": 64.0,
+        "Tiling V": 64.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          1.0
+        ]
+      },
+      "textures": [
+        {
+          "parameter": "Mapping",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeTerrain_RenderTarget.TubeTerrain_RenderTarget",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeTerrain_RenderTarget",
+          "class": "TextureRenderTarget2D",
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+          "package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeTerrain_RenderTarget.TubeTerrain_RenderTarget",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeTerrain_RenderTarget"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "6b1c80c6b2bc37a4cc7d703bb11128df5e7f39c4",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_tubeintro1_map",
+      "name": "M_TubeIntro1_Map",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro1_Map",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+      "scalars": {
+        "Tiling U": 64.0,
+        "Tiling V": 64.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          1.0
+        ]
+      },
+      "textures": [
+        {
+          "parameter": "Mapping",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro1_RenderTarget.TubeIntro1_RenderTarget",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro1_RenderTarget",
+          "class": "TextureRenderTarget2D",
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+          "package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro1_RenderTarget.TubeIntro1_RenderTarget",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro1_RenderTarget"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "22bccd059bdbbcb595d4d477138fed99519533e8",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_tubeintro2_map",
+      "name": "M_TubeIntro2_Map",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro2_Map",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+      "scalars": {
+        "Tiling U": 64.0,
+        "Tiling V": 64.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          1.0
+        ]
+      },
+      "textures": [
+        {
+          "parameter": "Mapping",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro2_RenderTarget.TubeIntro2_RenderTarget",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro2_RenderTarget",
+          "class": "TextureRenderTarget2D",
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+          "package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro2_RenderTarget.TubeIntro2_RenderTarget",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro2_RenderTarget"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "08da90ec1a006601a70ca678a432ccd66f14cf10",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_tubeintro3_map",
+      "name": "M_TubeIntro3_Map",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro3_Map",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+      "scalars": {
+        "Tiling U": 64.0,
+        "Tiling V": 64.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          1.0
+        ]
+      },
+      "textures": [
+        {
+          "parameter": "Mapping",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro3_RenderTarget.TubeIntro3_RenderTarget",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro3_RenderTarget",
+          "class": "TextureRenderTarget2D",
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+          "package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro3_RenderTarget.TubeIntro3_RenderTarget",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro3_RenderTarget"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "e8bf4e14b43d7bb446fda8c3bfb0e42583a99a46",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_tubeintro4_map",
+      "name": "M_TubeIntro4_Map",
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro4_Map",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+      "scalars": {
+        "Tiling U": 64.0,
+        "Tiling V": 64.0,
+        "RefractionDepthBias": 0.0
+      },
+      "vectors": {
+        "Color": [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          1.0
+        ]
+      },
+      "textures": [
+        {
+          "parameter": "Mapping",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro4_RenderTarget.TubeIntro4_RenderTarget",
+          "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro4_RenderTarget",
+          "class": "TextureRenderTarget2D",
+          "path": null,
+          "sha256": null
+        }
+      ],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.M_Detail_Basic_Map",
+          "package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro4_RenderTarget.TubeIntro4_RenderTarget",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro4_RenderTarget"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "dea06e67a9a21846e74c627ce255d619550311ad",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_white_basecolor",
+      "name": "M_White_BaseColor",
+      "source_package": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Assets/Materials/M_White_BaseColor",
+      "class": "/Script/Engine.MaterialInstanceConstant",
+      "parent": "/Game/_HelloEnjoy_/Materials/BaseMaterials/M_BaseColor.M_BaseColor",
+      "scalars": {},
+      "vectors": {},
+      "textures": [],
+      "expression_defaults": [],
+      "references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/Materials/BaseMaterials/M_BaseColor.M_BaseColor",
+          "package": "/Game/_HelloEnjoy_/Materials/BaseMaterials/M_BaseColor"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "fa37e35a04b3607e346a8d197310cf896bd814ca",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_emissive",
+      "name": "M_Emissive",
+      "source_package": "/Game/DemoRoom/Materials/M_Emissive",
+      "class": "/Script/Engine.Material",
+      "parent": null,
+      "scalars": {},
+      "vectors": {},
+      "textures": [],
+      "expression_defaults": [
+        {
+          "parameter": "Brightness",
+          "expression": "M_Emissive.MaterialExpressionScalarParameter_0",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 1.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Color",
+          "expression": "M_Emissive.MaterialExpressionVectorParameter_0",
+          "class": "/Script/Engine.MaterialExpressionVectorParameter",
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "texture_reference": null,
+          "status": "tagged_property"
+        }
+      ],
+      "references": [],
+      "provenance": {
+        "payload_sha1": "f26649c3c354bfd262728609fa698db649dbfc45",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_detail_crn_maptiled",
+      "name": "M_Detail_CRN_MapTiled",
+      "source_package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_CRN_MapTiled",
+      "class": "/Script/Engine.Material",
+      "parent": null,
+      "scalars": {},
+      "vectors": {},
+      "textures": [],
+      "expression_defaults": [
+        {
+          "parameter": "Metallic",
+          "expression": "M_Detail_CRN_MapTiled.MaterialExpressionScalarParameter_0",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 1.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Emission",
+          "expression": "M_Detail_CRN_MapTiled.MaterialExpressionScalarParameter_2",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 20.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Offset U",
+          "expression": "M_Detail_CRN_MapTiled.MaterialExpressionScalarParameter_21",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": null,
+          "texture_reference": null,
+          "status": "default_value_not_serialized_unknown"
+        },
+        {
+          "parameter": "Offset V",
+          "expression": "M_Detail_CRN_MapTiled.MaterialExpressionScalarParameter_22",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": null,
+          "texture_reference": null,
+          "status": "default_value_not_serialized_unknown"
+        },
+        {
+          "parameter": "Tiling U",
+          "expression": "M_Detail_CRN_MapTiled.MaterialExpressionScalarParameter_3",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 1.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Tiling V",
+          "expression": "M_Detail_CRN_MapTiled.MaterialExpressionScalarParameter_4",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 1.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "GI Emission",
+          "expression": "M_Detail_CRN_MapTiled.MaterialExpressionScalarParameter_5",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 40.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Map Tiling U",
+          "expression": "M_Detail_CRN_MapTiled.MaterialExpressionScalarParameter_6",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 1.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Map Tiling V",
+          "expression": "M_Detail_CRN_MapTiled.MaterialExpressionScalarParameter_7",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 1.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Mapping",
+          "expression": "M_Detail_CRN_MapTiled.MaterialExpressionTextureSampleParameter2D_1",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Pole_RenderTarget.Pole_RenderTarget",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Base Color",
+          "expression": "M_Detail_CRN_MapTiled.MaterialExpressionTextureSampleParameter2D_10",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/Substance/Metal/Metal_used_INST_basecolor.Metal_used_INST_basecolor",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Normal",
+          "expression": "M_Detail_CRN_MapTiled.MaterialExpressionTextureSampleParameter2D_13",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/Substance/Metal/Metal_used_INST_normal.Metal_used_INST_normal",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Roughness",
+          "expression": "M_Detail_CRN_MapTiled.MaterialExpressionTextureSampleParameter2D_14",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/_HelloEnjoy_/ChezNous/Materials/Ground_Materials/Substance/Metal_used_Ground_INST_roughness.Metal_used_Ground_INST_roughness",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Detail",
+          "expression": "M_Detail_CRN_MapTiled.MaterialExpressionTextureSampleParameter2D_9",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/_HelloEnjoy_/Materials/Textures/Circle_256_8.Circle_256_8",
+          "status": "tagged_property"
+        }
+      ],
+      "references": [
+        {
+          "class": "SubstanceTexture2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/Ground_Materials/Substance/Metal_used_Ground_INST_roughness.Metal_used_Ground_INST_roughness",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/Ground_Materials/Substance/Metal_used_Ground_INST_roughness"
+        },
+        {
+          "class": "SubstanceTexture2D",
+          "reference": "/Game/Substance/Metal/Metal_used_INST_basecolor.Metal_used_INST_basecolor",
+          "package": "/Game/Substance/Metal/Metal_used_INST_basecolor"
+        },
+        {
+          "class": "SubstanceTexture2D",
+          "reference": "/Game/Substance/Metal/Metal_used_INST_normal.Metal_used_INST_normal",
+          "package": "/Game/Substance/Metal/Metal_used_INST_normal"
+        },
+        {
+          "class": "Texture2D",
+          "reference": "/Game/_HelloEnjoy_/Materials/Textures/Circle_256_8.Circle_256_8",
+          "package": "/Game/_HelloEnjoy_/Materials/Textures/Circle_256_8"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Pole_RenderTarget.Pole_RenderTarget",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Pole_RenderTarget"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "92798ec141142a698544890a12e87d4d35f74ef1",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_color_emissivegi",
+      "name": "M_Color_EmissiveGI",
+      "source_package": "/Game/_HelloEnjoy_/Materials/BaseMaterials/M_Color_EmissiveGI",
+      "class": "/Script/Engine.Material",
+      "parent": null,
+      "scalars": {},
+      "vectors": {},
+      "textures": [],
+      "expression_defaults": [
+        {
+          "parameter": "GI Emission",
+          "expression": "M_Color_EmissiveGI.MaterialExpressionScalarParameter_4",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 8.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Emission",
+          "expression": "M_Color_EmissiveGI.MaterialExpressionScalarParameter_5",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 8.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Color",
+          "expression": "M_Color_EmissiveGI.MaterialExpressionVectorParameter_0",
+          "class": "/Script/Engine.MaterialExpressionVectorParameter",
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "texture_reference": null,
+          "status": "tagged_property"
+        }
+      ],
+      "references": [],
+      "provenance": {
+        "payload_sha1": "dbcd88f94d804ae4cf2d5bd2f8cf5550e3498896",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_detail_basic_map",
+      "name": "M_Detail_Basic_Map",
+      "source_package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map",
+      "class": "/Script/Engine.Material",
+      "parent": null,
+      "scalars": {},
+      "vectors": {},
+      "textures": [],
+      "expression_defaults": [
+        {
+          "parameter": "Metallic",
+          "expression": "M_Detail_Basic_Map.MaterialExpressionScalarParameter_0",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 1.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Roughness",
+          "expression": "M_Detail_Basic_Map.MaterialExpressionScalarParameter_1",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 0.20000000298023224,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Emission",
+          "expression": "M_Detail_Basic_Map.MaterialExpressionScalarParameter_10",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 20.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Tiling U",
+          "expression": "M_Detail_Basic_Map.MaterialExpressionScalarParameter_14",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": null,
+          "texture_reference": null,
+          "status": "default_value_not_serialized_unknown"
+        },
+        {
+          "parameter": "GI Emission",
+          "expression": "M_Detail_Basic_Map.MaterialExpressionScalarParameter_15",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 40.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Tiling V",
+          "expression": "M_Detail_Basic_Map.MaterialExpressionScalarParameter_18",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": null,
+          "texture_reference": null,
+          "status": "default_value_not_serialized_unknown"
+        },
+        {
+          "parameter": "Offset U",
+          "expression": "M_Detail_Basic_Map.MaterialExpressionScalarParameter_21",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": null,
+          "texture_reference": null,
+          "status": "default_value_not_serialized_unknown"
+        },
+        {
+          "parameter": "Offset V",
+          "expression": "M_Detail_Basic_Map.MaterialExpressionScalarParameter_22",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": null,
+          "texture_reference": null,
+          "status": "default_value_not_serialized_unknown"
+        },
+        {
+          "parameter": "Mapping",
+          "expression": "M_Detail_Basic_Map.MaterialExpressionTextureSampleParameter2D_2",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Pole_RenderTarget.Pole_RenderTarget",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Detail",
+          "expression": "M_Detail_Basic_Map.MaterialExpressionTextureSampleParameter2D_9",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/_HelloEnjoy_/Materials/Textures/Circle_256_8.Circle_256_8",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Color",
+          "expression": "M_Detail_Basic_Map.MaterialExpressionVectorParameter_2",
+          "class": "/Script/Engine.MaterialExpressionVectorParameter",
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "texture_reference": null,
+          "status": "tagged_property"
+        }
+      ],
+      "references": [
+        {
+          "class": "Texture2D",
+          "reference": "/Game/_HelloEnjoy_/Materials/Textures/Circle_256_8.Circle_256_8",
+          "package": "/Game/_HelloEnjoy_/Materials/Textures/Circle_256_8"
+        },
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Pole_RenderTarget.Pole_RenderTarget",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Pole_RenderTarget"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "c2d56737769d85cdc71968c20051fda5ba0c7542",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_basicmetal_white",
+      "name": "M_BasicMetal_White",
+      "source_package": "/Game/_HelloEnjoy_/Materials/M_BasicMetal_White",
+      "class": "/Script/Engine.Material",
+      "parent": null,
+      "scalars": {},
+      "vectors": {},
+      "textures": [],
+      "expression_defaults": [
+        {
+          "parameter": "Color",
+          "expression": "M_BasicMetal_White.MaterialExpressionVectorParameter_0",
+          "class": "/Script/Engine.MaterialExpressionVectorParameter",
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "texture_reference": null,
+          "status": "tagged_property"
+        }
+      ],
+      "references": [],
+      "provenance": {
+        "payload_sha1": "03076ec5f740d7ea49dc561712f1602ba95c3c5f",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_fogsheet_color_master",
+      "name": "M_FogSheet_Color_Master",
+      "source_package": "/Game/Assets/Materials/M_FogSheet_Color_Master",
+      "class": "/Script/Engine.Material",
+      "parent": null,
+      "scalars": {},
+      "vectors": {},
+      "textures": [],
+      "expression_defaults": [
+        {
+          "parameter": "MaxOpacity",
+          "expression": "M_FogSheet_Color_Master.MaterialExpressionScalarParameter_0",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 0.5,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "FadeDistance",
+          "expression": "M_FogSheet_Color_Master.MaterialExpressionScalarParameter_1",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 1024.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "NoiseSize",
+          "expression": "M_FogSheet_Color_Master.MaterialExpressionScalarParameter_2",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 2048.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "DepthFadeDistance",
+          "expression": "M_FogSheet_Color_Master.MaterialExpressionScalarParameter_3",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 1024.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "PanningSpeed",
+          "expression": "M_FogSheet_Color_Master.MaterialExpressionScalarParameter_4",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 0.009999999776482582,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "FadeDistanceMin",
+          "expression": "M_FogSheet_Color_Master.MaterialExpressionScalarParameter_5",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 256.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "TilingMaskProjectionDistance",
+          "expression": "M_FogSheet_Color_Master.MaterialExpressionScalarParameter_6",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 2048.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "TilingMask",
+          "expression": "M_FogSheet_Color_Master.MaterialExpressionTextureSampleParameter2D_0",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/Assets/Textures/T_TilingNoise03_M.T_TilingNoise03_M",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "TilingMask",
+          "expression": "M_FogSheet_Color_Master.MaterialExpressionTextureSampleParameter2D_2",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/Assets/Textures/T_TilingNoise03_M.T_TilingNoise03_M",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Color",
+          "expression": "M_FogSheet_Color_Master.MaterialExpressionVectorParameter_0",
+          "class": "/Script/Engine.MaterialExpressionVectorParameter",
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "BaseColor",
+          "expression": "M_FogSheet_Color_Master.MaterialExpressionVectorParameter_1",
+          "class": "/Script/Engine.MaterialExpressionVectorParameter",
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "texture_reference": null,
+          "status": "tagged_property"
+        }
+      ],
+      "references": [
+        {
+          "class": "Texture2D",
+          "reference": "/Game/Assets/Textures/T_TilingNoise03_M.T_TilingNoise03_M",
+          "package": "/Game/Assets/Textures/T_TilingNoise03_M"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "8b28fcf8550464eccd8e246a36e7ddddeecf406f",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_color_pbr",
+      "name": "M_Color_PBR",
+      "source_package": "/Game/_HelloEnjoy_/Materials/BaseMaterials/M_Color_PBR",
+      "class": "/Script/Engine.Material",
+      "parent": null,
+      "scalars": {},
+      "vectors": {},
+      "textures": [],
+      "expression_defaults": [
+        {
+          "parameter": "Roughness",
+          "expression": "M_Color_PBR.MaterialExpressionScalarParameter_2",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 0.20000000298023224,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Metallic",
+          "expression": "M_Color_PBR.MaterialExpressionScalarParameter_3",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 1.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Color",
+          "expression": "M_Color_PBR.MaterialExpressionVectorParameter_2",
+          "class": "/Script/Engine.MaterialExpressionVectorParameter",
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "texture_reference": null,
+          "status": "tagged_property"
+        }
+      ],
+      "references": [],
+      "provenance": {
+        "payload_sha1": "f10c967370e8cfeeff3fee9a9f9ff1172d3b2d4a",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_basic_map",
+      "name": "M_Basic_Map",
+      "source_package": "/Game/_HelloEnjoy_/Materials/Mapping/M_Basic_Map",
+      "class": "/Script/Engine.Material",
+      "parent": null,
+      "scalars": {},
+      "vectors": {},
+      "textures": [],
+      "expression_defaults": [
+        {
+          "parameter": "Metallic",
+          "expression": "M_Basic_Map.MaterialExpressionScalarParameter_0",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 1.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Roughness",
+          "expression": "M_Basic_Map.MaterialExpressionScalarParameter_1",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 0.20000000298023224,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Emission",
+          "expression": "M_Basic_Map.MaterialExpressionScalarParameter_10",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 20.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "GI Emission",
+          "expression": "M_Basic_Map.MaterialExpressionScalarParameter_15",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 40.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Mapping",
+          "expression": "M_Basic_Map.MaterialExpressionTextureSampleParameter2D_2",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Pole_RenderTarget.Pole_RenderTarget",
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Color",
+          "expression": "M_Basic_Map.MaterialExpressionVectorParameter_2",
+          "class": "/Script/Engine.MaterialExpressionVectorParameter",
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "texture_reference": null,
+          "status": "tagged_property"
+        }
+      ],
+      "references": [
+        {
+          "class": "TextureRenderTarget2D",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Pole_RenderTarget.Pole_RenderTarget",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Pole_RenderTarget"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "c6fe71ef537ed6d5fd8af4d6fe67e4af54ad0124",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_texture_emissive",
+      "name": "M_Texture_Emissive",
+      "source_package": "/Game/_HelloEnjoy_/Materials/BaseMaterials/M_Texture_Emissive",
+      "class": "/Script/Engine.Material",
+      "parent": null,
+      "scalars": {},
+      "vectors": {},
+      "textures": [],
+      "expression_defaults": [
+        {
+          "parameter": "Emission",
+          "expression": "M_Texture_Emissive.MaterialExpressionScalarParameter_11",
+          "class": "/Script/Engine.MaterialExpressionScalarParameter",
+          "value": 1.0,
+          "texture_reference": null,
+          "status": "tagged_property"
+        },
+        {
+          "parameter": "Texture",
+          "expression": "M_Texture_Emissive.MaterialExpressionTextureSampleParameter2D_1",
+          "class": "/Script/Engine.MaterialExpressionTextureSampleParameter2D",
+          "value": null,
+          "texture_reference": "/Game/_HelloEnjoy_/Materials/Textures/color_white.color_white",
+          "status": "tagged_property"
+        }
+      ],
+      "references": [
+        {
+          "class": "Texture2D",
+          "reference": "/Game/_HelloEnjoy_/Materials/Textures/color_white.color_white",
+          "package": "/Game/_HelloEnjoy_/Materials/Textures/color_white"
+        }
+      ],
+      "provenance": {
+        "payload_sha1": "ffc36115e5b3a015633a56221a28d69c36b156a7",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    },
+    {
+      "key": "m_basecolor",
+      "name": "M_BaseColor",
+      "source_package": "/Game/_HelloEnjoy_/Materials/BaseMaterials/M_BaseColor",
+      "class": "/Script/Engine.Material",
+      "parent": null,
+      "scalars": {},
+      "vectors": {},
+      "textures": [],
+      "expression_defaults": [
+        {
+          "parameter": "Color",
+          "expression": "M_BaseColor.MaterialExpressionVectorParameter_0",
+          "class": "/Script/Engine.MaterialExpressionVectorParameter",
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "texture_reference": null,
+          "status": "tagged_property"
+        }
+      ],
+      "references": [],
+      "provenance": {
+        "payload_sha1": "dba38042ba5b66b3eaf578332af4fabceedabc61",
+        "payload_hash_verified": true,
+        "metadata": "plan/opening-development/material-evidence/metadata.json"
+      },
+      "unknowns": [
+        "Original compiled shader behaviour is not reconstructed",
+        "Runtime parameter changes are not present in these static overrides"
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "source_package": "/Game/_HelloEnjoy_/Materials/Textures/DiagonalBand32-Light",
+      "name": "DiagonalBand32-Light",
+      "payload_sha1": "cda3bdc7d065b34899023b9bacb1dcba89059ca0",
+      "path": "assets/opening/textures/_HelloEnjoy_/Materials/Textures/DiagonalBand32-Light.png",
+      "sha256": "d8c3655427b2dc24c0c5b71d5a2b1cb4d8ffdc2bf992560a00e7844137b0ca61",
+      "dimensions": [
+        256,
+        256
+      ]
+    },
+    {
+      "source_package": "/Game/DemoRoom/Textures/T_RoomTiles_M",
+      "name": "T_RoomTiles_M",
+      "payload_sha1": "52a32ed0249e473a6774a593d38e834ad9575694",
+      "path": "assets/opening/textures/DemoRoom/Textures/T_RoomTiles_M.png",
+      "sha256": "96beb19256d1bf9e8397f408a0698d10b5786af4c48738f509af1a85d267c551",
+      "dimensions": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "source_package": "/Game/DemoRoom/Textures/T_RoomTiles_N",
+      "name": "T_RoomTiles_N",
+      "payload_sha1": "81db2b109a3a1b859318600b33d66f7a20b378c5",
+      "path": "assets/opening/textures/DemoRoom/Textures/T_RoomTiles_N.png",
+      "sha256": "114cb6dba1e92a100e1a8e3ebf2d9f899136265d11498bcf4897e8df975bbad8",
+      "dimensions": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/Materials/Patterns/pattern_pixel_1",
+      "name": "pattern_pixel_1",
+      "payload_sha1": "a1812efcb5b518698c5a318f6d402192aafa28f9",
+      "path": "assets/opening/textures/_HelloEnjoy_/Materials/Patterns/pattern_pixel_1.png",
+      "sha256": "37dd2f0599b5424a570624a95ab91b6ffa71d479deb80baf8661783d2567455c",
+      "dimensions": [
+        2,
+        2
+      ]
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleBaseGrid",
+      "name": "PoleBaseGrid",
+      "payload_sha1": "1456e1c3467520d3f078b63ea3f5d52fcd3691c1",
+      "path": "assets/opening/textures/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleBaseGrid.png",
+      "sha256": "2a1f268939344c92e5db746d106a2cac9100f706ce3a2f661afe362d40be3fb4",
+      "dimensions": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleCapGrid",
+      "name": "PoleCapGrid",
+      "payload_sha1": "39cf0b6959773ac25cc6d16cb40153cd92d919fc",
+      "path": "assets/opening/textures/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleCapGrid.png",
+      "sha256": "0b5932f59535d800d4f72a52b397c4f0a56872bc96289e47c0e566b8a3296d8f",
+      "dimensions": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/Materials/Textures/Circle_256_8",
+      "name": "Circle_256_8",
+      "payload_sha1": "2486b0a0212c298c6c60a0572a256922663beed3",
+      "path": "assets/opening/textures/_HelloEnjoy_/Materials/Textures/Circle_256_8.png",
+      "sha256": "7cbad345a46fbbd8ffee36b6f19fdf75faca9d25e69de32c3690a6a691158ada",
+      "dimensions": [
+        256,
+        256
+      ]
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_hollow_pattern_256_2",
+      "name": "hex_hollow_pattern_256_2",
+      "payload_sha1": "852803cc83cb516b887c7bf38ecc43676ad4a867",
+      "path": "assets/opening/textures/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_hollow_pattern_256_2.png",
+      "sha256": "56f37ddc99b129195aecef3f308bb053d027302bcdd5d10055fc2c965594a75c",
+      "dimensions": [
+        256,
+        256
+      ]
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_pattern_128",
+      "name": "hex_pattern_128",
+      "payload_sha1": "94b6d8e1afbbc503e7170300163073649987bbb8",
+      "path": "assets/opening/textures/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_pattern_128.png",
+      "sha256": "47e065d0e92f8ee05b283c9bd594f6b434c953a90ae915af7352513f93344b2b",
+      "dimensions": [
+        128,
+        127
+      ]
+    },
+    {
+      "source_package": "/Game/Assets/Textures/T_TilingNoise03_M",
+      "name": "T_TilingNoise03_M",
+      "payload_sha1": "3a24d53d09dfcca496bce12821a51fa73805afd6",
+      "path": "assets/opening/textures/Assets/Textures/T_TilingNoise03_M.png",
+      "sha256": "338356c73d16c9b382c2b1d7917137b968ecc37b4ad2c1eaf9511dca876224c4",
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/Materials/Textures/color_white",
+      "name": "color_white",
+      "payload_sha1": "cd923b37015eb03e5179c8402c1252144022b3a9",
+      "path": "assets/opening/textures/_HelloEnjoy_/Materials/Textures/color_white.png",
+      "sha256": "dfeb769eca423f780f5a0ae07241fb1e5b3363756e12bd183d3a1f6265ec4a82",
+      "dimensions": [
+        512,
+        512
+      ]
+    }
+  ],
+  "semantic_materials": {
+    "intro_hex_hollow": "m_hex_hole_1_map",
+    "intro_hex_solid_1": "m_hex_solid_1_map",
+    "intro_hex_solid_2": "m_hex_solid_2_map",
+    "pyramid_ground": "m_pyramid_map",
+    "pyramid_terrain": "m_pyramid_theme",
+    "tube_intro_0": "m_tubeintro0_map",
+    "tube_intro_1": "m_tubeintro1_map",
+    "tube_intro_2": "m_tubeintro2_map",
+    "tube_intro_3": "m_tubeintro3_map",
+    "tube_intro_4": "m_tubeintro4_map",
+    "intro_dot_1": "m_dot1_map",
+    "intro_dot_2": "m_dot2_map",
+    "intro_dot_3": "m_dot3_map",
+    "intro_dot_4": "m_dot4_map"
+  },
+  "unsupported_texture_assets": [
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_ambient_occlusion",
+      "payload_sha1": "1e6f4d08f09b1f1aeabfe68058d15dbce194e0cb",
+      "class": "SubstanceTexture2D",
+      "path": null,
+      "status": "unsupported_by_umodel"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_basecolor",
+      "payload_sha1": "3be437d5d31f75ac9456737022174d48476331da",
+      "class": "SubstanceTexture2D",
+      "path": null,
+      "status": "unsupported_by_umodel"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_metallic",
+      "payload_sha1": "45b8a9ebf585f36981a34ac25d87c526a50160e4",
+      "class": "SubstanceTexture2D",
+      "path": null,
+      "status": "unsupported_by_umodel"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_normal",
+      "payload_sha1": "c1cef76dd6967c15e69991d3ba56ce3cff98204c",
+      "class": "SubstanceTexture2D",
+      "path": null,
+      "status": "unsupported_by_umodel"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Assets/Content/pyramid_metal_INST_roughness",
+      "payload_sha1": "e8b72a2ad97ad9601b79984a2a9409a4d85eeee2",
+      "class": "SubstanceTexture2D",
+      "path": null,
+      "status": "unsupported_by_umodel"
+    },
+    {
+      "source_package": "/Game/Substance/Metal/Metal_006_INST_ambient_occlusion",
+      "payload_sha1": "dce3271cc3bc34aa712617db805c3a3da551efe7",
+      "class": "SubstanceTexture2D",
+      "path": null,
+      "status": "unsupported_by_umodel"
+    },
+    {
+      "source_package": "/Game/Substance/Metal/Metal_006_INST_basecolor",
+      "payload_sha1": "91031c41730a98dd3b069af10889a52637c69c47",
+      "class": "SubstanceTexture2D",
+      "path": null,
+      "status": "unsupported_by_umodel"
+    },
+    {
+      "source_package": "/Game/Substance/Metal/Metal_006_INST_metallic",
+      "payload_sha1": "a4bff06686df6027ae8a4431b88b0ca37bd27d94",
+      "class": "SubstanceTexture2D",
+      "path": null,
+      "status": "unsupported_by_umodel"
+    },
+    {
+      "source_package": "/Game/Substance/Metal/Metal_006_INST_normal",
+      "payload_sha1": "b1f4b4e80030ced36434be1ac95a75e97a6125cf",
+      "class": "SubstanceTexture2D",
+      "path": null,
+      "status": "unsupported_by_umodel"
+    },
+    {
+      "source_package": "/Game/Substance/Metal/Metal_006_INST_roughness",
+      "payload_sha1": "a8d6df6f362aa9363fadbe04248f15781bcf2198",
+      "class": "SubstanceTexture2D",
+      "path": null,
+      "status": "unsupported_by_umodel"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_INST_basecolor",
+      "payload_sha1": "0837fd29c4cf27ba63df4d94ed0b082d06a34d8e",
+      "class": "SubstanceTexture2D",
+      "path": null,
+      "status": "unsupported_by_umodel"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_INST_metallic",
+      "payload_sha1": "35eef363a222e335d566d129667df3a6ea8af028",
+      "class": "SubstanceTexture2D",
+      "path": null,
+      "status": "unsupported_by_umodel"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_INST_normal",
+      "payload_sha1": "01cb5e2d0c59f2f8b5b6ab95f6b81a2d9cfa3915",
+      "class": "SubstanceTexture2D",
+      "path": null,
+      "status": "unsupported_by_umodel"
+    },
+    {
+      "source_package": "/Game/Substance/Metal/Steel_INST_ambient_occlusion",
+      "payload_sha1": "3bcef5a6c09558cd1438597477948b9cc968422d",
+      "class": "SubstanceTexture2D",
+      "path": null,
+      "status": "unsupported_by_umodel"
+    },
+    {
+      "source_package": "/Game/Substance/Metal/Steel_INST_basecolor",
+      "payload_sha1": "b2294a23827bb0c3188234594707b5405ba77495",
+      "class": "SubstanceTexture2D",
+      "path": null,
+      "status": "unsupported_by_umodel"
+    },
+    {
+      "source_package": "/Game/Substance/Metal/Steel_INST_metallic",
+      "payload_sha1": "7554cd26da68500c79275840ad188e719b1571a2",
+      "class": "SubstanceTexture2D",
+      "path": null,
+      "status": "unsupported_by_umodel"
+    },
+    {
+      "source_package": "/Game/Substance/Metal/Steel_INST_normal",
+      "payload_sha1": "7006dd4834979940a25a6673e62bd0c6cc4b5d27",
+      "class": "SubstanceTexture2D",
+      "path": null,
+      "status": "unsupported_by_umodel"
+    },
+    {
+      "source_package": "/Game/Substance/Metal/Steel_INST_roughness",
+      "payload_sha1": "7ac015b18b1ca25e40322ff6e5484679a238198f",
+      "class": "SubstanceTexture2D",
+      "path": null,
+      "status": "unsupported_by_umodel"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/Ground_Materials/Substance/Metal_used_Ground_INST_roughness",
+      "payload_sha1": "4919e8860d30604df1c579e3ad7322ded69c61c4",
+      "class": "SubstanceTexture2D",
+      "path": null,
+      "status": "unsupported_by_umodel"
+    },
+    {
+      "source_package": "/Game/Substance/Metal/Metal_used_INST_basecolor",
+      "payload_sha1": "ba271c79bd94e25e2c99688c30f3d9d4cd6b7cc9",
+      "class": "SubstanceTexture2D",
+      "path": null,
+      "status": "unsupported_by_umodel"
+    },
+    {
+      "source_package": "/Game/Substance/Metal/Metal_used_INST_normal",
+      "payload_sha1": "f61daa2a2893901b369f789e86c92f41e049a9bb",
+      "class": "SubstanceTexture2D",
+      "path": null,
+      "status": "unsupported_by_umodel"
+    }
+  ],
+  "dynamic_render_targets": [
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Theme_RenderTarget",
+      "properties": [
+        {
+          "offset": 785,
+          "name": "SizeX",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 512
+        },
+        {
+          "offset": 814,
+          "name": "SizeY",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 512
+        },
+        {
+          "offset": 843,
+          "name": "AddressX",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 884,
+          "name": "AddressY",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 925,
+          "name": "bHDR",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": false
+        },
+        {
+          "offset": 951,
+          "name": "LightingGuid",
+          "type": "StructProperty",
+          "size": 16,
+          "array_index": 0,
+          "struct": "Guid"
+        }
+      ],
+      "path": null,
+      "status": "runtime_generated_not_exportable_as_static_texture"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Tree_RenderTarget",
+      "properties": [
+        {
+          "offset": 783,
+          "name": "SizeX",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 4
+        },
+        {
+          "offset": 812,
+          "name": "SizeY",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 32
+        },
+        {
+          "offset": 841,
+          "name": "AddressX",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 882,
+          "name": "AddressY",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 923,
+          "name": "bHDR",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": false
+        },
+        {
+          "offset": 949,
+          "name": "LightingGuid",
+          "type": "StructProperty",
+          "size": 16,
+          "array_index": 0,
+          "struct": "Guid"
+        }
+      ],
+      "path": null,
+      "status": "runtime_generated_not_exportable_as_static_texture"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Dot1_RenderTarget",
+      "properties": [
+        {
+          "offset": 783,
+          "name": "SizeX",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 32
+        },
+        {
+          "offset": 812,
+          "name": "SizeY",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 32
+        },
+        {
+          "offset": 841,
+          "name": "AddressX",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 882,
+          "name": "AddressY",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 923,
+          "name": "bHDR",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": false
+        },
+        {
+          "offset": 949,
+          "name": "LightingGuid",
+          "type": "StructProperty",
+          "size": 16,
+          "array_index": 0,
+          "struct": "Guid"
+        }
+      ],
+      "path": null,
+      "status": "runtime_generated_not_exportable_as_static_texture"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Dot2_RenderTarget",
+      "properties": [
+        {
+          "offset": 783,
+          "name": "SizeX",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 64
+        },
+        {
+          "offset": 812,
+          "name": "SizeY",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 64
+        },
+        {
+          "offset": 841,
+          "name": "AddressX",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 882,
+          "name": "AddressY",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 923,
+          "name": "bHDR",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": false
+        },
+        {
+          "offset": 949,
+          "name": "LightingGuid",
+          "type": "StructProperty",
+          "size": 16,
+          "array_index": 0,
+          "struct": "Guid"
+        }
+      ],
+      "path": null,
+      "status": "runtime_generated_not_exportable_as_static_texture"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Dot3_RenderTarget",
+      "properties": [
+        {
+          "offset": 783,
+          "name": "SizeX",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 128
+        },
+        {
+          "offset": 812,
+          "name": "SizeY",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 128
+        },
+        {
+          "offset": 841,
+          "name": "AddressX",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 882,
+          "name": "AddressY",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 923,
+          "name": "bHDR",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": false
+        },
+        {
+          "offset": 949,
+          "name": "LightingGuid",
+          "type": "StructProperty",
+          "size": 16,
+          "array_index": 0,
+          "struct": "Guid"
+        }
+      ],
+      "path": null,
+      "status": "runtime_generated_not_exportable_as_static_texture"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Dot4_RenderTarget",
+      "properties": [
+        {
+          "offset": 783,
+          "name": "SizeX",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 128
+        },
+        {
+          "offset": 812,
+          "name": "SizeY",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 128
+        },
+        {
+          "offset": 841,
+          "name": "AddressX",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 882,
+          "name": "AddressY",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 923,
+          "name": "bHDR",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": false
+        },
+        {
+          "offset": 949,
+          "name": "LightingGuid",
+          "type": "StructProperty",
+          "size": 16,
+          "array_index": 0,
+          "struct": "Guid"
+        }
+      ],
+      "path": null,
+      "status": "runtime_generated_not_exportable_as_static_texture"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Pole_RenderTarget",
+      "properties": [
+        {
+          "offset": 783,
+          "name": "SizeX",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 4
+        },
+        {
+          "offset": 812,
+          "name": "SizeY",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 64
+        },
+        {
+          "offset": 841,
+          "name": "AddressX",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 882,
+          "name": "AddressY",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 923,
+          "name": "bHDR",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": false
+        },
+        {
+          "offset": 949,
+          "name": "LightingGuid",
+          "type": "StructProperty",
+          "size": 16,
+          "array_index": 0,
+          "struct": "Guid"
+        }
+      ],
+      "path": null,
+      "status": "runtime_generated_not_exportable_as_static_texture"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/PoleBase_RenderTarget",
+      "properties": [
+        {
+          "offset": 791,
+          "name": "SizeX",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 16
+        },
+        {
+          "offset": 820,
+          "name": "SizeY",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 16
+        },
+        {
+          "offset": 849,
+          "name": "AddressX",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 890,
+          "name": "AddressY",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 931,
+          "name": "bHDR",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": false
+        },
+        {
+          "offset": 957,
+          "name": "LightingGuid",
+          "type": "StructProperty",
+          "size": 16,
+          "array_index": 0,
+          "struct": "Guid"
+        }
+      ],
+      "path": null,
+      "status": "runtime_generated_not_exportable_as_static_texture"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/PoleCap_RenderTarget",
+      "properties": [
+        {
+          "offset": 789,
+          "name": "SizeX",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 32
+        },
+        {
+          "offset": 818,
+          "name": "SizeY",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 32
+        },
+        {
+          "offset": 847,
+          "name": "AddressX",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 888,
+          "name": "AddressY",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 929,
+          "name": "bHDR",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": false
+        },
+        {
+          "offset": 955,
+          "name": "LightingGuid",
+          "type": "StructProperty",
+          "size": 16,
+          "array_index": 0,
+          "struct": "Guid"
+        }
+      ],
+      "path": null,
+      "status": "runtime_generated_not_exportable_as_static_texture"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/PoleDot_RenderTarget",
+      "properties": [
+        {
+          "offset": 789,
+          "name": "SizeX",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 8
+        },
+        {
+          "offset": 818,
+          "name": "SizeY",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 8
+        },
+        {
+          "offset": 847,
+          "name": "AddressX",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 888,
+          "name": "AddressY",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 929,
+          "name": "bHDR",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": false
+        },
+        {
+          "offset": 955,
+          "name": "LightingGuid",
+          "type": "StructProperty",
+          "size": 16,
+          "array_index": 0,
+          "struct": "Guid"
+        }
+      ],
+      "path": null,
+      "status": "runtime_generated_not_exportable_as_static_texture"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Hex_3",
+      "properties": [
+        {
+          "offset": 761,
+          "name": "SizeX",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 4
+        },
+        {
+          "offset": 790,
+          "name": "SizeY",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 4
+        },
+        {
+          "offset": 819,
+          "name": "AddressX",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 860,
+          "name": "AddressY",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 901,
+          "name": "bHDR",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": false
+        },
+        {
+          "offset": 927,
+          "name": "LightingGuid",
+          "type": "StructProperty",
+          "size": 16,
+          "array_index": 0,
+          "struct": "Guid"
+        }
+      ],
+      "path": null,
+      "status": "runtime_generated_not_exportable_as_static_texture"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Hex_1",
+      "properties": [
+        {
+          "offset": 761,
+          "name": "SizeX",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 128
+        },
+        {
+          "offset": 790,
+          "name": "SizeY",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 128
+        },
+        {
+          "offset": 819,
+          "name": "AddressX",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 860,
+          "name": "AddressY",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 901,
+          "name": "bHDR",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": false
+        },
+        {
+          "offset": 927,
+          "name": "LightingGuid",
+          "type": "StructProperty",
+          "size": 16,
+          "array_index": 0,
+          "struct": "Guid"
+        }
+      ],
+      "path": null,
+      "status": "runtime_generated_not_exportable_as_static_texture"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Hex_2",
+      "properties": [
+        {
+          "offset": 761,
+          "name": "SizeX",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 128
+        },
+        {
+          "offset": 790,
+          "name": "SizeY",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 128
+        },
+        {
+          "offset": 819,
+          "name": "AddressX",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 860,
+          "name": "AddressY",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 901,
+          "name": "bHDR",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": false
+        },
+        {
+          "offset": 927,
+          "name": "LightingGuid",
+          "type": "StructProperty",
+          "size": 16,
+          "array_index": 0,
+          "struct": "Guid"
+        }
+      ],
+      "path": null,
+      "status": "runtime_generated_not_exportable_as_static_texture"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Synths_1",
+      "properties": [
+        {
+          "offset": 767,
+          "name": "SizeX",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 4
+        },
+        {
+          "offset": 796,
+          "name": "SizeY",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 32
+        },
+        {
+          "offset": 825,
+          "name": "AddressX",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 866,
+          "name": "AddressY",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 907,
+          "name": "bHDR",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": false
+        },
+        {
+          "offset": 933,
+          "name": "LightingGuid",
+          "type": "StructProperty",
+          "size": 16,
+          "array_index": 0,
+          "struct": "Guid"
+        }
+      ],
+      "path": null,
+      "status": "runtime_generated_not_exportable_as_static_texture"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Synths_2",
+      "properties": [
+        {
+          "offset": 767,
+          "name": "SizeX",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 4
+        },
+        {
+          "offset": 796,
+          "name": "SizeY",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 32
+        },
+        {
+          "offset": 825,
+          "name": "AddressX",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 866,
+          "name": "AddressY",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 907,
+          "name": "bHDR",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": false
+        },
+        {
+          "offset": 933,
+          "name": "LightingGuid",
+          "type": "StructProperty",
+          "size": 16,
+          "array_index": 0,
+          "struct": "Guid"
+        }
+      ],
+      "path": null,
+      "status": "runtime_generated_not_exportable_as_static_texture"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Synths_5",
+      "properties": [
+        {
+          "offset": 767,
+          "name": "SizeX",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 4
+        },
+        {
+          "offset": 796,
+          "name": "SizeY",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 128
+        },
+        {
+          "offset": 825,
+          "name": "AddressX",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 866,
+          "name": "AddressY",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 907,
+          "name": "bHDR",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": false
+        },
+        {
+          "offset": 933,
+          "name": "LightingGuid",
+          "type": "StructProperty",
+          "size": 16,
+          "array_index": 0,
+          "struct": "Guid"
+        }
+      ],
+      "path": null,
+      "status": "runtime_generated_not_exportable_as_static_texture"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_Synths_4",
+      "properties": [
+        {
+          "offset": 767,
+          "name": "SizeX",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 4
+        },
+        {
+          "offset": 796,
+          "name": "SizeY",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 32
+        },
+        {
+          "offset": 825,
+          "name": "AddressX",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 866,
+          "name": "AddressY",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 907,
+          "name": "bHDR",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": false
+        },
+        {
+          "offset": 933,
+          "name": "LightingGuid",
+          "type": "StructProperty",
+          "size": 16,
+          "array_index": 0,
+          "struct": "Guid"
+        }
+      ],
+      "path": null,
+      "status": "runtime_generated_not_exportable_as_static_texture"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_RockLight",
+      "properties": [
+        {
+          "offset": 773,
+          "name": "SizeX",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 4
+        },
+        {
+          "offset": 802,
+          "name": "SizeY",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 4
+        },
+        {
+          "offset": 831,
+          "name": "AddressX",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 872,
+          "name": "AddressY",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 913,
+          "name": "bHDR",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": false
+        },
+        {
+          "offset": 939,
+          "name": "LightingGuid",
+          "type": "StructProperty",
+          "size": 16,
+          "array_index": 0,
+          "struct": "Guid"
+        }
+      ],
+      "path": null,
+      "status": "runtime_generated_not_exportable_as_static_texture"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro0_RenderTarget",
+      "properties": [
+        {
+          "offset": 795,
+          "name": "SizeX",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 128
+        },
+        {
+          "offset": 824,
+          "name": "SizeY",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 128
+        },
+        {
+          "offset": 853,
+          "name": "AddressX",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 894,
+          "name": "AddressY",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 935,
+          "name": "bHDR",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": false
+        },
+        {
+          "offset": 961,
+          "name": "LightingGuid",
+          "type": "StructProperty",
+          "size": 16,
+          "array_index": 0,
+          "struct": "Guid"
+        }
+      ],
+      "path": null,
+      "status": "runtime_generated_not_exportable_as_static_texture"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeTerrain_RenderTarget",
+      "properties": [
+        {
+          "offset": 797,
+          "name": "SizeX",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 4
+        },
+        {
+          "offset": 826,
+          "name": "SizeY",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 32
+        },
+        {
+          "offset": 855,
+          "name": "AddressX",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 896,
+          "name": "AddressY",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 937,
+          "name": "bHDR",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": false
+        },
+        {
+          "offset": 963,
+          "name": "LightingGuid",
+          "type": "StructProperty",
+          "size": 16,
+          "array_index": 0,
+          "struct": "Guid"
+        }
+      ],
+      "path": null,
+      "status": "runtime_generated_not_exportable_as_static_texture"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro1_RenderTarget",
+      "properties": [
+        {
+          "offset": 795,
+          "name": "SizeX",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 128
+        },
+        {
+          "offset": 824,
+          "name": "SizeY",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 128
+        },
+        {
+          "offset": 853,
+          "name": "AddressX",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 894,
+          "name": "AddressY",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 935,
+          "name": "bHDR",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": false
+        },
+        {
+          "offset": 961,
+          "name": "LightingGuid",
+          "type": "StructProperty",
+          "size": 16,
+          "array_index": 0,
+          "struct": "Guid"
+        }
+      ],
+      "path": null,
+      "status": "runtime_generated_not_exportable_as_static_texture"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro2_RenderTarget",
+      "properties": [
+        {
+          "offset": 795,
+          "name": "SizeX",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 128
+        },
+        {
+          "offset": 824,
+          "name": "SizeY",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 128
+        },
+        {
+          "offset": 853,
+          "name": "AddressX",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 894,
+          "name": "AddressY",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 935,
+          "name": "bHDR",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": false
+        },
+        {
+          "offset": 961,
+          "name": "LightingGuid",
+          "type": "StructProperty",
+          "size": 16,
+          "array_index": 0,
+          "struct": "Guid"
+        }
+      ],
+      "path": null,
+      "status": "runtime_generated_not_exportable_as_static_texture"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro3_RenderTarget",
+      "properties": [
+        {
+          "offset": 795,
+          "name": "SizeX",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 128
+        },
+        {
+          "offset": 824,
+          "name": "SizeY",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 128
+        },
+        {
+          "offset": 853,
+          "name": "AddressX",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 894,
+          "name": "AddressY",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 935,
+          "name": "bHDR",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": false
+        },
+        {
+          "offset": 961,
+          "name": "LightingGuid",
+          "type": "StructProperty",
+          "size": 16,
+          "array_index": 0,
+          "struct": "Guid"
+        }
+      ],
+      "path": null,
+      "status": "runtime_generated_not_exportable_as_static_texture"
+    },
+    {
+      "source_package": "/Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/TubeIntro4_RenderTarget",
+      "properties": [
+        {
+          "offset": 795,
+          "name": "SizeX",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 128
+        },
+        {
+          "offset": 824,
+          "name": "SizeY",
+          "type": "IntProperty",
+          "size": 4,
+          "array_index": 0,
+          "value": 128
+        },
+        {
+          "offset": 853,
+          "name": "AddressX",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 894,
+          "name": "AddressY",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "TextureAddress",
+          "value": "TA_Clamp"
+        },
+        {
+          "offset": 935,
+          "name": "bHDR",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": false
+        },
+        {
+          "offset": 961,
+          "name": "LightingGuid",
+          "type": "StructProperty",
+          "size": 16,
+          "array_index": 0,
+          "struct": "Guid"
+        }
+      ],
+      "path": null,
+      "status": "runtime_generated_not_exportable_as_static_texture"
+    }
+  ],
+  "source_edges": [
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerForestFogSheet",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_FogSheet_Forest.BP_FogSheet_Forest_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_FogSheet_Forest"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerForestRockLight",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_RockLight.BP_RockLight_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_RockLight"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerIntroDot",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/5_Dot_Cut_1.5_Dot_Cut_1_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/5_Dot_Cut_1"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerIntroDot",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/5_Dot_Cut_2.5_Dot_Cut_2_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/5_Dot_Cut_2"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerIntroDot",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/5_Dot_Cut_3.5_Dot_Cut_3_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/5_Dot_Cut_3"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerIntroDot",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/5_Dot_Cut_4.5_Dot_Cut_4_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/5_Dot_Cut_4"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerIntroHex",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Hex_Solid_1.BP_Hex_Solid_1_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Hex_Solid_1"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerIntroHex",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Hex_Solid_2.BP_Hex_Solid_2_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Hex_Solid_2"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerIntroHex",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Hex_Hole_1.BP_Hex_Hole_1_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Hex_Hole_1"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerIntroLower",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Tube_Intro_0.Tube_Intro_0_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Tube_Intro_0"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerIntroLower",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Tube_Intro_1.Tube_Intro_1_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Tube_Intro_1"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerIntroLower",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Tube_Intro_2.Tube_Intro_2_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Tube_Intro_2"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerIntroLower",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Tube_Intro_3.Tube_Intro_3_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Tube_Intro_3"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerIntroLower",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Tube_Intro_4.Tube_Intro_4_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Tube_Intro_4"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerIntroNeon",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Neon_1.BP_Neon_1_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Neon_1"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerIntroNeon",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Neon_2.BP_Neon_2_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Neon_2"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerIntroNeon",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Neon_3.BP_Neon_3_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Neon_3"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerIntroNeon",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Neon_4.BP_Neon_4_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/BP_Neon_4"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerIntroPole",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/7_Pole.7_Pole_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/7_Pole"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerIntroPoleDot",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/8_PoleDot.8_PoleDot_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/8_PoleDot"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerPyramidGroundFar",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/0_Pyramid_Ground.0_Pyramid_Ground_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/0_Pyramid_Ground"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerPyramidGroundFront",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/0_Pyramid_Ground_0.0_Pyramid_Ground_0_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/0_Pyramid_Ground_0"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerPyramidGroundFront",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/0_Pyramid_Ground_1.0_Pyramid_Ground_1_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/0_Pyramid_Ground_1"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerPyramidSmall",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/4_Pyramid_Gold.4_Pyramid_Gold_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/4_Pyramid_Gold"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerPyramidSmall",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/4_Pyramid_Black.4_Pyramid_Black_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/4_Pyramid_Black"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerPyramidSmall",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/4_Tree.4_Tree_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/4_Tree"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerPyramidTerrainFar",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/1_Pyramid_Terrain.1_Pyramid_Terrain_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/1_Pyramid_Terrain"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerPyramidTerrainNear",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/1_Pyramid_Terrain.1_Pyramid_Terrain_C",
+      "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/1_Pyramid_Terrain"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerTubeIntro0",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Assets/BP_PlaneSolid_White_BaseColor.BP_PlaneSolid_White_BaseColor_C",
+      "package": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Assets/BP_PlaneSolid_White_BaseColor"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerTubeIntro1",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Assets/BP_PlaneSolid_White_BaseColor.BP_PlaneSolid_White_BaseColor_C",
+      "package": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Assets/BP_PlaneSolid_White_BaseColor"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerTubeIntro2",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Assets/BP_PlaneSolid_White_BaseColor.BP_PlaneSolid_White_BaseColor_C",
+      "package": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Assets/BP_PlaneSolid_White_BaseColor"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerTubeIntro3",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Assets/BP_PlaneSolid_White_BaseColor.BP_PlaneSolid_White_BaseColor_C",
+      "package": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Assets/BP_PlaneSolid_White_BaseColor"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.SpawnerTubeIntro4",
+      "property": "Sources",
+      "reference": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Assets/BP_PlaneSolid_White_BaseColor.BP_PlaneSolid_White_BaseColor_C",
+      "package": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Assets/BP_PlaneSolid_White_BaseColor"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.ForestTerrain.forest_terrain_cut",
+      "property": "OverrideMaterials",
+      "reference": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Old_Planes/Materials/UnlitColor-Black.UnlitColor-Black",
+      "package": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Old_Planes/Materials/UnlitColor-Black"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.ForestTerrain.forest_terrain_cut",
+      "property": "OverrideMaterials",
+      "reference": "/Game/DemoRoom/Materials/M_Emissive_2.M_Emissive_2",
+      "package": "/Game/DemoRoom/Materials/M_Emissive_2"
+    },
+    {
+      "actor": "ChezNous.PersistentLevel.ForestTerrain.forest_terrain_over",
+      "property": "OverrideMaterials",
+      "reference": "/Game/_HelloEnjoy_/Materials/M_TerrainTiles.M_TerrainTiles",
+      "package": "/Game/_HelloEnjoy_/Materials/M_TerrainTiles"
+    }
+  ],
+  "limits": [
+    "No native shader decoding or original game execution",
+    "Render targets contain runtime compositions, not recoverable PNG patterns",
+    "Static textures inherited from a parent may be overridden by material instances",
+    "No synthetic images are labelled as original assets"
+  ]
+}

@@ -1,0 +1,18 @@
+test_audio_stops_at_two_minutes (test_opening.OpeningTests.test_audio_stops_at_two_minutes) ... FAIL
+test_opening_duration_is_two_minutes (test_opening.OpeningTests.test_opening_duration_is_two_minutes) ... ok
+test_stages_use_recovered_meshes (test_opening.OpeningTests.test_stages_use_recovered_meshes) ... ok
+test_vr_resolution_defaults_to_one (test_opening.OpeningTests.test_vr_resolution_defaults_to_one) ... ok
+
+======================================================================
+FAIL: test_audio_stops_at_two_minutes (test_opening.OpeningTests.test_audio_stops_at_two_minutes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_opening.py", line 55, in test_audio_stops_at_two_minutes
+    self.assertEqual(final["audio_seconds"], 120)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 120.03931972789115 != 120
+
+----------------------------------------------------------------------
+Ran 4 tests in 6.513s
+
+FAILED (failures=1)

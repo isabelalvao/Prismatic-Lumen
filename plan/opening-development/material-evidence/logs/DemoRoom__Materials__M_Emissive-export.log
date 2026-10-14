@@ -1,0 +1,10 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/DemoRoom/Materials/M_Emissive.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 66 Exports: 3 Imports: 4 Game: 10000D0
+Export "M_Emissive" was found in package "/Game/DemoRoom/Materials/M_Emissive.uasset"
+Found 1 object(s)
+Loading Material3 M_Emissive from package /Game/DemoRoom/Materials/M_Emissive.uasset
+Loaded in 0.0 sec, 36 allocs, 0.01 MBytes serialized in 3 calls.
+Exporting objects ...
+Ignoring Material3'M_Emissive' due to empty parameters

@@ -1,0 +1,51 @@
+{
+  "input": {
+    "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RoundDiamond_0.uasset",
+    "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RoundDiamond_0",
+    "object_name": "SM_RoundDiamond_0",
+    "class_reference": "/Script/Engine.StaticMesh",
+    "export_index": 3,
+    "serial_offset": 4219,
+    "serial_size": 85825,
+    "payload_sha1": "bcdee3403396a97a419b97ce730866cf8567b9c2",
+    "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+    "source_reports": [
+      "mesh-assets.json"
+    ],
+    "payload_pak_offset": 74119221,
+    "payload_size": 90048,
+    "source_sha1_verified": true,
+    "resource_id": "SM_RoundDiamond_0-bcdee340"
+  },
+  "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_RoundDiamond_0-bcdee340",
+  "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+  "args": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-export",
+    "-gltf",
+    "-notex",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_RoundDiamond_0-bcdee340",
+    "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RoundDiamond_0",
+    "SM_RoundDiamond_0",
+    "StaticMesh"
+  ],
+  "returncode": 0,
+  "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_RoundDiamond_0-bcdee340.log",
+  "method": "qualified package+object+class UModel export",
+  "elapsed_seconds": 0.030999999959021807,
+  "files": [
+    {
+      "path": "resources\\SM_RoundDiamond_0-bcdee340\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_RoundDiamond_0.bin",
+      "size": 72596,
+      "sha256": "8ff4e1cf66b8900f3d155c01a0052ca5eca3fe65d1c4fb8dc921eb30568a179e"
+    },
+    {
+      "path": "resources\\SM_RoundDiamond_0-bcdee340\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_RoundDiamond_0.gltf",
+      "size": 4189,
+      "sha256": "b80569c5f4dee3ad3919edfdf310dba8415502e67b77003c028375784c743f5b"
+    }
+  ],
+  "export_status": "exported_pending_geometry_validation"
+}

@@ -1,0 +1,10 @@
+{
+  "source_ogg_sha256": "47bc775e4635d7e4680d0692e8851882a57601d5573189630838271c6798f90b",
+  "wav_sha256": "60dc74309ab1fbae42394228ddfc098a09a1e7a36ae739c7f5ee7e1adafb9fd9",
+  "pcm_sha256": "81f32d402a8d358eb969cdc00770a4c6ea9d735af9db1bfa4e94281485795b05",
+  "frames": 18706432,
+  "rate": 44100,
+  "channels": 2,
+  "sample_bits": 16,
+  "origin": "Fantasynth Steam MASTER recovered via UModel and decoded with installed UE4.13 Vorbis DLL; no normalization or resampling"
+}

@@ -1,0 +1,17 @@
+{
+  "checks_passed": [
+    "syntax_ast",
+    "truncated_reader",
+    "invalid_fname",
+    "reference_out_of_bounds",
+    "reference_cycle",
+    "recursion_limit",
+    "mismatched_property_header",
+    "oversized_property_payload",
+    "enum_native_exact_consumption",
+    "tampered_sha1_no_output",
+    "unsupported_compression_no_output"
+  ],
+  "test_count": 11,
+  "new_tool": "tools/inspect_fantasynth_sequence.py"
+}

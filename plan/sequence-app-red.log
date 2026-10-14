@@ -1,0 +1,87 @@
+test_commands_survive_crossing_into_tunnel (test_sequence.SequenceApplicationTests.test_commands_survive_crossing_into_tunnel) ... FAIL
+test_fixed_time_selects_each_phase_and_overlap (test_sequence.SequenceApplicationTests.test_fixed_time_selects_each_phase_and_overlap) ... 
+  test_fixed_time_selects_each_phase_and_overlap (test_sequence.SequenceApplicationTests.test_fixed_time_selects_each_phase_and_overlap) (seconds=40) ... FAIL
+  test_fixed_time_selects_each_phase_and_overlap (test_sequence.SequenceApplicationTests.test_fixed_time_selects_each_phase_and_overlap) (seconds=96) ... FAIL
+  test_fixed_time_selects_each_phase_and_overlap (test_sequence.SequenceApplicationTests.test_fixed_time_selects_each_phase_and_overlap) (seconds=180) ... FAIL
+  test_fixed_time_selects_each_phase_and_overlap (test_sequence.SequenceApplicationTests.test_fixed_time_selects_each_phase_and_overlap) (seconds=228) ... FAIL
+  test_fixed_time_selects_each_phase_and_overlap (test_sequence.SequenceApplicationTests.test_fixed_time_selects_each_phase_and_overlap) (seconds=300) ... FAIL
+test_invalid_time_is_rejected_before_startup (test_sequence.SequenceApplicationTests.test_invalid_time_is_rejected_before_startup) ... FAIL
+
+======================================================================
+FAIL: test_commands_survive_crossing_into_tunnel (test_sequence.SequenceApplicationTests.test_commands_survive_crossing_into_tunnel)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_sequence.py", line 46, in test_commands_survive_crossing_into_tunnel
+    connection = socket.create_connection(("127.0.0.1", port), timeout=1)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\socket.py", line 850, in create_connection
+    raise exceptions[0]
+  File "C:\Python311\Lib\socket.py", line 835, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_sequence.py", line 50, in test_commands_survive_crossing_into_tunnel
+    self.fail(process.communicate()[1])
+AssertionError: Error: Unknown scene
+
+
+======================================================================
+FAIL: test_fixed_time_selects_each_phase_and_overlap (test_sequence.SequenceApplicationTests.test_fixed_time_selects_each_phase_and_overlap) (seconds=40)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_sequence.py", line 28, in test_fixed_time_selects_each_phase_and_overlap
+    self.assertEqual(result.returncode, 0, result.stderr)
+AssertionError: 1 != 0 : Error: Unknown scene
+
+
+======================================================================
+FAIL: test_fixed_time_selects_each_phase_and_overlap (test_sequence.SequenceApplicationTests.test_fixed_time_selects_each_phase_and_overlap) (seconds=96)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_sequence.py", line 28, in test_fixed_time_selects_each_phase_and_overlap
+    self.assertEqual(result.returncode, 0, result.stderr)
+AssertionError: 1 != 0 : Error: Unknown scene
+
+
+======================================================================
+FAIL: test_fixed_time_selects_each_phase_and_overlap (test_sequence.SequenceApplicationTests.test_fixed_time_selects_each_phase_and_overlap) (seconds=180)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_sequence.py", line 28, in test_fixed_time_selects_each_phase_and_overlap
+    self.assertEqual(result.returncode, 0, result.stderr)
+AssertionError: 1 != 0 : Error: Unknown scene
+
+
+======================================================================
+FAIL: test_fixed_time_selects_each_phase_and_overlap (test_sequence.SequenceApplicationTests.test_fixed_time_selects_each_phase_and_overlap) (seconds=228)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_sequence.py", line 28, in test_fixed_time_selects_each_phase_and_overlap
+    self.assertEqual(result.returncode, 0, result.stderr)
+AssertionError: 1 != 0 : Error: Unknown scene
+
+
+======================================================================
+FAIL: test_fixed_time_selects_each_phase_and_overlap (test_sequence.SequenceApplicationTests.test_fixed_time_selects_each_phase_and_overlap) (seconds=300)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_sequence.py", line 28, in test_fixed_time_selects_each_phase_and_overlap
+    self.assertEqual(result.returncode, 0, result.stderr)
+AssertionError: 1 != 0 : Error: Unknown scene
+
+
+======================================================================
+FAIL: test_invalid_time_is_rejected_before_startup (test_sequence.SequenceApplicationTests.test_invalid_time_is_rejected_before_startup)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_sequence.py", line 82, in test_invalid_time_is_rejected_before_startup
+    self.assertIn("Time must be", result.stderr)
+AssertionError: 'Time must be' not found in 'Error: Unknown argument: --fixed-time\n'
+
+----------------------------------------------------------------------
+Ran 3 tests in 1.217s
+
+FAILED (failures=7)

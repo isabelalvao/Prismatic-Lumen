@@ -1,0 +1,308 @@
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.19045.
+-- Using the multi-header code from C:/ORCA/Fantasynt/build/_deps/nlohmann_json-src/include/
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Could NOT find LibUSB (missing: LibUSB_LIBRARY LibUSB_INCLUDE_PATH) (found version "LibUSB_VERSION-NOTFOUND")
+-- 
+-- SDL3 was configured with the following options:
+-- 
+-- Platform: Windows-10.0.19045
+-- 64-bit:   TRUE
+-- Compiler: C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx86/x64/cl.exe
+-- Revision: SDL-3.2.30-release-3.2.30
+-- Vendor:   
+-- 
+-- Subsystems:
+--   Audio:    ON
+--   Video:    ON
+--   GPU:      ON
+--   Render:   ON
+--   Camera:   ON
+--   Joystick: ON
+--   Haptic:   ON
+--   Hidapi:   ON
+--   Power:    ON
+--   Sensor:   ON
+--   Dialog:   ON
+-- 
+-- Options:
+--   SDL_ALSA                    (Wanted: OFF): OFF
+--   SDL_ALSA_SHARED             (Wanted: OFF): OFF
+--   SDL_ALTIVEC                 (Wanted: OFF): OFF
+--   SDL_ARMNEON                 (Wanted: OFF): OFF
+--   SDL_ASAN                    (Wanted: OFF): OFF
+--   SDL_ASSEMBLY                (Wanted: ON): ON
+--   SDL_ASSERTIONS              (Wanted: auto): auto
+--   SDL_AVX                     (Wanted: ON): ON
+--   SDL_AVX2                    (Wanted: ON): ON
+--   SDL_AVX512F                 (Wanted: ON): ON
+--   SDL_BACKGROUNDING_SIGNAL    (Wanted: OFF): OFF
+--   SDL_CCACHE                  (Wanted: OFF): OFF
+--   SDL_CLANG_TIDY              (Wanted: OFF): OFF
+--   SDL_CLOCK_GETTIME           (Wanted: OFF): OFF
+--   SDL_COCOA                   (Wanted: OFF): OFF
+--   SDL_DBUS                    (Wanted: OFF): OFF
+--   SDL_DEPS_SHARED             (Wanted: ON): OFF
+--   SDL_DIRECTX                 (Wanted: ON): ON
+--   SDL_DISKAUDIO               (Wanted: ON): ON
+--   SDL_DUMMYAUDIO              (Wanted: ON): ON
+--   SDL_DUMMYCAMERA             (Wanted: ON): ON
+--   SDL_DUMMYVIDEO              (Wanted: ON): ON
+--   SDL_EXAMPLES                (Wanted: OFF): OFF
+--   SDL_EXAMPLES_LINK_SHARED    (Wanted: OFF): OFF
+--   SDL_FOREGROUNDING_SIGNAL    (Wanted: OFF): OFF
+--   SDL_GCC_ATOMICS             (Wanted: OFF): OFF
+--   SDL_GPU_DXVK                (Wanted: OFF): OFF
+--   SDL_HIDAPI                  (Wanted: ON): ON
+--   SDL_HIDAPI_JOYSTICK         (Wanted: ON): ON
+--   SDL_HIDAPI_LIBUSB           (Wanted: ON): OFF
+--   SDL_HIDAPI_LIBUSB_SHARED    (Wanted: ON): OFF
+--   SDL_IBUS                    (Wanted: OFF): OFF
+--   SDL_INSTALL                 (Wanted: OFF): OFF
+--   SDL_INSTALL_TESTS           (Wanted: OFF): OFF
+--   SDL_JACK                    (Wanted: OFF): OFF
+--   SDL_JACK_SHARED             (Wanted: OFF): OFF
+--   SDL_KMSDRM                  (Wanted: OFF): OFF
+--   SDL_KMSDRM_SHARED           (Wanted: OFF): OFF
+--   SDL_LASX                    (Wanted: OFF): OFF
+--   SDL_LIBC                    (Wanted: ON): ON
+--   SDL_LIBICONV                (Wanted: OFF): OFF
+--   SDL_LIBUDEV                 (Wanted: ON): OFF
+--   SDL_LIBURING                (Wanted: OFF): OFF
+--   SDL_LSX                     (Wanted: OFF): OFF
+--   SDL_METAL                   (Wanted: OFF): OFF
+--   SDL_MMX                     (Wanted: ON): OFF
+--   SDL_OFFSCREEN               (Wanted: ON): ON
+--   SDL_OPENGL                  (Wanted: ON): ON
+--   SDL_OPENGLES                (Wanted: ON): ON
+--   SDL_OPENVR                  (Wanted: OFF): OFF
+--   SDL_OSS                     (Wanted: OFF): OFF
+--   SDL_PIPEWIRE                (Wanted: OFF): OFF
+--   SDL_PIPEWIRE_SHARED         (Wanted: OFF): OFF
+--   SDL_PTHREADS                (Wanted: OFF): OFF
+--   SDL_PTHREADS_SEM            (Wanted: OFF): OFF
+--   SDL_PULSEAUDIO              (Wanted: OFF): OFF
+--   SDL_PULSEAUDIO_SHARED       (Wanted: OFF): OFF
+--   SDL_RENDER_D3D              (Wanted: ON): ON
+--   SDL_RENDER_D3D11            (Wanted: ON): ON
+--   SDL_RENDER_D3D12            (Wanted: ON): ON
+--   SDL_RENDER_GPU              (Wanted: ON): ON
+--   SDL_RENDER_METAL            (Wanted: OFF): OFF
+--   SDL_RENDER_VULKAN           (Wanted: ON): ON
+--   SDL_ROCKCHIP                (Wanted: OFF): OFF
+--   SDL_RPATH                   (Wanted: OFF): OFF
+--   SDL_RPI                     (Wanted: OFF): OFF
+--   SDL_SNDIO                   (Wanted: OFF): OFF
+--   SDL_SNDIO_SHARED            (Wanted: OFF): OFF
+--   SDL_SSE                     (Wanted: ON): ON
+--   SDL_SSE2                    (Wanted: ON): ON
+--   SDL_SSE3                    (Wanted: ON): ON
+--   SDL_SSE4_1                  (Wanted: ON): ON
+--   SDL_SSE4_2                  (Wanted: ON): ON
+--   SDL_SYSTEM_ICONV            (Wanted: OFF): OFF
+--   SDL_TESTS                   (Wanted: OFF): OFF
+--   SDL_TESTS_LINK_SHARED       (Wanted: OFF): OFF
+--   SDL_UNINSTALL               (Wanted: OFF): OFF
+--   SDL_VIRTUAL_JOYSTICK        (Wanted: ON): ON
+--   SDL_VIVANTE                 (Wanted: OFF): OFF
+--   SDL_VULKAN                  (Wanted: ON): ON
+--   SDL_WASAPI                  (Wanted: ON): ON
+--   SDL_WAYLAND                 (Wanted: OFF): OFF
+--   SDL_WAYLAND_LIBDECOR        (Wanted: OFF): OFF
+--   SDL_WAYLAND_LIBDECOR_SHARED (Wanted: OFF): OFF
+--   SDL_WAYLAND_SHARED          (Wanted: OFF): OFF
+--   SDL_X11                     (Wanted: OFF): OFF
+--   SDL_X11_SHARED              (Wanted: OFF): OFF
+--   SDL_X11_XCURSOR             (Wanted: OFF): OFF
+--   SDL_X11_XDBE                (Wanted: OFF): OFF
+--   SDL_X11_XFIXES              (Wanted: OFF): OFF
+--   SDL_X11_XINPUT              (Wanted: OFF): OFF
+--   SDL_X11_XRANDR              (Wanted: OFF): OFF
+--   SDL_X11_XSCRNSAVER          (Wanted: OFF): OFF
+--   SDL_X11_XSHAPE              (Wanted: OFF): OFF
+--   SDL_X11_XSYNC               (Wanted: OFF): OFF
+--   SDL_XINPUT                  (Wanted: ON): ON
+-- 
+--  Build Shared Library: OFF
+--  Build Static Library: ON
+--  Build Static Library with Position Independent Code: 
+-- 
+-- EGL disabled
+-- Enabling OpenGL support
+-- Could NOT find Vulkan (missing: Vulkan_LIBRARY Vulkan_INCLUDE_DIR) (found version "")
+-- Could NOT find JsonCpp (missing: JsonCpp_INCLUDE_DIR JsonCpp_LIBRARY) 
+-- Could NOT find glslc, using precompiled .spv files
+-- OpenXR 1.1.63
+-- Found and will use pre-generated xr_generated_dispatch_table.h in source tree
+-- Found and will use pre-generated xr_generated_dispatch_table.c in source tree
+-- Found and will use pre-generated xr_generated_dispatch_table_core.h in source tree
+-- Found and will use pre-generated xr_generated_dispatch_table_core.c in source tree
+-- Found and will use pre-generated xr_generated_loader.hpp in source tree
+-- Found and will use pre-generated xr_generated_loader.cpp in source tree
+-- Configuring done (6.5s)
+-- Generating done (1.4s)
+-- Build files have been written to: C:/ORCA/Fantasynt/build
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_control.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control.lib
+  fantasynt_control_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_control.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control.lib
+  fantasynt_net.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_net.lib
+  fantasynt_network_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_network_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_geometry.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry.lib
+  fantasynt_geometry_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_vr_math.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_vr_math.lib
+  fantasynt_vr_math_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_vr_math_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_geometry.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry.lib
+  fantasynt_sequence_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_sequence_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_geometry.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry.lib
+  fantasynt_opening_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_opening_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  spirv-cross.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\spirv-cross.lib
+  bx.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bx\Release\bx.lib
+  glslang.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\glslang.lib
+  spirv-opt.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\spirv-opt.lib
+  tint.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\tint.lib
+  bimg.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bimg\Release\bimg.lib
+  shaderc.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\shaderc.exe
+  openxr_loader.vcxproj -> C:\ORCA\Fantasynt\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  C:\ORCA\Fantasynt\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  1 File(s) copied
+  C:\ORCA\Fantasynt\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  1 File(s) copied
+  C:\ORCA\Fantasynt\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  1 File(s) copied
+  bimg_decode.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bimg\Release\bimg_decode.lib
+  fantasynt_control.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control.lib
+  bgfx.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\bgfx.lib
+  fantasynt_net.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_net.lib
+  fantasynt_geometry.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry.lib
+  SDL_uclibc.vcxproj -> C:\ORCA\Fantasynt\build\_deps\sdl3-build\Release\SDL_uclibc.lib
+  fantasynt_vr_math.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_vr_math.lib
+  fantasynt_openxr.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_openxr.lib
+  SDL3-static.vcxproj -> C:\ORCA\Fantasynt\build\_deps\sdl3-build\Release\SDL3-static.lib
+  fantasynt_render.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_render.lib
+  main.cpp
+C:\ORCA\Fantasynt\src\app\main.cpp(103,69): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [C:\ORCA\Fantasynt\build\fantasynt.vcxproj]
+C:\ORCA\Fantasynt\src\app\main.cpp(104,67): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [C:\ORCA\Fantasynt\build\fantasynt.vcxproj]
+C:\ORCA\Fantasynt\src\app\main.cpp(105,63): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [C:\ORCA\Fantasynt\build\fantasynt.vcxproj]
+C:\ORCA\Fantasynt\src\app\main.cpp(136,55): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [C:\ORCA\Fantasynt\build\fantasynt.vcxproj]
+  player.cpp
+  Gerando Código...
+     Criando biblioteca C:/ORCA/Fantasynt/build/Release/fantasynt.lib e objeto C:/ORCA/Fantasynt/build/Release/fantasynt.exp
+  fantasynt.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  spirv-cross.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\spirv-cross.lib
+  glslang.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\glslang.lib
+  bx.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bx\Release\bx.lib
+  spirv-opt.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\spirv-opt.lib
+  bimg.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bimg\Release\bimg.lib
+  tint.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\tint.lib
+  shaderc.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\shaderc.exe
+  openxr_loader.vcxproj -> C:\ORCA\Fantasynt\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  C:\ORCA\Fantasynt\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  1 File(s) copied
+  C:\ORCA\Fantasynt\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  1 File(s) copied
+  C:\ORCA\Fantasynt\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  1 File(s) copied
+  bimg_decode.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bimg\Release\bimg_decode.lib
+  fantasynt_control.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control.lib
+  bgfx.vcxproj -> C:\ORCA\Fantasynt\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\bgfx.lib
+  SDL_uclibc.vcxproj -> C:\ORCA\Fantasynt\build\_deps\sdl3-build\Release\SDL_uclibc.lib
+  fantasynt_geometry.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry.lib
+  SDL3-static.vcxproj -> C:\ORCA\Fantasynt\build\_deps\sdl3-build\Release\SDL3-static.lib
+  fantasynt_render.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_render.lib
+  fantasynt_renderer_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_renderer_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_mock_openxr.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_mock_openxr.dll
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  SDL_uclibc.vcxproj -> C:\ORCA\Fantasynt\build\_deps\sdl3-build\Release\SDL_uclibc.lib
+  SDL3-static.vcxproj -> C:\ORCA\Fantasynt\build\_deps\sdl3-build\Release\SDL3-static.lib
+  player.cpp
+  audio_tests.cpp
+  Gerando Código...
+  fantasynt_audio_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_audio_tests.exe
+Test project C:/ORCA/Fantasynt/build
+    Start 1: audio
+1/8 Test #1: audio ............................   Passed    0.36 sec
+    Start 2: renderer_resize
+2/8 Test #2: renderer_resize ..................   Passed    3.37 sec
+    Start 3: opening
+3/8 Test #3: opening ..........................   Passed    0.26 sec
+    Start 4: sequence
+4/8 Test #4: sequence .........................   Passed    0.01 sec
+    Start 5: vr_math
+5/8 Test #5: vr_math ..........................   Passed    0.01 sec
+    Start 6: control
+6/8 Test #6: control ..........................   Passed    0.01 sec
+    Start 7: network
+7/8 Test #7: network ..........................   Passed    0.34 sec
+    Start 8: geometry
+8/8 Test #8: geometry .........................   Passed    0.04 sec
+
+100% tests passed, 0 tests failed out of 8
+
+Total Test time (real) =   4.41 sec
+test_float_size_is_not_silently_ignored (test_asset_inspector.InspectorTests.test_float_size_is_not_silently_ignored) ... ok
+test_name_size_must_be_eight_bytes (test_asset_inspector.InspectorTests.test_name_size_must_be_eight_bytes) ... ok
+test_valid_name_property_and_terminator (test_asset_inspector.InspectorTests.test_valid_name_property_and_terminator) ... ok
+test_value_cannot_cross_export_boundary (test_asset_inspector.InspectorTests.test_value_cannot_cross_export_boundary) ... ok
+test_audio_drives_sequence_clock (test_audio.AudioApplicationTests.test_audio_drives_sequence_clock) ... ok
+test_capture_stops_audio_and_sequence_together (test_audio.AudioApplicationTests.test_capture_stops_audio_and_sequence_together) ... ok
+test_missing_audio_fails_explicitly (test_audio.AudioApplicationTests.test_missing_audio_fails_explicitly) ... ok
+test_paused_seek_does_not_consume_audio (test_audio.AudioApplicationTests.test_paused_seek_does_not_consume_audio) ... ok
+test_silent_preserves_visual_sequence (test_audio.AudioApplicationTests.test_silent_preserves_visual_sequence) ... ok
+test_collects_fragmented_receipt (test_client.ClientTests.test_collects_fragmented_receipt) ... ok
+test_connection_failure_is_visible (test_client.ClientTests.test_connection_failure_is_visible) ... ok
+test_rejects_non_finite_payload (test_client.ClientTests.test_rejects_non_finite_payload) ... ok
+test_rejects_oversized_payload_before_connecting (test_client.ClientTests.test_rejects_oversized_payload_before_connecting) ... ok
+test_invalid_utf8_does_not_terminate_application (test_end_to_end.ApplicationTests.test_invalid_utf8_does_not_terminate_application) ... ok
+test_missing_shader_is_explicit_startup_error (test_end_to_end.ApplicationTests.test_missing_shader_is_explicit_startup_error) ... ok
+test_occupied_port_is_explicit_startup_error (test_end_to_end.ApplicationTests.test_occupied_port_is_explicit_startup_error) ... ok
+test_rejects_invalid_patch_without_changing_state (test_end_to_end.ApplicationTests.test_rejects_invalid_patch_without_changing_state) ... ok
+test_audio_stops_at_two_minutes (test_opening.OpeningTests.test_audio_stops_at_two_minutes) ... ok
+test_opening_duration_is_two_minutes (test_opening.OpeningTests.test_opening_duration_is_two_minutes) ... ok
+test_stages_use_recovered_meshes (test_opening.OpeningTests.test_stages_use_recovered_meshes) ... ok
+test_vr_resolution_defaults_to_one (test_opening.OpeningTests.test_vr_resolution_defaults_to_one) ... ok
+test_camera_uses_sequence_time_and_pause (test_sequence.SequenceApplicationTests.test_camera_uses_sequence_time_and_pause) ... ok
+test_commands_survive_crossing_into_tunnel (test_sequence.SequenceApplicationTests.test_commands_survive_crossing_into_tunnel) ... ok
+test_fixed_time_selects_each_phase_and_overlap (test_sequence.SequenceApplicationTests.test_fixed_time_selects_each_phase_and_overlap) ... ok
+test_invalid_time_is_rejected_before_startup (test_sequence.SequenceApplicationTests.test_invalid_time_is_rejected_before_startup) ... ok
+test_motion_speed_zero_then_resume_preserves_camera_offset (test_sequence.SequenceApplicationTests.test_motion_speed_zero_then_resume_preserves_camera_offset) ... ok
+test_absent_headset_is_error_without_desktop_fallback (test_vr.VRTests.test_absent_headset_is_error_without_desktop_fallback) ... ok
+test_each_scene_and_transition_reaches_both_eyes (test_vr.VRTests.test_each_scene_and_transition_reaches_both_eyes) ... ok
+test_nonrendering_frames_and_tracking_loss_recover (test_vr.VRTests.test_nonrendering_frames_and_tracking_loss_recover) ... ok
+test_probe_reports_runtime_and_headset (test_vr.VRTests.test_probe_reports_runtime_and_headset) ... ok
+test_runtime_loss_is_explicit_error (test_vr.VRTests.test_runtime_loss_is_explicit_error) ... ok
+test_shader_failure_also_releases_vr_session (test_vr.VRTests.test_shader_failure_also_releases_vr_session) ... ok
+test_stereo_images_reach_runtime_and_mirror (test_vr.VRTests.test_stereo_images_reach_runtime_and_mirror) ... ok
+test_vr_sequence_starts_paused (test_vr.VRTests.test_vr_sequence_starts_paused) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 44.282s
+
+OK

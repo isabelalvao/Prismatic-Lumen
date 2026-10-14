@@ -1,0 +1,62 @@
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.19045.
+-- Using the multi-header code from C:/ORCA/Fantasynt/build/_deps/nlohmann_json-src/include/
+-- Configuring done (1.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/ORCA/Fantasynt/build
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  fantasynt_control.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control.lib
+  fantasynt_control_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  fantasynt_net.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_net.lib
+  fantasynt_control.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_control.lib
+  fantasynt_network_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_network_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  geometry.cpp
+  tunnel_geometry.cpp
+  surface_geometry.cpp
+  landscape_geometry.cpp
+  landscape_surfaces.cpp
+  sequence.cpp
+  Gerando Código...
+  fantasynt_geometry.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry.lib
+  geometry_tests.cpp
+  fantasynt_geometry_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Building Custom Rule C:/ORCA/Fantasynt/CMakeLists.txt
+  fantasynt_vr_math.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_vr_math.lib
+  Building Custom Rule C:/ORCA/Fantasynt/CMakeLists.txt
+  fantasynt_vr_math_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_vr_math_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  fantasynt_geometry.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_geometry.lib
+  Building Custom Rule C:/ORCA/Fantasynt/CMakeLists.txt
+  sequence_tests.cpp
+  fantasynt_sequence_tests.vcxproj -> C:\ORCA\Fantasynt\build\Release\fantasynt_sequence_tests.exe
+Test project C:/ORCA/Fantasynt/build
+    Start 1: sequence
+1/5 Test #1: sequence .........................   Passed    0.02 sec
+    Start 2: vr_math
+2/5 Test #2: vr_math ..........................   Passed    0.01 sec
+    Start 3: control
+3/5 Test #3: control ..........................   Passed    0.01 sec
+    Start 4: network
+4/5 Test #4: network ..........................   Passed    0.36 sec
+    Start 5: geometry
+5/5 Test #5: geometry .........................   Passed    0.02 sec
+
+100% tests passed, 0 tests failed out of 5
+
+Total Test time (real) =   0.42 sec
+test_collects_fragmented_receipt (test_client.ClientTests.test_collects_fragmented_receipt) ... ok
+test_connection_failure_is_visible (test_client.ClientTests.test_connection_failure_is_visible) ... ok
+test_rejects_non_finite_payload (test_client.ClientTests.test_rejects_non_finite_payload) ... ok
+test_rejects_oversized_payload_before_connecting (test_client.ClientTests.test_rejects_oversized_payload_before_connecting) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.144s
+
+OK

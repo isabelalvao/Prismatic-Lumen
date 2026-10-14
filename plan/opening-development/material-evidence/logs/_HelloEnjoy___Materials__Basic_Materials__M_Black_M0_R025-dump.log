@@ -1,0 +1,77 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/_HelloEnjoy_/Materials/Basic_Materials/M_Black_M0_R025.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 31 Exports: 1 Imports: 4 Game: 10000D0
+Export "M_Black_M0_R025" was found in package "/Game/_HelloEnjoy_/Materials/Basic_Materials/M_Black_M0_R025.uasset"
+Found 1 object(s)
+Loading MaterialInstanceConstant M_Black_M0_R025 from package /Game/_HelloEnjoy_/Materials/Basic_Materials/M_Black_M0_R025.uasset
+Loading package: /Game/_HelloEnjoy_/Materials/BaseMaterials/M_Color_PBR.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 61 Exports: 4 Imports: 4 Game: 10000D0
+Loading Material3 M_Color_PBR from package /Game/_HelloEnjoy_/Materials/BaseMaterials/M_Color_PBR.uasset
+StructProperty: unknown UMaterial3 BaseColor
+StructProperty: unknown UMaterial3 Metallic
+StructProperty: unknown UMaterial3 Roughness
+FloatProperty: unknown UMaterialExpressionScalarParameter SliderMax
+FloatProperty: unknown UMaterialExpressionScalarParameter SliderMax
+Loaded in 0.0 sec, 70 allocs, 0.02 MBytes serialized in 5 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: M_Black_M0_R025
+    Parent = Material3'/Game/_HelloEnjoy_/Materials/BaseMaterials/M_Color_PBR.M_Color_PBR'
+    ScalarParameterValues[3] =
+    {
+        ScalarParameterValues[0] =
+        {
+            ParameterInfo = { Name=None }
+            ParameterValue = 0
+            ParameterName = Metallic
+        }
+        ScalarParameterValues[1] =
+        {
+            ParameterInfo = { Name=None }
+            ParameterValue = 0.25
+            ParameterName = Roughness
+        }
+        ScalarParameterValues[2] =
+        {
+            ParameterInfo = { Name=None }
+            ParameterValue = 0
+            ParameterName = RefractionDepthBias
+        }
+    }
+    TextureParameterValues[0] = {}
+    VectorParameterValues[1] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterInfo = { Name=None }
+            ParameterValue = { R=0, G=0, B=0, A=1 }
+            ParameterName = Color
+        }
+    }
+    BasePropertyOverrides =
+    {
+        bOverride_BlendMode = false
+        BlendMode = BLEND_Opaque (0)
+        bOverride_TwoSided = false
+        TwoSided = false
+        bOverride_OpacityMaskClipValue = false
+        OpacityMaskClipValue = 0
+    }
+    StaticParameters =
+    {
+        StaticSwitchParameters[0] = {}
+        StaticComponentMaskParameters[0] = {}
+        TerrainLayerWeightParameters[0] = {}
+        MaterialLayersParameters[0] = {}
+    }
+    RuntimeVirtualTextureParameterValues[0] = {}
+    FontParameterValues[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}

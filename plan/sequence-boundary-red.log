@@ -1,0 +1,1 @@
+FAIL line 113: same_pixels(before_tunnel,capture("tunnel-boundary-after",state))

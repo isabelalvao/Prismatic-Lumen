@@ -1,0 +1,14 @@
+[
+  {
+    "path": "native/windows/build/manifest.json",
+    "sha256": "970ed3a4846ff4b0d55b7cf7ae9135974b513d9c73c2b3220db674fc9c98ee64"
+  },
+  {
+    "path": "native/windows/build/rea-windows-x64.node",
+    "sha256": "d9ccef536ab92189002d471b9e845c81799f64fef3dc3badcefae48de0c82fc4"
+  },
+  {
+    "path": "scripts/build-windows-native.mjs",
+    "sha256": "3d7fa3e69013772904ef30b27d09f1ad3c3faa8625973ae31f5da41e2e587d6a"
+  }
+]

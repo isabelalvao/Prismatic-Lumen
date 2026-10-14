@@ -1,0 +1,56 @@
+TwoSided = false
+bDisableDepthTest = false
+bIsMasked = false
+ReferencedTextures[3] =
+{
+    ReferencedTextures[0] = Texture2D'/Game/DemoRoom/Textures/T_RoomTiles_N.T_RoomTiles_N'
+    ReferencedTextures[1] = Texture2D'/Game/DemoRoom/Textures/T_RoomTiles_M.T_RoomTiles_M'
+    ReferencedTextures[2] = Texture2D'/Game/_HelloEnjoy_/Materials/Textures/DiagonalBand32-Light.DiagonalBand32-Light'
+}
+Expressions[17] =
+{
+    Expressions[1] = MaterialExpressionScalarParameter'/Game/_HelloEnjoy_/Materials/M_TerrainTiles.MaterialExpressionScalarParameter_0'
+    Expressions[2] = MaterialExpressionScalarParameter'/Game/_HelloEnjoy_/Materials/M_TerrainTiles.MaterialExpressionScalarParameter_1'
+    Expressions[5] = MaterialExpressionTextureSample'/Game/_HelloEnjoy_/Materials/M_TerrainTiles.MaterialExpressionTextureSample_0'
+    Expressions[6] = MaterialExpressionTextureSample'/Game/_HelloEnjoy_/Materials/M_TerrainTiles.MaterialExpressionTextureSample_1'
+    Expressions[8] = MaterialExpressionScalarParameter'/Game/_HelloEnjoy_/Materials/M_TerrainTiles.MaterialExpressionScalarParameter_2'
+    Expressions[13] = MaterialExpressionScalarParameter'/Game/_HelloEnjoy_/Materials/M_TerrainTiles.MaterialExpressionScalarParameter_3'
+    Expressions[15] = MaterialExpressionTextureSample'/Game/_HelloEnjoy_/Materials/M_TerrainTiles.MaterialExpressionTextureSample_2'
+}
+CachedExpressionData =
+{
+    Parameters =
+    {
+        Entries[5] =
+        {
+            Entries[0] = { ParameterInfos[0]={} }
+            Entries[1] = { ParameterInfos[0]={} }
+            Entries[2] = { ParameterInfos[0]={} }
+            Entries[3] = { ParameterInfos[0]={} }
+            Entries[4] = { ParameterInfos[0]={} }
+        }
+        ScalarValues[0] = {}
+        VectorValues[0] = {}
+        TextureValues[0] = {}
+    }
+    ReferencedTextures[0] = {}
+}
+BlendMode = BLEND_Opaque (0)
+OpacityMaskClipValue = 0.333
+CollectedTextureParameters[0] = {}
+CollectedScalarParameters[4] =
+{
+    CollectedScalarParameters[0] = { Value=0, Name=Metallic, Group=Tiles }
+    CollectedScalarParameters[1] = { Value=0, Name=Roughness, Group=Tiles }
+    CollectedScalarParameters[2] = { Value=0.3, Name=AOintesity, Group=None }
+    CollectedScalarParameters[3] = { Value=0.5, Name=NormalIntesity, Group=Tiles }
+}
+CollectedVectorParameters[0] = {}
+FlattenedTexture = None
+MobileBaseTexture = None
+MobileNormalTexture = None
+bUseMobileSpecular = false
+MobileSpecularPower = 16
+MobileSpecularMask = MSM_Constant (0)
+MobileMaskTexture = None
+TextureStreamingData[0] = {}

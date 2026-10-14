@@ -1,0 +1,75 @@
+Fantasynt PCVR 0.4.0 — Windows 11 x64 / Quest 3 / Virtual Desktop
+
+1. Extrai o ZIP inteiro para uma pasta onde possas escrever, por exemplo Documentos.
+2. No PC, abre Virtual Desktop Streamer. Nas definições, seleciona
+   VirtualDesktopXR (VDXR) como runtime OpenXR.
+3. No Quest 3, abre Virtual Desktop e liga-te a esse PC.
+4. No ambiente de trabalho remoto, abre Launch-VR.cmd.
+   O resultado deve ser uma cena imersiva em estéreo com seguimento da cabeça,
+   além de uma janela de espelho no PC. O overlay do Virtual Desktop deve indicar
+   Runtime: VDXR. Não precisas de instalar compiladores nem Python para executar.
+
+O executável corre no PC; este pacote não é um APK para instalar no Quest.
+VDXR vem no Streamer. SteamVR não é necessário neste percurso.
+Fonte das definições: https://github.com/mbucchia/VirtualDesktop-OpenXR/wiki
+
+CONTROLOS (teclado do PC, com a janela Fantasynt em foco)
+1 / 2 / 3: predefinições calma / equilibrada / energética
+Espaço: retoma ou pausa a sequência e a câmara (inicialmente pausadas em VR)
+R: predefinição equilibrada
+Q: reinicia a sequência visual de 424 segundos (modo inicial)
+N: campo noturno de estruturas curvas
+L: paisagem de volumes segmentados
+T: túnel radial
+F: campo da versão anterior, para comparação
+Esc ou fechar a janela: sair
+O seguimento da cabeça e os efeitos continuam enquanto o avanço está pausado.
+Esta versão não lê os comandos dos controladores Quest.
+Também podes escolher a cena no arranque: Launch-VR.cmd --scene field
+Outros exemplos:
+  Launch-VR.cmd --scene landscape
+  Launch-VR.cmd --scene sequence --start-time 220
+  Launch-VR.cmd --scene sequence --fixed-time 228
+A sequência termina em negro aos 424 s; Q reinicia-a. A seleção N/L/T/F sai
+da sequência. --play inicia o avanço automaticamente; --paused mantém a pausa.
+--fixed-time fixa também a animação e a câmara para comparação de capturas.
+
+DESEMPENHO
+A escala inicial é 0,7 da resolução recomendada pelo runtime, em cada dimensão.
+Para reduzir a carga: Launch-VR.cmd --vr-scale 0.5
+Para usar a resolução recomendada completa: Launch-VR.cmd --vr-scale 1.0
+A frequência de atualização e a qualidade de transmissão são configuradas no
+Virtual Desktop. O desempenho real deve ser medido no PC e headset de destino.
+
+CONTROLO JSON
+Com a aplicação aberta, executa no terminal dentro desta pasta:
+  .\Send-Parameters.cmd examples\calm.json
+  .\Send-Parameters.cmd examples\energetic.json
+Os exemplos podem ser editados. A aplicação escuta em 127.0.0.1:47631.
+Um LLM pode usar o mesmo contrato, através de uma ponte que envie JSON por linha.
+Essa ponte e o LLM ainda não fazem parte deste pacote. O comando accepted confirma
+o início da transição, não o seu fim. O cliente não repete comandos automaticamente.
+
+DIAGNÓSTICO
+Abre Diagnose-VR.cmd com o Quest ligado. Consulta logs\xr-probe.log.
+O relatório inclui o runtime detetado e headset_available.
+Se falhar: confirma VDXR no Streamer, a ligação ao PC e os controladores da GPU.
+logs\vr.log guarda o arranque e eventuais erros; fantasynt-events.jsonl guarda
+comandos e confirmações. O runtime VDXR também tem registos em
+%ProgramData%\Virtual Desktop\OpenXR.log.
+Launch-Desktop.cmd permite verificar a cena no monitor.
+
+ESTADO E LIMITES
+OpenXR com duas imagens D3D11, projeções por olho e seguimento da cabeça.
+Validado localmente através de um runtime simulado com imagens reais na GPU.
+O utilizador confirmou VR e comandos no Quest 3 / Virtual Desktop na versão 0.2.0.
+As notas do projeto registam a confirmação da versão 0.3.0 em VR pelo utilizador.
+Os novos visuais e transições 0.4.0 ainda precisam de avaliação no headset.
+Esta versão acrescenta campo noturno, cones segmentados, placas, elementos
+suspensos, reflexos e sequência contínua. A fidelidade integral continua pendente.
+Os tempos 80/224/424 s e cores de névoa têm base em dados estáticos recuperados;
+as interpolações, distribuição e padrões são próprios. Não é reprodução exata.
+Não inclui reprodução nem análise de áudio; a pulsação é sintética.
+Os comandos JSON conservam os parâmetros escolhidos durante toda a sequência.
+O pacote inclui DLLs de execução Visual C++ e o loader OpenXR, não um runtime VR.
+O runtime simulado dos testes não é distribuído neste ZIP.

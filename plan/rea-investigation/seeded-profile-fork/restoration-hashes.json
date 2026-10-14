@@ -1,0 +1,79 @@
+[
+  {
+    "file": "src/config/environment.ts",
+    "expected_sha256": "29c12750edfe2d5c64abdc8720cb83609bda6a2738986363d134557091baac0b",
+    "current_sha256": "29c12750edfe2d5c64abdc8720cb83609bda6a2738986363d134557091baac0b",
+    "exact_match": true,
+    "restored": true
+  },
+  {
+    "file": "src/config/parseConfig.ts",
+    "expected_sha256": "70388528861e013f236a5f1c8fedac3f1242dcbdf487bbfd6db5bb75ce39b7aa",
+    "current_sha256": "70388528861e013f236a5f1c8fedac3f1242dcbdf487bbfd6db5bb75ce39b7aa",
+    "exact_match": true,
+    "restored": true
+  },
+  {
+    "file": "src/config/types.ts",
+    "expected_sha256": "2940ffe0ca4d19ffaf7cdef23695f1b920384ce5ad6246c2d5e16d9c0e176038",
+    "current_sha256": "2940ffe0ca4d19ffaf7cdef23695f1b920384ce5ad6246c2d5e16d9c0e176038",
+    "exact_match": true,
+    "restored": true
+  },
+  {
+    "file": "src/ghidra/GhidraProvider.ts",
+    "expected_sha256": "b5c1e2d6de4f86b6cdd8cfd193e4b73b90325c43ae27eac60f07706376a146c2",
+    "current_sha256": "b5c1e2d6de4f86b6cdd8cfd193e4b73b90325c43ae27eac60f07706376a146c2",
+    "exact_match": true,
+    "restored": true
+  },
+  {
+    "file": "src/ghidra/GhidraProviderClient.ts",
+    "expected_sha256": "5107552e45c0f95258d8dd728ea01e418c3ffc27cbb8df35869dc93f5777c6bd",
+    "current_sha256": "5107552e45c0f95258d8dd728ea01e418c3ffc27cbb8df35869dc93f5777c6bd",
+    "exact_match": true,
+    "restored": false
+  },
+  {
+    "file": "src/ghidra/GhidraLauncher.ts",
+    "expected_sha256": "4e140528add970229f6c9ce176471010f224f0e2ee544d8139bb65df52849ceb",
+    "current_sha256": "4e140528add970229f6c9ce176471010f224f0e2ee544d8139bb65df52849ceb",
+    "exact_match": true,
+    "restored": true
+  },
+  {
+    "file": "src/ghidra/GhidraAnalysisSeeds.ts",
+    "expected_sha256": "71307e2806d6d8ffd53e015375a1c32e029894e2bd50a3e37527364d73373fa0",
+    "current_sha256": "71307e2806d6d8ffd53e015375a1c32e029894e2bd50a3e37527364d73373fa0",
+    "exact_match": true,
+    "restored": true
+  },
+  {
+    "file": "src/ghidra/GhidraSessionValues.ts",
+    "expected_sha256": "6767943dff606c6ddd382ed10cd0502f8297dd9599a41874343c5bb079510b83",
+    "current_sha256": "6767943dff606c6ddd382ed10cd0502f8297dd9599a41874343c5bb079510b83",
+    "exact_match": true,
+    "restored": true
+  },
+  {
+    "file": "src/ghidra/GhidraClient.ts",
+    "expected_sha256": "58ccbd2a04d1ce6911d1a62c72e4d106ced23b878aebd84bdc668a3c8137430a",
+    "current_sha256": "58ccbd2a04d1ce6911d1a62c72e4d106ced23b878aebd84bdc668a3c8137430a",
+    "exact_match": true,
+    "restored": true
+  },
+  {
+    "file": "src/ghidra/GhidraClientTypes.ts",
+    "expected_sha256": "6b24f30696178545a74d5e13a9da30db0335164df3746a57db7589ba5a54167d",
+    "current_sha256": "6b24f30696178545a74d5e13a9da30db0335164df3746a57db7589ba5a54167d",
+    "exact_match": true,
+    "restored": true
+  },
+  {
+    "file": "bridge/ghidra/ReaGhidraBridge.java",
+    "expected_sha256": "f606560f25c3c28354c7447358817a67afcf29d869ef36210167e00272931d28",
+    "current_sha256": "f606560f25c3c28354c7447358817a67afcf29d869ef36210167e00272931d28",
+    "exact_match": true,
+    "restored": false
+  }
+]

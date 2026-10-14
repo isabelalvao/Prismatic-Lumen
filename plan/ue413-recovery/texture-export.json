@@ -1,0 +1,21 @@
+{
+  "arguments": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-export",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "-out=C:\\ORCA\\Fantasynt\\plan\\ue413-recovery\\sample-texture",
+    "-png",
+    "-nomesh",
+    "-nostat",
+    "DiagonalLine32"
+  ],
+  "returncode": 0,
+  "files": [
+    {
+      "path": "sample-texture\\Game\\_HelloEnjoy_\\Materials\\Textures\\DiagonalLine32.png",
+      "size": 2354,
+      "sha256": "598b8d102b2863e97d961ead7be6ba6c4f69dcba63c6ece349f45f697e2fa7d0"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+warning: in the working copy of 'C:\ORCA\Fantasynt\plan\rea-investigation\seeded-profile-fork\backups\src\ghidra\GhidraAnalysisSeeds.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'C:\ORCA\Fantasynt\tools\vendor\rea-main-source\rea-df2c08b546d4f40103e11b8b31dbfc3d41ee687b\src\ghidra\GhidraAnalysisSeeds.ts', LF will be replaced by CRLF the next time Git touches it
+diff --git "a/C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\seeded-profile-fork\\backups\\src\\ghidra\\GhidraAnalysisSeeds.ts" "b/C:\\ORCA\\Fantasynt\\tools\\vendor\\rea-main-source\\rea-df2c08b546d4f40103e11b8b31dbfc3d41ee687b\\src\\ghidra\\GhidraAnalysisSeeds.ts"
+index 7b5ca46..7c83deb 100644
+--- "a/C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\seeded-profile-fork\\backups\\src\\ghidra\\GhidraAnalysisSeeds.ts"
++++ "b/C:\\ORCA\\Fantasynt\\tools\\vendor\\rea-main-source\\rea-df2c08b546d4f40103e11b8b31dbfc3d41ee687b\\src\\ghidra\\GhidraAnalysisSeeds.ts"
+@@ -273,11 +273,13 @@ export const ghidraSeedFailure = (
+ export const ghidraSeedLimitations = (
+   commitment: GhidraSeedCommitment | undefined,
+   report?: GhidraSeedReport,
++  seededOnly = false,
+ ): readonly string[] =>
+   commitment === undefined
+     ? []
+     : [
+-        `Ghidra analysis was seeded before auto-analysis from ${commitment.path} (sha256 ${commitment.sha256}: ${commitment.entries.function} function, ${commitment.entries.code} code, ${commitment.entries.label} label entries). Seeded functions, code and names are caller assertions, not Ghidra discoveries.`,
++        `Ghidra analysis was seeded ${seededOnly ? "without default auto-analysis" : "before auto-analysis"} from ${commitment.path} (sha256 ${commitment.sha256}: ${commitment.entries.function} function, ${commitment.entries.code} code, ${commitment.entries.label} label entries). Seeded functions, code and names are caller assertions, not Ghidra discoveries.`,
++        ...(seededOnly ? ["LOCAL FORK seeded-only profile: default auto-analysis was skipped using -noanalysis. Coverage is partial and follows caller seed instruction flows; inventories, function boundaries, references and decompiler types may be incomplete. Absence is not evidence that a feature is absent."] : []),
+         ...(report === undefined
+           ? []
+           : [

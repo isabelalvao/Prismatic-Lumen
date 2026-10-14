@@ -1,0 +1,66 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/DemoRoom/Materials/M_Emissive_1.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 28 Exports: 1 Imports: 4 Game: 10000D0
+Export "M_Emissive_1" was found in package "/Game/DemoRoom/Materials/M_Emissive_1.uasset"
+Found 1 object(s)
+Loading MaterialInstanceConstant M_Emissive_1 from package /Game/DemoRoom/Materials/M_Emissive_1.uasset
+Loading package: /Game/DemoRoom/Materials/M_Emissive.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 66 Exports: 3 Imports: 4 Game: 10000D0
+Loading Material3 M_Emissive from package /Game/DemoRoom/Materials/M_Emissive.uasset
+Loaded in 0.0 sec, 57 allocs, 0.02 MBytes serialized in 6 calls.
+
+Object info:
+============
+ClassName: MaterialInstanceConstant ObjectName: M_Emissive_1
+    Parent = Material3'/Game/DemoRoom/Materials/M_Emissive.M_Emissive'
+    ScalarParameterValues[2] =
+    {
+        ScalarParameterValues[0] =
+        {
+            ParameterInfo = { Name=None }
+            ParameterValue = 20
+            ParameterName = Brightness
+        }
+        ScalarParameterValues[1] =
+        {
+            ParameterInfo = { Name=None }
+            ParameterValue = 0
+            ParameterName = RefractionDepthBias
+        }
+    }
+    TextureParameterValues[0] = {}
+    VectorParameterValues[1] =
+    {
+        VectorParameterValues[0] =
+        {
+            ParameterInfo = { Name=None }
+            ParameterValue = { R=0.070588, G=0.290196, B=1, A=1 }
+            ParameterName = Color
+        }
+    }
+    BasePropertyOverrides =
+    {
+        bOverride_BlendMode = false
+        BlendMode = BLEND_Opaque (0)
+        bOverride_TwoSided = false
+        TwoSided = false
+        bOverride_OpacityMaskClipValue = false
+        OpacityMaskClipValue = 0
+    }
+    StaticParameters =
+    {
+        StaticSwitchParameters[0] = {}
+        StaticComponentMaskParameters[0] = {}
+        TerrainLayerWeightParameters[0] = {}
+        MaterialLayersParameters[0] = {}
+    }
+    RuntimeVirtualTextureParameterValues[0] = {}
+    FontParameterValues[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}

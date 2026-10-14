@@ -1,0 +1,20 @@
+test_configuration_changes_without_restarting_and_rejects_invalid_file (test_visual_config.VisualConfigTests.test_configuration_changes_without_restarting_and_rejects_invalid_file) ... ok
+test_default_movement_has_no_initial_wait (test_visual_config.VisualConfigTests.test_default_movement_has_no_initial_wait) ... ok
+test_duration_and_detector_reload_do_not_rewind_audio (test_visual_config.VisualConfigTests.test_duration_and_detector_reload_do_not_rewind_audio) ... ok
+test_short_soundtrack_uses_configured_duration (test_visual_config.VisualConfigTests.test_short_soundtrack_uses_configured_duration) ... FAIL
+test_shortening_duration_preserves_camera_with_audio_and_silent (test_visual_config.VisualConfigTests.test_shortening_duration_preserves_camera_with_audio_and_silent) ... ok
+
+======================================================================
+FAIL: test_short_soundtrack_uses_configured_duration (test_visual_config.VisualConfigTests.test_short_soundtrack_uses_configured_duration)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_visual_config.py", line 36, in test_short_soundtrack_uses_configured_duration
+    self.assertEqual(result.returncode, 0, result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : Error: Audio: soundtrack must cover 424 seconds
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 16.159s
+
+FAILED (failures=1)

@@ -1,0 +1,22 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/_HelloEnjoy_/Materials/Mapping/M_Basic_Map.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 79 Exports: 7 Imports: 7 Game: 10000D0
+Export "M_Basic_Map" was found in package "/Game/_HelloEnjoy_/Materials/Mapping/M_Basic_Map.uasset"
+Found 1 object(s)
+Loading Material3 M_Basic_Map from package /Game/_HelloEnjoy_/Materials/Mapping/M_Basic_Map.uasset
+StructProperty: unknown UMaterial3 BaseColor
+StructProperty: unknown UMaterial3 Metallic
+StructProperty: unknown UMaterial3 Roughness
+StructProperty: unknown UMaterial3 AmbientOcclusion
+BoolProperty: unknown UMaterial3 bUseEmissiveForDynamicAreaLighting
+FloatProperty: unknown UMaterialExpressionScalarParameter SliderMax
+FloatProperty: unknown UMaterialExpressionScalarParameter SliderMax
+Loading package: /Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Pole_RenderTarget.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 21 Exports: 1 Imports: 2 Game: 10000D0
+WARNING: Unknown class "TextureRenderTarget2D" for object "Pole_RenderTarget"
+FloatProperty: unknown UMaterialExpressionScalarParameter SliderMax
+FloatProperty: unknown UMaterialExpressionScalarParameter SliderMax
+WARNING: Unknown class "TextureRenderTarget2D" for object "Pole_RenderTarget"
+Loaded in 0.0 sec, 62 allocs, 0.02 MBytes serialized in 6 calls.
+Exporting objects ...
+Ignoring Material3'M_Basic_Map' due to empty parameters

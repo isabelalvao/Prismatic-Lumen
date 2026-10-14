@@ -1,0 +1,40 @@
+test_audio_stops_at_four_minutes (test_phase_240.PhaseTests.test_audio_stops_at_four_minutes) ... FAIL
+test_counter_can_be_toggled_with_keyboard (test_phase_240.PhaseTests.test_counter_can_be_toggled_with_keyboard) ... ERROR
+test_four_minutes_and_musical_transitions (test_phase_240.PhaseTests.test_four_minutes_and_musical_transitions) ... FAIL
+
+======================================================================
+ERROR: test_counter_can_be_toggled_with_keyboard (test_phase_240.PhaseTests.test_counter_can_be_toggled_with_keyboard)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_phase_240.py", line 83, in test_counter_can_be_toggled_with_keyboard
+    self.assertFalse(final["time_display_visible"])
+                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'time_display_visible'
+
+======================================================================
+FAIL: test_audio_stops_at_four_minutes (test_phase_240.PhaseTests.test_audio_stops_at_four_minutes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_phase_240.py", line 47, in test_audio_stops_at_four_minutes
+    self.assertEqual(result.returncode, 0, result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : Error: Opening time exceeds configured duration; use --scene sequence for later times
+
+
+======================================================================
+FAIL: test_four_minutes_and_musical_transitions (test_phase_240.PhaseTests.test_four_minutes_and_musical_transitions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_phase_240.py", line 29, in test_four_minutes_and_musical_transitions
+    phases = {seconds: self.run_at(seconds) for seconds in (120, 150, 180, 216, 240)}
+                       ~~~~~~~~~~~^^^^^^^^^
+  File "C:\ORCA\Fantasynt\tests\test_phase_240.py", line 25, in run_at
+    self.assertEqual(result.returncode, 0, result.stderr)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0 : Error: Opening time exceeds configured duration; use --scene sequence for later times
+
+
+----------------------------------------------------------------------
+Ran 3 tests in 3.884s
+
+FAILED (failures=2, errors=1)

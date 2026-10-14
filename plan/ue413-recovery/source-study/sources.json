@@ -1,0 +1,328 @@
+{
+  "scope": "Installed Epic UE4.13 sources read-only; no engine or game execution, no tools changes",
+  "engine_version": {
+    "MajorVersion": 4,
+    "MinorVersion": 13,
+    "PatchVersion": 2,
+    "Changelist": 3172292,
+    "IsLicenseeVersion": 0,
+    "BranchName": "++UE4+Release-4.13"
+  },
+  "files": [
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_4.13\\Engine\\Build\\Build.version",
+      "sha256": "d6a04703df7ab188b9100a23947099f7ac7990bf22930925a3b1645343d8bf76",
+      "bytes": 149,
+      "mtime_ns": 1791825222833726400,
+      "line_count": 8,
+      "relevant_spans": [
+        {
+          "start": 1,
+          "end": 9,
+          "topic": "identity"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_4.13\\Engine\\Source\\Runtime\\Engine\\Private\\SoundWave.cpp",
+      "sha256": "3ef3fa4df0a34741617e9d9190e9857bd7100e41ce3fef9d0f47f6cce8283def",
+      "bytes": 27022,
+      "mtime_ns": 1791825385644085000,
+      "line_count": 849,
+      "relevant_spans": [
+        {
+          "start": 177,
+          "end": 259,
+          "topic": "SoundWave serialized cooked versus raw data"
+        },
+        {
+          "start": 323,
+          "end": 350,
+          "topic": "compressed-format lookup and DDC fallback"
+        },
+        {
+          "start": 363,
+          "end": 409,
+          "topic": "post-load behavior"
+        },
+        {
+          "start": 425,
+          "end": 454,
+          "topic": "compressed resource copy"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_4.13\\Engine\\Source\\Runtime\\Engine\\Private\\StaticMesh.cpp",
+      "sha256": "6d3aec5e0f03c81fc185258c4db0a928887f4fb94b5c7ba105d3adf8f88a7096",
+      "bytes": 105003,
+      "mtime_ns": 1791825385675325300,
+      "line_count": 3135,
+      "relevant_spans": [
+        {
+          "start": 199,
+          "end": 225,
+          "topic": "vertex attributes layout"
+        },
+        {
+          "start": 272,
+          "end": 343,
+          "topic": "sections and LOD serialization"
+        },
+        {
+          "start": 675,
+          "end": 746,
+          "topic": "render data layout"
+        },
+        {
+          "start": 2049,
+          "end": 2172,
+          "topic": "StaticMesh cooked loading and editor-only source data"
+        },
+        {
+          "start": 2214,
+          "end": 2283,
+          "topic": "PostLoad avoids rebuilding cooked assets"
+        },
+        {
+          "start": 2934,
+          "end": 2939,
+          "topic": "export LOD from RenderData"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_4.13\\Engine\\Source\\Runtime\\Engine\\Public\\StaticMeshResources.h",
+      "sha256": "aacda52673df9b288f0d04fb30da82c48f5a3cae912cc85db88a5c3b2ec2b47b",
+      "bytes": 53726,
+      "mtime_ns": 1791825385994936900,
+      "line_count": 1603,
+      "relevant_spans": [
+        {
+          "start": 292,
+          "end": 320,
+          "topic": "section fields"
+        },
+        {
+          "start": 350,
+          "end": 359,
+          "topic": "position vertex"
+        },
+        {
+          "start": 453,
+          "end": 490,
+          "topic": "vertex buffer interface"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_4.13\\Engine\\Source\\Runtime\\Engine\\Private\\PositionVertexBuffer.cpp",
+      "sha256": "b012e5cedf2537c9eea3f54b60fa33cf937d1b38a87a8e25d946f40dcb42ed17",
+      "bytes": 4664,
+      "mtime_ns": 1791825385076210500,
+      "line_count": 171,
+      "relevant_spans": [
+        {
+          "start": 121,
+          "end": 138,
+          "topic": "position buffer serializer"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_4.13\\Engine\\Source\\Runtime\\Engine\\Private\\RawIndexBuffer.cpp",
+      "sha256": "2241c494fab0239abdf6295a7970e2686750ebd77d822bfda76c3b9f0bf20eb9",
+      "bytes": 7865,
+      "mtime_ns": 1791825385081210200,
+      "line_count": 278,
+      "relevant_spans": [
+        {
+          "start": 241,
+          "end": 261,
+          "topic": "16 versus32bit index serializer"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_4.13\\Engine\\Source\\Runtime\\Engine\\Private\\AudioDerivedData.cpp",
+      "sha256": "85d5d58a83c0625ec5840a4cb6ccfa52482ba4864e8c77c7f98bec8f34ef7405",
+      "bytes": 38307,
+      "mtime_ns": 1791825384776210000,
+      "line_count": 1221,
+      "relevant_spans": [
+        {
+          "start": 666,
+          "end": 682,
+          "topic": "streamed audio chunk list"
+        },
+        {
+          "start": 990,
+          "end": 1032,
+          "topic": "cooked platform streaming data"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_4.13\\Engine\\Source\\Runtime\\CoreUObject\\Private\\UObject\\LinkerLoad.cpp",
+      "sha256": "66d2a4cb3629d46a738656acca33fe234411162b146be8c5cf037c2b0baafd98",
+      "bytes": 194331,
+      "mtime_ns": 1791825382567522900,
+      "line_count": 5207,
+      "relevant_spans": [
+        {
+          "start": 1115,
+          "end": 1151,
+          "topic": "cooked package admission default"
+        },
+        {
+          "start": 1285,
+          "end": 1285,
+          "topic": "package marked cooked for editor"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_4.13\\Engine\\Source\\Runtime\\CoreUObject\\Private\\UObject\\PackageFileSummary.cpp",
+      "sha256": "6555b0837c966766ffa1c502cb0416006afa26933d2179eaaadb4909b6d9aa44",
+      "bytes": 8559,
+      "mtime_ns": 1791825382674062700,
+      "line_count": 287,
+      "relevant_spans": [
+        {
+          "start": 81,
+          "end": 118,
+          "topic": "unversioned package loads as current engine version"
+        },
+        {
+          "start": 130,
+          "end": 139,
+          "topic": "unversioned save strips version values"
+        },
+        {
+          "start": 164,
+          "end": 167,
+          "topic": "editor-only filter flag"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_4.13\\Engine\\Source\\Runtime\\CoreUObject\\Public\\Serialization\\BulkData.h",
+      "sha256": "191c7c5cbe1d3419aa2be44e938edf2d28aa0ff70d5fe2d6725ae69b702a4074",
+      "bytes": 18946,
+      "mtime_ns": 1791825383301075800,
+      "line_count": 645,
+      "relevant_spans": [
+        {
+          "start": 608,
+          "end": 639,
+          "topic": "format container interface"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_4.13\\Engine\\Source\\Runtime\\CoreUObject\\Private\\Serialization\\BulkData.cpp",
+      "sha256": "038880d7edfe51863e106c53d9e730b24c30b8c6a43fc1973de0e6e642b50cb1",
+      "bytes": 46119,
+      "mtime_ns": 1791825382467523800,
+      "line_count": 1501,
+      "relevant_spans": [
+        {
+          "start": 1452,
+          "end": 1497,
+          "topic": "format names and inline bulk payload"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_4.13\\Engine\\Source\\Editor\\UnrealEd\\Private\\EditorExporters.cpp",
+      "sha256": "5fbba4dff42a2b3c19b37ff7dd49b1fb052f0adb39e25e02eff301b27a4d03e4",
+      "bytes": 67967,
+      "mtime_ns": 1791825380435083500,
+      "line_count": 1956,
+      "relevant_spans": [
+        {
+          "start": 97,
+          "end": 103,
+          "topic": "WAV exporter reads RawData"
+        },
+        {
+          "start": 109,
+          "end": 148,
+          "topic": "OGG exporter copies compressed bulk"
+        },
+        {
+          "start": 1779,
+          "end": 1788,
+          "topic": "FBX export entry"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_4.13\\Engine\\Source\\Editor\\UnrealEd\\Private\\Fbx\\FbxMainExport.cpp",
+      "sha256": "e003fbae8215858bd0f59c2d3f20fced0d43890596d0cafc780b472b1e54446c",
+      "bytes": 123601,
+      "mtime_ns": 1791825380474083000,
+      "line_count": 3283,
+      "relevant_spans": [
+        {
+          "start": 881,
+          "end": 888,
+          "topic": "FBX requires valid render data"
+        },
+        {
+          "start": 2471,
+          "end": 2550,
+          "topic": "FBX uses render positions and triangle indices"
+        },
+        {
+          "start": 2564,
+          "end": 2635,
+          "topic": "FBX normals and UVs"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_4.13\\Engine\\Source\\Runtime\\Core\\Public\\Windows\\WindowsPlatformProperties.h",
+      "sha256": "9f877fbad98a5c849a06fe586bf2d47e8ac7b2847eddf27fbd757e585a5827b5",
+      "bytes": 1923,
+      "mtime_ns": 1791825382436526000,
+      "line_count": 119,
+      "relevant_spans": [
+        {
+          "start": 65,
+          "end": 70,
+          "topic": "Windows audio streaming capability"
+        }
+      ]
+    },
+    {
+      "path": "C:\\Program Files\\Epic Games\\UE_4.13\\Engine\\Source\\Editor\\UnrealEd\\Private\\Toolkits\\AssetEditorManager.cpp",
+      "sha256": "62de508b48de922aadcacb573dd306a2be3eabe0a780a50fc24e7ae690eef531",
+      "bytes": 24494,
+      "mtime_ns": 1791825380626081900,
+      "line_count": 717,
+      "relevant_spans": [
+        {
+          "start": 268,
+          "end": 284,
+          "topic": "Cooked package asset editors explicitly refused"
+        }
+      ]
+    }
+  ],
+  "negative_searches": [
+    {
+      "term": "AllowUnversionedContentInEditor",
+      "scope": "C:\\Program Files\\Epic Games\\UE_4.13\\Engine\\Source and C:\\Program Files\\Epic Games\\UE_4.13\\Engine\\Config",
+      "matches": 0,
+      "limit": "Does not establish behavior of newer engine versions"
+    },
+    {
+      "term": "UnrealPak.cpp / source program main",
+      "scope": "C:\\Program Files\\Epic Games\\UE_4.13\\Engine\\Source",
+      "matches": 0,
+      "observation": "Installed Source/Programs contains only UnrealHeaderTool; UnrealPak executable is installed, but its main source is absent"
+    }
+  ],
+  "all_source_hashes_and_mtimes_rechecked_unchanged": true
+}

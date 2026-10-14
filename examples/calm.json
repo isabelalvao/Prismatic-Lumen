@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "demo-calm-001",
+  "command": "apply_parameters",
+  "transition_seconds": 3,
+  "parameters": {
+    "palette": ["#B8CEF0", "#6F83AC"],
+    "light_intensity": 0.32,
+    "motion_speed": 0.12,
+    "pulse_strength": 0.15,
+    "fog_density": 0.32,
+    "geometry_density": 0.3,
+    "bloom": 0.25
+  }
+}

@@ -1,0 +1,4 @@
+FAIL line 35: std::abs((sample_sequence(88).atmosphere.r)-(0.006f)) <= (0.000001f)
+FAIL line 36: std::abs((sample_sequence(120).atmosphere.r)-(0.024f)) <= (0.000001f)
+FAIL line 37: std::abs((sample_sequence(143.99).atmosphere.g)-(0.038f)) <= (0.000001f)
+FAIL line 39: std::abs((sample_sequence(424).atmosphere.b)-(0.02f)) <= (0.000001f)

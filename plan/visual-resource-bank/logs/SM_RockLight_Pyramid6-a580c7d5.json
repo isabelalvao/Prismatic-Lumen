@@ -1,0 +1,51 @@
+{
+  "input": {
+    "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RockLight_Pyramid6.uasset",
+    "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RockLight_Pyramid6",
+    "object_name": "SM_RockLight_Pyramid6",
+    "class_reference": "/Script/Engine.StaticMesh",
+    "export_index": 3,
+    "serial_offset": 1959,
+    "serial_size": 1277,
+    "payload_sha1": "a580c7d5af8c2efb3c176dd1d525f7958086ceba",
+    "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+    "source_reports": [
+      "mesh-assets.json"
+    ],
+    "payload_pak_offset": 104167477,
+    "payload_size": 3240,
+    "source_sha1_verified": true,
+    "resource_id": "SM_RockLight_Pyramid6-a580c7d5"
+  },
+  "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_RockLight_Pyramid6-a580c7d5",
+  "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+  "args": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-export",
+    "-gltf",
+    "-notex",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_RockLight_Pyramid6-a580c7d5",
+    "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RockLight_Pyramid6",
+    "SM_RockLight_Pyramid6",
+    "StaticMesh"
+  ],
+  "returncode": 0,
+  "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_RockLight_Pyramid6-a580c7d5.log",
+  "method": "qualified package+object+class UModel export",
+  "elapsed_seconds": 0.030999999959021807,
+  "files": [
+    {
+      "path": "resources\\SM_RockLight_Pyramid6-a580c7d5\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_RockLight_Pyramid6.bin",
+      "size": 764,
+      "sha256": "d0a4450a929a0eba5f2c960e6df53d904d0e242717b4cc935d94fac7f8b461e5"
+    },
+    {
+      "path": "resources\\SM_RockLight_Pyramid6-a580c7d5\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_RockLight_Pyramid6.gltf",
+      "size": 2333,
+      "sha256": "330284c5ec1f119ef22d7404ac7b30f78418e6b497ddf59d59c3319ce15c6bda"
+    }
+  ],
+  "export_status": "exported_pending_geometry_validation"
+}

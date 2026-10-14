@@ -1,0 +1,51 @@
+{
+  "input": {
+    "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RockCube.uasset",
+    "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RockCube",
+    "object_name": "SM_RockCube",
+    "class_reference": "/Script/Engine.StaticMesh",
+    "export_index": 3,
+    "serial_offset": 5483,
+    "serial_size": 1687,
+    "payload_sha1": "7d27fd1886a557dbef55312fb546ddabaf74d1b8",
+    "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+    "source_reports": [
+      "mesh-assets.json"
+    ],
+    "payload_pak_offset": 103870517,
+    "payload_size": 7174,
+    "source_sha1_verified": true,
+    "resource_id": "SM_RockCube-7d27fd18"
+  },
+  "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_RockCube-7d27fd18",
+  "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+  "args": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-export",
+    "-gltf",
+    "-notex",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_RockCube-7d27fd18",
+    "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RockCube",
+    "SM_RockCube",
+    "StaticMesh"
+  ],
+  "returncode": 0,
+  "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_RockCube-7d27fd18.log",
+  "method": "qualified package+object+class UModel export",
+  "elapsed_seconds": 0.06299999996554106,
+  "files": [
+    {
+      "path": "resources\\SM_RockCube-7d27fd18\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_RockCube.bin",
+      "size": 1224,
+      "sha256": "05cc4357e43a81a551001c264a152d504e4b0e689a1f6b7b8956391664b3c335"
+    },
+    {
+      "path": "resources\\SM_RockCube-7d27fd18\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_RockCube.gltf",
+      "size": 2065,
+      "sha256": "b3dcc6edd7599e756cb08030fba4fa1606112c5b12653605eece751027c0feb4"
+    }
+  ],
+  "export_status": "exported_pending_geometry_validation"
+}

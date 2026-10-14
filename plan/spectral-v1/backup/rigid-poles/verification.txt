@@ -1,0 +1,8 @@
+RED: standalone MSVC compilation linked the existing production libraries.
+comfort-red assets/opening returned exit code 1 before production changes.
+First failure: mini_pole_height(140,30,120)-mini_pole_height(0,30,120) was 170 instead of 140.
+Additional failures: nonuniform vertex displacement, changing pair distances, nonzero deformation phase, constant transform Y.
+GREEN: standalone MSVC compilation of comfort_tests.cpp, art_direction.cpp and mini_poles.cpp linked existing core libraries.
+comfort-green assets/opening returned exit code 0: All checks passed.
+Final GREEN includes pole phase continuity across period/variation reload, rigid geometry, minimum height, runtime base removal and unchanged disk meshes.
+No CMake reconfiguration, full application build or GPU execution was performed.

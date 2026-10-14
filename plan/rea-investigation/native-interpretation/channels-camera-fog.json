@@ -1,0 +1,2143 @@
+{
+  "source": {
+    "timeline_path": "C:\\ORCA\\Fantasynt\\plan\\full-reference\\timeline.json",
+    "timeline_sha256": "e6387854e574d39215dad25029f56be7f39bb51dc1ad7278bc80e573bc2c03f8",
+    "enriched_path": "C:\\ORCA\\Fantasynt\\plan\\full-reference\\enriched-map-sequence.json",
+    "enriched_sha256": "251c6b8ed3aafea72dd002a8061f4daa76aa2d365b1d562bbfe238d9034ec31a",
+    "sequence_asset": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Sequences/ChezNousSequence.uasset",
+    "sequence_payload_sha1": "e34b3d02621b8a31185f4cb5b43bc6d6515daf9a",
+    "sequence_payload_sha256": "2399bceb594fdff291e3a47f0938c53cf56a495121ee8a6394c5f84e8961091d",
+    "sequence_payload_pak_offset": 258770997,
+    "sequence_length": 108754,
+    "map_asset": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Levels/ChezNous.umap",
+    "map_payload_sha1": "1c1b5632455958ca69c0cbd15a0565315963ed0f",
+    "map_payload_pak_offset": 223653941,
+    "ue_profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+    "time_unit": "seconds in serialized MovieScene floating-time profile; no runtime verification"
+  },
+  "movie_scene": {
+    "MasterTracks": [
+      "ChezNousSequence.MovieScene_0.MovieSceneAudioTrack_0",
+      "ChezNousSequence.MovieScene_0.MovieSceneAudioTrack_1",
+      "ChezNousSequence.MovieScene_0.MovieSceneAudioTrack_2",
+      "ChezNousSequence.MovieScene_0.MovieSceneAudioTrack_3",
+      "ChezNousSequence.MovieScene_0.MovieSceneAudioTrack_4",
+      "ChezNousSequence.MovieScene_0.MovieSceneEventTrack_0",
+      "ChezNousSequence.MovieScene_0.MovieSceneAudioTrack_5",
+      "ChezNousSequence.MovieScene_0.MovieSceneEventTrack_1",
+      "ChezNousSequence.MovieScene_0.MovieSceneEventTrack_2"
+    ],
+    "SelectionRange": {
+      "LowerBound": {
+        "Type": "ERangeBoundTypes::Inclusive",
+        "Value": 177.0
+      },
+      "UpperBound": {
+        "Value": 177.0
+      }
+    },
+    "PlaybackRange": {
+      "LowerBound": {
+        "Type": "ERangeBoundTypes::Inclusive"
+      },
+      "UpperBound": {
+        "Type": "ERangeBoundTypes::Inclusive",
+        "Value": 424.0
+      }
+    },
+    "FixedFrameInterval": 1.0
+  },
+  "format": {
+    "key_bytes": 27,
+    "key_prefix": "InterpMode,TangentMode,TangentWeightMode: three unsigned bytes",
+    "key_floats": "little-endian IEEE754 binary32: time,value,arrive_tangent,arrive_weight,leave_tangent,leave_weight",
+    "native_enum_evidence_id": "ev_5ceb47aed83db8153b4fc920b6f3172d724b328396c6c152b6ba1c2e0ace1fe7",
+    "interpolation_modes": {
+      "0": "RCIM_Linear",
+      "1": "RCIM_Constant",
+      "2": "RCIM_Cubic",
+      "3": "RCIM_None",
+      "4": "RCIM_MAX"
+    },
+    "numeric_policy": "Values copied without rounding; exact binary32 bits and original key bytes also preserved.",
+    "native_eval_evidence_id": "ev_3ddd51e30b3f5bb36a717972b370c396437667660693d90dd5e9a991db40e15c",
+    "evaluation_observed": "native Eval selects interpolation from left key; mode0 linear, mode1 constant, other nonconstant mode cubic with unweighted tangents; key weights are not read in observed Eval",
+    "extrapolation_numeric_modes": {
+      "3": "linear from endpoint segment slope",
+      "4": "clamp to endpoint value"
+    }
+  },
+  "channels": [
+    {
+      "label": "CameraRig.Translation.Y",
+      "binding_name": "CameraRig",
+      "binding_guid_bytes": "c61376fd4a6ae4408b43611d3df14659",
+      "object_path": "PersistentLevel.CameraRig",
+      "track_export_index": 8,
+      "track_properties": {
+        "Sections": [
+          "ChezNousSequence.MovieScene_0.MovieScene3DTransformTrack_2.MovieScene3DTransformSection_0"
+        ]
+      },
+      "section_export_index": 5,
+      "section_class": "/Script/MovieSceneTracks.MovieScene3DTransformSection",
+      "section_object_reference": "ChezNousSequence.MovieScene_0.MovieScene3DTransformTrack_2.MovieScene3DTransformSection_0",
+      "section_serial_offset": 33756,
+      "section_serial_size": 1118,
+      "section_properties": {
+        "StartTime": -98.0,
+        "EndTime": 448.0,
+        "bIsInfinite": true
+      },
+      "section_tag_offsets": {
+        "StartTime": 34778,
+        "EndTime": 34807,
+        "bIsInfinite": 34836
+      },
+      "channel_property_tag_offset": 33842,
+      "channel_property_serial_size": 285,
+      "channel_array_index": 1,
+      "default": {
+        "serialized": true,
+        "value": 0.0,
+        "status": "serialized",
+        "property_tag_offset": 34139,
+        "payload_offset": 34164,
+        "binary32_le_hex": "00000000"
+      },
+      "pre_infinity_extrapolation": {
+        "serialized": false,
+        "effective_value": null,
+        "status": "tag absent; constructor default4 observed locally and clamp behavior confirmed by REA Eval/Remap; inheritance inferred, later overrides unexcluded",
+        "constructor_default": 4,
+        "constructor_default_behavior": "clamp",
+        "effective_value_inferred": 4
+      },
+      "post_infinity_extrapolation": {
+        "serialized": false,
+        "effective_value": null,
+        "status": "tag absent; constructor default4 observed locally and clamp behavior confirmed by REA Eval/Remap; inheritance inferred, later overrides unexcluded",
+        "constructor_default": 4,
+        "constructor_default_behavior": "clamp",
+        "effective_value_inferred": 4
+      },
+      "keys": [
+        {
+          "offset": 33977,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 112.0,
+          "value": -6400.00048828125,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "0000000000e0420100c8c500000000000000000000000000000000",
+          "sha256": "8f34700cb8f9fc218b69f1b7ad4ece2cd078387c269506ab026a2c9954ad4c9c",
+          "pak_absolute_offset": 258804974,
+          "binary32_le_hex": {
+            "time": "0000e042",
+            "value": "0100c8c5",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 34004,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 224.0,
+          "value": 16000.0,
+          "arrive_tangent": 199.9999542236328,
+          "arrive_weight": 0.0,
+          "leave_tangent": 199.9999542236328,
+          "leave_weight": 0.0,
+          "raw_hex": "0000000000604300007a46fdff474300000000fdff474300000000",
+          "sha256": "57c2f32e1b05fdc1089459a454b4f3550b9afbc8a08733b1fd836eb287d83b94",
+          "pak_absolute_offset": 258805001,
+          "binary32_le_hex": {
+            "time": "00006043",
+            "value": "00007a46",
+            "arrive_tangent": "fdff4743",
+            "arrive_weight": "00000000",
+            "leave_tangent": "fdff4743",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 34031,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 288.0,
+          "value": 28800.0,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "000000000090430000e14600000000000000000000000000000000",
+          "sha256": "e973c9aa32914556e7cfadd5039305c5b81db5fca2a13677582976914752cf24",
+          "pak_absolute_offset": 258805028,
+          "binary32_le_hex": {
+            "time": "00009043",
+            "value": "0000e146",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 34058,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 351.9999694824219,
+          "value": 48000.0,
+          "arrive_tangent": 100.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 100.0,
+          "leave_weight": 0.0,
+          "raw_hex": "000000ffffaf4300803b470000c842000000000000c84200000000",
+          "sha256": "26052696fe4c9afb59a2895c2b9b1c5070fb1a865ca75dd9321600ee37a7e13e",
+          "pak_absolute_offset": 258805055,
+          "binary32_le_hex": {
+            "time": "ffffaf43",
+            "value": "00803b47",
+            "arrive_tangent": "0000c842",
+            "arrive_weight": "00000000",
+            "leave_tangent": "0000c842",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 34085,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 416.0,
+          "value": 60800.0,
+          "arrive_tangent": 199.99993896484375,
+          "arrive_weight": 0.0,
+          "leave_tangent": 199.99993896484375,
+          "leave_weight": 0.0,
+          "raw_hex": "0000000000d04300806d47fcff474300000000fcff474300000000",
+          "sha256": "280c29ae99f99c1855393d953b84f980ed30c1a2ea2d76c93b4bf77b8eeee8fa",
+          "pak_absolute_offset": 258805082,
+          "binary32_le_hex": {
+            "time": "0000d043",
+            "value": "00806d47",
+            "arrive_tangent": "fcff4743",
+            "arrive_weight": "00000000",
+            "leave_tangent": "fcff4743",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 34112,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 448.0,
+          "value": 67200.0,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "0000000000e0430040834700000000000000000000000000000000",
+          "sha256": "b5e0165e22920ef2132493fa00f7fff94284fc746a3e58e9dbdbc623905e44cf",
+          "pak_absolute_offset": 258805109,
+          "binary32_le_hex": {
+            "time": "0000e043",
+            "value": "00408347",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        }
+      ],
+      "key_count": 6,
+      "interpolation_counts": {
+        "RCIM_Linear": 6
+      },
+      "key_time_extent": {
+        "first": 112.0,
+        "last": 448.0
+      },
+      "endpoint_clamp_if_constructor_inherited": {
+        "before_first": -6400.00048828125,
+        "after_last": 67200.0
+      }
+    },
+    {
+      "label": "HeightFog.FogInscatteringColor.R",
+      "binding_name": "HeightFogComponent0",
+      "binding_guid_bytes": "887b8a49ad24be4087d6fa26481b62b8",
+      "object_path": "PersistentLevel.ExponentialHeightFog_1.HeightFogComponent0",
+      "track_export_index": 28,
+      "track_properties": {
+        "PropertyName": "FogInscatteringColor",
+        "PropertyPath": "FogInscatteringColor",
+        "Sections": [
+          "ChezNousSequence.MovieScene_0.MovieSceneColorTrack_4.MovieSceneColorSection_1"
+        ]
+      },
+      "section_export_index": 24,
+      "section_class": "/Script/MovieSceneTracks.MovieSceneColorSection",
+      "section_object_reference": "ChezNousSequence.MovieScene_0.MovieSceneColorTrack_4.MovieSceneColorSection_1",
+      "section_serial_offset": 40388,
+      "section_serial_size": 1936,
+      "section_properties": {
+        "EndTime": 369.0,
+        "bIsInfinite": true
+      },
+      "section_tag_offsets": {
+        "EndTime": 42257,
+        "bIsInfinite": 42286
+      },
+      "channel_property_tag_offset": 40388,
+      "channel_property_serial_size": 555,
+      "channel_array_index": 0,
+      "default": {
+        "serialized": true,
+        "value": 0.0,
+        "status": "serialized",
+        "property_tag_offset": 40955,
+        "payload_offset": 40980,
+        "binary32_le_hex": "00000000"
+      },
+      "pre_infinity_extrapolation": {
+        "serialized": false,
+        "effective_value": null,
+        "status": "tag absent; constructor default4 observed locally and clamp behavior confirmed by REA Eval/Remap; inheritance inferred, later overrides unexcluded",
+        "constructor_default": 4,
+        "constructor_default_behavior": "clamp",
+        "effective_value_inferred": 4
+      },
+      "post_infinity_extrapolation": {
+        "serialized": false,
+        "effective_value": null,
+        "status": "tag absent; constructor default4 observed locally and clamp behavior confirmed by REA Eval/Remap; inheritance inferred, later overrides unexcluded",
+        "constructor_default": 4,
+        "constructor_default_behavior": "clamp",
+        "effective_value_inferred": 4
+      },
+      "keys": [
+        {
+          "offset": 40523,
+          "mode_bytes": [
+            1,
+            0,
+            0
+          ],
+          "time": 0.0,
+          "value": 0.0,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "010000000000000000000000000000000000000000000000000000",
+          "sha256": "8f92e33dda68ff39b21d04f54a7f5d96173282dbf47a45d9949bcea5eee4f787",
+          "pak_absolute_offset": 258811520,
+          "binary32_le_hex": {
+            "time": "00000000",
+            "value": "00000000",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Constant"
+        },
+        {
+          "offset": 40550,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 80.0,
+          "value": 0.0,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "0000000000a0420000000000000000000000000000000000000000",
+          "sha256": "fd671758871c06bf275c2171dd379b3ff6b06ae739896da08fcb9671132d4d5d",
+          "pak_absolute_offset": 258811547,
+          "binary32_le_hex": {
+            "time": "0000a042",
+            "value": "00000000",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 40577,
+          "mode_bytes": [
+            1,
+            0,
+            0
+          ],
+          "time": 112.0,
+          "value": 0.024000000208616257,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "0100000000e042a69bc43c00000000000000000000000000000000",
+          "sha256": "3090360bcf4106ccf2a20fdbe7e6b3c5c7a231be75b64d540e02d15e73583865",
+          "pak_absolute_offset": 258811574,
+          "binary32_le_hex": {
+            "time": "0000e042",
+            "value": "a69bc43c",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Constant"
+        },
+        {
+          "offset": 40604,
+          "mode_bytes": [
+            1,
+            0,
+            0
+          ],
+          "time": 144.0,
+          "value": 0.0,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "010000000010430000000000000000000000000000000000000000",
+          "sha256": "385dc2390db3b3d18eb0c146c93020fb2ba3b9dd655e7d31da1b4c65fca6bc4f",
+          "pak_absolute_offset": 258811601,
+          "binary32_le_hex": {
+            "time": "00001043",
+            "value": "00000000",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Constant"
+        },
+        {
+          "offset": 40631,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 175.0,
+          "value": 0.0,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "00000000002f430000000000000000000000000000000000000000",
+          "sha256": "73c73354670cab69ccd01b62cda5a8ddac1dbd085ffc048052d4c174913a46a3",
+          "pak_absolute_offset": 258811628,
+          "binary32_le_hex": {
+            "time": "00002f43",
+            "value": "00000000",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 40658,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 177.0,
+          "value": 0.3190000057220459,
+          "arrive_tangent": 0.03096874989569187,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.03096874989569187,
+          "leave_weight": 0.0,
+          "raw_hex": "00000000003143f853a33e2db2fd3c000000002db2fd3c00000000",
+          "sha256": "9f0cec200fc0c3d2d2b8e3bf77fa7a80d01ce2d088b6e13fdb19edcc1780b86d",
+          "pak_absolute_offset": 258811655,
+          "binary32_le_hex": {
+            "time": "00003143",
+            "value": "f853a33e",
+            "arrive_tangent": "2db2fd3c",
+            "arrive_weight": "00000000",
+            "leave_tangent": "2db2fd3c",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 40685,
+          "mode_bytes": [
+            2,
+            0,
+            0
+          ],
+          "time": 207.0,
+          "value": 0.9909999966621399,
+          "arrive_tangent": -0.010290322825312614,
+          "arrive_weight": 0.0,
+          "leave_tangent": -0.010290322825312614,
+          "leave_weight": 0.0,
+          "raw_hex": "02000000004f432db27d3fbe9828bc00000000be9828bc00000000",
+          "sha256": "cb1d1b4aadb94e2fe24bfc51ec52fe7677ab66fb54d7e70cd50e3d4b4b88ee9c",
+          "pak_absolute_offset": 258811682,
+          "binary32_le_hex": {
+            "time": "00004f43",
+            "value": "2db27d3f",
+            "arrive_tangent": "be9828bc",
+            "arrive_weight": "00000000",
+            "leave_tangent": "be9828bc",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Cubic"
+        },
+        {
+          "offset": 40712,
+          "mode_bytes": [
+            1,
+            0,
+            0
+          ],
+          "time": 208.0,
+          "value": 0.0,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "010000000050430000000000000000000000000000000000000000",
+          "sha256": "3404b175fc55b0735678b76d1012cdc9739fdbe4969bbbbf038c1db038372aee",
+          "pak_absolute_offset": 258811709,
+          "binary32_le_hex": {
+            "time": "00005043",
+            "value": "00000000",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Constant"
+        },
+        {
+          "offset": 40739,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 224.0,
+          "value": 0.0,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "000000000060430000000000000000000000000000000000000000",
+          "sha256": "23a10e6c1f7e5acb8bbc9182900c7457f0b5e6db9a36c01f01c4d8775c1bad21",
+          "pak_absolute_offset": 258811736,
+          "binary32_le_hex": {
+            "time": "00006043",
+            "value": "00000000",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 40766,
+          "mode_bytes": [
+            1,
+            0,
+            0
+          ],
+          "time": 255.99996948242188,
+          "value": 0.0,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "010000feff7f430000000000000000000000000000000000000000",
+          "sha256": "264335314a7a18e4c255534d3bed5aff47f6d5f72af57e7c3375d740653c0a3b",
+          "pak_absolute_offset": 258811763,
+          "binary32_le_hex": {
+            "time": "feff7f43",
+            "value": "00000000",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Constant"
+        },
+        {
+          "offset": 40793,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 288.0,
+          "value": 0.0,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "000000000090430000000000000000000000000000000000000000",
+          "sha256": "50c0abf29691d03c388559a344d87273d0f56005e543122ab4d08610fdb2a7f9",
+          "pak_absolute_offset": 258811790,
+          "binary32_le_hex": {
+            "time": "00009043",
+            "value": "00000000",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 40820,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 289.9999694824219,
+          "value": 0.030712999403476715,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "000000ffff9043d499fb3c00000000000000000000000000000000",
+          "sha256": "7237fb560e6dcab7c0937b3c74d8c63b61bf5f8bdfafcec8f7f8942db7fc38ca",
+          "pak_absolute_offset": 258811817,
+          "binary32_le_hex": {
+            "time": "ffff9043",
+            "value": "d499fb3c",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 40847,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 320.0,
+          "value": 0.030712999403476715,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "0000000000a043d499fb3c00000000000000000000000000000000",
+          "sha256": "1f4c3eb0c991b961deff4540b284a16e1c7eeff5510755c56a642cd45cbbf8ce",
+          "pak_absolute_offset": 258811844,
+          "binary32_le_hex": {
+            "time": "0000a043",
+            "value": "d499fb3c",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 40874,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 322.0,
+          "value": 0.1748565137386322,
+          "arrive_tangent": 0.07207175344228745,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.07207175344228745,
+          "leave_weight": 0.0,
+          "raw_hex": "0000000000a143960d333e5b9a933d000000005b9a933d00000000",
+          "sha256": "3bddd93209a67766b8b5828aa6574d442e38459ab402c1fb6f755d899b1343f0",
+          "pak_absolute_offset": 258811871,
+          "binary32_le_hex": {
+            "time": "0000a143",
+            "value": "960d333e",
+            "arrive_tangent": "5b9a933d",
+            "arrive_weight": "00000000",
+            "leave_tangent": "5b9a933d",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 40901,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 350.9999694824219,
+          "value": 0.9909999966621399,
+          "arrive_tangent": -0.010633344762027264,
+          "arrive_weight": 0.0,
+          "leave_tangent": -0.010633344762027264,
+          "leave_weight": 0.0,
+          "raw_hex": "000000ff7faf432db27d3f7b372ebc000000007b372ebc00000000",
+          "sha256": "35e166d0f2a4b2822c471f2a6a42c9a7b1a4ef2b2293c9b926b5fe1c731bb48a",
+          "pak_absolute_offset": 258811898,
+          "binary32_le_hex": {
+            "time": "ff7faf43",
+            "value": "2db27d3f",
+            "arrive_tangent": "7b372ebc",
+            "arrive_weight": "00000000",
+            "leave_tangent": "7b372ebc",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 40928,
+          "mode_bytes": [
+            1,
+            0,
+            0
+          ],
+          "time": 351.9999694824219,
+          "value": 0.0,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "010000ffffaf430000000000000000000000000000000000000000",
+          "sha256": "af8fa5f87cf310a5286012e13072f4a9ef87aa0e2a43815da6322885457a327b",
+          "pak_absolute_offset": 258811925,
+          "binary32_le_hex": {
+            "time": "ffffaf43",
+            "value": "00000000",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Constant"
+        }
+      ],
+      "key_count": 16,
+      "interpolation_counts": {
+        "RCIM_Constant": 6,
+        "RCIM_Linear": 9,
+        "RCIM_Cubic": 1
+      },
+      "key_time_extent": {
+        "first": 0.0,
+        "last": 351.9999694824219
+      },
+      "endpoint_clamp_if_constructor_inherited": {
+        "before_first": 0.0,
+        "after_last": 0.0
+      }
+    },
+    {
+      "label": "HeightFog.FogInscatteringColor.G",
+      "binding_name": "HeightFogComponent0",
+      "binding_guid_bytes": "887b8a49ad24be4087d6fa26481b62b8",
+      "object_path": "PersistentLevel.ExponentialHeightFog_1.HeightFogComponent0",
+      "track_export_index": 28,
+      "track_properties": {
+        "PropertyName": "FogInscatteringColor",
+        "PropertyPath": "FogInscatteringColor",
+        "Sections": [
+          "ChezNousSequence.MovieScene_0.MovieSceneColorTrack_4.MovieSceneColorSection_1"
+        ]
+      },
+      "section_export_index": 24,
+      "section_class": "/Script/MovieSceneTracks.MovieSceneColorSection",
+      "section_object_reference": "ChezNousSequence.MovieScene_0.MovieSceneColorTrack_4.MovieSceneColorSection_1",
+      "section_serial_offset": 40388,
+      "section_serial_size": 1936,
+      "section_properties": {
+        "EndTime": 369.0,
+        "bIsInfinite": true
+      },
+      "section_tag_offsets": {
+        "EndTime": 42257,
+        "bIsInfinite": 42286
+      },
+      "channel_property_tag_offset": 40992,
+      "channel_property_serial_size": 555,
+      "channel_array_index": 0,
+      "default": {
+        "serialized": true,
+        "value": 0.0,
+        "status": "serialized",
+        "property_tag_offset": 41559,
+        "payload_offset": 41584,
+        "binary32_le_hex": "00000000"
+      },
+      "pre_infinity_extrapolation": {
+        "serialized": false,
+        "effective_value": null,
+        "status": "tag absent; constructor default4 observed locally and clamp behavior confirmed by REA Eval/Remap; inheritance inferred, later overrides unexcluded",
+        "constructor_default": 4,
+        "constructor_default_behavior": "clamp",
+        "effective_value_inferred": 4
+      },
+      "post_infinity_extrapolation": {
+        "serialized": false,
+        "effective_value": null,
+        "status": "tag absent; constructor default4 observed locally and clamp behavior confirmed by REA Eval/Remap; inheritance inferred, later overrides unexcluded",
+        "constructor_default": 4,
+        "constructor_default_behavior": "clamp",
+        "effective_value_inferred": 4
+      },
+      "keys": [
+        {
+          "offset": 41127,
+          "mode_bytes": [
+            1,
+            0,
+            0
+          ],
+          "time": 0.0,
+          "value": 0.0,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "010000000000000000000000000000000000000000000000000000",
+          "sha256": "8f92e33dda68ff39b21d04f54a7f5d96173282dbf47a45d9949bcea5eee4f787",
+          "pak_absolute_offset": 258812124,
+          "binary32_le_hex": {
+            "time": "00000000",
+            "value": "00000000",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Constant"
+        },
+        {
+          "offset": 41154,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 80.0,
+          "value": 0.0,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "0000000000a0420000000000000000000000000000000000000000",
+          "sha256": "fd671758871c06bf275c2171dd379b3ff6b06ae739896da08fcb9671132d4d5d",
+          "pak_absolute_offset": 258812151,
+          "binary32_le_hex": {
+            "time": "0000a042",
+            "value": "00000000",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 41181,
+          "mode_bytes": [
+            1,
+            0,
+            0
+          ],
+          "time": 112.0,
+          "value": 0.03799999877810478,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "0100000000e042e3a51b3d00000000000000000000000000000000",
+          "sha256": "faeae86d9485f0c34018dfc21a647ceeaa391eb2aa19d78d01163ebba32f9727",
+          "pak_absolute_offset": 258812178,
+          "binary32_le_hex": {
+            "time": "0000e042",
+            "value": "e3a51b3d",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Constant"
+        },
+        {
+          "offset": 41208,
+          "mode_bytes": [
+            1,
+            0,
+            0
+          ],
+          "time": 144.0,
+          "value": 0.12200000137090683,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "0100000000104323dbf93d00000000000000000000000000000000",
+          "sha256": "5e303a1d21dca06330f3185965b085502e223a28f348492ac9069cae2b6279f1",
+          "pak_absolute_offset": 258812205,
+          "binary32_le_hex": {
+            "time": "00001043",
+            "value": "23dbf93d",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Constant"
+        },
+        {
+          "offset": 41235,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 175.0,
+          "value": 0.12200000137090683,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "00000000002f4323dbf93d00000000000000000000000000000000",
+          "sha256": "3841de5cfbc490ee5827a2a444bc0018af4b6475d31c6569b8fd7c16acc95d33",
+          "pak_absolute_offset": 258812232,
+          "binary32_le_hex": {
+            "time": "00002f43",
+            "value": "23dbf93d",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 41262,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 177.0,
+          "value": 0.0010000000474974513,
+          "arrive_tangent": -0.002781250048428774,
+          "arrive_weight": 0.0,
+          "leave_tangent": -0.002781250048428774,
+          "leave_weight": 0.0,
+          "raw_hex": "000000000031436f12833aa24536bb00000000a24536bb00000000",
+          "sha256": "e6ae6d7dc0c11470521f4d8e41cf5e756fc56c0e7e046fcbabb3b4e7d87cc98e",
+          "pak_absolute_offset": 258812259,
+          "binary32_le_hex": {
+            "time": "00003143",
+            "value": "6f12833a",
+            "arrive_tangent": "a24536bb",
+            "arrive_weight": "00000000",
+            "leave_tangent": "a24536bb",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 41289,
+          "mode_bytes": [
+            2,
+            0,
+            0
+          ],
+          "time": 207.0,
+          "value": 0.032999999821186066,
+          "arrive_tangent": -3.225800901418552e-05,
+          "arrive_weight": 0.0,
+          "leave_tangent": -3.225800901418552e-05,
+          "leave_weight": 0.0,
+          "raw_hex": "02000000004f43022b073dc64c07b800000000c64c07b800000000",
+          "sha256": "dc44873d1219e05480f707e6e3103be0c2e694041bed683699741f4d72030c49",
+          "pak_absolute_offset": 258812286,
+          "binary32_le_hex": {
+            "time": "00004f43",
+            "value": "022b073d",
+            "arrive_tangent": "c64c07b8",
+            "arrive_weight": "00000000",
+            "leave_tangent": "c64c07b8",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Cubic"
+        },
+        {
+          "offset": 41316,
+          "mode_bytes": [
+            1,
+            0,
+            0
+          ],
+          "time": 208.0,
+          "value": 0.0,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "010000000050430000000000000000000000000000000000000000",
+          "sha256": "3404b175fc55b0735678b76d1012cdc9739fdbe4969bbbbf038c1db038372aee",
+          "pak_absolute_offset": 258812313,
+          "binary32_le_hex": {
+            "time": "00005043",
+            "value": "00000000",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Constant"
+        },
+        {
+          "offset": 41343,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 224.0,
+          "value": 0.0,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "000000000060430000000000000000000000000000000000000000",
+          "sha256": "23a10e6c1f7e5acb8bbc9182900c7457f0b5e6db9a36c01f01c4d8775c1bad21",
+          "pak_absolute_offset": 258812340,
+          "binary32_le_hex": {
+            "time": "00006043",
+            "value": "00000000",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 41370,
+          "mode_bytes": [
+            1,
+            0,
+            0
+          ],
+          "time": 255.99996948242188,
+          "value": 0.00800000037997961,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "010000feff7f436f12033c00000000000000000000000000000000",
+          "sha256": "e7a494496831b617ca9a43ce4949ca202dddb16c6c4aa0d1899de18bb3cca8ca",
+          "pak_absolute_offset": 258812367,
+          "binary32_le_hex": {
+            "time": "feff7f43",
+            "value": "6f12033c",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Constant"
+        },
+        {
+          "offset": 41397,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 288.0,
+          "value": 0.00800000037997961,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "000000000090436f12033c00000000000000000000000000000000",
+          "sha256": "94b2e8bdadb5f6eb13a3e82d77cc957d9a93cb695656566741b129bf7ebc2303",
+          "pak_absolute_offset": 258812394,
+          "binary32_le_hex": {
+            "time": "00009043",
+            "value": "6f12033c",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 41424,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 289.9999694824219,
+          "value": 0.015995999798178673,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "000000ffff90430b0a833c00000000000000000000000000000000",
+          "sha256": "be83d1774606027f4a13b8dd1952d998c4bd049eb691ed253aa41afe96904cdb",
+          "pak_absolute_offset": 258812421,
+          "binary32_le_hex": {
+            "time": "ffff9043",
+            "value": "0b0a833c",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 41451,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 320.0,
+          "value": 0.015995999798178673,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "0000000000a0430b0a833c00000000000000000000000000000000",
+          "sha256": "5b6f362f8fb7b88b7b0a7136a19753f6d86192c140c521dc5a57f195f6ccda70",
+          "pak_absolute_offset": 258812448,
+          "binary32_le_hex": {
+            "time": "0000a043",
+            "value": "0b0a833c",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 41478,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 322.0,
+          "value": 0.008497999981045723,
+          "arrive_tangent": -0.003748999908566475,
+          "arrive_weight": 0.0,
+          "leave_tangent": -0.003748999908566475,
+          "leave_weight": 0.0,
+          "raw_hex": "0000000000a143323b0b3cc8b175bb00000000c8b175bb00000000",
+          "sha256": "ac6c95acc415362ff48e782dbb36a747888ca1df5ac62c4343adee428a0414bd",
+          "pak_absolute_offset": 258812475,
+          "binary32_le_hex": {
+            "time": "0000a143",
+            "value": "323b0b3c",
+            "arrive_tangent": "c8b175bb",
+            "arrive_weight": "00000000",
+            "leave_tangent": "c8b175bb",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 41505,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 350.9999694824219,
+          "value": 0.032999999821186066,
+          "arrive_tangent": -3.3333311876049265e-05,
+          "arrive_weight": 0.0,
+          "leave_tangent": -3.3333311876049265e-05,
+          "leave_weight": 0.0,
+          "raw_hex": "000000ff7faf43022b073d5fcf0bb8000000005fcf0bb800000000",
+          "sha256": "ad0e9e8bd2c01ad962165ec766671830637eba6858576f67805d1cf0721ec58d",
+          "pak_absolute_offset": 258812502,
+          "binary32_le_hex": {
+            "time": "ff7faf43",
+            "value": "022b073d",
+            "arrive_tangent": "5fcf0bb8",
+            "arrive_weight": "00000000",
+            "leave_tangent": "5fcf0bb8",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 41532,
+          "mode_bytes": [
+            1,
+            0,
+            0
+          ],
+          "time": 351.9999694824219,
+          "value": 0.00800000037997961,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "010000ffffaf436f12033c00000000000000000000000000000000",
+          "sha256": "c3ff936551a10dc48d6a1e08b998c9c6c7386f076dc85955ff146ffb361490db",
+          "pak_absolute_offset": 258812529,
+          "binary32_le_hex": {
+            "time": "ffffaf43",
+            "value": "6f12033c",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Constant"
+        }
+      ],
+      "key_count": 16,
+      "interpolation_counts": {
+        "RCIM_Constant": 6,
+        "RCIM_Linear": 9,
+        "RCIM_Cubic": 1
+      },
+      "key_time_extent": {
+        "first": 0.0,
+        "last": 351.9999694824219
+      },
+      "endpoint_clamp_if_constructor_inherited": {
+        "before_first": 0.0,
+        "after_last": 0.00800000037997961
+      }
+    },
+    {
+      "label": "HeightFog.FogInscatteringColor.B",
+      "binding_name": "HeightFogComponent0",
+      "binding_guid_bytes": "887b8a49ad24be4087d6fa26481b62b8",
+      "object_path": "PersistentLevel.ExponentialHeightFog_1.HeightFogComponent0",
+      "track_export_index": 28,
+      "track_properties": {
+        "PropertyName": "FogInscatteringColor",
+        "PropertyPath": "FogInscatteringColor",
+        "Sections": [
+          "ChezNousSequence.MovieScene_0.MovieSceneColorTrack_4.MovieSceneColorSection_1"
+        ]
+      },
+      "section_export_index": 24,
+      "section_class": "/Script/MovieSceneTracks.MovieSceneColorSection",
+      "section_object_reference": "ChezNousSequence.MovieScene_0.MovieSceneColorTrack_4.MovieSceneColorSection_1",
+      "section_serial_offset": 40388,
+      "section_serial_size": 1936,
+      "section_properties": {
+        "EndTime": 369.0,
+        "bIsInfinite": true
+      },
+      "section_tag_offsets": {
+        "EndTime": 42257,
+        "bIsInfinite": 42286
+      },
+      "channel_property_tag_offset": 41596,
+      "channel_property_serial_size": 526,
+      "channel_array_index": 0,
+      "default": {
+        "serialized": false,
+        "value": null,
+        "status": "not serialized; inherited/effective default unknown"
+      },
+      "pre_infinity_extrapolation": {
+        "serialized": false,
+        "effective_value": null,
+        "status": "tag absent; constructor default4 observed locally and clamp behavior confirmed by REA Eval/Remap; inheritance inferred, later overrides unexcluded",
+        "constructor_default": 4,
+        "constructor_default_behavior": "clamp",
+        "effective_value_inferred": 4
+      },
+      "post_infinity_extrapolation": {
+        "serialized": false,
+        "effective_value": null,
+        "status": "tag absent; constructor default4 observed locally and clamp behavior confirmed by REA Eval/Remap; inheritance inferred, later overrides unexcluded",
+        "constructor_default": 4,
+        "constructor_default_behavior": "clamp",
+        "effective_value_inferred": 4
+      },
+      "keys": [
+        {
+          "offset": 41731,
+          "mode_bytes": [
+            1,
+            0,
+            0
+          ],
+          "time": 0.0,
+          "value": 0.0,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "010000000000000000000000000000000000000000000000000000",
+          "sha256": "8f92e33dda68ff39b21d04f54a7f5d96173282dbf47a45d9949bcea5eee4f787",
+          "pak_absolute_offset": 258812728,
+          "binary32_le_hex": {
+            "time": "00000000",
+            "value": "00000000",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Constant"
+        },
+        {
+          "offset": 41758,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 80.0,
+          "value": 0.0,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "0000000000a0420000000000000000000000000000000000000000",
+          "sha256": "fd671758871c06bf275c2171dd379b3ff6b06ae739896da08fcb9671132d4d5d",
+          "pak_absolute_offset": 258812755,
+          "binary32_le_hex": {
+            "time": "0000a042",
+            "value": "00000000",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 41785,
+          "mode_bytes": [
+            1,
+            0,
+            0
+          ],
+          "time": 112.0,
+          "value": 0.05999999865889549,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "0100000000e0428fc2753d00000000000000000000000000000000",
+          "sha256": "275641ab1639cf94d6ac215536bd2c3a29ba0e985de866429509ab01313fb4a0",
+          "pak_absolute_offset": 258812782,
+          "binary32_le_hex": {
+            "time": "0000e042",
+            "value": "8fc2753d",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Constant"
+        },
+        {
+          "offset": 41812,
+          "mode_bytes": [
+            1,
+            0,
+            0
+          ],
+          "time": 144.0,
+          "value": 0.24699999392032623,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "0100000000104391ed7c3e00000000000000000000000000000000",
+          "sha256": "c495c69dd13a34e4221dba0d7e657bbfc9bf7055d663b742f5e21bac4901ff0d",
+          "pak_absolute_offset": 258812809,
+          "binary32_le_hex": {
+            "time": "00001043",
+            "value": "91ed7c3e",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Constant"
+        },
+        {
+          "offset": 41839,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 175.0,
+          "value": 0.24699999392032623,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "00000000002f4391ed7c3e00000000000000000000000000000000",
+          "sha256": "b950d90bb375f25fa2e2dc84ac154afdf985da140a1a83fbf0fddbfa2bfbb4d6",
+          "pak_absolute_offset": 258812836,
+          "binary32_le_hex": {
+            "time": "00002f43",
+            "value": "91ed7c3e",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 41866,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 177.0,
+          "value": 0.003000000026077032,
+          "arrive_tangent": -0.007249999791383743,
+          "arrive_weight": 0.0,
+          "leave_tangent": -0.007249999791383743,
+          "leave_weight": 0.0,
+          "raw_hex": "00000000003143a69b443b6891edbb000000006891edbb00000000",
+          "sha256": "15ea8c47a7f5522feae8703633750fd20a30349280e81b0701f0e59c41d47be5",
+          "pak_absolute_offset": 258812863,
+          "binary32_le_hex": {
+            "time": "00003143",
+            "value": "a69b443b",
+            "arrive_tangent": "6891edbb",
+            "arrive_weight": "00000000",
+            "leave_tangent": "6891edbb",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 41893,
+          "mode_bytes": [
+            2,
+            0,
+            0
+          ],
+          "time": 207.0,
+          "value": 0.014999999664723873,
+          "arrive_tangent": -9.677417983766645e-05,
+          "arrive_weight": 0.0,
+          "leave_tangent": -9.677417983766645e-05,
+          "leave_weight": 0.0,
+          "raw_hex": "02000000004f438fc2753c3ef3cab8000000003ef3cab800000000",
+          "sha256": "89c6ec32ca13a3803b9b3798d0789cf0482252d837c3881bac35607403d6948f",
+          "pak_absolute_offset": 258812890,
+          "binary32_le_hex": {
+            "time": "00004f43",
+            "value": "8fc2753c",
+            "arrive_tangent": "3ef3cab8",
+            "arrive_weight": "00000000",
+            "leave_tangent": "3ef3cab8",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Cubic"
+        },
+        {
+          "offset": 41920,
+          "mode_bytes": [
+            1,
+            0,
+            0
+          ],
+          "time": 208.0,
+          "value": 0.0,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "010000000050430000000000000000000000000000000000000000",
+          "sha256": "3404b175fc55b0735678b76d1012cdc9739fdbe4969bbbbf038c1db038372aee",
+          "pak_absolute_offset": 258812917,
+          "binary32_le_hex": {
+            "time": "00005043",
+            "value": "00000000",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Constant"
+        },
+        {
+          "offset": 41947,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 224.0,
+          "value": 0.0,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "000000000060430000000000000000000000000000000000000000",
+          "sha256": "23a10e6c1f7e5acb8bbc9182900c7457f0b5e6db9a36c01f01c4d8775c1bad21",
+          "pak_absolute_offset": 258812944,
+          "binary32_le_hex": {
+            "time": "00006043",
+            "value": "00000000",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 41974,
+          "mode_bytes": [
+            1,
+            0,
+            0
+          ],
+          "time": 255.99996948242188,
+          "value": 0.019999999552965164,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "010000feff7f430ad7a33c00000000000000000000000000000000",
+          "sha256": "7a7b0164d31b422ab0a81f2d0881b8b5812512441354da1946b1ee1b257dfd29",
+          "pak_absolute_offset": 258812971,
+          "binary32_le_hex": {
+            "time": "feff7f43",
+            "value": "0ad7a33c",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Constant"
+        },
+        {
+          "offset": 42001,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 288.0,
+          "value": 0.019999999552965164,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "000000000090430ad7a33c00000000000000000000000000000000",
+          "sha256": "ef329146ab993f8bde692e635fa850f6d61738209ac1fc60f40329946f3b97b3",
+          "pak_absolute_offset": 258812998,
+          "binary32_le_hex": {
+            "time": "00009043",
+            "value": "0ad7a33c",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 42028,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 289.9999694824219,
+          "value": 0.04970699921250343,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "000000ffff904391994b3d00000000000000000000000000000000",
+          "sha256": "137aab87e2aea2bd4d5521df975c62e74f77097b626aeb9f820e8a94824af452",
+          "pak_absolute_offset": 258813025,
+          "binary32_le_hex": {
+            "time": "ffff9043",
+            "value": "91994b3d",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 42055,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 320.0,
+          "value": 0.04970699921250343,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "0000000000a04391994b3d00000000000000000000000000000000",
+          "sha256": "f968958cc22efda5ec1a934df4146c803682c318011802c07d27361632661c53",
+          "pak_absolute_offset": 258813052,
+          "binary32_le_hex": {
+            "time": "0000a043",
+            "value": "91994b3d",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 42082,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 322.0,
+          "value": 0.0263534989207983,
+          "arrive_tangent": -0.011676749214529991,
+          "arrive_weight": 0.0,
+          "leave_tangent": -0.011676749214529991,
+          "leave_weight": 0.0,
+          "raw_hex": "0000000000a1434be3d73cd64f3fbc00000000d64f3fbc00000000",
+          "sha256": "2b45cf317d748a6f281e5343c6a3b922c4c9307a11dcbb6212804ea0fdd9b80a",
+          "pak_absolute_offset": 258813079,
+          "binary32_le_hex": {
+            "time": "0000a143",
+            "value": "4be3d73c",
+            "arrive_tangent": "d64f3fbc",
+            "arrive_weight": "00000000",
+            "leave_tangent": "d64f3fbc",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 42109,
+          "mode_bytes": [
+            0,
+            0,
+            0
+          ],
+          "time": 350.9999694824219,
+          "value": 0.014999999664723873,
+          "arrive_tangent": -0.00010000008478527889,
+          "arrive_weight": 0.0,
+          "leave_tangent": -0.00010000008478527889,
+          "leave_weight": 0.0,
+          "raw_hex": "000000ff7faf438fc2753c23b7d1b80000000023b7d1b800000000",
+          "sha256": "4be0c43022c430cccaaeeef09056bc8af67d7bd3d6c1782636688531f68191b9",
+          "pak_absolute_offset": 258813106,
+          "binary32_le_hex": {
+            "time": "ff7faf43",
+            "value": "8fc2753c",
+            "arrive_tangent": "23b7d1b8",
+            "arrive_weight": "00000000",
+            "leave_tangent": "23b7d1b8",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Linear"
+        },
+        {
+          "offset": 42136,
+          "mode_bytes": [
+            1,
+            0,
+            0
+          ],
+          "time": 351.9999694824219,
+          "value": 0.019999999552965164,
+          "arrive_tangent": 0.0,
+          "arrive_weight": 0.0,
+          "leave_tangent": 0.0,
+          "leave_weight": 0.0,
+          "raw_hex": "010000ffffaf430ad7a33c00000000000000000000000000000000",
+          "sha256": "76a05f1afe15a4ebfee666aa3896befe9def0128945d5d27b3e9e41972e5eea8",
+          "pak_absolute_offset": 258813133,
+          "binary32_le_hex": {
+            "time": "ffffaf43",
+            "value": "0ad7a33c",
+            "arrive_tangent": "00000000",
+            "arrive_weight": "00000000",
+            "leave_tangent": "00000000",
+            "leave_weight": "00000000"
+          },
+          "interpolation_name": "RCIM_Constant"
+        }
+      ],
+      "key_count": 16,
+      "interpolation_counts": {
+        "RCIM_Constant": 6,
+        "RCIM_Linear": 9,
+        "RCIM_Cubic": 1
+      },
+      "key_time_extent": {
+        "first": 0.0,
+        "last": 351.9999694824219
+      },
+      "endpoint_clamp_if_constructor_inherited": {
+        "before_first": 0.0,
+        "after_last": 0.019999999552965164
+      }
+    },
+    {
+      "label": "HeightFog.FogInscatteringColor.A",
+      "binding_name": "HeightFogComponent0",
+      "binding_guid_bytes": "887b8a49ad24be4087d6fa26481b62b8",
+      "object_path": "PersistentLevel.ExponentialHeightFog_1.HeightFogComponent0",
+      "track_export_index": 28,
+      "track_properties": {
+        "PropertyName": "FogInscatteringColor",
+        "PropertyPath": "FogInscatteringColor",
+        "Sections": [
+          "ChezNousSequence.MovieScene_0.MovieSceneColorTrack_4.MovieSceneColorSection_1"
+        ]
+      },
+      "section_export_index": 24,
+      "section_class": "/Script/MovieSceneTracks.MovieSceneColorSection",
+      "section_object_reference": "ChezNousSequence.MovieScene_0.MovieSceneColorTrack_4.MovieSceneColorSection_1",
+      "section_serial_offset": 40388,
+      "section_serial_size": 1936,
+      "section_properties": {
+        "EndTime": 369.0,
+        "bIsInfinite": true
+      },
+      "section_tag_offsets": {
+        "EndTime": 42257,
+        "bIsInfinite": 42286
+      },
+      "channel_property_tag_offset": 42171,
+      "channel_property_serial_size": 37,
+      "channel_array_index": 0,
+      "default": {
+        "serialized": true,
+        "value": 1.0,
+        "status": "serialized",
+        "property_tag_offset": 42220,
+        "payload_offset": 42245,
+        "binary32_le_hex": "0000803f"
+      },
+      "pre_infinity_extrapolation": {
+        "serialized": false,
+        "effective_value": null,
+        "status": "tag absent; constructor default4 observed locally and clamp behavior confirmed by REA Eval/Remap; inheritance inferred, later overrides unexcluded",
+        "constructor_default": 4,
+        "constructor_default_behavior": "clamp",
+        "effective_value_inferred": 4
+      },
+      "post_infinity_extrapolation": {
+        "serialized": false,
+        "effective_value": null,
+        "status": "tag absent; constructor default4 observed locally and clamp behavior confirmed by REA Eval/Remap; inheritance inferred, later overrides unexcluded",
+        "constructor_default": 4,
+        "constructor_default_behavior": "clamp",
+        "effective_value_inferred": 4
+      },
+      "keys": [],
+      "key_count": 0,
+      "interpolation_counts": {},
+      "key_time_extent": null
+    }
+  ],
+  "camera_other_channels": {
+    "Translation": {
+      "DefaultValue": 0.0
+    },
+    "Translation[2]": {
+      "DefaultValue": 0.0
+    },
+    "Rotation": {
+      "DefaultValue": 0.0
+    },
+    "Rotation[1]": {
+      "DefaultValue": 0.0
+    },
+    "Rotation[2]": {
+      "DefaultValue": 90.00000762939453
+    },
+    "Scale": {
+      "DefaultValue": 1.0
+    },
+    "Scale[1]": {
+      "DefaultValue": 1.0
+    },
+    "Scale[2]": {
+      "DefaultValue": 1.0
+    }
+  },
+  "map_camera_hierarchy": [
+    {
+      "export_index": 78,
+      "class_index": -181,
+      "super_index": 0,
+      "outer_index": 1045,
+      "name": "CameraRig",
+      "flags": 8,
+      "serial_size": 82,
+      "serial_offset": 294965,
+      "properties": [
+        {
+          "offset": 294965,
+          "name": "RootComponent",
+          "type": "ObjectProperty",
+          "size": 4,
+          "array_index": 0,
+          "object_index": 1420,
+          "object_reference": "ChezNous.PersistentLevel.CameraRig.DefaultSceneRoot"
+        },
+        {
+          "offset": 294994,
+          "name": "InstanceComponents",
+          "type": "ArrayProperty",
+          "size": 8,
+          "array_index": 0,
+          "inner": "ObjectProperty",
+          "object_indices": [
+            1420
+          ],
+          "object_references": [
+            "ChezNous.PersistentLevel.CameraRig.DefaultSceneRoot"
+          ]
+        }
+      ],
+      "tagged_properties_end": 295043,
+      "remaining_serial_bytes": 4,
+      "object_reference": "ChezNous.PersistentLevel.CameraRig",
+      "class_reference": "/Script/Engine.Actor"
+    },
+    {
+      "export_index": 382,
+      "class_index": -189,
+      "super_index": 0,
+      "outer_index": 685,
+      "name": "Camera",
+      "flags": 0,
+      "serial_size": 108,
+      "serial_offset": 452766,
+      "properties": [
+        {
+          "offset": 452766,
+          "name": "AttachParent",
+          "type": "ObjectProperty",
+          "size": 4,
+          "array_index": 0,
+          "object_index": 1564,
+          "object_reference": "ChezNous.PersistentLevel.Fantasynth_Pawn_890.Scene"
+        },
+        {
+          "offset": 452795,
+          "name": "bNetAddressable",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": true
+        },
+        {
+          "offset": 452821,
+          "name": "CreationMethod",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "EComponentCreationMethod",
+          "value": "EComponentCreationMethod::SimpleConstructionScript"
+        }
+      ],
+      "tagged_properties_end": 452870,
+      "remaining_serial_bytes": 4,
+      "object_reference": "ChezNous.PersistentLevel.Fantasynth_Pawn_890.Camera",
+      "class_reference": "/Script/Engine.CameraComponent"
+    },
+    {
+      "export_index": 685,
+      "class_index": -93,
+      "super_index": 0,
+      "outer_index": 1045,
+      "name": "Fantasynth_Pawn_890",
+      "flags": 8,
+      "serial_size": 259,
+      "serial_offset": 737071,
+      "properties": [
+        {
+          "offset": 737071,
+          "name": "Camera",
+          "type": "ObjectProperty",
+          "size": 4,
+          "array_index": 0,
+          "object_index": 382,
+          "object_reference": "ChezNous.PersistentLevel.Fantasynth_Pawn_890.Camera"
+        },
+        {
+          "offset": 737100,
+          "name": "Scene",
+          "type": "ObjectProperty",
+          "size": 4,
+          "array_index": 0,
+          "object_index": 1564,
+          "object_reference": "ChezNous.PersistentLevel.Fantasynth_Pawn_890.Scene"
+        },
+        {
+          "offset": 737129,
+          "name": "DefaultSceneRoot",
+          "type": "ObjectProperty",
+          "size": 4,
+          "array_index": 0,
+          "object_index": 1563,
+          "object_reference": "ChezNous.PersistentLevel.Fantasynth_Pawn_890.DefaultSceneRoot"
+        },
+        {
+          "offset": 737158,
+          "name": "AutoPossessPlayer",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "EAutoReceiveInput",
+          "value": "EAutoReceiveInput::Player0"
+        },
+        {
+          "offset": 737199,
+          "name": "SpawnCollisionHandlingMethod",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "ESpawnActorCollisionHandlingMethod",
+          "value": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn"
+        },
+        {
+          "offset": 737240,
+          "name": "RootComponent",
+          "type": "ObjectProperty",
+          "size": 4,
+          "array_index": 0,
+          "object_index": 1563,
+          "object_reference": "ChezNous.PersistentLevel.Fantasynth_Pawn_890.DefaultSceneRoot"
+        },
+        {
+          "offset": 737269,
+          "name": "BlueprintCreatedComponents",
+          "type": "ArrayProperty",
+          "size": 16,
+          "array_index": 0,
+          "inner": "ObjectProperty",
+          "object_indices": [
+            1563,
+            1564,
+            382
+          ],
+          "object_references": [
+            "ChezNous.PersistentLevel.Fantasynth_Pawn_890.DefaultSceneRoot",
+            "ChezNous.PersistentLevel.Fantasynth_Pawn_890.Scene",
+            "ChezNous.PersistentLevel.Fantasynth_Pawn_890.Camera"
+          ]
+        }
+      ],
+      "tagged_properties_end": 737326,
+      "remaining_serial_bytes": 4,
+      "object_reference": "ChezNous.PersistentLevel.Fantasynth_Pawn_890",
+      "class_reference": "/Game/_HelloEnjoy_/Fantasynth/Blueprints/GameMode/Fantasynth_Pawn.Fantasynth_Pawn_C"
+    },
+    {
+      "export_index": 1420,
+      "class_index": -214,
+      "super_index": 0,
+      "outer_index": 78,
+      "name": "DefaultSceneRoot",
+      "flags": 8,
+      "serial_size": 53,
+      "serial_offset": 1091606,
+      "properties": [
+        {
+          "offset": 1091606,
+          "name": "CreationMethod",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "EComponentCreationMethod",
+          "value": "EComponentCreationMethod::Instance"
+        }
+      ],
+      "tagged_properties_end": 1091655,
+      "remaining_serial_bytes": 4,
+      "object_reference": "ChezNous.PersistentLevel.CameraRig.DefaultSceneRoot",
+      "class_reference": "/Script/Engine.SceneComponent"
+    },
+    {
+      "export_index": 1563,
+      "class_index": -214,
+      "super_index": 0,
+      "outer_index": 685,
+      "name": "DefaultSceneRoot",
+      "flags": 0,
+      "serial_size": 108,
+      "serial_offset": 1132445,
+      "properties": [
+        {
+          "offset": 1132445,
+          "name": "AttachParent",
+          "type": "ObjectProperty",
+          "size": 4,
+          "array_index": 0,
+          "object_index": 1420,
+          "object_reference": "ChezNous.PersistentLevel.CameraRig.DefaultSceneRoot"
+        },
+        {
+          "offset": 1132474,
+          "name": "bNetAddressable",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": true
+        },
+        {
+          "offset": 1132500,
+          "name": "CreationMethod",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "EComponentCreationMethod",
+          "value": "EComponentCreationMethod::SimpleConstructionScript"
+        }
+      ],
+      "tagged_properties_end": 1132549,
+      "remaining_serial_bytes": 4,
+      "object_reference": "ChezNous.PersistentLevel.Fantasynth_Pawn_890.DefaultSceneRoot",
+      "class_reference": "/Script/Engine.SceneComponent"
+    },
+    {
+      "export_index": 1564,
+      "class_index": -214,
+      "super_index": 0,
+      "outer_index": 685,
+      "name": "Scene",
+      "flags": 0,
+      "serial_size": 108,
+      "serial_offset": 1132553,
+      "properties": [
+        {
+          "offset": 1132553,
+          "name": "AttachParent",
+          "type": "ObjectProperty",
+          "size": 4,
+          "array_index": 0,
+          "object_index": 1563,
+          "object_reference": "ChezNous.PersistentLevel.Fantasynth_Pawn_890.DefaultSceneRoot"
+        },
+        {
+          "offset": 1132582,
+          "name": "bNetAddressable",
+          "type": "BoolProperty",
+          "size": 0,
+          "array_index": 0,
+          "value": true
+        },
+        {
+          "offset": 1132608,
+          "name": "CreationMethod",
+          "type": "ByteProperty",
+          "size": 8,
+          "array_index": 0,
+          "enum": "EComponentCreationMethod",
+          "value": "EComponentCreationMethod::SimpleConstructionScript"
+        }
+      ],
+      "tagged_properties_end": 1132657,
+      "remaining_serial_bytes": 4,
+      "object_reference": "ChezNous.PersistentLevel.Fantasynth_Pawn_890.Scene",
+      "class_reference": "/Script/Engine.SceneComponent"
+    }
+  ],
+  "map_root_transform_observation": {
+    "root": "ChezNous.PersistentLevel.CameraRig.DefaultSceneRoot",
+    "serialized_local_translation": null,
+    "serialized_local_rotation": null,
+    "serialized_local_scale": null,
+    "serialized_attach_parent": null,
+    "status": "none of these overrides appear; identity/unparented world transform is a default-inheritance hypothesis, not an observed runtime transform"
+  },
+  "verification": {
+    "keys_checked_against_original_pak": 54,
+    "original_pak_open_mode": "rb",
+    "original_pak_size_before": 259630388,
+    "original_pak_size_after": 259630388,
+    "original_pak_mtime_ns_before": 1791747386612865900,
+    "original_pak_mtime_ns_after": 1791747386612865900,
+    "target_execution": false,
+    "rea_ghidra_calls": false
+  },
+  "constructor_default_support": {
+    "path": "C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\native-interpretation\\richcurve-constructor-local.json",
+    "pre": 4,
+    "post": 4,
+    "meaning": "clamp/end-point selection from native Eval/Remap",
+    "constructor_value_proven": true,
+    "asset_effective_inheritance": "inferred: omitted tags inherit RichCurve constructor; later section-owner or runtime writes not excluded",
+    "eval_evidence_id": "ev_3ddd51e30b3f5bb36a717972b370c396437667660693d90dd5e9a991db40e15c",
+    "remap_evidence_id": "ev_fd2f7b195f795aa5224d0ac7a6421c864b120397a9f858d08c7089ef9f8873cf"
+  }
+}

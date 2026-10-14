@@ -1,0 +1,389 @@
+{
+  "meshes": [
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Ground",
+      "material_references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/CamoLine/red_mat.red_mat",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/CamoLine/red_mat"
+        },
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pyramid_Map.M_Pyramid_Map",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pyramid_Map"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Ground_0",
+      "material_references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Inside.M_Inside",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Inside"
+        },
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pyramid_Map.M_Pyramid_Map",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pyramid_Map"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Ground_1",
+      "material_references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/CamoLine/red_mat.red_mat",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/CamoLine/red_mat"
+        },
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Inside.M_Inside",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Inside"
+        },
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pyramid_Map.M_Pyramid_Map",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pyramid_Map"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Terrain",
+      "material_references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pyramid_Map.M_Pyramid_Map",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pyramid_Map"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Black",
+      "material_references": [
+        {
+          "class": "Material",
+          "reference": "/Game/Substance/Metal/Metal_006_MAT.Metal_006_MAT",
+          "package": "/Game/Substance/Metal/Metal_006_MAT"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Gold",
+      "material_references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_MAT.Gold_MAT",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Assets/Landscape/Materials/Gold_MAT"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tree",
+      "material_references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Tree_Map.M_Tree_Map",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Tree_Map"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_Cut_1",
+      "material_references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot1_Map.M_Dot1_Map",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot1_Map"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_Cut_2",
+      "material_references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot2_Map.M_Dot2_Map",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot2_Map"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_Cut_3",
+      "material_references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot3_Map.M_Dot3_Map",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot3_Map"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Dot_Cut_4",
+      "material_references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot4_Map.M_Dot4_Map",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Dot4_Map"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pole",
+      "material_references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pole_Map.M_Pole_Map",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Pole_Map"
+        },
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleBase_Map.M_PoleBase_Map",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleBase_Map"
+        },
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleCap_Map.M_PoleCap_Map",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleCap_Map"
+        },
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/Materials/M_BasicMetal_Grey.M_BasicMetal_Grey",
+          "package": "/Game/_HelloEnjoy_/Materials/M_BasicMetal_Grey"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_PoleDot",
+      "material_references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleDot_Map.M_PoleDot_Map",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleDot_Map"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_FogSheet_Forest",
+      "material_references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_FogSheet_Forest.M_FogSheet_Forest",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_FogSheet_Forest"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/Assets/Meshes/SM_FogSheet_Plane",
+      "material_references": [],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Hex_Hole_1",
+      "material_references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Hex_Hole_1_Map.M_Hex_Hole_1_Map",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Hex_Hole_1_Map"
+        },
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/Materials/Basic_Materials/M_Black_M0_R025.M_Black_M0_R025",
+          "package": "/Game/_HelloEnjoy_/Materials/Basic_Materials/M_Black_M0_R025"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Hex_Solid_1",
+      "material_references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Hex_Solid_1_Map.M_Hex_Solid_1_Map",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Hex_Solid_1_Map"
+        },
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/Materials/Basic_Materials/M_Black_M0_R025.M_Black_M0_R025",
+          "package": "/Game/_HelloEnjoy_/Materials/Basic_Materials/M_Black_M0_R025"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Hex_Solid_2",
+      "material_references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Hex_Solid_2_Map.M_Hex_Solid_2_Map",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Hex_Solid_2_Map"
+        },
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/Materials/Basic_Materials/M_Black_M0_R025.M_Black_M0_R025",
+          "package": "/Game/_HelloEnjoy_/Materials/Basic_Materials/M_Black_M0_R025"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_1",
+      "material_references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Synths_1.M_Synths_1",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Synths_1"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_2",
+      "material_references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Synths_2.M_Synths_2",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Synths_2"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_3",
+      "material_references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Synths_5.M_Synths_5",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Synths_5"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Neon_4",
+      "material_references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Synths_4.M_Synths_4",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Synths_4"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RockCube",
+      "material_references": [
+        {
+          "class": "Material",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Rubble/M_RockCube.M_RockCube",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Rubble/M_RockCube"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_RockLight_Pyramid6",
+      "material_references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_RockLight.M_RockLight",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_RockLight"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_0",
+      "material_references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro0_Map.M_TubeIntro0_Map",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro0_Map"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Terrain",
+      "material_references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeTerrain_Map.M_TubeTerrain_Map",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeTerrain_Map"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_1",
+      "material_references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro1_Map.M_TubeIntro1_Map",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro1_Map"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_2",
+      "material_references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro2_Map.M_TubeIntro2_Map",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro2_Map"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_3",
+      "material_references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro3_Map.M_TubeIntro3_Map",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro3_Map"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Tube_Intro_4",
+      "material_references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro4_Map.M_TubeIntro4_Map",
+          "package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_TubeIntro4_Map"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    },
+    {
+      "mesh_package": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Assets/SM_PlaneSolid_White_BaseColor",
+      "material_references": [
+        {
+          "class": "MaterialInstanceConstant",
+          "reference": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Assets/Materials/M_White_BaseColor.M_White_BaseColor",
+          "package": "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Assets/Materials/M_White_BaseColor"
+        }
+      ],
+      "scope": "package dependencies; not decoded native material slots"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "source_url": "https://www.youtube.com/watch?v=Topz0NkGIus",
+  "title": "FANTASYNTH: Chez Nous - VR Music Experience - Oculus Rift",
+  "channel": "EkosVR",
+  "duration_seconds": 430.301,
+  "decoded_video_dimensions": [
+    1280,
+    720
+  ],
+  "method": "Visual observation through browser player and screenshots; not REA Evidence, not full frame-by-frame observation",
+  "instructions": "Ignore initial menu. Recorded head direction varies; do not bake recorded yaw/pitch/roll into reconstructed scene.",
+  "alignment": {
+    "menu_present_at5": true,
+    "menu_absent_at10": true,
+    "experience_duration_from_assets": 424,
+    "candidate_offset_seconds": 6.1188684807256,
+    "offset_status": "Hypothesis duration(video)-duration(MASTER), consistent with menu disappearance between5 and6.076s; not an audio alignment measurement.",
+    "menu_absent_at6_075941": true
+  },
+  "observations": [
+    {
+      "video_seconds": 5,
+      "status": "observed",
+      "features": "Menu PRESS ANY BUTTON TO START; ignorado como cenário."
+    },
+    {
+      "video_seconds": 6.075941,
+      "status": "observed_ready4",
+      "features": "Menu já ausente, fotograma escuro no arranque. Menu presente a5s; t0 da experiência aproximadamente6s, ainda sem calibração áudio."
+    },
+    {
+      "video_seconds": 10,
+      "status": "observed",
+      "features": "Experiência escura com pontos/luzes brancas; menu ausente. Início entre5 e10s."
+    },
+    {
+      "video_seconds": 31,
+      "status": "observed",
+      "features": "Vista dominada por espaço escuro, partículas/pontos e barras brancas. Pose muito inclinada para região superior; ausência de solo no enquadramento não prova ausência de solo."
+    },
+    {
+      "video_seconds": 45.006973,
+      "status": "observed_ready4",
+      "features": "Hexágono de contorno branco segmentado, barras luminosas, pequenas luzes e espaço escuro. A orientação do enquadramento varia."
+    },
+    {
+      "video_seconds": 74.93661,
+      "status": "observed_ready4",
+      "features": "Solo escuro azul/reflexivo, elementos verticais escuros, discos/volumes baixos com faixas brancas e módulos com padrões angulares; não é a paisagem colorida do protótipo."
+    },
+    {
+      "video_seconds": 94.964714,
+      "status": "observed_ready4",
+      "features": "Enquadramento quase negro com pontos e contorno luminoso baixo central. Não concluir desaparecimento global dos elementos por esta vista."
+    },
+    {
+      "video_seconds": 125.119386,
+      "status": "observed_ready4",
+      "features": "Grandes formas triangulares de contorno/padrão chevron branco, partes escuras contínuas, luzes pequenas e reflexão no solo. Não cones redondos com manchas multicolores."
+    },
+    {
+      "video_seconds": 155.049023,
+      "status": "observed_after_reload_ready4",
+      "features": "Formas altas com faixas concêntricas e centros circulares escuros, predominância branca/laranja, ambiente azul escuro e reflexos quentes. Não um padrão RGB uniforme durante toda a fase."
+    },
+    {
+      "video_seconds": 185.203695,
+      "status": "observed_ready4_after_pending",
+      "features": "Paisagem com módulos baixos/largos escuros separados em altura, faces inferiores brancas/quentes e faixas com manchas coloridas nas regiões baixas; barras verticais brancas sobre faces azuis. Não cones redondos cobertos uniformemente de círculosRGB."
+    },
+    {
+      "video_seconds": 215.133333,
+      "status": "observed_after_reload_ready4",
+      "features": "Fotograma negro com marca do canal; precisa observar segmento contínuo antes de distinguir apagamento programado de vista fora da geometria."
+    },
+    {
+      "video_seconds": 245.06297,
+      "status": "observed_ready4",
+      "features": "Pontos brancos agrupados sobre paredes/faces escuras angulares, vista parcial; pose não frontal."
+    },
+    {
+      "video_seconds": 275.217642,
+      "status": "observed_ready4",
+      "features": "Túnel de faces sólidas angulares/escuras, faixas e blocos brancos, anéis/discos, profundidade central; iluminação contida. Enquadramento inclinado."
+    },
+    {
+      "video_seconds": 305.14728,
+      "status": "observed_ready4_after_pending",
+      "features": "Túnel com traços brancos/amarelados grandes e irregulares, faces escuras angulares, fundo violeta/azulado, pequenas luzes e vista inclinada."
+    },
+    {
+      "video_seconds": 335.301952,
+      "status": "observed_ready4_after_pending",
+      "features": "Túnel com faces escuras facetadas e volumes/áreas laranja-vermelho-magenta, pequenos pontos brancos; não apenas objetos brancos flutuantes."
+    },
+    {
+      "video_seconds": 365.231589,
+      "status": "observed_ready4_after_pending",
+      "features": "Vista para zona superior com pontos brancos e título FANTASYNTH sobre fundo azul; não concluir que o túnel desapareceu por esta pose."
+    },
+    {
+      "video_seconds": 395.161227,
+      "status": "observed_ready4_after_pending",
+      "features": "Túnel volta a dominância azul/preto/branco com muitos pequenos pontos luminosos e anéis, faces sólidas irregulares escuras."
+    },
+    {
+      "video_seconds": 425.315899,
+      "status": "observed_ready4_after_pending",
+      "features": "Créditos CREATED BY HELLOENJOY sobre o túnel ainda visível, com blocos brancos e paredes escuras. Não comprova a atenuação global inventada no produto."
+    }
+  ],
+  "pending_not_interpreted": [],
+  "frame_policy": "Some initial seeks had readyState1 and stale pictures; those previews were not interpreted. Points listed after reload had readyState4."
+}

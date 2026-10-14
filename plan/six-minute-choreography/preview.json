@@ -1,0 +1,13 @@
+{
+  "file": "C:\\ORCA\\Fantasynt\\plan\\six-minute-choreography\\cone-segments-preview.mp4",
+  "source": "actualD3D11renderer",
+  "duration_seconds": 8,
+  "scene_seconds": [
+    156,
+    164
+  ],
+  "capture_fps": 4,
+  "audio": false,
+  "camera": "fixed",
+  "playback_speed": 1
+}

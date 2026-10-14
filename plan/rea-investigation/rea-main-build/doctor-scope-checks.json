@@ -1,0 +1,62 @@
+[
+  {
+    "name": "node",
+    "ok": true,
+    "classification": "healthy",
+    "detail": "24.21.0"
+  },
+  {
+    "name": "ghidra",
+    "ok": true,
+    "classification": "healthy",
+    "detail": "C:\\ORCA\\Fantasynt\\tools\\vendor\\ghidra_12.1.4_PUBLIC"
+  },
+  {
+    "name": "ghidra-platform",
+    "ok": true,
+    "classification": "healthy",
+    "detail": "win32"
+  },
+  {
+    "name": "ghidra-architecture",
+    "ok": true,
+    "classification": "healthy",
+    "detail": "x64"
+  },
+  {
+    "name": "ghidra-installation",
+    "ok": true,
+    "classification": "healthy",
+    "detail": "C:\\ORCA\\Fantasynt\\tools\\vendor\\ghidra_12.1.4_PUBLIC\\Ghidra\\application.properties"
+  },
+  {
+    "name": "ghidra-version",
+    "ok": true,
+    "classification": "healthy",
+    "detail": "12.1.4"
+  },
+  {
+    "name": "ghidra-headless",
+    "ok": true,
+    "classification": "healthy",
+    "detail": "C:\\ORCA\\Fantasynt\\tools\\vendor\\ghidra_12.1.4_PUBLIC\\support\\analyzeHeadless.bat"
+  },
+  {
+    "name": "ghidra-native_decompiler",
+    "ok": true,
+    "classification": "healthy",
+    "detail": "C:\\ORCA\\Fantasynt\\tools\\vendor\\ghidra_12.1.4_PUBLIC\\Ghidra\\Features\\Decompiler\\os\\win_x86_64\\decompile.exe reports pe x86_64, which matches win32/x64"
+  },
+  {
+    "name": "ghidra-java",
+    "ok": true,
+    "classification": "healthy",
+    "detail": "21.0.12.1; 64-bit; JDK; C:\\ORCA\\Fantasynt\\tools\\vendor\\jdk-21.0.12.1+1; accepted a 64-bit full JDK 21 or newer"
+  },
+  {
+    "name": "ghidra-native_authority",
+    "ok": false,
+    "classification": "unsupported_host",
+    "detail": "REA Windows native controls are unavailable: ENOENT: no such file or directory, open 'C:\\ORCA\\Fantasynt\\tools\\vendor\\rea-main-source\\rea-df2c08b546d4f40103e11b8b31dbfc3d41ee687b\\native\\windows\\build\\manifest.json'"
+  }
+]

@@ -1,0 +1,103 @@
+{
+  "archive": "C:\\ORCA\\Fantasynt\\dist\\Fantasynt-PCVR-Win11-x64-0.2.0.zip",
+  "manifest_hashes_valid": true,
+  "desktop": {
+    "ready": {
+      "device": "Direct3D 11 vendor=0x10de device=0x1f12",
+      "mode": "desktop",
+      "port": 5984,
+      "runtime": "",
+      "type": "ready"
+    },
+    "performance": {
+      "accepted_commands": 1,
+      "average_fps": 58.09963642215854,
+      "frames": 180,
+      "max_delivery_ms": 7.4441,
+      "mean_delivery_ms": 7.4441,
+      "seconds": 3.0981261,
+      "type": "performance"
+    },
+    "client_receipt": {
+      "current": {
+        "bloom": 0.35006216168403625,
+        "fog_density": 0.19998343288898468,
+        "geometry_density": 0.5000621676445007,
+        "light_intensity": 0.6000621914863586,
+        "motion_speed": 0.3000725507736206,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000932574272156
+      },
+      "id": "demo-calm-001",
+      "latency_ms": 7.4441,
+      "revision": 2,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.25,
+        "fog_density": 0.3199999928474426,
+        "geometry_density": 0.30000001192092896,
+        "light_intensity": 0.3199999928474426,
+        "motion_speed": 0.11999999731779099,
+        "palette": [
+          "#B8CEF0",
+          "#6F83AC"
+        ],
+        "pulse_strength": 0.15000000596046448
+      }
+    }
+  },
+  "openxr_simulated": {
+    "ready": {
+      "device": "Direct3D 11 vendor=0x10de device=0x1f12",
+      "mode": "openxr",
+      "port": 5988,
+      "runtime": "FantasyntMock 448x252 per eye",
+      "type": "ready"
+    },
+    "performance": {
+      "accepted_commands": 1,
+      "average_fps": 117.76894583380904,
+      "frames": 180,
+      "max_delivery_ms": 3.4937,
+      "mean_delivery_ms": 3.4937,
+      "seconds": 1.5284165,
+      "type": "performance"
+    },
+    "client_receipt": {
+      "current": {
+        "bloom": 0.3504902720451355,
+        "fog_density": 0.19986926019191742,
+        "geometry_density": 0.5004902482032776,
+        "light_intensity": 0.6004902720451355,
+        "motion_speed": 0.300572007894516,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.40073540806770325
+      },
+      "id": "demo-calm-001",
+      "latency_ms": 3.4937,
+      "revision": 2,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.25,
+        "fog_density": 0.3199999928474426,
+        "geometry_density": 0.30000001192092896,
+        "light_intensity": 0.3199999928474426,
+        "motion_speed": 0.11999999731779099,
+        "palette": [
+          "#B8CEF0",
+          "#6F83AC"
+        ],
+        "pulse_strength": 0.15000000596046448
+      }
+    }
+  },
+  "physical_headset_validated": false
+}

@@ -1,0 +1,21 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"result\":{\"path\":\"C:\\\\Program Files (x86)\\\\Steam\\\\steamapps\\\\common\\\\Fantasynth\\\\Fantasynth\\\\Binaries\\\\Win64\\\\Fantasynth-Win64-Shipping.exe\",\"format\":\"pe\",\"kind\":\"executable\",\"sha256\":\"5380708aaf59992814912122afc3f71d6b18bd41062cde1a5e04fcec4e9f191b\",\"architecture\":\"x86_64\"}}"
+      }
+    ],
+    "structuredContent": {
+      "result": {
+        "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Fantasynth\\Fantasynth\\Binaries\\Win64\\Fantasynth-Win64-Shipping.exe",
+        "format": "pe",
+        "kind": "executable",
+        "sha256": "5380708aaf59992814912122afc3f71d6b18bd41062cde1a5e04fcec4e9f191b",
+        "architecture": "x86_64"
+      }
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 2
+}

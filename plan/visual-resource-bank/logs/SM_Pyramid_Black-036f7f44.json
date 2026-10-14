@@ -1,0 +1,51 @@
+{
+  "input": {
+    "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Black.uasset",
+    "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Black",
+    "object_name": "SM_Pyramid_Black",
+    "class_reference": "/Script/Engine.StaticMesh",
+    "export_index": 3,
+    "serial_offset": 6523,
+    "serial_size": 8631,
+    "payload_sha1": "036f7f44b39f503fe5b5812acc749d268e96bbfa",
+    "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+    "source_reports": [
+      "mesh-assets.json"
+    ],
+    "payload_pak_offset": 97214517,
+    "payload_size": 15158,
+    "source_sha1_verified": true,
+    "resource_id": "SM_Pyramid_Black-036f7f44"
+  },
+  "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Pyramid_Black-036f7f44",
+  "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+  "args": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-export",
+    "-gltf",
+    "-notex",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\SM_Pyramid_Black-036f7f44",
+    "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Pyramid_Black",
+    "SM_Pyramid_Black",
+    "StaticMesh"
+  ],
+  "returncode": 0,
+  "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\SM_Pyramid_Black-036f7f44.log",
+  "method": "qualified package+object+class UModel export",
+  "elapsed_seconds": 0.0470000000204891,
+  "files": [
+    {
+      "path": "resources\\SM_Pyramid_Black-036f7f44\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Pyramid_Black.bin",
+      "size": 5328,
+      "sha256": "a6d47e1c9bb6252d5ec1b2204cb4d2d930b4ea5085be34b7a6e8b1ab256427a5"
+    },
+    {
+      "path": "resources\\SM_Pyramid_Black-036f7f44\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\SM_Pyramid_Black.gltf",
+      "size": 2116,
+      "sha256": "d8b6acc37d9a502ed0f47ef100fec73cd4321c975982165cee032e3afdb55717"
+    }
+  ],
+  "export_status": "exported_pending_geometry_validation"
+}

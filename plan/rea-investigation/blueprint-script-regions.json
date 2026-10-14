@@ -1,0 +1,430 @@
+{
+  "source": "local format-aware parser; not REA Evidence",
+  "assets": [
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/Fantasynth/Director/BeatDirector.uasset",
+      "asset_sha1": "651f6e33a9d5467359527611e76f2aa1eaab37ef",
+      "hash_verified": true,
+      "functions": [
+        {
+          "export_index": 17,
+          "function": "BeatEventDispatcher__DelegateSignature",
+          "asset_script_offset": 10828,
+          "pak_script_offset": 123722369,
+          "memory_size": 3,
+          "storage_size": 3,
+          "script_sha256": "10941dedc1b7fd60933ac0dba3e874553eabd6afa293a147e89244bcd2f966f1",
+          "script_hex": "040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 19,
+          "function": "UpdateEventDispatcher__DelegateSignature",
+          "asset_script_offset": 10911,
+          "pak_script_offset": 123722452,
+          "memory_size": 3,
+          "storage_size": 3,
+          "script_sha256": "10941dedc1b7fd60933ac0dba3e874553eabd6afa293a147e89244bcd2f966f1",
+          "script_hex": "040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 20,
+          "function": "StartEventDispatcher__DelegateSignature",
+          "asset_script_offset": 10958,
+          "pak_script_offset": 123722499,
+          "memory_size": 3,
+          "storage_size": 3,
+          "script_sha256": "10941dedc1b7fd60933ac0dba3e874553eabd6afa293a147e89244bcd2f966f1",
+          "script_hex": "040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 21,
+          "function": "StopEventDispatcher__DelegateSignature",
+          "asset_script_offset": 11005,
+          "pak_script_offset": 123722546,
+          "memory_size": 3,
+          "storage_size": 3,
+          "script_sha256": "10941dedc1b7fd60933ac0dba3e874553eabd6afa293a147e89244bcd2f966f1",
+          "script_hex": "040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 44,
+          "function": "ExecuteUbergraph_BeatDirector",
+          "asset_script_offset": 11860,
+          "pak_script_offset": 123723401,
+          "memory_size": 1524,
+          "storage_size": 952,
+          "script_sha256": "d43d0a9dec6b0fef7db46670687d8f8f15f1ae769775a74d5fc435384a5a91f4",
+          "script_hex": "4e002b0000000f1c000000001c0000001920d9ffffff0b0000001c0000001cdcffffff17160f1b000000001b0000001920daffffff130000001b0000001cddffffff0109000000160f1a000000001a0000001920daffffff200000001a0000001cdeffffff1f426561744576656e743a2000001c000000160f1900000000190000001920daffffff1c000000190000001cdeffffff001a0000001f20496e6465783a00160f1800000000180000001920daffffff1c000000180000001cdeffffff0019000000001b000000160f1700000000170000001920daffffff15000000170000001cdeffffff00180000001f00160f1600000000160000001920daffffff15000000160000001cdeffffff00170000001f00161920d9ffffff3d000000000000001cdbffffff17001600000027272fd5ffffff100000001e000000001ec3f5283f1e0000803f1e0000803f301e00000040160f080000000108000000010a0000000f050000000105000000010900000006f10500000715020000010e000000060a00000014002000000068e1ffffff010a00000001080000001614001e00000068e0ffffff010900000001050000001614001d00000068e8ffffff0020000000001e00000016140106000000001d00000014002600000068e2ffffff010c0000002400160747030000002600000014002600000068e2ffffff010c00000024011607f3030000002600000006f105000014002a00000068e4ffffff01080000001e000000001607ab030000002a00000014002800000068e3ffffff010a0000000108000000160715020000002800000014002700000068e4ffffff010a0000001e0000000016071502000000270000006311000000010700000016065002000014002500000068e0ffffff01090000000105000000160715020000002500000006db03000007f1050000010f000000631300000001040000000029000000160f24000000002400000068e9ffffff010b000000010d000000160f23000000002300000068e5ffffff00240000001e00000000160f22000000002200000068e6ffffff0023000000160f09000000010900000000220000000f24000000002400000068e9ffffff010b000000010d000000160f23000000002300000068e5ffffff00240000001e00000000160f22000000002200000068e6ffffff0023000000160f21000000002100000068e7ffffff0022000000160f1f000000001f00000068dfffffff00230000000021000000160f0a000000010a000000001f000000066302000007f10500000103000000062c040000040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 46,
+          "function": "ReceiveTick",
+          "asset_script_offset": 12892,
+          "pak_script_offset": 123724433,
+          "memory_size": 40,
+          "storage_size": 28,
+          "script_sha256": "5e23a55b4ff836873f6c56473af4300412599430270b1fa6cad8a8c2046fca24",
+          "script_hex": "6429000000002d0000001b3e000000000000001dde05000016040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 47,
+          "function": "UserConstructionScript",
+          "asset_script_offset": 12964,
+          "pak_script_offset": 123724505,
+          "memory_size": 3,
+          "storage_size": 3,
+          "script_sha256": "10941dedc1b7fd60933ac0dba3e874553eabd6afa293a147e89244bcd2f966f1",
+          "script_hex": "040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 53,
+          "function": "Start",
+          "asset_script_offset": 13191,
+          "pak_script_offset": 123724732,
+          "memory_size": 420,
+          "storage_size": 244,
+          "script_sha256": "3032c2f056e55cf80233eef9032bac9ff84aa5e6e8f88651084189b79644f3ca",
+          "script_hex": "140103000000270f34000000003400000068e9ffffff010b000000010d000000160f33000000003300000068e5ffffff00340000001e00000000160f32000000003200000068e6ffffff0033000000160f09000000010900000000320000000f34000000003400000068e9ffffff010b000000010d000000160f33000000003300000068e5ffffff00340000001e00000000160f32000000003200000068e6ffffff0033000000160f31000000003100000068e7ffffff0032000000160f30000000003000000068dfffffff00330000000031000000160f0a000000010a00000000300000006314000000010200000016040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 54,
+          "function": "Stop",
+          "asset_script_offset": 13479,
+          "pak_script_offset": 123725020,
+          "memory_size": 33,
+          "storage_size": 21,
+          "script_sha256": "aee6507af146defbbe19d6ec3db8f0841bb2b864c4bf38c1ebe98f0e5f9ea649",
+          "script_hex": "140103000000286315000000010100000016040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 55,
+          "function": "Reset",
+          "asset_script_offset": 13544,
+          "pak_script_offset": 123725085,
+          "memory_size": 71,
+          "storage_size": 47,
+          "script_sha256": "8d539eab6f556d5422f721c6f9d6b7c8b855c21d08124f22f68f50cb570e37d1",
+          "script_hex": "0f0800000001080000001e00000000140106000000280f0500000001050000001d0000000014010300000028040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        }
+      ],
+      "selected_imports": [
+        "/Script/Engine.KismetMathLibrary.Add_FloatFloat",
+        "/Script/Engine.KismetMathLibrary.FFloor"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/Fantasynth/Director/Sequencers/ActorHiddenSequencer.uasset",
+      "asset_sha1": "090e7ab4eed3ed25d8bd23468da744f5af227150",
+      "hash_verified": true,
+      "functions": [
+        {
+          "export_index": 24,
+          "function": "ExecuteUbergraph_ActorHiddenSequencer",
+          "asset_script_offset": 8806,
+          "pak_script_offset": 123814555,
+          "memory_size": 1198,
+          "storage_size": 750,
+          "script_sha256": "736fe9c9840911c315d9cf9d647fc2e5a8a608f32760262c8038edb06a0e646b",
+          "script_hex": "4cab0400004e00170000000f0400000000040000001920dbffffff13000000040000001ce3ffffff00080000001614000300000068e1ffffff0014000000000400000016076f01000000030000000f12000000001200000000140000004c580300001400160000002714000f000000280f15000000001500000042fcffffff00100000001920dbffffff25000000000000001ce4ffffff0008000000001200000000060000001619000600000045000000000000001b58000000000000006902006d0100000015000000240055010000000f0000002401640100000016000000000d000000164d0f0e000000000e0000001920daffffff250000000e0000001ce0ffffff20cfffffff42fcffffff0010000000160f0c000000000c0000001920d9ffffff1c0000000c0000001cdeffffff42dcffffff0010000000160f0b000000000b0000001920d9ffffff160000000b0000001cdfffffff000c0000001f2000160f0a000000000a0000001920d8ffffff130000000a0000001cddffffff0011000000160f0900000000090000001920d9ffffff1c000000090000001cdfffffff000b000000000e000000160f0700000000070000001920d9ffffff17000000070000001cdfffffff00090000001f3a2000160f0500000000050000001920d9ffffff1c000000050000001cdfffffff0007000000000a000000161b4c000000000000000005000000164d0f13000000001300000068e2ffffff00140000001d01000000160f1400000000140000000013000000060f0000001920ffffffff21000000000000001b3b000000000000000011000000170008000000160f1400000000140000001d000000000f1200000000120000001d00000000060f0000001400160000002714000f000000280f15000000001500000042fcffffff001000000019001100000045000000000000001b5800000000000000690200a00400000015000000240088040000000f0000002401970400000016000000000d0000001606a2030000060c040000040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 27,
+          "function": "OnActorAction",
+          "asset_script_offset": 9680,
+          "pak_script_offset": 123815429,
+          "memory_size": 58,
+          "storage_size": 38,
+          "script_sha256": "f1f055328d4a4b41a36535727c4099ee0745b98891f896d388e55f86f3abe83d",
+          "script_hex": "6411000000001a000000641000000000190000001b38000000000000001da604000016040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 28,
+          "function": "UserConstructionScript",
+          "asset_script_offset": 9762,
+          "pak_script_offset": 123815511,
+          "memory_size": 13,
+          "storage_size": 9,
+          "script_sha256": "19b0b6df758718c8e334f766cf964ecb527aa1132a3f6671a1df6a0b397e4d4e",
+          "script_hex": "1ce5ffffff16040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        }
+      ],
+      "selected_imports": [
+        "/Game/_HelloEnjoy_/Fantasynth/Director/Sequencers/BeatActorSequencerBase.BeatActorSequencerBase_C.OnActorAction",
+        "/Script/Engine.KismetMathLibrary.Add_IntInt"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/Fantasynth/HelloComposer/Composer/ComposerSequencer.uasset",
+      "asset_sha1": "850dc1e8492ff0900017e51a298f786f10d1857f",
+      "hash_verified": true,
+      "functions": [
+        {
+          "export_index": 24,
+          "function": "ExecuteUbergraph_ComposerSequencer",
+          "asset_script_offset": 24183,
+          "pak_script_offset": 154252972,
+          "memory_size": 562,
+          "storage_size": 370,
+          "script_sha256": "1aa75ae7b6779f8f07f6503569ee8e26399f26894abfc044f1dd679827f24406",
+          "script_hex": "4c2f0200004e00170000000f1000000000100000001920b7ffffff13000000100000001ccfffffff010b0000001614000f00000068c4ffffff00130000000010000000164f000f0000000f16000000001600000000130000004cfa0000001920b7ffffff25000000000000001cd1ffffff010b00000000160000000012000000161900120000000e000000000000001b5f00000000000000164d0f11000000001100000068ccffffff00130000001d01000000160f1300000000130000000011000000060f0000000f1300000000130000001d000000000f1600000000160000001d00000000060f0000004f01f8ffffff1401060000002806440100001cd7ffffff0014000000160677010000069101000007bd01000001f8ffffff4d0f0500000001050000001e000000001bb000000000000000164d07f201000001f8ffffff4d4f01060000001bd2000000000000000015000000164d140106000000284d061402000006e301000006ae010000040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 26,
+          "function": "Mute",
+          "asset_script_offset": 24635,
+          "pak_script_offset": 154253424,
+          "memory_size": 40,
+          "storage_size": 28,
+          "script_sha256": "f2ec6593f566a4dcf75fbda610905006471faab83fc0212ae7b7328a0a89a2f0",
+          "script_hex": "641400000000190000001b89000000000000001da901000016040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 27,
+          "function": "Stop",
+          "asset_script_offset": 24707,
+          "pak_script_offset": 154253496,
+          "memory_size": 22,
+          "storage_size": 18,
+          "script_sha256": "b59f426d11678c1fd203160183bc63a0f607e49bb68961504c2f843beb7ca9fc",
+          "script_hex": "1b89000000000000001d2002000016040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 29,
+          "function": "Update",
+          "asset_script_offset": 24805,
+          "pak_script_offset": 154253594,
+          "memory_size": 40,
+          "storage_size": 28,
+          "script_sha256": "e18c83d2cd54b7aa38e483ccafdd957559e96e29b3a66b48540e3a29cde4f852",
+          "script_hex": "6415000000001c0000001b89000000000000001d2502000016040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 30,
+          "function": "Beat",
+          "asset_script_offset": 24877,
+          "pak_script_offset": 154253666,
+          "memory_size": 22,
+          "storage_size": 18,
+          "script_sha256": "5a69ca23b77e0819c8741324983a2fcdd1104a5ed72aa6464b2eaa8ac059031c",
+          "script_hex": "1b89000000000000001d2a02000016040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 39,
+          "function": "UserConstructionScript",
+          "asset_script_offset": 25235,
+          "pak_script_offset": 154254024,
+          "memory_size": 576,
+          "storage_size": 352,
+          "script_sha256": "f3301ad3c1ae73a36c47282aabc820b1d28bc61f0e3a90f755c1d09524294bd7",
+          "script_hex": "4c3d0200001cd4ffffff160f2500000000250000001d000000000f2600000000260000001d000000000f2200000000220000001920b7ffffff13000000220000001ccfffffff010b0000001614002000000068c4ffffff00250000000022000000164f00200000000f26000000002600000000250000004cf30100001920b7ffffff25000000000000001cd1ffffff010b000000002600000000230000001614001f0000001920b5ffffff130000001f0000001cbaffffff0023000000164f001f0000001920b7ffffff25000000000000001cd1ffffff010b00000000260000000023000000160f2100000000210000001920b5ffffff13000000210000001cbbffffff0023000000161920b7ffffff26000000000000001cceffffff010a0000000026000000002100000027164d0f24000000002400000068ccffffff00250000001d01000000160f2500000000250000000024000000063d000000040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 91,
+          "function": "OnBeatEvent",
+          "asset_script_offset": 27517,
+          "pak_script_offset": 154256306,
+          "memory_size": 3060,
+          "storage_size": 1984,
+          "script_sha256": "f1844296f9bdc2be09787d65493913d57ab24a654861aea96b0ab7684b263954",
+          "script_hex": "4cf10b00000f2800000000280000002fa0ffffffb40000002f9fffffff1400000024001e000000001e000000001d00000000240028302f9fffffff1400000024001e000000001e000000001d00000000240028302f9fffffff1400000024001e000000001e000000001d00000000240028302f9fffffff1400000024001e000000001e000000001d00000000240028302f9fffffff1400000024001e000000001e000000001d00000000240028302f9fffffff1400000024001e000000001e000000001d00000000240028302f9fffffff1400000024001e000000001e000000001d00000000240028302f9fffffff1400000024001e000000001e000000001d00000000240028302f9fffffff1400000024001e000000001e000000001d0000000024002830301b910000000000000000400000001614003e0000001920b7ffffff1c0000003e0000001cd0ffffff0107000000004000000016070b060000003e000000073304000001f9ffffff0f4300000000430000001920b7ffffff13000000430000001ccfffffff0107000000160f4200000000420000001920b6ffffff13000000420000001cbcffffff0043000000160f3100000000310000001920b6ffffff13000000310000001cbcffffff0040000000165f002e0000001901b3ffffff0a0000002e0000001cd3ffffff160f2d000000002d0000001920b5ffffff130000002d0000001cbbffffff002e000000160f2c000000002c0000001920b6ffffff160000002c0000001cbdffffff002d0000001f2000160f2b000000002b0000001920b6ffffff1c0000002b0000001cbdffffff002c0000000031000000160f2a000000002a0000001920b6ffffff160000002a0000001cbdffffff002b0000001f2f00160f2900000000290000001920b6ffffff1c000000290000001cbdffffff002a0000000042000000161920b5ffffff3d000000000000001cb9ffffff17002900000027272fa6ffffff100000001e000000001ec3f5283f1e0000803f1e0000803f301e00000040161920b7ffffff25000000000000001cd1ffffff01070000000040000000003f0000001614003a0000001920dcffffff370000003a0000001cd2ffffff20ddffffff42b4ffffff42a3ffffff003f000000003b00000016070b060000003a0000000f280000000028000000003b0000000f5300000000530000001d000000000f5700000000570000001d000000000f4d000000004d0000001920b7ffffff130000004d0000001ccfffffff010b0000001614004c00000068c4ffffff0053000000004d00000016071b060000004c0000000f57000000005700000000530000004ca70b00001920b7ffffff25000000000000001cd1ffffff010b0000000057000000004e0000001619004e0000000e000000000000001bbf00000000000000164d1401060000002806f10b000019010e00000017000000000000001bbe000000000000000109000000160f5600000000560000001d000000000f5400000000540000001d000000000f4500000000450000001920b7ffffff29000000450000001ccfffffff19010e00000009000000ffffffff01ffffffff1614004400000068c4ffffff005600000000450000001607db07000000440000000f54000000005400000000560000004c910700001920b7ffffff3b000000000000001cd1ffffff19010e00000009000000ffffffff01ffffffff00540000000049000000161900490000000e000000000000001bbf00000000000000164d0f55000000005500000068ccffffff00560000001d01000000160f560000000056000000005500000006760600001920b7ffffff25000000000000001cd1ffffff01070000000040000000003f0000001614003c0000001920dcffffff370000003c0000001cd2ffffff20ddffffff42b4ffffff42a2ffffff003f000000003d00000016078b080000003c0000001401060000002706f10b0000140106000000280f4100000000410000001d000000000f5200000000520000001d000000000f4a000000004a0000001920b7ffffff130000004a0000001ccfffffff010b0000001614003000000068c4ffffff0041000000004a0000001607060a000000300000000f52000000005200000000410000004cbc0900001920b7ffffff25000000000000001cd1ffffff010b0000000052000000004b0000001619004b00000017000000000000001b61000000000000000028000000164d0f2f000000002f00000068ccffffff00410000001d01000000160f410000000041000000002f00000006c40800000f5900000000590000001d000000000f5a000000005a0000001d000000000f4700000000470000001920b7ffffff29000000470000001ccfffffff19010e00000009000000ffffffff01ffffffff1614004600000068c4ffffff005900000000470000001607a20b000000460000000f5a000000005a00000000590000004c580b00001920b7ffffff3b000000000000001cd1ffffff19010e00000009000000ffffffff01ffffffff005a00000000480000001619004800000017000000000000001b61000000000000000028000000164d0f58000000005800000068ccffffff00590000001d01000000160f590000000059000000005800000006340a000006f10b00000f51000000005100000068ccffffff00530000001d01000000160f5300000000530000000051000000061c050000040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 100,
+          "function": "GetSequenceIndexxx",
+          "asset_script_offset": 29835,
+          "pak_script_offset": 154258624,
+          "memory_size": 435,
+          "storage_size": 263,
+          "script_sha256": "98eb61619dce28209fb20b2c20db804a68ebd3717f0d18884170339319fc293b",
+          "script_hex": "0f6200000000620000001920b7ffffff13000000620000001ccfffffff01070000001614006100000068c5ffffff00620000001d0000000016079901000000610000000f6000000000600000001920b7ffffff13000000600000001ccfffffff0107000000160f5f000000005f00000068beffffff1901b2ffffff09000000b8ffffff01b8ffffff0108000000160f5e000000005e00000068c3ffffff005f0000001df0d8ffff160f5d000000005d00000068c1ffffff005e0000000060000000160f5c000000005c00000068bfffffff005d000000005e000000010d000000160f630000004863000000005c00000006b00100000f6300000048630000001d00000000040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 145,
+          "function": "TweenAction",
+          "asset_script_offset": 31762,
+          "pak_script_offset": 154260551,
+          "memory_size": 2370,
+          "storage_size": 1454,
+          "script_sha256": "82ce6f6ef997a44bde787b6a4f8269548362b52ce91ef2c6ad14ae00cfe26aec",
+          "script_hex": "4c3f0900000f7e000000007e00000068cdffffff01050000000090000000160f050000000105000000007e0000001b910000000000000000800000001614006d0000001920b7ffffff1c0000006d0000001cd0ffffff010700000000800000001607b5060000006d0000001920b7ffffff25000000000000001cd1ffffff01070000000080000000007f0000001614007900000068c6ffffff42d9ffffff007f0000001e000000001607ba06000000790000001920b7ffffff25000000000000001cd1ffffff01070000000080000000007f000000160f69000000006900000068caffffff010500000042d9ffffff007f000000160f68000000006800000068c7ffffff00690000001e000000001e0000803f160f650000000065000000006800000014008900000068c8ffffff00650000001e0000803f16071a0200000089000000140106000000281920b7ffffff25000000000000001cd1ffffff01070000000080000000007f000000160f77000000007700000068c9ffffff1e000000001e0000803f006500000042f7ffffff007f0000001e000000401d02000000160f66000000006600000000770000001920b7ffffff25000000000000001cd1ffffff01070000000080000000007f0000001614007c00000068c6ffffff42daffffff007f0000001e000000001607f0060000007c0000001920b7ffffff25000000000000001cd1ffffff01070000000080000000007f000000160f7d000000007d00000068c2ffffff006600000042daffffff007f000000160f7b000000007b00000068c0ffffff007d000000160f7a000000007a00000068cbffffff007b000000160f78000000007800000068caffffff007a00000042daffffff007f000000160f67000000006700000000780000001920b7ffffff25000000000000001cd1ffffff01070000000080000000007f000000161400700000001920dcffffff37000000700000001cd2ffffff20ddffffff42b4ffffff42a3ffffff007f000000007100000016071007000000700000001920b7ffffff25000000000000001cd1ffffff01070000000080000000007f000000161400750000001920dcffffff37000000750000001cd2ffffff20ddffffff42b4ffffff42a2ffffff007f000000007600000016071007000000750000000f8c000000008c0000001d000000000f8b000000008b0000001d000000000f8500000000850000001920b7ffffff13000000850000001ccfffffff010b0000001614008400000068c4ffffff008c000000008500000016071507000000840000000f8b000000008b000000008c0000004cf50800001920b7ffffff25000000000000001cd1ffffff010b000000008b00000000860000001619008600000029000000000000001bd100000000000000007100000000760000000067000000164d063f0900000f6500000000650000001901b2ffffff09000000dbffffff01dbffffff061a0200000f6700000000670000000066000000063d040000063f09000019010e00000017000000000000001bbe000000000000000109000000160f8e000000008e0000001d000000000f8f000000008f0000001d000000000f8200000000820000001920b7ffffff29000000820000001ccfffffff19010e00000009000000ffffffff01ffffffff1614008100000068c4ffffff008e00000000820000001607f008000000810000000f8f000000008f000000008e0000004ca60800001920b7ffffff3b000000000000001cd1ffffff19010e00000009000000ffffffff01ffffffff008f00000000830000001619008300000029000000000000001bd100000000000000007100000000760000000067000000164d0f8d000000008d00000068ccffffff008e0000001d01000000160f8e000000008e000000008d0000000670070000063f0900000f8a000000008a00000068ccffffff008c0000001d01000000160f8c000000008c000000008a00000006ab050000040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 146,
+          "function": "StopAction",
+          "asset_script_offset": 33260,
+          "pak_script_offset": 154262049,
+          "memory_size": 14,
+          "storage_size": 10,
+          "script_sha256": "c33615f2120f8d300c4dbbb0266bb1fbb0a23656eddb7556be6e553225d97174",
+          "script_hex": "14010600000028040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        }
+      ],
+      "selected_imports": [
+        "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Blueprints/HelloComposerAction.HelloComposerAction.Time_14_6F5F764248B40B03F71E7C9ACAD28877",
+        "/Script/Engine.KismetMathLibrary.Add_FloatFloat",
+        "/Script/Engine.KismetMathLibrary.Add_IntInt",
+        "/Script/Engine.KismetMathLibrary.Divide_FloatFloat",
+        "/Script/Engine.KismetMathLibrary.Round"
+      ]
+    },
+    {
+      "path": "Fantasynth/Content/_HelloEnjoy_/Fantasynth/Blueprints/Player/SequenceManager.uasset",
+      "asset_sha1": "6fde97f2b22330e2259ef86fde42efff419a7469",
+      "hash_verified": true,
+      "functions": [
+        {
+          "export_index": 11,
+          "function": "EndTimeDispatcher__DelegateSignature",
+          "asset_script_offset": 10385,
+          "pak_script_offset": 123738310,
+          "memory_size": 3,
+          "storage_size": 3,
+          "script_sha256": "10941dedc1b7fd60933ac0dba3e874553eabd6afa293a147e89244bcd2f966f1",
+          "script_hex": "040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 17,
+          "function": "ExecuteUbergraph_SequenceManager",
+          "asset_script_offset": 10616,
+          "pak_script_offset": 123738541,
+          "memory_size": 286,
+          "storage_size": 186,
+          "script_sha256": "748a13ab300e06e93fad0eca388e0077a167e78b2db932a88fd75eaa45335844",
+          "script_hex": "4e00100000001b59000000000000000102000000160f0e000000000e000000191919010800000009000000d2ffffff01d2ffffff09000000d0ffffff01d0ffffff0a0000000e0000001cd9ffffff1614000d00000068dbffffff000e00000019010800000009000000e7ffffff01e7ffffff16071b010000000d000000630b000000010300000016061b01000014000c00000068dcffffff01020000001e0000000016070a000000000c000000062100000006e1000000040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 19,
+          "function": "ReceiveTick",
+          "asset_script_offset": 10882,
+          "pak_script_offset": 123738807,
+          "memory_size": 40,
+          "storage_size": 28,
+          "script_sha256": "cc53015093dbce404f48de5880cd44f9ba261b7e1e56b583377af62812ee06d5",
+          "script_hex": "640f00000000120000001b34000000000000001d1601000016040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 20,
+          "function": "UserConstructionScript",
+          "asset_script_offset": 10954,
+          "pak_script_offset": 123738879,
+          "memory_size": 3,
+          "storage_size": 3,
+          "script_sha256": "10941dedc1b7fd60933ac0dba3e874553eabd6afa293a147e89244bcd2f966f1",
+          "script_hex": "040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 32,
+          "function": "PlaySequence",
+          "asset_script_offset": 11407,
+          "pak_script_offset": 123739332,
+          "memory_size": 863,
+          "storage_size": 547,
+          "script_sha256": "d27208e8a10ef8e67f0e3d31ed913c909349d609076261511422ad9ff8ddc6f6",
+          "script_hex": "4c5c0300001400180000000107000000191919010800000009000000d2ffffff01d2ffffff09000000d0ffffff01d0ffffff55000000000000001cd5ffffff690200ae0000000018000000289700000019010800000009000000e5ffffff01e5ffffff27a50000000106000000001600000016191919010800000009000000d2ffffff01d2ffffff09000000d0ffffff01d0ffffff0a000000000000001cd6ffffff1614001900000001070000000f15000000001500000068deffffff690200740100000019000000285d01000019010800000009000000e5ffffff01e5ffffff276b0100000106000000001700000019010800000009000000e6ffffff01e6ffffff16191919010800000009000000d3ffffff01d3ffffff09000000d1ffffff01d1ffffff13000000000000001ce2ffffff0015000000160f1f000000001f0000001d000000000f1d000000001d0000001d000000000f1c000000001c0000001920d4ffffff130000001c0000001cdfffffff01090000001614001a00000068daffffff001f000000001c000000160706030000001a0000000f1d000000001d000000001f0000004c120300001920d4ffffff25000000000000001ce0ffffff0109000000001d000000001b0000001619001b0000000e000000000000001b6600000000000000164d140104000000274d0f1e000000001e00000068ddffffff001f0000001d01000000160f1f000000001f000000001e0000000617020000040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 36,
+          "function": "PauseSequence",
+          "asset_script_offset": 12108,
+          "pak_script_offset": 123740033,
+          "memory_size": 497,
+          "storage_size": 313,
+          "script_sha256": "fd2506df95c9b70110949ba8b49eae7de15deabe048216e28a28548afe85c50c",
+          "script_hex": "07ab0000000023000000191919010800000009000000d2ffffff01d2ffffff09000000d0ffffff01d0ffffff0a000000000000001cd7ffffff16191919010800000009000000d3ffffff01d3ffffff09000000d1ffffff01d1ffffff0a000000000000001ce1ffffff1606ee010000191919010800000009000000d2ffffff01d2ffffff09000000d0ffffff01d0ffffff0a000000000000001cd6ffffff160f220000000022000000191919010800000009000000d2ffffff01d2ffffff09000000d0ffffff01d0ffffff0a000000220000001cd9ffffff160f21000000002100000068deffffff002200000019010800000009000000e6ffffff01e6ffffff16191919010800000009000000d3ffffff01d3ffffff09000000d1ffffff01d1ffffff13000000000000001ce2ffffff002100000016040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 39,
+          "function": "IsPlaying",
+          "asset_script_offset": 12541,
+          "pak_script_offset": 123740466,
+          "memory_size": 108,
+          "storage_size": 68,
+          "script_sha256": "77fcad2b3f0e599459e5c63d9f11172f995ed044b364a5e10191ea0dfc223139",
+          "script_hex": "140025000000191919010800000009000000d2ffffff01d2ffffff09000000d0ffffff01d0ffffff0a000000250000001cd8ffffff161448260000000025000000040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 46,
+          "function": "StopSequence",
+          "asset_script_offset": 12875,
+          "pak_script_offset": 123740800,
+          "memory_size": 600,
+          "storage_size": 376,
+          "script_sha256": "0d3c286b9cf71c131e4c3f2d32e0a31926ade6a05eb947204965e41857d44ce9",
+          "script_hex": "4c55020000191919010800000009000000d2ffffff01d2ffffff09000000d0ffffff01d0ffffff0a000000000000001cd7ffffff16191919010800000009000000d2ffffff01d2ffffff09000000d0ffffff01d0ffffff13000000000000001cd5ffffff010500000016191919010800000009000000d3ffffff01d3ffffff09000000d1ffffff01d1ffffff0a000000000000001ce1ffffff160f2d000000002d0000001d000000000f2900000000290000001d000000000f2b000000002b0000001920d4ffffff130000002b0000001cdfffffff01090000001614002a00000068daffffff002d000000002b000000164f002a0000000f290000000029000000002d0000004c0b0200001920d4ffffff25000000000000001ce0ffffff010900000000290000000028000000161900280000000e000000000000001b6800000000000000164d0f2c000000002c00000068ddffffff002d0000001d01000000160f2d000000002d000000002c0000000620010000040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 52,
+          "function": "SeekSequence",
+          "asset_script_offset": 13475,
+          "pak_script_offset": 123741400,
+          "memory_size": 431,
+          "storage_size": 263,
+          "script_sha256": "5147f98504454ef7a61e1bcec1d6be9c2b2f51aa4bd6fa248095346b19272669",
+          "script_hex": "0f2f000000002f0000001e000000000f320000000032000000191919010800000009000000d2ffffff01d2ffffff09000000d0ffffff01d0ffffff0a000000320000001cd9ffffff160f31000000003100000068deffffff00320000000033000000160f2f000000002f0000000031000000191919010800000009000000d2ffffff01d2ffffff09000000d0ffffff01d0ffffff13000000000000001cd5ffffff002f000000160f30000000003000000068deffffff002f00000019010800000009000000e6ffffff01e6ffffff16191919010800000009000000d3ffffff01d3ffffff09000000d1ffffff01d1ffffff13000000000000001ce2ffffff003000000016040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        },
+        {
+          "export_index": 53,
+          "function": "SetupSequence",
+          "asset_script_offset": 13782,
+          "pak_script_offset": 123741707,
+          "memory_size": 17,
+          "storage_size": 13,
+          "script_sha256": "279c2d424b34eb234bc7e2aa94a05cbb51311c1b7cd5175d01efe23d4af35de5",
+          "script_hex": "1b690000000000000016040b53",
+          "native_header_profile": "candidate UE4 UField/UStruct native header; size/bounds confirmed, semantics not fully verified"
+        }
+      ],
+      "selected_imports": [
+        "/Game/_HelloEnjoy_/Fantasynth/Blueprints/Player/SequenceProfile.SequenceProfile_C",
+        "/Script/LevelSequence.LevelSequencePlayer",
+        "/Game/_HelloEnjoy_/Fantasynth/Blueprints/Player/SequenceProfile.SequenceProfile_C.EndTime",
+        "/Game/_HelloEnjoy_/Fantasynth/Blueprints/Player/SequenceProfile.SequenceProfile_C.SequenceOffset",
+        "/Game/_HelloEnjoy_/Fantasynth/Blueprints/Player/SequenceProfile.SequenceProfile_C.StartTime",
+        "/Script/Engine.AudioComponent.Play",
+        "/Script/Engine.KismetMathLibrary.Add_FloatFloat",
+        "/Script/Engine.KismetMathLibrary.Add_IntInt",
+        "/Script/LevelSequence.LevelSequencePlayer.GetPlaybackPosition",
+        "/Script/LevelSequence.LevelSequencePlayer.IsPlaying",
+        "/Script/LevelSequence.LevelSequencePlayer.Pause",
+        "/Script/LevelSequence.LevelSequencePlayer.Play",
+        "/Script/LevelSequence.LevelSequencePlayer.SetPlaybackPosition",
+        "/Game/_HelloEnjoy_/Fantasynth/Blueprints/Player/SequenceProfile.SequenceProfile_C.Audio",
+        "/Game/_HelloEnjoy_/Fantasynth/Blueprints/Player/SequenceProfile.SequenceProfile_C.Sequence",
+        "/Script/LevelSequence.LevelSequenceActor.SequencePlayer",
+        "/Game/_HelloEnjoy_/Fantasynth/Blueprints/Player/SequenceProfile"
+      ]
+    }
+  ]
+}

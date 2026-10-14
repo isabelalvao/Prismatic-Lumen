@@ -1,0 +1,14 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/_HelloEnjoy_/Fantasynth/HelloComposer/Assets/Materials/M_White_BaseColor.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 16 Exports: 1 Imports: 4 Game: 10000D0
+Export "M_White_BaseColor" was found in package "/Game/_HelloEnjoy_/Fantasynth/HelloComposer/Assets/Materials/M_White_BaseColor.uasset"
+Found 1 object(s)
+Loading MaterialInstanceConstant M_White_BaseColor from package /Game/_HelloEnjoy_/Fantasynth/HelloComposer/Assets/Materials/M_White_BaseColor.uasset
+Loading package: /Game/_HelloEnjoy_/Materials/BaseMaterials/M_BaseColor.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 58 Exports: 2 Imports: 3 Game: 10000D0
+Loading Material3 M_BaseColor from package /Game/_HelloEnjoy_/Materials/BaseMaterials/M_BaseColor.uasset
+StructProperty: unknown UMaterial3 BaseColor
+BoolProperty: unknown UMaterial3 bUseLightmapDirectionality
+Loaded in 0.0 sec, 61 allocs, 0.02 MBytes serialized in 5 calls.
+Exporting objects ...
+Ignoring MaterialInstanceConstant'M_White_BaseColor' due to empty parameters

@@ -1,0 +1,47 @@
+[
+  {
+    "file": "src/config/environment.ts",
+    "before_sha256": "29c12750edfe2d5c64abdc8720cb83609bda6a2738986363d134557091baac0b",
+    "experiment_sha256": "1f98c049878889f8f6e789790585d281903303861b8625d508533524c5747b5a"
+  },
+  {
+    "file": "src/config/parseConfig.ts",
+    "before_sha256": "70388528861e013f236a5f1c8fedac3f1242dcbdf487bbfd6db5bb75ce39b7aa",
+    "experiment_sha256": "87b117ae00da4220b4b0fe52a651f4531ae7fcc4b87842d853c7e13930dff39c"
+  },
+  {
+    "file": "src/config/types.ts",
+    "before_sha256": "2940ffe0ca4d19ffaf7cdef23695f1b920384ce5ad6246c2d5e16d9c0e176038",
+    "experiment_sha256": "d9d8116883e9592f93bb6257e7bca999bd49dff0b96a05adbe3790ee04aa8387"
+  },
+  {
+    "file": "src/ghidra/GhidraProvider.ts",
+    "before_sha256": "b5c1e2d6de4f86b6cdd8cfd193e4b73b90325c43ae27eac60f07706376a146c2",
+    "experiment_sha256": "04daf223e1d701a043d2add2203fb3ef4391e065e4b0963ed565a572d39fcf88"
+  },
+  {
+    "file": "src/ghidra/GhidraLauncher.ts",
+    "before_sha256": "4e140528add970229f6c9ce176471010f224f0e2ee544d8139bb65df52849ceb",
+    "experiment_sha256": "52ef13b6b32383a41429726912acbe1dd9fc95d07dc76b4abff539efa6ef8d84"
+  },
+  {
+    "file": "src/ghidra/GhidraAnalysisSeeds.ts",
+    "before_sha256": "71307e2806d6d8ffd53e015375a1c32e029894e2bd50a3e37527364d73373fa0",
+    "experiment_sha256": "a8304dd70a3f165b188e1e5c32c8946e88f4f93220eab9b18956136c4ace4629"
+  },
+  {
+    "file": "src/ghidra/GhidraSessionValues.ts",
+    "before_sha256": "6767943dff606c6ddd382ed10cd0502f8297dd9599a41874343c5bb079510b83",
+    "experiment_sha256": "cb7438fc5a475fdf463a24ea2e0c8fecaecdc1c7b42833ee593c6085ef109794"
+  },
+  {
+    "file": "src/ghidra/GhidraClient.ts",
+    "before_sha256": "58ccbd2a04d1ce6911d1a62c72e4d106ced23b878aebd84bdc668a3c8137430a",
+    "experiment_sha256": "d4847d6268ff8ae83065999a7d70dab581fedd500b786a4c53fb0a75862a97c7"
+  },
+  {
+    "file": "src/ghidra/GhidraClientTypes.ts",
+    "before_sha256": "6b24f30696178545a74d5e13a9da30db0335164df3746a57db7589ba5a54167d",
+    "experiment_sha256": "d601337662984fa0eea1ecc47279976858f751ae7c5213fead1136e229f6d378"
+  }
+]

@@ -1,0 +1,21 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_RockLight.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 32 Exports: 1 Imports: 6 Game: 10000D0
+Export "M_RockLight" was found in package "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_RockLight.uasset"
+Found 1 object(s)
+Loading MaterialInstanceConstant M_RockLight from package /Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_RockLight.uasset
+Loading package: /Game/_HelloEnjoy_/Materials/BaseMaterials/M_Texture_Emissive.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 69 Exports: 3 Imports: 6 Game: 10000D0
+Loading package: /Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/RT_RockLight.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 21 Exports: 1 Imports: 2 Game: 10000D0
+WARNING: Unknown class "TextureRenderTarget2D" for object "RT_RockLight"
+Loading Material3 M_Texture_Emissive from package /Game/_HelloEnjoy_/Materials/BaseMaterials/M_Texture_Emissive.uasset
+StructProperty: unknown UMaterial3 BaseColor
+BoolProperty: unknown UMaterial3 bUseLightmapDirectionality
+Loading package: /Game/_HelloEnjoy_/Materials/Textures/color_white.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 14 Exports: 1 Imports: 2 Game: 10000D0
+FloatProperty: unknown UMaterialExpressionScalarParameter SliderMax
+Loading Texture2D color_white from package /Game/_HelloEnjoy_/Materials/Textures/color_white.uasset
+Loaded in 0.0 sec, 122 allocs, 0.21 MBytes serialized in 16 calls.
+Exporting objects ...
+Exporting MaterialInstanceConstant M_RockLight to C:/ORCA/Fantasynt/plan/opening-development/material-evidence/exports/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_RockLight.mat
+Exporting Texture2D color_white to C:/ORCA/Fantasynt/plan/opening-development/material-evidence/exports/Game/_HelloEnjoy_/Materials/Textures/color_white.png
+Exporting Material3 M_Texture_Emissive to C:/ORCA/Fantasynt/plan/opening-development/material-evidence/exports/Game/_HelloEnjoy_/Materials/BaseMaterials/M_Texture_Emissive.mat

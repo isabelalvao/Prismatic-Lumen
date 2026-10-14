@@ -1,0 +1,51 @@
+{
+  "input": {
+    "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/hollow_pyramid_complex.uasset",
+    "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/hollow_pyramid_complex",
+    "object_name": "hollow_pyramid_complex",
+    "class_reference": "/Script/Engine.StaticMesh",
+    "export_index": 3,
+    "serial_offset": 5210,
+    "serial_size": 21716,
+    "payload_sha1": "3bac81dffa7805f2d74e4770da81e7bd1b0ee436",
+    "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+    "source_reports": [
+      "mesh-assets.json"
+    ],
+    "payload_pak_offset": 103159861,
+    "payload_size": 26930,
+    "source_sha1_verified": true,
+    "resource_id": "hollow_pyramid_complex-3bac81df"
+  },
+  "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\hollow_pyramid_complex-3bac81df",
+  "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+  "args": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-export",
+    "-gltf",
+    "-notex",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\hollow_pyramid_complex-3bac81df",
+    "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/hollow_pyramid_complex",
+    "hollow_pyramid_complex",
+    "StaticMesh"
+  ],
+  "returncode": 0,
+  "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\hollow_pyramid_complex-3bac81df.log",
+  "method": "qualified package+object+class UModel export",
+  "elapsed_seconds": 0.0470000000204891,
+  "files": [
+    {
+      "path": "resources\\hollow_pyramid_complex-3bac81df\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\hollow_pyramid_complex.bin",
+      "size": 15420,
+      "sha256": "5059ae03f52727c2b009d9462708bf06ed12328e88918f7d31ebe13bca8f3a43"
+    },
+    {
+      "path": "resources\\hollow_pyramid_complex-3bac81df\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\hollow_pyramid_complex.gltf",
+      "size": 2144,
+      "sha256": "34def63200ce212fad48fe50c9c6751186b1d80095cd0347e612bf3c12fc295c"
+    }
+  ],
+  "export_status": "exported_pending_geometry_validation"
+}

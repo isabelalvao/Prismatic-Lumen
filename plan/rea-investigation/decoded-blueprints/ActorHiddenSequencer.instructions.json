@@ -1,0 +1,4807 @@
+{
+  "source": "local format-aware Blueprint decoding; not REA Evidence or runtime",
+  "asset_path": "Fantasynth/Content/_HelloEnjoy_/Fantasynth/Director/Sequencers/ActorHiddenSequencer.uasset",
+  "asset_sha1": "090e7ab4eed3ed25d8bd23468da744f5af227150",
+  "hash_verified": true,
+  "functions": [
+    {
+      "function": "ExecuteUbergraph_ActorHiddenSequencer",
+      "export_index": 24,
+      "asset_script_offset": 8806,
+      "pak_script_offset": 123814555,
+      "script_sha256": "736fe9c9840911c315d9cf9d647fc2e5a8a608f32760262c8038edb06a0e646b",
+      "storage_size": 750,
+      "memory_size": 1198,
+      "expected_storage_size": 750,
+      "expected_memory_size": 1198,
+      "sizes_match": true,
+      "native_header_bounds_match": true,
+      "top_level_storage_offsets": [
+        0,
+        5,
+        11,
+        46,
+        68,
+        78,
+        93,
+        98,
+        105,
+        112,
+        132,
+        167,
+        230,
+        231,
+        276,
+        316,
+        354,
+        389,
+        429,
+        468,
+        508,
+        523,
+        524,
+        550,
+        565,
+        570,
+        605,
+        620,
+        635,
+        640,
+        647,
+        654,
+        674,
+        737,
+        742,
+        747,
+        749
+      ],
+      "target_checks": [
+        {
+          "kind": "jump",
+          "source_storage_offset": 0,
+          "target_memory_offset": 1195,
+          "instruction_boundary": true
+        },
+        {
+          "kind": "jump",
+          "source_storage_offset": 68,
+          "target_memory_offset": 367,
+          "instruction_boundary": true
+        },
+        {
+          "kind": "jump",
+          "source_storage_offset": 93,
+          "target_memory_offset": 856,
+          "instruction_boundary": true
+        },
+        {
+          "kind": "switch_end",
+          "source_storage_offset": 190,
+          "target_memory_offset": 365,
+          "instruction_boundary": true
+        },
+        {
+          "kind": "switch_next",
+          "source_storage_offset": 190,
+          "target_memory_offset": 341,
+          "instruction_boundary": true
+        },
+        {
+          "kind": "switch_next",
+          "source_storage_offset": 190,
+          "target_memory_offset": 356,
+          "instruction_boundary": true
+        },
+        {
+          "kind": "jump",
+          "source_storage_offset": 565,
+          "target_memory_offset": 15,
+          "instruction_boundary": true
+        },
+        {
+          "kind": "jump",
+          "source_storage_offset": 635,
+          "target_memory_offset": 15,
+          "instruction_boundary": true
+        },
+        {
+          "kind": "switch_end",
+          "source_storage_offset": 697,
+          "target_memory_offset": 1184,
+          "instruction_boundary": true
+        },
+        {
+          "kind": "switch_next",
+          "source_storage_offset": 697,
+          "target_memory_offset": 1160,
+          "instruction_boundary": true
+        },
+        {
+          "kind": "switch_next",
+          "source_storage_offset": 697,
+          "target_memory_offset": 1175,
+          "instruction_boundary": true
+        },
+        {
+          "kind": "jump",
+          "source_storage_offset": 737,
+          "target_memory_offset": 930,
+          "instruction_boundary": true
+        },
+        {
+          "kind": "jump",
+          "source_storage_offset": 742,
+          "target_memory_offset": 1036,
+          "instruction_boundary": true
+        }
+      ],
+      "instructions": [
+        {
+          "storage_offset": 0,
+          "memory_offset": 0,
+          "token": "0x4c",
+          "instruction": "EX_PushExecutionFlow",
+          "target_memory_offset": 1195,
+          "storage_end": 5,
+          "memory_end": 5
+        },
+        {
+          "storage_offset": 5,
+          "memory_offset": 5,
+          "token": "0x4e",
+          "instruction": "EX_ComputedJump",
+          "expression": {
+            "storage_offset": 6,
+            "memory_offset": 6,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 23,
+              "name": "EntryPoint",
+              "class": "IntProperty"
+            },
+            "storage_end": 11,
+            "memory_end": 15
+          },
+          "storage_end": 11,
+          "memory_end": 15
+        },
+        {
+          "storage_offset": 6,
+          "memory_offset": 6,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 23,
+            "name": "EntryPoint",
+            "class": "IntProperty"
+          },
+          "storage_end": 11,
+          "memory_end": 15
+        },
+        {
+          "storage_offset": 11,
+          "memory_offset": 15,
+          "token": "0x0f",
+          "instruction": "EX_Let",
+          "property": {
+            "package_index": 4,
+            "name": "CallFunc_Array_Length_ReturnValue",
+            "class": "IntProperty"
+          },
+          "target": {
+            "storage_offset": 16,
+            "memory_offset": 24,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 4,
+              "name": "CallFunc_Array_Length_ReturnValue",
+              "class": "IntProperty"
+            },
+            "storage_end": 21,
+            "memory_end": 33
+          },
+          "value": {
+            "storage_offset": 21,
+            "memory_offset": 33,
+            "token": "0x19",
+            "instruction": "EX_Context",
+            "object": {
+              "storage_offset": 22,
+              "memory_offset": 34,
+              "token": "0x20",
+              "instruction": "EX_ObjectConst",
+              "reference": {
+                "package_index": -37,
+                "name": "Default__KismetArrayLibrary",
+                "class": "KismetArrayLibrary"
+              },
+              "storage_end": 27,
+              "memory_end": 43
+            },
+            "skip_memory_bytes": 19,
+            "rvalue_property": {
+              "package_index": 4,
+              "name": "CallFunc_Array_Length_ReturnValue",
+              "class": "IntProperty"
+            },
+            "expression": {
+              "storage_offset": 35,
+              "memory_offset": 55,
+              "token": "0x1c",
+              "instruction": "EX_FinalFunction",
+              "function": {
+                "package_index": -29,
+                "name": "Array_Length",
+                "class": "Function"
+              },
+              "arguments": [
+                {
+                  "storage_offset": 40,
+                  "memory_offset": 64,
+                  "token": "0x00",
+                  "instruction": "EX_LocalVariable",
+                  "reference": {
+                    "package_index": 8,
+                    "name": "CallFunc_GetAllAttachedActors_AttachedActors",
+                    "class": "ArrayProperty"
+                  },
+                  "storage_end": 45,
+                  "memory_end": 73
+                }
+              ],
+              "storage_end": 46,
+              "memory_end": 74
+            },
+            "storage_end": 46,
+            "memory_end": 74
+          },
+          "storage_end": 46,
+          "memory_end": 74
+        },
+        {
+          "storage_offset": 16,
+          "memory_offset": 24,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 4,
+            "name": "CallFunc_Array_Length_ReturnValue",
+            "class": "IntProperty"
+          },
+          "storage_end": 21,
+          "memory_end": 33
+        },
+        {
+          "storage_offset": 21,
+          "memory_offset": 33,
+          "token": "0x19",
+          "instruction": "EX_Context",
+          "object": {
+            "storage_offset": 22,
+            "memory_offset": 34,
+            "token": "0x20",
+            "instruction": "EX_ObjectConst",
+            "reference": {
+              "package_index": -37,
+              "name": "Default__KismetArrayLibrary",
+              "class": "KismetArrayLibrary"
+            },
+            "storage_end": 27,
+            "memory_end": 43
+          },
+          "skip_memory_bytes": 19,
+          "rvalue_property": {
+            "package_index": 4,
+            "name": "CallFunc_Array_Length_ReturnValue",
+            "class": "IntProperty"
+          },
+          "expression": {
+            "storage_offset": 35,
+            "memory_offset": 55,
+            "token": "0x1c",
+            "instruction": "EX_FinalFunction",
+            "function": {
+              "package_index": -29,
+              "name": "Array_Length",
+              "class": "Function"
+            },
+            "arguments": [
+              {
+                "storage_offset": 40,
+                "memory_offset": 64,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 8,
+                  "name": "CallFunc_GetAllAttachedActors_AttachedActors",
+                  "class": "ArrayProperty"
+                },
+                "storage_end": 45,
+                "memory_end": 73
+              }
+            ],
+            "storage_end": 46,
+            "memory_end": 74
+          },
+          "storage_end": 46,
+          "memory_end": 74
+        },
+        {
+          "storage_offset": 22,
+          "memory_offset": 34,
+          "token": "0x20",
+          "instruction": "EX_ObjectConst",
+          "reference": {
+            "package_index": -37,
+            "name": "Default__KismetArrayLibrary",
+            "class": "KismetArrayLibrary"
+          },
+          "storage_end": 27,
+          "memory_end": 43
+        },
+        {
+          "storage_offset": 35,
+          "memory_offset": 55,
+          "token": "0x1c",
+          "instruction": "EX_FinalFunction",
+          "function": {
+            "package_index": -29,
+            "name": "Array_Length",
+            "class": "Function"
+          },
+          "arguments": [
+            {
+              "storage_offset": 40,
+              "memory_offset": 64,
+              "token": "0x00",
+              "instruction": "EX_LocalVariable",
+              "reference": {
+                "package_index": 8,
+                "name": "CallFunc_GetAllAttachedActors_AttachedActors",
+                "class": "ArrayProperty"
+              },
+              "storage_end": 45,
+              "memory_end": 73
+            }
+          ],
+          "storage_end": 46,
+          "memory_end": 74
+        },
+        {
+          "storage_offset": 40,
+          "memory_offset": 64,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 8,
+            "name": "CallFunc_GetAllAttachedActors_AttachedActors",
+            "class": "ArrayProperty"
+          },
+          "storage_end": 45,
+          "memory_end": 73
+        },
+        {
+          "storage_offset": 45,
+          "memory_offset": 73,
+          "token": "0x16",
+          "instruction": "EX_EndFunctionParms",
+          "storage_end": 46,
+          "memory_end": 74
+        },
+        {
+          "storage_offset": 46,
+          "memory_offset": 74,
+          "token": "0x14",
+          "instruction": "EX_LetBool",
+          "target": {
+            "storage_offset": 47,
+            "memory_offset": 75,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 3,
+              "name": "CallFunc_Less_IntInt_ReturnValue",
+              "class": "BoolProperty"
+            },
+            "storage_end": 52,
+            "memory_end": 84
+          },
+          "value": {
+            "storage_offset": 52,
+            "memory_offset": 84,
+            "token": "0x68",
+            "instruction": "EX_CallMath",
+            "function": {
+              "package_index": -31,
+              "name": "Less_IntInt",
+              "class": "Function"
+            },
+            "arguments": [
+              {
+                "storage_offset": 57,
+                "memory_offset": 93,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 20,
+                  "name": "Temp_int_Loop_Counter_Variable",
+                  "class": "IntProperty"
+                },
+                "storage_end": 62,
+                "memory_end": 102
+              },
+              {
+                "storage_offset": 62,
+                "memory_offset": 102,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 4,
+                  "name": "CallFunc_Array_Length_ReturnValue",
+                  "class": "IntProperty"
+                },
+                "storage_end": 67,
+                "memory_end": 111
+              }
+            ],
+            "storage_end": 68,
+            "memory_end": 112
+          },
+          "storage_end": 68,
+          "memory_end": 112
+        },
+        {
+          "storage_offset": 47,
+          "memory_offset": 75,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 3,
+            "name": "CallFunc_Less_IntInt_ReturnValue",
+            "class": "BoolProperty"
+          },
+          "storage_end": 52,
+          "memory_end": 84
+        },
+        {
+          "storage_offset": 52,
+          "memory_offset": 84,
+          "token": "0x68",
+          "instruction": "EX_CallMath",
+          "function": {
+            "package_index": -31,
+            "name": "Less_IntInt",
+            "class": "Function"
+          },
+          "arguments": [
+            {
+              "storage_offset": 57,
+              "memory_offset": 93,
+              "token": "0x00",
+              "instruction": "EX_LocalVariable",
+              "reference": {
+                "package_index": 20,
+                "name": "Temp_int_Loop_Counter_Variable",
+                "class": "IntProperty"
+              },
+              "storage_end": 62,
+              "memory_end": 102
+            },
+            {
+              "storage_offset": 62,
+              "memory_offset": 102,
+              "token": "0x00",
+              "instruction": "EX_LocalVariable",
+              "reference": {
+                "package_index": 4,
+                "name": "CallFunc_Array_Length_ReturnValue",
+                "class": "IntProperty"
+              },
+              "storage_end": 67,
+              "memory_end": 111
+            }
+          ],
+          "storage_end": 68,
+          "memory_end": 112
+        },
+        {
+          "storage_offset": 57,
+          "memory_offset": 93,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 20,
+            "name": "Temp_int_Loop_Counter_Variable",
+            "class": "IntProperty"
+          },
+          "storage_end": 62,
+          "memory_end": 102
+        },
+        {
+          "storage_offset": 62,
+          "memory_offset": 102,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 4,
+            "name": "CallFunc_Array_Length_ReturnValue",
+            "class": "IntProperty"
+          },
+          "storage_end": 67,
+          "memory_end": 111
+        },
+        {
+          "storage_offset": 67,
+          "memory_offset": 111,
+          "token": "0x16",
+          "instruction": "EX_EndFunctionParms",
+          "storage_end": 68,
+          "memory_end": 112
+        },
+        {
+          "storage_offset": 68,
+          "memory_offset": 112,
+          "token": "0x07",
+          "instruction": "EX_JumpIfNot",
+          "target_memory_offset": 367,
+          "condition": {
+            "storage_offset": 73,
+            "memory_offset": 117,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 3,
+              "name": "CallFunc_Less_IntInt_ReturnValue",
+              "class": "BoolProperty"
+            },
+            "storage_end": 78,
+            "memory_end": 126
+          },
+          "storage_end": 78,
+          "memory_end": 126
+        },
+        {
+          "storage_offset": 73,
+          "memory_offset": 117,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 3,
+            "name": "CallFunc_Less_IntInt_ReturnValue",
+            "class": "BoolProperty"
+          },
+          "storage_end": 78,
+          "memory_end": 126
+        },
+        {
+          "storage_offset": 78,
+          "memory_offset": 126,
+          "token": "0x0f",
+          "instruction": "EX_Let",
+          "property": {
+            "package_index": 18,
+            "name": "Temp_int_Array_Index_Variable",
+            "class": "IntProperty"
+          },
+          "target": {
+            "storage_offset": 83,
+            "memory_offset": 135,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 18,
+              "name": "Temp_int_Array_Index_Variable",
+              "class": "IntProperty"
+            },
+            "storage_end": 88,
+            "memory_end": 144
+          },
+          "value": {
+            "storage_offset": 88,
+            "memory_offset": 144,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 20,
+              "name": "Temp_int_Loop_Counter_Variable",
+              "class": "IntProperty"
+            },
+            "storage_end": 93,
+            "memory_end": 153
+          },
+          "storage_end": 93,
+          "memory_end": 153
+        },
+        {
+          "storage_offset": 83,
+          "memory_offset": 135,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 18,
+            "name": "Temp_int_Array_Index_Variable",
+            "class": "IntProperty"
+          },
+          "storage_end": 88,
+          "memory_end": 144
+        },
+        {
+          "storage_offset": 88,
+          "memory_offset": 144,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 20,
+            "name": "Temp_int_Loop_Counter_Variable",
+            "class": "IntProperty"
+          },
+          "storage_end": 93,
+          "memory_end": 153
+        },
+        {
+          "storage_offset": 93,
+          "memory_offset": 153,
+          "token": "0x4c",
+          "instruction": "EX_PushExecutionFlow",
+          "target_memory_offset": 856,
+          "storage_end": 98,
+          "memory_end": 158
+        },
+        {
+          "storage_offset": 98,
+          "memory_offset": 158,
+          "token": "0x14",
+          "instruction": "EX_LetBool",
+          "target": {
+            "storage_offset": 99,
+            "memory_offset": 159,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 22,
+              "name": "Temp_bool_Variable",
+              "class": "BoolProperty"
+            },
+            "storage_end": 104,
+            "memory_end": 168
+          },
+          "value": {
+            "storage_offset": 104,
+            "memory_offset": 168,
+            "token": "0x27",
+            "instruction": "EX_True",
+            "value": true,
+            "storage_end": 105,
+            "memory_end": 169
+          },
+          "storage_end": 105,
+          "memory_end": 169
+        },
+        {
+          "storage_offset": 99,
+          "memory_offset": 159,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 22,
+            "name": "Temp_bool_Variable",
+            "class": "BoolProperty"
+          },
+          "storage_end": 104,
+          "memory_end": 168
+        },
+        {
+          "storage_offset": 104,
+          "memory_offset": 168,
+          "token": "0x27",
+          "instruction": "EX_True",
+          "value": true,
+          "storage_end": 105,
+          "memory_end": 169
+        },
+        {
+          "storage_offset": 105,
+          "memory_offset": 169,
+          "token": "0x14",
+          "instruction": "EX_LetBool",
+          "target": {
+            "storage_offset": 106,
+            "memory_offset": 170,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 15,
+              "name": "Temp_bool_Variable2",
+              "class": "BoolProperty"
+            },
+            "storage_end": 111,
+            "memory_end": 179
+          },
+          "value": {
+            "storage_offset": 111,
+            "memory_offset": 179,
+            "token": "0x28",
+            "instruction": "EX_False",
+            "value": false,
+            "storage_end": 112,
+            "memory_end": 180
+          },
+          "storage_end": 112,
+          "memory_end": 180
+        },
+        {
+          "storage_offset": 106,
+          "memory_offset": 170,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 15,
+            "name": "Temp_bool_Variable2",
+            "class": "BoolProperty"
+          },
+          "storage_end": 111,
+          "memory_end": 179
+        },
+        {
+          "storage_offset": 111,
+          "memory_offset": 179,
+          "token": "0x28",
+          "instruction": "EX_False",
+          "value": false,
+          "storage_end": 112,
+          "memory_end": 180
+        },
+        {
+          "storage_offset": 112,
+          "memory_offset": 180,
+          "token": "0x0f",
+          "instruction": "EX_Let",
+          "property": {
+            "package_index": 21,
+            "name": "Temp_byte_Variable",
+            "class": "ByteProperty"
+          },
+          "target": {
+            "storage_offset": 117,
+            "memory_offset": 189,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 21,
+              "name": "Temp_byte_Variable",
+              "class": "ByteProperty"
+            },
+            "storage_end": 122,
+            "memory_end": 198
+          },
+          "value": {
+            "storage_offset": 122,
+            "memory_offset": 198,
+            "token": "0x42",
+            "instruction": "EX_StructMemberContext",
+            "member": {
+              "package_index": -4,
+              "name": "Action_2_1FB428D94B464B5066CB6784E7406861",
+              "class": "ByteProperty"
+            },
+            "struct_expression": {
+              "storage_offset": 127,
+              "memory_offset": 207,
+              "token": "0x00",
+              "instruction": "EX_LocalVariable",
+              "reference": {
+                "package_index": 16,
+                "name": "K2Node_Event_Action",
+                "class": "StructProperty"
+              },
+              "storage_end": 132,
+              "memory_end": 216
+            },
+            "storage_end": 132,
+            "memory_end": 216
+          },
+          "storage_end": 132,
+          "memory_end": 216
+        },
+        {
+          "storage_offset": 117,
+          "memory_offset": 189,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 21,
+            "name": "Temp_byte_Variable",
+            "class": "ByteProperty"
+          },
+          "storage_end": 122,
+          "memory_end": 198
+        },
+        {
+          "storage_offset": 122,
+          "memory_offset": 198,
+          "token": "0x42",
+          "instruction": "EX_StructMemberContext",
+          "member": {
+            "package_index": -4,
+            "name": "Action_2_1FB428D94B464B5066CB6784E7406861",
+            "class": "ByteProperty"
+          },
+          "struct_expression": {
+            "storage_offset": 127,
+            "memory_offset": 207,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 16,
+              "name": "K2Node_Event_Action",
+              "class": "StructProperty"
+            },
+            "storage_end": 132,
+            "memory_end": 216
+          },
+          "storage_end": 132,
+          "memory_end": 216
+        },
+        {
+          "storage_offset": 127,
+          "memory_offset": 207,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 16,
+            "name": "K2Node_Event_Action",
+            "class": "StructProperty"
+          },
+          "storage_end": 132,
+          "memory_end": 216
+        },
+        {
+          "storage_offset": 132,
+          "memory_offset": 216,
+          "token": "0x19",
+          "instruction": "EX_Context",
+          "object": {
+            "storage_offset": 133,
+            "memory_offset": 217,
+            "token": "0x20",
+            "instruction": "EX_ObjectConst",
+            "reference": {
+              "package_index": -37,
+              "name": "Default__KismetArrayLibrary",
+              "class": "KismetArrayLibrary"
+            },
+            "storage_end": 138,
+            "memory_end": 226
+          },
+          "skip_memory_bytes": 37,
+          "rvalue_property": {
+            "package_index": 0,
+            "name": "null"
+          },
+          "expression": {
+            "storage_offset": 146,
+            "memory_offset": 238,
+            "token": "0x1c",
+            "instruction": "EX_FinalFunction",
+            "function": {
+              "package_index": -28,
+              "name": "Array_Get",
+              "class": "Function"
+            },
+            "arguments": [
+              {
+                "storage_offset": 151,
+                "memory_offset": 247,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 8,
+                  "name": "CallFunc_GetAllAttachedActors_AttachedActors",
+                  "class": "ArrayProperty"
+                },
+                "storage_end": 156,
+                "memory_end": 256
+              },
+              {
+                "storage_offset": 156,
+                "memory_offset": 256,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 18,
+                  "name": "Temp_int_Array_Index_Variable",
+                  "class": "IntProperty"
+                },
+                "storage_end": 161,
+                "memory_end": 265
+              },
+              {
+                "storage_offset": 161,
+                "memory_offset": 265,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 6,
+                  "name": "CallFunc_Array_Get_Item",
+                  "class": "ObjectProperty"
+                },
+                "storage_end": 166,
+                "memory_end": 274
+              }
+            ],
+            "storage_end": 167,
+            "memory_end": 275
+          },
+          "storage_end": 167,
+          "memory_end": 275
+        },
+        {
+          "storage_offset": 133,
+          "memory_offset": 217,
+          "token": "0x20",
+          "instruction": "EX_ObjectConst",
+          "reference": {
+            "package_index": -37,
+            "name": "Default__KismetArrayLibrary",
+            "class": "KismetArrayLibrary"
+          },
+          "storage_end": 138,
+          "memory_end": 226
+        },
+        {
+          "storage_offset": 146,
+          "memory_offset": 238,
+          "token": "0x1c",
+          "instruction": "EX_FinalFunction",
+          "function": {
+            "package_index": -28,
+            "name": "Array_Get",
+            "class": "Function"
+          },
+          "arguments": [
+            {
+              "storage_offset": 151,
+              "memory_offset": 247,
+              "token": "0x00",
+              "instruction": "EX_LocalVariable",
+              "reference": {
+                "package_index": 8,
+                "name": "CallFunc_GetAllAttachedActors_AttachedActors",
+                "class": "ArrayProperty"
+              },
+              "storage_end": 156,
+              "memory_end": 256
+            },
+            {
+              "storage_offset": 156,
+              "memory_offset": 256,
+              "token": "0x00",
+              "instruction": "EX_LocalVariable",
+              "reference": {
+                "package_index": 18,
+                "name": "Temp_int_Array_Index_Variable",
+                "class": "IntProperty"
+              },
+              "storage_end": 161,
+              "memory_end": 265
+            },
+            {
+              "storage_offset": 161,
+              "memory_offset": 265,
+              "token": "0x00",
+              "instruction": "EX_LocalVariable",
+              "reference": {
+                "package_index": 6,
+                "name": "CallFunc_Array_Get_Item",
+                "class": "ObjectProperty"
+              },
+              "storage_end": 166,
+              "memory_end": 274
+            }
+          ],
+          "storage_end": 167,
+          "memory_end": 275
+        },
+        {
+          "storage_offset": 151,
+          "memory_offset": 247,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 8,
+            "name": "CallFunc_GetAllAttachedActors_AttachedActors",
+            "class": "ArrayProperty"
+          },
+          "storage_end": 156,
+          "memory_end": 256
+        },
+        {
+          "storage_offset": 156,
+          "memory_offset": 256,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 18,
+            "name": "Temp_int_Array_Index_Variable",
+            "class": "IntProperty"
+          },
+          "storage_end": 161,
+          "memory_end": 265
+        },
+        {
+          "storage_offset": 161,
+          "memory_offset": 265,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 6,
+            "name": "CallFunc_Array_Get_Item",
+            "class": "ObjectProperty"
+          },
+          "storage_end": 166,
+          "memory_end": 274
+        },
+        {
+          "storage_offset": 166,
+          "memory_offset": 274,
+          "token": "0x16",
+          "instruction": "EX_EndFunctionParms",
+          "storage_end": 167,
+          "memory_end": 275
+        },
+        {
+          "storage_offset": 167,
+          "memory_offset": 275,
+          "token": "0x19",
+          "instruction": "EX_Context",
+          "object": {
+            "storage_offset": 168,
+            "memory_offset": 276,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 6,
+              "name": "CallFunc_Array_Get_Item",
+              "class": "ObjectProperty"
+            },
+            "storage_end": 173,
+            "memory_end": 285
+          },
+          "skip_memory_bytes": 69,
+          "rvalue_property": {
+            "package_index": 0,
+            "name": "null"
+          },
+          "expression": {
+            "storage_offset": 181,
+            "memory_offset": 297,
+            "token": "0x1b",
+            "instruction": "EX_VirtualFunction",
+            "function_name": "SetActorHiddenInGame",
+            "fname": {
+              "index": 88,
+              "number": 0
+            },
+            "arguments": [
+              {
+                "storage_offset": 190,
+                "memory_offset": 310,
+                "token": "0x69",
+                "instruction": "EX_SwitchValue",
+                "end_memory_offset": 365,
+                "selector": {
+                  "storage_offset": 197,
+                  "memory_offset": 317,
+                  "token": "0x00",
+                  "instruction": "EX_LocalVariable",
+                  "reference": {
+                    "package_index": 21,
+                    "name": "Temp_byte_Variable",
+                    "class": "ByteProperty"
+                  },
+                  "storage_end": 202,
+                  "memory_end": 326
+                },
+                "cases": [
+                  {
+                    "match": {
+                      "storage_offset": 202,
+                      "memory_offset": 326,
+                      "token": "0x24",
+                      "instruction": "EX_ByteConst",
+                      "value": 0,
+                      "storage_end": 204,
+                      "memory_end": 328
+                    },
+                    "next_memory_offset": 341,
+                    "result": {
+                      "storage_offset": 208,
+                      "memory_offset": 332,
+                      "token": "0x00",
+                      "instruction": "EX_LocalVariable",
+                      "reference": {
+                        "package_index": 15,
+                        "name": "Temp_bool_Variable2",
+                        "class": "BoolProperty"
+                      },
+                      "storage_end": 213,
+                      "memory_end": 341
+                    }
+                  },
+                  {
+                    "match": {
+                      "storage_offset": 213,
+                      "memory_offset": 341,
+                      "token": "0x24",
+                      "instruction": "EX_ByteConst",
+                      "value": 1,
+                      "storage_end": 215,
+                      "memory_end": 343
+                    },
+                    "next_memory_offset": 356,
+                    "result": {
+                      "storage_offset": 219,
+                      "memory_offset": 347,
+                      "token": "0x00",
+                      "instruction": "EX_LocalVariable",
+                      "reference": {
+                        "package_index": 22,
+                        "name": "Temp_bool_Variable",
+                        "class": "BoolProperty"
+                      },
+                      "storage_end": 224,
+                      "memory_end": 356
+                    }
+                  }
+                ],
+                "default": {
+                  "storage_offset": 224,
+                  "memory_offset": 356,
+                  "token": "0x00",
+                  "instruction": "EX_LocalVariable",
+                  "reference": {
+                    "package_index": 13,
+                    "name": "K2Node_Select_Default",
+                    "class": "BoolProperty"
+                  },
+                  "storage_end": 229,
+                  "memory_end": 365
+                },
+                "storage_end": 229,
+                "memory_end": 365
+              }
+            ],
+            "storage_end": 230,
+            "memory_end": 366
+          },
+          "storage_end": 230,
+          "memory_end": 366
+        },
+        {
+          "storage_offset": 168,
+          "memory_offset": 276,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 6,
+            "name": "CallFunc_Array_Get_Item",
+            "class": "ObjectProperty"
+          },
+          "storage_end": 173,
+          "memory_end": 285
+        },
+        {
+          "storage_offset": 181,
+          "memory_offset": 297,
+          "token": "0x1b",
+          "instruction": "EX_VirtualFunction",
+          "function_name": "SetActorHiddenInGame",
+          "fname": {
+            "index": 88,
+            "number": 0
+          },
+          "arguments": [
+            {
+              "storage_offset": 190,
+              "memory_offset": 310,
+              "token": "0x69",
+              "instruction": "EX_SwitchValue",
+              "end_memory_offset": 365,
+              "selector": {
+                "storage_offset": 197,
+                "memory_offset": 317,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 21,
+                  "name": "Temp_byte_Variable",
+                  "class": "ByteProperty"
+                },
+                "storage_end": 202,
+                "memory_end": 326
+              },
+              "cases": [
+                {
+                  "match": {
+                    "storage_offset": 202,
+                    "memory_offset": 326,
+                    "token": "0x24",
+                    "instruction": "EX_ByteConst",
+                    "value": 0,
+                    "storage_end": 204,
+                    "memory_end": 328
+                  },
+                  "next_memory_offset": 341,
+                  "result": {
+                    "storage_offset": 208,
+                    "memory_offset": 332,
+                    "token": "0x00",
+                    "instruction": "EX_LocalVariable",
+                    "reference": {
+                      "package_index": 15,
+                      "name": "Temp_bool_Variable2",
+                      "class": "BoolProperty"
+                    },
+                    "storage_end": 213,
+                    "memory_end": 341
+                  }
+                },
+                {
+                  "match": {
+                    "storage_offset": 213,
+                    "memory_offset": 341,
+                    "token": "0x24",
+                    "instruction": "EX_ByteConst",
+                    "value": 1,
+                    "storage_end": 215,
+                    "memory_end": 343
+                  },
+                  "next_memory_offset": 356,
+                  "result": {
+                    "storage_offset": 219,
+                    "memory_offset": 347,
+                    "token": "0x00",
+                    "instruction": "EX_LocalVariable",
+                    "reference": {
+                      "package_index": 22,
+                      "name": "Temp_bool_Variable",
+                      "class": "BoolProperty"
+                    },
+                    "storage_end": 224,
+                    "memory_end": 356
+                  }
+                }
+              ],
+              "default": {
+                "storage_offset": 224,
+                "memory_offset": 356,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 13,
+                  "name": "K2Node_Select_Default",
+                  "class": "BoolProperty"
+                },
+                "storage_end": 229,
+                "memory_end": 365
+              },
+              "storage_end": 229,
+              "memory_end": 365
+            }
+          ],
+          "storage_end": 230,
+          "memory_end": 366
+        },
+        {
+          "storage_offset": 190,
+          "memory_offset": 310,
+          "token": "0x69",
+          "instruction": "EX_SwitchValue",
+          "end_memory_offset": 365,
+          "selector": {
+            "storage_offset": 197,
+            "memory_offset": 317,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 21,
+              "name": "Temp_byte_Variable",
+              "class": "ByteProperty"
+            },
+            "storage_end": 202,
+            "memory_end": 326
+          },
+          "cases": [
+            {
+              "match": {
+                "storage_offset": 202,
+                "memory_offset": 326,
+                "token": "0x24",
+                "instruction": "EX_ByteConst",
+                "value": 0,
+                "storage_end": 204,
+                "memory_end": 328
+              },
+              "next_memory_offset": 341,
+              "result": {
+                "storage_offset": 208,
+                "memory_offset": 332,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 15,
+                  "name": "Temp_bool_Variable2",
+                  "class": "BoolProperty"
+                },
+                "storage_end": 213,
+                "memory_end": 341
+              }
+            },
+            {
+              "match": {
+                "storage_offset": 213,
+                "memory_offset": 341,
+                "token": "0x24",
+                "instruction": "EX_ByteConst",
+                "value": 1,
+                "storage_end": 215,
+                "memory_end": 343
+              },
+              "next_memory_offset": 356,
+              "result": {
+                "storage_offset": 219,
+                "memory_offset": 347,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 22,
+                  "name": "Temp_bool_Variable",
+                  "class": "BoolProperty"
+                },
+                "storage_end": 224,
+                "memory_end": 356
+              }
+            }
+          ],
+          "default": {
+            "storage_offset": 224,
+            "memory_offset": 356,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 13,
+              "name": "K2Node_Select_Default",
+              "class": "BoolProperty"
+            },
+            "storage_end": 229,
+            "memory_end": 365
+          },
+          "storage_end": 229,
+          "memory_end": 365
+        },
+        {
+          "storage_offset": 197,
+          "memory_offset": 317,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 21,
+            "name": "Temp_byte_Variable",
+            "class": "ByteProperty"
+          },
+          "storage_end": 202,
+          "memory_end": 326
+        },
+        {
+          "storage_offset": 202,
+          "memory_offset": 326,
+          "token": "0x24",
+          "instruction": "EX_ByteConst",
+          "value": 0,
+          "storage_end": 204,
+          "memory_end": 328
+        },
+        {
+          "storage_offset": 208,
+          "memory_offset": 332,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 15,
+            "name": "Temp_bool_Variable2",
+            "class": "BoolProperty"
+          },
+          "storage_end": 213,
+          "memory_end": 341
+        },
+        {
+          "storage_offset": 213,
+          "memory_offset": 341,
+          "token": "0x24",
+          "instruction": "EX_ByteConst",
+          "value": 1,
+          "storage_end": 215,
+          "memory_end": 343
+        },
+        {
+          "storage_offset": 219,
+          "memory_offset": 347,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 22,
+            "name": "Temp_bool_Variable",
+            "class": "BoolProperty"
+          },
+          "storage_end": 224,
+          "memory_end": 356
+        },
+        {
+          "storage_offset": 224,
+          "memory_offset": 356,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 13,
+            "name": "K2Node_Select_Default",
+            "class": "BoolProperty"
+          },
+          "storage_end": 229,
+          "memory_end": 365
+        },
+        {
+          "storage_offset": 229,
+          "memory_offset": 365,
+          "token": "0x16",
+          "instruction": "EX_EndFunctionParms",
+          "storage_end": 230,
+          "memory_end": 366
+        },
+        {
+          "storage_offset": 230,
+          "memory_offset": 366,
+          "token": "0x4d",
+          "instruction": "EX_PopExecutionFlow",
+          "storage_end": 231,
+          "memory_end": 367
+        },
+        {
+          "storage_offset": 231,
+          "memory_offset": 367,
+          "token": "0x0f",
+          "instruction": "EX_Let",
+          "property": {
+            "package_index": 14,
+            "name": "CallFunc_GetEnumeratorUserFriendlyName_ReturnValue",
+            "class": "StrProperty"
+          },
+          "target": {
+            "storage_offset": 236,
+            "memory_offset": 376,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 14,
+              "name": "CallFunc_GetEnumeratorUserFriendlyName_ReturnValue",
+              "class": "StrProperty"
+            },
+            "storage_end": 241,
+            "memory_end": 385
+          },
+          "value": {
+            "storage_offset": 241,
+            "memory_offset": 385,
+            "token": "0x19",
+            "instruction": "EX_Context",
+            "object": {
+              "storage_offset": 242,
+              "memory_offset": 386,
+              "token": "0x20",
+              "instruction": "EX_ObjectConst",
+              "reference": {
+                "package_index": -38,
+                "name": "Default__KismetNodeHelperLibrary",
+                "class": "KismetNodeHelperLibrary"
+              },
+              "storage_end": 247,
+              "memory_end": 395
+            },
+            "skip_memory_bytes": 37,
+            "rvalue_property": {
+              "package_index": 14,
+              "name": "CallFunc_GetEnumeratorUserFriendlyName_ReturnValue",
+              "class": "StrProperty"
+            },
+            "expression": {
+              "storage_offset": 255,
+              "memory_offset": 407,
+              "token": "0x1c",
+              "instruction": "EX_FinalFunction",
+              "function": {
+                "package_index": -32,
+                "name": "GetEnumeratorUserFriendlyName",
+                "class": "Function"
+              },
+              "arguments": [
+                {
+                  "storage_offset": 260,
+                  "memory_offset": 416,
+                  "token": "0x20",
+                  "instruction": "EX_ObjectConst",
+                  "reference": {
+                    "package_index": -49,
+                    "name": "BeatActionType",
+                    "class": "UserDefinedEnum"
+                  },
+                  "storage_end": 265,
+                  "memory_end": 425
+                },
+                {
+                  "storage_offset": 265,
+                  "memory_offset": 425,
+                  "token": "0x42",
+                  "instruction": "EX_StructMemberContext",
+                  "member": {
+                    "package_index": -4,
+                    "name": "Action_2_1FB428D94B464B5066CB6784E7406861",
+                    "class": "ByteProperty"
+                  },
+                  "struct_expression": {
+                    "storage_offset": 270,
+                    "memory_offset": 434,
+                    "token": "0x00",
+                    "instruction": "EX_LocalVariable",
+                    "reference": {
+                      "package_index": 16,
+                      "name": "K2Node_Event_Action",
+                      "class": "StructProperty"
+                    },
+                    "storage_end": 275,
+                    "memory_end": 443
+                  },
+                  "storage_end": 275,
+                  "memory_end": 443
+                }
+              ],
+              "storage_end": 276,
+              "memory_end": 444
+            },
+            "storage_end": 276,
+            "memory_end": 444
+          },
+          "storage_end": 276,
+          "memory_end": 444
+        },
+        {
+          "storage_offset": 236,
+          "memory_offset": 376,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 14,
+            "name": "CallFunc_GetEnumeratorUserFriendlyName_ReturnValue",
+            "class": "StrProperty"
+          },
+          "storage_end": 241,
+          "memory_end": 385
+        },
+        {
+          "storage_offset": 241,
+          "memory_offset": 385,
+          "token": "0x19",
+          "instruction": "EX_Context",
+          "object": {
+            "storage_offset": 242,
+            "memory_offset": 386,
+            "token": "0x20",
+            "instruction": "EX_ObjectConst",
+            "reference": {
+              "package_index": -38,
+              "name": "Default__KismetNodeHelperLibrary",
+              "class": "KismetNodeHelperLibrary"
+            },
+            "storage_end": 247,
+            "memory_end": 395
+          },
+          "skip_memory_bytes": 37,
+          "rvalue_property": {
+            "package_index": 14,
+            "name": "CallFunc_GetEnumeratorUserFriendlyName_ReturnValue",
+            "class": "StrProperty"
+          },
+          "expression": {
+            "storage_offset": 255,
+            "memory_offset": 407,
+            "token": "0x1c",
+            "instruction": "EX_FinalFunction",
+            "function": {
+              "package_index": -32,
+              "name": "GetEnumeratorUserFriendlyName",
+              "class": "Function"
+            },
+            "arguments": [
+              {
+                "storage_offset": 260,
+                "memory_offset": 416,
+                "token": "0x20",
+                "instruction": "EX_ObjectConst",
+                "reference": {
+                  "package_index": -49,
+                  "name": "BeatActionType",
+                  "class": "UserDefinedEnum"
+                },
+                "storage_end": 265,
+                "memory_end": 425
+              },
+              {
+                "storage_offset": 265,
+                "memory_offset": 425,
+                "token": "0x42",
+                "instruction": "EX_StructMemberContext",
+                "member": {
+                  "package_index": -4,
+                  "name": "Action_2_1FB428D94B464B5066CB6784E7406861",
+                  "class": "ByteProperty"
+                },
+                "struct_expression": {
+                  "storage_offset": 270,
+                  "memory_offset": 434,
+                  "token": "0x00",
+                  "instruction": "EX_LocalVariable",
+                  "reference": {
+                    "package_index": 16,
+                    "name": "K2Node_Event_Action",
+                    "class": "StructProperty"
+                  },
+                  "storage_end": 275,
+                  "memory_end": 443
+                },
+                "storage_end": 275,
+                "memory_end": 443
+              }
+            ],
+            "storage_end": 276,
+            "memory_end": 444
+          },
+          "storage_end": 276,
+          "memory_end": 444
+        },
+        {
+          "storage_offset": 242,
+          "memory_offset": 386,
+          "token": "0x20",
+          "instruction": "EX_ObjectConst",
+          "reference": {
+            "package_index": -38,
+            "name": "Default__KismetNodeHelperLibrary",
+            "class": "KismetNodeHelperLibrary"
+          },
+          "storage_end": 247,
+          "memory_end": 395
+        },
+        {
+          "storage_offset": 255,
+          "memory_offset": 407,
+          "token": "0x1c",
+          "instruction": "EX_FinalFunction",
+          "function": {
+            "package_index": -32,
+            "name": "GetEnumeratorUserFriendlyName",
+            "class": "Function"
+          },
+          "arguments": [
+            {
+              "storage_offset": 260,
+              "memory_offset": 416,
+              "token": "0x20",
+              "instruction": "EX_ObjectConst",
+              "reference": {
+                "package_index": -49,
+                "name": "BeatActionType",
+                "class": "UserDefinedEnum"
+              },
+              "storage_end": 265,
+              "memory_end": 425
+            },
+            {
+              "storage_offset": 265,
+              "memory_offset": 425,
+              "token": "0x42",
+              "instruction": "EX_StructMemberContext",
+              "member": {
+                "package_index": -4,
+                "name": "Action_2_1FB428D94B464B5066CB6784E7406861",
+                "class": "ByteProperty"
+              },
+              "struct_expression": {
+                "storage_offset": 270,
+                "memory_offset": 434,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 16,
+                  "name": "K2Node_Event_Action",
+                  "class": "StructProperty"
+                },
+                "storage_end": 275,
+                "memory_end": 443
+              },
+              "storage_end": 275,
+              "memory_end": 443
+            }
+          ],
+          "storage_end": 276,
+          "memory_end": 444
+        },
+        {
+          "storage_offset": 260,
+          "memory_offset": 416,
+          "token": "0x20",
+          "instruction": "EX_ObjectConst",
+          "reference": {
+            "package_index": -49,
+            "name": "BeatActionType",
+            "class": "UserDefinedEnum"
+          },
+          "storage_end": 265,
+          "memory_end": 425
+        },
+        {
+          "storage_offset": 265,
+          "memory_offset": 425,
+          "token": "0x42",
+          "instruction": "EX_StructMemberContext",
+          "member": {
+            "package_index": -4,
+            "name": "Action_2_1FB428D94B464B5066CB6784E7406861",
+            "class": "ByteProperty"
+          },
+          "struct_expression": {
+            "storage_offset": 270,
+            "memory_offset": 434,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 16,
+              "name": "K2Node_Event_Action",
+              "class": "StructProperty"
+            },
+            "storage_end": 275,
+            "memory_end": 443
+          },
+          "storage_end": 275,
+          "memory_end": 443
+        },
+        {
+          "storage_offset": 270,
+          "memory_offset": 434,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 16,
+            "name": "K2Node_Event_Action",
+            "class": "StructProperty"
+          },
+          "storage_end": 275,
+          "memory_end": 443
+        },
+        {
+          "storage_offset": 275,
+          "memory_offset": 443,
+          "token": "0x16",
+          "instruction": "EX_EndFunctionParms",
+          "storage_end": 276,
+          "memory_end": 444
+        },
+        {
+          "storage_offset": 276,
+          "memory_offset": 444,
+          "token": "0x0f",
+          "instruction": "EX_Let",
+          "property": {
+            "package_index": 12,
+            "name": "CallFunc_Conv_IntToString_ReturnValue",
+            "class": "StrProperty"
+          },
+          "target": {
+            "storage_offset": 281,
+            "memory_offset": 453,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 12,
+              "name": "CallFunc_Conv_IntToString_ReturnValue",
+              "class": "StrProperty"
+            },
+            "storage_end": 286,
+            "memory_end": 462
+          },
+          "value": {
+            "storage_offset": 286,
+            "memory_offset": 462,
+            "token": "0x19",
+            "instruction": "EX_Context",
+            "object": {
+              "storage_offset": 287,
+              "memory_offset": 463,
+              "token": "0x20",
+              "instruction": "EX_ObjectConst",
+              "reference": {
+                "package_index": -39,
+                "name": "Default__KismetStringLibrary",
+                "class": "KismetStringLibrary"
+              },
+              "storage_end": 292,
+              "memory_end": 472
+            },
+            "skip_memory_bytes": 28,
+            "rvalue_property": {
+              "package_index": 12,
+              "name": "CallFunc_Conv_IntToString_ReturnValue",
+              "class": "StrProperty"
+            },
+            "expression": {
+              "storage_offset": 300,
+              "memory_offset": 484,
+              "token": "0x1c",
+              "instruction": "EX_FinalFunction",
+              "function": {
+                "package_index": -34,
+                "name": "Conv_IntToString",
+                "class": "Function"
+              },
+              "arguments": [
+                {
+                  "storage_offset": 305,
+                  "memory_offset": 493,
+                  "token": "0x42",
+                  "instruction": "EX_StructMemberContext",
+                  "member": {
+                    "package_index": -36,
+                    "name": "Index_7_04D6F924464967A2A7CFA2A2B2044998",
+                    "class": "IntProperty"
+                  },
+                  "struct_expression": {
+                    "storage_offset": 310,
+                    "memory_offset": 502,
+                    "token": "0x00",
+                    "instruction": "EX_LocalVariable",
+                    "reference": {
+                      "package_index": 16,
+                      "name": "K2Node_Event_Action",
+                      "class": "StructProperty"
+                    },
+                    "storage_end": 315,
+                    "memory_end": 511
+                  },
+                  "storage_end": 315,
+                  "memory_end": 511
+                }
+              ],
+              "storage_end": 316,
+              "memory_end": 512
+            },
+            "storage_end": 316,
+            "memory_end": 512
+          },
+          "storage_end": 316,
+          "memory_end": 512
+        },
+        {
+          "storage_offset": 281,
+          "memory_offset": 453,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 12,
+            "name": "CallFunc_Conv_IntToString_ReturnValue",
+            "class": "StrProperty"
+          },
+          "storage_end": 286,
+          "memory_end": 462
+        },
+        {
+          "storage_offset": 286,
+          "memory_offset": 462,
+          "token": "0x19",
+          "instruction": "EX_Context",
+          "object": {
+            "storage_offset": 287,
+            "memory_offset": 463,
+            "token": "0x20",
+            "instruction": "EX_ObjectConst",
+            "reference": {
+              "package_index": -39,
+              "name": "Default__KismetStringLibrary",
+              "class": "KismetStringLibrary"
+            },
+            "storage_end": 292,
+            "memory_end": 472
+          },
+          "skip_memory_bytes": 28,
+          "rvalue_property": {
+            "package_index": 12,
+            "name": "CallFunc_Conv_IntToString_ReturnValue",
+            "class": "StrProperty"
+          },
+          "expression": {
+            "storage_offset": 300,
+            "memory_offset": 484,
+            "token": "0x1c",
+            "instruction": "EX_FinalFunction",
+            "function": {
+              "package_index": -34,
+              "name": "Conv_IntToString",
+              "class": "Function"
+            },
+            "arguments": [
+              {
+                "storage_offset": 305,
+                "memory_offset": 493,
+                "token": "0x42",
+                "instruction": "EX_StructMemberContext",
+                "member": {
+                  "package_index": -36,
+                  "name": "Index_7_04D6F924464967A2A7CFA2A2B2044998",
+                  "class": "IntProperty"
+                },
+                "struct_expression": {
+                  "storage_offset": 310,
+                  "memory_offset": 502,
+                  "token": "0x00",
+                  "instruction": "EX_LocalVariable",
+                  "reference": {
+                    "package_index": 16,
+                    "name": "K2Node_Event_Action",
+                    "class": "StructProperty"
+                  },
+                  "storage_end": 315,
+                  "memory_end": 511
+                },
+                "storage_end": 315,
+                "memory_end": 511
+              }
+            ],
+            "storage_end": 316,
+            "memory_end": 512
+          },
+          "storage_end": 316,
+          "memory_end": 512
+        },
+        {
+          "storage_offset": 287,
+          "memory_offset": 463,
+          "token": "0x20",
+          "instruction": "EX_ObjectConst",
+          "reference": {
+            "package_index": -39,
+            "name": "Default__KismetStringLibrary",
+            "class": "KismetStringLibrary"
+          },
+          "storage_end": 292,
+          "memory_end": 472
+        },
+        {
+          "storage_offset": 300,
+          "memory_offset": 484,
+          "token": "0x1c",
+          "instruction": "EX_FinalFunction",
+          "function": {
+            "package_index": -34,
+            "name": "Conv_IntToString",
+            "class": "Function"
+          },
+          "arguments": [
+            {
+              "storage_offset": 305,
+              "memory_offset": 493,
+              "token": "0x42",
+              "instruction": "EX_StructMemberContext",
+              "member": {
+                "package_index": -36,
+                "name": "Index_7_04D6F924464967A2A7CFA2A2B2044998",
+                "class": "IntProperty"
+              },
+              "struct_expression": {
+                "storage_offset": 310,
+                "memory_offset": 502,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 16,
+                  "name": "K2Node_Event_Action",
+                  "class": "StructProperty"
+                },
+                "storage_end": 315,
+                "memory_end": 511
+              },
+              "storage_end": 315,
+              "memory_end": 511
+            }
+          ],
+          "storage_end": 316,
+          "memory_end": 512
+        },
+        {
+          "storage_offset": 305,
+          "memory_offset": 493,
+          "token": "0x42",
+          "instruction": "EX_StructMemberContext",
+          "member": {
+            "package_index": -36,
+            "name": "Index_7_04D6F924464967A2A7CFA2A2B2044998",
+            "class": "IntProperty"
+          },
+          "struct_expression": {
+            "storage_offset": 310,
+            "memory_offset": 502,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 16,
+              "name": "K2Node_Event_Action",
+              "class": "StructProperty"
+            },
+            "storage_end": 315,
+            "memory_end": 511
+          },
+          "storage_end": 315,
+          "memory_end": 511
+        },
+        {
+          "storage_offset": 310,
+          "memory_offset": 502,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 16,
+            "name": "K2Node_Event_Action",
+            "class": "StructProperty"
+          },
+          "storage_end": 315,
+          "memory_end": 511
+        },
+        {
+          "storage_offset": 315,
+          "memory_offset": 511,
+          "token": "0x16",
+          "instruction": "EX_EndFunctionParms",
+          "storage_end": 316,
+          "memory_end": 512
+        },
+        {
+          "storage_offset": 316,
+          "memory_offset": 512,
+          "token": "0x0f",
+          "instruction": "EX_Let",
+          "property": {
+            "package_index": 11,
+            "name": "CallFunc_Concat_StrStr_ReturnValue",
+            "class": "StrProperty"
+          },
+          "target": {
+            "storage_offset": 321,
+            "memory_offset": 521,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 11,
+              "name": "CallFunc_Concat_StrStr_ReturnValue",
+              "class": "StrProperty"
+            },
+            "storage_end": 326,
+            "memory_end": 530
+          },
+          "value": {
+            "storage_offset": 326,
+            "memory_offset": 530,
+            "token": "0x19",
+            "instruction": "EX_Context",
+            "object": {
+              "storage_offset": 327,
+              "memory_offset": 531,
+              "token": "0x20",
+              "instruction": "EX_ObjectConst",
+              "reference": {
+                "package_index": -39,
+                "name": "Default__KismetStringLibrary",
+                "class": "KismetStringLibrary"
+              },
+              "storage_end": 332,
+              "memory_end": 540
+            },
+            "skip_memory_bytes": 22,
+            "rvalue_property": {
+              "package_index": 11,
+              "name": "CallFunc_Concat_StrStr_ReturnValue",
+              "class": "StrProperty"
+            },
+            "expression": {
+              "storage_offset": 340,
+              "memory_offset": 552,
+              "token": "0x1c",
+              "instruction": "EX_FinalFunction",
+              "function": {
+                "package_index": -33,
+                "name": "Concat_StrStr",
+                "class": "Function"
+              },
+              "arguments": [
+                {
+                  "storage_offset": 345,
+                  "memory_offset": 561,
+                  "token": "0x00",
+                  "instruction": "EX_LocalVariable",
+                  "reference": {
+                    "package_index": 12,
+                    "name": "CallFunc_Conv_IntToString_ReturnValue",
+                    "class": "StrProperty"
+                  },
+                  "storage_end": 350,
+                  "memory_end": 570
+                },
+                {
+                  "storage_offset": 350,
+                  "memory_offset": 570,
+                  "token": "0x1f",
+                  "instruction": "EX_StringConst",
+                  "value": " ",
+                  "storage_end": 353,
+                  "memory_end": 573
+                }
+              ],
+              "storage_end": 354,
+              "memory_end": 574
+            },
+            "storage_end": 354,
+            "memory_end": 574
+          },
+          "storage_end": 354,
+          "memory_end": 574
+        },
+        {
+          "storage_offset": 321,
+          "memory_offset": 521,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 11,
+            "name": "CallFunc_Concat_StrStr_ReturnValue",
+            "class": "StrProperty"
+          },
+          "storage_end": 326,
+          "memory_end": 530
+        },
+        {
+          "storage_offset": 326,
+          "memory_offset": 530,
+          "token": "0x19",
+          "instruction": "EX_Context",
+          "object": {
+            "storage_offset": 327,
+            "memory_offset": 531,
+            "token": "0x20",
+            "instruction": "EX_ObjectConst",
+            "reference": {
+              "package_index": -39,
+              "name": "Default__KismetStringLibrary",
+              "class": "KismetStringLibrary"
+            },
+            "storage_end": 332,
+            "memory_end": 540
+          },
+          "skip_memory_bytes": 22,
+          "rvalue_property": {
+            "package_index": 11,
+            "name": "CallFunc_Concat_StrStr_ReturnValue",
+            "class": "StrProperty"
+          },
+          "expression": {
+            "storage_offset": 340,
+            "memory_offset": 552,
+            "token": "0x1c",
+            "instruction": "EX_FinalFunction",
+            "function": {
+              "package_index": -33,
+              "name": "Concat_StrStr",
+              "class": "Function"
+            },
+            "arguments": [
+              {
+                "storage_offset": 345,
+                "memory_offset": 561,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 12,
+                  "name": "CallFunc_Conv_IntToString_ReturnValue",
+                  "class": "StrProperty"
+                },
+                "storage_end": 350,
+                "memory_end": 570
+              },
+              {
+                "storage_offset": 350,
+                "memory_offset": 570,
+                "token": "0x1f",
+                "instruction": "EX_StringConst",
+                "value": " ",
+                "storage_end": 353,
+                "memory_end": 573
+              }
+            ],
+            "storage_end": 354,
+            "memory_end": 574
+          },
+          "storage_end": 354,
+          "memory_end": 574
+        },
+        {
+          "storage_offset": 327,
+          "memory_offset": 531,
+          "token": "0x20",
+          "instruction": "EX_ObjectConst",
+          "reference": {
+            "package_index": -39,
+            "name": "Default__KismetStringLibrary",
+            "class": "KismetStringLibrary"
+          },
+          "storage_end": 332,
+          "memory_end": 540
+        },
+        {
+          "storage_offset": 340,
+          "memory_offset": 552,
+          "token": "0x1c",
+          "instruction": "EX_FinalFunction",
+          "function": {
+            "package_index": -33,
+            "name": "Concat_StrStr",
+            "class": "Function"
+          },
+          "arguments": [
+            {
+              "storage_offset": 345,
+              "memory_offset": 561,
+              "token": "0x00",
+              "instruction": "EX_LocalVariable",
+              "reference": {
+                "package_index": 12,
+                "name": "CallFunc_Conv_IntToString_ReturnValue",
+                "class": "StrProperty"
+              },
+              "storage_end": 350,
+              "memory_end": 570
+            },
+            {
+              "storage_offset": 350,
+              "memory_offset": 570,
+              "token": "0x1f",
+              "instruction": "EX_StringConst",
+              "value": " ",
+              "storage_end": 353,
+              "memory_end": 573
+            }
+          ],
+          "storage_end": 354,
+          "memory_end": 574
+        },
+        {
+          "storage_offset": 345,
+          "memory_offset": 561,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 12,
+            "name": "CallFunc_Conv_IntToString_ReturnValue",
+            "class": "StrProperty"
+          },
+          "storage_end": 350,
+          "memory_end": 570
+        },
+        {
+          "storage_offset": 350,
+          "memory_offset": 570,
+          "token": "0x1f",
+          "instruction": "EX_StringConst",
+          "value": " ",
+          "storage_end": 353,
+          "memory_end": 573
+        },
+        {
+          "storage_offset": 353,
+          "memory_offset": 573,
+          "token": "0x16",
+          "instruction": "EX_EndFunctionParms",
+          "storage_end": 354,
+          "memory_end": 574
+        },
+        {
+          "storage_offset": 354,
+          "memory_offset": 574,
+          "token": "0x0f",
+          "instruction": "EX_Let",
+          "property": {
+            "package_index": 10,
+            "name": "CallFunc_GetDisplayName_ReturnValue",
+            "class": "StrProperty"
+          },
+          "target": {
+            "storage_offset": 359,
+            "memory_offset": 583,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 10,
+              "name": "CallFunc_GetDisplayName_ReturnValue",
+              "class": "StrProperty"
+            },
+            "storage_end": 364,
+            "memory_end": 592
+          },
+          "value": {
+            "storage_offset": 364,
+            "memory_offset": 592,
+            "token": "0x19",
+            "instruction": "EX_Context",
+            "object": {
+              "storage_offset": 365,
+              "memory_offset": 593,
+              "token": "0x20",
+              "instruction": "EX_ObjectConst",
+              "reference": {
+                "package_index": -40,
+                "name": "Default__KismetSystemLibrary",
+                "class": "KismetSystemLibrary"
+              },
+              "storage_end": 370,
+              "memory_end": 602
+            },
+            "skip_memory_bytes": 19,
+            "rvalue_property": {
+              "package_index": 10,
+              "name": "CallFunc_GetDisplayName_ReturnValue",
+              "class": "StrProperty"
+            },
+            "expression": {
+              "storage_offset": 378,
+              "memory_offset": 614,
+              "token": "0x1c",
+              "instruction": "EX_FinalFunction",
+              "function": {
+                "package_index": -35,
+                "name": "GetDisplayName",
+                "class": "Function"
+              },
+              "arguments": [
+                {
+                  "storage_offset": 383,
+                  "memory_offset": 623,
+                  "token": "0x00",
+                  "instruction": "EX_LocalVariable",
+                  "reference": {
+                    "package_index": 17,
+                    "name": "K2Node_Event_Actor",
+                    "class": "ObjectProperty"
+                  },
+                  "storage_end": 388,
+                  "memory_end": 632
+                }
+              ],
+              "storage_end": 389,
+              "memory_end": 633
+            },
+            "storage_end": 389,
+            "memory_end": 633
+          },
+          "storage_end": 389,
+          "memory_end": 633
+        },
+        {
+          "storage_offset": 359,
+          "memory_offset": 583,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 10,
+            "name": "CallFunc_GetDisplayName_ReturnValue",
+            "class": "StrProperty"
+          },
+          "storage_end": 364,
+          "memory_end": 592
+        },
+        {
+          "storage_offset": 364,
+          "memory_offset": 592,
+          "token": "0x19",
+          "instruction": "EX_Context",
+          "object": {
+            "storage_offset": 365,
+            "memory_offset": 593,
+            "token": "0x20",
+            "instruction": "EX_ObjectConst",
+            "reference": {
+              "package_index": -40,
+              "name": "Default__KismetSystemLibrary",
+              "class": "KismetSystemLibrary"
+            },
+            "storage_end": 370,
+            "memory_end": 602
+          },
+          "skip_memory_bytes": 19,
+          "rvalue_property": {
+            "package_index": 10,
+            "name": "CallFunc_GetDisplayName_ReturnValue",
+            "class": "StrProperty"
+          },
+          "expression": {
+            "storage_offset": 378,
+            "memory_offset": 614,
+            "token": "0x1c",
+            "instruction": "EX_FinalFunction",
+            "function": {
+              "package_index": -35,
+              "name": "GetDisplayName",
+              "class": "Function"
+            },
+            "arguments": [
+              {
+                "storage_offset": 383,
+                "memory_offset": 623,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 17,
+                  "name": "K2Node_Event_Actor",
+                  "class": "ObjectProperty"
+                },
+                "storage_end": 388,
+                "memory_end": 632
+              }
+            ],
+            "storage_end": 389,
+            "memory_end": 633
+          },
+          "storage_end": 389,
+          "memory_end": 633
+        },
+        {
+          "storage_offset": 365,
+          "memory_offset": 593,
+          "token": "0x20",
+          "instruction": "EX_ObjectConst",
+          "reference": {
+            "package_index": -40,
+            "name": "Default__KismetSystemLibrary",
+            "class": "KismetSystemLibrary"
+          },
+          "storage_end": 370,
+          "memory_end": 602
+        },
+        {
+          "storage_offset": 378,
+          "memory_offset": 614,
+          "token": "0x1c",
+          "instruction": "EX_FinalFunction",
+          "function": {
+            "package_index": -35,
+            "name": "GetDisplayName",
+            "class": "Function"
+          },
+          "arguments": [
+            {
+              "storage_offset": 383,
+              "memory_offset": 623,
+              "token": "0x00",
+              "instruction": "EX_LocalVariable",
+              "reference": {
+                "package_index": 17,
+                "name": "K2Node_Event_Actor",
+                "class": "ObjectProperty"
+              },
+              "storage_end": 388,
+              "memory_end": 632
+            }
+          ],
+          "storage_end": 389,
+          "memory_end": 633
+        },
+        {
+          "storage_offset": 383,
+          "memory_offset": 623,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 17,
+            "name": "K2Node_Event_Actor",
+            "class": "ObjectProperty"
+          },
+          "storage_end": 388,
+          "memory_end": 632
+        },
+        {
+          "storage_offset": 388,
+          "memory_offset": 632,
+          "token": "0x16",
+          "instruction": "EX_EndFunctionParms",
+          "storage_end": 389,
+          "memory_end": 633
+        },
+        {
+          "storage_offset": 389,
+          "memory_offset": 633,
+          "token": "0x0f",
+          "instruction": "EX_Let",
+          "property": {
+            "package_index": 9,
+            "name": "CallFunc_Concat_StrStr_ReturnValue2",
+            "class": "StrProperty"
+          },
+          "target": {
+            "storage_offset": 394,
+            "memory_offset": 642,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 9,
+              "name": "CallFunc_Concat_StrStr_ReturnValue2",
+              "class": "StrProperty"
+            },
+            "storage_end": 399,
+            "memory_end": 651
+          },
+          "value": {
+            "storage_offset": 399,
+            "memory_offset": 651,
+            "token": "0x19",
+            "instruction": "EX_Context",
+            "object": {
+              "storage_offset": 400,
+              "memory_offset": 652,
+              "token": "0x20",
+              "instruction": "EX_ObjectConst",
+              "reference": {
+                "package_index": -39,
+                "name": "Default__KismetStringLibrary",
+                "class": "KismetStringLibrary"
+              },
+              "storage_end": 405,
+              "memory_end": 661
+            },
+            "skip_memory_bytes": 28,
+            "rvalue_property": {
+              "package_index": 9,
+              "name": "CallFunc_Concat_StrStr_ReturnValue2",
+              "class": "StrProperty"
+            },
+            "expression": {
+              "storage_offset": 413,
+              "memory_offset": 673,
+              "token": "0x1c",
+              "instruction": "EX_FinalFunction",
+              "function": {
+                "package_index": -33,
+                "name": "Concat_StrStr",
+                "class": "Function"
+              },
+              "arguments": [
+                {
+                  "storage_offset": 418,
+                  "memory_offset": 682,
+                  "token": "0x00",
+                  "instruction": "EX_LocalVariable",
+                  "reference": {
+                    "package_index": 11,
+                    "name": "CallFunc_Concat_StrStr_ReturnValue",
+                    "class": "StrProperty"
+                  },
+                  "storage_end": 423,
+                  "memory_end": 691
+                },
+                {
+                  "storage_offset": 423,
+                  "memory_offset": 691,
+                  "token": "0x00",
+                  "instruction": "EX_LocalVariable",
+                  "reference": {
+                    "package_index": 14,
+                    "name": "CallFunc_GetEnumeratorUserFriendlyName_ReturnValue",
+                    "class": "StrProperty"
+                  },
+                  "storage_end": 428,
+                  "memory_end": 700
+                }
+              ],
+              "storage_end": 429,
+              "memory_end": 701
+            },
+            "storage_end": 429,
+            "memory_end": 701
+          },
+          "storage_end": 429,
+          "memory_end": 701
+        },
+        {
+          "storage_offset": 394,
+          "memory_offset": 642,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 9,
+            "name": "CallFunc_Concat_StrStr_ReturnValue2",
+            "class": "StrProperty"
+          },
+          "storage_end": 399,
+          "memory_end": 651
+        },
+        {
+          "storage_offset": 399,
+          "memory_offset": 651,
+          "token": "0x19",
+          "instruction": "EX_Context",
+          "object": {
+            "storage_offset": 400,
+            "memory_offset": 652,
+            "token": "0x20",
+            "instruction": "EX_ObjectConst",
+            "reference": {
+              "package_index": -39,
+              "name": "Default__KismetStringLibrary",
+              "class": "KismetStringLibrary"
+            },
+            "storage_end": 405,
+            "memory_end": 661
+          },
+          "skip_memory_bytes": 28,
+          "rvalue_property": {
+            "package_index": 9,
+            "name": "CallFunc_Concat_StrStr_ReturnValue2",
+            "class": "StrProperty"
+          },
+          "expression": {
+            "storage_offset": 413,
+            "memory_offset": 673,
+            "token": "0x1c",
+            "instruction": "EX_FinalFunction",
+            "function": {
+              "package_index": -33,
+              "name": "Concat_StrStr",
+              "class": "Function"
+            },
+            "arguments": [
+              {
+                "storage_offset": 418,
+                "memory_offset": 682,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 11,
+                  "name": "CallFunc_Concat_StrStr_ReturnValue",
+                  "class": "StrProperty"
+                },
+                "storage_end": 423,
+                "memory_end": 691
+              },
+              {
+                "storage_offset": 423,
+                "memory_offset": 691,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 14,
+                  "name": "CallFunc_GetEnumeratorUserFriendlyName_ReturnValue",
+                  "class": "StrProperty"
+                },
+                "storage_end": 428,
+                "memory_end": 700
+              }
+            ],
+            "storage_end": 429,
+            "memory_end": 701
+          },
+          "storage_end": 429,
+          "memory_end": 701
+        },
+        {
+          "storage_offset": 400,
+          "memory_offset": 652,
+          "token": "0x20",
+          "instruction": "EX_ObjectConst",
+          "reference": {
+            "package_index": -39,
+            "name": "Default__KismetStringLibrary",
+            "class": "KismetStringLibrary"
+          },
+          "storage_end": 405,
+          "memory_end": 661
+        },
+        {
+          "storage_offset": 413,
+          "memory_offset": 673,
+          "token": "0x1c",
+          "instruction": "EX_FinalFunction",
+          "function": {
+            "package_index": -33,
+            "name": "Concat_StrStr",
+            "class": "Function"
+          },
+          "arguments": [
+            {
+              "storage_offset": 418,
+              "memory_offset": 682,
+              "token": "0x00",
+              "instruction": "EX_LocalVariable",
+              "reference": {
+                "package_index": 11,
+                "name": "CallFunc_Concat_StrStr_ReturnValue",
+                "class": "StrProperty"
+              },
+              "storage_end": 423,
+              "memory_end": 691
+            },
+            {
+              "storage_offset": 423,
+              "memory_offset": 691,
+              "token": "0x00",
+              "instruction": "EX_LocalVariable",
+              "reference": {
+                "package_index": 14,
+                "name": "CallFunc_GetEnumeratorUserFriendlyName_ReturnValue",
+                "class": "StrProperty"
+              },
+              "storage_end": 428,
+              "memory_end": 700
+            }
+          ],
+          "storage_end": 429,
+          "memory_end": 701
+        },
+        {
+          "storage_offset": 418,
+          "memory_offset": 682,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 11,
+            "name": "CallFunc_Concat_StrStr_ReturnValue",
+            "class": "StrProperty"
+          },
+          "storage_end": 423,
+          "memory_end": 691
+        },
+        {
+          "storage_offset": 423,
+          "memory_offset": 691,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 14,
+            "name": "CallFunc_GetEnumeratorUserFriendlyName_ReturnValue",
+            "class": "StrProperty"
+          },
+          "storage_end": 428,
+          "memory_end": 700
+        },
+        {
+          "storage_offset": 428,
+          "memory_offset": 700,
+          "token": "0x16",
+          "instruction": "EX_EndFunctionParms",
+          "storage_end": 429,
+          "memory_end": 701
+        },
+        {
+          "storage_offset": 429,
+          "memory_offset": 701,
+          "token": "0x0f",
+          "instruction": "EX_Let",
+          "property": {
+            "package_index": 7,
+            "name": "CallFunc_Concat_StrStr_ReturnValue3",
+            "class": "StrProperty"
+          },
+          "target": {
+            "storage_offset": 434,
+            "memory_offset": 710,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 7,
+              "name": "CallFunc_Concat_StrStr_ReturnValue3",
+              "class": "StrProperty"
+            },
+            "storage_end": 439,
+            "memory_end": 719
+          },
+          "value": {
+            "storage_offset": 439,
+            "memory_offset": 719,
+            "token": "0x19",
+            "instruction": "EX_Context",
+            "object": {
+              "storage_offset": 440,
+              "memory_offset": 720,
+              "token": "0x20",
+              "instruction": "EX_ObjectConst",
+              "reference": {
+                "package_index": -39,
+                "name": "Default__KismetStringLibrary",
+                "class": "KismetStringLibrary"
+              },
+              "storage_end": 445,
+              "memory_end": 729
+            },
+            "skip_memory_bytes": 23,
+            "rvalue_property": {
+              "package_index": 7,
+              "name": "CallFunc_Concat_StrStr_ReturnValue3",
+              "class": "StrProperty"
+            },
+            "expression": {
+              "storage_offset": 453,
+              "memory_offset": 741,
+              "token": "0x1c",
+              "instruction": "EX_FinalFunction",
+              "function": {
+                "package_index": -33,
+                "name": "Concat_StrStr",
+                "class": "Function"
+              },
+              "arguments": [
+                {
+                  "storage_offset": 458,
+                  "memory_offset": 750,
+                  "token": "0x00",
+                  "instruction": "EX_LocalVariable",
+                  "reference": {
+                    "package_index": 9,
+                    "name": "CallFunc_Concat_StrStr_ReturnValue2",
+                    "class": "StrProperty"
+                  },
+                  "storage_end": 463,
+                  "memory_end": 759
+                },
+                {
+                  "storage_offset": 463,
+                  "memory_offset": 759,
+                  "token": "0x1f",
+                  "instruction": "EX_StringConst",
+                  "value": ": ",
+                  "storage_end": 467,
+                  "memory_end": 763
+                }
+              ],
+              "storage_end": 468,
+              "memory_end": 764
+            },
+            "storage_end": 468,
+            "memory_end": 764
+          },
+          "storage_end": 468,
+          "memory_end": 764
+        },
+        {
+          "storage_offset": 434,
+          "memory_offset": 710,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 7,
+            "name": "CallFunc_Concat_StrStr_ReturnValue3",
+            "class": "StrProperty"
+          },
+          "storage_end": 439,
+          "memory_end": 719
+        },
+        {
+          "storage_offset": 439,
+          "memory_offset": 719,
+          "token": "0x19",
+          "instruction": "EX_Context",
+          "object": {
+            "storage_offset": 440,
+            "memory_offset": 720,
+            "token": "0x20",
+            "instruction": "EX_ObjectConst",
+            "reference": {
+              "package_index": -39,
+              "name": "Default__KismetStringLibrary",
+              "class": "KismetStringLibrary"
+            },
+            "storage_end": 445,
+            "memory_end": 729
+          },
+          "skip_memory_bytes": 23,
+          "rvalue_property": {
+            "package_index": 7,
+            "name": "CallFunc_Concat_StrStr_ReturnValue3",
+            "class": "StrProperty"
+          },
+          "expression": {
+            "storage_offset": 453,
+            "memory_offset": 741,
+            "token": "0x1c",
+            "instruction": "EX_FinalFunction",
+            "function": {
+              "package_index": -33,
+              "name": "Concat_StrStr",
+              "class": "Function"
+            },
+            "arguments": [
+              {
+                "storage_offset": 458,
+                "memory_offset": 750,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 9,
+                  "name": "CallFunc_Concat_StrStr_ReturnValue2",
+                  "class": "StrProperty"
+                },
+                "storage_end": 463,
+                "memory_end": 759
+              },
+              {
+                "storage_offset": 463,
+                "memory_offset": 759,
+                "token": "0x1f",
+                "instruction": "EX_StringConst",
+                "value": ": ",
+                "storage_end": 467,
+                "memory_end": 763
+              }
+            ],
+            "storage_end": 468,
+            "memory_end": 764
+          },
+          "storage_end": 468,
+          "memory_end": 764
+        },
+        {
+          "storage_offset": 440,
+          "memory_offset": 720,
+          "token": "0x20",
+          "instruction": "EX_ObjectConst",
+          "reference": {
+            "package_index": -39,
+            "name": "Default__KismetStringLibrary",
+            "class": "KismetStringLibrary"
+          },
+          "storage_end": 445,
+          "memory_end": 729
+        },
+        {
+          "storage_offset": 453,
+          "memory_offset": 741,
+          "token": "0x1c",
+          "instruction": "EX_FinalFunction",
+          "function": {
+            "package_index": -33,
+            "name": "Concat_StrStr",
+            "class": "Function"
+          },
+          "arguments": [
+            {
+              "storage_offset": 458,
+              "memory_offset": 750,
+              "token": "0x00",
+              "instruction": "EX_LocalVariable",
+              "reference": {
+                "package_index": 9,
+                "name": "CallFunc_Concat_StrStr_ReturnValue2",
+                "class": "StrProperty"
+              },
+              "storage_end": 463,
+              "memory_end": 759
+            },
+            {
+              "storage_offset": 463,
+              "memory_offset": 759,
+              "token": "0x1f",
+              "instruction": "EX_StringConst",
+              "value": ": ",
+              "storage_end": 467,
+              "memory_end": 763
+            }
+          ],
+          "storage_end": 468,
+          "memory_end": 764
+        },
+        {
+          "storage_offset": 458,
+          "memory_offset": 750,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 9,
+            "name": "CallFunc_Concat_StrStr_ReturnValue2",
+            "class": "StrProperty"
+          },
+          "storage_end": 463,
+          "memory_end": 759
+        },
+        {
+          "storage_offset": 463,
+          "memory_offset": 759,
+          "token": "0x1f",
+          "instruction": "EX_StringConst",
+          "value": ": ",
+          "storage_end": 467,
+          "memory_end": 763
+        },
+        {
+          "storage_offset": 467,
+          "memory_offset": 763,
+          "token": "0x16",
+          "instruction": "EX_EndFunctionParms",
+          "storage_end": 468,
+          "memory_end": 764
+        },
+        {
+          "storage_offset": 468,
+          "memory_offset": 764,
+          "token": "0x0f",
+          "instruction": "EX_Let",
+          "property": {
+            "package_index": 5,
+            "name": "CallFunc_Concat_StrStr_ReturnValue4",
+            "class": "StrProperty"
+          },
+          "target": {
+            "storage_offset": 473,
+            "memory_offset": 773,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 5,
+              "name": "CallFunc_Concat_StrStr_ReturnValue4",
+              "class": "StrProperty"
+            },
+            "storage_end": 478,
+            "memory_end": 782
+          },
+          "value": {
+            "storage_offset": 478,
+            "memory_offset": 782,
+            "token": "0x19",
+            "instruction": "EX_Context",
+            "object": {
+              "storage_offset": 479,
+              "memory_offset": 783,
+              "token": "0x20",
+              "instruction": "EX_ObjectConst",
+              "reference": {
+                "package_index": -39,
+                "name": "Default__KismetStringLibrary",
+                "class": "KismetStringLibrary"
+              },
+              "storage_end": 484,
+              "memory_end": 792
+            },
+            "skip_memory_bytes": 28,
+            "rvalue_property": {
+              "package_index": 5,
+              "name": "CallFunc_Concat_StrStr_ReturnValue4",
+              "class": "StrProperty"
+            },
+            "expression": {
+              "storage_offset": 492,
+              "memory_offset": 804,
+              "token": "0x1c",
+              "instruction": "EX_FinalFunction",
+              "function": {
+                "package_index": -33,
+                "name": "Concat_StrStr",
+                "class": "Function"
+              },
+              "arguments": [
+                {
+                  "storage_offset": 497,
+                  "memory_offset": 813,
+                  "token": "0x00",
+                  "instruction": "EX_LocalVariable",
+                  "reference": {
+                    "package_index": 7,
+                    "name": "CallFunc_Concat_StrStr_ReturnValue3",
+                    "class": "StrProperty"
+                  },
+                  "storage_end": 502,
+                  "memory_end": 822
+                },
+                {
+                  "storage_offset": 502,
+                  "memory_offset": 822,
+                  "token": "0x00",
+                  "instruction": "EX_LocalVariable",
+                  "reference": {
+                    "package_index": 10,
+                    "name": "CallFunc_GetDisplayName_ReturnValue",
+                    "class": "StrProperty"
+                  },
+                  "storage_end": 507,
+                  "memory_end": 831
+                }
+              ],
+              "storage_end": 508,
+              "memory_end": 832
+            },
+            "storage_end": 508,
+            "memory_end": 832
+          },
+          "storage_end": 508,
+          "memory_end": 832
+        },
+        {
+          "storage_offset": 473,
+          "memory_offset": 773,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 5,
+            "name": "CallFunc_Concat_StrStr_ReturnValue4",
+            "class": "StrProperty"
+          },
+          "storage_end": 478,
+          "memory_end": 782
+        },
+        {
+          "storage_offset": 478,
+          "memory_offset": 782,
+          "token": "0x19",
+          "instruction": "EX_Context",
+          "object": {
+            "storage_offset": 479,
+            "memory_offset": 783,
+            "token": "0x20",
+            "instruction": "EX_ObjectConst",
+            "reference": {
+              "package_index": -39,
+              "name": "Default__KismetStringLibrary",
+              "class": "KismetStringLibrary"
+            },
+            "storage_end": 484,
+            "memory_end": 792
+          },
+          "skip_memory_bytes": 28,
+          "rvalue_property": {
+            "package_index": 5,
+            "name": "CallFunc_Concat_StrStr_ReturnValue4",
+            "class": "StrProperty"
+          },
+          "expression": {
+            "storage_offset": 492,
+            "memory_offset": 804,
+            "token": "0x1c",
+            "instruction": "EX_FinalFunction",
+            "function": {
+              "package_index": -33,
+              "name": "Concat_StrStr",
+              "class": "Function"
+            },
+            "arguments": [
+              {
+                "storage_offset": 497,
+                "memory_offset": 813,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 7,
+                  "name": "CallFunc_Concat_StrStr_ReturnValue3",
+                  "class": "StrProperty"
+                },
+                "storage_end": 502,
+                "memory_end": 822
+              },
+              {
+                "storage_offset": 502,
+                "memory_offset": 822,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 10,
+                  "name": "CallFunc_GetDisplayName_ReturnValue",
+                  "class": "StrProperty"
+                },
+                "storage_end": 507,
+                "memory_end": 831
+              }
+            ],
+            "storage_end": 508,
+            "memory_end": 832
+          },
+          "storage_end": 508,
+          "memory_end": 832
+        },
+        {
+          "storage_offset": 479,
+          "memory_offset": 783,
+          "token": "0x20",
+          "instruction": "EX_ObjectConst",
+          "reference": {
+            "package_index": -39,
+            "name": "Default__KismetStringLibrary",
+            "class": "KismetStringLibrary"
+          },
+          "storage_end": 484,
+          "memory_end": 792
+        },
+        {
+          "storage_offset": 492,
+          "memory_offset": 804,
+          "token": "0x1c",
+          "instruction": "EX_FinalFunction",
+          "function": {
+            "package_index": -33,
+            "name": "Concat_StrStr",
+            "class": "Function"
+          },
+          "arguments": [
+            {
+              "storage_offset": 497,
+              "memory_offset": 813,
+              "token": "0x00",
+              "instruction": "EX_LocalVariable",
+              "reference": {
+                "package_index": 7,
+                "name": "CallFunc_Concat_StrStr_ReturnValue3",
+                "class": "StrProperty"
+              },
+              "storage_end": 502,
+              "memory_end": 822
+            },
+            {
+              "storage_offset": 502,
+              "memory_offset": 822,
+              "token": "0x00",
+              "instruction": "EX_LocalVariable",
+              "reference": {
+                "package_index": 10,
+                "name": "CallFunc_GetDisplayName_ReturnValue",
+                "class": "StrProperty"
+              },
+              "storage_end": 507,
+              "memory_end": 831
+            }
+          ],
+          "storage_end": 508,
+          "memory_end": 832
+        },
+        {
+          "storage_offset": 497,
+          "memory_offset": 813,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 7,
+            "name": "CallFunc_Concat_StrStr_ReturnValue3",
+            "class": "StrProperty"
+          },
+          "storage_end": 502,
+          "memory_end": 822
+        },
+        {
+          "storage_offset": 502,
+          "memory_offset": 822,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 10,
+            "name": "CallFunc_GetDisplayName_ReturnValue",
+            "class": "StrProperty"
+          },
+          "storage_end": 507,
+          "memory_end": 831
+        },
+        {
+          "storage_offset": 507,
+          "memory_offset": 831,
+          "token": "0x16",
+          "instruction": "EX_EndFunctionParms",
+          "storage_end": 508,
+          "memory_end": 832
+        },
+        {
+          "storage_offset": 508,
+          "memory_offset": 832,
+          "token": "0x1b",
+          "instruction": "EX_VirtualFunction",
+          "function_name": "Log Debug",
+          "fname": {
+            "index": 76,
+            "number": 0
+          },
+          "arguments": [
+            {
+              "storage_offset": 517,
+              "memory_offset": 845,
+              "token": "0x00",
+              "instruction": "EX_LocalVariable",
+              "reference": {
+                "package_index": 5,
+                "name": "CallFunc_Concat_StrStr_ReturnValue4",
+                "class": "StrProperty"
+              },
+              "storage_end": 522,
+              "memory_end": 854
+            }
+          ],
+          "storage_end": 523,
+          "memory_end": 855
+        },
+        {
+          "storage_offset": 517,
+          "memory_offset": 845,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 5,
+            "name": "CallFunc_Concat_StrStr_ReturnValue4",
+            "class": "StrProperty"
+          },
+          "storage_end": 522,
+          "memory_end": 854
+        },
+        {
+          "storage_offset": 522,
+          "memory_offset": 854,
+          "token": "0x16",
+          "instruction": "EX_EndFunctionParms",
+          "storage_end": 523,
+          "memory_end": 855
+        },
+        {
+          "storage_offset": 523,
+          "memory_offset": 855,
+          "token": "0x4d",
+          "instruction": "EX_PopExecutionFlow",
+          "storage_end": 524,
+          "memory_end": 856
+        },
+        {
+          "storage_offset": 524,
+          "memory_offset": 856,
+          "token": "0x0f",
+          "instruction": "EX_Let",
+          "property": {
+            "package_index": 19,
+            "name": "CallFunc_Add_IntInt_ReturnValue",
+            "class": "IntProperty"
+          },
+          "target": {
+            "storage_offset": 529,
+            "memory_offset": 865,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 19,
+              "name": "CallFunc_Add_IntInt_ReturnValue",
+              "class": "IntProperty"
+            },
+            "storage_end": 534,
+            "memory_end": 874
+          },
+          "value": {
+            "storage_offset": 534,
+            "memory_offset": 874,
+            "token": "0x68",
+            "instruction": "EX_CallMath",
+            "function": {
+              "package_index": -30,
+              "name": "Add_IntInt",
+              "class": "Function"
+            },
+            "arguments": [
+              {
+                "storage_offset": 539,
+                "memory_offset": 883,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 20,
+                  "name": "Temp_int_Loop_Counter_Variable",
+                  "class": "IntProperty"
+                },
+                "storage_end": 544,
+                "memory_end": 892
+              },
+              {
+                "storage_offset": 544,
+                "memory_offset": 892,
+                "token": "0x1d",
+                "instruction": "EX_IntConst",
+                "value": 1,
+                "storage_end": 549,
+                "memory_end": 897
+              }
+            ],
+            "storage_end": 550,
+            "memory_end": 898
+          },
+          "storage_end": 550,
+          "memory_end": 898
+        },
+        {
+          "storage_offset": 529,
+          "memory_offset": 865,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 19,
+            "name": "CallFunc_Add_IntInt_ReturnValue",
+            "class": "IntProperty"
+          },
+          "storage_end": 534,
+          "memory_end": 874
+        },
+        {
+          "storage_offset": 534,
+          "memory_offset": 874,
+          "token": "0x68",
+          "instruction": "EX_CallMath",
+          "function": {
+            "package_index": -30,
+            "name": "Add_IntInt",
+            "class": "Function"
+          },
+          "arguments": [
+            {
+              "storage_offset": 539,
+              "memory_offset": 883,
+              "token": "0x00",
+              "instruction": "EX_LocalVariable",
+              "reference": {
+                "package_index": 20,
+                "name": "Temp_int_Loop_Counter_Variable",
+                "class": "IntProperty"
+              },
+              "storage_end": 544,
+              "memory_end": 892
+            },
+            {
+              "storage_offset": 544,
+              "memory_offset": 892,
+              "token": "0x1d",
+              "instruction": "EX_IntConst",
+              "value": 1,
+              "storage_end": 549,
+              "memory_end": 897
+            }
+          ],
+          "storage_end": 550,
+          "memory_end": 898
+        },
+        {
+          "storage_offset": 539,
+          "memory_offset": 883,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 20,
+            "name": "Temp_int_Loop_Counter_Variable",
+            "class": "IntProperty"
+          },
+          "storage_end": 544,
+          "memory_end": 892
+        },
+        {
+          "storage_offset": 544,
+          "memory_offset": 892,
+          "token": "0x1d",
+          "instruction": "EX_IntConst",
+          "value": 1,
+          "storage_end": 549,
+          "memory_end": 897
+        },
+        {
+          "storage_offset": 549,
+          "memory_offset": 897,
+          "token": "0x16",
+          "instruction": "EX_EndFunctionParms",
+          "storage_end": 550,
+          "memory_end": 898
+        },
+        {
+          "storage_offset": 550,
+          "memory_offset": 898,
+          "token": "0x0f",
+          "instruction": "EX_Let",
+          "property": {
+            "package_index": 20,
+            "name": "Temp_int_Loop_Counter_Variable",
+            "class": "IntProperty"
+          },
+          "target": {
+            "storage_offset": 555,
+            "memory_offset": 907,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 20,
+              "name": "Temp_int_Loop_Counter_Variable",
+              "class": "IntProperty"
+            },
+            "storage_end": 560,
+            "memory_end": 916
+          },
+          "value": {
+            "storage_offset": 560,
+            "memory_offset": 916,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 19,
+              "name": "CallFunc_Add_IntInt_ReturnValue",
+              "class": "IntProperty"
+            },
+            "storage_end": 565,
+            "memory_end": 925
+          },
+          "storage_end": 565,
+          "memory_end": 925
+        },
+        {
+          "storage_offset": 555,
+          "memory_offset": 907,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 20,
+            "name": "Temp_int_Loop_Counter_Variable",
+            "class": "IntProperty"
+          },
+          "storage_end": 560,
+          "memory_end": 916
+        },
+        {
+          "storage_offset": 560,
+          "memory_offset": 916,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 19,
+            "name": "CallFunc_Add_IntInt_ReturnValue",
+            "class": "IntProperty"
+          },
+          "storage_end": 565,
+          "memory_end": 925
+        },
+        {
+          "storage_offset": 565,
+          "memory_offset": 925,
+          "token": "0x06",
+          "instruction": "EX_Jump",
+          "target_memory_offset": 15,
+          "storage_end": 570,
+          "memory_end": 930
+        },
+        {
+          "storage_offset": 570,
+          "memory_offset": 930,
+          "token": "0x19",
+          "instruction": "EX_Context",
+          "object": {
+            "storage_offset": 571,
+            "memory_offset": 931,
+            "token": "0x20",
+            "instruction": "EX_ObjectConst",
+            "reference": {
+              "package_index": -1,
+              "name": "Default__ActorLibrary_C",
+              "class": "ActorLibrary_C"
+            },
+            "storage_end": 576,
+            "memory_end": 940
+          },
+          "skip_memory_bytes": 33,
+          "rvalue_property": {
+            "package_index": 0,
+            "name": "null"
+          },
+          "expression": {
+            "storage_offset": 584,
+            "memory_offset": 952,
+            "token": "0x1b",
+            "instruction": "EX_VirtualFunction",
+            "function_name": "GetAllAttachedActors",
+            "fname": {
+              "index": 59,
+              "number": 0
+            },
+            "arguments": [
+              {
+                "storage_offset": 593,
+                "memory_offset": 965,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 17,
+                  "name": "K2Node_Event_Actor",
+                  "class": "ObjectProperty"
+                },
+                "storage_end": 598,
+                "memory_end": 974
+              },
+              {
+                "storage_offset": 598,
+                "memory_offset": 974,
+                "token": "0x17",
+                "instruction": "EX_Self",
+                "storage_end": 599,
+                "memory_end": 975
+              },
+              {
+                "storage_offset": 599,
+                "memory_offset": 975,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 8,
+                  "name": "CallFunc_GetAllAttachedActors_AttachedActors",
+                  "class": "ArrayProperty"
+                },
+                "storage_end": 604,
+                "memory_end": 984
+              }
+            ],
+            "storage_end": 605,
+            "memory_end": 985
+          },
+          "storage_end": 605,
+          "memory_end": 985
+        },
+        {
+          "storage_offset": 571,
+          "memory_offset": 931,
+          "token": "0x20",
+          "instruction": "EX_ObjectConst",
+          "reference": {
+            "package_index": -1,
+            "name": "Default__ActorLibrary_C",
+            "class": "ActorLibrary_C"
+          },
+          "storage_end": 576,
+          "memory_end": 940
+        },
+        {
+          "storage_offset": 584,
+          "memory_offset": 952,
+          "token": "0x1b",
+          "instruction": "EX_VirtualFunction",
+          "function_name": "GetAllAttachedActors",
+          "fname": {
+            "index": 59,
+            "number": 0
+          },
+          "arguments": [
+            {
+              "storage_offset": 593,
+              "memory_offset": 965,
+              "token": "0x00",
+              "instruction": "EX_LocalVariable",
+              "reference": {
+                "package_index": 17,
+                "name": "K2Node_Event_Actor",
+                "class": "ObjectProperty"
+              },
+              "storage_end": 598,
+              "memory_end": 974
+            },
+            {
+              "storage_offset": 598,
+              "memory_offset": 974,
+              "token": "0x17",
+              "instruction": "EX_Self",
+              "storage_end": 599,
+              "memory_end": 975
+            },
+            {
+              "storage_offset": 599,
+              "memory_offset": 975,
+              "token": "0x00",
+              "instruction": "EX_LocalVariable",
+              "reference": {
+                "package_index": 8,
+                "name": "CallFunc_GetAllAttachedActors_AttachedActors",
+                "class": "ArrayProperty"
+              },
+              "storage_end": 604,
+              "memory_end": 984
+            }
+          ],
+          "storage_end": 605,
+          "memory_end": 985
+        },
+        {
+          "storage_offset": 593,
+          "memory_offset": 965,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 17,
+            "name": "K2Node_Event_Actor",
+            "class": "ObjectProperty"
+          },
+          "storage_end": 598,
+          "memory_end": 974
+        },
+        {
+          "storage_offset": 598,
+          "memory_offset": 974,
+          "token": "0x17",
+          "instruction": "EX_Self",
+          "storage_end": 599,
+          "memory_end": 975
+        },
+        {
+          "storage_offset": 599,
+          "memory_offset": 975,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 8,
+            "name": "CallFunc_GetAllAttachedActors_AttachedActors",
+            "class": "ArrayProperty"
+          },
+          "storage_end": 604,
+          "memory_end": 984
+        },
+        {
+          "storage_offset": 604,
+          "memory_offset": 984,
+          "token": "0x16",
+          "instruction": "EX_EndFunctionParms",
+          "storage_end": 605,
+          "memory_end": 985
+        },
+        {
+          "storage_offset": 605,
+          "memory_offset": 985,
+          "token": "0x0f",
+          "instruction": "EX_Let",
+          "property": {
+            "package_index": 20,
+            "name": "Temp_int_Loop_Counter_Variable",
+            "class": "IntProperty"
+          },
+          "target": {
+            "storage_offset": 610,
+            "memory_offset": 994,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 20,
+              "name": "Temp_int_Loop_Counter_Variable",
+              "class": "IntProperty"
+            },
+            "storage_end": 615,
+            "memory_end": 1003
+          },
+          "value": {
+            "storage_offset": 615,
+            "memory_offset": 1003,
+            "token": "0x1d",
+            "instruction": "EX_IntConst",
+            "value": 0,
+            "storage_end": 620,
+            "memory_end": 1008
+          },
+          "storage_end": 620,
+          "memory_end": 1008
+        },
+        {
+          "storage_offset": 610,
+          "memory_offset": 994,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 20,
+            "name": "Temp_int_Loop_Counter_Variable",
+            "class": "IntProperty"
+          },
+          "storage_end": 615,
+          "memory_end": 1003
+        },
+        {
+          "storage_offset": 615,
+          "memory_offset": 1003,
+          "token": "0x1d",
+          "instruction": "EX_IntConst",
+          "value": 0,
+          "storage_end": 620,
+          "memory_end": 1008
+        },
+        {
+          "storage_offset": 620,
+          "memory_offset": 1008,
+          "token": "0x0f",
+          "instruction": "EX_Let",
+          "property": {
+            "package_index": 18,
+            "name": "Temp_int_Array_Index_Variable",
+            "class": "IntProperty"
+          },
+          "target": {
+            "storage_offset": 625,
+            "memory_offset": 1017,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 18,
+              "name": "Temp_int_Array_Index_Variable",
+              "class": "IntProperty"
+            },
+            "storage_end": 630,
+            "memory_end": 1026
+          },
+          "value": {
+            "storage_offset": 630,
+            "memory_offset": 1026,
+            "token": "0x1d",
+            "instruction": "EX_IntConst",
+            "value": 0,
+            "storage_end": 635,
+            "memory_end": 1031
+          },
+          "storage_end": 635,
+          "memory_end": 1031
+        },
+        {
+          "storage_offset": 625,
+          "memory_offset": 1017,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 18,
+            "name": "Temp_int_Array_Index_Variable",
+            "class": "IntProperty"
+          },
+          "storage_end": 630,
+          "memory_end": 1026
+        },
+        {
+          "storage_offset": 630,
+          "memory_offset": 1026,
+          "token": "0x1d",
+          "instruction": "EX_IntConst",
+          "value": 0,
+          "storage_end": 635,
+          "memory_end": 1031
+        },
+        {
+          "storage_offset": 635,
+          "memory_offset": 1031,
+          "token": "0x06",
+          "instruction": "EX_Jump",
+          "target_memory_offset": 15,
+          "storage_end": 640,
+          "memory_end": 1036
+        },
+        {
+          "storage_offset": 640,
+          "memory_offset": 1036,
+          "token": "0x14",
+          "instruction": "EX_LetBool",
+          "target": {
+            "storage_offset": 641,
+            "memory_offset": 1037,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 22,
+              "name": "Temp_bool_Variable",
+              "class": "BoolProperty"
+            },
+            "storage_end": 646,
+            "memory_end": 1046
+          },
+          "value": {
+            "storage_offset": 646,
+            "memory_offset": 1046,
+            "token": "0x27",
+            "instruction": "EX_True",
+            "value": true,
+            "storage_end": 647,
+            "memory_end": 1047
+          },
+          "storage_end": 647,
+          "memory_end": 1047
+        },
+        {
+          "storage_offset": 641,
+          "memory_offset": 1037,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 22,
+            "name": "Temp_bool_Variable",
+            "class": "BoolProperty"
+          },
+          "storage_end": 646,
+          "memory_end": 1046
+        },
+        {
+          "storage_offset": 646,
+          "memory_offset": 1046,
+          "token": "0x27",
+          "instruction": "EX_True",
+          "value": true,
+          "storage_end": 647,
+          "memory_end": 1047
+        },
+        {
+          "storage_offset": 647,
+          "memory_offset": 1047,
+          "token": "0x14",
+          "instruction": "EX_LetBool",
+          "target": {
+            "storage_offset": 648,
+            "memory_offset": 1048,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 15,
+              "name": "Temp_bool_Variable2",
+              "class": "BoolProperty"
+            },
+            "storage_end": 653,
+            "memory_end": 1057
+          },
+          "value": {
+            "storage_offset": 653,
+            "memory_offset": 1057,
+            "token": "0x28",
+            "instruction": "EX_False",
+            "value": false,
+            "storage_end": 654,
+            "memory_end": 1058
+          },
+          "storage_end": 654,
+          "memory_end": 1058
+        },
+        {
+          "storage_offset": 648,
+          "memory_offset": 1048,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 15,
+            "name": "Temp_bool_Variable2",
+            "class": "BoolProperty"
+          },
+          "storage_end": 653,
+          "memory_end": 1057
+        },
+        {
+          "storage_offset": 653,
+          "memory_offset": 1057,
+          "token": "0x28",
+          "instruction": "EX_False",
+          "value": false,
+          "storage_end": 654,
+          "memory_end": 1058
+        },
+        {
+          "storage_offset": 654,
+          "memory_offset": 1058,
+          "token": "0x0f",
+          "instruction": "EX_Let",
+          "property": {
+            "package_index": 21,
+            "name": "Temp_byte_Variable",
+            "class": "ByteProperty"
+          },
+          "target": {
+            "storage_offset": 659,
+            "memory_offset": 1067,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 21,
+              "name": "Temp_byte_Variable",
+              "class": "ByteProperty"
+            },
+            "storage_end": 664,
+            "memory_end": 1076
+          },
+          "value": {
+            "storage_offset": 664,
+            "memory_offset": 1076,
+            "token": "0x42",
+            "instruction": "EX_StructMemberContext",
+            "member": {
+              "package_index": -4,
+              "name": "Action_2_1FB428D94B464B5066CB6784E7406861",
+              "class": "ByteProperty"
+            },
+            "struct_expression": {
+              "storage_offset": 669,
+              "memory_offset": 1085,
+              "token": "0x00",
+              "instruction": "EX_LocalVariable",
+              "reference": {
+                "package_index": 16,
+                "name": "K2Node_Event_Action",
+                "class": "StructProperty"
+              },
+              "storage_end": 674,
+              "memory_end": 1094
+            },
+            "storage_end": 674,
+            "memory_end": 1094
+          },
+          "storage_end": 674,
+          "memory_end": 1094
+        },
+        {
+          "storage_offset": 659,
+          "memory_offset": 1067,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 21,
+            "name": "Temp_byte_Variable",
+            "class": "ByteProperty"
+          },
+          "storage_end": 664,
+          "memory_end": 1076
+        },
+        {
+          "storage_offset": 664,
+          "memory_offset": 1076,
+          "token": "0x42",
+          "instruction": "EX_StructMemberContext",
+          "member": {
+            "package_index": -4,
+            "name": "Action_2_1FB428D94B464B5066CB6784E7406861",
+            "class": "ByteProperty"
+          },
+          "struct_expression": {
+            "storage_offset": 669,
+            "memory_offset": 1085,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 16,
+              "name": "K2Node_Event_Action",
+              "class": "StructProperty"
+            },
+            "storage_end": 674,
+            "memory_end": 1094
+          },
+          "storage_end": 674,
+          "memory_end": 1094
+        },
+        {
+          "storage_offset": 669,
+          "memory_offset": 1085,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 16,
+            "name": "K2Node_Event_Action",
+            "class": "StructProperty"
+          },
+          "storage_end": 674,
+          "memory_end": 1094
+        },
+        {
+          "storage_offset": 674,
+          "memory_offset": 1094,
+          "token": "0x19",
+          "instruction": "EX_Context",
+          "object": {
+            "storage_offset": 675,
+            "memory_offset": 1095,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 17,
+              "name": "K2Node_Event_Actor",
+              "class": "ObjectProperty"
+            },
+            "storage_end": 680,
+            "memory_end": 1104
+          },
+          "skip_memory_bytes": 69,
+          "rvalue_property": {
+            "package_index": 0,
+            "name": "null"
+          },
+          "expression": {
+            "storage_offset": 688,
+            "memory_offset": 1116,
+            "token": "0x1b",
+            "instruction": "EX_VirtualFunction",
+            "function_name": "SetActorHiddenInGame",
+            "fname": {
+              "index": 88,
+              "number": 0
+            },
+            "arguments": [
+              {
+                "storage_offset": 697,
+                "memory_offset": 1129,
+                "token": "0x69",
+                "instruction": "EX_SwitchValue",
+                "end_memory_offset": 1184,
+                "selector": {
+                  "storage_offset": 704,
+                  "memory_offset": 1136,
+                  "token": "0x00",
+                  "instruction": "EX_LocalVariable",
+                  "reference": {
+                    "package_index": 21,
+                    "name": "Temp_byte_Variable",
+                    "class": "ByteProperty"
+                  },
+                  "storage_end": 709,
+                  "memory_end": 1145
+                },
+                "cases": [
+                  {
+                    "match": {
+                      "storage_offset": 709,
+                      "memory_offset": 1145,
+                      "token": "0x24",
+                      "instruction": "EX_ByteConst",
+                      "value": 0,
+                      "storage_end": 711,
+                      "memory_end": 1147
+                    },
+                    "next_memory_offset": 1160,
+                    "result": {
+                      "storage_offset": 715,
+                      "memory_offset": 1151,
+                      "token": "0x00",
+                      "instruction": "EX_LocalVariable",
+                      "reference": {
+                        "package_index": 15,
+                        "name": "Temp_bool_Variable2",
+                        "class": "BoolProperty"
+                      },
+                      "storage_end": 720,
+                      "memory_end": 1160
+                    }
+                  },
+                  {
+                    "match": {
+                      "storage_offset": 720,
+                      "memory_offset": 1160,
+                      "token": "0x24",
+                      "instruction": "EX_ByteConst",
+                      "value": 1,
+                      "storage_end": 722,
+                      "memory_end": 1162
+                    },
+                    "next_memory_offset": 1175,
+                    "result": {
+                      "storage_offset": 726,
+                      "memory_offset": 1166,
+                      "token": "0x00",
+                      "instruction": "EX_LocalVariable",
+                      "reference": {
+                        "package_index": 22,
+                        "name": "Temp_bool_Variable",
+                        "class": "BoolProperty"
+                      },
+                      "storage_end": 731,
+                      "memory_end": 1175
+                    }
+                  }
+                ],
+                "default": {
+                  "storage_offset": 731,
+                  "memory_offset": 1175,
+                  "token": "0x00",
+                  "instruction": "EX_LocalVariable",
+                  "reference": {
+                    "package_index": 13,
+                    "name": "K2Node_Select_Default",
+                    "class": "BoolProperty"
+                  },
+                  "storage_end": 736,
+                  "memory_end": 1184
+                },
+                "storage_end": 736,
+                "memory_end": 1184
+              }
+            ],
+            "storage_end": 737,
+            "memory_end": 1185
+          },
+          "storage_end": 737,
+          "memory_end": 1185
+        },
+        {
+          "storage_offset": 675,
+          "memory_offset": 1095,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 17,
+            "name": "K2Node_Event_Actor",
+            "class": "ObjectProperty"
+          },
+          "storage_end": 680,
+          "memory_end": 1104
+        },
+        {
+          "storage_offset": 688,
+          "memory_offset": 1116,
+          "token": "0x1b",
+          "instruction": "EX_VirtualFunction",
+          "function_name": "SetActorHiddenInGame",
+          "fname": {
+            "index": 88,
+            "number": 0
+          },
+          "arguments": [
+            {
+              "storage_offset": 697,
+              "memory_offset": 1129,
+              "token": "0x69",
+              "instruction": "EX_SwitchValue",
+              "end_memory_offset": 1184,
+              "selector": {
+                "storage_offset": 704,
+                "memory_offset": 1136,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 21,
+                  "name": "Temp_byte_Variable",
+                  "class": "ByteProperty"
+                },
+                "storage_end": 709,
+                "memory_end": 1145
+              },
+              "cases": [
+                {
+                  "match": {
+                    "storage_offset": 709,
+                    "memory_offset": 1145,
+                    "token": "0x24",
+                    "instruction": "EX_ByteConst",
+                    "value": 0,
+                    "storage_end": 711,
+                    "memory_end": 1147
+                  },
+                  "next_memory_offset": 1160,
+                  "result": {
+                    "storage_offset": 715,
+                    "memory_offset": 1151,
+                    "token": "0x00",
+                    "instruction": "EX_LocalVariable",
+                    "reference": {
+                      "package_index": 15,
+                      "name": "Temp_bool_Variable2",
+                      "class": "BoolProperty"
+                    },
+                    "storage_end": 720,
+                    "memory_end": 1160
+                  }
+                },
+                {
+                  "match": {
+                    "storage_offset": 720,
+                    "memory_offset": 1160,
+                    "token": "0x24",
+                    "instruction": "EX_ByteConst",
+                    "value": 1,
+                    "storage_end": 722,
+                    "memory_end": 1162
+                  },
+                  "next_memory_offset": 1175,
+                  "result": {
+                    "storage_offset": 726,
+                    "memory_offset": 1166,
+                    "token": "0x00",
+                    "instruction": "EX_LocalVariable",
+                    "reference": {
+                      "package_index": 22,
+                      "name": "Temp_bool_Variable",
+                      "class": "BoolProperty"
+                    },
+                    "storage_end": 731,
+                    "memory_end": 1175
+                  }
+                }
+              ],
+              "default": {
+                "storage_offset": 731,
+                "memory_offset": 1175,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 13,
+                  "name": "K2Node_Select_Default",
+                  "class": "BoolProperty"
+                },
+                "storage_end": 736,
+                "memory_end": 1184
+              },
+              "storage_end": 736,
+              "memory_end": 1184
+            }
+          ],
+          "storage_end": 737,
+          "memory_end": 1185
+        },
+        {
+          "storage_offset": 697,
+          "memory_offset": 1129,
+          "token": "0x69",
+          "instruction": "EX_SwitchValue",
+          "end_memory_offset": 1184,
+          "selector": {
+            "storage_offset": 704,
+            "memory_offset": 1136,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 21,
+              "name": "Temp_byte_Variable",
+              "class": "ByteProperty"
+            },
+            "storage_end": 709,
+            "memory_end": 1145
+          },
+          "cases": [
+            {
+              "match": {
+                "storage_offset": 709,
+                "memory_offset": 1145,
+                "token": "0x24",
+                "instruction": "EX_ByteConst",
+                "value": 0,
+                "storage_end": 711,
+                "memory_end": 1147
+              },
+              "next_memory_offset": 1160,
+              "result": {
+                "storage_offset": 715,
+                "memory_offset": 1151,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 15,
+                  "name": "Temp_bool_Variable2",
+                  "class": "BoolProperty"
+                },
+                "storage_end": 720,
+                "memory_end": 1160
+              }
+            },
+            {
+              "match": {
+                "storage_offset": 720,
+                "memory_offset": 1160,
+                "token": "0x24",
+                "instruction": "EX_ByteConst",
+                "value": 1,
+                "storage_end": 722,
+                "memory_end": 1162
+              },
+              "next_memory_offset": 1175,
+              "result": {
+                "storage_offset": 726,
+                "memory_offset": 1166,
+                "token": "0x00",
+                "instruction": "EX_LocalVariable",
+                "reference": {
+                  "package_index": 22,
+                  "name": "Temp_bool_Variable",
+                  "class": "BoolProperty"
+                },
+                "storage_end": 731,
+                "memory_end": 1175
+              }
+            }
+          ],
+          "default": {
+            "storage_offset": 731,
+            "memory_offset": 1175,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 13,
+              "name": "K2Node_Select_Default",
+              "class": "BoolProperty"
+            },
+            "storage_end": 736,
+            "memory_end": 1184
+          },
+          "storage_end": 736,
+          "memory_end": 1184
+        },
+        {
+          "storage_offset": 704,
+          "memory_offset": 1136,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 21,
+            "name": "Temp_byte_Variable",
+            "class": "ByteProperty"
+          },
+          "storage_end": 709,
+          "memory_end": 1145
+        },
+        {
+          "storage_offset": 709,
+          "memory_offset": 1145,
+          "token": "0x24",
+          "instruction": "EX_ByteConst",
+          "value": 0,
+          "storage_end": 711,
+          "memory_end": 1147
+        },
+        {
+          "storage_offset": 715,
+          "memory_offset": 1151,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 15,
+            "name": "Temp_bool_Variable2",
+            "class": "BoolProperty"
+          },
+          "storage_end": 720,
+          "memory_end": 1160
+        },
+        {
+          "storage_offset": 720,
+          "memory_offset": 1160,
+          "token": "0x24",
+          "instruction": "EX_ByteConst",
+          "value": 1,
+          "storage_end": 722,
+          "memory_end": 1162
+        },
+        {
+          "storage_offset": 726,
+          "memory_offset": 1166,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 22,
+            "name": "Temp_bool_Variable",
+            "class": "BoolProperty"
+          },
+          "storage_end": 731,
+          "memory_end": 1175
+        },
+        {
+          "storage_offset": 731,
+          "memory_offset": 1175,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 13,
+            "name": "K2Node_Select_Default",
+            "class": "BoolProperty"
+          },
+          "storage_end": 736,
+          "memory_end": 1184
+        },
+        {
+          "storage_offset": 736,
+          "memory_offset": 1184,
+          "token": "0x16",
+          "instruction": "EX_EndFunctionParms",
+          "storage_end": 737,
+          "memory_end": 1185
+        },
+        {
+          "storage_offset": 737,
+          "memory_offset": 1185,
+          "token": "0x06",
+          "instruction": "EX_Jump",
+          "target_memory_offset": 930,
+          "storage_end": 742,
+          "memory_end": 1190
+        },
+        {
+          "storage_offset": 742,
+          "memory_offset": 1190,
+          "token": "0x06",
+          "instruction": "EX_Jump",
+          "target_memory_offset": 1036,
+          "storage_end": 747,
+          "memory_end": 1195
+        },
+        {
+          "storage_offset": 747,
+          "memory_offset": 1195,
+          "token": "0x04",
+          "instruction": "EX_Return",
+          "expression": {
+            "storage_offset": 748,
+            "memory_offset": 1196,
+            "token": "0x0b",
+            "instruction": "EX_Nothing",
+            "storage_end": 749,
+            "memory_end": 1197
+          },
+          "storage_end": 749,
+          "memory_end": 1197
+        },
+        {
+          "storage_offset": 748,
+          "memory_offset": 1196,
+          "token": "0x0b",
+          "instruction": "EX_Nothing",
+          "storage_end": 749,
+          "memory_end": 1197
+        },
+        {
+          "storage_offset": 749,
+          "memory_offset": 1197,
+          "token": "0x53",
+          "instruction": "EX_EndOfScript",
+          "storage_end": 750,
+          "memory_end": 1198
+        }
+      ]
+    },
+    {
+      "function": "OnActorAction",
+      "export_index": 27,
+      "asset_script_offset": 9680,
+      "pak_script_offset": 123815429,
+      "script_sha256": "f1f055328d4a4b41a36535727c4099ee0745b98891f896d388e55f86f3abe83d",
+      "storage_size": 38,
+      "memory_size": 58,
+      "expected_storage_size": 38,
+      "expected_memory_size": 58,
+      "sizes_match": true,
+      "native_header_bounds_match": true,
+      "top_level_storage_offsets": [
+        0,
+        10,
+        20,
+        35,
+        37
+      ],
+      "target_checks": [],
+      "instructions": [
+        {
+          "storage_offset": 0,
+          "memory_offset": 0,
+          "token": "0x64",
+          "instruction": "EX_LetValueOnPersistentFrame",
+          "property": {
+            "package_index": 17,
+            "name": "K2Node_Event_Actor",
+            "class": "ObjectProperty"
+          },
+          "value": {
+            "storage_offset": 5,
+            "memory_offset": 9,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 26,
+              "name": "Actor",
+              "class": "ObjectProperty"
+            },
+            "storage_end": 10,
+            "memory_end": 18
+          },
+          "storage_end": 10,
+          "memory_end": 18
+        },
+        {
+          "storage_offset": 5,
+          "memory_offset": 9,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 26,
+            "name": "Actor",
+            "class": "ObjectProperty"
+          },
+          "storage_end": 10,
+          "memory_end": 18
+        },
+        {
+          "storage_offset": 10,
+          "memory_offset": 18,
+          "token": "0x64",
+          "instruction": "EX_LetValueOnPersistentFrame",
+          "property": {
+            "package_index": 16,
+            "name": "K2Node_Event_Action",
+            "class": "StructProperty"
+          },
+          "value": {
+            "storage_offset": 15,
+            "memory_offset": 27,
+            "token": "0x00",
+            "instruction": "EX_LocalVariable",
+            "reference": {
+              "package_index": 25,
+              "name": "Action",
+              "class": "StructProperty"
+            },
+            "storage_end": 20,
+            "memory_end": 36
+          },
+          "storage_end": 20,
+          "memory_end": 36
+        },
+        {
+          "storage_offset": 15,
+          "memory_offset": 27,
+          "token": "0x00",
+          "instruction": "EX_LocalVariable",
+          "reference": {
+            "package_index": 25,
+            "name": "Action",
+            "class": "StructProperty"
+          },
+          "storage_end": 20,
+          "memory_end": 36
+        },
+        {
+          "storage_offset": 20,
+          "memory_offset": 36,
+          "token": "0x1b",
+          "instruction": "EX_VirtualFunction",
+          "function_name": "ExecuteUbergraph_ActorHiddenSequencer",
+          "fname": {
+            "index": 56,
+            "number": 0
+          },
+          "arguments": [
+            {
+              "storage_offset": 29,
+              "memory_offset": 49,
+              "token": "0x1d",
+              "instruction": "EX_IntConst",
+              "value": 1190,
+              "storage_end": 34,
+              "memory_end": 54
+            }
+          ],
+          "storage_end": 35,
+          "memory_end": 55
+        },
+        {
+          "storage_offset": 29,
+          "memory_offset": 49,
+          "token": "0x1d",
+          "instruction": "EX_IntConst",
+          "value": 1190,
+          "storage_end": 34,
+          "memory_end": 54
+        },
+        {
+          "storage_offset": 34,
+          "memory_offset": 54,
+          "token": "0x16",
+          "instruction": "EX_EndFunctionParms",
+          "storage_end": 35,
+          "memory_end": 55
+        },
+        {
+          "storage_offset": 35,
+          "memory_offset": 55,
+          "token": "0x04",
+          "instruction": "EX_Return",
+          "expression": {
+            "storage_offset": 36,
+            "memory_offset": 56,
+            "token": "0x0b",
+            "instruction": "EX_Nothing",
+            "storage_end": 37,
+            "memory_end": 57
+          },
+          "storage_end": 37,
+          "memory_end": 57
+        },
+        {
+          "storage_offset": 36,
+          "memory_offset": 56,
+          "token": "0x0b",
+          "instruction": "EX_Nothing",
+          "storage_end": 37,
+          "memory_end": 57
+        },
+        {
+          "storage_offset": 37,
+          "memory_offset": 57,
+          "token": "0x53",
+          "instruction": "EX_EndOfScript",
+          "storage_end": 38,
+          "memory_end": 58
+        }
+      ]
+    },
+    {
+      "function": "UserConstructionScript",
+      "export_index": 28,
+      "asset_script_offset": 9762,
+      "pak_script_offset": 123815511,
+      "script_sha256": "19b0b6df758718c8e334f766cf964ecb527aa1132a3f6671a1df6a0b397e4d4e",
+      "storage_size": 9,
+      "memory_size": 13,
+      "expected_storage_size": 9,
+      "expected_memory_size": 13,
+      "sizes_match": true,
+      "native_header_bounds_match": true,
+      "top_level_storage_offsets": [
+        0,
+        6,
+        8
+      ],
+      "target_checks": [],
+      "instructions": [
+        {
+          "storage_offset": 0,
+          "memory_offset": 0,
+          "token": "0x1c",
+          "instruction": "EX_FinalFunction",
+          "function": {
+            "package_index": -27,
+            "name": "UserConstructionScript",
+            "class": "Function"
+          },
+          "arguments": [],
+          "storage_end": 6,
+          "memory_end": 10
+        },
+        {
+          "storage_offset": 5,
+          "memory_offset": 9,
+          "token": "0x16",
+          "instruction": "EX_EndFunctionParms",
+          "storage_end": 6,
+          "memory_end": 10
+        },
+        {
+          "storage_offset": 6,
+          "memory_offset": 10,
+          "token": "0x04",
+          "instruction": "EX_Return",
+          "expression": {
+            "storage_offset": 7,
+            "memory_offset": 11,
+            "token": "0x0b",
+            "instruction": "EX_Nothing",
+            "storage_end": 8,
+            "memory_end": 12
+          },
+          "storage_end": 8,
+          "memory_end": 12
+        },
+        {
+          "storage_offset": 7,
+          "memory_offset": 11,
+          "token": "0x0b",
+          "instruction": "EX_Nothing",
+          "storage_end": 8,
+          "memory_end": 12
+        },
+        {
+          "storage_offset": 8,
+          "memory_offset": 12,
+          "token": "0x53",
+          "instruction": "EX_EndOfScript",
+          "storage_end": 9,
+          "memory_end": 13
+        }
+      ]
+    }
+  ],
+  "entrypoint_checks": [
+    {
+      "caller": "OnActorAction",
+      "call_storage_offset": 20,
+      "target_memory_offset": 1190,
+      "instruction_boundary": true
+    }
+  ]
+}

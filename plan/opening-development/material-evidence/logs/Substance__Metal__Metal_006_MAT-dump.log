@@ -1,0 +1,76 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/Substance/Metal/Metal_006_MAT.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 79 Exports: 6 Imports: 13 Game: 10000D0
+Export "Metal_006_MAT" was found in package "/Game/Substance/Metal/Metal_006_MAT.uasset"
+Found 1 object(s)
+Loading Material3 Metal_006_MAT from package /Game/Substance/Metal/Metal_006_MAT.uasset
+StructProperty: unknown UMaterial3 BaseColor
+StructProperty: unknown UMaterial3 Metallic
+StructProperty: unknown UMaterial3 Roughness
+StructProperty: unknown UMaterial3 AmbientOcclusion
+Loading package: /Game/Substance/Metal/Metal_006_INST_basecolor.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 13 Exports: 1 Imports: 4 Game: 10000D0
+WARNING: Unknown class "SubstanceTexture2D" for object "Metal_006_INST_basecolor"
+Loading package: /Game/Substance/Metal/Metal_006_INST_normal.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 19 Exports: 1 Imports: 4 Game: 10000D0
+WARNING: Unknown class "SubstanceTexture2D" for object "Metal_006_INST_normal"
+Loading package: /Game/Substance/Metal/Metal_006_INST_roughness.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 19 Exports: 1 Imports: 4 Game: 10000D0
+WARNING: Unknown class "SubstanceTexture2D" for object "Metal_006_INST_roughness"
+Loading package: /Game/Substance/Metal/Metal_006_INST_metallic.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 19 Exports: 1 Imports: 4 Game: 10000D0
+WARNING: Unknown class "SubstanceTexture2D" for object "Metal_006_INST_metallic"
+Loading package: /Game/Substance/Metal/Metal_006_INST_ambient_occlusion.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 19 Exports: 1 Imports: 4 Game: 10000D0
+WARNING: Unknown class "SubstanceTexture2D" for object "Metal_006_INST_ambient_occlusion"
+Loaded in 0.0 sec, 143 allocs, 0.05 MBytes serialized in 13 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: Metal_006_MAT
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[0] = {}
+    Expressions[5] =
+    {
+        Expressions[0] = MaterialExpressionTextureSampleParameter2D'/Game/Substance/Metal/Metal_006_MAT.MaterialExpressionTextureSampleParameter2D_0'
+        Expressions[1] = MaterialExpressionTextureSampleParameter2D'/Game/Substance/Metal/Metal_006_MAT.MaterialExpressionTextureSampleParameter2D_1'
+        Expressions[2] = MaterialExpressionTextureSampleParameter2D'/Game/Substance/Metal/Metal_006_MAT.MaterialExpressionTextureSampleParameter2D_2'
+        Expressions[3] = MaterialExpressionTextureSampleParameter2D'/Game/Substance/Metal/Metal_006_MAT.MaterialExpressionTextureSampleParameter2D_3'
+        Expressions[4] = MaterialExpressionTextureSampleParameter2D'/Game/Substance/Metal/Metal_006_MAT.MaterialExpressionTextureSampleParameter2D_4'
+    }
+    CachedExpressionData =
+    {
+        Parameters =
+        {
+            Entries[5] =
+            {
+                Entries[0] = { ParameterInfos[0]={} }
+                Entries[1] = { ParameterInfos[0]={} }
+                Entries[2] = { ParameterInfos[0]={} }
+                Entries[3] = { ParameterInfos[0]={} }
+                Entries[4] = { ParameterInfos[0]={} }
+            }
+            ScalarValues[0] = {}
+            VectorValues[0] = {}
+            TextureValues[0] = {}
+        }
+        ReferencedTextures[0] = {}
+    }
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[5] =
+    {
+        CollectedTextureParameters[0] = { Texture=None, Name=basecolor, Group=None }
+        CollectedTextureParameters[1] = { Texture=None, Name=normal, Group=None }
+        CollectedTextureParameters[2] = { Texture=None, Name=roughness, Group=None }
+        CollectedTextureParameters[3] = { Texture=None, Name=metallic, Group=None }
+        CollectedTextureParameters[4] = { Texture=None, Name=ambient_occlusion, Group=None }
+    }
+    CollectedScalarParameters[0] = {}
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}

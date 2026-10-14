@@ -1,0 +1,3 @@
+FAIL line 57: mini-pilares ainda têm base e flutuam em vez de alongar
+FAIL line 13: config[Setting::TimerY]<=0.7
+FAIL line 14: config[Setting::TimerScale]>=1.4

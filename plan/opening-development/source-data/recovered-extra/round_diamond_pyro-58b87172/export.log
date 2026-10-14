@@ -1,0 +1,12 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Void/round_diamond_pyro.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 87 Exports: 3 Imports: 8 Game: 10000D0
+Export "round_diamond_pyro" was found in package "/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Void/round_diamond_pyro.uasset"
+Found 1 object(s)
+Loading StaticMesh4 round_diamond_pyro from package /Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Void/round_diamond_pyro.uasset
+Loading package: /Game/_HelloEnjoy_/Fantasynth/HelloComposer/Old_Planes/Materials/UnlitColor-Black.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 29 Exports: 1 Imports: 4 Game: 10000D0
+Loading package: /Game/_HelloEnjoy_/Materials/M_BasicMetal_Chrome.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 59 Exports: 1 Imports: 2 Game: 10000D0
+Loaded in 0.0 sec, 94 allocs, 0.06 MBytes serialized in 13 calls.
+Exporting objects ...
+Exporting StaticMesh4 round_diamond_pyro to C:/ORCA/Fantasynt/plan/opening-development/source-data/recovered-extra/round_diamond_pyro-58b87172/Game/_HelloEnjoy_/ChezNous/Assets/Shapes/Void/round_diamond_pyro.gltf

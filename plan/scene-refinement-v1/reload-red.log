@@ -1,0 +1,1 @@
+FAIL line 304: same_pixels(formed,capture("formed-ring-after-speed-reload",formed_state,formed_camera,310))

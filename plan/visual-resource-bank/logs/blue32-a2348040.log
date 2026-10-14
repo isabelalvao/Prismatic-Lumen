@@ -1,0 +1,11 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/blue32.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 80 Exports: 3 Imports: 6 Game: 10000D0
+Export "blue32" was found in package "/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/blue32.uasset"
+Found 1 object(s)
+Loading StaticMesh4 blue32 from package /Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/blue32.uasset
+Loading package: /Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/blue_mat.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 50 Exports: 1 Imports: 2 Game: 10000D0
+Loaded in 0.0 sec, 67 allocs, 0.04 MBytes serialized in 10 calls.
+Exporting objects ...
+Exporting StaticMesh4 blue32 to C:/ORCA/Fantasynt/plan/visual-resource-bank/resources/blue32-a2348040/Game/_HelloEnjoy_/ChezNous/Assets/Forest/camo32_tube/blue32.gltf

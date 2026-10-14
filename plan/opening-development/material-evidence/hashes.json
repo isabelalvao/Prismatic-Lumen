@@ -1,0 +1,109 @@
+{
+  "files": [
+    {
+      "path": "plan/fantasynth-pak-inventory.json",
+      "size": 564852,
+      "sha256": "86c761fe830c1813da66d582342bc4cc7c8bf54b08c8762306dd4e62fb3e8ce3"
+    },
+    {
+      "path": "plan/full-reference/enriched-map-sequence.json",
+      "size": 12981849,
+      "sha256": "251c6b8ed3aafea72dd002a8061f4daa76aa2d365b1d562bbfe238d9034ec31a"
+    },
+    {
+      "path": "tools/inspect_fantasynth_assets.py",
+      "size": 11047,
+      "sha256": "adceb1295c0d006aa6a6c12fa58d4ce03c504eeef0c5c4f4f3105650b01b5d0e"
+    },
+    {
+      "path": "tools/inspect_fantasynth_sequence.py",
+      "size": 12221,
+      "sha256": "97a65bcc32d5b2ee9f8ef00ed078319d9a2c071e790de60bf070ca17fbac1e6a"
+    },
+    {
+      "path": "tools/export_opening_materials.py",
+      "size": 17679,
+      "sha256": "65b69488f3497b1797e821359a4a1cd9c2d1cc671261bb49765a8ed0cbac666b"
+    },
+    {
+      "path": "tools/vendor/ueviewer/umodel.exe",
+      "size": 1468928,
+      "sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0"
+    },
+    {
+      "path": "assets/opening/materials.json",
+      "size": 176029,
+      "sha256": "ba467807bc577e828fbc2a753a762a113e00f63cbfbf2f02d3b2719b7f02173b"
+    },
+    {
+      "path": "assets/opening/textures/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_hollow_pattern_256_2.png",
+      "size": 3319,
+      "sha256": "56f37ddc99b129195aecef3f308bb053d027302bcdd5d10055fc2c965594a75c"
+    },
+    {
+      "path": "assets/opening/textures/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/hex_pattern_128.png",
+      "size": 1771,
+      "sha256": "47e065d0e92f8ee05b283c9bd594f6b434c953a90ae915af7352513f93344b2b"
+    },
+    {
+      "path": "assets/opening/textures/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleBaseGrid.png",
+      "size": 77917,
+      "sha256": "2a1f268939344c92e5db746d106a2cac9100f706ce3a2f661afe362d40be3fb4"
+    },
+    {
+      "path": "assets/opening/textures/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleCapGrid.png",
+      "size": 55339,
+      "sha256": "0b5932f59535d800d4f72a52b397c4f0a56872bc96289e47c0e566b8a3296d8f"
+    },
+    {
+      "path": "assets/opening/textures/_HelloEnjoy_/Materials/Patterns/pattern_pixel_1.png",
+      "size": 72,
+      "sha256": "37dd2f0599b5424a570624a95ab91b6ffa71d479deb80baf8661783d2567455c"
+    },
+    {
+      "path": "assets/opening/textures/_HelloEnjoy_/Materials/Textures/Circle_256_8.png",
+      "size": 5771,
+      "sha256": "7cbad345a46fbbd8ffee36b6f19fdf75faca9d25e69de32c3690a6a691158ada"
+    },
+    {
+      "path": "assets/opening/textures/_HelloEnjoy_/Materials/Textures/color_white.png",
+      "size": 4406,
+      "sha256": "dfeb769eca423f780f5a0ae07241fb1e5b3363756e12bd183d3a1f6265ec4a82"
+    },
+    {
+      "path": "assets/opening/textures/_HelloEnjoy_/Materials/Textures/DiagonalBand32-Light.png",
+      "size": 3759,
+      "sha256": "d8c3655427b2dc24c0c5b71d5a2b1cb4d8ffdc2bf992560a00e7844137b0ca61"
+    },
+    {
+      "path": "assets/opening/textures/Assets/Textures/T_TilingNoise03_M.png",
+      "size": 211068,
+      "sha256": "338356c73d16c9b382c2b1d7917137b968ecc37b4ad2c1eaf9511dca876224c4"
+    },
+    {
+      "path": "assets/opening/textures/DemoRoom/Textures/T_RoomTiles_M.png",
+      "size": 80084,
+      "sha256": "96beb19256d1bf9e8397f408a0698d10b5786af4c48738f509af1a85d267c551"
+    },
+    {
+      "path": "assets/opening/textures/DemoRoom/Textures/T_RoomTiles_N.png",
+      "size": 2672761,
+      "sha256": "114cb6dba1e92a100e1a8e3ebf2d9f899136265d11498bcf4897e8df975bbad8"
+    },
+    {
+      "path": "plan/opening-development/material-evidence/metadata.json",
+      "size": 2347422,
+      "sha256": "e034709fc439a6c798658d620d5a77c891c110c756100220d3810e6aafc7c4b0"
+    },
+    {
+      "path": "plan/opening-development/material-evidence/umodel-calls.json",
+      "size": 115777,
+      "sha256": "fc5531d431376a4149d3f0a350bbeec6fc9221e49b4e182b99c3958026db1baa"
+    },
+    {
+      "path": "plan/opening-development/material-evidence/mesh-material-dependencies.json",
+      "size": 16745,
+      "sha256": "596c8a73b4441204f4a63ee2fa37113371475c7ebe313f547638a36b67dcb5e9"
+    }
+  ]
+}

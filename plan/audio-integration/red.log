@@ -1,0 +1,44 @@
+test_audio_drives_sequence_clock (test_audio.AudioApplicationTests.test_audio_drives_sequence_clock) ... ERROR
+test_missing_audio_fails_explicitly (test_audio.AudioApplicationTests.test_missing_audio_fails_explicitly) ... FAIL
+test_paused_seek_does_not_consume_audio (test_audio.AudioApplicationTests.test_paused_seek_does_not_consume_audio) ... ERROR
+test_silent_preserves_visual_sequence (test_audio.AudioApplicationTests.test_silent_preserves_visual_sequence) ... FAIL
+
+======================================================================
+ERROR: test_audio_drives_sequence_clock (test_audio.AudioApplicationTests.test_audio_drives_sequence_clock)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_audio.py", line 29, in test_audio_drives_sequence_clock
+    self.assertTrue(final["audio_enabled"])
+                    ~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'audio_enabled'
+
+======================================================================
+ERROR: test_paused_seek_does_not_consume_audio (test_audio.AudioApplicationTests.test_paused_seek_does_not_consume_audio)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_audio.py", line 37, in test_paused_seek_does_not_consume_audio
+    self.assertTrue(final["audio_enabled"])
+                    ~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'audio_enabled'
+
+======================================================================
+FAIL: test_missing_audio_fails_explicitly (test_audio.AudioApplicationTests.test_missing_audio_fails_explicitly)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_audio.py", line 51, in test_missing_audio_fails_explicitly
+    self.assertIn("Audio", result.stderr)
+AssertionError: 'Audio' not found in 'Error: Unknown argument: --audio\n'
+
+======================================================================
+FAIL: test_silent_preserves_visual_sequence (test_audio.AudioApplicationTests.test_silent_preserves_visual_sequence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_audio.py", line 43, in test_silent_preserves_visual_sequence
+    self.assertEqual(result.returncode, 0, result.stderr)
+AssertionError: 1 != 0 : Error: Unknown argument: --silent
+
+
+----------------------------------------------------------------------
+Ran 4 tests in 1.942s
+
+FAILED (failures=2, errors=2)

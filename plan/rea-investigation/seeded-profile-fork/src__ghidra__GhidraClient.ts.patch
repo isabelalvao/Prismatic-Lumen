@@ -1,0 +1,14 @@
+warning: in the working copy of 'C:\ORCA\Fantasynt\plan\rea-investigation\seeded-profile-fork\backups\src\ghidra\GhidraClient.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'C:\ORCA\Fantasynt\tools\vendor\rea-main-source\rea-df2c08b546d4f40103e11b8b31dbfc3d41ee687b\src\ghidra\GhidraClient.ts', LF will be replaced by CRLF the next time Git touches it
+diff --git "a/C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\seeded-profile-fork\\backups\\src\\ghidra\\GhidraClient.ts" "b/C:\\ORCA\\Fantasynt\\tools\\vendor\\rea-main-source\\rea-df2c08b546d4f40103e11b8b31dbfc3d41ee687b\\src\\ghidra\\GhidraClient.ts"
+index d1dee3f..6bbd9a9 100644
+--- "a/C:\\ORCA\\Fantasynt\\plan\\rea-investigation\\seeded-profile-fork\\backups\\src\\ghidra\\GhidraClient.ts"
++++ "b/C:\\ORCA\\Fantasynt\\tools\\vendor\\rea-main-source\\rea-df2c08b546d4f40103e11b8b31dbfc3d41ee687b\\src\\ghidra\\GhidraClient.ts"
+@@ -715,6 +715,7 @@ export class GhidraClient {
+       providerVersion: this.#options.providerVersion,
+       profileDigest: this.#options.profileDigest,
+       targetSha256: this.#options.targetSha256,
++      ...(this.#options.expectedSeededOnly === true ? { expectedSeededOnly: true } : {}),
+       ...(this.#targetAdmission === undefined
+         ? {}
+         : { targetAdmission: this.#targetAdmission }),

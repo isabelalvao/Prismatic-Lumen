@@ -1,0 +1,3 @@
+FAIL line 6: c[Setting::OpeningDuration]>424
+FAIL line 7: directed_composition(412,true,c).exposure<directed_composition(408,true,c).exposure
+FAIL line 8: std::abs((directed_composition(424.1821315192744,true,c).exposure)-(0)) <= (1e-9)

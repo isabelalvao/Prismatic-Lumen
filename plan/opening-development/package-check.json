@@ -1,0 +1,147 @@
+{
+  "archive": "C:\\ORCA\\Fantasynt\\dist\\Fantasynt-PCVR-Win11-x64-0.5.0.zip",
+  "manifest_hashes_valid": true,
+  "desktop": {
+    "ready": {
+      "audio_driver": "dummy",
+      "audio_enabled": true,
+      "device": "Direct3D 11 vendor=0x10de device=0x1f12",
+      "mode": "desktop",
+      "opening_meshes": 55,
+      "port": 5627,
+      "runtime": "",
+      "sequence": true,
+      "type": "ready",
+      "vr_scale": 1.0
+    },
+    "performance": {
+      "accepted_commands": 1,
+      "atmosphere": [
+        0.0019237747183069587,
+        0.0030459766276180744,
+        0.004809436853975058
+      ],
+      "audio_enabled": true,
+      "audio_seconds": 82.56503401360544,
+      "average_fps": 57.67109323278741,
+      "camera_position": -6400.00048828125,
+      "composition_weights": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "frames": 180,
+      "max_delivery_ms": 243.1571,
+      "mean_delivery_ms": 243.1571,
+      "opening_active": true,
+      "scene": "opening",
+      "seconds": 3.1211477,
+      "sequence": true,
+      "sequence_seconds": 82.56503401360544,
+      "type": "performance"
+    },
+    "client_receipt": {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.6000000238418579,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "demo-calm-001",
+      "latency_ms": 243.1571,
+      "revision": 2,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.25,
+        "fog_density": 0.3199999928474426,
+        "geometry_density": 0.30000001192092896,
+        "light_intensity": 0.3199999928474426,
+        "motion_speed": 0.11999999731779099,
+        "palette": [
+          "#B8CEF0",
+          "#6F83AC"
+        ],
+        "pulse_strength": 0.15000000596046448
+      }
+    }
+  },
+  "openxr_simulated": {
+    "ready": {
+      "audio_driver": "dummy",
+      "audio_enabled": true,
+      "device": "Direct3D 11 vendor=0x10de device=0x1f12",
+      "mode": "openxr",
+      "opening_meshes": 55,
+      "port": 5631,
+      "runtime": "FantasyntMock 640x360 per eye",
+      "sequence": true,
+      "type": "ready",
+      "vr_scale": 1.0
+    },
+    "performance": {
+      "accepted_commands": 1,
+      "atmosphere": [
+        0.0012097606668248773,
+        0.001915454282425344,
+        0.0030244016088545322
+      ],
+      "audio_enabled": true,
+      "audio_seconds": 81.61301587301587,
+      "average_fps": 83.30508673818191,
+      "camera_position": -6400.00048828125,
+      "composition_weights": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "frames": 180,
+      "max_delivery_ms": 345.5961,
+      "mean_delivery_ms": 345.5961,
+      "opening_active": true,
+      "scene": "opening",
+      "seconds": 2.1607324,
+      "sequence": true,
+      "sequence_seconds": 81.61301587301587,
+      "type": "performance"
+    },
+    "client_receipt": {
+      "current": {
+        "bloom": 0.3499999940395355,
+        "fog_density": 0.20000000298023224,
+        "geometry_density": 0.5,
+        "light_intensity": 0.6000000238418579,
+        "motion_speed": 0.30000001192092896,
+        "palette": [
+          "#DDEAFF",
+          "#9BB8F0"
+        ],
+        "pulse_strength": 0.4000000059604645
+      },
+      "id": "demo-calm-001",
+      "latency_ms": 345.5961,
+      "revision": 2,
+      "schema_version": 1,
+      "status": "accepted",
+      "target": {
+        "bloom": 0.25,
+        "fog_density": 0.3199999928474426,
+        "geometry_density": 0.30000001192092896,
+        "light_intensity": 0.3199999928474426,
+        "motion_speed": 0.11999999731779099,
+        "palette": [
+          "#B8CEF0",
+          "#6F83AC"
+        ],
+        "pulse_strength": 0.15000000596046448
+      }
+    }
+  },
+  "physical_headset_validated": false
+}

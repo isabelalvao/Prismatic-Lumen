@@ -1,0 +1,33 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleBaseGrid.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 14 Exports: 1 Imports: 2 Game: 10000D0
+Export "PoleBaseGrid" was found in package "/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleBaseGrid.uasset"
+Found 1 object(s)
+Loading Texture2D PoleBaseGrid from package /Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleBaseGrid.uasset
+Loaded in 0.0 sec, 44 allocs, 0.68 MBytes serialized in 9 calls.
+
+Object info:
+============
+ClassName: Texture2D ObjectName: PoleBaseGrid
+    SizeX = 1024
+    SizeY = 1024
+    Format = PF_DXT1 (5)
+    AddressX = TA_Wrap (0)
+    AddressY = TA_Wrap (0)
+    TextureFileCacheName = None
+    MipTailBaseIdx = 0
+    ImportedSize = { X=1024, Y=1024 }
+    bForcePVRTC4 = false
+    UnpackMin[4] = { 0, 0, 0, 0 }
+    UnpackMax[4] = { 1, 1, 1, 1 }
+    CompressionSettings = TC_Default (0)
+    Source =
+    {
+        SizeX = 0
+        SizeY = 0
+        NumSlices = 0
+        NumMips = 0
+        bPNGCompressed = false
+        Format = TSF_Invalid (0)
+    }

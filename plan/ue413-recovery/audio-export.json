@@ -1,0 +1,23 @@
+{
+  "arguments": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-export",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "-out=C:\\ORCA\\Fantasynt\\plan\\ue413-recovery\\sample-audio",
+    "-sounds",
+    "-notex",
+    "-nomesh",
+    "-nostat",
+    "-noanim",
+    "ChezNous_MASTER"
+  ],
+  "returncode": 0,
+  "files": [
+    {
+      "path": "sample-audio\\Game\\_HelloEnjoy_\\ChezNous\\Audio\\ChezNous_MASTER.ogg",
+      "size": 14939326,
+      "sha256": "47bc775e4635d7e4680d0692e8851882a57601d5573189630838271c6798f90b"
+    }
+  ]
+}

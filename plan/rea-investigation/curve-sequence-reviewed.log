@@ -1,0 +1,10 @@
+test_camera_uses_sequence_time_and_pause (test_sequence.SequenceApplicationTests.test_camera_uses_sequence_time_and_pause) ... ok
+test_commands_survive_crossing_into_tunnel (test_sequence.SequenceApplicationTests.test_commands_survive_crossing_into_tunnel) ... ok
+test_fixed_time_selects_each_phase_and_overlap (test_sequence.SequenceApplicationTests.test_fixed_time_selects_each_phase_and_overlap) ... ok
+test_invalid_time_is_rejected_before_startup (test_sequence.SequenceApplicationTests.test_invalid_time_is_rejected_before_startup) ... ok
+test_motion_speed_zero_then_resume_preserves_camera_offset (test_sequence.SequenceApplicationTests.test_motion_speed_zero_then_resume_preserves_camera_offset) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 10.684s
+
+OK

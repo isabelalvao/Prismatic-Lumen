@@ -1,0 +1,1 @@
+FAIL line 88: std::abs(dx*fan_center.nx+dy*fan_center.ny+dz*fan_center.nz)/std::hypot(dx,dy,dz)<0.01f

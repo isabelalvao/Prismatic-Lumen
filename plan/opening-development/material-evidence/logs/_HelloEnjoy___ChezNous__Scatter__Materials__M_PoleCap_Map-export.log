@@ -1,0 +1,33 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleCap_Map.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 37 Exports: 1 Imports: 8 Game: 10000D0
+Export "M_PoleCap_Map" was found in package "/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleCap_Map.uasset"
+Found 1 object(s)
+Loading MaterialInstanceConstant M_PoleCap_Map from package /Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleCap_Map.uasset
+Loading package: /Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 90 Exports: 12 Imports: 9 Game: 10000D0
+Loading package: /Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleCapGrid.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 14 Exports: 1 Imports: 2 Game: 10000D0
+Loading package: /Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/PoleCap_RenderTarget.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 21 Exports: 1 Imports: 2 Game: 10000D0
+WARNING: Unknown class "TextureRenderTarget2D" for object "PoleCap_RenderTarget"
+Loading Material3 M_Detail_Basic_Map from package /Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.uasset
+StructProperty: unknown UMaterial3 BaseColor
+StructProperty: unknown UMaterial3 Metallic
+StructProperty: unknown UMaterial3 Roughness
+StructProperty: unknown UMaterial3 AmbientOcclusion
+BoolProperty: unknown UMaterial3 bUseEmissiveForDynamicAreaLighting
+Loading Texture2D PoleCapGrid from package /Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleCapGrid.uasset
+FloatProperty: unknown UMaterialExpressionScalarParameter SliderMax
+FloatProperty: unknown UMaterialExpressionScalarParameter SliderMax
+Loading package: /Game/_HelloEnjoy_/ChezNous/Materials/RenderTargets/Pole_RenderTarget.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 21 Exports: 1 Imports: 2 Game: 10000D0
+WARNING: Unknown class "TextureRenderTarget2D" for object "Pole_RenderTarget"
+FloatProperty: unknown UMaterialExpressionScalarParameter SliderMax
+FloatProperty: unknown UMaterialExpressionScalarParameter SliderMax
+Loading package: /Game/_HelloEnjoy_/Materials/Textures/Circle_256_8.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 14 Exports: 1 Imports: 2 Game: 10000D0
+Loading Texture2D Circle_256_8 from package /Game/_HelloEnjoy_/Materials/Textures/Circle_256_8.uasset
+WARNING: Unknown class "TextureRenderTarget2D" for object "Pole_RenderTarget"
+Loaded in 0.0 sec, 178 allocs, 0.80 MBytes serialized in 30 calls.
+Exporting objects ...
+Exporting MaterialInstanceConstant M_PoleCap_Map to C:/ORCA/Fantasynt/plan/opening-development/material-evidence/exports/Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_PoleCap_Map.mat
+Exporting Texture2D Circle_256_8 to C:/ORCA/Fantasynt/plan/opening-development/material-evidence/exports/Game/_HelloEnjoy_/Materials/Textures/Circle_256_8.png
+Exporting Texture2D PoleCapGrid to C:/ORCA/Fantasynt/plan/opening-development/material-evidence/exports/Game/_HelloEnjoy_/ChezNous/Materials/Visual/Patterns/PoleCapGrid.png
+Exporting Material3 M_Detail_Basic_Map to C:/ORCA/Fantasynt/plan/opening-development/material-evidence/exports/Game/_HelloEnjoy_/Materials/Mapping/M_Detail_Basic_Map.mat

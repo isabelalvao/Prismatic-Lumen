@@ -1,0 +1,11 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_3.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 73 Exports: 3 Imports: 6 Game: 10000D0
+Export "SM_Lower_3" was found in package "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_3.uasset"
+Found 1 object(s)
+Loading StaticMesh4 SM_Lower_3 from package /Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_3.uasset
+Loading package: /Game/_HelloEnjoy_/ChezNous/Scatter/Materials/M_Lower_3.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 41 Exports: 1 Imports: 8 Game: 10000D0
+Loaded in 0.0 sec, 66 allocs, 0.03 MBytes serialized in 7 calls.
+Exporting objects ...
+Exporting StaticMesh4 SM_Lower_3 to C:/ORCA/Fantasynt/plan/visual-resource-bank/resources/SM_Lower_3-bf0ca48d/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/SM_Lower_3.gltf

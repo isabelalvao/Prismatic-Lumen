@@ -1,0 +1,58 @@
+test_commands_survive_crossing_into_tunnel (test_sequence.SequenceApplicationTests.test_commands_survive_crossing_into_tunnel) ... ok
+test_fixed_time_selects_each_phase_and_overlap (test_sequence.SequenceApplicationTests.test_fixed_time_selects_each_phase_and_overlap) ... 
+  test_fixed_time_selects_each_phase_and_overlap (test_sequence.SequenceApplicationTests.test_fixed_time_selects_each_phase_and_overlap) (seconds=40) ... ERROR
+  test_fixed_time_selects_each_phase_and_overlap (test_sequence.SequenceApplicationTests.test_fixed_time_selects_each_phase_and_overlap) (seconds=96) ... ERROR
+  test_fixed_time_selects_each_phase_and_overlap (test_sequence.SequenceApplicationTests.test_fixed_time_selects_each_phase_and_overlap) (seconds=180) ... ERROR
+  test_fixed_time_selects_each_phase_and_overlap (test_sequence.SequenceApplicationTests.test_fixed_time_selects_each_phase_and_overlap) (seconds=228) ... ERROR
+  test_fixed_time_selects_each_phase_and_overlap (test_sequence.SequenceApplicationTests.test_fixed_time_selects_each_phase_and_overlap) (seconds=300) ... ERROR
+test_invalid_time_is_rejected_before_startup (test_sequence.SequenceApplicationTests.test_invalid_time_is_rejected_before_startup) ... ok
+
+======================================================================
+ERROR: test_fixed_time_selects_each_phase_and_overlap (test_sequence.SequenceApplicationTests.test_fixed_time_selects_each_phase_and_overlap) (seconds=40)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_sequence.py", line 36, in test_fixed_time_selects_each_phase_and_overlap
+    self.assertAlmostEqual(report["camera_position"], expected_camera, delta=0.01)
+                           ~~~~~~^^^^^^^^^^^^^^^^^^^
+KeyError: 'camera_position'
+
+======================================================================
+ERROR: test_fixed_time_selects_each_phase_and_overlap (test_sequence.SequenceApplicationTests.test_fixed_time_selects_each_phase_and_overlap) (seconds=96)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_sequence.py", line 36, in test_fixed_time_selects_each_phase_and_overlap
+    self.assertAlmostEqual(report["camera_position"], expected_camera, delta=0.01)
+                           ~~~~~~^^^^^^^^^^^^^^^^^^^
+KeyError: 'camera_position'
+
+======================================================================
+ERROR: test_fixed_time_selects_each_phase_and_overlap (test_sequence.SequenceApplicationTests.test_fixed_time_selects_each_phase_and_overlap) (seconds=180)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_sequence.py", line 36, in test_fixed_time_selects_each_phase_and_overlap
+    self.assertAlmostEqual(report["camera_position"], expected_camera, delta=0.01)
+                           ~~~~~~^^^^^^^^^^^^^^^^^^^
+KeyError: 'camera_position'
+
+======================================================================
+ERROR: test_fixed_time_selects_each_phase_and_overlap (test_sequence.SequenceApplicationTests.test_fixed_time_selects_each_phase_and_overlap) (seconds=228)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_sequence.py", line 36, in test_fixed_time_selects_each_phase_and_overlap
+    self.assertAlmostEqual(report["camera_position"], expected_camera, delta=0.01)
+                           ~~~~~~^^^^^^^^^^^^^^^^^^^
+KeyError: 'camera_position'
+
+======================================================================
+ERROR: test_fixed_time_selects_each_phase_and_overlap (test_sequence.SequenceApplicationTests.test_fixed_time_selects_each_phase_and_overlap) (seconds=300)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\ORCA\Fantasynt\tests\test_sequence.py", line 36, in test_fixed_time_selects_each_phase_and_overlap
+    self.assertAlmostEqual(report["camera_position"], expected_camera, delta=0.01)
+                           ~~~~~~^^^^^^^^^^^^^^^^^^^
+KeyError: 'camera_position'
+
+----------------------------------------------------------------------
+Ran 3 tests in 5.970s
+
+FAILED (errors=5)

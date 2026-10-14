@@ -1,0 +1,9 @@
+test_invalid_utf8_does_not_terminate_application (test_end_to_end.ApplicationTests.test_invalid_utf8_does_not_terminate_application) ... ok
+test_missing_shader_is_explicit_startup_error (test_end_to_end.ApplicationTests.test_missing_shader_is_explicit_startup_error) ... ok
+test_occupied_port_is_explicit_startup_error (test_end_to_end.ApplicationTests.test_occupied_port_is_explicit_startup_error) ... ok
+test_rejects_invalid_patch_without_changing_state (test_end_to_end.ApplicationTests.test_rejects_invalid_patch_without_changing_state) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 10.313s
+
+OK

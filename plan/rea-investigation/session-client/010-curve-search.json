@@ -1,0 +1,1 @@
+{"name": "search_strings", "arguments": {"pattern": "CurveFloat|GetFloatValue|MovieSceneSequencePlayer|LevelSequencePlayer|RichCurve", "mode": "regex"}, "output": "native-curve-playback-search.json"}

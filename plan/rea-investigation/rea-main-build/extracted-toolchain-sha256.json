@@ -1,0 +1,18 @@
+[
+  {
+    "path": "winlibs/mingw64/bin/x86_64-w64-mingw32-g++.exe",
+    "sha256": "fadac447401f77fd88d77624ccd6028d57db5ca028a731db9de6a039cf86c62a"
+  },
+  {
+    "path": "winlibs/mingw64/bin/dlltool.exe",
+    "sha256": "f8477ceb13cdba951b80d21893630a805c85dc1ebe50ae4203a10ef63d80af3c"
+  },
+  {
+    "path": "winlibs/mingw64/bin/ld.exe",
+    "sha256": "053cdfd9b057225e83c678fe672c93f6d54e3498d8853f98c489b7e50b227923"
+  },
+  {
+    "path": "winlibs/mingw64/bin/as.exe",
+    "sha256": "5539e88d8cc370c7cd6fa585cd3beabc1b61da73d7cace030837a97e6cdefc3c"
+  }
+]

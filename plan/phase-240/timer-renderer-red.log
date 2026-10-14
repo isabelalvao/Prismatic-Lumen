@@ -1,0 +1,2 @@
+FAIL line 141: !same_pixels(timer,reference)
+FAIL line 146: !same_pixels(capture("timer-next-second",state),timer)

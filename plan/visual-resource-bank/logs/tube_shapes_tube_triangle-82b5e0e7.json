@@ -1,0 +1,51 @@
+{
+  "input": {
+    "asset_path": "Fantasynth/Content/_HelloEnjoy_/ChezNous/Scatter/Meshes/tube_shapes_tube_triangle.uasset",
+    "qualified_package": "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/tube_shapes_tube_triangle",
+    "object_name": "tube_shapes_tube_triangle",
+    "class_reference": "/Script/Engine.StaticMesh",
+    "export_index": 3,
+    "serial_offset": 5770,
+    "serial_size": 84393,
+    "payload_sha1": "82b5e0e79d50ac731984d0eed1d012abbf29f16e",
+    "profile": "limited cooked UE4 legacy -6 / 72-byte exports",
+    "source_reports": [
+      "mesh-assets.json"
+    ],
+    "payload_pak_offset": 75067445,
+    "payload_size": 90167,
+    "source_sha1_verified": true,
+    "resource_id": "tube_shapes_tube_triangle-82b5e0e7"
+  },
+  "output_root": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\tube_shapes_tube_triangle-82b5e0e7",
+  "tool_sha256": "13502e5a4d8f6b5f32252afebd6360f7302ccfaccf6b8dda65beff0be2d364a0",
+  "args": [
+    "C:\\ORCA\\Fantasynt\\tools\\vendor\\ueviewer\\umodel.exe",
+    "-export",
+    "-gltf",
+    "-notex",
+    "-game=ue4.13",
+    "-path=C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content",
+    "-out=C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\resources\\tube_shapes_tube_triangle-82b5e0e7",
+    "/Game/_HelloEnjoy_/ChezNous/Scatter/Meshes/tube_shapes_tube_triangle",
+    "tube_shapes_tube_triangle",
+    "StaticMesh"
+  ],
+  "returncode": 0,
+  "log": "C:\\ORCA\\Fantasynt\\plan\\visual-resource-bank\\logs\\tube_shapes_tube_triangle-82b5e0e7.log",
+  "method": "qualified package+object+class UModel export",
+  "elapsed_seconds": 0.062000000034458935,
+  "files": [
+    {
+      "path": "resources\\tube_shapes_tube_triangle-82b5e0e7\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\tube_shapes_tube_triangle.bin",
+      "size": 50896,
+      "sha256": "2ff7d4fd6960c2b631a5d41681bb35b0ec3588d20cf22856bff3d5e551da81d1"
+    },
+    {
+      "path": "resources\\tube_shapes_tube_triangle-82b5e0e7\\Game\\_HelloEnjoy_\\ChezNous\\Scatter\\Meshes\\tube_shapes_tube_triangle.gltf",
+      "size": 2397,
+      "sha256": "49003ec28f6161d52746d38f4d2cfb8fa44a0727b38294662e849d29761c384e"
+    }
+  ],
+  "export_status": "exported_pending_geometry_validation"
+}

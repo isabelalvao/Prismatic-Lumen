@@ -1,0 +1,78 @@
+Pak C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content/Paks/Fantasynth-WindowsNoEditor.pak: 1696 files, version 3
+Found 1695 game files (0 skipped) in 210 folders at path "C:/Program Files (x86)/Steam/steamapps/common/Fantasynth/Fantasynth/Content"
+Scanned game directory in 0.0 sec, 243 allocs, 0.20 MBytes serialized in 2 calls.
+Loading package: /Game/_HelloEnjoy_/Materials/M_TerrainTiles.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 95 Exports: 8 Imports: 10 Game: 10000D0
+Export "M_TerrainTiles" was found in package "/Game/_HelloEnjoy_/Materials/M_TerrainTiles.uasset"
+Found 1 object(s)
+Loading Material3 M_TerrainTiles from package /Game/_HelloEnjoy_/Materials/M_TerrainTiles.uasset
+StructProperty: unknown UMaterial3 BaseColor
+StructProperty: unknown UMaterial3 Metallic
+StructProperty: unknown UMaterial3 Roughness
+StructProperty: unknown UMaterial3 AmbientOcclusion
+Loading package: /Game/DemoRoom/Textures/T_RoomTiles_N.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 23 Exports: 1 Imports: 2 Game: 10000D0
+Loading package: /Game/DemoRoom/Textures/T_RoomTiles_M.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 14 Exports: 1 Imports: 2 Game: 10000D0
+Loading package: /Game/_HelloEnjoy_/Materials/Textures/DiagonalBand32-Light.uasset Ver: 505/0 Engine: 0 [Unversioned] Names: 14 Exports: 1 Imports: 2 Game: 10000D0
+Loading Texture2D T_RoomTiles_N from package /Game/DemoRoom/Textures/T_RoomTiles_N.uasset
+Loading Texture2D T_RoomTiles_M from package /Game/DemoRoom/Textures/T_RoomTiles_M.uasset
+Loading Texture2D DiagonalBand32-Light from package /Game/_HelloEnjoy_/Materials/Textures/DiagonalBand32-Light.uasset
+Loaded in 0.0 sec, 157 allocs, 8.13 MBytes serialized in 38 calls.
+
+Object info:
+============
+ClassName: Material3 ObjectName: M_TerrainTiles
+    TwoSided = false
+    bDisableDepthTest = false
+    bIsMasked = false
+    ReferencedTextures[3] =
+    {
+        ReferencedTextures[0] = Texture2D'/Game/DemoRoom/Textures/T_RoomTiles_N.T_RoomTiles_N'
+        ReferencedTextures[1] = Texture2D'/Game/DemoRoom/Textures/T_RoomTiles_M.T_RoomTiles_M'
+        ReferencedTextures[2] = Texture2D'/Game/_HelloEnjoy_/Materials/Textures/DiagonalBand32-Light.DiagonalBand32-Light'
+    }
+    Expressions[17] =
+    {
+        Expressions[1] = MaterialExpressionScalarParameter'/Game/_HelloEnjoy_/Materials/M_TerrainTiles.MaterialExpressionScalarParameter_0'
+        Expressions[2] = MaterialExpressionScalarParameter'/Game/_HelloEnjoy_/Materials/M_TerrainTiles.MaterialExpressionScalarParameter_1'
+        Expressions[5] = MaterialExpressionTextureSample'/Game/_HelloEnjoy_/Materials/M_TerrainTiles.MaterialExpressionTextureSample_0'
+        Expressions[6] = MaterialExpressionTextureSample'/Game/_HelloEnjoy_/Materials/M_TerrainTiles.MaterialExpressionTextureSample_1'
+        Expressions[8] = MaterialExpressionScalarParameter'/Game/_HelloEnjoy_/Materials/M_TerrainTiles.MaterialExpressionScalarParameter_2'
+        Expressions[13] = MaterialExpressionScalarParameter'/Game/_HelloEnjoy_/Materials/M_TerrainTiles.MaterialExpressionScalarParameter_3'
+        Expressions[15] = MaterialExpressionTextureSample'/Game/_HelloEnjoy_/Materials/M_TerrainTiles.MaterialExpressionTextureSample_2'
+    }
+    CachedExpressionData =
+    {
+        Parameters =
+        {
+            Entries[5] =
+            {
+                Entries[0] = { ParameterInfos[0]={} }
+                Entries[1] = { ParameterInfos[0]={} }
+                Entries[2] = { ParameterInfos[0]={} }
+                Entries[3] = { ParameterInfos[0]={} }
+                Entries[4] = { ParameterInfos[0]={} }
+            }
+            ScalarValues[0] = {}
+            VectorValues[0] = {}
+            TextureValues[0] = {}
+        }
+        ReferencedTextures[0] = {}
+    }
+    BlendMode = BLEND_Opaque (0)
+    OpacityMaskClipValue = 0.333
+    CollectedTextureParameters[0] = {}
+    CollectedScalarParameters[4] =
+    {
+        CollectedScalarParameters[0] = { Value=0, Name=Metallic, Group=Tiles }
+        CollectedScalarParameters[1] = { Value=0, Name=Roughness, Group=Tiles }
+        CollectedScalarParameters[2] = { Value=0.3, Name=AOintesity, Group=None }
+        CollectedScalarParameters[3] = { Value=0.5, Name=NormalIntesity, Group=Tiles }
+    }
+    CollectedVectorParameters[0] = {}
+    FlattenedTexture = None
+    MobileBaseTexture = None
+    MobileNormalTexture = None
+    bUseMobileSpecular = false
+    MobileSpecularPower = 16
+    MobileSpecularMask = MSM_Constant (0)
+    MobileMaskTexture = None
+    TextureStreamingData[0] = {}
