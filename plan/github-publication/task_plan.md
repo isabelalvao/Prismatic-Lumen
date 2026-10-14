@@ -10,14 +10,14 @@ Publicar o código, recursos de execução e toda a documentação/evidência as
 - [x] Atualizar o nome de apresentação, regras Git/LFS e preservar o contexto de investigação.
 - [x] Criar índice documental e verificar conteúdo a versionar.
 - [x] Validar a aplicação existente e preparar o commit inicial.
-- [ ] Criar repositório, enviar Git/LFS e disponibilizar o pacote portátil.
-- [ ] Confirmar conteúdo remoto e entregar a ligação.
+- [x] Criar repositório, enviar Git/LFS e disponibilizar o pacote portátil.
+- [x] Confirmar conteúdo remoto e entregar a ligação.
 
 ## Decisões
 
 - Nome de apresentação: Prismatic Lumen. Nome GitHub: Prismatic-Lumen.
 - Identificadores técnicos anteriores preservados para compatibilidade.
-- Visibilidade inicial privada, salvo preferência explícita do utilizador.
+- Visibilidade privada, expressamente confirmada pelo utilizador.
 - Toda a árvore documental `plan/` é conservada, incluindo capturas e registos; caches, dependências instaladas e binários de ferramentas são excluídos.
 - Git LFS conserva os recursos audiovisuais e binários de evidência. Pacote portátil atual é um recurso de Release.
 
@@ -29,4 +29,4 @@ Publicar o código, recursos de execução e toda a documentação/evidência as
 
 ## Estado
 
-Repositório privado criado: https://github.com/JoaoAz/Prismatic-Lumen. Conteúdo preparado para Git/LFS; 16 testes CTest dos binários existentes aprovados. Verificações de padrões de credenciais não detetaram ocorrências. Envio e publicação do pacote em curso. Nenhuma lógica de execução foi alterada.
+Concluído: repositório privado https://github.com/JoaoAz/Prismatic-Lumen e Release v0.12.0 publicados. Git, objetos LFS, inventário remoto, README e checksum do pacote verificados. 16 testes CTest dos binários existentes aprovados. Ver `report.md` para conteúdo e limites da validação. Nenhuma lógica de execução foi alterada.

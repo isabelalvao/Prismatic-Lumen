@@ -103,6 +103,11 @@
 
 ## Evidências e recursos
 
+Documentação de conclusão da publicação:
+
+- [Relatório da publicação](../plan/github-publication/report.md)
+- [README anterior à publicação](../plan/github-publication/backup/README.before-publication.md)
+
 Os relatórios permanecem acompanhados pelas capturas, vídeos, dados JSON, registos e recursos da árvore `plan/`. O conteúdo audiovisual e os binários de evidência usam Git LFS. Os ficheiros de texto, código e configurações usam Git normal.
 
 Excluídos do histórico: `build/`, `dist/`, `temp/`, `tools/vendor/`, dependências instaladas em `deps/`, caches, credenciais e executáveis de ferramentas. O pacote portátil atual é disponibilizado em Releases.

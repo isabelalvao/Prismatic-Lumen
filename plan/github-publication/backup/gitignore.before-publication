@@ -1,0 +1,7 @@
+/build/
+/temp/
+__pycache__/
+*.pyc
+/.superpowers/
+/fantasynt-events.jsonl
+/dist/
