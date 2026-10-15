@@ -1,107 +1,44 @@
-# Prompt do próximo passo — primeira e única sessão
+# Próximo passo — diagnóstico visual e afinação posterior
 
-Prompt preparado na conversa de desenho e conservado para execução posterior. O nome de apresentação é Prismatic Lumen; a pasta e os identificadores técnicos anteriores permanecem Fantasynt.
+**Atualização de 2026-10-15 — P1 autorizado:** executor local programado implementado. Retomar por [README/evidência P1](../p1-motifs-2026-10-15/README.md). Ensaiar a opção `--motifs-scheduled` no Quest, ouvir/ver entradas e recuperações, pausa/reinício e fade final antes de decidir sobre dose, novas curvas ou P2. O utilizador reportou «funciona bem» para as mãos. Não repetir P0/mãos nem pedir o JSONL anterior. Leitura corporal/limiares e Jev/LLM continuam fora do P1. Os parágrafos seguintes preservam o histórico anterior ao pedido P1.
+
+Atualização após pedido explícito de 2026-10-15: a implementação das mãos visíveis está em `src/render/hand_geometry.*`, shaders próprios e integração do renderer com a amostra OpenXR de cada frame. Ver [estado e validação](../vr-hands-2026-10-15/README.md). Os parágrafos seguintes conservam o contexto anterior ao pedido; já não descrevem a representação como trabalho por autorizar. Próximo passo: observar alinhamento, perdas/recuperação e recentragem no Quest antes de afinar limiares ou pedir adaptação.
+
+Atualização de 2026-10-15: o ambiente novo está instalado e a compilação passou 19 CTest/73 testes Python. O JSONL real já está em `logs/hand-tracking-01.jsonl` e foi analisado; não o voltar a pedir nem repetir P0. [Resultados e limites](../migration-2026-10-14/xr-validation-2026-10-15/README.md): cabeça 100%, esquerda 81,57%, direita 60,32% das amostras utilizáveis; perdas e picos sem referência física. O utilizador aceita deixar a afinação dos limiares para quando houver mãos 3D visíveis para diagnóstico. Não é necessário calibrar agora para preparar essa representação visual; a implementação continua dependente do pedido de trabalho correspondente. Dados ausentes não equivalem a repouso e os picos não devem comandar adaptação sem validação.
+
+O texto abaixo é o prompt de migração de 2026-10-14, conservado como histórico; as pendências de instalação e obtenção do JSONL nele descritas foram resolvidas.
+
+Atualizado em 2026-10-14. **P0 já está implementado.** A versão anterior deste prompt, que propunha implementá-lo, está preservada em [backup da migração](../migration-2026-10-14/backup/next-step-prompt.md). Não repetir essa implementação.
+
+Ler [AGENTS.md](../../AGENTS.md), [MIGRACAO.md](../../MIGRACAO.md), [estado da passagem](../migration-2026-10-14/estado.md) e [P0](../hand-observation-p0/README.md). O desenho ativo continua em [implementation-plan.md](implementation-plan.md), [sessão](first-session.md), [matriz](behavior-matrix.md), [protocolo](first-exposure-protocol.md), [repertório](repertoire.md) e [diário](notes.md).
+
+Texto para iniciar a continuação:
 
 ```text
-Trabalha no projeto Prismatic Lumen (anteriormente Fantasynt), em C:\ORCA\Fantasynt.
+Continua Prismatic Lumen / Fantasynt na raiz atual do projeto.
+Lê AGENTS.md, MIGRACAO.md e plan/migration-2026-10-14/estado.md.
+Verifica git status e preserva alterações locais e ficheiros novos.
+bc86e22 é o commit de base; não contém por si só todo o P0 entregue.
 
-O objetivo desta tarefa é rever e concretizar o desenho da experiência para que possa ser avaliada por participantes numa primeira e única sessão, sem conhecimento dos mecanismos internos nem comparação prévia com outras versões.
+Se esta é a primeira execução no novo PC, verifica recursos LFS, compilador
+e configuração visual; usa build/ novo e tools/build.cmd.
+Executa as verificações pertinentes descritas em MIGRACAO.md.
 
-Produz uma especificação de experiência e um plano técnico executável. Nesta tarefa, altera apenas documentação; não implementes ainda alterações no motor.
+P0 de observação/registo já existe. Não o voltar a implementar.
+Localiza logs/hand-tracking-01.jsonl completo ou pede o ficheiro ao utilizador.
+O relato anterior só confirma aquisição inicial reportada no Quest 3/VDXR;
+não substitui o registo. Se disponível, usa tools/inspect_session.py e guarda
+a análise, preservando o JSONL de origem.
 
-1. CONTEXTO E FINALIDADE
+Relata integridade, atividade/validade por mão, cobertura observada,
+lacunas/perdas/recuperação, mudanças de origem e coerência dos descritores.
+Distingue simulação, relato do utilizador e dados efetivamente analisados.
+Não inferir intenção, precisão física ou latência percetiva destes valores.
 
-Prismatic Lumen é um ambiente audiovisual imersivo não figurativo, implementado em C++, SDL3, bgfx e OpenXR, utilizado com Quest 3 através de PCVR.
-
-O artefacto será um campo de ensaio para investigar se um ambiente com comportamento coerente, parcialmente contingente e causalmente opaco pode favorecer:
-- A atribuição de agência ao próprio ambiente.
-- Uma experiência ambígua entre essa atribuição e o prolongamento da agência do utilizador.
-
-Esta é uma hipótese a investigar, não um efeito que deva ser assumido ou garantido.
-
-A entidade computacional deve fazer uma leitura holística da relação entre utilizador e ambiente. Essa leitura integra expressão corporal, estado audiovisual efetivo, história da interação e consequências das ações anteriores do ambiente.
-
-Restrições confirmadas:
-- Não usar controladores.
-- Usar seguimento das mãos e da cabeça.
-- Não reduzir a interação a um vocabulário de gestos-comandos.
-- Não centrar toda a interpretação no seguimento das mãos.
-- Voz pode ser acrescentada posteriormente; fisiologia é uma extensão futura.
-- Não depender de conversa para a experiência inicial.
-- Não inferir emoções ou intenções como factos a partir dos movimentos.
-- Não introduzir avatar, personagem ou representação antropomórfica como solução para tornar a agência percetível.
-- Distinguir aquisição das mãos da sua representação visual.
-
-Jev é um candidato à decisão semântica, substituível por regras ou outro modelo. A execução audiovisual, os limites e as transições permanecem locais.
-
-2. DOCUMENTAÇÃO E CÓDIGO A CONSULTAR
-
-Lê primeiro:
-- plan/semantic-repertoires-v1/implementation-plan.md
-- plan/semantic-repertoires-v1/repertoire.md
-- plan/semantic-repertoires-v1/notes.md
-- plan/semantic-repertoires-v1/task_plan.md
-- plan/semantic-repertoires-v1/research-context.md
-- README.md
-- visual-config.json
-
-Consulta apenas o código necessário para verificar capacidades e dependências, nomeadamente src/control/, src/vr/, src/audio/, src/render/art_direction.cpp, src/render/sequence.cpp e src/app/main.cpp.
-
-Distingue claramente funcionalidade existente e verificada, funcionalidade proposta, hipótese percetiva por testar e decisão experimental aberta.
-
-Confirma a duração e a organização atuais da experiência no código/configuração. Não suponhas que todos os parâmetros aceites pelo protocolo produzem o mesmo efeito em todas as fases.
-
-3. PROBLEMA CENTRAL A RESOLVER
-
-Os comportamentos podem ser distintos para quem conhece o sistema e passar despercebidos a um participante. A coreografia e a música já produzem mudanças contínuas. Uma alteração adaptativa pode parecer apenas mais um acontecimento programado.
-
-Desenha a sessão para que existam oportunidades de perceber relação, continuidade e iniciativa, sem ensinar os mapeamentos nem revelar a lógica causal. O participante não precisa de identificar os nomes dos comportamentos.
-
-Não confundas opacidade causal com ausência de contingência, ambiguidade com aleatoriedade, surpresa audiovisual com agência atribuída, correlação temporal com prova de intenção, complexidade do modelo com qualidade da experiência ou latência de rede com mediação temporal artística.
-
-4. REVER O REPERTÓRIO
-
-O repertório contém sustentar, ressoar, iniciar, propagar e contrastar. O primeiro incremento considera sustentar, ressoar e iniciar. Avalia se estes três comportamentos são suficientes para uma primeira sessão. Podes simplificar ou reformular, justificando cada alteração.
-
-Para cada comportamento, especifica a função, contexto, manifestação visual/sonora, elementos estáveis, oportunidade de participação, tratamento de imobilidade e perda de seguimento, consequência/memória, saída/transição e indício percetivo a testar.
-
-5. DESENHAR UMA SESSÃO AUTOSSUFICIENTE
-
-Propõe organização temporal compatível com a experiência atual. Tempos e intervalos são hipóteses ajustáveis, não valores cientificamente validados.
-
-Inclui familiarização com o equipamento sem treino dos mapeamentos, continuidade audiovisual, oportunidades de reciprocidade, iniciativa do ambiente, persistência/transformação dos motivos e encerramento. Evita uma demonstração escolar de cada comportamento.
-
-Em cada episódio descreve estado inicial, acontecimento do ambiente, possíveis respostas do participante incluindo ausência de resposta, observação e incerteza, decisão da entidade, transformação aplicada e vestígio conservado.
-
-Inclui três percursos: exploração ativa; participante maioritariamente imóvel; movimentos difíceis de interpretar. A experiência deve continuar coerente nos três casos sem classificar imobilidade como desinteresse.
-
-6. FRONTEIRA ENTRE MODELO E EXECUÇÃO
-
-Especifica contexto temporal, decisões autorizadas, variáveis fixadas experimentalmente, continuidade/memória, composição com coreografia, tradução para parâmetros e tratamento de decisões atrasadas/incompatíveis/de baixa confiança.
-
-Jev seleciona ou gradua comportamentos delimitados. Cálculos exatos, temporização, validade dos sensores e limites ficam no código. Não traduzas probabilidades diretamente em intensidades audiovisuais.
-
-Para capacidades inexistentes, identifica módulo a alterar e alternativa inicial realizável. Não declares espacialização sonora ou controlo por regiões quando só há modulação global.
-
-7. AVALIAÇÃO DE PRIMEIRA EXPOSIÇÃO
-
-Propõe um piloto em que cada participante conhece apenas uma condição: contingência transparente, contingência opaca ou reprodução independente com características audiovisuais comparáveis.
-
-Explica como comparar duração, conteúdo, estimulação, familiarização e latência técnica. Identifica diferenças inevitáveis e fatores de confusão. Distingue recorrências dentro da sessão, repetições da sessão pela mesma pessoa e comparações entre participantes.
-
-Começa a recolha pós-sessão por descrição aberta e não sugestiva. Considera depois medidas separadas de agência própria, agência atribuída ao ambiente, controlo, previsibilidade e ambiguidade. Não uses as interpretações do modelo como evidência subjetiva nem otimizas online relatos de agência durante o ensaio confirmatório.
-
-Define evidência favorável, inconclusiva ou contrária, incluindo efeitos apenas após explicação ou repetições, atribuição semelhante na reprodução independente, responsividade sem agência e descrição apenas como coreografia musical.
-
-Não inventes escalas validadas, efeitos ou tamanho de amostra. Consulta fontes primárias quando precisares de fundamentação e explicita limites da transferência para este artefacto.
-
-8. ENTREGÁVEIS
-
-Guarda em plan/semantic-repertoires-v1/: especificação da primeira sessão; matriz comportamento → contexto → decisão → transformação → indício percetivo → registo; protocolo preliminar; lista priorizada de alterações técnicas com dependências e aceitação.
-
-Atualiza documentos anteriores onde necessário, preserva decisões válidas e regista revisões. Evita versões contraditórias.
-
-Fecha com decisões/justificação, riscos por testar, menor implementação para a questão central e primeira tarefa de programação com módulos e conclusão objetiva.
-
-Avança com pressupostos explícitos quando possível. Reserva perguntas para decisões que alterem materialmente a hipótese ou experiência. O resultado deve orientar implementação e manter as hipóteses percetivas abertas à refutação.
+Preserva Opening, MASTER, percurso e visual-config.json da raiz.
+Não acrescentar adaptação de luz/áudio, mãos desenhadas ou Jev/LLM durante
+esta validação. O executor local de motivos é um passo posterior.
+Atualiza a evidência e o diário local depois de concluir a verificação.
 ```
+
+Sem o JSONL completo, a análise real permanece pendente; ainda é possível verificar a instalação, compilar/testar e preparar novo ensaio técnico no equipamento real.

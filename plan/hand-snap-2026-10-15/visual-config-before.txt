@@ -1,0 +1,5 @@
+
+Algorithm : SHA256
+Hash      : 6813E57449216CC9B47BD9291F337834E4AEDF1A4F5139C1467626C85B6D8C0D
+Path      : C:\DEV\Prismatic\visual-config.json
+

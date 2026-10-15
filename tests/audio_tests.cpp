@@ -22,6 +22,15 @@ int main(int argc,char** argv) {
         try { player.seek(std::numeric_limits<double>::quiet_NaN()); }
         catch(const std::runtime_error&) { rejected=true; }
         CHECK(rejected);
+        // O player P1 conserva frames/duração/seek/pausa do original.
+        AudioPlayer motifs(std::filesystem::u8path(argv[1]),std::nullopt,true);
+        CHECK(motifs.duration()==player.duration());
+        motifs.seek(54); CHECK_NEAR(motifs.position(),54,0.00003);
+        motifs.set_paused(false); SDL_Delay(100); motifs.set_paused(true);
+        const auto motif_frozen=motifs.position();
+        CHECK(motif_frozen>54&&motif_frozen<54.3);
+        SDL_Delay(70); CHECK(motifs.position()==motif_frozen);
+        motifs.seek(0); CHECK(motifs.position()==0);
     } catch(const std::exception& e) { std::cerr<<e.what()<<'\n'; SDL_Quit(); return 1; }
     SDL_Quit();
     return test_finish();

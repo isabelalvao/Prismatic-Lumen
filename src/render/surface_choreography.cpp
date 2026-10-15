@@ -41,8 +41,29 @@ double retained_wrapped_depth(double depth_cm,double radius_cm,const VisualConfi
     return depth-behind;
 }
 
+RingTravelMotion sample_ring_travel(double time,const VisualConfig& c) {
+    // Guião do crescendo/coda do MASTER, independente dos pulsos de emissão.
+    // Integração analítica: mesma posição após pausa, seek ou qualquer cadência de desenho.
+    const double start=std::max(c[Setting::RingAlignStart]+c[Setting::RingAlignDuration],c[Setting::RingPulseStart]);
+    const double end=c[Setting::OpeningDuration];
+    if(!std::isfinite(time)||end<=start||time<=start) return {};
+    const double available=end-start;
+    const double ramp=std::min(28.0,available*0.25);
+    const double slow_end=end-std::min(6.0,available*0.1);
+    const double slow_start=std::max(start+ramp,slow_end-26);
+    const auto integral=[](double t,double a,double b) {
+        if(t<=a) return 0.0;
+        if(t>=b) return (b-a)*0.5+t-b;
+        const double u=(t-a)/(b-a);
+        return (b-a)*(u*u*u-0.5*u*u*u*u);
+    };
+    time=std::min(time,end);
+    return {1+2*reveal(time-start,ramp)-2.75*reveal(time-slow_start,slow_end-slow_start),
+        2*integral(time,start,start+ramp)-2.75*integral(time,slow_start,slow_end)};
+}
+
 Instance directed_tunnel_instance(const Instance& source,double time,double camera,double alignment_camera,
-    const VisualConfig& c,double speed_multiplier,double alignment_lead_m,double animation_clock) {
+    const VisualConfig& c,double speed_multiplier,double alignment_lead_m,double animation_clock,double ring_travel_cm) {
     auto item=source;
     auto& m=item.transform;
     if(source.variation==5) {
@@ -56,7 +77,7 @@ Instance directed_tunnel_instance(const Instance& source,double time,double came
         const double spacing=c[Setting::RingSpacing]*100;
         const double lead=(alignment_lead_m>=0?alignment_lead_m:
             required_ring_lead(c[Setting::CameraSpeed]*std::max(1.0/0.3,speed_multiplier),c))*100;
-        m[14]=static_cast<float>(alignment_camera+lead+std::round(source.phase*63)*spacing-camera);
+        m[14]=static_cast<float>(alignment_camera+lead+std::round(source.phase*63)*spacing-camera-ring_travel_cm);
         // Uma recarga de velocidade durante a montagem antecipa suavemente as peças próximas.
         if(time>=c[Setting::RingAlignStart]) progress=std::max(progress,1-reveal(m[14]-1000,3000));
         m[0]=static_cast<float>(m[0]+(scale-m[0])*progress);

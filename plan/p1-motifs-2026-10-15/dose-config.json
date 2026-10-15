@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-15",
+  "version": "p1-scheduled-long-dip-2",
+  "feature": "Separate configurable light and MASTER attenuation loaded at startup",
+  "fields": {
+    "motifs.light_attenuation": {
+      "default": 0.06,
+      "minimum": 0,
+      "maximum": 0.6
+    },
+    "motifs.master_attenuation": {
+      "default": 0.12,
+      "minimum": 0,
+      "maximum": 1
+    }
+  },
+  "reload": "Close and reopen application; P1 remains frozen during session; Q/F5 do not reload dose",
+  "configuration_preservation": {
+    "visual-config.json": "all previous values preserved; added motifs 0.06/0.12",
+    "assets/visual-config.json": "all previous values preserved; added motifs 0.06/0.12"
+  },
+  "ctest": {
+    "passed": 20,
+    "failed": 0,
+    "excluded": [
+      "renderer_resize"
+    ],
+    "log": "dose-config-ctest.log"
+  },
+  "python": {
+    "passed": 84,
+    "failed": 0,
+    "p1_tests": 9,
+    "log": "dose-config-python.log"
+  },
+  "review": [
+    "Dose shared by executor and precomputed PCM",
+    "Manifest, events and effective state record actual configured dose",
+    "Old JSON without motifs retains initial defaults",
+    "Rejected out-of-range, negative, boolean and nonfinite doses",
+    "Channels independently disabled by zero; P1 off remains identity",
+    "Root/defaults previous artistic values semantically unchanged",
+    "Whitespace check passed"
+  ],
+  "captures": [
+    {
+      "case": "initial",
+      "light_attenuation": 0.06,
+      "master_attenuation": 0.12,
+      "effective_light": 0.5400000214576721,
+      "commanded_gain": 0.88,
+      "capture": "C:\\DEV\\Prismatic\\temp\\p1-dose-4c72788f\\initial\\mirror.png",
+      "capture_sha256": "a97835fd8d8489a2bcc37b3fb84c4af49c6972cb878e4f6956661faac2f3a8f7",
+      "record": "C:\\DEV\\Prismatic\\temp\\p1-dose-4c72788f\\initial\\session.jsonl"
+    },
+    {
+      "case": "stronger",
+      "light_attenuation": 0.3,
+      "master_attenuation": 0.5,
+      "effective_light": 0.30000001192092896,
+      "commanded_gain": 0.5,
+      "capture": "C:\\DEV\\Prismatic\\temp\\p1-dose-4c72788f\\stronger\\mirror.png",
+      "capture_sha256": "b143fc1d9f98d29672862dd57c40b22c3f6116c1878ba829b82aa436effb5fb1",
+      "record": "C:\\DEV\\Prismatic\\temp\\p1-dose-4c72788f\\stronger\\session.jsonl"
+    }
+  ],
+  "hashes_sha256": {
+    "build\\Release\\fantasynt.exe": "5277abda397b193a7e0ce1b28f9c141d99bf04015e740b66c0cfa7b612ed8861",
+    "visual-config.json": "9fcd986f3da6dbe3ac7f583338f63e1efe7867bbdb6bc8a92d0e95c8d57619ea",
+    "assets\\visual-config.json": "9fcd986f3da6dbe3ac7f583338f63e1efe7867bbdb6bc8a92d0e95c8d57619ea",
+    "assets\\audio\\ChezNous_MASTER.wav": "60dc74309ab1fbae42394228ddfc098a09a1e7a36ae739c7f5ee7e1adafb9fd9"
+  },
+  "physical_validation": false,
+  "original_user_report": "Could not confidently perceive the changes with the initial dose, despite green timer",
+  "commit_push": false
+}

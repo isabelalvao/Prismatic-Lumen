@@ -1,0 +1,44 @@
+{
+  "build": "Release x64",
+  "executable": "C:\\DEV\\Prismatic\\build\\Release\\fantasynt.exe",
+  "executable_sha256": "842da716f31fbeb2f18c2794173afde6cb828e46398161e43ed619bf8398446e",
+  "root_config_sha256": "6813e57449216cc9b47bd9291f337834e4aedf1a4f5139c1467626c85b6d8c0d",
+  "root_config_preserved": true,
+  "master_sha256": "60dc74309ab1fbae42394228ddfc098a09a1e7a36ae739c7f5ee7e1adafb9fd9",
+  "master_preserved": true,
+  "ctest_passed": 22,
+  "renderer_separate_passed": true,
+  "python_passed": 96,
+  "pencil_version": "index-only-trail-2",
+  "ring_profile": "master-crescendo-coda-1",
+  "captures": "C:\\DEV\\Prismatic\\temp\\pencil-tunnel-a9e304d5",
+  "captures_visually_reviewed": true,
+  "capture_recording_inspection": [
+    {
+      "session": "C:\\DEV\\Prismatic\\temp\\pencil-tunnel-a9e304d5\\chatter\\session.jsonl",
+      "returncode": 0
+    },
+    {
+      "session": "C:\\DEV\\Prismatic\\temp\\pencil-tunnel-a9e304d5\\natural\\session.jsonl",
+      "returncode": 0
+    },
+    {
+      "session": "C:\\DEV\\Prismatic\\temp\\pencil-tunnel-a9e304d5\\rings-334\\session.jsonl",
+      "returncode": 0
+    },
+    {
+      "session": "C:\\DEV\\Prismatic\\temp\\pencil-tunnel-a9e304d5\\rings-410\\session.jsonl",
+      "returncode": 0
+    }
+  ],
+  "physical_validation": false,
+  "committed": false,
+  "pushed": false,
+  "changes_reviewed_against": "backup/",
+  "source_sha256": {
+    "src\\interaction\\light_pencil.cpp": "6b44c67a5b77359285d1a6c3a6e637ade0fc69eb6f056a8ddb830d8b7e526578",
+    "src\\render\\surface_choreography.cpp": "7578b1bc27d056ac82f1d3f46626fac4b56446d601259a9722406605fa8e448e",
+    "src\\render\\renderer.cpp": "403b9284b39f9a188e286999e073814fc33487b59a211c8d62421af446d25c38",
+    "src\\app\\main.cpp": "71520099fbf43cb85f36f3ca49f635c21b2c418afb350b4f4c8c4b753094afe4"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-15",
+  "features": [
+    "Snap spread +25%, particle radius +12%, original brightness/lifetime/count",
+    "Independent index-only light pencil with short fading physical trail"
+  ],
+  "activation": "--vr --hand-snap --hand-light-pencil",
+  "pencil_version": "index-only-trail-1",
+  "pencil": {
+    "lifetime_seconds": 0.65,
+    "enter_dwell_seconds": 0.06,
+    "minimum_point_spacing_m": 0.003,
+    "filter_time_constant_seconds": 0.012,
+    "max_points_per_hand": 128,
+    "trail_radius_mm": 1.2,
+    "time_gap_reset_seconds": 0.08,
+    "tip_jump_reset_m": 0.12
+  },
+  "ctest": {
+    "passed": 22,
+    "failed": 0,
+    "excluded": [
+      "renderer_resize"
+    ],
+    "log": "ctest.log"
+  },
+  "renderer_separate": {
+    "passed": true,
+    "output": "temp/light-pencil-renderer/resize.png"
+  },
+  "python": {
+    "passed": 93,
+    "failed": 0,
+    "new_pencil_tests": 5,
+    "log": "python-tests.log"
+  },
+  "captures": [
+    {
+      "case": "pencil-off",
+      "capture": "C:\\DEV\\Prismatic\\temp\\hand-pencil-e82208d9\\pencil-off\\mirror.png",
+      "record": "C:\\DEV\\Prismatic\\temp\\hand-pencil-e82208d9\\pencil-off\\session.jsonl",
+      "record_integrity_valid": true,
+      "png_sha256": "948526b26b58c95e86011a4984c0f08bbdc2465878e8d0312ca195e4da5aa3ef"
+    },
+    {
+      "case": "pencil-on",
+      "capture": "C:\\DEV\\Prismatic\\temp\\hand-pencil-e82208d9\\pencil-on\\mirror.png",
+      "record": "C:\\DEV\\Prismatic\\temp\\hand-pencil-e82208d9\\pencil-on\\session.jsonl",
+      "record_integrity_valid": true,
+      "png_sha256": "d252de72514092136d2638cf195d491b6d3ae2ae5e01f1c6368a24653e96e486"
+    },
+    {
+      "case": "snap-off",
+      "capture": "C:\\DEV\\Prismatic\\temp\\hand-pencil-e82208d9\\snap-off\\mirror.png",
+      "record": "C:\\DEV\\Prismatic\\temp\\hand-pencil-e82208d9\\snap-off\\session.jsonl",
+      "record_integrity_valid": true,
+      "png_sha256": "d38e91b02288619b523089ffcb39630e997e9a14d1f45c88f05693d58433c3d8"
+    },
+    {
+      "case": "snap-on",
+      "capture": "C:\\DEV\\Prismatic\\temp\\hand-pencil-e82208d9\\snap-on\\mirror.png",
+      "record": "C:\\DEV\\Prismatic\\temp\\hand-pencil-e82208d9\\snap-on\\session.jsonl",
+      "record_integrity_valid": true,
+      "png_sha256": "e9d1737ba1cb5322a750f0371e23cc71eed5e4d1270ce34682d75cd9b69dfc74"
+    }
+  ],
+  "hashes_sha256": {
+    "build\\Release\\fantasynt.exe": "d4e3a3d8011a05187bed2ce13328a0e57800db23be9fac1a77e798e3f2bb76ec",
+    "build\\Release\\shaders\\vs_light_pencil.bin": "cd39e9a56a35d848750482bfa4ede7254ea034b84ade143995156bf5defaec68",
+    "build\\Release\\shaders\\fs_light_pencil.bin": "9a4661f88da4de400d6c5e997305f0c2b74874749ca9d1229d1fc40cd3b2b698",
+    "visual-config.json": "6813e57449216cc9b47bd9291f337834e4aedf1a4f5139c1467626c85b6d8c0d",
+    "assets\\audio\\ChezNous_MASTER.wav": "60dc74309ab1fbae42394228ddfc098a09a1e7a36ae739c7f5ee7e1adafb9fd9"
+  },
+  "root_configuration_preserved": true,
+  "commit_push": false,
+  "review": [
+    "Physical positions converted with the same offsets as hands and eyes, no virtual scene motion",
+    "All pose inputs finite, valid and tracked; orientation-independent geometry; thumb and other fingers must be tucked",
+    "Separate strokes; no joining across source loss, origin changes, clock gaps or tip jumps",
+    "Point history capped at 128 per hand, finite 16-bit indexed geometry",
+    "Pose exit preserves fading history; tracking loss immediately removes it",
+    "Per-vertex fade, additive depth-tested shading, shared existing final fade",
+    "Both effects independent and combined; recording asynchronous; no audio changes",
+    "Visual comparison inspected; whitespace checks passed"
+  ],
+  "physical_validation": {
+    "pencil_tested_in_quest": false,
+    "prior_snap_feedback": "muito bem; requested subtle enlargement; no measurements supplied"
+  },
+  "limitations": [
+    "Initial kinematic pose thresholds; occlusion may prevent writing",
+    "Filter constant is not a measured physical latency",
+    "Only synthetic tracking and D3D11 captures verified here",
+    "Observation publication at 20 Hz does not reproduce all trail points generated per XR frame"
+  ]
+}

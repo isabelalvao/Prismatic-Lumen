@@ -16,13 +16,16 @@ Vector3 rotate(Quaternion q,Vector3 v) {
     return {v.x+2*(q.w*a.x+b.x),v.y+2*(q.w*a.y+b.y),v.z+2*(q.w*a.z+b.z)};
 }
 }
+Vector3 tracking_to_world(Vector3 p,float height,float back) {
+    return {p.x*100,height+p.y*100,-back-p.z*100};
+}
 EyeMatrices make_eye_matrices(const Pose& pose,const Fov& fov,float near_plane,float far_plane) {
     const float left=std::tan(fov.left),right=std::tan(fov.right),up=std::tan(fov.up),down=std::tan(fov.down);
     if(!std::isfinite(left+right+up+down)||right<=left||up<=down||near_plane<=0||far_plane<=near_plane)
         throw std::runtime_error("Invalid XR projection");
     EyeMatrices result;
     // OpenXR usa metros e -Z para a frente; a cena usa centímetros e +Z.
-    result.eye_world={pose.position.x*100,160+pose.position.y*100,-450-pose.position.z*100};
+    result.eye_world=tracking_to_world(pose.position);
     auto forward=rotate(pose.orientation,{0,0,-1}); forward.z=-forward.z; forward=normalize(forward);
     auto up_vector=rotate(pose.orientation,{0,1,0}); up_vector.z=-up_vector.z;
     auto side=normalize(cross(up_vector,forward));

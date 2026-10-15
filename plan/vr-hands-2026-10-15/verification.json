@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-15",
+  "build": "Release Windows x64 D3D11",
+  "physical_headset_validated": false,
+  "validation": "OpenXR simulated runtime with actual D3D11 GPU images",
+  "ctest_without_renderer": {
+    "passed": 19,
+    "failed": 0
+  },
+  "renderer_direct": {
+    "passed": 1,
+    "failed": 0,
+    "output": "temp/vr-hands-renderer/resize.png"
+  },
+  "python_suite": {
+    "passed": 75,
+    "failed": 0
+  },
+  "post_test_path_fix": {
+    "passed": 4,
+    "failed": 0
+  },
+  "code_review": "Local review against delimited backups; no blocking findings",
+  "regenerated_existing_capture": "plan/m1-integration.png",
+  "files_sha256": {
+    "build/Release/fantasynt.exe": "ff146a6deae649ddae866f51c5b3d454120d4af473b4cce2c9e8c5e6f6198956",
+    "visual-config.json": "01d5bbc348c3f25337affec6463d515abd2d17adcbf894e25934e67fa87faf17",
+    "assets/visual-config.json": "01d5bbc348c3f25337affec6463d515abd2d17adcbf894e25934e67fa87faf17",
+    "src/render/hand_geometry.cpp": "aafc398bd32a46070475985f07ec1b911b85f736d6918061baca5208b366ba66",
+    "src/render/hand_geometry.hpp": "a0967692c4529d71f30e79639a7763f1386d0572bc996288d14e699dcd3ec3f2",
+    "shaders/vs_hand.sc": "e25a76096dc2f6c8a8879e32bc1ce04347055d1722002b106c4e6374f061b1ce",
+    "shaders/fs_hand.sc": "5756e360e859084b00188db8b58b7fb5964569555951eec893eb33652f3f3b2c",
+    "src/render/renderer.cpp": "769948d842e86cd85f457fc9f0d35e4692625a21fa9b7b655372ba4da4e2466a",
+    "src/app/main.cpp": "2aa2de00c5f66e653f44fb7351c68fb651fc935c2b97a774692f1e098d3029e9",
+    "src/vr/view_math.cpp": "93fb93cade10b3fcdd3219da9b260cb254b950e62cb56afaaba17ddb07c488f5",
+    "tests/hand_geometry_tests.cpp": "489e1844b2688088f988fdfaa988873cc9cc9964fab684607bde60d7a8bb4674"
+  }
+}

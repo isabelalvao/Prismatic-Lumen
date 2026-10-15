@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-15",
+  "repository": "C:\\DEV\\Prismatic",
+  "mode": "P1 deterministic scheduled technical rehearsal",
+  "repertoire_version": "p1-scheduled-long-dip-1",
+  "commit_created": false,
+  "push_performed": false,
+  "build": "Release x64 MSVC via tools/build.cmd, incremental final build",
+  "ctest": {
+    "passed": 20,
+    "failed": 0,
+    "excluded": [
+      "renderer_resize"
+    ],
+    "log": "ctest.log"
+  },
+  "renderer_separate": {
+    "passed": true,
+    "output": "temp/p1-renderer/resize.png",
+    "log": "renderer.log"
+  },
+  "python": {
+    "passed": 82,
+    "failed": 0,
+    "new_p1_tests": 7,
+    "log": "python-tests.log"
+  },
+  "hashes_sha256": {
+    "visual-config.json": "01d5bbc348c3f25337affec6463d515abd2d17adcbf894e25934e67fa87faf17",
+    "assets\\visual-config.json": "01d5bbc348c3f25337affec6463d515abd2d17adcbf894e25934e67fa87faf17",
+    "assets\\audio\\ChezNous_MASTER.wav": "60dc74309ab1fbae42394228ddfc098a09a1e7a36ae739c7f5ee7e1adafb9fd9",
+    "build\\Release\\fantasynt.exe": "cf16f4efb0d078a24e43a892338f552cd2c370638c0a140f93232f798acd3c06"
+  },
+  "configuration_and_master_preserved": true,
+  "curves": {
+    "family": "long_dip_smoothstep",
+    "entry_exit_seconds": 2,
+    "light_depth": 0.06,
+    "gain_depth": 0.12,
+    "neutral_from_seconds": 382,
+    "deadline_seconds": 392,
+    "boundary_tolerance": 0.0001,
+    "other_families_implemented": false
+  },
+  "snapshots": "C:\\DEV\\Prismatic\\temp\\p1-evidence-3402faef\\comparisons.json",
+  "xr_audio_dummy_scenarios": [
+    {
+      "mode": "normal",
+      "final_scene_seconds": 55.09133786848073,
+      "technical_pauses": 0,
+      "integrity_valid": true,
+      "record": "C:\\DEV\\Prismatic\\temp\\p1-audio-xr-e816f03f\\normal\\session.jsonl"
+    },
+    {
+      "mode": "head-position-only",
+      "final_scene_seconds": 54.0,
+      "technical_pauses": 20,
+      "integrity_valid": true,
+      "record": "C:\\DEV\\Prismatic\\temp\\p1-audio-xr-e816f03f\\head-position-only\\session.jsonl"
+    },
+    {
+      "mode": "skip-frames",
+      "final_scene_seconds": 55.09133786848073,
+      "technical_pauses": 2,
+      "integrity_valid": true,
+      "record": "C:\\DEV\\Prismatic\\temp\\p1-audio-xr-e816f03f\\skip-frames\\session.jsonl"
+    },
+    {
+      "mode": "recenter",
+      "final_scene_seconds": 55.09133786848073,
+      "technical_pauses": 1,
+      "integrity_valid": true,
+      "record": "C:\\DEV\\Prismatic\\temp\\p1-audio-xr-e816f03f\\recenter\\session.jsonl"
+    },
+    {
+      "mode": "hands-lost",
+      "final_scene_seconds": 55.13777777777778,
+      "technical_pauses": 0,
+      "integrity_valid": true,
+      "record": "C:\\DEV\\Prismatic\\temp\\p1-audio-xr-e816f03f\\hands-lost\\session.jsonl"
+    }
+  ],
+  "review": {
+    "method": "local diff against delimited pre-edit backups and numerical/integration tests",
+    "blocking_findings": [],
+    "whitespace_checked": true,
+    "historical_captures_destination_used": false
+  },
+  "physical_validation": {
+    "p1_tested_in_headset": false,
+    "audio_listened": false,
+    "physical_latency_measured": false,
+    "hands_previous_user_report": "funciona bem; applies to prior hands implementation only"
+  },
+  "limitations": [
+    "P1 uses only the long dip family; double and unequal pair selection remains future work",
+    "Audio envelope is precomputed for the immutable schedule, not a dynamic audio plan engine",
+    "SDL consumed position is not physical audio/video arrival",
+    "Numerical and D3D11 mock tests do not validate perceptual smoothness, dose or latency on Quest",
+    "Existing session inspector checks acquisition/integrity, not P1 envelopes"
+  ]
+}

@@ -61,7 +61,7 @@ vec3 timer_overlay(vec3 color,vec2 screen_uv)
     vec2 edge=abs(timer_position-vec2(1.82,0.5))-vec2(1.98,0.62);
     float plate=1.0-smoothstep(-softness,softness,length(max(edge,vec2(0.0,0.0)))+min(max(edge.x,edge.y),0.0)-0.10);
     color=mix(color,vec3(0.0,0.0,0.0),plate*0.65*u_timer[1].w);
-    vec3 ink_color=vec3(0.95,0.97,1.0);
+    vec3 ink_color=u_timer[0].w>0.5?vec3(0.10,1.0,0.20):vec3(0.95,0.97,1.0);
     if(u_post.y>0.5) ink_color=pow(ink_color,vec3(2.2,2.2,2.2));
     return mix(color,ink_color,ink*u_timer[1].w);
 }

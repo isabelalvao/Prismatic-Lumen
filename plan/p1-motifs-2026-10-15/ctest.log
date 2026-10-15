@@ -1,0 +1,45 @@
+Test project C:/DEV/Prismatic/build
+      Start  1: audio
+ 1/20 Test  #1: audio ............................   Passed    0.64 sec
+      Start  2: motifs
+ 2/20 Test  #2: motifs ...........................   Passed    0.37 sec
+      Start  3: hand_geometry
+ 3/20 Test  #3: hand_geometry ....................   Passed    0.01 sec
+      Start  4: observation
+ 4/20 Test  #4: observation ......................   Passed    0.01 sec
+      Start  5: session_recorder
+ 5/20 Test  #5: session_recorder .................   Passed    0.02 sec
+      Start  6: spectral_geometry
+ 6/20 Test  #6: spectral_geometry ................   Passed    0.02 sec
+      Start  7: rotation_history
+ 7/20 Test  #7: rotation_history .................   Passed    0.01 sec
+      Start  8: choreography
+ 8/20 Test  #8: choreography .....................   Passed    0.01 sec
+      Start  9: six_minute
+ 9/20 Test  #9: six_minute .......................   Passed    0.08 sec
+      Start 10: comfort
+10/20 Test #10: comfort ..........................   Passed    0.29 sec
+      Start 11: time_display
+11/20 Test #11: time_display .....................   Passed    0.01 sec
+      Start 12: phase
+12/20 Test #12: phase ............................   Passed    0.01 sec
+      Start 13: visual_config
+13/20 Test #13: visual_config ....................   Passed    0.02 sec
+      Start 14: direction
+14/20 Test #14: direction ........................   Passed    0.16 sec
+      Start 15: opening
+15/20 Test #15: opening ..........................   Passed    0.15 sec
+      Start 16: sequence
+16/20 Test #16: sequence .........................   Passed    0.01 sec
+      Start 17: vr_math
+17/20 Test #17: vr_math ..........................   Passed    0.01 sec
+      Start 18: control
+18/20 Test #18: control ..........................   Passed    0.01 sec
+      Start 19: network
+19/20 Test #19: network ..........................   Passed    0.34 sec
+      Start 20: geometry
+20/20 Test #20: geometry .........................   Passed    0.01 sec
+
+100% tests passed, 0 tests failed out of 20
+
+Total Test time (real) =   2.22 sec

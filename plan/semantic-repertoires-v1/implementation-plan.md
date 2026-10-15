@@ -1,181 +1,176 @@
-# Implementação dos repertórios semânticos do Fantasynt
+# Plano técnico executável — primeira exposição
 
-Data: 2026-10-14 · Estado: plano de implementação · Base inspecionada: 0.12.0
+**Estado de 2026-10-15:** P0 e mãos 3D implementados; P1 programado autorizado e implementado em [p1-motifs-2026-10-15](../p1-motifs-2026-10-15/README.md). Usa a família diminuição longa e agenda fixa, sem seleção corporal/LLM. Verificação física de áudio/efeito P1 pendente. P2–P5 e as variantes de curvas continuam propostas. O texto datado abaixo conserva a especificação de referência.
 
-## Objetivo e âmbito
+Data: 2026-10-14 · Revisão 2 · Base inspecionada: 0.12.0, `bc86e22` · **P: implementação futura; nesta tarefa só documentação.**
 
-Criar uma infraestrutura para um ambiente não figurativo com continuidade, contingência parcial e iniciativa própria, permitindo investigar a atribuição de agência ao ambiente e a ambiguidade entre essa atribuição e o prolongamento da agência do utilizador.
+## Resultado a implementar
 
-O primeiro incremento implementa **sustentar, ressoar e iniciar**, com leitura conjunta de corpo, ambiente e história. O segundo acrescenta **propagar e contrastar**. As definições e os limites estão no [repertório](repertoire.md); os factos verificados e fontes estão nas [notas](notes.md).
+Executar a [sessão de 7:04,18](first-session.md) com sustentar, ressoar e iniciar, memória de motivos, aquisição holística de cabeça/mãos/ambiente e três condições entre participantes. O [repertório](repertoire.md) fixa a realização mínima; [notes.md](notes.md) documenta capacidades por fase; [behavior-matrix.md](behavior-matrix.md) fixa registos; [first-exposure-protocol.md](first-exposure-protocol.md) define avaliação e decisões abertas.
 
-Requisitos confirmados: Quest 3, seguimento das mãos e da cabeça, sem controladores; contexto preparado para voz e fisiologia, sem as tornar obrigatórias. Jev é um candidato substituível. Os nomes das políticas, interpretações e painel do investigador ficam fora da experiência do participante.
+Não implementar tudo antes de observar: primeiro aquisição e estado efetivo, depois executor com motivos simulados, depois contingência local e reprodução independente. Jev é um adaptador opcional posterior. Os marcos P0–P5 abaixo substituem M0–M5 do documento anterior; as extensões espaciais/sonoras saem do caminho crítico.
 
-Esta entrega é documental. Os módulos, contratos, testes e valores de configuração abaixo são propostos e ainda não estão implementados.
-
-## Arquitetura proposta
+## Fronteira decisor–execução
 
 ```mermaid
 flowchart TD
-    XR[Seguimento da cabeça e mãos] --> F[Características locais e validade]
-    A[Estado audiovisual efetivo] --> C[Contexto e memória temporal]
-    F --> C
-    O[Voz e fisiologia opcionais] --> C
-    C --> D[Decisor: simulado, regras, Jev ou LLM]
-    D --> P[Validação e política experimental]
-    I[Agenda autónoma local] --> P
-    P --> E[Executor de comportamentos em C++]
-    E --> M[Composição visual e sonora]
-    M --> A
-    C --> R[Registo e reprodução de sessões]
-    P --> R
-    M --> R
+    XR[Cabeça e mãos: validade e tempo XR] --> O[Observações e descritores locais]
+    B[Coreografia e MASTER: estado efetivo] --> C[Contexto temporal e memória]
+    O --> C
+    C --> D[Regras locais ou Jev: repertório elegível]
+    D --> V[Validação local e condição congelada]
+    S[Agenda autónoma e reprodução de planos] --> V
+    V --> E[Executor C++: curvas e ciclo de vida]
+    E --> M[Base artística + contribuição + limites]
+    M --> B
+    O --> L[Registo assíncrono]
+    C --> L
+    V --> L
+    M --> L
 ```
 
-- **C++:** aquisição OpenXR, execução temporal, composição, áudio, limites e interrupção local. Nenhuma chamada remota na renderização ou no processamento de áudio.
-- **Python, gerido por uv:** agregação de contexto, memória de episódios, adaptadores dos decisores, avaliação e painel local do investigador. Instalar uv durante a implementação se não estiver disponível; não é requisito do pacote portátil final sem o serviço semântico.
-- **Configuração:** YAML versionado para repertório, rubricas e condições; JSON tipado para comunicação. Começar com validação simples; Hydra/OmegaConf pode compor variações experimentais quando houver várias condições.
-- **Fornecedor remoto:** recebe resumos temporais delimitados; credenciais ficam no serviço local. A porta do motor continua restrita a loopback.
+C++ adquire, calcula descritores exatos, mantém relógios/referências, valida sensores, aplica curvas e limites, decide disponibilidade por fase e interrompe localmente. Um `RulesProvider` local basta para o piloto mínimo; usa a mesma interface conceptual de decisões que um fornecedor externo. Python/uv entra quando forem necessários agregação/adaptadores/painel; não é dependência da renderização nem do áudio. Não criar diretórios/módulos vazios antecipadamente.
 
-## Ordem de implementação
+### Contexto temporal P
 
-### M0 — Contratos, capacidades e linha de base
+Publicar descritores a 20 Hz a partir da cadência XR disponível; manter observações de **2 s**, episódio de **10 s**, três episódios anteriores detalhados e resumo factual de toda a sessão. Valores iniciais, a medir e congelar. O contexto enviado ao decisor contém:
 
-**Trabalho:** congelar uma cópia identificada da aplicação/configuração atual; inventariar cada atuador por unidade, limites, custo, cena/fase, modo de atualização e efeito efetivo. Registar os sete controlos de rede atuais e os controlos adicionais necessários. Fazer uma reprodução e capturas de referência em fases representativas antes de alterar o motor.
+- Posição/orientação físicas e velocidades/variabilidade calculadas de cabeça; atividade/deslocação das mãos por fonte, relação cabeça–mãos e transições movimento/repouso. Não estimar olhar ocular, emoção, intenção ou desinteresse.
+- Cobertura e flags de validade/seguimento, espaço/origem, tempos de consulta XR e de receção, modalidades ausentes. Não incluir valores zero para fontes inexistentes.
+- Fase, tempo musical, base, paleta dirigida, composição/exposição, pulsos graves, câmara virtual, motivo/envelope aplicado, ganho comandado e capacidades efetivas. O MASTER analisado antes do ganho não é a saída sonora efetiva.
+- Acontecimentos anteriores do ambiente e variações corporais antes/depois, ordenados temporalmente; efeitos rejeitados não contam como acontecimentos aplicados. Não converter sucessão em intenção demonstrada.
+- Motivos com ancestralidade/proveniência, políticas anteriores, orçamento, janela protegida e oportunidades usadas; hipóteses anteriores em campo separado.
+- Condição/versões imutáveis, escolhas elegíveis e próximo prazo. Não disponibilizar relatos subjetivos nem um objetivo de maximizar agência.
 
-Definir os contratos descritos abaixo, o significado de cada comportamento e a configuração experimental inicial. Manter percurso, velocidade da câmara e relógio musical fixos na primeira comparação. Resolver a prioridade entre coreografia e adaptação; não usar reescritas repetidas de `visual-config.json` como interface de execução semântica.
+Não centrar contexto/decisão só nas mãos: com corpo igual e fase/memória diferentes, a escolha elegível pode mudar. Com mãos ocultas e cabeça válida, o contexto permanece útil. Com todas as fontes corporais estáticas, o ambiente/história continuam a orientar sustentar/iniciar.
 
-**Entregáveis:** catálogo de capacidades; contratos versionados; fichas dos três comportamentos iniciais; cópia de referência e registo de versões/hashes.
+### Extração inicial realizável de motivos P
 
-**Aceitação:** cada parâmetro anunciado tem efeito observável ou aparece explicitamente indisponível nessa fase. A versão 1 continua a aceitar/rejeitar os exemplos e erros conhecidos. Os testes existentes relevantes passam na linha de base, ou as falhas prévias ficam identificadas antes de mudanças.
+Normalizar descritores por limiares físicos comuns, fixados em desenvolvimento; não recalibrar por percentis de cada pessoa durante o estudo. Cabeça: variação angular e deslocação física separados; mãos: velocidades/deslocações relativas ao espaço local e à cabeça, sem vocabulário de poses. Invalidar derivadas através de descontinuidades.
 
-**Dependências:** nenhuma. É o primeiro trabalho a executar.
+Um resumo de atividade pode usar pesos iniciais fixos cabeça 0,5, mão esquerda 0,25, direita 0,25, mantendo os descritores separados no contexto. Não renormalizar os pesos para ampliar uma mão/cabeça quando outra fonte falta; publicar cobertura. Os limiares numéricos de normalização/estabilidade são A até medições com ruído real; P0 fornece essas medições. Nenhum zero sintético substitui falta de dados.
 
-### M1 — Observação e reprodução, sem adaptação
+Critério técnico inicial: cabeça válida em pelo menos 80% da janela, sem mudança de origem; cada fonte usada tem pelo menos 80% de cobertura. Exigir duas fases temporalmente distintas acima do limiar de diferença/ruído, cada uma com pelo menos 0,5 s; uma transição movimento→repouso é suficiente se satisfizer esse critério. Para uma curva com dois segmentos de mudança, exigir o padrão correspondente, sem o inventar a partir de uma única transição. Se não satisfizer, não há novo motivo corporal. O limiar de ruído por descritor é medido em registos de repouso/movimento técnicos e congelado. Estes 80%/0,5 s são propostas de engenharia, não critérios de agência ou atenção.
 
-**Trabalho:** detetar `XR_EXT_hand_tracking` na instalação e adquirir articulações válidas, cabeça e tempos. Acrescentar suporte simulado nos testes. Separar movimento físico de deslocação virtual e não calcular velocidade através de saltos de recentragem ou segmentos inválidos. Registar referência espacial e mudanças de origem.
+Extrair relações de duração entre períodos de variação/repouso; escolher a curva mais próxima na biblioteca finita, com tolerância explicitamente configurada e igual nas condições. Não inventar ritmo quando a série é irregular. Uma série irregular pode ser válida mas sem padrão elegível. A condição transparente usa a janela curta mais recente; a opaca usa a janela de episódio e liga o padrão ao motivo anterior, sob transformações temporais aprovadas. Mais descrição em [protocolo](first-exposure-protocol.md#condições-e-manipulação-p).
 
-Usar o tempo de consulta das poses, incluindo o facto de serem previstas quando aplicável, e um relógio monotónico local. Relacionar explicitamente estes tempos com a posição do áudio; não tratar o instante de receção no Python como instante do movimento. Conservar qualidade/cobertura por fonte.
+### Decisões autorizadas P
 
-Extrair descritores e episódios de múltiplas fontes. Criar exportação e reprodução de observações com exemplos de imobilidade válida, perda de mãos, mudança de origem, evolução autónoma do ambiente e modalidades ausentes. Acrescentar o estado efetivo depois da composição assim que M2 estiver disponível.
+`BehaviorDecision` seleciona `sustain`, `resonate`, `initiate` ou `abstain` entre opções elegíveis, referencia um motivo elegível e, quando permitido, `preserve`/`retime` e `subtle`/`standard`. Não pode inventar regiões, números físicos, gestos ou nova política. No piloto, amplitude/duração ficam fixas por oportunidade; graduação livre só em ensaios de desenvolvimento separados.
 
-**Entregáveis:** telemetria, `ContextSnapshot`, ficheiros de sessão, reprodutor e painel simples do investigador.
+Jev recebe o contexto estruturado e critérios ancorados nas fichas; escolhe uma política principal. Se várias perguntas forem usadas, a combinação é validada em código: as respostas independentes não garantem compatibilidade. Uma rubrica admissível pergunta qual continuação conserva o motivo e usa observações válidas; uma inadmissível pergunta se a pessoa sente agência. Confiança determina aceitar/abster-se conforme avaliação do adaptador; não se transforma em intensidade audiovisual. Versão do modelo/rubrica fixa antes de uma comparação; não se presume estabilidade de alias.
 
-**Aceitação:** perda de seguimento nunca equivale a imobilidade; deslocação automática da cena nunca equivale a deslocação corporal; cabeça/mãos/áudio têm tempos correlacionáveis; painel e escrita em disco não bloqueiam o ciclo gráfico. Reprodução gera os mesmos descritores, dentro de tolerâncias documentadas. Teste real nos Quest é obrigatório para declarar a aquisição operacional.
+O código fixa comportamento inelegível, prazos, motivos calculados, unidades, amplitude, duração, acoplamento/opacidade, seed, iniciativa, capacidades, segurança e condição. O modelo nunca determina validade dos sensores ou força resposta quando o corpo está imóvel.
 
-**Dependências:** M0. O desenvolvimento dos descritores pode usar exemplos sintéticos, mas não substitui a prova no headset.
+### Regras de memória e composição P
 
-### M2 — Executor local e três comportamentos
+Um comportamento principal por instante, mistura apenas na transição de saída/entrada autorizada. Ciclo: elegível → agendado → entrada → desenvolvimento → saída → concluído; rejeição, expiração, substituição e cancelamento são eventos diferentes. A agenda tem três iniciativas nos horários comuns, não uma probabilidade crescente com silêncio.
 
-**Trabalho:** construir máquina de estados com início, duração, transição, expiração e cancelamento; executar planos simulados e os três comportamentos iniciais. Respeitar permanência mínima e limites de variação. A agenda autónoma permite iniciar sem um evento corporal; a sua semente, orçamento e regras ficam registados.
+Dois motivos correntes, até três episódios detalhados; resumo de IDs/curvas e ancestralidade permanece até fim de sessão. Retenção corrente de 90 s pode ser renovada; retorno de motivo mais antigo reconstrói-se a partir da curva aplicada arquivada, como retorno histórico, não observação corporal recente. Novos padrões corporais expiram aos 10 s. Memória só promove planos efetivamente aplicados.
 
-Criar uma composição explícita: base artística → modulação do comportamento → limites locais e intervenção manual. Com adaptação desligada, o caminho base produz o resultado anterior. Registar separadamente base, contribuição e resultado efetivo. Os envelopes experimentais imutáveis não podem ser ultrapassados por decisões remotas.
+Em Opening, compor depois de `directed_visual_parameters` e com conhecimento de `directed_composition`; não escrever repetidamente `visual-config.json`. No mínimo, subtrair o envelope à emissão global e aplicar ganho conforme [repertório](repertoire.md). Não modificar paleta, densidade, nevoeiro, bloom, velocidade, tempos de fase ou beat detector nas condições iniciais. O fade final é multiplicador artístico soberano; contribuição neutra até 392 s. Não compensar visualmente o fade nem o dip 208–220 s.
 
-Acrescentar ganho sonoro com curvas suaves, mantendo o relógio e a posição do MASTER. Ressoar usa um motivo calculado e validado localmente, não uma estimativa numérica inventada pelo modelo. A primeira realização sonora pode limitar-se a modulação de ganho; deve ser identificada como tal. Acrescentar processamento ou camadas de áudio apenas com qualidade e material verificados.
+Adaptação desligada conserva código base/ganho 1. Pausa de sessão suspende relógio do executor e música; invalida pedidos pendentes. É alteração necessária: na base atual `SceneController::advance(dt)` continua durante pausa e os comandos v1 ainda são aceites. Não confundir essa interpolação existente com executor já sincronizado.
 
-**Entregáveis:** executor C++, composição, ganho sonoro e demonstrações reproduzíveis dos três comportamentos em fases relevantes da experiência.
+Congelar configuração/repertório/condição no arranque de estudo; rejeitar recarga artística/manual durante a sessão (a interrupção continua disponível). Registar tentativas. A base tem releitura a cada 0,25 s; é uma fonte real de alteração a eliminar no modo de estudo.
 
-**Aceitação:** sem saltos na substituição de uma política; comandos visuais e sonoros partilham o agendamento de sessão; pausa/reinício são coerentes; não há clipping introduzido nem desvio do relógio musical. A coreografia não anula silenciosamente o efeito anunciado. Teste de stress confirma que o serviço remoto desligado não impede execução ou interrupção.
+### Temporização e respostas impróprias P
 
-**Dependências:** M0; exemplos de M1 para ressoar. M1 e partes do executor podem ser desenvolvidos separadamente depois de fixados os contratos.
+No piloto local, cortar o contexto 0,5 s antes de cada oportunidade e aplicar no horário definido, nas três condições. O orçamento comum inclui cálculo/validação; resposta que não chega antes do início perde a oportunidade. Medir quanto do orçamento foi usado. A idade da observação e a retemporização artística da condição opaca ficam registadas separadamente.
 
-### M3 — Contexto holístico e Jev em observação
+Um adaptador remoto futuro publica a cada 2 s ou por episódio, com uma chamada ativa e retenção apenas do contexto mais recente. Não é o perfil temporal do piloto local. Só integrar na comparação depois de medir prazos e adotar a mesma agenda/buffer técnico em todas as condições. Não alongar a experiência para aguardar rede.
 
-**Trabalho:** implementar a interface comum dos decisores e começar por `ReplayProvider`/`RulesProvider`. Integrar Jev com seleção entre comportamentos elegíveis e critérios com exemplos/contraexemplos. Usar uma escolha principal e validar dimensões auxiliares compatíveis. Limitar o contexto ao episódio e memória relevantes, sem o reduzir a um rótulo corporal.
-
-Rubricas propostas: continuidade do motivo observável, existência de mudança comportamental após um acontecimento, adequação de manter ou rever a política segundo a condição. Não perguntar se o utilizador sente agência, se o ambiente tem agência ou se uma mudança observada prova causalidade. Grandezas computáveis, cobertura e tempos são determinados em código.
-
-Avaliar primeiro sobre episódios registados. Jev devolve propostas para o painel, sem as executar. Comparar com regras fixas e, se disponível, um LLM de saída estruturada, usando o mesmo contexto e repertório. Testar ordem das opções, contexto incompleto, repetição e condições contraditórias. Fixar versões de modelo, rubricas e mapeamentos; não usar um alias mutável durante um estudo.
-
-**Entregáveis:** adaptador Jev; rubricas; conjunto de episódios de desenvolvimento e avaliação separados por sessão/participante; relatório de decisões e latência.
-
-**Aceitação:** todas as respostas inválidas, incompatíveis, ultrapassadas ou fora de capacidades são rejeitadas; são registadas abstenções e falhas. Medir cobertura, estabilidade temporal, discordância com anotações de investigadores e distribuição de latências, sem confundir concordância com uma verdade psicológica. Definir os limiares de confiança após esta avaliação e congelá-los antes da comparação com participantes.
-
-**Dependências:** M1 e interface de M2. Pode iniciar-se com exemplos gravados sem credenciais; as medições do fornecedor real exigem acesso à API.
-
-### M4 — Ciclo adaptativo limitado e expansão do repertório
-
-**Trabalho:** ligar decisões validadas ao executor, aplicar deduplicação, expiração e prevenção de alternância rápida. Primeiro testar sustentar/ressoar/iniciar em sessões técnicas. Acrescentar grupos espaciais estáveis para propagar e um caminho sonoro adequado. Introduzir contrastar com restrição a uma dimensão dominante por episódio.
-
-A existência de uma região visual não prova espacialização sonora. Para declarar propagação audiovisual, demonstrar a progressão nos dois canais; caso o som permaneça global, documentar essa realização parcial. Não pressupor a disponibilidade de pistas separadas a partir de nomes históricos de recursos.
-
-**Entregáveis:** cinco comportamentos validados tecnicamente, demonstrações por comportamento, matriz de compatibilidade e pacote de ensaio sem controladores.
-
-**Aceitação:** comportamento reproduzível e visível/audível; parâmetros preservados mantêm-se dentro da tolerância; falhas técnicas não geram acontecimentos artísticos; não há escalada contínua quando movimento e estimulação se reforçam. Testar interrupção pelo operador e um mecanismo acessível ao participante, independente da rede e do sucesso do seguimento das mãos. Até essa opção ser validada, manter ensaios técnicos supervisionados.
-
-**Dependências:** M2 + M3. A expansão espacial e sonora não bloqueia o primeiro ciclo com três comportamentos.
-
-### M5 — Piloto experimental e fixação do protocolo
-
-**Trabalho:** verificar se os comportamentos são suficientemente distintos e se a contingência é identificável na condição transparente. Comparar inicialmente contingência transparente, contingência opaca e reprodução independente, mantendo conteúdos, envelopes de estimulação, duração e latência técnica tão comparáveis quanto possível. A latência artística introduzida pela condição é registada separadamente da latência técnica.
-
-Na reprodução independente, fixar a realização audiovisual de uma sessão de origem e a semente; os sinais atuais não influenciam o comportamento. Preservar apenas a interrupção local. Registar sessão de origem e alinhamento temporal. Contrabalançar ordem e controlar aprendizagem/fadiga no desenho final.
-
-Recolher separadamente agência atribuída ao ambiente, agência própria, controlo percebido, previsibilidade e descrições abertas. A ambiguidade não deve ser definida apenas como um valor médio numa escala única. Selecionar instrumentos e plano de análise com revisão bibliográfica própria; este documento não valida escalas nem calcula amostra.
-
-Comparar Jev com regras/LLM e comparar opacidade são perguntas diferentes. Não cruzar todos os fatores no primeiro piloto. Primeiro validar o artefacto e a manipulação; depois isolar a contribuição do decisor. Não otimizar o decisor online para aumentar os relatos de agência durante o ensaio confirmatório.
-
-**Entregáveis:** protocolo, manipulações verificadas, plano de análise, configurações congeladas e conjunto de sessões reproduzíveis.
-
-**Aceitação:** atribuição de agência avaliada por dados dos participantes, não pelos rótulos de Jev; perdas técnicas e condições de exclusão definidas antes da análise; nenhum resultado exploratório apresentado como confirmação da hipótese.
-
-**Dependências:** três comportamentos estáveis de M4 bastam para um primeiro piloto; cinco não são requisito científico automático.
-
-## Contratos e integração com o projeto
-
-| Contrato proposto | Campos/conteúdo essenciais | Responsável |
-|---|---|---|
-| `ObservationFrame` | Sessão, sequência, tempo de consulta/receção, espaço, fontes, valores, validade, cobertura. | Aquisição C++; registo local. |
-| `ContextSnapshot` | Intervalo temporal, observações resumidas, estado efetivo, episódios, hipóteses separadas, capacidades, condição e versões. | Serviço Python. |
-| `BehaviorDecision` | Referência ao contexto, escolha, distribuição/confiança quando disponível, decisor e rubrica. | Adaptador substituível. |
-| `BehaviorPlan` | ID idempotente, comportamento, motivo, envelope, início/fim, contexto de origem, versão da condição, expiração. | Política local; validada novamente no C++. |
-| `EffectiveState` | Base, modulação e resultado aplicado; fase musical; estado das transições e capacidades. | Motor C++. |
-| `SessionEvent` | Observação/contexto/decisão/plano/recibo, tempos, versões e causa técnica de rejeição ou substituição. | Componentes locais correlacionados. |
-
-Evolução proposta do protocolo: manter `apply_parameters` v1; adicionar v2 com consulta de capacidades/estado, aplicação e cancelamento de plano, e estados de ciclo de vida. Uma consulta não modifica a revisão. Revisão da configuração/condição é distinta do contador de amostras de telemetria, para que toda resposta remota não fique automaticamente obsoleta.
-
-Expiração baseia-se em relógio local e contexto, não no relógio do fornecedor. Planos duplicados devolvem o estado conhecido sem repetir efeitos. O motor rejeita revisões incompatíveis e contextos anteriores ao último aceite para a mesma decisão. Nunca repetir cegamente uma ação após um timeout.
-
-Telemetria usa um canal/conexão separado dos comandos, com filas limitadas e descartes contabilizados; não enviar esqueletos completos a cada frame pelo enquadramento v1 de 16 KiB. O serviço remoto recebe resumos. Escrita de registos fica fora dos ciclos críticos; se houver perda de dados necessária à análise, o segmento é marcado como incompleto.
-
-## Organização de código proposta
-
-| Localização futura | Responsabilidade |
+| Caso | Tratamento local e registo |
 |---|---|
-| `src/interaction/` | Aquisição normalizada, validade e referências temporais/espaciais. |
-| `src/behavior/` | Planos, ciclos de vida, agenda autónoma e composição dos comportamentos. |
-| `src/control/` e `src/net/` | Evolução compatível do contrato e telemetria com limites. |
-| `src/audio/` | Envolventes de ganho; efeitos/camadas em incremento posterior. |
-| `src/render/` | Estado efetivo, prioridade artística e seleção de grupos para propagação. |
-| `services/semantic/` | Contexto, memória, decisores, avaliação e painel local; projeto Python com uv. |
-| `config/repertoires/v1/` | Fichas dos comportamentos e mapeamentos por cena. |
-| `config/experiments/` | Condições e envelopes imutáveis por bloco. |
-| `tests/fixtures/interaction/` | Episódios sintéticos e anonimizados para regressão. |
+| Atrasada/expirada | Recusar se oportunidade já começou, contexto/epoch mudou ou versão não coincide; manter plano atual até fim, sem início retroativo. |
+| Incompatível | Recusar comportamento/motivo/capacidade não elegível, região inexistente, duração/dose fora de condição ou janela protegida. |
+| Baixa confiança | Abster-se; manter trajetória válida e usar continuação autónoma pré-autorizada na oportunidade, marcada como tal. Nada escala com confiança. |
+| Duplicada | ID idempotente devolve estado conhecido; não reaplicar. Timeout não autoriza repetição cega. |
+| Perda parcial de mãos | Invalidar fonte; terminar curva já calculada; usar cabeça/fonte restante apenas se elegível. Não gerar acento técnico. |
+| Cabeça inválida/suspensão XR | Pausa técnica coordenada, novo segmento/origem se necessário, invalidar derivados e pedidos. Não prolongar relógio musical sem registo de interrupção. |
+| Falha remota | Executor local conclui planos autorizados; depois base/agenda comum. Contabilizar oportunidades sem contingência. |
+| Encerramento/interrupção | Cancelar pendentes; comando local prioritário, independente da rede e das mãos. |
 
-Não criar antecipadamente módulos vazios. Acrescentar cada componente no marco que o utiliza, com testes de comportamento e revisão de código antes da integração.
+### Contratos P, sem alterar v1 silenciosamente
 
-## Temporização inicial para ensaios técnicos
+| Contrato | Campos mínimos e responsabilidade |
+|---|---|
+| `ObservationFrame` | Sessão/seq, tempo monotónico, `XrTime`, origem/epoch, cabeça/mãos, flags/cobertura; C++ sem inferências psicológicas. |
+| `EffectiveState` | Tempo musical/sessão, fase, câmara, base, composição/paleta dirigida, contribuição e resultado, ganho comandado, capacidades, clamps; C++. |
+| `ContextSnapshot` | IDs/intervalos e observações, incerteza, episódios/motivos, versões/condição, opções elegíveis; local ou serviço Python. |
+| `BehaviorDecision` | Contexto e versão, escolha/motivo/graduação elegíveis, decisor/versão, confiança/abstenção; fornecedor substituível. |
+| `BehaviorPlan` | ID idempotente, epoch/condição, oportunidade, início/fim/prazo, curva/ancestralidade/proveniência, capacidades e dose; calculado/validado localmente. |
+| `SessionEvent` | IDs correlacionados, observação/contexto/decisão/plano/estado, causa de rejeição/falha, tempos técnicos e artísticos; registo local. |
 
-Valores propostos, ajustáveis por medição: aquisição à cadência disponibilizada pelo runtime; publicação de descritores locais a 20 Hz; contexto com janelas curta de 2 s e de episódio de 10 s, mais memória limitada; avaliação remota a cada 2 s ou por acontecimento relevante, com apenas uma chamada ativa e conservação do pedido mais recente. Permanência mínima inicial de 4 s e transição de 2 s. Congelar os valores antes de comparar condições.
+Manter `apply_parameters` v1 com erros/testes existentes. O mínimo local não precisa de rede v2. Quando entrar serviço externo, adicionar consulta de capacidades/estado e submissão/cancelamento de planos v2, incluindo recibos de agendamento/início/fim. Consultas não alteram revisão; contador de telemetria é distinto de revisão da condição/configuração. Uma nova amostra não torna automaticamente toda decisão obsoleta.
 
-Estes números não são latências garantidas nem parâmetros cientificamente validados. Medir aquisição→descritor, descritor→pedido, ida/volta remota, aceitação→aplicação e aplicação→efeito observável separadamente. O orçamento de VR depende da frequência efetiva do headset. A aplicação e o áudio nunca aguardam o fornecedor.
+Telemetria/registo usam filas limitadas, escritor fora do ciclo gráfico, descartes contabilizados e marcador de integridade. Não enviar esqueletos pelo envelope v1 de 16 KiB. O código atual escreve/flush de recibos no ciclo principal; é E, não uma implementação assíncrona pronta.
 
-Nos ensaios controlados, usar uma agenda de aplicação comum quando necessário para comparar decisores; registar decisões que perdem o prazo. Não esconder atrasos técnicos como opacidade causal intencional.
+## Alterações priorizadas
 
-## Validação mínima antes da primeira sessão adaptativa
+### P0 — Observação sincronizada e manifesto da sessão
 
-- Regressão: execução base, JSON v1, composição, áudio e relógio musical.
-- Aquisição: mãos ausentes/ocultas, cabeça inválida, recentragem, suspensão da sessão e retoma.
-- Políticas: substituição em transição, duplicação, expiração, pausa/reinício e configuração incompatível.
-- Robustez: serviço desligado, resposta inválida, resposta atrasada, fila saturada e indisponibilidade de áudio.
-- Reprodução: mesmo plano, semente e registo produzem trajetórias equivalentes dentro de tolerâncias; igualdade de píxeis entre GPUs não é pressuposta.
-- Evidência real: observação no Quest 3, capturas e áudio gravado, sem concluir a partir do runtime simulado que o seguimento ou o som funcionam no equipamento.
+**Prioridade obrigatória; primeira tarefa de programação.** Sem adaptação nem decisão remota. Fixar commit/build/configuração/áudio de referência e medir capacidades por fase, aproveitando o catálogo de [notes.md](notes.md).
 
-## Decisões que permanecem abertas
+**Ficheiros existentes:** `src/vr/openxr_session.hpp/.cpp` (extensão, trackers, poses e validade), `src/app/main.cpp` (correlação de relógios, eventos/origem e publicação), `src/render/art_direction.cpp`/`sequence.cpp` e `src/render/renderer.hpp/.cpp` (estado efetivo e fase, sem mudar direção artística), `src/audio/player.hpp/.cpp` (expor relógio/estado sem ganho novo), `CMakeLists.txt` e `tests/mock_openxr_runtime.cpp` para verificação. **Novos, quando utilizados:** `src/interaction/observation.hpp/.cpp`, escritor de sessão em `src/control/` ou módulo local de registo; testes de observação e fixtures. Não transformar `EyeView::head_world` renderizado/câmara virtual em deslocação física.
 
-Visibilidade das mãos, escolha de efeitos/pistas sonoras, extensão de sessões e instrumentos de avaliação. Para o desenvolvimento técnico, mãos visíveis apenas na vista de diagnóstico, sem avatar no ambiente do participante; voz e fisiologia desativadas. Estas opções iniciais são configuráveis e terão de ser fixadas no protocolo antes de recolher dados comparativos.
+**Trabalho:** enumerar/habilitar `XR_EXT_hand_tracking` quando suportada, consultar capacidade do sistema, criar/destruir trackers e localizar articulações à referência/tempo apropriados; publicar falhas explicitamente. Exportar cabeça física com flags e `XrTime`; tratar mudanças de referência e eventos de suspensão. Capturar ambos os olhos a partir da mesma amostra lógica. Registar cabeçalho com hashes, condição `observe_only`, runtime, tempos e parâmetros efetivos. Deixar o corpo livre, sem comandos por gesto.
 
-Como não há Git identificado na raiz, o início de implementação deve criar uma cópia de segurança delimitada dos ficheiros alterados e do executável/configuração de referência. Não substituir pacotes distribuídos. A ligação ao Obsidian aguarda um caminho de vault e resolução da divergência de diretório descrita nas notas; o plano local está completo independentemente dessa ligação.
+**Aceitação objetiva:**
 
-## Próxima tarefa concreta
+1. Fixtures distinguem repouso válido, mãos perdidas, cabeça inválida, mudança de origem e avanço virtual; nenhuma derivada atravessa intervalo inválido/origem nova. Flags de posição e orientação são independentes.
+2. Manifesto e linhas têm IDs/seq/origem; tempos monotónicos não regridem por segmento; `XrTime` e SDL conservam relação explícita com tempo de receção. Predição não é apresentada como medição no presente nem consumo SDL como chegada ao ouvido.
+3. No Quest 3 real, registo supervisionado inclui mãos vistas/ocultas e cabeça em repouso/movimento, sem controladores. Falta de extensão/capacidade fica anunciada e bloqueia declarar a aquisição completa; simulado só prova caminhos de código.
+4. Estado inclui emissão/paleta depois da direção artística, composição/fade, pulsos e câmara. Desligar observação mantém trajetória base igual à referência dentro de tolerâncias documentadas.
+5. Escritor atrasado/fila cheia não aguarda no renderizador; descartes/integridade aparecem no registo. Comparar percentis de tempo de frame com linha de base e frequência real do headset; o orçamento numérico depende dessa medição e fica documentado antes de aceitar.
+6. Testes relevantes de núcleo, áudio, renderização e runtime simulado passam ou falhas prévias são registadas. Entregar amostra de sessão e catálogo com evidência estática versus efeito medido.
 
-**Executar M0 e iniciar M1:** catálogo efetivo de capacidades, contratos e registo sincronizado de cabeça, mãos e ambiente. O resultado esperado é uma sessão que pode ser inspecionada e reproduzida, ainda sem decisões remotas a alterar a experiência. Depois, M2 concretiza os três comportamentos através de planos simulados; M3 avalia se Jev consegue escolhê-los com consistência.
+**Dependências:** nenhuma alteração anterior; verificar equipamento. **Resultado:** uma sessão observável ainda sem adaptação. O mínimo de P0 não declara que um pipeline sem mãos cumpre o objetivo.
+
+### P1 — Executor de motivos globais e composição
+
+**Depende de P0 para provar efeito; curvas sintéticas podem ser desenvolvidas antes da prova física.** `src/behavior/` novo, `src/control/scene_controller.*`, `src/app/main.cpp`, `src/render/art_direction.*`/`renderer.*`, `src/audio/player.*`, testes de executor/áudio.
+
+Implementar ciclos de vida, agenda, envelopes, estado base/contribuição/efetivo e memória após aplicação. Ganho global suave sem alterar relógio/pitch; usar API SDL adequada à versão fixada, com teste de mutex/cadência e qualidade audível, sem chamadas remotas no áudio. Se o ganho por fluxo introduzir saltos/latência inaceitáveis, processamento local por blocos é a alternativa; não anunciar ganho suave antes de medir. Pausa/reinício com epoch invalidam planos; interrupção local prioritária.
+
+**Aceitação:** replay de seed/planos idênticos produz curvas iguais; `e=0` recupera base; nenhum salto acima da tolerância numérica escolhida, verificação inicial 1e-4 nos limites de curvas; luz/ganho dentro de envelopes, três iniciativas nos horários; encerramento até 392 s; fade permanece soberano. Áudio mantém número/posição de frames e não introduz clipping/clicks; gravar/verificar alinhamento físico visual/sonoro. Não exigir igualdade de píxeis entre GPUs. Demonstrar efeito em 50, 152, 188 e 334 s no headset, sem tocar paleta/pulsos finais.
+
+### P2 — Contexto, memória holística e condições locais
+
+**Depende de P0+P1.** `src/interaction/`, `src/behavior/`, adaptador local `RulesProvider`, configuração de estudo versionada futura em `config/experiments/`, fixtures e reprodutor. Serviço Python com uv apenas se o volume de análise exigir.
+
+Calcular descritores/motivos, janela 2/10 s e histórico de efeitos. Implementar T/O conforme protocolo e R a partir de planos efetivos. Congelar limiares após dados técnicos; iguais nas condições. Conservar valores inválidos e incerteza; não usar emoção, atenção ou intenção como verdade. Não usar normalização por pessoa que mude durante a sessão.
+
+**Aceitação:** contrafactuais mudam corpo mantendo ambiente e vice-versa; T/O podem mudar continuação, R não; corpo estático mantém agenda; fontes discordantes podem levar a abstenção. Motivo inelegível não conta como ressonância. Replay de observações reproduz descritores/decisões de regras com tolerância declarada, inicial 1e-4 para descritores contínuos e identidade dos IDs escolhidos. Memória de E7 referencia planos aplicados, não propostas rejeitadas.
+
+### P3 — Arranque, integridade e pacote de piloto
+
+**Depende de P2.** `src/app/main.cpp`, `src/vr/`, interface do operador e scripts de lançamento/configuração, registo/reprodutor; testes XR/integridade.
+
+Criar vista neutra, preparação com relógio ainda em zero, arranque supervisionado e bloqueio de recargas/presets no modo de estudo. Testar interrupção por operador incluindo falha de foco, headset removido e participante sem fala, pausa técnica sincronizada, perda de origem e encerramento. Congelar banco de replays independentes e manifesto do build.
+
+**Aceitação:** percurso completo de 424,182 s salvo interrupção registada; familiarização não expõe motivos; falha de rede/mãos não impede parar; perder validade de cabeça não faz a música continuar silenciosamente sem registo. Banco R preserva planos e curva de fonte, corpo atual sem acesso ao decisor; retomadas não contam como nova primeira sessão. Teste de carga com filas saturadas, respostas falsas/atrasadas e reinício; revisão de código antes de integrar.
+
+### P4 — Piloto de primeira exposição
+
+**Depende de P3 e decisões A fixadas no protocolo.** Não necessita de Jev nem de propagação espacial. Validar manipulações com pessoas novas, recolha aberta primeiro, compara grupos T/O/R. Quantificar cobertura, oportunidade contingente, dose e latência técnica; separar falha da manipulação de resultado contrário à hipótese. Só atualizar sistema entre versões de desenvolvimento/piloto, com novas pessoas, sem misturar os dados.
+
+**Aceitação:** pacote e protocolo congelados, medidas/entrevista/exclusões e análise explícitas; dados subjetivos independentes das interpretações do decisor; nenhuma conclusão confirmatória a partir deste piloto. Revisões futuras não otimizam online para aumentar relatos de agência.
+
+### P5 — Jev em observação e extensões, fora do caminho mínimo
+
+**Depende de P2 para episódios gravados; execução real só depois de P3 e avaliação de prazos.** `services/semantic/` com uv, `src/control/`/`src/net/` para v2 quando necessário, testes de adaptador e rubricas. Começar em modo observação, comparar com regras sobre episódios reservados, sem alterar experiência. Avaliar contexto incompleto, ordem de escolhas, incompatibilidades, estabilidade e confiança; medir latência/abstenções, fixar limiares sem usar agência subjetiva como alvo. Versões e rubricas devem constar do manifesto.
+
+Propagar exige novos seletores de grupos no executor/renderizador e canais sonoros adequados; não confundir grupos já existentes de geometria com interface semântica de regiões. Contrastar timbre exige material/processamento novo em `src/audio/`. Alternativa inicial de ambos: motivos globais, mantendo a designação parcial. Comparar decisores ou regiões é outro estudo, sem cruzar todos os fatores no primeiro piloto.
+
+## Verificação de implementação futura
+
+Começar pela compilação habitual `tools/build.cmd`; executar CTest em `build`, configuração Release, para `control`, `sequence`, `direction`, `visual_config`, `audio`, `vr_math` e os novos testes relevantes; depois integrações de `tests/test_vr.py`, `test_audio.py` e `test_sequence.py` segundo os seus argumentos. Inspecionar os scripts antes de executar, conservar evidência da linha de base e não presumir que a documentação prova testes passados.
+
+Exemplos adicionais obrigatórios: imóvel válido, mãos ocultas com cabeça válida, movimento irregular válido, mudança de origem, fase sem pulso grave, anéis finais, interrupção/pausa, modelo desligado, plano duplicado/expirado e reprodução independente. Os exemplos técnicos não substituem Quest real nem relatos de participantes. Esta revisão documental não executou testes do motor.
+
+## Registo da revisão e âmbito de versões
+
+Preservadas: três comportamentos iniciais, leitura holística, execução local, fornecedores substituíveis, v1 compatível, validade/relógios separados, confiança sem conversão em dose e distinção entre experiência e classificação. Alteradas: M0–M5 substituídos por P0–P5; aquisição/observabilidade tornam-se primeira programação; Jev e expansão deixam de ser requisitos do piloto; duração verificada e primeira exposição entre participantes substituem extensão/contrabalanço de sessões da mesma pessoa.
+
+Git existe agora na raiz; usar estado/hashes e cópia de referência, sem substituir pacotes distribuídos. Backups desta revisão em `backups/2026-10-14-first-session/`. Não existe ligação Obsidian configurada; contexto e diário de trabalho ficam neste plano local, conforme [notes.md](notes.md). Não se alterou motor, áudio, configuração de execução, dependências ou pacotes nesta tarefa.

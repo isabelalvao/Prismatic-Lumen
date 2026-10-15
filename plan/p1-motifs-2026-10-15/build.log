@@ -1,0 +1,44 @@
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  bx.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bx\Release\bx.lib
+  spirv-cross.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\spirv-cross.lib
+  glslang.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\glslang.lib
+  spirv-opt.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\spirv-opt.lib
+  tint.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\tint.lib
+  bimg.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bimg\Release\bimg.lib
+  shaderc.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\shaderc.exe
+  openxr_loader.vcxproj -> C:\DEV\Prismatic\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  C:\DEV\Prismatic\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  1 File(s) copied
+  C:\DEV\Prismatic\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  1 File(s) copied
+  C:\DEV\Prismatic\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  1 File(s) copied
+  bimg_decode.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bimg\Release\bimg_decode.lib
+  bgfx.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\bgfx.lib
+  fantasynt_control.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_control.lib
+  SDL_uclibc.vcxproj -> C:\DEV\Prismatic\build\_deps\sdl3-build\Release\SDL_uclibc.lib
+  fantasynt_vr_math.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_vr_math.lib
+  fantasynt_net.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_net.lib
+  fantasynt_visual_config.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_visual_config.lib
+  motif_executor.cpp
+  fantasynt_hand_geometry.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_hand_geometry.lib
+  fantasynt_observation.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_observation.lib
+  fantasynt_openxr.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_openxr.lib
+  fantasynt_time_display.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_time_display.lib
+  fantasynt_beat.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_beat.lib
+  SDL3-static.vcxproj -> C:\DEV\Prismatic\build\_deps\sdl3-build\Release\SDL3-static.lib
+  fantasynt_geometry.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_geometry.lib
+  fantasynt_render.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_render.lib
+  fantasynt_motifs.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_motifs.lib
+     Criando biblioteca C:/DEV/Prismatic/build/Release/fantasynt.lib e objeto C:/DEV/Prismatic/build/Release/fantasynt.exp
+  fantasynt.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_control.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_control.lib
+  fantasynt_visual_config.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_visual_config.lib
+  fantasynt_motifs.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_motifs.lib
+  fantasynt_geometry.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_geometry.lib
+  fantasynt_motif_tests.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_motif_tests.exe

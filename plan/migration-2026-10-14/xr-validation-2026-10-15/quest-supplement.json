@@ -1,0 +1,276 @@
+{
+  "source_sha256": "12cc88226df36106f28679c189eecc5bbb68d49a3a6c5e8c8d026f5b026bdfa8",
+  "observation_span_seconds": 211.4143477,
+  "both_usable_samples": 2112,
+  "both_usable_estimated_seconds": 116.52914279999999,
+  "hands": {
+    "left": {
+      "loss_intervals": 8,
+      "estimated_unusable_seconds": 38.70147929999996,
+      "longest_losses": [
+        {
+          "start_seconds": 3.125720499999943,
+          "end_seconds": 26.827114399999914,
+          "recovered": true,
+          "duration_seconds": 23.70139389999997
+        },
+        {
+          "start_seconds": 203.9898296,
+          "end_seconds": 210.2737485,
+          "recovered": true,
+          "duration_seconds": 6.283918900000003
+        },
+        {
+          "start_seconds": 195.39021000000002,
+          "end_seconds": 201.162777,
+          "recovered": true,
+          "duration_seconds": 5.772566999999981
+        },
+        {
+          "start_seconds": 201.42394879999995,
+          "end_seconds": 203.5917726,
+          "recovered": true,
+          "duration_seconds": 2.1678238000000647
+        },
+        {
+          "start_seconds": 158.26304570000002,
+          "end_seconds": 158.79120979999993,
+          "recovered": true,
+          "duration_seconds": 0.5281640999999127
+        }
+      ],
+      "speed_peaks": [
+        {
+          "seconds": 159.1250164,
+          "speed_m_s": 3.8202288922640535,
+          "dt_seconds": 0.0555566,
+          "position_m": [
+            -0.6403040885925293,
+            -0.3206765651702881,
+            0.2899256944656372
+          ],
+          "previous_position_m": [
+            -0.6259267330169678,
+            -0.4980221390724182,
+            0.17422261834144592
+          ],
+          "origin_epoch": 0
+        },
+        {
+          "seconds": 210.4377298,
+          "speed_m_s": 2.8455304886572472,
+          "dt_seconds": 0.0515507,
+          "position_m": [
+            -0.07177171856164932,
+            -0.2520015239715576,
+            -0.2913160026073456
+          ],
+          "previous_position_m": [
+            -0.05961800366640091,
+            -0.1522502899169922,
+            -0.18445315957069397
+          ],
+          "origin_epoch": 1
+        },
+        {
+          "seconds": 201.2190662,
+          "speed_m_s": 2.202408713547487,
+          "dt_seconds": 0.0562918,
+          "position_m": [
+            -0.6095828413963318,
+            -0.01801156997680664,
+            0.28588470816612244
+          ],
+          "previous_position_m": [
+            -0.5859818458557129,
+            -0.13545167446136475,
+            0.31784167885780334
+          ],
+          "origin_epoch": 0
+        },
+        {
+          "seconds": 26.8784557,
+          "speed_m_s": 1.941966542603312,
+          "dt_seconds": 0.052516847,
+          "position_m": [
+            -0.5069471001625061,
+            -0.16441714763641357,
+            0.20815716683864594
+          ],
+          "previous_position_m": [
+            -0.49962499737739563,
+            -0.06344413757324219,
+            0.22048494219779968
+          ],
+          "origin_epoch": 0
+        },
+        {
+          "seconds": 210.3294141,
+          "speed_m_s": 1.87351887283211,
+          "dt_seconds": 0.0555566,
+          "position_m": [
+            -0.08099953830242157,
+            -0.1551915407180786,
+            -0.10436467826366425
+          ],
+          "previous_position_m": [
+            -0.08266253769397736,
+            -0.05122983455657959,
+            -0.10917757451534271
+          ],
+          "origin_epoch": 1
+        }
+      ]
+    },
+    "right": {
+      "loss_intervals": 38,
+      "estimated_unusable_seconds": 83.39763329999948,
+      "longest_losses": [
+        {
+          "start_seconds": 3.125720499999943,
+          "end_seconds": 26.552010899999914,
+          "recovered": true,
+          "duration_seconds": 23.42629039999997
+        },
+        {
+          "start_seconds": 63.94879839999999,
+          "end_seconds": 80.22212999999999,
+          "recovered": true,
+          "duration_seconds": 16.273331600000006
+        },
+        {
+          "start_seconds": 148.15118669999993,
+          "end_seconds": 154.22640990000002,
+          "recovered": true,
+          "duration_seconds": 6.075223200000096
+        },
+        {
+          "start_seconds": 157.5897056,
+          "end_seconds": 163.47208209999997,
+          "recovered": true,
+          "duration_seconds": 5.882376499999964
+        },
+        {
+          "start_seconds": 140.95464819999995,
+          "end_seconds": 145.35021469999992,
+          "recovered": true,
+          "duration_seconds": 4.395566499999973
+        }
+      ],
+      "speed_peaks": [
+        {
+          "seconds": 92.5263101,
+          "speed_m_s": 13.175272443662253,
+          "dt_seconds": 0.0564399,
+          "position_m": [
+            -0.6610820889472961,
+            0.07811963558197021,
+            0.3274870216846466
+          ],
+          "previous_position_m": [
+            -0.1711738109588623,
+            -0.4396277070045471,
+            0.539347767829895
+          ],
+          "origin_epoch": 0
+        },
+        {
+          "seconds": 93.168735,
+          "speed_m_s": 12.571387724486172,
+          "dt_seconds": 0.0574619,
+          "position_m": [
+            -0.5388807654380798,
+            0.14811432361602783,
+            0.3280375599861145
+          ],
+          "previous_position_m": [
+            -0.23628869652748108,
+            -0.4355851411819458,
+            0.6273030042648315
+          ],
+          "origin_epoch": 0
+        },
+        {
+          "seconds": 93.2245669,
+          "speed_m_s": 6.010641163239713,
+          "dt_seconds": 0.0559972,
+          "position_m": [
+            -0.39206358790397644,
+            -0.13167858123779297,
+            0.4439949691295624
+          ],
+          "previous_position_m": [
+            -0.5388807654380798,
+            0.14811432361602783,
+            0.3280375599861145
+          ],
+          "origin_epoch": 0
+        },
+        {
+          "seconds": 202.1148139,
+          "speed_m_s": 3.1251013597147144,
+          "dt_seconds": 0.056460044,
+          "position_m": [
+            -0.3097873032093048,
+            -0.22869837284088135,
+            0.30148428678512573
+          ],
+          "previous_position_m": [
+            -0.4344884753227234,
+            -0.1393827199935913,
+            0.3886885941028595
+          ],
+          "origin_epoch": 0
+        },
+        {
+          "seconds": 137.5457401,
+          "speed_m_s": 3.01758986234999,
+          "dt_seconds": 0.0547296,
+          "position_m": [
+            -0.36062562465667725,
+            -0.2361021637916565,
+            0.5335614681243896
+          ],
+          "previous_position_m": [
+            -0.5223296284675598,
+            -0.20698368549346924,
+            0.5168598890304565
+          ],
+          "origin_epoch": 0
+        }
+      ]
+    }
+  },
+  "negative_prediction_lead_samples": [
+    {
+      "seconds": 0.0,
+      "milliseconds": -368.76750000000004,
+      "frame_status": "located"
+    },
+    {
+      "seconds": 0.0387422,
+      "milliseconds": -20.5003,
+      "frame_status": "located"
+    },
+    {
+      "seconds": 0.2085385,
+      "milliseconds": -82.2815,
+      "frame_status": "located"
+    }
+  ],
+  "not_rendering_times_seconds": [
+    209.0032619,
+    209.0136496,
+    209.0662208,
+    209.1186036,
+    209.1708072,
+    209.2227593,
+    209.2748365,
+    209.327313,
+    209.3800317,
+    209.4342687
+  ],
+  "both_usable_sample_percent": 54.74339035769829,
+  "both_usable_estimated_percent": 55.11884319476581,
+  "timeline": "Seconds since first observation receipt, monotonic clock; dt_seconds in speed peaks uses XR pose time."
+}

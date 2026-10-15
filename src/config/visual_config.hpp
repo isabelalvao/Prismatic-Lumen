@@ -175,6 +175,7 @@ VrEyeBack,
     FinalFade, ArtifactDensity, ArtifactSpeedMin, ArtifactSpeedMax, ArtifactDrift, ArtifactRotation,
     CrystalHeightMin, CrystalHeightMax, ConeDensityMultiplier, ConeGap, ConePaletteVariants,
     RingPulseStart, RingPulseGain, RingIdleEmission,
+    MotifLightAttenuation, MotifMasterAttenuation,
     Count
 };
 enum class ConfigColour { Body, Fog, Floor, Dark, Hex, Trace, Pulse, Pyramids, Points, Poles, WarmFirst, WarmSecond, CoolFirst, CoolSecond, ConeCyan, ConeMagenta, CrystalCyan, CrystalViolet, TunnelGlow, RingEven, RingOdd, ConeBlue, ConeWhite, ConeViolet, ConeGold, Count };

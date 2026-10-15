@@ -1,0 +1,41 @@
+ M .gitignore
+ M CMakeLists.txt
+ M README.md
+ M plan/semantic-repertoires-v1/implementation-plan.md
+ M plan/semantic-repertoires-v1/next-step-prompt.md
+ M plan/semantic-repertoires-v1/notes.md
+ M plan/semantic-repertoires-v1/repertoire.md
+ M plan/semantic-repertoires-v1/research-context.md
+ M plan/semantic-repertoires-v1/task_plan.md
+ M src/app/main.cpp
+ M src/vr/openxr_session.cpp
+ M src/vr/openxr_session.hpp
+ M tests/mock_openxr_runtime.cpp
+ M tools/build.ps1
+ M tools/package_windows.py
+?? plan/hand-observation-p0/
+?? plan/migration-2026-10-14/
+?? plan/semantic-repertoires-v1/backups/
+?? plan/semantic-repertoires-v1/behavior-matrix.md
+?? plan/semantic-repertoires-v1/first-exposure-protocol.md
+?? plan/semantic-repertoires-v1/first-session.md
+?? src/control/session_recorder.cpp
+?? src/control/session_recorder.hpp
+?? src/interaction/
+?? src/vr/tracking.cpp
+?? src/vr/tracking.hpp
+?? tests/observation_tests.cpp
+?? tests/session_recorder_tests.cpp
+?? tests/test_observation.py
+?? tests/test_session_inspector.py
+?? tools/check_hand_package.py
+?? tools/check_inspection_update.py
+?? tools/inspect_session.py
+?? tools/package/Fantasynt.cmd
+?? tools/package/HAND-TRACKING.txt
+?? tools/package/Record-HandTracking.ps1
+?? tools/package/Test-HandTracking.cmd
+?? tools/package/Verify-HandTracking.cmd
+?? tools/package/Verify-HandTracking.ps1
+?? tools/package_inspection_update.py
+?? tools/session_metrics.py

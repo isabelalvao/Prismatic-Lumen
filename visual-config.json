@@ -1,5 +1,9 @@
 {
   "schema_version": 1,
+  "motifs": {
+    "light_attenuation": 0.60,
+    "master_attenuation": 0.90
+  },
   "startup": {
     "window_width": 1280,
     "window_height": 720,

@@ -8,10 +8,12 @@
 #include <openxr/openxr.h>
 #include <openxr/openxr_platform.h>
 #include "openxr_session.hpp"
+#include "tracking.hpp"
 #include <nlohmann/json.hpp>
 #include <algorithm>
 #include <cmath>
 #include <cstring>
+#include <deque>
 #include <stdexcept>
 #include <vector>
 
@@ -27,6 +29,7 @@ void dx_checked(HRESULT result,const char* operation) {
 }
 struct Instance {
     XrInstance handle{XR_NULL_HANDLE};
+    bool hands_enabled{},time_enabled{};
     Instance() {
         std::uint32_t count{};
         checked(xrEnumerateInstanceExtensionProperties(nullptr,0,&count,nullptr),"Enumerate OpenXR extensions");
@@ -34,13 +37,19 @@ struct Instance {
         checked(xrEnumerateInstanceExtensionProperties(nullptr,count,&count,extensions.data()),"Read OpenXR extensions");
         if(std::none_of(extensions.begin(),extensions.end(),[](const auto& e) { return std::strcmp(e.extensionName,XR_KHR_D3D11_ENABLE_EXTENSION_NAME)==0; }))
             throw std::runtime_error("OpenXR runtime does not support Direct3D 11");
-        const char* enabled[]={XR_KHR_D3D11_ENABLE_EXTENSION_NAME};
+        const auto available=[&](const char* name) { return std::any_of(extensions.begin(),extensions.end(),
+            [name](const auto& entry) { return std::strcmp(entry.extensionName,name)==0; }); };
+        hands_enabled=available(XR_EXT_HAND_TRACKING_EXTENSION_NAME);
+        time_enabled=available(XR_KHR_WIN32_CONVERT_PERFORMANCE_COUNTER_TIME_EXTENSION_NAME);
+        std::vector<const char*> enabled{XR_KHR_D3D11_ENABLE_EXTENSION_NAME};
+        if(hands_enabled) enabled.push_back(XR_EXT_HAND_TRACKING_EXTENSION_NAME);
+        if(time_enabled) enabled.push_back(XR_KHR_WIN32_CONVERT_PERFORMANCE_COUNTER_TIME_EXTENSION_NAME);
         XrInstanceCreateInfo info{XR_TYPE_INSTANCE_CREATE_INFO};
         std::strcpy(info.applicationInfo.applicationName,"Fantasynt");
         std::strcpy(info.applicationInfo.engineName,"Fantasynt C++");
         info.applicationInfo.applicationVersion=1;
         info.applicationInfo.apiVersion=XR_MAKE_VERSION(1,0,0);
-        info.enabledExtensionCount=1; info.enabledExtensionNames=enabled;
+        info.enabledExtensionCount=static_cast<std::uint32_t>(enabled.size()); info.enabledExtensionNames=enabled.data();
         checked(xrCreateInstance(&info,&handle),"Create OpenXR instance");
     }
     ~Instance() { if(handle!=XR_NULL_HANDLE) xrDestroyInstance(handle); }
@@ -63,10 +72,15 @@ std::string probe_openxr() {
     XrSystemId id{}; const auto result=xrGetSystem(instance.handle,&info,&id);
     nlohmann::json report{{"type","xr_probe"},{"runtime",runtime_name(instance.handle)},
         {"d3d11",true},{"headset_available",XR_SUCCEEDED(result)},{"system_result",result}};
+    report["hand_tracking_extension"]=instance.hands_enabled;
+    report["xr_to_qpc_extension"]=instance.time_enabled;
     if(XR_SUCCEEDED(result)) {
         XrSystemProperties properties{XR_TYPE_SYSTEM_PROPERTIES};
+        XrSystemHandTrackingPropertiesEXT hands{XR_TYPE_SYSTEM_HAND_TRACKING_PROPERTIES_EXT};
+        if(instance.hands_enabled) properties.next=&hands;
         checked(xrGetSystemProperties(instance.handle,id,&properties),"Read headset properties");
         report["headset"]=properties.systemName;
+        report["hand_tracking_system_support"]=hands.supportsHandTracking==XR_TRUE;
     }
     return report.dump();
 }
@@ -75,6 +89,12 @@ struct OpenXRSession::Impl {
     XrSystemId system_id{};
     XrSession session{XR_NULL_HANDLE};
     XrSpace space{XR_NULL_HANDLE};
+    std::unique_ptr<Tracking> tracking;
+    interaction::ObservationFrame observation;
+    std::uint64_t origin_epoch{};
+    std::deque<XrTime> pending_origins;
+    std::optional<XrTime> last_origin_change;
+    XrSessionState session_state{XR_SESSION_STATE_UNKNOWN};
     ComPtr<ID3D11Device> device;
     ComPtr<ID3D11DeviceContext> context;
     struct Eye {
@@ -124,6 +144,7 @@ struct OpenXRSession::Impl {
             XrReferenceSpaceCreateInfo reference{XR_TYPE_REFERENCE_SPACE_CREATE_INFO};
             reference.referenceSpaceType=XR_REFERENCE_SPACE_TYPE_LOCAL; reference.poseInReferenceSpace.orientation.w=1;
             checked(xrCreateReferenceSpace(session,&reference,&space),"Create VR reference space");
+            tracking=std::make_unique<Tracking>(instance.handle,system_id,session,space,instance.hands_enabled,instance.time_enabled);
             std::uint32_t count{};
             checked(xrEnumerateViewConfigurationViews(instance.handle,system_id,XR_VIEW_CONFIGURATION_TYPE_PRIMARY_STEREO,0,&count,nullptr),"Count stereo views");
             if(count!=2) throw std::runtime_error("OpenXR runtime must provide two stereo views");
@@ -163,6 +184,7 @@ struct OpenXRSession::Impl {
             XrFrameEndInfo end{XR_TYPE_FRAME_END_INFO}; end.displayTime=display_time; end.environmentBlendMode=XR_ENVIRONMENT_BLEND_MODE_OPAQUE;
             xrEndFrame(session,&end); frame_open=false;
         }
+        tracking.reset();
         if(space!=XR_NULL_HANDLE) { xrDestroySpace(space); space=XR_NULL_HANDLE; }
         for(auto& eye:eyes) if(eye.swapchain!=XR_NULL_HANDLE) { xrDestroySwapchain(eye.swapchain); eye.swapchain=XR_NULL_HANDLE; }
         if(session!=XR_NULL_HANDLE) { xrDestroySession(session); session=XR_NULL_HANDLE; }
@@ -175,7 +197,9 @@ struct OpenXRSession::Impl {
                 throw std::runtime_error("OpenXR runtime lost its instance. Reconnect Virtual Desktop and restart Fantasynt.");
             if(event.type==XR_TYPE_EVENT_DATA_SESSION_STATE_CHANGED) {
                 const auto& state=*reinterpret_cast<const XrEventDataSessionStateChanged*>(&event);
+                session_state=state.state;
                 if(state.state==XR_SESSION_STATE_READY&&!running) {
+                    if(observation.sequence) ++origin_epoch;
                     XrSessionBeginInfo begin{XR_TYPE_SESSION_BEGIN_INFO}; begin.primaryViewConfigurationType=XR_VIEW_CONFIGURATION_TYPE_PRIMARY_STEREO;
                     checked(xrBeginSession(session,&begin),"Begin VR session"); running=true;
                 } else if(state.state==XR_SESSION_STATE_STOPPING&&running) {
@@ -183,6 +207,13 @@ struct OpenXRSession::Impl {
                 } else if(state.state==XR_SESSION_STATE_LOSS_PENDING)
                     throw std::runtime_error("OpenXR runtime lost its session. Reconnect Virtual Desktop and restart Fantasynt.");
                 else if(state.state==XR_SESSION_STATE_EXITING) quit=true;
+            }
+            if(event.type==XR_TYPE_EVENT_DATA_REFERENCE_SPACE_CHANGE_PENDING) {
+                const auto& change=*reinterpret_cast<const XrEventDataReferenceSpaceChangePending*>(&event);
+                if(change.referenceSpaceType==XR_REFERENCE_SPACE_TYPE_LOCAL) {
+                    if(pending_origins.size()>=128) throw std::runtime_error("Too many pending OpenXR reference changes");
+                    pending_origins.push_back(change.changeTime);
+                }
             }
             event={XR_TYPE_EVENT_DATA_BUFFER};
         }
@@ -210,18 +241,24 @@ struct OpenXRSession::Impl {
         checked(xrEndFrame(session,&end),"Submit VR frame"); frame_open=false;
     }
     std::optional<std::array<EyeView,2>> begin() {
-        if(!running) return std::nullopt;
+        if(!running) { observation=tracking->sample(0,origin_epoch,session_state,"not_running"); return std::nullopt; }
         XrFrameWaitInfo wait{XR_TYPE_FRAME_WAIT_INFO}; XrFrameState frame{XR_TYPE_FRAME_STATE};
         checked(xrWaitFrame(session,&wait,&frame),"Wait for VR frame"); display_time=frame.predictedDisplayTime;
         XrFrameBeginInfo begin{XR_TYPE_FRAME_BEGIN_INFO}; checked(xrBeginFrame(session,&begin),"Begin VR frame");
         frame_open=true; has_views=false;
+        while(!pending_origins.empty()&&display_time>=pending_origins.front()) {
+            ++origin_epoch; last_origin_change=pending_origins.front(); pending_origins.pop_front();
+        }
+        observation=tracking->sample(display_time,origin_epoch,session_state,frame.shouldRender?"located":"not_rendering");
+        observation.reference_change_time_xr=last_origin_change;
         if(!frame.shouldRender) { finish(); return std::nullopt; }
         XrViewLocateInfo location{XR_TYPE_VIEW_LOCATE_INFO}; location.viewConfigurationType=XR_VIEW_CONFIGURATION_TYPE_PRIMARY_STEREO;
         location.displayTime=display_time; location.space=space;
         XrViewState state{XR_TYPE_VIEW_STATE}; std::uint32_t count{};
         checked(xrLocateViews(session,&location,&state,2,&count,views.data()),"Locate tracked VR eyes");
+        observation.view_state_flags=state.viewStateFlags;
         const auto valid=XR_VIEW_STATE_POSITION_VALID_BIT|XR_VIEW_STATE_ORIENTATION_VALID_BIT;
-        if(count!=2||(state.viewStateFlags&valid)!=valid) { finish(); return std::nullopt; }
+        if(count!=2||(state.viewStateFlags&valid)!=valid) { observation.frame_status="tracking_invalid"; finish(); return std::nullopt; }
         std::array<EyeView,2> result;
         // Origem comum entre os olhos; a orientação média conserva a inclinação própria de cada lente.
         const auto& left=views[0].pose; const auto& right=views[1].pose;
@@ -263,6 +300,8 @@ OpenXRSession::OpenXRSession(float scale):impl_(std::make_unique<Impl>(scale)) {
 OpenXRSession::~OpenXRSession()=default;
 void* OpenXRSession::graphics_device() const { return impl_->device.Get(); }
 std::string OpenXRSession::description() const { return impl_->runtime+" "+std::to_string(impl_->width)+"x"+std::to_string(impl_->height)+" per eye"; }
+nlohmann::json OpenXRSession::tracking_capabilities() const { return impl_->tracking->capabilities(); }
+const interaction::ObservationFrame& OpenXRSession::observation() const { return impl_->observation; }
 bool OpenXRSession::poll_events() { return impl_->poll(); }
 std::optional<std::array<EyeView,2>> OpenXRSession::begin_frame() { return impl_->begin(); }
 void OpenXRSession::end_frame() { impl_->finish(); }

@@ -1,0 +1,12 @@
+test_effect_in_four_phases_and_other_channels_preserved (test_motifs.MotifTests.test_effect_in_four_phases_and_other_channels_preserved) ... ok
+test_explicit_enable_creates_new_record_without_path_and_rejects_other_scene (test_motifs.MotifTests.test_explicit_enable_creates_new_record_without_path_and_rejects_other_scene) ... ok
+test_neutral_windows_and_final_fade_match_disabled (test_motifs.MotifTests.test_neutral_windows_and_final_fade_match_disabled) ... ok
+test_operator_pause_restart_and_frozen_controls (test_motifs.MotifTests.test_operator_pause_restart_and_frozen_controls) ... ok
+test_runtime_exception_cancels_and_marks_incomplete (test_motifs.MotifTests.test_runtime_exception_cancels_and_marks_incomplete) ... ok
+test_sdl_clock_crosses_first_opportunity (test_motifs.MotifTests.test_sdl_clock_crosses_first_opportunity) ... ok
+test_xr_loss_of_hands_does_not_cancel_but_invalid_head_holds (test_motifs.MotifTests.test_xr_loss_of_hands_does_not_cancel_but_invalid_head_holds) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 25.322s
+
+OK

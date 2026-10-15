@@ -5,6 +5,8 @@
 #include "time_display.hpp"
 #include "config/visual_config.hpp"
 #include "vr/openxr_session.hpp"
+#include "interaction/hand_snap.hpp"
+#include "interaction/light_pencil.hpp"
 #include <filesystem>
 #include <functional>
 #include <memory>
@@ -27,6 +29,9 @@ public:
     void set_scene_layout(SceneLayout layout);
     void set_composition(const Composition& composition);
     void set_time_display(const TimeDisplay& display);
+    void set_hand_tracking(const interaction::ObservationFrame& frame);
+    std::vector<interaction::SnapEvent> update_hand_snap(const interaction::ObservationFrame& frame);
+    std::vector<interaction::PencilEvent> update_light_pencil(const interaction::ObservationFrame& frame,bool snap_priority=false);
     void request_capture(const std::filesystem::path& path);
     bool capture_complete() const;
     std::string device_description() const;

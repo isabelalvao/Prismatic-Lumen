@@ -10,8 +10,11 @@ double beat_aligned_time(double nominal_time,std::span<const double> onsets);
 double rear_piece_visibility(double depth_cm,double radius_cm,const VisualConfig& config);
 double retained_wrapped_depth(double depth_cm,double radius_cm,const VisualConfig& config);
 double required_ring_lead(double maximum_speed_m_s,const VisualConfig& config);
+struct RingTravelMotion { double speed_multiplier=1,offset_seconds{}; };
+RingTravelMotion sample_ring_travel(double time,const VisualConfig& config);
 Instance directed_tunnel_instance(const Instance& source,double time,double camera,double alignment_camera,
-    const VisualConfig& config,double speed_multiplier=1,double alignment_lead_m=-1,double animation_clock=-1);
+    const VisualConfig& config,double speed_multiplier=1,double alignment_lead_m=-1,double animation_clock=-1,
+    double ring_travel_cm=0);
 
 struct SurfaceChoreographySettings {
     double cones_start = 136;

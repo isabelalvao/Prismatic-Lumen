@@ -11,6 +11,9 @@
 #include "rotation_history.hpp"
 #include "audio/beat_envelope.hpp"
 #include "visual_uniforms.hpp"
+#include "hand_geometry.hpp"
+#include "snap_geometry.hpp"
+#include "pencil_geometry.hpp"
 #include <SDL3/SDL.h>
 #include <bimg/decode.h>
 #include <bx/allocator.h>
@@ -108,10 +111,20 @@ struct Renderer::Impl {
         make_landscape_instances(20261011,4096,true),make_tunnel_instances(20261011,4096)}};
     std::array<std::vector<Instance>,2> extension_scenes{{scenes[0],scenes[1]}};
     std::vector<Instance> legacy_instances=make_instances(20261011,4096);
-    std::array<bgfx::ProgramHandle,7> programs;
+    std::array<bgfx::ProgramHandle,9> programs;
     std::array<bgfx::UniformHandle,18> uniforms;
     bgfx::UniformHandle timer_uniform=BGFX_INVALID_HANDLE;
     bgfx::UniformHandle spectral_uniform=BGFX_INVALID_HANDLE;
+    bgfx::UniformHandle hand_colour=BGFX_INVALID_HANDLE;
+    std::array<HandGeometry,2> hand_geometry;
+    interaction::SnapDetector snap_detector;
+    std::array<std::optional<interaction::SnapEvent>,2> snap_bursts;
+    std::array<HandGeometry,2> snap_geometry;
+    std::array<float,2> snap_fade{};
+    std::optional<std::int64_t> snap_time;
+    std::uint64_t snap_epoch{};
+    interaction::LightPencil light_pencil;
+    std::array<PencilGeometry,2> pencil_geometry;
     TimeDisplay time_display;
     std::optional<TimeDisplayUniforms> stereo_timer;
     VisualConfig visual;
@@ -124,6 +137,7 @@ struct Renderer::Impl {
     double ring_alignment_speed=1;
     double ring_formation_speed=1.5;
     double ring_alignment_lead=40;
+    double ring_travel_speed=1.5;
     std::array<float,3> eye_origin{{0,260,-450}};
     std::array<float,16> eye_view{};
     struct TransparentDraw {
@@ -179,6 +193,10 @@ struct Renderer::Impl {
             programs[4]=program(shader_dir,"vs_quad","fs_composite");
             programs[5]=program(shader_dir,"vs_quad","fs_copy");
             programs[6]=program(shader_dir,"vs_opening","fs_opening");
+            programs[7]=program(shader_dir,"vs_hand","fs_hand");
+            programs[8]=program(shader_dir,"vs_light_pencil","fs_light_pencil");
+            hand_colour=bgfx::createUniform("u_hand_colour",bgfx::UniformType::Vec4);
+            if(!bgfx::isValid(hand_colour)) throw std::runtime_error("Cannot create hand colour uniform");
             const std::array<const char*,18> names{"u_scene","u_clock","u_color0","u_color1","s_reflection","s_source","s_bloom","u_blur","u_post","u_eye","u_sky","u_style","u_atmosphere","s_detail","u_art","u_tuning","u_layout","u_choreography"};
             for(std::size_t i=0;i<names.size();++i) {
                 uniforms[i]=bgfx::createUniform(names[i],i==10?bgfx::UniformType::Mat4:((i>=4&&i<=6)||i==13?bgfx::UniformType::Sampler:bgfx::UniformType::Vec4),i==15?22:i==17?7:1);
@@ -295,6 +313,8 @@ struct Renderer::Impl {
         last_time=effective_time;
     }
     void cleanup() {
+        if(bgfx::isValid(hand_colour)) bgfx::destroy(hand_colour);
+        hand_colour=BGFX_INVALID_HANDLE;
         if(bgfx::isValid(timer_uniform)) bgfx::destroy(timer_uniform);
         timer_uniform=BGFX_INVALID_HANDLE;
         if(bgfx::isValid(spectral_uniform)) bgfx::destroy(spectral_uniform);
@@ -479,7 +499,9 @@ struct Renderer::Impl {
                 if(source.variation>2.5f&&source.variation<7.5f) {
                     const double alignment=ring_alignment_camera.value_or(camera+directed_camera_step(time,visual[Setting::RingAlignStart],state.motion_speed,visual));
                     item=directed_tunnel_instance(source,time,camera,alignment,visual,ring_alignment_camera?ring_alignment_speed:state.motion_speed/0.3,
-                        ring_alignment_camera?ring_alignment_lead:-1,time*visual[Setting::AnimationSpeed]+clock_offset);
+                        ring_alignment_camera?ring_alignment_lead:-1,time*visual[Setting::AnimationSpeed]+clock_offset,
+                        sample_ring_travel(time,visual).offset_seconds*(ring_alignment_camera?ring_travel_speed:
+                            visual[Setting::CameraSpeed]*state.motion_speed/0.3)*100);
                 } else {
                     const auto& m=source.transform;
                     const double radius=2*(std::hypot(m[0],m[1],m[2])+std::hypot(m[4],m[5],m[6])+std::hypot(m[8],m[9],m[10]));
@@ -577,6 +599,83 @@ struct Renderer::Impl {
         eye_origin={0,height,-back};
         draw_scene(state,time,camera,view,projection,false,false,BGFX_INVALID_HANDLE);
     }
+    void set_hand_tracking(const interaction::ObservationFrame& frame) {
+        // Substituir sempre o frame completo; nenhuma pose é retida após perda/recentragem.
+        for(std::size_t i=0;i<hand_geometry.size();++i)
+            hand_geometry[i]=vr_mode&&frame.frame_status=="located"&&frame.xr_time_ns>0?
+                make_hand_geometry(frame.hands[i],static_cast<float>(visual[Setting::VrEyeHeight]*100),
+                    static_cast<float>(visual[Setting::VrEyeBack]*100)):HandGeometry{};
+    }
+    std::vector<interaction::SnapEvent> update_hand_snap(const interaction::ObservationFrame& frame) {
+        auto events=snap_detector.update(frame);
+        if(!vr_mode||frame.frame_status!="located"||frame.xr_time_ns<=0||!frame.head.position_valid||
+           !frame.head.position_tracked||!frame.head.orientation_valid||!frame.head.orientation_tracked) {
+            snap_bursts={}; snap_geometry={}; snap_time.reset(); return {};
+        }
+        if(snap_time&&(frame.origin_epoch!=snap_epoch||frame.xr_time_ns<=*snap_time||frame.xr_time_ns-*snap_time>80'000'000))
+            snap_bursts={};
+        snap_time=frame.xr_time_ns; snap_epoch=frame.origin_epoch;
+        for(const auto& event:events) snap_bursts[event.hand]=event;
+        for(std::size_t i=0;i<2;++i) {
+            snap_geometry[i]={}; snap_fade[i]=0;
+            if(!interaction::snap_hand_usable(frame.hands[i])) snap_bursts[i].reset();
+            if(!snap_bursts[i]) continue;
+            snap_fade[i]=snap_particle_fade(*snap_bursts[i],frame.xr_time_ns);
+            if(snap_fade[i]<=0) { snap_bursts[i].reset(); continue; }
+            snap_geometry[i]=make_snap_geometry(*snap_bursts[i],frame.xr_time_ns,
+                static_cast<float>(visual[Setting::VrEyeHeight]*100),static_cast<float>(visual[Setting::VrEyeBack]*100));
+        }
+        return events;
+    }
+    std::vector<interaction::PencilEvent> update_light_pencil(const interaction::ObservationFrame& frame,bool snap_priority) {
+        auto events=light_pencil.update(frame,{snap_priority&&snap_detector.blocks_pencil(0),snap_priority&&snap_detector.blocks_pencil(1)});
+        for(std::size_t hand=0;hand<2;++hand)
+            pencil_geometry[hand]=vr_mode?make_pencil_geometry(light_pencil.points(hand),frame.xr_time_ns,
+                static_cast<float>(visual[Setting::VrEyeHeight]*100),static_cast<float>(visual[Setting::VrEyeBack]*100)):PencilGeometry{};
+        return events;
+    }
+    void draw_hands() {
+        bgfx::VertexLayout layout;
+        layout.begin().add(bgfx::Attrib::Position,3,bgfx::AttribType::Float)
+            .add(bgfx::Attrib::Normal,3,bgfx::AttribType::Float).end();
+        static_assert(sizeof(HandVertex)==6*sizeof(float));
+        constexpr float colours[2][4]={{0.10f,0.65f,0.85f,1},{0.85f,0.40f,0.12f,1}};
+        for(std::size_t i=0;i<4;++i) {
+            const bool spark=i>=2;
+            const auto hand=i%2;
+            const auto& mesh=spark?snap_geometry[hand]:hand_geometry[hand];
+            if(mesh.indices.empty()) continue;
+            const auto vertices=static_cast<std::uint32_t>(mesh.vertices.size()),indices=static_cast<std::uint32_t>(mesh.indices.size());
+            bgfx::TransientVertexBuffer vb; bgfx::TransientIndexBuffer ib;
+            if(!bgfx::allocTransientBuffers(&vb,layout,vertices,&ib,indices)) continue;
+            std::memcpy(vb.data,mesh.vertices.data(),vertices*sizeof(HandVertex));
+            std::memcpy(ib.data,mesh.indices.data(),indices*sizeof(std::uint16_t));
+            bgfx::setVertexBuffer(0,&vb); bgfx::setIndexBuffer(&ib);
+            const float glow[]{2.2f*snap_fade[hand],1.7f*snap_fade[hand],0.8f*snap_fade[hand],1};
+            bgfx::setUniform(hand_colour,spark?glow:colours[hand]);
+            // Profundidade partilhada com a cena; sem reflexo, fog ou avanço virtual.
+            bgfx::setState(spark?(BGFX_STATE_WRITE_RGB|BGFX_STATE_DEPTH_TEST_LESS|BGFX_STATE_BLEND_ADD):
+                (BGFX_STATE_WRITE_RGB|BGFX_STATE_WRITE_A|BGFX_STATE_WRITE_Z|BGFX_STATE_DEPTH_TEST_LESS));
+            bgfx::submit(1,programs[7]);
+        }
+        bgfx::VertexLayout pencil_layout;
+        pencil_layout.begin().add(bgfx::Attrib::Position,3,bgfx::AttribType::Float)
+            .add(bgfx::Attrib::Normal,3,bgfx::AttribType::Float).add(bgfx::Attrib::TexCoord0,2,bgfx::AttribType::Float).end();
+        static_assert(sizeof(PencilVertex)==8*sizeof(float));
+        for(const auto& mesh:pencil_geometry) {
+            if(mesh.indices.empty()) continue;
+            bgfx::TransientVertexBuffer vb; bgfx::TransientIndexBuffer ib;
+            if(!bgfx::allocTransientBuffers(&vb,pencil_layout,static_cast<std::uint32_t>(mesh.vertices.size()),
+                                           &ib,static_cast<std::uint32_t>(mesh.indices.size()))) continue;
+            std::memcpy(vb.data,mesh.vertices.data(),mesh.vertices.size()*sizeof(PencilVertex));
+            std::memcpy(ib.data,mesh.indices.data(),mesh.indices.size()*sizeof(std::uint16_t));
+            bgfx::setVertexBuffer(0,&vb); bgfx::setIndexBuffer(&ib);
+            constexpr float colour[]{0.65f,1.30f,1.65f,1};
+            bgfx::setUniform(hand_colour,colour);
+            bgfx::setState(BGFX_STATE_WRITE_RGB|BGFX_STATE_DEPTH_TEST_LESS|BGFX_STATE_BLEND_ADD);
+            bgfx::submit(1,programs[8]);
+        }
+    }
     void draw_vr_eye(const Parameters& state,double time,double camera,const vr::EyeView& eye,bool mirror) {
         if(!vr_mode) throw std::runtime_error("VR renderer requires the OpenXR graphics device");
         if(targets.width!=eye.width||targets.height!=eye.height) configure_targets(eye.width,eye.height);
@@ -617,6 +716,7 @@ struct Renderer::Impl {
         if(time<visual[Setting::RingAlignStart]) ring_alignment_camera.reset();
         else if(composition.directed_extension&&!ring_alignment_camera) {
             ring_alignment_speed=state.motion_speed/0.3;
+            ring_travel_speed=visual[Setting::CameraSpeed]*ring_alignment_speed;
             ring_formation_speed=visual[Setting::CameraSpeed]*std::max(1.0/0.3,ring_alignment_speed);
             ring_alignment_lead=required_ring_lead(ring_formation_speed,visual);
             ring_alignment_camera=camera-directed_camera_step(visual[Setting::RingAlignStart],time,state.motion_speed,visual);
@@ -660,6 +760,7 @@ struct Renderer::Impl {
         bgfx::setState(floor_state|(composition.weights[2]>0?BGFX_STATE_BLEND_ALPHA:BGFX_STATE_WRITE_Z));
         bgfx::submit(1,programs[1]);
         }
+        if(vr_mode) draw_hands();
         flush_transparency(state,time,camera);
         full_screen(2,programs[2],bgfx::getTexture(targets.scene));
         const float horizontal[]={1.0f/targets.half_width,0,0,0};
@@ -763,6 +864,9 @@ void Renderer::set_composition(const Composition& composition) {
     impl_->composition=composition;
 }
 void Renderer::set_time_display(const TimeDisplay& display) { impl_->time_display=display; }
+void Renderer::set_hand_tracking(const interaction::ObservationFrame& frame) { impl_->set_hand_tracking(frame); }
+std::vector<interaction::SnapEvent> Renderer::update_hand_snap(const interaction::ObservationFrame& frame) { return impl_->update_hand_snap(frame); }
+std::vector<interaction::PencilEvent> Renderer::update_light_pencil(const interaction::ObservationFrame& frame,bool snap_priority) { return impl_->update_light_pencil(frame,snap_priority); }
 void Renderer::request_capture(const std::filesystem::path& path) {
     if(!path.parent_path().empty()) std::filesystem::create_directories(path.parent_path());
     impl_->callbacks.completed=false; impl_->callbacks.failed=false;

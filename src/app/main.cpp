@@ -6,6 +6,11 @@
 #include "render/renderer.hpp"
 #include "audio/player.hpp"
 #include "render/art_direction.hpp"
+#include "render/snap_geometry.hpp"
+#include "render/surface_choreography.hpp"
+#include "control/session_recorder.hpp"
+#include "interaction/observation.hpp"
+#include "behavior/motif_executor.hpp"
 #include <nlohmann/json.hpp>
 #include <algorithm>
 #include <charconv>
@@ -38,13 +43,13 @@ struct Options {
     std::uint16_t port{47631};
     std::uint64_t frames{};
     bool hidden{};
-    bool vr{},xr_probe{};
+    bool vr{},xr_probe{},scheduled_motifs{},hand_snap{},hand_light_pencil{};
     bool vr_scale_set{},scene_set{},width_set{},height_set{};
     bool sequence{true},opening_only{true},play{},paused{},silent{};
     double start_time{};
     std::optional<double> fixed_time;
     float vr_scale{1.0f};
-    std::filesystem::path capture,shaders,audio,config;
+    std::filesystem::path capture,shaders,audio,config,record_session;
     std::string preset;
     SceneLayout layout{SceneLayout::Opening};
 };
@@ -61,9 +66,12 @@ Options options(int argc,char** argv) {
         if(arg=="--hidden") { result.hidden=true; continue; }
         if(arg=="--silent") { result.silent=true; continue; }
         if(arg=="--vr") { result.vr=true; continue; }
+        if(arg=="--motifs-scheduled") { result.scheduled_motifs=true; continue; }
+        if(arg=="--hand-snap") { result.hand_snap=true; continue; }
+        if(arg=="--hand-light-pencil") { result.hand_light_pencil=true; continue; }
         if(arg=="--xr-probe") { result.xr_probe=true; continue; }
         if(arg=="--help") {
-            std::cout<<"Fantasynt --config FILE.json --scene opening|sequence|night|landscape|tunnel|field --start-time SECONDS --fixed-time SECONDS --play --paused --silent --audio WAV --vr --vr-scale 0.4..1.0 --xr-probe --port N --frames N --hidden --capture FILE --width N --height N --preset calm|balanced|energetic --shaders DIRECTORY | C timer | F5 reload config\n";
+            std::cout<<"Fantasynt --config FILE.json --scene opening|sequence|night|landscape|tunnel|field --start-time SECONDS --fixed-time SECONDS --play --paused --silent --audio WAV --vr --vr-scale 0.4..1.0 --xr-probe --port N --frames N --hidden --capture FILE --record-session FILE.jsonl --motifs-scheduled --hand-snap --hand-light-pencil --width N --height N --preset calm|balanced|energetic --shaders DIRECTORY | C timer | F5 reload config\n";
             std::exit(0);
         }
         if(arg=="--play") { result.play=true; result.paused=false; continue; }
@@ -105,6 +113,7 @@ Options options(int argc,char** argv) {
             if(arg=="--start-time") result.start_time=seconds;
             else result.fixed_time=seconds;
         } else if(arg=="--capture") result.capture=std::filesystem::u8path(value);
+        else if(arg=="--record-session") result.record_session=std::filesystem::u8path(value);
         else if(arg=="--shaders") result.shaders=std::filesystem::u8path(value);
         else if(arg=="--audio") result.audio=std::filesystem::u8path(value);
         else if(arg=="--config") result.config=std::filesystem::u8path(value);
@@ -119,6 +128,10 @@ struct SDLSession {
     SDLSession() { if(!SDL_Init(SDL_INIT_VIDEO|SDL_INIT_EVENTS)) throw std::runtime_error(SDL_GetError()); }
     ~SDLSession() { SDL_Quit(); }
 };
+struct ScopeExit {
+    std::function<void()> action;
+    ~ScopeExit() { try { action(); } catch(...) {} }
+};
 void apply_preset(SceneController& scene,const std::filesystem::path& directory,const std::string& name) {
     std::ifstream input(directory/(name+".json"));
     if(!input) throw std::runtime_error("Preset file missing: "+name);
@@ -128,6 +141,8 @@ void apply_preset(SceneController& scene,const std::filesystem::path& directory,
     else throw std::runtime_error("Invalid preset: "+name);
 }
 int run(const Options& args) {
+    if(args.hand_snap&&!args.vr) throw std::runtime_error("--hand-snap requires --vr");
+    if(args.hand_light_pencil&&!args.vr) throw std::runtime_error("--hand-light-pencil requires --vr");
     if(args.xr_probe) { std::cout<<vr::probe_openxr()<<std::endl; return 0; }
     SDLSession session;
     const std::filesystem::path base=std::filesystem::u8path(SDL_GetBasePath());
@@ -144,6 +159,10 @@ int run(const Options& args) {
     }
     if(opening_only&&(args.start_time>visual[Setting::OpeningDuration]||args.fixed_time.value_or(0)>visual[Setting::OpeningDuration]))
         throw std::runtime_error("Opening time exceeds configured duration; use --scene sequence for later times");
+    if(args.scheduled_motifs&&(!sequence||!opening_only||!args.preset.empty()||
+       std::abs(visual.parameters.light_intensity-0.6f)>1e-6||
+       std::abs(visual[Setting::OpeningDuration]-sequence_duration)>1e-6))
+        throw std::runtime_error("Scheduled P1 requires full Opening, base light 0.6 and no preset");
     const int width=args.width_set?args.width:static_cast<int>(visual[Setting::WindowWidth]);
     const int height=args.height_set?args.height:static_cast<int>(visual[Setting::WindowHeight]);
     const float vr_scale=args.vr_scale_set?args.vr_scale:static_cast<float>(visual[Setting::VrScale]);
@@ -170,12 +189,14 @@ int run(const Options& args) {
     renderer.set_scene_layout(selected_layout);
     SceneLayout active_layout=selected_layout;
     double sequence_seconds=args.fixed_time.value_or(args.start_time);
+    const behavior::MotifDose motif_dose=behavior::validated_dose({
+        visual[Setting::MotifLightAttenuation],visual[Setting::MotifMasterAttenuation]});
     std::unique_ptr<AudioPlayer> audio;
     auto ensure_audio=[&] {
         const double duration=playback_end(visual);
         if(audio&&audio->duration()!=duration) audio.reset();
         if(!audio&&!args.silent&&!args.fixed_time) {
-            audio=std::make_unique<AudioPlayer>(audio_path,duration);
+            audio=std::make_unique<AudioPlayer>(audio_path,duration,args.scheduled_motifs,motif_dose);
             audio->seek(sequence_seconds);
         }
     };
@@ -184,8 +205,71 @@ int run(const Options& args) {
     if(sequence) renderer.set_composition(composition_at(sequence_seconds));
     SceneController scene(visual.parameters);
     bool paused=startup_paused;
+    std::unique_ptr<SessionRecorder> recording;
+    std::string recording_id;
+    auto recording_path=args.record_session;
+    if((args.scheduled_motifs||args.hand_snap||args.hand_light_pencil)&&recording_path.empty())
+        recording_path=std::filesystem::path("logs")/((args.hand_light_pencil?"hand-effects-":args.hand_snap?"hand-snap-":"p1-")+new_session_id()+".jsonl");
+    const auto recording_start_ns=interaction::monotonic_now_ns();
+    behavior::MotifExecutor motifs(args.scheduled_motifs,motif_dose);
+    bool technical_paused=false;
+    std::optional<std::uint64_t> motif_origin_epoch;
+    auto motif_manifest=[&] {
+        Json plans=Json::array();
+        for(const auto& p:behavior::agenda) plans.push_back({{"id",p.id},{"start",p.start},{"duration",p.duration},
+            {"origin",p.origin},{"planned_ancestor",p.ancestor}});
+        return Json{{"enabled",args.scheduled_motifs},{"version",behavior::repertoire_version},{"agenda",plans},
+            {"curve","long_dip_smoothstep"},{"entry_seconds",2},{"exit_seconds",2},
+            {"light_depth",motif_dose.light_attenuation},{"gain_depth",motif_dose.master_attenuation},
+            {"dose_applied_at","application_start"},
+            {"neutral_deadline",behavior::neutral_deadline},{"body_decisions",false},
+            {"audio_gain_method","PCM16_per_sample_precomputed_before_SDL_queue"},
+            {"configuration_frozen",args.scheduled_motifs},{"fixed_preview",args.fixed_time.has_value()}};
+    };
+    if(!recording_path.empty()) {
+        recording_id=new_session_id();
+        recording=std::make_unique<SessionRecorder>(recording_path,Json{
+            {"session_id",recording_id},{"condition",args.hand_light_pencil?(args.scheduled_motifs?"p1_scheduled_hand_effects":"hand_effects"):args.hand_snap?(args.scheduled_motifs?"p1_scheduled_hand_snap":"hand_snap"):args.scheduled_motifs?"p1_scheduled":xr?"hand_visualization":"observe_only"},{"app_version","0.12.0"},
+            {"hand_snap",{{"enabled",args.hand_snap},{"detector",interaction::snap_detector_version},
+                {"method","tracked_thumb_middle_contact_then_fast_fold_release"},{"audio_detection",false},
+                {"spread_scale",snap_spread_scale},{"point_scale",snap_point_scale}}},
+            {"hand_light_pencil",{{"enabled",args.hand_light_pencil},{"version",interaction::light_pencil_version},
+                {"lifetime_seconds",interaction::pencil_lifetime},{"max_points_per_hand",interaction::pencil_max_points},
+                {"pose","only_index_extended_other_fingers_folded_thumb_relaxed"},
+                {"activation_ms",40},{"auxiliary_uncertainty_grace_ms",120},
+                {"snap_priority_enabled",args.hand_snap},{"snap_cooldown_ms",interaction::snap_cooldown_ns/1'000'000}}},
+            {"ring_travel_profile","master-crescendo-coda-1"},
+            {"motif_executor",motif_manifest()},
+            {"build_commit",FANTASYNT_BUILD_COMMIT},{"executable_sha256",file_sha256(base/"fantasynt.exe")},
+            {"configuration_path",path_utf8(config_path)},{"configuration_sha256",file_sha256(config_path)},
+            {"configuration",Json::parse(visual_config_json(visual))},
+            {"soundtrack_path",path_utf8(audio_path)},{"soundtrack_sha256",file_sha256(audio_path)},
+            {"playback_end_seconds",playback_end(visual)},{"mode",xr?"openxr":"desktop"},
+            {"runtime",xr?xr->description():""},{"tracking",xr?xr->tracking_capabilities():Json(nullptr)},
+            {"started_monotonic_ns",recording_start_ns},{"observation_publish_hz",20},
+            {"audio_clock","SDL_consumed_frames_not_physical_output"},{"audio_driver",audio?SDL_GetCurrentAudioDriver():""},
+            {"start_time_seconds",sequence_seconds},{"paused",paused},{"silent",args.silent},
+            {"fixed_time",args.fixed_time?Json(*args.fixed_time):Json(nullptr)},
+            {"acquisition_only",xr==nullptr&&!args.scheduled_motifs},{"hands_rendered",xr!=nullptr},
+            {"hand_representation",xr?Json("joint_spheres_and_bones"):Json(nullptr)},
+            {"hand_position_policy","valid_and_tracked"}});
+    }
     // A visibilidade é controlada exclusivamente pela tecla C durante a sessão.
     bool timer_visible=false;
+    auto record_motif_events=[&] {
+        for(auto& event:motifs.drain_events()) {
+            event["session_id"]=recording_id;
+            event["received_monotonic_ns"]=interaction::monotonic_now_ns();
+            if(recording) recording->submit(std::move(event));
+        }
+    };
+    ScopeExit motif_cleanup{[&] {
+        if(audio) audio->set_paused(true);
+        motifs.stop("exception_or_scope_exit"); record_motif_events();
+    }};
+    // Só promover um plano depois de conhecer a disponibilidade XR do primeiro frame.
+    motifs.restart(sequence_seconds,true,"session_start");
+    record_motif_events();
     if(!args.preset.empty()) apply_preset(scene,base/"examples",args.preset);
     std::ofstream events("fantasynt-events.jsonl",std::ios::app);
     if(!events) throw std::runtime_error("Cannot open event log");
@@ -196,6 +280,12 @@ int run(const Options& args) {
         {"mode",xr?"openxr":"desktop"},{"runtime",xr?xr->description():""},{"sequence",sequence},
         {"audio_enabled",audio!=nullptr},{"audio_driver",audio?SDL_GetCurrentAudioDriver():""},
         {"opening_meshes",renderer.opening_mesh_count()},{"vr_scale",vr_scale},{"paused",paused},
+        {"tracking",xr?xr->tracking_capabilities():Json(nullptr)},
+        {"hands_rendered",xr!=nullptr},{"hand_position_policy","valid_and_tracked"},
+        {"hand_snap_enabled",args.hand_snap},{"hand_snap_detector",interaction::snap_detector_version},
+        {"hand_light_pencil_enabled",args.hand_light_pencil},
+        {"motif_executor",motif_manifest()},
+        {"recording_path",recording_path.empty()?Json(nullptr):Json(path_utf8(recording_path))},
         {"detected_bass_beats",renderer.beat_count()},{"route_adjustments",renderer.route_adjustments()}}.dump()<<std::endl;
     const auto start=Clock::now();
     auto previous=start;
@@ -205,6 +295,45 @@ int run(const Options& args) {
     bool quit=false,minimized=false,capture_requested=false;
     std::uint64_t config_revision{};
     auto next_config_poll=start;
+    interaction::ObservationHistory observation_history;
+    std::int64_t next_observation_ns{};
+    std::optional<interaction::ObservationFrame> published_observation;
+    auto record_observation=[&](bool submitted,double time,const Parameters& render_state) {
+        if(!recording) return;
+        const auto now=interaction::monotonic_now_ns();
+        const auto* observation=xr?&xr->observation():nullptr;
+        const bool changed=observation&&(!published_observation||
+            interaction::tracking_quality_changed(*published_observation,*observation));
+        if(now<next_observation_ns&&!changed) return;
+        next_observation_ns=now+50'000'000;
+        const auto observed_motion=observation?observation_history.advance(*observation):interaction::MotionDescriptors{};
+        const auto composition=sequence?composition_at(time):static_composition(active_layout);
+        const auto effective=motifs.compose(render_state);
+        const bool accepted=recording->submit({{"type","observation"},{"session_id",recording_id},
+            {"received_monotonic_ns",now},{"session_elapsed_seconds",(now-recording_start_ns)/1e9},
+            {"xr",observation?interaction::observation_to_json(*observation):Json(nullptr)},
+            {"motion",observation?interaction::motion_to_json(observed_motion):Json(nullptr)},
+            {"environment",{{"scene",sequence?(opening_only?"opening":"sequence"):"manual"},
+                {"render_submitted",submitted},{"render_frame",frame_count},{"scene_seconds",time},
+                {"audio_seconds",audio?Json(audio->position()):Json(nullptr)},
+                {"audio_sampled_monotonic_ns",interaction::monotonic_now_ns()},
+                {"paused",paused},{"session_paused",paused||technical_paused},{"technical_paused",technical_paused},
+                {"audio_enabled",audio!=nullptr},{"master_gain",effective.gain},
+                {"camera_virtual_z_cm",camera},{"base",parameters_to_json(scene.current())},
+                {"directed",parameters_to_json(render_state)},
+                {"effective",parameters_to_json(effective.effective)},
+                {"semantic_modulation",args.scheduled_motifs?motifs.state():Json(nullptr)},
+                {"light_contribution",effective.light_contribution},{"light_clamped",effective.clamped},
+                {"config_revision",config_revision},{"controller_revision",scene.revision()},
+                {"composition_weights",composition.weights},{"opening_weight",composition.opening_weight},
+                {"exposure",composition.exposure},{"geometry_density_multiplier",composition.geometry_density_multiplier},
+                {"fog_multiplier",composition.fog_multiplier},{"tunnel_light_weight",composition.tunnel_light_weight},
+                {"previous_exit_progress",composition.previous_exit_progress},
+                {"ring_travel_speed_multiplier",composition.directed_extension?sample_ring_travel(time,visual).speed_multiplier:1},
+                {"bass_pulse",renderer.beat_strength(time)},{"ring_pulse_group",renderer.ring_pulse_group(time)}}}});
+        if(accepted&&observation) published_observation=*observation;
+        if(!accepted) observation_history={};
+    };
     auto select_layout=[&](SceneLayout layout) {
         sequence=false; active_layout=layout;
         if(audio) audio->set_paused(true);
@@ -218,6 +347,13 @@ int run(const Options& args) {
         while(SDL_PollEvent(&event)) {
             if(event.type==SDL_EVENT_QUIT) quit=true;
             else if(event.type==SDL_EVENT_KEY_DOWN && !event.key.repeat) {
+                if(args.scheduled_motifs&&event.key.key!=SDLK_ESCAPE&&event.key.key!=SDLK_SPACE&&
+                   event.key.key!=SDLK_C&&event.key.key!=SDLK_Q) {
+                    if(recording) recording->submit({{"type","control_rejected"},{"session_id",recording_id},
+                        {"received_monotonic_ns",interaction::monotonic_now_ns()},
+                        {"reason","p1_configuration_frozen"},{"key",event.key.key}});
+                    continue;
+                }
                 switch(event.key.key) {
                 case SDLK_ESCAPE: quit=true; break;
                 case SDLK_SPACE: paused=!paused; break;
@@ -229,7 +365,8 @@ int run(const Options& args) {
                 case SDLK_R: apply_preset(scene,base/"examples","balanced"); break;
                 case SDLK_Q:
                     sequence=true; sequence_seconds=0; camera=directed_camera_position(0,visual,opening_only);
-                    ensure_audio(); if(audio) audio->seek(0); break;
+                    ensure_audio(); if(audio) audio->seek(0);
+                    motifs.restart(0,paused,"operator_restart"); record_motif_events(); break;
                 case SDLK_O:
                     opening_only=true; sequence=true; sequence_seconds=0; camera=directed_camera_position(0,visual);
                     ensure_audio(); if(audio) audio->seek(0); break;
@@ -248,7 +385,7 @@ int run(const Options& args) {
                     static_cast<std::uint16_t>(std::clamp(height,0,8192)));
             }
         }
-        if(reload_config||(visual[Setting::HotReload]&&tick>=next_config_poll)) {
+        if(!args.scheduled_motifs&&(reload_config||(visual[Setting::HotReload]&&tick>=next_config_poll))) {
             next_config_poll=tick+std::chrono::duration_cast<Clock::duration>(std::chrono::duration<double>(visual[Setting::PollInterval]));
             bool held_audio=false;
             try {
@@ -279,6 +416,9 @@ int run(const Options& args) {
                         scene.submit(std::get<Command>(command));
                     }
                     ++config_revision;
+                    if(recording) recording->submit({{"type","configuration_changed"},{"session_id",recording_id},
+                        {"received_monotonic_ns",interaction::monotonic_now_ns()},
+                        {"revision",config_revision},{"configuration",Json::parse(visual_config_json(visual))}});
                     std::cout<<Json{{"type","config_reloaded"},{"revision",config_revision},{"restart_required",restart_required},
                         {"audio_seconds_before",audio_before},{"audio_seconds_after",audio?audio->position():sequence_seconds}}.dump()<<std::endl;
                 }
@@ -287,15 +427,19 @@ int run(const Options& args) {
             }
             if(held_audio&&audio) audio->set_paused(paused||!sequence||sequence_seconds>=playback_end(visual));
         }
-        scene.advance(dt);
+        if(!args.scheduled_motifs||!paused) scene.advance(dt);
         for(const auto& message:server.drain()) {
             const double latency=std::chrono::duration<double,std::milli>(Clock::now()-message.received).count();
             auto result=parse_command(message.payload);
             Json receipt{{"schema_version",1},{"latency_ms",latency}};
             if(auto command=std::get_if<Command>(&result)) {
-                scene.submit(*command);
-                receipt["id"]=command->id; receipt["status"]="accepted";
-                latency_total+=latency; latency_max=std::max(latency_max,latency); ++commands;
+                receipt["id"]=command->id;
+                if(args.scheduled_motifs) {
+                    receipt["status"]="rejected"; receipt["error_code"]="p1_configuration_frozen";
+                } else {
+                    scene.submit(*command); receipt["status"]="accepted";
+                    latency_total+=latency; latency_max=std::max(latency_max,latency); ++commands;
+                }
             } else {
                 const auto& error=std::get<ValidationError>(result);
                 if(!error.id.empty()) receipt["id"]=error.id;
@@ -305,18 +449,35 @@ int run(const Options& args) {
             receipt["current"]=parameters_to_json(scene.current());
             receipt["target"]=parameters_to_json(scene.target());
             server.reply(message.client_id,receipt.dump());
+            if(recording) recording->submit({{"type","command"},{"session_id",recording_id},
+                {"received_monotonic_ns",interaction::monotonic_now_ns()},
+                {"payload_hex",hex_bytes(message.payload)},{"receipt",receipt}});
             events<<Json{{"received_seconds",std::chrono::duration<double>(Clock::now()-start).count()},
                 {"payload_hex",hex_bytes(message.payload)},{"receipt",receipt}}.dump()<<'\n';
             events.flush();
             if(!events) throw std::runtime_error("Cannot write event log");
         }
+        std::optional<std::array<vr::EyeView,2>> eyes;
+        std::string_view technical_reason="operator_pause";
+        if(args.scheduled_motifs&&xr) {
+            if(!xr->poll_events()||quit) break;
+            eyes=xr->begin_frame();
+            const auto& observation=xr->observation();
+            const bool origin_changed=motif_origin_epoch&&*motif_origin_epoch!=observation.origin_epoch;
+            motif_origin_epoch=observation.origin_epoch;
+            const auto& h=observation.head;
+            technical_paused=!eyes||!h.position_valid||!h.orientation_valid||
+                !h.position_tracked||!h.orientation_tracked||origin_changed;
+            if(technical_paused) technical_reason=origin_changed?"xr_origin_changed":!eyes?"xr_frame_unavailable":"xr_head_unusable";
+        }
+        const bool session_paused=paused||technical_paused||quit;
         if(audio && sequence) {
             const double duration=playback_end(visual);
-            audio->set_paused(paused||sequence_seconds>=duration);
+            audio->set_paused(session_paused||sequence_seconds>=duration);
             const double next=std::clamp(audio->position(),sequence_seconds,duration);
             camera+=directed_camera_step(sequence_seconds,next,scene.current().motion_speed,visual,opening_only);
             sequence_seconds=next;
-        } else if(!paused&&!args.fixed_time) {
+        } else if(!session_paused&&!args.fixed_time) {
             if(sequence) {
                 const double next=std::min(playback_end(visual),sequence_seconds+std::min(dt,0.1));
                 camera+=directed_camera_step(sequence_seconds,next,scene.current().motion_speed,visual,opening_only);
@@ -325,11 +486,38 @@ int run(const Options& args) {
         }
         if(sequence) renderer.set_composition(composition_at(sequence_seconds));
         else camera=std::fmod(camera,41600.0);
-        std::optional<std::array<vr::EyeView,2>> eyes;
-        if(xr) {
+        motifs.advance(sequence_seconds,session_paused,technical_reason);
+        record_motif_events();
+        if(xr&&!args.scheduled_motifs) {
             if(!xr->poll_events()||quit) break;
             eyes=xr->begin_frame();
-            if(!eyes) { SDL_Delay(10); continue; }
+        }
+        if(xr&&args.hand_snap) {
+            for(const auto& snap:renderer.update_hand_snap(xr->observation())) {
+                if(recording) recording->submit({{"type","hand_snap"},{"session_id",recording_id},
+                    {"received_monotonic_ns",interaction::monotonic_now_ns()},{"xr_time_ns",snap.xr_time_ns},
+                    {"origin_epoch",snap.origin_epoch},{"hand",snap.hand==0?"left":"right"},
+                    {"position_m",{snap.position_m.x,snap.position_m.y,snap.position_m.z}},
+                    {"release_m",snap.release_m},{"closing_m_s",snap.closing_m_s},
+                    {"detector",interaction::snap_detector_version},{"scene_seconds",sequence_seconds}});
+            }
+        }
+        if(xr&&args.hand_light_pencil) {
+            // Atualizar o estalo primeiro: o contacto já reserva esta mão no mesmo frame.
+            for(const auto& pencil_event:renderer.update_light_pencil(xr->observation(),args.hand_snap)) {
+                if(recording) recording->submit({{"type","hand_light_pencil"},{"session_id",recording_id},
+                    {"event",pencil_event.event},{"reason",pencil_event.reason},{"hand",pencil_event.hand==0?"left":"right"},
+                    {"xr_time_ns",pencil_event.xr_time_ns},{"origin_epoch",pencil_event.origin_epoch},
+                    {"received_monotonic_ns",interaction::monotonic_now_ns()},
+                    {"version",interaction::light_pencil_version},{"scene_seconds",sequence_seconds}});
+            }
+        }
+        if(xr&&!eyes) {
+                const double time=sequence?sequence_seconds:args.fixed_time.value_or(
+                    args.start_time+std::chrono::duration<double>(tick-start).count());
+                const auto state=sequence&&opening_only?directed_visual_parameters(scene.current(),time,visual):scene.current();
+                record_observation(false,time,state);
+                SDL_Delay(10); continue;
         }
         if(!args.capture.empty()&&!capture_requested&&!minimized &&
             ((args.frames&&frame_count+3>=args.frames)||(!args.frames&&frame_count>=120))) {
@@ -337,14 +525,18 @@ int run(const Options& args) {
         }
         const double seconds=sequence?sequence_seconds:
             args.fixed_time.value_or(args.start_time+std::chrono::duration<double>(tick-start).count());
-        renderer.set_time_display({timer_visible,seconds,static_cast<float>(visual[Setting::TimerScale]),
-            static_cast<float>(visual[Setting::TimerX]),static_cast<float>(visual[Setting::TimerY]),static_cast<float>(visual[Setting::TimerOpacity])});
         const auto render_state=sequence&&opening_only?directed_visual_parameters(scene.current(),seconds,visual):scene.current();
+        const auto effective=motifs.compose(render_state);
+        renderer.set_time_display({timer_visible,seconds,static_cast<float>(visual[Setting::TimerScale]),
+            static_cast<float>(visual[Setting::TimerX]),static_cast<float>(visual[Setting::TimerY]),
+            static_cast<float>(visual[Setting::TimerOpacity]),effective.envelope>0});
         if(eyes) {
-            renderer.draw_vr_eye(render_state,seconds,camera,(*eyes)[0],true);
-            renderer.draw_vr_eye(render_state,seconds,camera,(*eyes)[1],false);
+            renderer.set_hand_tracking(xr->observation());
+            renderer.draw_vr_eye(effective.effective,seconds,camera,(*eyes)[0],true);
+            renderer.draw_vr_eye(effective.effective,seconds,camera,(*eyes)[1],false);
             xr->end_frame();
-        } else renderer.draw(render_state,seconds,camera);
+        } else renderer.draw(effective.effective,seconds,camera);
+        record_observation(true,seconds,render_state);
         ++frame_count;
         const auto remaining=start+std::chrono::microseconds(16667*frame_count)-Clock::now();
         if(!xr&&remaining>Clock::duration::zero())
@@ -358,6 +550,8 @@ int run(const Options& args) {
             sequence_seconds=next;
         }
     }
+    motifs.stop(quit?"operator_or_runtime_exit":"frame_limit_or_runtime_stop");
+    record_motif_events();
     if(!args.capture.empty()&&!capture_requested&&!minimized) { renderer.request_capture(args.capture); capture_requested=true; }
     if(capture_requested) {
         for(int i=0;i<60&&!renderer.capture_complete();++i) {
@@ -367,6 +561,15 @@ int run(const Options& args) {
         if(!renderer.capture_complete()) throw std::runtime_error("Screenshot did not complete");
     }
     const double seconds=std::chrono::duration<double>(Clock::now()-start).count();
+    if(recording) {
+        recording->submit({{"type","application_end"},{"session_id",recording_id},
+            {"received_monotonic_ns",interaction::monotonic_now_ns()},{"rendered_frames",frame_count},
+            {"scene_seconds",sequence_seconds},{"reason",quit?"operator_or_runtime_exit":"frame_limit"}});
+        const auto stats=recording->close(true);
+        std::cout<<Json{{"type","recording_result"},{"session_id",recording_id},{"path",path_utf8(recording_path)},
+            {"accepted",stats.accepted},{"dropped",stats.dropped},{"write_failed",stats.write_failed},{"complete",stats.complete}}.dump()<<std::endl;
+        if(stats.write_failed) throw std::runtime_error("Session recording write failed");
+    }
     std::cout<<Json{{"type","performance"},{"frames",frame_count},{"seconds",seconds},{"sequence",sequence},
         {"sequence_seconds",sequence_seconds},{"composition_weights",sequence?composition_at(sequence_seconds).weights:static_composition(active_layout).weights},
         {"scene",sequence?(opening_only?"opening":"sequence"):"manual"},{"opening_active",sequence&&composition_at(sequence_seconds).opening_weight>0},
@@ -374,6 +577,7 @@ int run(const Options& args) {
             composition_at(sequence_seconds).atmosphere.g,composition_at(sequence_seconds).atmosphere.b}:std::array<float,3>{}},
         {"audio_enabled",audio!=nullptr},{"audio_seconds",audio?audio->position():0},
         {"bass_pulse",renderer.beat_strength(sequence_seconds)},{"ring_pulse_group",renderer.ring_pulse_group(sequence_seconds)},
+        {"ring_travel_speed_multiplier",sequence&&opening_only?sample_ring_travel(sequence_seconds,visual).speed_multiplier:1},
         {"version","0.12.0"},{"playback_end_seconds",playback_end(visual)},
         {"config_revision",config_revision},{"camera_speed_m_s",visual[Setting::CameraSpeed]},{"trace_speed_m_s",visual[Setting::TraceSpeed]},
         {"time_display_visible",timer_visible},{"time_display",format_time_display(sequence_seconds)},

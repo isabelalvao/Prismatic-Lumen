@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-15",
+  "feature": "Opt-in hand snap kinematic prototype and local sparks",
+  "detector_version": "thumb-middle-release-1",
+  "activation": "--vr --hand-snap",
+  "ctest": {
+    "passed": 21,
+    "failed": 0,
+    "excluded": [
+      "renderer_resize"
+    ]
+  },
+  "renderer_separate": {
+    "passed": true,
+    "output": "temp/hand-snap-renderer/resize.png"
+  },
+  "python": {
+    "passed": 88,
+    "failed": 0,
+    "new_hand_snap_tests": 4
+  },
+  "captures": [
+    {
+      "enabled": false,
+      "capture": "C:\\DEV\\Prismatic\\temp\\hand-snap-final-7686a71b\\off\\mirror.png",
+      "record": "C:\\DEV\\Prismatic\\temp\\hand-snap-final-7686a71b\\off\\session.jsonl",
+      "record_valid": true,
+      "snap_events": 0,
+      "png_sha256": "d38e91b02288619b523089ffcb39630e997e9a14d1f45c88f05693d58433c3d8"
+    },
+    {
+      "enabled": true,
+      "capture": "C:\\DEV\\Prismatic\\temp\\hand-snap-final-7686a71b\\on\\mirror.png",
+      "record": "C:\\DEV\\Prismatic\\temp\\hand-snap-final-7686a71b\\on\\session.jsonl",
+      "record_valid": true,
+      "snap_events": 2,
+      "png_sha256": "2bdb15d956665333d277c3c531ed7b2b406b0aeebaeea6f2984294603a9180b4"
+    }
+  ],
+  "hashes_sha256": {
+    "build\\Release\\fantasynt.exe": "cb899994151873f0bd500b8086d51037790a091b782742da9cce718639386f07",
+    "visual-config.json": "6813e57449216cc9b47bd9291f337834e4aedf1a4f5139c1467626c85b6d8c0d",
+    "assets\\visual-config.json": "9fcd986f3da6dbe3ac7f583338f63e1efe7867bbdb6bc8a92d0e95c8d57619ea",
+    "assets\\audio\\ChezNous_MASTER.wav": "60dc74309ab1fbae42394228ddfc098a09a1e7a36ae739c7f5ee7e1adafb9fd9"
+  },
+  "root_configuration_preserved": true,
+  "root_motif_dose_preserved": {
+    "light_attenuation": 0.6,
+    "master_attenuation": 0.9
+  },
+  "review": [
+    "One detector update per XR frame; both eyes share same event/geometry",
+    "Valid tracked finite joints; temporal contact/release with distal confirmation",
+    "Reset preparation on loss, gap, origin change or time discontinuity; cooldown survives tracking loss",
+    "At most one active burst per hand; finite bounded mesh and 450 ms expiry",
+    "No camera/scene displacement applied to physical particles",
+    "Additive depth-tested particles share existing HDR and final fade",
+    "Recorder asynchronous; source data untouched",
+    "P1 tests use temporary reference dose instead of modifying user configuration",
+    "git diff --check and new-file whitespace check passed"
+  ],
+  "limitations": [
+    "No physical Quest snap validation yet",
+    "Kinematic approximation, no microphone or confirmation of audible snap",
+    "Fast motion/occlusion may prevent detection; similar rapid middle-finger folds can trigger",
+    "Thresholds are development values and are not calibrated from historical user data"
+  ],
+  "commit_push": false
+}

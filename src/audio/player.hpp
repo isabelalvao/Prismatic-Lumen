@@ -3,11 +3,13 @@
 #include <filesystem>
 #include <memory>
 #include <optional>
+#include "behavior/motif_curve.hpp"
 
 namespace fantasynt {
 class AudioPlayer {
 public:
-    explicit AudioPlayer(const std::filesystem::path& path,std::optional<double> playback_end=std::nullopt);
+    explicit AudioPlayer(const std::filesystem::path& path,std::optional<double> playback_end=std::nullopt,
+                         bool scheduled_motifs=false,behavior::MotifDose dose={});
     void seek(double seconds);
     void set_paused(bool paused);
     double position() const;

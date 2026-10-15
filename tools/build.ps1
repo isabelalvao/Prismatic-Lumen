@@ -30,6 +30,11 @@ function Invoke-Checked([string]$Executable, [string[]]$CommandArgs) {
 $appMode = if ($CoreOnly) { 'OFF' } else { 'ON' }
 Invoke-Checked $cmakePath @('-S', '.', '-B', 'build', '-G', $generatorName, '-A', 'x64', "-DFANTASYNT_BUILD_APP=$appMode")
 $targets = @('fantasynt_control_tests', 'fantasynt_network_tests', 'fantasynt_geometry_tests', 'fantasynt_vr_math_tests', 'fantasynt_sequence_tests', 'fantasynt_opening_tests', 'fantasynt_direction_tests', 'fantasynt_visual_config_tests', 'fantasynt_time_display_tests', 'fantasynt_phase_tests', 'fantasynt_comfort_tests', 'fantasynt_six_minute_tests', 'fantasynt_choreography_tests', 'fantasynt_rotation_history_tests', 'fantasynt_spectral_geometry_tests')
+$targets += @('fantasynt_observation_tests','fantasynt_session_recorder_tests')
+$targets += @('fantasynt_hand_geometry_tests')
+$targets += @('fantasynt_motif_tests')
+$targets += @('fantasynt_hand_snap_tests')
+$targets += @('fantasynt_light_pencil_tests')
 if (-not $CoreOnly) { $targets += @('fantasynt', 'fantasynt_renderer_tests', 'fantasynt_mock_openxr', 'fantasynt_audio_tests') }
 Invoke-Checked $cmakePath (@('--build', 'build', '--config', $Configuration, '--parallel', "$Jobs", '--target') + $targets)
 if ($Test) {

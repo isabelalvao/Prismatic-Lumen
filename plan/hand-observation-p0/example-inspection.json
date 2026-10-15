@@ -1,0 +1,24 @@
+{
+  "session_id": "09c863f6011bab106c52a4a4f51fb9ee",
+  "runtime": "FantasyntMock 640x360 per eye",
+  "tracking": {
+    "hand_setup_result": 0,
+    "hand_trackers_ready": true,
+    "hand_tracking_extension": true,
+    "hand_tracking_reason": "ready",
+    "hand_tracking_system_support": true,
+    "head_source": "VIEW_space_in_LOCAL",
+    "joint_count": 26,
+    "xr_to_qpc_available": false
+  },
+  "counts": {
+    "observations": 6,
+    "head_position_valid": 6,
+    "left_active": 6,
+    "right_active": 6,
+    "origin_changes": 0
+  },
+  "errors": [],
+  "valid_record": true,
+  "scope": "Integridade/reconstituição; não valida hardware ou experiência subjetiva."
+}

@@ -1,5 +1,5 @@
 set(FANTASYNT_SHADER_OUTPUTS)
-foreach(SHADER vs_scene fs_scene vs_opening fs_opening fs_ground vs_quad fs_extract fs_blur fs_composite fs_copy)
+foreach(SHADER vs_scene fs_scene vs_opening fs_opening vs_hand fs_hand vs_light_pencil fs_light_pencil fs_ground vs_quad fs_extract fs_blur fs_composite fs_copy)
     if(SHADER MATCHES "^vs_")
         set(SHADER_TYPE vertex)
     else()

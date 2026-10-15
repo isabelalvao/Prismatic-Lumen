@@ -4,6 +4,10 @@
 
 ## Pontos de entrada
 
+- [Migração para outro PC com Codex](../MIGRACAO.md)
+- [Instruções locais para o Codex](../AGENTS.md)
+- [Estado da passagem — 2026-10-14](../plan/migration-2026-10-14/estado.md)
+- [Aquisição, registo e inspeção P0](../plan/hand-observation-p0/README.md)
 - [README](../README.md)
 - [Recursos e proveniência](../THIRD_PARTY.md)
 - [Plano dos repertórios semânticos](../plan/semantic-repertoires-v1/implementation-plan.md)

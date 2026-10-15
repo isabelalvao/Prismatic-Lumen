@@ -1,0 +1,22 @@
+{
+  "python_duration_seconds": 180.563,
+  "python_passed": 99,
+  "separate_renderer": "passed",
+  "resources": [
+    {
+      "sha256": "6813e57449216cc9b47bd9291f337834e4aedf1a4f5139c1467626c85b6d8c0d",
+      "path": "visual-config.json"
+    },
+    {
+      "sha256": "60dc74309ab1fbae42394228ddfc098a09a1e7a36ae739c7f5ee7e1adafb9fd9",
+      "path": "assets/audio/ChezNous_MASTER.wav"
+    }
+  ],
+  "physical_quest_test": false,
+  "release_build": "passed",
+  "date": "2026-10-15",
+  "base_commit": "bc86e2239d699f3da50e33b453c7fe05bdba90b7",
+  "lfs_changed_objects_verified": 43,
+  "root_config_and_master_preserved": true,
+  "ctest_passed": 22
+}

@@ -1,0 +1,53 @@
+{
+  "path": "logs\\hand-effects-5371f2cbbde89409dae7a57368ad6533.jsonl",
+  "manifest": {
+    "hand_light_pencil": {
+      "enabled": true,
+      "lifetime_seconds": 0.65,
+      "max_points_per_hand": 128,
+      "pose": "only_index_extended_other_fingers_and_thumb_folded",
+      "version": "index-only-trail-1"
+    },
+    "session_id": "b208c5ef07febe1a6c94a5bf4064915a"
+  },
+  "events": [
+    {
+      "event": "started",
+      "reason": "index_only",
+      "hand": "right",
+      "count": 58
+    },
+    {
+      "event": "ended",
+      "reason": "pose_released",
+      "hand": "right",
+      "count": 54
+    },
+    {
+      "event": "started",
+      "reason": "index_only",
+      "hand": "left",
+      "count": 18
+    },
+    {
+      "event": "ended",
+      "reason": "pose_released",
+      "hand": "left",
+      "count": 18
+    },
+    {
+      "event": "reset",
+      "reason": "tip_jump",
+      "hand": "right",
+      "count": 3
+    },
+    {
+      "event": "reset",
+      "reason": "hand_unusable",
+      "hand": "right",
+      "count": 1
+    }
+  ],
+  "completed_strokes": 76,
+  "shorter_than_100ms": 17
+}

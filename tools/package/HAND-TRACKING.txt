@@ -1,0 +1,66 @@
+Prismatic Lumen / Fantasynt — teste de aquisição das mãos P0
+Windows 11 x64 · Quest 3 · Virtual Desktop / VDXR
+
+COPIAR E PREPARAR
+1. Extrai o ZIP inteiro ou copia esta pasta inteira para o PC de teste.
+2. No PC, abre Virtual Desktop Streamer e seleciona VDXR/VirtualDesktopXR
+   como runtime OpenXR.
+3. No Quest 3, ativa o seguimento das mãos, liga-te ao PC pelo Virtual Desktop
+   e ativa "Forward tracking data to PC" nas definições do Virtual Desktop.
+4. O executável corre no PC. Não é um APK. Não precisas de Python, compilador
+   ou SteamVR para este percurso; as DLLs Visual C++ necessárias estão incluídas.
+
+TESTAR
+1. Abre Diagnose-VR.cmd e confirma que o runtime é VDXR e que o headset
+   está disponível. O resultado fica em logs\xr-probe.log.
+2. Abre Test-HandTracking.cmd no ambiente de trabalho remoto.
+3. A cena começa em pausa. Com a janela Fantasynt em foco, Espaço inicia.
+4. Move a cabeça e cada mão; depois permanece imóvel. Oculta uma mão,
+   oculta ambas e volta a colocá-las à vista. Se possível, testa recentragem.
+5. Esc termina e finaliza a gravação. O teste pode ser curto, cerca de 30–60 s;
+   a experiência completa dura 7:04,18 e a aplicação fecha quando premisses Esc.
+6. O resumo aparece depois de fechar. Verify-HandTracking.cmd volta a verificar
+   o último registo. Cada teste usa nomes novos, sem apagar testes anteriores.
+
+O QUE ESPERAR
+As mãos NÃO aparecem desenhadas. Este build só adquire e regista cabeça/mãos;
+não muda luz ou volume em função dos teus movimentos. Isto permite verificar
+se os dados chegam antes de implementar a resposta adaptativa.
+
+O resumo deve indicar hand_trackers_ready=true, complete=true e amostras com
+posição válida e seguida de ambas as mãos. hand_acquisition_observed=true confirma apenas que a aquisição
+apareceu neste registo; não valida a experiência, precisão ou latência física.
+Se não houver mãos, conserva os ficheiros de diagnóstico e o registo.
+
+ENVIAR RESULTADOS
+Envia a pasta logs, com o ficheiro *.jsonl, o .log correspondente,
+o .inspection.json e xr-probe.log. Indica a versão do Virtual Desktop,
+o modelo Quest e o que observaste. Os registos contêm movimentos corporais.
+
+BUILD
+Pacote de desenvolvimento P0, preparado em 2026-10-14. O título do programa
+continua 0.12.0; manifest.json identifica este pacote e os hashes dos ficheiros.
+Testado em runtime simulado. O utilizador reportou aquisição inicial em Quest 3
+com VDXR; a análise local da sessão real completa ainda está pendente.
+LE-ME-GERAL.txt contém os restantes controlos e afinação visual.
+
+INSPECIONAR UMA GRAVAÇÃO EXISTENTE
+Na pasta que contém fantasynt.exe, abre PowerShell e executa:
+  .\Verify-HandTracking.cmd -SessionFile .\logs\hand-tracking-01.jsonl
+Este resumo não precisa de Python. Para cobertura, perdas, recuperação,
+tempos e reconstituição das velocidades, usa Python 3.10 ou posterior:
+  python .\tools\inspect_session.py .\logs\hand-tracking-01.jsonl --output .\logs\hand-tracking-01.analysis.json
+Não precisas de bibliotecas adicionais. O inspetor lê o JSONL sem o alterar.
+Os gaps >250ms ficam desconhecidos; complete=true não garante tracking contínuo.
+Não se mede precisão física ou latência entre movimento e imagem/áudio.
+
+GRAVAR MANUALMENTE
+Na mesma pasta (não C:\ORCA\Fantasynt), usa um nome de ficheiro novo:
+  .\fantasynt.exe --vr --paused --record-session logs\hand-tracking-02.jsonl
+Fantasynt.cmd também está incluído nesta revisão como atalho do executável.
+
+IDENTIDADE
+bc86e22 é o commit Git de base desta compilação P0 com alterações locais.
+O SHA-256 do executável identifica o build testado:
+d1c09d8a695a1af5d0833c6a6653625cfa8c74de9e02e36317795089407b66b0
+Esta revisão do pacote acrescenta ferramentas; não altera o executável.

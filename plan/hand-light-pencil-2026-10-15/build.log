@@ -1,0 +1,93 @@
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  bx.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bx\Release\bx.lib
+  spirv-cross.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\spirv-cross.lib
+  glslang.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\glslang.lib
+  spirv-opt.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\spirv-opt.lib
+  tint.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\tint.lib
+  bimg.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bimg\Release\bimg.lib
+  shaderc.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\shaderc.exe
+  openxr_loader.vcxproj -> C:\DEV\Prismatic\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  C:\DEV\Prismatic\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  1 File(s) copied
+  C:\DEV\Prismatic\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  1 File(s) copied
+  C:\DEV\Prismatic\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  1 File(s) copied
+  bimg_decode.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bimg\Release\bimg_decode.lib
+  bgfx.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\bgfx.lib
+  fantasynt_control.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_control.lib
+  SDL_uclibc.vcxproj -> C:\DEV\Prismatic\build\_deps\sdl3-build\Release\SDL_uclibc.lib
+  fantasynt_vr_math.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_vr_math.lib
+  fantasynt_net.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_net.lib
+  fantasynt_observation.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_observation.lib
+  fantasynt_hand_geometry.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_hand_geometry.lib
+  fantasynt_time_display.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_time_display.lib
+  fantasynt_openxr.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_openxr.lib
+  fantasynt_motifs.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_motifs.lib
+  fantasynt_visual_config.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_visual_config.lib
+  SDL3-static.vcxproj -> C:\DEV\Prismatic\build\_deps\sdl3-build\Release\SDL3-static.lib
+  fantasynt_beat.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_beat.lib
+  fantasynt_geometry.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_geometry.lib
+  light_pencil.cpp
+  fantasynt_hand_snap.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_hand_snap.lib
+  fantasynt_render.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_render.lib
+  main.cpp
+C:\DEV\Prismatic\src\app\main.cpp(114,69): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [C:\DEV\Prismatic\build\fantasynt.vcxproj]
+C:\DEV\Prismatic\src\app\main.cpp(115,81): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [C:\DEV\Prismatic\build\fantasynt.vcxproj]
+C:\DEV\Prismatic\src\app\main.cpp(116,67): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [C:\DEV\Prismatic\build\fantasynt.vcxproj]
+C:\DEV\Prismatic\src\app\main.cpp(117,63): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [C:\DEV\Prismatic\build\fantasynt.vcxproj]
+C:\DEV\Prismatic\src\app\main.cpp(118,65): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [C:\DEV\Prismatic\build\fantasynt.vcxproj]
+C:\DEV\Prismatic\src\app\main.cpp(377,21): warning C4456: a declaração de 'width' oculta uma declaração local anterior [C:\DEV\Prismatic\build\fantasynt.vcxproj]
+      C:\DEV\Prismatic\src\app\main.cpp(165,15):
+      consulte a declaração de 'width'
+  
+C:\DEV\Prismatic\src\app\main.cpp(377,29): warning C4456: a declaração de 'height' oculta uma declaração local anterior [C:\DEV\Prismatic\build\fantasynt.vcxproj]
+      C:\DEV\Prismatic\src\app\main.cpp(166,15):
+      consulte a declaração de 'height'
+  
+C:\DEV\Prismatic\src\app\main.cpp(147,55): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [C:\DEV\Prismatic\build\fantasynt.vcxproj]
+C:\DEV\Prismatic\src\app\main.cpp(170,50): warning C4996: 'std::filesystem::u8path': warning STL4021: The std::filesystem::u8path() overloads are deprecated in C++20. The constructors of std::filesystem::path provide equivalent functionality via construction from u8string, u8string_view, or iterators with value_type char8_t. You can define _SILENCE_CXX20_U8PATH_DEPRECATION_WARNING or _SILENCE_ALL_CXX20_DEPRECATION_WARNINGS to suppress this warning. [C:\DEV\Prismatic\build\fantasynt.vcxproj]
+     Criando biblioteca C:/DEV/Prismatic/build/Release/fantasynt.lib e objeto C:/DEV/Prismatic/build/Release/fantasynt.exp
+  fantasynt.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  fantasynt_vr_math.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_vr_math.lib
+  fantasynt_hand_geometry.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_hand_geometry.lib
+  fantasynt_hand_snap.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_hand_snap.lib
+  light_pencil_tests.cpp
+  fantasynt_light_pencil_tests.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_light_pencil_tests.exe
+MSBuild version 18.10.1-1.26427.6+3cd27c13e for .NET Framework
+
+  Checking File Globs
+  spirv-cross.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\spirv-cross.lib
+  glslang.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\glslang.lib
+  bx.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bx\Release\bx.lib
+  spirv-opt.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\spirv-opt.lib
+  bimg.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bimg\Release\bimg.lib
+  tint.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\tint.lib
+  shaderc.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\shaderc.exe
+  openxr_loader.vcxproj -> C:\DEV\Prismatic\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  C:\DEV\Prismatic\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  1 File(s) copied
+  C:\DEV\Prismatic\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  1 File(s) copied
+  C:\DEV\Prismatic\build\_deps\openxr-build\src\loader\Release\openxr_loader.dll
+  1 File(s) copied
+  bimg_decode.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bimg\Release\bimg_decode.lib
+  fantasynt_control.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_control.lib
+  bgfx.vcxproj -> C:\DEV\Prismatic\build\_deps\bgfx_cmake-build\cmake\bgfx\Release\bgfx.lib
+  SDL_uclibc.vcxproj -> C:\DEV\Prismatic\build\_deps\sdl3-build\Release\SDL_uclibc.lib
+  fantasynt_time_display.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_time_display.lib
+  fantasynt_vr_math.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_vr_math.lib
+  fantasynt_visual_config.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_visual_config.lib
+  fantasynt_hand_geometry.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_hand_geometry.lib
+  fantasynt_geometry.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_geometry.lib
+  fantasynt_beat.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_beat.lib
+  fantasynt_hand_snap.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_hand_snap.lib
+  SDL3-static.vcxproj -> C:\DEV\Prismatic\build\_deps\sdl3-build\Release\SDL3-static.lib
+  fantasynt_render.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_render.lib
+     Criando biblioteca C:/DEV/Prismatic/build/Release/fantasynt_renderer_tests.lib e objeto C:/DEV/Prismatic/build/Release/fantasynt_renderer_tests.exp
+  fantasynt_renderer_tests.vcxproj -> C:\DEV\Prismatic\build\Release\fantasynt_renderer_tests.exe

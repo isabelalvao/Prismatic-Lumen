@@ -1,5 +1,6 @@
 #pragma once
 #include "view_math.hpp"
+#include "interaction/observation.hpp"
 #include <array>
 #include <cstdint>
 #include <memory>
@@ -22,6 +23,8 @@ public:
     OpenXRSession& operator=(const OpenXRSession&)=delete;
     void* graphics_device() const;
     std::string description() const;
+    nlohmann::json tracking_capabilities() const;
+    const interaction::ObservationFrame& observation() const;
     bool poll_events();
     std::optional<std::array<EyeView,2>> begin_frame();
     void end_frame();

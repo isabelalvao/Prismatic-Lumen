@@ -12,6 +12,14 @@ int main(int argc,char** argv) {
     CHECK(config[Setting::PyramidStart]==80);
     CHECK(config[Setting::TimerY]<=0.7);
     CHECK(config[Setting::TimerScale]>=1.4);
+    CHECK_NEAR(config[Setting::MotifLightAttenuation],0.06,1e-12);
+    CHECK_NEAR(config[Setting::MotifMasterAttenuation],0.12,1e-12);
+    const auto dose=parse_visual_config(R"({"schema_version":1,"motifs":{"light_attenuation":0.3,"master_attenuation":0.5}})");
+    CHECK_NEAR(dose[Setting::MotifLightAttenuation],0.3,1e-12);
+    CHECK_NEAR(dose[Setting::MotifMasterAttenuation],0.5,1e-12);
+    const auto legacy=parse_visual_config(R"({"schema_version":1})");
+    CHECK_NEAR(legacy[Setting::MotifLightAttenuation],0.06,1e-12);
+    CHECK_NEAR(legacy[Setting::MotifMasterAttenuation],0.12,1e-12);
     const auto round_trip=parse_visual_config(visual_config_json(config));
     std::unordered_set<std::string> fields;
     for(const auto& d:visual_setting_definitions()) {
@@ -24,6 +32,11 @@ int main(int argc,char** argv) {
     CHECK_NEAR(directed_camera_position(1,customized)-directed_camera_position(0,customized),80,0.001);
     CHECK(customized[Setting::TraceDirection]==1 && customized[Setting::EnablePyramids]==0);
     for(const auto* invalid:{R"({"schema_version":1,"camera":{"speed_m_s":-1}})",
+        R"({"schema_version":1,"motifs":{"light_attenuation":-0.1}})",
+        R"({"schema_version":1,"motifs":{"light_attenuation":0.61}})",
+        R"({"schema_version":1,"motifs":{"master_attenuation":1.01}})",
+        R"({"schema_version":1,"motifs":{"master_attenuation":-0.01}})",
+        R"({"schema_version":1,"motifs":{"master_attenuation":true}})",
         R"({"schema_version":1,"traces":{"speed_m_s":1,"speed_m_s":2}})",
         R"({"schema_version":1,"post":{"unknown":2}})",
         R"({"schema_version":1,"startup":{"auto_play":1}})",

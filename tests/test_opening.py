@@ -74,6 +74,7 @@ class OpeningTests(unittest.TestCase):
                 port = s.getsockname()[1]
             result = subprocess.run([str(EXE), "--vr", "--hidden", "--frames", "3", "--port", str(port)],
                 cwd=folder, env=dict(os.environ, XR_RUNTIME_JSON=str(manifest),
+                    DISABLE_XR_APILAYER_VIRTUALDESKTOP_OCULUS_COMPATIBILITY="1",
                     FANTASYNT_MOCK_MODE="native-resolution", SDL_AUDIODRIVER="dummy"), capture_output=True,
                 text=True, timeout=20, creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
             self.assertEqual(result.returncode, 0, result.stderr)

@@ -1,0 +1,49 @@
+Test project C:/DEV/Prismatic/build
+      Start  1: audio
+ 1/22 Test  #1: audio ............................   Passed    0.64 sec
+      Start  2: light_pencil
+ 2/22 Test  #2: light_pencil .....................   Passed    0.03 sec
+      Start  3: hand_snap
+ 3/22 Test  #3: hand_snap ........................   Passed    0.02 sec
+      Start  4: motifs
+ 4/22 Test  #4: motifs ...........................   Passed    0.36 sec
+      Start  5: hand_geometry
+ 5/22 Test  #5: hand_geometry ....................   Passed    0.01 sec
+      Start  6: observation
+ 6/22 Test  #6: observation ......................   Passed    0.01 sec
+      Start  7: session_recorder
+ 7/22 Test  #7: session_recorder .................   Passed    0.03 sec
+      Start  8: spectral_geometry
+ 8/22 Test  #8: spectral_geometry ................   Passed    0.01 sec
+      Start  9: rotation_history
+ 9/22 Test  #9: rotation_history .................   Passed    0.01 sec
+      Start 10: choreography
+10/22 Test #10: choreography .....................   Passed    0.01 sec
+      Start 11: six_minute
+11/22 Test #11: six_minute .......................   Passed    0.01 sec
+      Start 12: comfort
+12/22 Test #12: comfort ..........................   Passed    0.29 sec
+      Start 13: time_display
+13/22 Test #13: time_display .....................   Passed    0.01 sec
+      Start 14: phase
+14/22 Test #14: phase ............................   Passed    0.01 sec
+      Start 15: visual_config
+15/22 Test #15: visual_config ....................   Passed    0.02 sec
+      Start 16: direction
+16/22 Test #16: direction ........................   Passed    0.16 sec
+      Start 17: opening
+17/22 Test #17: opening ..........................   Passed    0.14 sec
+      Start 18: sequence
+18/22 Test #18: sequence .........................   Passed    0.01 sec
+      Start 19: vr_math
+19/22 Test #19: vr_math ..........................   Passed    0.01 sec
+      Start 20: control
+20/22 Test #20: control ..........................   Passed    0.01 sec
+      Start 21: network
+21/22 Test #21: network ..........................   Passed    0.33 sec
+      Start 22: geometry
+22/22 Test #22: geometry .........................   Passed    0.01 sec
+
+100% tests passed, 0 tests failed out of 22
+
+Total Test time (real) =   2.22 sec

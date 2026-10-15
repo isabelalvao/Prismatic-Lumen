@@ -1,0 +1,96 @@
+#include "interaction/light_pencil.hpp"
+#include "render/pencil_geometry.hpp"
+#include "test_support.hpp"
+#include <algorithm>
+#include <limits>
+
+using namespace fantasynt;
+using namespace fantasynt::interaction;
+ObservationFrame pointing(int frame,float x=0) {
+    ObservationFrame f; f.xr_time_ns=frame*11'111'111LL; f.frame_status="located";
+    f.head.position_valid=f.head.position_tracked=f.head.orientation_valid=f.head.orientation_tracked=true;
+    for(auto& h:f.hands) {
+        h.active=true; h.status="located";
+        for(auto& j:h.joints) { j.position_valid=j.position_tracked=true; j.radius_m=0.006f; j.pose.position={x,0,-0.45f}; }
+        const auto set=[&](int i,float dx,float y) { h.joints[i].pose.position={x+dx,y,-0.45f}; };
+        set(1,0,-0.04f); set(5,-0.025f,0.02f);
+        set(7,-0.025f,0.04f); set(8,-0.025f,0.075f); set(9,-0.025f,0.10f); set(10,-0.025f,0.122f);
+        set(12,0,0.04f); set(13,0,0.07f); set(15,0,0.018f);
+        set(17,0.024f,0.035f); set(18,0.024f,0.062f); set(20,0.024f,0.015f);
+        set(22,0.045f,0.025f); set(23,0.045f,0.052f); set(25,0.045f,0.005f);
+    }
+    return f;
+}
+ObservationFrame two_fingers(int n,float x=0) {
+    auto f=pointing(n,x);
+    for(auto& h:f.hands) h.joints[15].pose.position.y=0.12f;
+    return f;
+}
+int main() {
+    auto f=pointing(1);
+    CHECK(index_only_pose(f.hands[0])); CHECK(!index_only_pose(two_fingers(1).hands[0]));
+    auto thumb=f.hands[0]; thumb.joints[5].pose.position.y=0.15f; CHECK(!index_only_pose(thumb));
+    for(int tip:{20,25}) { auto extra=f.hands[0]; extra.joints[tip].pose.position.y=0.12f; CHECK(!index_only_pose(extra)); }
+    auto folded=f.hands[0]; folded.joints[10].pose.position.y=0.02f; CHECK(!index_only_pose(folded));
+    auto untracked=f.hands[0]; untracked.joints[20].position_tracked=false; CHECK(!index_only_pose(untracked));
+    // O classificador é independente de translação e rotação rígidas da mão.
+    auto rotated=f.hands[0];
+    for(auto& j:rotated.joints) {
+        const auto p=j.pose.position; j.pose.position={p.z+1,p.x+2,p.y+3};
+    }
+    CHECK(index_only_pose(rotated));
+    LightPencil pencil;
+    for(int n=1;n<=6;++n) { CHECK(pencil.update(pointing(n)).empty()); CHECK(!pencil.writing(0)); }
+    const auto started=pencil.update(pointing(7)); CHECK(started.size()==2); CHECK(pencil.writing(0));
+    for(int n=8;n<=35;++n) pencil.update(pointing(n,(n-7)*0.005f));
+    CHECK(pencil.points(0).size()>10); CHECK(pencil.points(0).size()<=pencil_max_points);
+    const auto now=pointing(35).xr_time_ns;
+    const auto mesh=make_pencil_geometry(pencil.points(0),now);
+    CHECK(!mesh.indices.empty()); CHECK(mesh.vertices.size()<65536);
+    float min_fade=1,max_fade=0;
+    for(const auto& v:mesh.vertices) {
+        CHECK(std::isfinite(v.x)&&std::isfinite(v.y)&&std::isfinite(v.z));
+        CHECK(v.fade>=0&&v.fade<=1); min_fade=std::min(min_fade,v.fade); max_fade=std::max(max_fade,v.fade);
+    }
+    CHECK(max_fade>min_fade);
+    for(auto i:mesh.indices) CHECK(i<mesh.vertices.size());
+    const auto ended=pencil.update(two_fingers(36,0.14f));
+    CHECK(ended.size()==2); CHECK(!pencil.writing(0)); CHECK(!pencil.points(0).empty());
+    for(int n=37;n<100;++n) pencil.update(two_fingers(n,0.14f));
+    CHECK(pencil.points(0).empty()); CHECK(make_pencil_geometry(pencil.points(0),pointing(100).xr_time_ns).vertices.empty());
+    // Sem segmentos entre gestos separados, mesmo antes de o rasto anterior desaparecer.
+    LightPencil separate;
+    for(int n=1;n<=10;++n) separate.update(pointing(n,n*0.005f));
+    separate.update(two_fingers(11));
+    for(int n=12;n<=20;++n) separate.update(pointing(n,0.08f));
+    CHECK(separate.points(0).front().stroke!=separate.points(0).back().stroke);
+    for(int fault=0;fault<6;++fault) {
+        LightPencil p; for(int n=1;n<=10;++n) p.update(pointing(n));
+        auto bad=pointing(11);
+        if(fault==0) bad.origin_epoch=1;
+        if(fault==1) bad.xr_time_ns+=100'000'000;
+        if(fault==2) bad.frame_status="not_rendering";
+        if(fault==3) bad.xr_time_ns=1;
+        if(fault==4) for(auto& h:bad.hands) h.joints[10].position_valid=false;
+        if(fault==5) for(auto& h:bad.hands) h.joints[10].pose.position.x=std::numeric_limits<float>::quiet_NaN();
+        p.update(bad); CHECK(!p.writing(0)); CHECK(p.points(0).empty());
+    }
+    LightPencil jump;
+    for(int n=1;n<=10;++n) jump.update(pointing(n));
+    jump.update(pointing(11,0.5f)); CHECK(jump.points(0).empty()); CHECK(!jump.writing(0));
+    LightPencil steady;
+    for(int n=1;n<=400;++n) steady.update(pointing(n));
+    CHECK(steady.points(0).size()==1);
+    LightPencil continuous;
+    for(int n=1;n<=2000;++n) {
+        auto dense=pointing(n,n*0.004f); dense.xr_time_ns=n*1'000'000LL; continuous.update(dense);
+    }
+    CHECK(continuous.points(0).size()==pencil_max_points);
+    // Conversão espacial e ausência de tubo através de uma mudança de stroke.
+    const std::array<PencilPoint,2> pair{{{{0,0,-0.4f},1'000'000'000,1},{{0.02f,0,-0.4f},1'050'000'000,1}}};
+    const auto connected=make_pencil_geometry(pair,1'060'000'000);
+    auto cut=pair; cut[1].stroke=2;
+    CHECK(connected.indices.size()>make_pencil_geometry(cut,1'060'000'000).indices.size());
+    CHECK(make_pencil_geometry(pair,2'000'000'000).vertices.empty());
+    return test_finish();
+}

@@ -1,5 +1,7 @@
 // Catálogo de afinação visual; caminhos JSON, limites e valores iniciais.
 static constexpr SettingDefinition settings[] = {
+    {Setting::MotifLightAttenuation,"motifs.light_attenuation",0.06,0,0.6,0,"Redução máxima subtraída à emissão nos motivos P1; 0 desliga este canal. Aplicada no próximo arranque."},
+    {Setting::MotifMasterAttenuation,"motifs.master_attenuation",0.12,0,1,0,"Fração máxima retirada ao ganho MASTER nos motivos P1; 0 preserva áudio, 1 silencia no pico. Aplicada no próximo arranque."},
     {Setting::AutoPlay,"startup.auto_play",1,0,1,2,"Inicia áudio e animação ao abrir; Espaço continua a pausar."},
     {Setting::VrScale,"startup.vr_scale",1,0.4,1,0,"Escala da resolução OpenXR; requer reiniciar a aplicação."},
     {Setting::HotReload,"reload.enabled",1,0,1,2,"Relê automaticamente o ficheiro ao guardar."},

@@ -1,4 +1,5 @@
 #include "player.hpp"
+#include "master_envelope.hpp"
 #include <algorithm>
 #include <cmath>
 #include <stdexcept>
@@ -11,7 +12,8 @@ void checked(bool ok) {
     if(!ok) throw std::runtime_error(std::string("Audio: ")+SDL_GetError());
 }
 }
-AudioPlayer::AudioPlayer(const std::filesystem::path& path,std::optional<double> playback_end) {
+AudioPlayer::AudioPlayer(const std::filesystem::path& path,std::optional<double> playback_end,
+                         bool scheduled_motifs,behavior::MotifDose dose) {
     checked(SDL_InitSubSystem(SDL_INIT_AUDIO));
     const auto encoded=path.u8string();
     SDL_AudioSpec spec{};
@@ -28,6 +30,12 @@ AudioPlayer::AudioPlayer(const std::filesystem::path& path,std::optional<double>
             throw std::runtime_error("Audio: playback end must be within soundtrack duration");
         // Limita a fila de amostras: a saída nunca consome o segmento seguinte.
         length_=static_cast<Uint32>(std::floor(*playback_end*rate_))*bytes_per_frame_;
+    }
+    // Guião P1 imutável: ganho por frame PCM, calculado uma vez antes da fila SDL.
+    // Pause/seek/restart continuam a usar exatamente os mesmos índices de frames.
+    if(scheduled_motifs) {
+        dose=behavior::validated_dose(dose);
+        apply_master_envelope({reinterpret_cast<std::int16_t*>(data_.get()),length_/2},rate_,0,dose.master_attenuation);
     }
     stream_.reset(SDL_OpenAudioDeviceStream(SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK,&spec,nullptr,nullptr));
     checked(stream_!=nullptr);

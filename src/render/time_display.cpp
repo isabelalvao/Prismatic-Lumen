@@ -32,7 +32,7 @@ std::string format_time_display(double seconds) {
 TimeDisplayUniforms time_display_uniforms(const TimeDisplay& display,
     std::uint16_t width,std::uint16_t height) {
     const float aspect=width&&height?static_cast<float>(width)/height:1.0f;
-    TimeDisplayUniforms result{{{static_cast<float>(timeline_tenths(display.seconds)),display.visible?1.0f:0.0f,aspect,0.0f},
+    TimeDisplayUniforms result{{{static_cast<float>(timeline_tenths(display.seconds)),display.visible?1.0f:0.0f,aspect,display.motif_active?1.0f:0.0f},
         {bounded(display.x,0.5f,0.0f,1.0f),bounded(display.y,0.65f,0.0f,1.0f),
          bounded(display.scale,1.5f,0.25f,4.0f),bounded(display.opacity,0.95f,0.0f,1.0f)}}};
     const float glyph_height=0.052f*result[1][2];

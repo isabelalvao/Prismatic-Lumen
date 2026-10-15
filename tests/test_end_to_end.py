@@ -81,7 +81,8 @@ class ApplicationTests(unittest.TestCase):
         with socket.socket() as reservation:
             reservation.bind(("127.0.0.1", 0))
             port = reservation.getsockname()[1]
-        capture = ROOT / "plan" / "m1-integration.png"
+        capture = ROOT / "temp" / "m1-integration.png"
+        capture.parent.mkdir(exist_ok=True)
         process = subprocess.Popen(
             [str(EXE), "--hidden", "--frames", "360", "--port", str(port), "--capture", str(capture)],
             cwd=ROOT, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,

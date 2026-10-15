@@ -2,9 +2,15 @@
 
 **Prismatic Lumen** é um ambiente audiovisual imersivo não figurativo e um artefacto de investigação sobre a atribuição de agência ao ambiente e a ambiguidade entre essa atribuição e o prolongamento da agência do utilizador. O nome anterior do projeto é **Fantasynt**, conservado nos identificadores técnicos, executáveis e registos históricos.
 
-A base atual é um motor C++ para Windows/PCVR, com SDL3, bgfx e OpenXR. A infraestrutura semântica, a integração com Jev/LLM e o seguimento das mãos pertencem à fase planeada; não são apresentados como funcionalidades já implementadas. A leitura futura integra expressão corporal, estado audiovisual e história da interação. Não serão utilizados controladores Quest nessa fase.
+A base atual é um motor C++ para Windows/PCVR, com SDL3, bgfx e OpenXR. A versão de desenvolvimento adquire cabeça e mãos quando o runtime fornece `XR_EXT_hand_tracking`, com registo opcional sincronizado; foi validada no runtime simulado e a sessão real Quest 3/VDXR já foi analisada: integridade válida, com perdas de seguimento das mãos e picos de velocidade ainda por validar fisicamente. [Resultados e limites](plan/migration-2026-10-14/xr-validation-2026-10-15/README.md). A infraestrutura semântica e Jev/LLM continuam planeados. A leitura futura integra expressão corporal, estado audiovisual e história da interação, sem controladores Quest.
 
 Repositório: [JoaoAz/Prismatic-Lumen](https://github.com/JoaoAz/Prismatic-Lumen). Consulta o [índice de toda a documentação](docs/INDEX.md), o [plano dos repertórios](plan/semantic-repertoires-v1/implementation-plan.md) e o [contexto de investigação](plan/semantic-repertoires-v1/research-context.md).
+
+**Mãos visíveis em VR (2026-10-15):** a compilação de desenvolvimento desenha as articulações OpenXR como esferas e segmentos 3D, azul à esquerda e laranja à direita. Usa a amostra prevista de cada frame, em metros físicos, e mantém o movimento durante a pausa. Só desenha posições válidas e seguidas; perdas retiram imediatamente as partes afetadas. Executar `build/Release/fantasynt.exe --config visual-config.json --vr --paused`; para registar, acrescentar `--record-session logs/vr-hands-01.jsonl` com um nome novo. [Implementação e validação](plan/vr-hands-2026-10-15/README.md). Os pacotes P0 históricos conservam o executável sem representação visual.
+
+**Motivos e gestos (2026-10-15):** `--motifs-scheduled` ativa P1 com agenda determinística e dose congelada por sessão; não toma decisões a partir do corpo. Em VR, `--hand-snap --hand-light-pencil` permite estalo luminoso e escrita com o indicador, com prioridade do estalo na mesma mão. Os anéis finais aceleram e abrandam segundo uma curva programada. [P1](plan/p1-motifs-2026-10-15/README.md), [lápis e anéis](plan/pencil-tunnel-refinement-2026-10-15/README.md) e [prioridade dos gestos](plan/hand-gesture-priority-2026-10-15/README.md). A validação física destas afinações no Quest continua pendente.
+
+**Migrar para outro PC com Codex:** seguir [MIGRACAO.md](MIGRACAO.md). A atualização de 2026-10-15 reúne no GitHub P0, mãos visíveis, P1, gestos, ferramentas, documentação e a afinação atual da raiz. Um clone atualizado com Git LFS permite recuperar as fontes e os recursos versionados; registos reais em `logs/` e pacotes locais em `dist/` devem ser copiados separadamente. O [estado de 14 de outubro](plan/migration-2026-10-14/estado.md) conserva o histórico; [AGENTS.md](AGENTS.md) contém as instruções atuais de retoma.
 
 ## Obter uma cópia completa
 
@@ -58,6 +64,12 @@ Para testar o núcleo sem compilar bibliotecas gráficas:
 O executável fica em `build/Release/fantasynt.exe`. Mantém as pastas `shaders`, `examples`, `audio` e `opening` ao lado do executável. A máquina de desenvolvimento usa Build Tools 2026, MSVC 14.51 e CMake 4.3.1.
 
 ## Executar e controlar
+
+**Aquisição P0, na compilação de desenvolvimento:** `Fantasynt.cmd --vr --paused --record-session logs\quest-p0-01.jsonl`. A gravação não altera luz/música nem desenha mãos; não substitui um ficheiro existente. Espaço inicia/pausa; Esc fecha e finaliza o registo. Para verificar: `python tools\inspect_session.py logs\quest-p0-01.jsonl`. [Instruções e limites](plan/hand-observation-p0/README.md). Os pacotes ZIP publicados não foram substituídos por esta alteração.
+
+Para levar P0 a outro PC: [pacote revisto r2](dist/Prismatic-Lumen-Q3-HandTracking-P0-2026-10-14-r2.zip). Extrair tudo; abrir `Diagnose-VR.cmd` e `Test-HandTracking.cmd`. Inclui os recursos e DLLs necessários, gravações com nomes únicos e verificador em PowerShell, sem Python obrigatório para o resumo básico. Para análise completa, inclui `tools/inspect_session.py` e `tools/session_metrics.py`, que usam Python 3.10+ sem bibliotecas adicionais. As mãos são adquiridas, sem representação visual.
+
+Se já tens o primeiro pacote P0, extrai a [atualização pequena de inspeção](dist/Prismatic-Lumen-Q3-P0-Inspection-Update-2026-10-14.zip) diretamente na pasta que contém `fantasynt.exe`. Na mesma pasta, executa `python .\tools\inspect_session.py .\logs\hand-tracking-01.jsonl --output .\logs\hand-tracking-01.analysis.json`. A atualização conserva o binário e os registos. `bc86e22` é o commit base de P0; o SHA-256 identifica a compilação com alterações locais. [Identidade, testes e limites](plan/hand-observation-p0/README.md).
 
 O pacote portátil para Windows 11 x64 está em `dist/Fantasynt-PCVR-Win11-x64-0.12.0.zip`. Extrai-o inteiro e abre `Launch-VR.cmd` para VR ou `Launch-Desktop.cmd` para monitor. Confirma **0.12.0** no título da janela e mantém a cena **Opening** (tecla O); N/L/T/F selecionam vistas manuais. Inclui shaders, recursos de Opening, áudio, exemplos, loader OpenXR e DLLs Visual C++; o PC de destino não precisa de compilador nem Python. O runtime simulado dos testes fica fora do pacote. Os ZIPs anteriores foram conservados.
 

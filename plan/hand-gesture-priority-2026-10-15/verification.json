@@ -1,0 +1,43 @@
+{
+  "build": "Release x64",
+  "executable": "C:\\DEV\\Prismatic\\build\\Release\\fantasynt.exe",
+  "executable_sha256": "04693aeef7b73c4105e98312d7b2b30229ca844abebe41f7b9809f1fff70319f",
+  "pencil_version": "index-only-trail-3",
+  "snap_detector_unchanged": "thumb-middle-release-1",
+  "snap_cooldown_ms": 550,
+  "activation_after_release_ms": 40,
+  "ctest_passed": 22,
+  "renderer_separate_passed": true,
+  "python_passed": 99,
+  "root_config_sha256": "6813e57449216cc9b47bd9291f337834e4aedf1a4f5139c1467626c85b6d8c0d",
+  "root_config_preserved": true,
+  "master_sha256": "60dc74309ab1fbae42394228ddfc098a09a1e7a36ae739c7f5ee7e1adafb9fd9",
+  "master_preserved": true,
+  "captures": "C:\\DEV\\Prismatic\\temp\\hand-priority-8d0ab7aa",
+  "both_effects_image_matches_snap_only": true,
+  "capture_recordings_inspection": [
+    {
+      "session": "C:\\DEV\\Prismatic\\temp\\hand-priority-8d0ab7aa\\both\\session.jsonl",
+      "returncode": 0
+    },
+    {
+      "session": "C:\\DEV\\Prismatic\\temp\\hand-priority-8d0ab7aa\\resumed\\session.jsonl",
+      "returncode": 0
+    },
+    {
+      "session": "C:\\DEV\\Prismatic\\temp\\hand-priority-8d0ab7aa\\snap-only\\session.jsonl",
+      "returncode": 0
+    }
+  ],
+  "captures_visually_reviewed": true,
+  "physical_validation": false,
+  "review": "review.md",
+  "committed": false,
+  "pushed": false,
+  "source_sha256": {
+    "src/interaction/hand_snap.cpp": "e752496cd980ddb5d094bbe2806bf586f1353ac94182401e51ecec80f2b1c460",
+    "src/interaction/light_pencil.cpp": "de86e7b00a2fa8f46c0e8067c16e79060c756046ec9e71ab5189e0314ec1fd0f",
+    "src/render/renderer.cpp": "c8e526812fc6241dca9efaec7bd76534923b39c14595bbf75b08e4a5be5406cb",
+    "src/app/main.cpp": "d8ec3ed937dfc119a4dad78cb087707c405082b795cfd1e9297ecf517c4cb6e6"
+  }
+}

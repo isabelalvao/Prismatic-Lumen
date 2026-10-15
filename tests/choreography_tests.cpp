@@ -1,6 +1,7 @@
 #include "render/surface_choreography.hpp"
 #include "render/spectral_geometry.hpp"
 #include "test_support.hpp"
+#include <algorithm>
 
 using namespace fantasynt;
 
@@ -14,6 +15,32 @@ int main() {
     }
     CHECK(scattered_rings == 64);
     const auto& config=default_visual_config();
+    // Crescendo/coda: velocidade contínua, distância integrada e independente dos frames.
+    CHECK_NEAR(sample_ring_travel(306,config).speed_multiplier,1,1e-9);
+    CHECK_NEAR(sample_ring_travel(334,config).speed_multiplier,3,1e-9);
+    CHECK_NEAR(sample_ring_travel(380,config).speed_multiplier,3,1e-9);
+    CHECK_NEAR(sample_ring_travel(420,config).speed_multiplier,0.25,1e-9);
+    CHECK(sample_ring_travel(320,config).speed_multiplier>sample_ring_travel(310,config).speed_multiplier);
+    CHECK(sample_ring_travel(410,config).speed_multiplier<sample_ring_travel(400,config).speed_multiplier);
+    for(double t=290;t<424;t+=0.137) {
+        const auto motion=sample_ring_travel(t,config);
+        const double derivative=(sample_ring_travel(t+0.0001,config).offset_seconds-
+            sample_ring_travel(t-0.0001,config).offset_seconds)/0.0002;
+        CHECK_NEAR(derivative,motion.speed_multiplier-1,1e-6);
+        CHECK(motion.speed_multiplier>=0.25&&motion.speed_multiplier<=3);
+    }
+    for(const auto& source:tunnel) {
+        const auto original=directed_tunnel_instance(source,380,53500,37100,config);
+        const auto musical=directed_tunnel_instance(source,380,53500,37100,config,1,-1,-1,
+            sample_ring_travel(380,config).offset_seconds*150);
+        for(int i=0;i<16;++i) if(i!=14||source.variation!=5) CHECK_NEAR(original.transform[i],musical.transform[i],1e-5);
+        if(source.variation==5) CHECK(musical.transform[14]<original.transform[14]);
+    }
+    // Ainda há anéis à frente no fim com a afinação de 1,5 m/s; não se esgota o túnel.
+    const auto last=std::find_if(tunnel.rbegin(),tunnel.rend(),[](const auto& s) {return s.variation==5;});
+    CHECK(last!=tunnel.rend());
+    CHECK(directed_tunnel_instance(*last,424,20100,0,config,1,-1,-1,
+        sample_ring_travel(424,config).offset_seconds*150).transform[14]>5000);
     std::vector<std::array<double,3>> movements;
     for(const auto& source:tunnel) if(source.variation!=5&&movements.size()<2) {
         const auto a=directed_tunnel_instance(source,240,40000,40000,config);

@@ -1,5 +1,20 @@
 # Afinação visual sem recompilar
 
+## Intensidade dos motivos P1
+
+Com `--motifs-scheduled`, a secção `motifs` controla separadamente a atenuação visual e sonora:
+
+```json
+"motifs": {
+  "light_attenuation": 0.06,
+  "master_attenuation": 0.12
+}
+```
+
+`light_attenuation` aceita **0–0,60** e subtrai esse valor à emissão base de 0,60 no pico do motivo: por exemplo, 0,30 deixa emissão 0,30. `master_attenuation` aceita **0–1** e retira essa fração ao ganho: 0,50 deixa ganho 0,50; 1 silencia no pico. Zero desliga a atenuação desse canal. Os valores iniciais 0,06/0,12 conservam a primeira entrega P1; valores maiores permitem ensaiar diferenças mais fortes. O parâmetro de emissão não é uma medida linear de luminosidade física.
+
+**Guardar o ficheiro e fechar/voltar a abrir a aplicação para aplicar estes valores.** Em P1 não há releitura durante a sessão: F5 e Q não recarregam a dose; Q só reinicia o guião com os mesmos valores. Isto conserva a sincronização da curva sonora preparada no arranque. Usar `--config C:\DEV\Prismatic\visual-config.json` para selecionar a afinação da raiz. Sem `--motifs-scheduled`, estes campos não aplicam modulação. As durações, horários, paletas, pulsos e fade final não mudam. O relógio verde continua a assinalar a curva, mesmo com os dois canais a zero.
+
 **Versão atual 0.12.0:** anéis pares e ímpares acendem em batidas sucessivas; Opening dura até ao fim do MASTER aos 7:04,18, com fade integral para preto; menos artefactos com movimentos próprios; rochas de 25–70 cm no chão e mais 40% de cones com três combinações de cores. O ambiente quente com menos vermelho/nevoeiro e os reflexos mantêm-se; os cones constroem-se em oito nervuras e nove círculos independentes. Triângulos sólidos e plataformas estão removidos; o cenário permanece 60 m atrás e dissolve-se nos 30 m seguintes. Os anéis alinham-se entre 290–306 s, com dispersão das outras peças e brilho rosa ao fundo. A secção «Anéis alternados, campo menos denso e pequenas rochas — 0.12.0», no fim, atualiza as descrições históricas.
 
 Edite `visual-config.json` junto do executável, guarde em UTF-8 e volte à experiência. O programa verifica alterações a cada 0,25 s. **F5** força a releitura. JSON inválido mantém a última configuração válida; o erro fica em `logs/vr.log` ou `logs/desktop.log` nos lançadores do pacote.
@@ -48,6 +63,8 @@ O catálogo afina a experiência atual **Opening**, com seis minutos. Os campos 
 
 | Campo | Inicial | Intervalo/opções | Função |
 | --- | --- | --- | --- |
+| `motifs.light_attenuation` | 0.06 | 0–0.6 | Atenuação máxima subtraída à emissão P1; aplicada ao reabrir a aplicação. |
+| `motifs.master_attenuation` | 0.12 | 0–1 | Atenuação máxima do ganho MASTER P1; aplicada ao reabrir a aplicação. |
 | `startup.auto_play` | true | true/false | Inicia áudio e animação ao abrir; Espaço continua a pausar. |
 | `startup.vr_scale` | 1 | 0.4–1 | Escala da resolução OpenXR; requer reiniciar a aplicação. |
 | `reload.enabled` | true | true/false | Relê automaticamente o ficheiro ao guardar. |

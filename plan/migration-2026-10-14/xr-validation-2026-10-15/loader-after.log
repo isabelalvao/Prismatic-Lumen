@@ -1,0 +1,20 @@
+
+Verbose [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : Entering loader trampoline
+Info [GENERAL |  | OpenXR-Loader] : Implicit layer C:\Program Files\Virtual Desktop Streamer\openxr-oculus-compatibility.json is disabled
+Info [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : RuntimeManifestFile::FindManifestFiles - using environment variable override runtime file C:\DEV\Prismatic\temp\p0-test-t256798_\runtime.json
+Info [GENERAL |  | OpenXR-Loader] : RuntimeManifestFile::CreateIfValid - attempting to load C:\DEV\Prismatic\temp\p0-test-t256798_\runtime.json
+Info [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : RuntimeInterface::LoadRuntime succeeded loading runtime defined in manifest file C:\DEV\Prismatic\temp\p0-test-t256798_\runtime.json using interface version 1 and OpenXR API version 1.0
+Verbose [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : Completed loader trampoline
+Verbose [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : Entering loader trampoline
+Info [GENERAL |  | OpenXR-Loader] : Implicit layer C:\Program Files\Virtual Desktop Streamer\openxr-oculus-compatibility.json is disabled
+Verbose [GENERAL | xrEnumerateInstanceExtensionProperties | OpenXR-Loader] : Completed loader trampoline
+Verbose [GENERAL | xrCreateInstance | OpenXR-Loader] : Entering loader trampoline
+Info [GENERAL |  | OpenXR-Loader] : Implicit layer C:\Program Files\Virtual Desktop Streamer\openxr-oculus-compatibility.json is disabled
+Warning [GENERAL |  | OpenXR-Loader] : ReadLayerDataFilesInRegistry - failed to read registry location \ApiLayers\Explicit in either HKEY_LOCAL_MACHINE or HKEY_CURRENT_USER
+Verbose [GENERAL | xrCreateInstance | OpenXR-Loader] : Entering LoaderInstance::CreateInstance
+Verbose [GENERAL | xrCreateInstance | OpenXR-Loader] : Entering loader terminator
+Verbose [GENERAL | xrCreateInstance | OpenXR-Loader] : Completed loader terminator
+Info [GENERAL | xrCreateInstance | OpenXR-Loader] : LoaderInstance::CreateInstance succeeded with 0 layers enabled and runtime interface - created instance = 0x0000000000000001
+Verbose [GENERAL | xrCreateInstance | OpenXR-Loader] : Completed loader trampoline
+{"audio_driver":"","audio_enabled":false,"detected_bass_beats":733,"device":"Direct3D 11 vendor=0x10de device=0x2f04","mode":"openxr","opening_meshes":55,"paused":false,"playback_end_seconds":424.1821315192744,"port":50073,"recording_path":"C:\\DEV\\Prismatic\\temp\\p0-tes
+epochs: [(1, 0), (4, 1), (8, 1), (12, 1)]

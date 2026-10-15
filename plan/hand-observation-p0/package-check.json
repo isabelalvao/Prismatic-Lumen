@@ -1,0 +1,81 @@
+{
+  "probe": {
+    "d3d11": true,
+    "hand_tracking_extension": true,
+    "hand_tracking_system_support": true,
+    "headset": "Simulated stereo D3D11 headset",
+    "headset_available": true,
+    "runtime": "FantasyntMock",
+    "system_result": 0,
+    "type": "xr_probe",
+    "xr_to_qpc_extension": false
+  },
+  "normal": {
+    "exit_code": 0,
+    "inspection": {
+      "session_file": "C:\\ORCA\\Fantasynt\\temp\\portable Q3 João 41rlbajb\\Prismatic-Lumen-Q3-HandTracking-P0-2026-10-14\\logs\\hands-20261014-223148-3a6ce175.jsonl",
+      "session_id": "dba259e4cb71d62dad72dd8936513c64",
+      "runtime": "FantasyntMock 640x360 per eye",
+      "complete": true,
+      "hand_trackers_ready": true,
+      "observations": 3,
+      "head_valid_samples": 3,
+      "left_active_samples": 3,
+      "right_active_samples": 3,
+      "left_position_valid_samples": 3,
+      "right_position_valid_samples": 3,
+      "left_position_tracked_samples": 3,
+      "right_position_tracked_samples": 3,
+      "hand_acquisition_observed": true,
+      "dropped_records": 0,
+      "scope": "Acquisition and file integrity only; not perceptual validation or descriptor replay."
+    }
+  },
+  "no-hands": {
+    "exit_code": 2,
+    "inspection": {
+      "session_file": "C:\\ORCA\\Fantasynt\\temp\\portable Q3 João 41rlbajb\\Prismatic-Lumen-Q3-HandTracking-P0-2026-10-14\\logs\\hands-20261014-223150-cb139e6c.jsonl",
+      "session_id": "3fe024565a94639ffbe50ab927cf5e87",
+      "runtime": "FantasyntMock 640x360 per eye",
+      "complete": true,
+      "hand_trackers_ready": false,
+      "observations": 3,
+      "head_valid_samples": 3,
+      "left_active_samples": 0,
+      "right_active_samples": 0,
+      "left_position_valid_samples": 0,
+      "right_position_valid_samples": 0,
+      "left_position_tracked_samples": 0,
+      "right_position_tracked_samples": 0,
+      "hand_acquisition_observed": false,
+      "dropped_records": 0,
+      "scope": "Acquisition and file integrity only; not perceptual validation or descriptor replay."
+    }
+  },
+  "loss-session": {
+    "exit_code": 1,
+    "inspection": {
+      "session_file": "C:\\ORCA\\Fantasynt\\temp\\portable Q3 João 41rlbajb\\Prismatic-Lumen-Q3-HandTracking-P0-2026-10-14\\logs\\hands-20261014-223152-5b142357.jsonl",
+      "session_id": "90edf999f055c6900e6ef3b2696fdd0b",
+      "runtime": "FantasyntMock 640x360 per eye",
+      "complete": false,
+      "hand_trackers_ready": true,
+      "observations": 1,
+      "head_valid_samples": 1,
+      "left_active_samples": 1,
+      "right_active_samples": 1,
+      "left_position_valid_samples": 1,
+      "right_position_valid_samples": 1,
+      "left_position_tracked_samples": 1,
+      "right_position_tracked_samples": 1,
+      "hand_acquisition_observed": false,
+      "dropped_records": 0,
+      "scope": "Acquisition and file integrity only; not perceptual validation or descriptor replay."
+    }
+  },
+  "independent_extraction": true,
+  "hashes_valid": true,
+  "python_required_on_destination": false,
+  "physical_headset_validated": false,
+  "archive": "C:\\ORCA\\Fantasynt\\dist\\Prismatic-Lumen-Q3-HandTracking-P0-2026-10-14.zip"
+}

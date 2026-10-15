@@ -1,0 +1,133 @@
+ M .gitignore
+ M CMakeLists.txt
+ M README.md
+ M assets/visual-config-guide.md
+ M assets/visual-config.json
+ M cmake/Shaders.cmake
+ M docs/INDEX.md
+ M plan/controls/baseline.png
+ M plan/controls/bloom-max.png
+ M plan/controls/colour-geometry-off.png
+ M plan/controls/cone-motion-001.png
+ M plan/controls/cone-motion-002.png
+ M plan/controls/cone-motion-003.png
+ M plan/controls/cone-motion-004.png
+ M plan/controls/cone-motion-005.png
+ M plan/controls/cone-motion-006.png
+ M plan/controls/cone-motion-007.png
+ M plan/controls/cone-motion-008.png
+ M plan/controls/cone-motion-009.png
+ M plan/controls/cone-motion-010.png
+ M plan/controls/cone-motion-011.png
+ M plan/controls/cone-motion-012.png
+ M plan/controls/cone-motion-013.png
+ M plan/controls/cone-motion-014.png
+ M plan/controls/cone-motion-015.png
+ M plan/controls/cone-motion-016.png
+ M plan/controls/cone-motion-017.png
+ M plan/controls/cone-motion-018.png
+ M plan/controls/cone-motion-019.png
+ M plan/controls/cone-motion-020.png
+ M plan/controls/cone-motion-021.png
+ M plan/controls/cone-motion-023.png
+ M plan/controls/cone-motion-024.png
+ M plan/controls/cone-motion-025.png
+ M plan/controls/cone-motion-026.png
+ M plan/controls/cone-motion-027.png
+ M plan/controls/cone-motion-028.png
+ M plan/controls/cone-motion-029.png
+ M plan/controls/cone-motion-030.png
+ M plan/controls/cone-motion-031.png
+ M plan/controls/fog-max.png
+ M plan/controls/glow-306.png
+ M plan/controls/opening-handoff-before.png
+ M plan/controls/phase-172-after.png
+ M plan/controls/timer-visible.png
+ M plan/controls/tunnel-boundary-before.png
+ M plan/m1-integration.png
+ M plan/semantic-repertoires-v1/implementation-plan.md
+ M plan/semantic-repertoires-v1/next-step-prompt.md
+ M plan/semantic-repertoires-v1/notes.md
+ M plan/semantic-repertoires-v1/repertoire.md
+ M plan/semantic-repertoires-v1/research-context.md
+ M plan/semantic-repertoires-v1/task_plan.md
+ M shaders/fs_composite.sc
+ M src/app/main.cpp
+ M src/audio/player.cpp
+ M src/audio/player.hpp
+ M src/config/visual_config.hpp
+ M src/config/visual_settings.inc
+ M src/render/renderer.cpp
+ M src/render/renderer.hpp
+ M src/render/surface_choreography.cpp
+ M src/render/surface_choreography.hpp
+ M src/render/time_display.cpp
+ M src/render/time_display.hpp
+ M src/vr/openxr_session.cpp
+ M src/vr/openxr_session.hpp
+ M src/vr/view_math.cpp
+ M src/vr/view_math.hpp
+ M tests/audio_tests.cpp
+ M tests/choreography_tests.cpp
+ M tests/mock_openxr_runtime.cpp
+ M tests/test_end_to_end.py
+ M tests/test_opening.py
+ M tests/test_vr.py
+ M tests/visual_config_tests.cpp
+ M tools/build.ps1
+ M tools/package_windows.py
+ M visual-config.json
+?? AGENTS.md
+?? MIGRACAO.md
+?? plan/hand-light-pencil-2026-10-15/
+?? plan/hand-observation-p0/
+?? plan/hand-snap-2026-10-15/
+?? plan/migration-2026-10-14/
+?? plan/p1-motifs-2026-10-15/
+?? plan/pencil-tunnel-refinement-2026-10-15/
+?? plan/semantic-repertoires-v1/backups/
+?? plan/semantic-repertoires-v1/behavior-matrix.md
+?? plan/semantic-repertoires-v1/first-exposure-protocol.md
+?? plan/semantic-repertoires-v1/first-session.md
+?? plan/vr-hands-2026-10-15/
+?? shaders/fs_hand.sc
+?? shaders/fs_light_pencil.sc
+?? shaders/vs_hand.sc
+?? shaders/vs_light_pencil.sc
+?? src/audio/master_envelope.cpp
+?? src/audio/master_envelope.hpp
+?? src/behavior/
+?? src/control/session_recorder.cpp
+?? src/control/session_recorder.hpp
+?? src/interaction/
+?? src/render/hand_geometry.cpp
+?? src/render/hand_geometry.hpp
+?? src/render/pencil_geometry.cpp
+?? src/render/pencil_geometry.hpp
+?? src/render/snap_geometry.cpp
+?? src/render/snap_geometry.hpp
+?? src/vr/tracking.cpp
+?? src/vr/tracking.hpp
+?? tests/hand_geometry_tests.cpp
+?? tests/hand_snap_tests.cpp
+?? tests/light_pencil_tests.cpp
+?? tests/motif_tests.cpp
+?? tests/observation_tests.cpp
+?? tests/session_recorder_tests.cpp
+?? tests/test_hand_snap.py
+?? tests/test_light_pencil.py
+?? tests/test_motifs.py
+?? tests/test_observation.py
+?? tests/test_ring_travel.py
+?? tests/test_session_inspector.py
+?? tools/check_hand_package.py
+?? tools/check_inspection_update.py
+?? tools/inspect_session.py
+?? tools/package/Fantasynt.cmd
+?? tools/package/HAND-TRACKING.txt
+?? tools/package/Record-HandTracking.ps1
+?? tools/package/Test-HandTracking.cmd
+?? tools/package/Verify-HandTracking.cmd
+?? tools/package/Verify-HandTracking.ps1
+?? tools/package_inspection_update.py
+?? tools/session_metrics.py

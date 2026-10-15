@@ -11,6 +11,7 @@ struct TimeDisplay {
     float x=0.5f;
     float y=0.65f;
     float opacity=0.95f;
+    bool motif_active{};
 };
 using TimeDisplayUniforms=std::array<std::array<float,4>,5>;
 std::string format_time_display(double seconds);

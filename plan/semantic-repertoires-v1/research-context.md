@@ -1,6 +1,6 @@
 # Contexto de investigação e decisões confirmadas
 
-Registo da conversa de desenho, atualizado para a publicação inicial de Prismatic Lumen.
+Registo da conversa de desenho, atualizado em 2026-10-14 para a revisão documental 2 da primeira exposição. Artefacto: Prismatic Lumen; identificadores técnicos Fantasynt.
 
 ## Finalidade
 
@@ -16,7 +16,7 @@ Voz pode ser acrescentada como fonte opcional; conversa não é necessária para
 
 Jev é um candidato a selecionar comportamentos delimitados; regras e um LLM de saída estruturada constituem alternativas a comparar. O classificador recebe contexto temporal preparado localmente. A composição audiovisual, temporização, limites e tratamento de falhas são executados no motor local.
 
-Repertório proposto: sustentar, ressoar, iniciar, propagar e contrastar. O primeiro incremento concretiza os três primeiros. Probabilidade e confiança do classificador não são intensidade dos estímulos nem medidas de agência subjetiva.
+Repertório proposto: sustentar, ressoar, iniciar, propagar e contrastar. O primeiro incremento concretiza os três primeiros com memória transversal de motivos; propagação espacial e contraste de timbre ficam fora do mínimo. Regras locais bastam para testar primeiro a experiência; Jev entra posteriormente em observação. Probabilidade e confiança do classificador não são intensidade dos estímulos nem medidas de agência subjetiva.
 
 ## Primeira e única exposição
 
@@ -30,4 +30,6 @@ Começar a recolha por descrição livre e não sugestiva, seguida por medidas s
 
 ## Estado
 
-O motor audiovisual existe na versão 0.12.0. A infraestrutura semântica, repertórios, aquisição dedicada das mãos e protocolo de primeira exposição estão em fase de especificação. O [prompt do próximo passo](next-step-prompt.md) pede uma revisão documental pronta para implementação, sem pressupor resultados percetivos.
+O motor audiovisual existe na versão 0.12.0. Duração confirmada por configuração/código/WAV: 424,182 s. Depois da revisão documental, o utilizador autorizou P0: a compilação de desenvolvimento já inclui aquisição dedicada de cabeça/mãos e registo, validados no runtime simulado; [estado e execução P0](../hand-observation-p0/README.md). A prova Quest permanece pendente porque o runtime local configurado não existe. Infraestrutura semântica/adaptação e avaliação com participantes não estão implementadas.
+
+A [primeira sessão](first-session.md) define três iniciativas, cinco oportunidades de continuação/retorno e percursos ativo, imóvel e incerto; a [matriz](behavior-matrix.md) liga contexto, decisão, transformação e registo; o [protocolo](first-exposure-protocol.md) distingue evidência favorável, inconclusiva e contrária. O [plano técnico](implementation-plan.md) é a lista priorizada única, P0–P5. O [próximo passo](next-step-prompt.md) é P0: observação sincronizada/estado efetivo, sem adaptação.

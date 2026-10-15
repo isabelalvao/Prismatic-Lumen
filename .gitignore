@@ -4,6 +4,7 @@ __pycache__/
 *.pyc
 /.superpowers/
 /fantasynt-events.jsonl
+/logs/*.jsonl
 /dist/
 /tools/vendor/
 node_modules/

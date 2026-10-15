@@ -23,7 +23,9 @@ class VRTests(unittest.TestCase):
             manifest.write_text(json.dumps({"file_format_version": "1.0.0", "runtime": {
                 "library_path": str(RUNTIME), "functions": {
                     "xrNegotiateLoaderRuntimeInterface": "xrNegotiateLoaderRuntimeInterface"}}}))
-            environment = dict(os.environ, XR_RUNTIME_JSON=str(manifest), FANTASYNT_MOCK_MODE=mode)
+            # Isolar a simulação da camada instalada para o headset real.
+            environment = dict(os.environ, XR_RUNTIME_JSON=str(manifest), FANTASYNT_MOCK_MODE=mode,
+                DISABLE_XR_APILAYER_VIRTUALDESKTOP_OCULUS_COMPATIBILITY="1")
             with socket.socket() as reservation:
                 reservation.bind(("127.0.0.1", 0))
                 port = reservation.getsockname()[1]
@@ -168,6 +170,33 @@ class VRTests(unittest.TestCase):
                 result, _ = self.launch("--vr", "--hidden", "--frames", "12", mode=mode)
                 self.assertEqual(result.returncode, 1, result.stderr)
                 self.assertIn("OpenXR runtime lost", result.stderr)
+
+    def test_hand_joints_change_gpu_image_and_missing_sources_draw_nothing(self):
+        arguments = ("--vr", "--hidden", "--silent", "--paused", "--frames", "12", "--fixed-time", "152")
+        result, absent = self.launch(*arguments, mode="no-hands")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        for mode in ("no-hand-support", "hand-create-failure", "hand-locate-failure", "hands-inactive", "hands-disappear"):
+            with self.subTest(mode=mode):
+                result, image = self.launch(*arguments, mode=mode)
+                self.assertEqual(result.returncode, 0, result.stderr)
+                self.assertEqual(image, absent, "Uma mão indisponível/perdida não pode deixar geometria antiga")
+        result, tracked = self.launch(*arguments)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertNotEqual(tracked, absent, "Articulações OpenXR devem alterar a imagem renderizada")
+        for mode in ("hands-lost", "hands-appear"):
+            result, recovered = self.launch(*arguments, mode=mode)
+            self.assertEqual(result.returncode, 0, result.stderr)
+            self.assertEqual(recovered, tracked, "A recuperação usa a amostra atual, mesmo em pausa")
+
+    def test_partial_joints_and_motion_are_visible_in_gpu_image(self):
+        arguments = ("--vr", "--hidden", "--silent", "--paused", "--frames", "12", "--fixed-time", "152")
+        images = {}
+        for mode in ("hand-skeleton", "hand-skeleton-partial", "hand-skeleton-untracked", "hand-skeleton-moved"):
+            result, images[mode] = self.launch(*arguments, mode=mode)
+            self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertNotEqual(images["hand-skeleton"], images["hand-skeleton-partial"])
+        self.assertEqual(images["hand-skeleton-partial"], images["hand-skeleton-untracked"])
+        self.assertNotEqual(images["hand-skeleton"], images["hand-skeleton-moved"])
 
 
 if __name__ == "__main__":

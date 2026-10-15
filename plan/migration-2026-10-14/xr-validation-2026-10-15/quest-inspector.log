@@ -1,0 +1,11 @@
+{
+  "analysis_file": "plan\\migration-2026-10-14\\xr-validation-2026-10-15\\quest-real-analysis.json",
+  "valid_record": true,
+  "observations": 3858,
+  "usable_position_sample_percentages": {
+    "head": 100.0,
+    "left": 81.57076205287714,
+    "right": 60.31622602384655
+  },
+  "errors": []
+}

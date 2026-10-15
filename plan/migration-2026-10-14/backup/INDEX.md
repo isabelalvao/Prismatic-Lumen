@@ -1,0 +1,117 @@
+# Documentação de Prismatic Lumen
+
+Índice da documentação incluída na publicação inicial. Os nomes Fantasynt/Fantasynth conservam o significado histórico e técnico.
+
+## Pontos de entrada
+
+- [README](../README.md)
+- [Recursos e proveniência](../THIRD_PARTY.md)
+- [Plano dos repertórios semânticos](../plan/semantic-repertoires-v1/implementation-plan.md)
+- [Contexto de investigação](../plan/semantic-repertoires-v1/research-context.md)
+- [Prompt do próximo passo](../plan/semantic-repertoires-v1/next-step-prompt.md)
+- [Guia de configuração visual](../assets/visual-config-guide.md)
+
+## Documentação completa
+
+- [README.md](../README.md)
+- [THIRD_PARTY.md](../THIRD_PARTY.md)
+- [assets/visual-config-guide.md](../assets/visual-config-guide.md)
+- [plan/2026-10-11-fantasynth-control-design.md](../plan/2026-10-11-fantasynth-control-design.md)
+- [plan/2026-10-11-fantasynth-cpp-design.md](../plan/2026-10-11-fantasynth-cpp-design.md)
+- [plan/2026-10-11-fantasynth-cpp-m1-plan.md](../plan/2026-10-11-fantasynth-cpp-m1-plan.md)
+- [plan/2026-10-11-m1-execution.md](../plan/2026-10-11-m1-execution.md)
+- [plan/2026-10-12-fidelity-tunnel.md](../plan/2026-10-12-fidelity-tunnel.md)
+- [plan/2026-10-12-fidelity-validation.md](../plan/2026-10-12-fidelity-validation.md)
+- [plan/2026-10-12-m1-validation.md](../plan/2026-10-12-m1-validation.md)
+- [plan/2026-10-12-quest3-vr-design.md](../plan/2026-10-12-quest3-vr-design.md)
+- [plan/2026-10-12-quest3-vr-plan.md](../plan/2026-10-12-quest3-vr-plan.md)
+- [plan/2026-10-12-quest3-vr-validation.md](../plan/2026-10-12-quest3-vr-validation.md)
+- [plan/2026-10-12-sequence-development.md](../plan/2026-10-12-sequence-development.md)
+- [plan/art-direction-v1/backup/README.md](../plan/art-direction-v1/backup/README.md)
+- [plan/art-direction-v1/report.md](../plan/art-direction-v1/report.md)
+- [plan/art-direction-v1/task_plan.md](../plan/art-direction-v1/task_plan.md)
+- [plan/audio-integration/findings.md](../plan/audio-integration/findings.md)
+- [plan/audio-integration/review.md](../plan/audio-integration/review.md)
+- [plan/backups/audio-0.4.1/README.md](../plan/backups/audio-0.4.1/README.md)
+- [plan/backups/opening-0.4.2/README.md](../plan/backups/opening-0.4.2/README.md)
+- [plan/backups/rea-curves-0.4.0/README.md](../plan/backups/rea-curves-0.4.0/README.md)
+- [plan/backups/sequence-0.3.0/README.md](../plan/backups/sequence-0.3.0/README.md)
+- [plan/backups/vr-0.1.0/README.md](../plan/backups/vr-0.1.0/README.md)
+- [plan/comfort-v1/backup/README.md](../plan/comfort-v1/backup/README.md)
+- [plan/comfort-v1/backup/assets/visual-config-guide.md](../plan/comfort-v1/backup/assets/visual-config-guide.md)
+- [plan/comfort-v1/report.md](../plan/comfort-v1/report.md)
+- [plan/comfort-v1/task-plan.md](../plan/comfort-v1/task-plan.md)
+- [plan/drill-rings-v1/backup/README.md](../plan/drill-rings-v1/backup/README.md)
+- [plan/drill-rings-v1/backup/assets/visual-config-guide.md](../plan/drill-rings-v1/backup/assets/visual-config-guide.md)
+- [plan/drill-rings-v1/report.md](../plan/drill-rings-v1/report.md)
+- [plan/drill-rings-v1/task-plan.md](../plan/drill-rings-v1/task-plan.md)
+- [plan/fidelity-assets/findings.md](../plan/fidelity-assets/findings.md)
+- [plan/fidelity-recovery-plan.md](../plan/fidelity-recovery-plan.md)
+- [plan/full-fidelity-audit.md](../plan/full-fidelity-audit.md)
+- [plan/full-fidelity-notes.md](../plan/full-fidelity-notes.md)
+- [plan/full-fidelity-task-plan.md](../plan/full-fidelity-task-plan.md)
+- [plan/full-reference/findings.md](../plan/full-reference/findings.md)
+- [plan/github-publication/task_plan.md](../plan/github-publication/task_plan.md)
+- [plan/opening-development/material-evidence/findings.md](../plan/opening-development/material-evidence/findings.md)
+- [plan/opening-development/report.md](../plan/opening-development/report.md)
+- [plan/opening-development/task_plan.md](../plan/opening-development/task_plan.md)
+- [plan/phase-240/backup/README.md](../plan/phase-240/backup/README.md)
+- [plan/phase-240/backup/assets/visual-config-guide.md](../plan/phase-240/backup/assets/visual-config-guide.md)
+- [plan/phase-240/music-proposal.md](../plan/phase-240/music-proposal.md)
+- [plan/phase-240/report.md](../plan/phase-240/report.md)
+- [plan/phase-240/task-plan.md](../plan/phase-240/task-plan.md)
+- [plan/rea-investigation/curve-development.md](../plan/rea-investigation/curve-development.md)
+- [plan/rea-investigation/curve-review.md](../plan/rea-investigation/curve-review.md)
+- [plan/rea-investigation/decoded-blueprints/README.md](../plan/rea-investigation/decoded-blueprints/README.md)
+- [plan/rea-investigation/findings.md](../plan/rea-investigation/findings.md)
+- [plan/rea-investigation/native-interpretation/channels-camera-fog.md](../plan/rea-investigation/native-interpretation/channels-camera-fog.md)
+- [plan/rea-investigation/native-interpretation/findings.md](../plan/rea-investigation/native-interpretation/findings.md)
+- [plan/rea-investigation/rea-main-build/README.md](../plan/rea-investigation/rea-main-build/README.md)
+- [plan/rea-investigation/targeted-native/README.md](../plan/rea-investigation/targeted-native/README.md)
+- [plan/rea-investigation/targeted-native/review-final.md](../plan/rea-investigation/targeted-native/review-final.md)
+- [plan/rea-investigation/task_plan.md](../plan/rea-investigation/task_plan.md)
+- [plan/reference/visual-direction.md](../plan/reference/visual-direction.md)
+- [plan/scene-refinement-v1/backup/README.md](../plan/scene-refinement-v1/backup/README.md)
+- [plan/scene-refinement-v1/backup/assets/visual-config-guide.md](../plan/scene-refinement-v1/backup/assets/visual-config-guide.md)
+- [plan/scene-refinement-v1/report.md](../plan/scene-refinement-v1/report.md)
+- [plan/scene-refinement-v1/task-plan.md](../plan/scene-refinement-v1/task-plan.md)
+- [plan/scene-refinement-v2/backup/README.md](../plan/scene-refinement-v2/backup/README.md)
+- [plan/scene-refinement-v2/backup/assets/visual-config-guide.md](../plan/scene-refinement-v2/backup/assets/visual-config-guide.md)
+- [plan/scene-refinement-v2/completion.md](../plan/scene-refinement-v2/completion.md)
+- [plan/scene-refinement-v2/task-plan.md](../plan/scene-refinement-v2/task-plan.md)
+- [plan/semantic-repertoires-v1/implementation-plan.md](../plan/semantic-repertoires-v1/implementation-plan.md)
+- [plan/semantic-repertoires-v1/next-step-prompt.md](../plan/semantic-repertoires-v1/next-step-prompt.md)
+- [plan/semantic-repertoires-v1/notes.md](../plan/semantic-repertoires-v1/notes.md)
+- [plan/semantic-repertoires-v1/repertoire.md](../plan/semantic-repertoires-v1/repertoire.md)
+- [plan/semantic-repertoires-v1/research-context.md](../plan/semantic-repertoires-v1/research-context.md)
+- [plan/semantic-repertoires-v1/task_plan.md](../plan/semantic-repertoires-v1/task_plan.md)
+- [plan/six-minute-choreography/backup/README.md](../plan/six-minute-choreography/backup/README.md)
+- [plan/six-minute-choreography/backup/assets/visual-config-guide.md](../plan/six-minute-choreography/backup/assets/visual-config-guide.md)
+- [plan/six-minute-choreography/report.md](../plan/six-minute-choreography/report.md)
+- [plan/six-minute-choreography/task-plan.md](../plan/six-minute-choreography/task-plan.md)
+- [plan/spectral-v1/backup/README.md](../plan/spectral-v1/backup/README.md)
+- [plan/spectral-v1/backup/assets/visual-config-guide.md](../plan/spectral-v1/backup/assets/visual-config-guide.md)
+- [plan/spectral-v1/report.md](../plan/spectral-v1/report.md)
+- [plan/spectral-v1/task-plan.md](../plan/spectral-v1/task-plan.md)
+- [plan/ue413-recovery/findings.md](../plan/ue413-recovery/findings.md)
+- [plan/ue413-recovery/source-study/README.md](../plan/ue413-recovery/source-study/README.md)
+- [plan/video-reference/findings.md](../plan/video-reference/findings.md)
+- [plan/visual-config/backup/README.md](../plan/visual-config/backup/README.md)
+- [plan/visual-config/report.md](../plan/visual-config/report.md)
+- [plan/visual-config/task-plan.md](../plan/visual-config/task-plan.md)
+- [plan/visual-resource-bank/README.md](../plan/visual-resource-bank/README.md)
+
+## Evidências e recursos
+
+Documentação de conclusão da publicação:
+
+- [Relatório da publicação](../plan/github-publication/report.md)
+- [README anterior à publicação](../plan/github-publication/backup/README.before-publication.md)
+
+Os relatórios permanecem acompanhados pelas capturas, vídeos, dados JSON, registos e recursos da árvore `plan/`. O conteúdo audiovisual e os binários de evidência usam Git LFS. Os ficheiros de texto, código e configurações usam Git normal.
+
+Excluídos do histórico: `build/`, `dist/`, `temp/`, `tools/vendor/`, dependências instaladas em `deps/`, caches, credenciais e executáveis de ferramentas. O pacote portátil atual é disponibilizado em Releases.
+
+## Estado da investigação
+
+A base audiovisual 0.12.0 existe. Repertórios semânticos, Jev/LLM, aquisição dedicada das mãos e avaliação de primeira exposição estão planeados. Os planos não são evidência de implementação ou de confirmação da hipótese.

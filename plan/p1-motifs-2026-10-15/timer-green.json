@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-15",
+  "change": "Timer digits and separators green while P1 envelope > 0; original colour otherwise",
+  "activation": "C shows/hides timer; --motifs-scheduled enables P1",
+  "pause": "Retains colour at frozen envelope value",
+  "build": "Release x64, application and composite shader rebuilt",
+  "existing_time_display_test": "passed",
+  "existing_p1_integration_tests": {
+    "passed": 7,
+    "failed": 0,
+    "log": "timer-green-integration.log"
+  },
+  "visual_review": [
+    "active desktop green at 54 s",
+    "neutral desktop white at 75 s",
+    "P1 disabled desktop white at 54 s",
+    "active simulated VR green at 54 s"
+  ],
+  "capture_directory": "C:\\DEV\\Prismatic\\temp\\p1-green-timer-29c64f99",
+  "physical_quest_validation": false,
+  "hashes_sha256": {
+    "build\\Release\\fantasynt.exe": "da1fbd453bb7428a39bb34461c4446bcadde81d11b31a040cef8bf91bee2d269",
+    "build\\Release\\shaders\\fs_composite.bin": "06c96fd671635ecd294ace9987346ce744b044bc65db1f1e8d913ad5ab122bf0",
+    "visual-config.json": "01d5bbc348c3f25337affec6463d515abd2d17adcbf894e25934e67fa87faf17"
+  },
+  "whitespace_check": "passed",
+  "commit_push": false
+}
